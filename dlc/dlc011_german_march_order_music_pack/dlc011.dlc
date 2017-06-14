@@ -1,0 +1,8 @@
+name = "German March Order Music Pack"
+archive = "dlc/dlc011_german_march_order_music_pack/dlc011.zip"
+steam_id = "460557"
+affects_checksum = no
+affects_compatability = no
+checksum="9f804013b682289d12a573860720ca0b"
+third_party_content = no
+category= "music"

@@ -1,0 +1,8 @@
+name = "Anniversary Pack"
+archive = "dlc/dlc021_anniversary_pack/dlc021.zip"
+steam_id = "642010"
+affects_checksum = yes
+affects_compatability = no
+checksum="d66ceb2427d690f97fc19061a2cd171d"
+third_party_content = no
+category = "content_pack"

@@ -1,0 +1,8 @@
+name = "Historical German Portraits"
+archive = "dlc/dlc001_german_historical_portraits/dlc001.zip"
+steam_id = "460610"
+affects_checksum = no
+affects_compatability = no
+checksum="7088f09b213d8d835b22ace52e9b10b0"
+third_party_content = no
+category="content_pack"

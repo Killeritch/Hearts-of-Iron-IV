@@ -1,0 +1,8 @@
+name = "Rocket Launcher Unit Pack"
+archive = "dlc/dlc003_rocket_launcher_unit_pack/dlc003.zip"
+steam_id = "460559"
+affects_checksum = no
+affects_compatability = no
+checksum="7dd0b4b83225e726491ad2dbfd723682"
+third_party_content = no
+category="unit_pack"

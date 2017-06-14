@@ -1,0 +1,8 @@
+name = "Poland: United and Ready"
+archive = "dlc/dlc002_polish_content_pack/dlc002.zip"
+steam_id = "460600"
+affects_checksum = no
+affects_compatability = no
+checksum="8308b9e8e5b3a03da646e65b7306f4af"
+third_party_content = no
+category = "content_pack"
