@@ -617,6 +617,29 @@ guiTypes = {
 					maxHeight = 20
 					format = center
 				}
+				
+				iconType = {
+					name = "estimated_manpower_bg"
+					quadTextureSprite ="GFX_generic_text_bg_108"
+					position = { x = 130 y = 375 }
+				}
+				
+				iconType = {
+					name = "estimated_manpower_icon"
+					quadTextureSprite ="GFX_endgame_manpower_button"
+					position = { x = 155 y = 325 }
+					pdx_tooltip = ESTIMATED_MANPOWER
+				}				
+				
+				instantTextboxType = {
+					name = "estimated_manpower_size"
+					position = { x = 130 y = 379 }
+					font = "hoi_18mbs"
+					text = "?"
+					maxWidth = 100
+					maxHeight = 20
+					format = center
+				}
 			}
 			
 			#------------------------- END INFO TAB ----------------------------
@@ -2578,7 +2601,7 @@ guiTypes = {
 			
 			iconType = {
 				name = "accept_icon"
-				position = { x = 425 y = 505 }
+				position = { x = 425 y = 510 }
 				spriteType ="GFX_accept_decline_icon"
 			}
 
@@ -3789,6 +3812,213 @@ guiTypes = {
 				pdx_tooltip = "DIPLOMACY_CANCEL"
 			}
 		}
+		
+		containerWindowType = {
+			name = "request_licensed_production"
+			position = { x = -263 y = -306}	
+			size = { width = 527 height = 640 }
+			moveable = yes
+			click_to_front = yes
+			orientation= center			
+
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_diplo_action_license_production_bg"
+			}
+			
+			containerWindowType = {
+				name = "equipments"
+				position = { x=0 y=187 }
+				size = { width=94%% height=-90 }
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 14 bottom = 14}				
+			
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+				}
+				
+				gridboxtype = {
+					name = "equipments_grid"
+					position = { x = 2 y = 0 }
+					size = { width = 120%% height = 100%% }
+					slotsize = { width = 335 height = 83 }
+					format = "UPPER_LEFT"
+					max_slots_horizontal = 1
+					padding = { bottom = 10 }
+				}
+			}
+			
+			buttonType = {
+				name = "checkbox_active_licenses"
+				position = { x = -475 y = 84 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "generic_text_bg_active_licenses"
+				position = { x=-439 y = 84 }
+				spriteType = "GFX_generic_text_bg_203"
+				Orientation = "UPPER_RIGHT"			
+			}	
+			
+			instantTextboxType = {
+				name = "active_licenses_title"
+				position = { x = -430 y = 88 }
+				textureFile = ""
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 0}
+				text = "DIPLOMACY_SHOW_ACTIVE_LICENSES"
+				maxWidth = 200
+				maxHeight = 20
+				format = left
+				fixedsize = yes
+				Orientation = "UPPER_RIGHT"
+			}		
+			
+			buttonType = {
+				name = "checkbox_available_licenses"
+				position = { x = -475 y = 112 }
+				quadTextureSprite ="GFX_generic_checkbox"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_checkbox
+			}
+
+			iconType = {
+				name = "generic_text_bg_available_licenses"
+				position = { x=-439 y = 113 }
+				spriteType = "GFX_generic_text_bg_203"
+				Orientation = "UPPER_RIGHT"			
+			}	
+			
+			instantTextboxType = {
+				name = "available_licenses_title"
+				position = { x = -430 y = 115 }
+				textureFile = ""
+				font = "hoi_20b"
+				borderSize = {x = 0 y = 0}
+				text = "DIPLOMACY_SHOW_AVAILABLE_LICENSES"
+				maxWidth = 200
+				maxHeight = 20
+				format = left
+				fixedsize = yes
+				Orientation = "UPPER_RIGHT"
+			}	
+			
+			buttonType = {
+				name = "infantry_button"
+				position = { x=91 y=149 }
+				quadTextureSprite ="GFX_add_prod_inf_art_line"
+				clicksound = click_checkbox
+				pdx_tooltip = PRODUCTION_EQUIPMENT_FILTER
+			}
+			
+			buttonType = {
+				name = "tank_button"
+				position = { x=171 y=149 }
+				quadTextureSprite ="GFX_add_prod_armour_line"
+				clicksound = click_checkbox
+				pdx_tooltip = PRODUCTION_ARMOR_FILTER
+			}
+			
+			buttonType = {
+				name = "aircraft_button"
+				position = { x=251 y=149 }
+				quadTextureSprite ="GFX_add_prod_aircraft_line"
+				clicksound = click_checkbox
+				pdx_tooltip = PRODUCTION_AIR_FILTER
+			}
+			
+			buttonType = {
+				name = "naval_button"
+				position = { x=331 y=149 }
+				spriteType ="GFX_add_prod_naval_line"
+				clicksound = click_checkbox
+				pdx_tooltip = EQUIPMENT_NAVAL
+			}
+			
+			instantTextboxType = {
+				name = "title"
+				position = { x = 122 y = 16 }
+				font = "hoi_24header"
+				text = "Maus"
+				maxWidth = 260
+				maxHeight = 10
+				format = center
+			}
+			
+				iconType = {
+				name = "description_expected_cost"
+				position = { x=-229 y = 97 }
+				spriteType = "GFX_generic_text_bg_154"
+				Orientation = "UPPER_RIGHT"			
+			}
+			
+			instantTextboxType = {
+				name = "description"
+				position = { x = 293 y = 101 }
+				font = "hoi_18mbs"
+				text = "Maus"
+				maxWidth = 150
+				maxHeight = 10
+				format = center
+			}
+			
+		
+				iconType = {
+				name = "diplo_response_bg"
+				position = {x=30 y=553}	
+				quadTextureSprite ="GFX_diplo_response_bg"
+			}
+			
+			instantTextBoxType = {
+				name = "diplo_reply"
+				position = { x = 90 y = 559 }
+				textureFile = ""
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "REPLYTEXT"	
+				maxWidth = 315
+				maxHeight = 40	
+
+				format = centre
+			}
+		
+		
+			iconType = {
+				name = "accept_icon"
+				position = { x = 403 y = 562 }
+				spriteType ="GFX_accept_decline_icon"
+			}
+			
+
+			
+			buttonType = {
+				name = "send_button"
+				position = { x = 310 y = -35 }
+				
+				quadTextureSprite ="GFX_button_123x34"
+				buttonFont = "hoi_16mbs"
+				Orientation = "LOWER_LEFT"
+				buttonText = "DIPLOMACY_SEND"
+				clicksound = click_send
+				shortcut = "RETURN"
+			}
+			
+			buttonType = {
+				name = "cancel_button"
+				position = { x = 70 y = -35 }
+				shortcut = "ESCAPE"
+				quadTextureSprite ="GFX_button_123x34"
+				buttonFont = "hoi_16mbs"
+				Orientation = "LOWER_LEFT"
+				buttonText = "DIPLOMACY_CANCEL"
+				pdx_tooltip = "DIPLOMACY_CANCEL"
+				clicksound = click_close
+			}
+		}
 	}
 	
 	#don't delete, it's used for stretching ideas' scrollable area
@@ -4869,6 +5099,206 @@ guiTypes = {
 		}
 	}
 
+	
+	containerWindowType = {
+		name = "request_license_land_entry"
+		position = { x=6 y=0 }
+		size = { width=461 height= 80 }
+		clipping = no
+		
+		buttonType = {
+			name = "equipment_button"
+			position = { x=5 y=4 }
+			quadTextureSprite = "GFX_equipment_item_large_02"			
+			clicksound = click_default
+			frame = 1
+		}
+
+		iconType = {
+			name ="outdated_equipment_overlay"
+			spriteType = "GFX_outdated_naval_equipment_overlay"
+			position = { x=9 y=7 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "selected_glow"
+			position = { x = 9 y = 7 }
+			spriteType = "GFX_new_equipment_glow_large"
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=417 y=28 }
+			shortcut = "ESCAPE"
+			quadTextureSprite = "GFX_closebutton_small_2"
+			clicksound = click_close
+		}
+		
+		iconType = {
+			name ="equipment_icon"
+			spriteType = "GFX_technology_medium"
+			position = { x=205 y=51 }
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="sub_tech"
+			spriteType = "GFX_sub_tech_strip_w_bg"
+			position = { x=220 y=40 }
+			frame = 1
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "carrier_fighter_icon"
+			position = { x = 230 y = 55 }
+			spriteType = "GFX_airwing_carrier_icon"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 20 y = 6 }
+			font = "hoi_18mbs"
+			text = "Maus"
+			maxWidth = 200
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "general_name"
+			position = { x = 20 y = 22 }
+			font = "hoi_16mbs"
+			text = "Perkele-tankki"
+			maxWidth = 150
+			maxHeight = 30
+			format = left
+			alwaystransparent = yes
+		}
+		
+		gridBoxType = {
+			name = "resources_grid"
+			position = { x = 370 y = 8 }
+			size = { width = 48 height = 150 }
+			slotsize = { width = 35 height = 23 }
+			max_slots_vertical = 6
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+		
+		instantTextboxType = {
+			name = "production_cost"
+			position = { x = 15 y = 61 }
+			font = "hoi_18mbs"
+			text = "cost 9001"
+			maxWidth = 160
+			maxHeight = 30
+			format = left
+			alwaystransparent = yes
+		}
+
+	}
+	
+	containerWindowType = {
+		name = "request_license_naval_entry"
+		position = { x=0 y=0 }
+		size = { width=461 height= 75 }
+		clipping = no
+		
+		buttonType = {
+			name = "equipment_button"
+			position = { x=11 y=4 }
+			quadTextureSprite = "GFX_naval_equipment_item_large"
+			clicksound = click_default
+			frame = 1
+		}
+
+		iconType = {
+			name ="outdated_equipment_overlay"
+			spriteType = "GFX_outdated_naval_equipment_overlay"
+			position = { x=15 y=7 }
+			alwaystransparent = yes			
+		}
+		
+		iconType = {
+			name = "selected_glow"
+			position = { x = 14 y = 7 }
+			spriteType = "GFX_new_naval_equipment_glow"
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "cancel_button"
+			position = { x=423 y=28 }
+			shortcut = "ESCAPE"
+			quadTextureSprite = "GFX_closebutton_small_2"
+			clicksound = click_close
+		}
+		
+		iconType = {
+			name ="equipment_icon"
+			spriteType = "GFX_technology_medium"
+			position = { x=205 y=49 }
+			centerposition = yes
+			scale = 0.9
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 28 y = 6 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Maus"
+			maxWidth = 290
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "general_name"
+			position = { x = 30 y = 22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Perkele-tankki"
+			maxWidth = 160
+			maxHeight = 30
+			format = left
+			alwaystransparent = yes
+		}
+		
+		gridBoxType = {
+			name = "resources_grid"
+			position = { x = 376 y = 8 }
+			size = { width = 48 height = 150 }
+			slotsize = { width = 35 height = 23 }
+			max_slots_vertical = 6
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+		
+		instantTextboxType = {
+			name = "naval_production_cost"
+			position = { x = 21 y = 61 }
+			font = "hoi_18mbs"
+			text = "cost 9001"
+			maxWidth = 160
+			maxHeight = 30
+			format = left
+			alwaystransparent = yes
+		}
+	}
+	
 	containerWindowType = {
 		name = "diplomacy_party_entry"
 		size = { width = 200 height = 30 }

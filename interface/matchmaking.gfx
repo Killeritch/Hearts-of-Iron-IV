@@ -11,8 +11,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_sort_173"
-		texturefile = "gfx/interface/sort_173.dds"
+		name = "GFX_trade_filter_btn_country"
+		texturefile = "gfx/interface/trade_filter_btn_country.dds"
 	}
 
 	spriteType = {
@@ -21,13 +21,18 @@ spriteTypes = {
 	}		
 	
 	spriteType = {
-		name = "GFX_sort_99"
-		texturefile = "gfx/interface/sort_99.dds"
+		name = "GFX_trade_filter_btn_export"
+		texturefile = "gfx/interface/trade_filter_btn_export.dds"
 	}		
 	
 	spriteType = {
-		name = "GFX_sort_108"
-		texturefile = "gfx/interface/sort_108.dds"
+		name = "GFX_trade_filter_btn_delivered"
+		texturefile = "gfx/interface/trade_filter_btn_delivered.dds"
+	}	
+	
+		spriteType = {
+		name = "GFX_trade_filter_btn_convoy"
+		texturefile = "gfx/interface/trade_filter_btn_convoy.dds"
 	}	
 	
 	textSpriteType = {

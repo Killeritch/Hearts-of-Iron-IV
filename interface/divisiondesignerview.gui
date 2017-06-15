@@ -624,11 +624,12 @@ guiTypes = {
 		containerWindowType = {
 			name = "div_templ_custom_icon_view"
 			position = { x=13 y=47 }
-			size = { width=512 height=447 }
+			size = { width=532 height=447 }
 			moveable = no
 			fade_time = 500
 			fade_type = linear
 			show_sound = pop_up
+			verticalScrollbar = "right_vertical_slider"
 
 			background = {
 				name = "Background"		

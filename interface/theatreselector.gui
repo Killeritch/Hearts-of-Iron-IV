@@ -331,10 +331,10 @@ guiTypes = {
 		verticalScrollbar = "right_vertical_sliderno_bg"
 		clipping = yes
 		
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_transparent_transparent"
-			}
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_transparent_transparent"
+		}
 		
 		gridBoxType = {
 			name = "elements_list"

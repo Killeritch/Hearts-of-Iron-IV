@@ -2,9 +2,13 @@
 equipments = {
 
 	medium_tank_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_medium_tank_equipment		
 		is_buildable = no
+		is_convertable = yes
 		type = armor
 		group_by = archetype
 		
@@ -46,17 +50,23 @@ equipments = {
 
 	# 1939
 	medium_tank_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_equipment
 		priority = 50
 		visual_level = 0
+		is_convertable = yes
 	}
 
 	# 1941
 	medium_tank_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_1
 		priority = 50
 		visual_level = 1
+		is_convertable = yes
 						
 		#Misc Abilities
 		maximum_speed = 9
@@ -82,10 +92,13 @@ equipments = {
 
 	# 1943
 	medium_tank_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_2
 		priority = 50
 		visual_level = 2
+		is_convertable = yes
 		
 		#Misc Abilities
 		maximum_speed = 10
@@ -110,7 +123,10 @@ equipments = {
 	}
 
 	medium_tank_artillery_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_medium_tank_equipment		
 		is_buildable = no
 		family = medium_tank_equipment
@@ -155,19 +171,29 @@ equipments = {
 	}
 
 	medium_tank_artillery_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_artillery_equipment
 		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
-
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
 	}
 
 	medium_tank_artillery_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
 		family = medium_tank_equipment_2
 		priority = 60
 		visual_level = 1
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -191,11 +217,17 @@ equipments = {
 	}
 
 	medium_tank_artillery_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_2
 		family = medium_tank_equipment_3
 		priority = 60
 		visual_level = 2
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -219,7 +251,10 @@ equipments = {
 	}
 
 	medium_tank_destroyer_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_medium_tank_equipment		
 		is_buildable = no
 		family = medium_tank_equipment
@@ -265,19 +300,30 @@ equipments = {
 
 	# 1939
 	medium_tank_destroyer_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_destroyer_equipment
 		family = medium_tank_equipment_1
 		priority = 80
 		visual_level = 0
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
 	}
 
 	# 1941
 	medium_tank_destroyer_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_1
 		family = medium_tank_equipment_2
 		priority = 80
 		visual_level = 1
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -303,11 +349,17 @@ equipments = {
 
 	# 1943
 	medium_tank_destroyer_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_2
 		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 
 		#Misc Abilities
 		maximum_speed = 10
@@ -333,7 +385,10 @@ equipments = {
 
 
 	medium_tank_aa_equipment = {
+		year = 1934
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_medium_tank_equipment		
 		is_buildable = no
 		family = medium_tank_equipment
@@ -378,19 +433,30 @@ equipments = {
 	}
 
 	medium_tank_aa_equipment_1 = {
+		year = 1939
+
 		archetype = medium_tank_aa_equipment
 		family = medium_tank_equipment_1
 		priority = 70
 		visual_level = 0
+		can_convert_from = { 
+			medium_tank_equipment_1 
+		}
 
 	}
 
 	medium_tank_aa_equipment_2 = {
+		year = 1941
+
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
 		family = medium_tank_equipment_2
 		priority = 70
 		visual_level = 1
+		can_convert_from = { 
+			medium_tank_equipment_1 
+			medium_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 9
@@ -416,11 +482,17 @@ equipments = {
 	}
 
 	medium_tank_aa_equipment_3 = {
+		year = 1943
+
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_2
 		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
+		can_convert_from = { 
+			medium_tank_equipment_2
+			medium_tank_equipment_3
+		}
 		
 		#Misc Abilities
 		maximum_speed = 10

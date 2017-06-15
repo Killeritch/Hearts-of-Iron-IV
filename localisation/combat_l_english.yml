@@ -127,7 +127,7 @@
  NAVAL_COMBAT_RESULT_SUNK_BY:0 "$NAME|Y$ (sunk by $KILLER|Y$)"
  LAND_COMBAT_CAS_INFO:0 "Total shot down: $LOST|R$\n£organization_texticon Damage $ORG|R0$\n£strenght_texticon Damage: $STR|R0$"
  LAND_COMBAT_CAS_INFO_TOOLTIP:1 "Around $NUM|Y$ support planes from the $SIDE$ side have recently managed to help out in this combat.\nThey have dealt $ORG|G0$ damage to §YOrganization§!, the current enemy §YOrganization§! is $ORG_MAX|G0$.\nThey have dealt $STR|G0$ damage to §YStrength§!, the current enemy §YStrength§! is $STR_MAX|G0$.\nThe enemy divisions §YAnti Air§! managed to shoot down $KILL|R$ planes in total."
- LAND_COMBAT_CAS_INFO_TOOLTIP_DETAIL:0 "The max amount of planes that can help out are $MAX_PLANES|Y$. The bigger the used Combat Width is, the more planes can fit."
+ LAND_COMBAT_CAS_INFO_TOOLTIP_DETAIL:0 "The max amount of planes that can help out are $MAX_PLANES|Y$. The larger the used Combat Width is, the more planes can fit."
  SHIP_KILLS_AND_ASSISTS:0 "Sunk $SUNK|G$ enemy ships.\n$ASS|G$ assisted kills."
  CARRIER_STACK_PENALTY_DESC:0 "Too many carrier ships. Air traffic limited to $PERC|%R0$ of the air wings."
  CARRIER_STACK_PENALTY_LORE:0 "§LThe ideal composition of a fast-carrier task force is four carriers, six to eight support vessels and not less than 18 destroyers, preferably 24. More than four carriers in a task group cannot be advantageously used due to the amount of air room required. Less than four carriers requires an uneconomical use of support ships and screening vessels.\nAdmiral Marc Mitscher§!"

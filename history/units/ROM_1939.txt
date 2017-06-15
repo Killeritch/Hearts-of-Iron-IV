@@ -140,7 +140,7 @@ units = {
 		location = 9617
 		division_template = "Blindata Brigada"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		force_equipment_variants = { gw_tank_equipment = { owner = "ROM" creator = "FRA" amount = 72 } }
 
 	}
 

@@ -1173,6 +1173,8 @@
  ### YUG - YUGOSLAVIA ###
  YUG_submarine_1:0 "Hrabri Class"
  YUG_submarine_1_desc:0 "The two Hrabri class submarines were originally laid down as British L-class submarines for the Royal Navy, but were sold and ultimately completed for Yugoslavia using a modified design in 1928. They were large submarines, displacing 975 tons, and were armed with six 533mm torpedo tubes."
+ YUG_submarine_2:0 "Osvetnik Class"
+ YUG_submarine_2_desc:0 "The two Osvetnik-class submarines were designed and built in France on the design of the Circe-class submarines. They were somewhat smaller than the preceeding Hrabri-class submarines. Equipped with six 533mm torpedo tubes, they still packed a comparable punch."
  YUG_destroyer_1:0 "Dubrovnik Class"
  YUG_destroyer_1_desc:0 "The Dubrovnik destroyer was the largest ship in the Yugoslav fleet at the time of its purchase. The ship was built in the U.K. and delivered to Yugoslavia in 1932. It was a large destroyer, displacing 1,880 tons. It was armed with four 140mm/53 Skoda guns, a strong AA complement, six 533mm torpedo tubes, and good ASW equipment."
  YUG_destroyer_2:0 "Beograd Class"

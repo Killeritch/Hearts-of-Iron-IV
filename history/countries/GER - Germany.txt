@@ -32,6 +32,7 @@ set_technology = {
 	basic_light_cruiser = 1
 	early_heavy_cruiser = 1
 	early_battleship = 1
+	basic_battleship = 1
 	early_battlecruiser = 1
 	mobile_warfare = 1
 	trade_interdiction = 1
@@ -151,8 +152,10 @@ create_import = {
 		paratroopers = 1
 		basic_heavy_cruiser = 1
 		improved_heavy_cruiser = 1
-		basic_battleship = 1
 		improved_battleship = 1
+		early_carrier = 1
+		basic_carrier = 1
+		improved_carrier = 1
 
 		#doctrines
 		delay = 1
@@ -348,7 +351,7 @@ create_corps_commander = {
 	name = "Wilhelm List"
 	picture = "Portrait_Germany_Wilhelm_List.dds"
 	traits = {  }
-	skill = 1
+	skill = 2
 	id = 7
 }
 
@@ -357,23 +360,23 @@ create_corps_commander = {
 	desc = ""
 	picture = "Portrait_Germany_Ewald_von_Kleist.dds"
 	traits = {  }
-	skill = 1
+	skill = 2
 	id = 8
 }
 
 create_corps_commander = {
 	name = "Fedor von Bock"
-		picture = "Portrait_Germany_Fedor_von_Bock.dds"
+	picture = "Portrait_Germany_Fedor_von_Bock.dds"
 	traits = {  }
 	skill = 4
 	id = 9
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Walter Model"
 	picture = "Portrait_Germany_Walter_Model.dds"
-	traits = {  }
-	skill = 1
+	traits = { defensive_doctrine }
+	skill = 2
 	id = 10
 }
 

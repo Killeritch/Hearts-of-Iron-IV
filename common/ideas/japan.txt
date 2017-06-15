@@ -266,6 +266,21 @@ ideas = {
 			
 			traits = { compassionate_gentleman }
 		}
+
+		takuo_godo = {
+
+			picture = GFX_idea_takuo_godo
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
 	}
 		
 	# MILITARY
@@ -455,6 +470,12 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 3
+				modifier = {
+					factor = 3
+					NOT = {
+						JAP = { has_war_with = USA }
+					}
+				}
 			}
 		}
 		

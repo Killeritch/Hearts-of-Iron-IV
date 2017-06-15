@@ -276,7 +276,7 @@
  tfv_new_zealand.1.b:0 "Aceitar a participação deles neste momento só nos deixaria abertos para um possível conflito em uma área distante."
  tfv_new_zealand.2.t:0 "Participação no Comintern aprovada"
  tfv_new_zealand.2.desc:0 "Após cautelosa consideração, o comitê central do Comintern aprovou nosso pedido de participação."
- tfv_new_zealand.2.a:0 "Lado a lado, [ROOT.GetNameDef] e [From.GetFactionName] seguirão rumo ao futuro!"
+ tfv_new_zealand.2.a:1 "[ROOT.GetNameDef] e [From.GetFactionName] marcharão lado a lado!"
  tfv_new_zealand.3.t:0 "Participação no Comintern recusada"
  tfv_new_zealand.3.desc:0 "Nossa delegação teve que aguentar um longo discurso do presidente do Comintern, explicando que um país tão pequeno quanto o nosso não pode ser o tipo de nação industrial desenvolvida capaz de produzir uma revolução comunista Nós, aparentemente, somos outra coisa. De qualquer modo, não podemos fazer parte do Comintern."
  tfv_new_zealand.3.a:0 "Talvez sejam eles os errados?"

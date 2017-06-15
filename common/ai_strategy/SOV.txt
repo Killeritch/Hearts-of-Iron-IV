@@ -17,17 +17,166 @@ SOV_unit_production = {
 	abort = {
 		always = no
 	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 20 #because doctrine 70
+	}
+	
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 70
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -35 #because doctrine this = 15
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 5
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 5
+	}
+	
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 5
+	}
+	
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 35
+	}
 
 	ai_strategy = {
 		type = unit_ratio
-		id = motorized
-		value = 2
+		id = submarine
+		value = -150 #because doctrine this = 50
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 20 # double original
+		value = 30
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 30
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = 5
+	}
+}	
+
+SOV_anti_armor = {
+	enable = {
+		original_tag = SOV
+		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
+		
+		any_enemy_country = {
+			ROOT = {
+				estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+				}
+			}
+		}
+	}
+	abort = {
+		ai_wants_divisions < 6 #Decreasing the amount of motorized the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = anti_armor
+		value = 15
 	}
 }
 
@@ -277,7 +426,7 @@ spanish_civil_war = {
 	}	
 }
 
-SOV_template_design = {
+SOV_template_design_1 = {
 	enable = {
 		original_tag = SOV
 		date < 1940.1.1				
@@ -329,7 +478,7 @@ SOV_template_design = {
 	}
 }
 
-SOV_template_design = {
+SOV_template_design_2 = {
 	enable = {
 		original_tag = SOV
 		date > 1940.1.1				
@@ -382,4 +531,48 @@ SOV_template_design = {
 		id = infantry
 		value = 10
 	}
+}
+
+SOV_pp_spending = {
+	enable = {
+		original_tag = SOV
+		has_manpower < 100000
+		has_political_power < 200
+	}
+	abort = {
+		OR = {
+			has_manpower > 100000
+			has_political_power > 200
+			date > 1944.1.1
+		}
+	}
+
+	ai_strategy = { # dont burn PP on admirals if you need manpower laws
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+}
+
+SOV_play_nice_with_ribbentrop_pact = {
+	enable = {
+		tag = SOV
+		has_global_flag = sov_yes_pact		
+		GER = { has_war_with = POL }
+		date < 1941.1.1
+	}
+	abort = {
+		OR ={
+			GER = { has_war_with = SOV }
+			NOT = { GER = { has_war_with = POL } }
+			date > 1941.1.1
+		}
+	}
+	
+	# respect the spirit of the law ;)
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "POL"
+		value = -100
+	}	
 }

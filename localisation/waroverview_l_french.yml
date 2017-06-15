@@ -29,7 +29,13 @@
  WARSCORE_PARTICIPATION:0 "A contribué à hauteur d'environ §Y$VALUE$%§! à l'effort de guerre."
  WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$"
  WARSCORE_BREAKDOWN:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$\nPertes : $CASUALTIES|Y0$"
-
+ INDUSTRY:0 "Industrie"
+ INDUSTRY_COUNTRY:0 "§T$COUNTRY|H$ compte $VAL|H$ usines au total§!"
+ FIELDER_MANPOWER:0 "Réserves sur le terrain : $MAN|Y*$"
+ MANPOWER_LOSSES:0 "Pertes : $LOSS|Y*$"
+ MANPOWER_LOSSES_GOOD:0 "Pertes : $LOSS|G*$"
+ MANPOWER_LOSSES_BAD:0 "Pertes : $LOSS|R*$"
+ WAR_OVERVIEW_CAPITULATE_STATUS:0 "Ce pays a capitulé et ne peut plus empêcher son camp de se rendre. Pour renoncer à la capitulation, il doit revendiquer sa capitale et être au maximum à $LEVEL|%Y0$ de la capitulation. Il en est actuellement à $CURRENT|%Y0$."
 
 
 ######################

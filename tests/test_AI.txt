@@ -2,6 +2,19 @@ last_date = "1995.1.1"
 
 tests = {
 
+	soviet_design_anti_tank = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1955.1.1"
+             SOV = { ai_has_role_template = anti_armor }
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+    }
+
 	england_has_fallen = {
          success = {
              date > "1936.1.1"
@@ -33,6 +46,32 @@ tests = {
 
          fail = {
              date > "1945.1.1"
+         }
+    }
+	
+	sov_design_garrison = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1945.1.1"
+             SOV = { ai_has_role_template = garrison }
+         }
+
+         fail = {
+             date > "1941.1.1"
+         }
+    }
+	
+	sov_fields_garrison = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1945.1.1"
+             SOV = { ai_has_role_division = garrison }
+         }
+
+         fail = {
+             date > "1941.1.1"
          }
     }
 	
@@ -151,4 +190,33 @@ tests = {
              date > "1955.1.1"
          }
 	}
+
+
+    ROM_joined_GER = {
+         success = {
+             date > "1936.1.1"
+             date < "1943.1.1"
+             ROM = {  
+                is_in_faction_with = GER
+            }
+         }
+
+         fail = {
+             date > "1942.1.1"
+         }
+    }
+
+        HUN_joined_GER = {
+         success = {
+             date > "1936.1.1"
+             date < "1943.1.1"
+             ROM = {  
+                is_in_faction_with = GER
+            }
+         }
+
+         fail = {
+             date > "1942.1.1"
+         }
+    }
 }

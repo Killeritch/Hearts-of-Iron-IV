@@ -110,7 +110,7 @@
 			"Falco" "Europa" "Giuseppe Miraglia" 
 		} 
 	} 
-
+	air_wing_names_template = AIR_WING_NAME_ITA_FALLBACK
 
 	infantry = { 
 		prefix = "" 

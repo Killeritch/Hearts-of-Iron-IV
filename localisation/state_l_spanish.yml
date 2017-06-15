@@ -56,3 +56,4 @@
  UNLOCKED_SLOTS_STATE_EXTRA:0 "Ranuras adicionales en este estado: $NUM|Y$"
  OCCUPATION_BREAKDOWN:0 "Análisis de ocupación:"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Total aptos para el servicio (estado no esencial): §R-$VAL|%$§!"
+ PROVINCE_STATE_IMPASSABLE:0 "§RZona infranqueable - Las tropas no pueden entrar.§!"

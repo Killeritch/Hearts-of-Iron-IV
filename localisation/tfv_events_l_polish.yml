@@ -276,7 +276,7 @@
  tfv_new_zealand.1.b:0 "Przyjęcie ich teraz do naszego grona mogłoby wystawić nas na niebezpieczeństwo konfliktu w odległym miejscu."
  tfv_new_zealand.2.t:0 "Zgoda na członkostwo w Kominternie"
  tfv_new_zealand.2.desc:0 "Po długim namyśle Komitet Centralny Kominternu zgodził się na nasze członkostwo."
- tfv_new_zealand.2.a:0 "Ramię w ramię [ROOT.GetNameDef] i [From.GetFactionName] pomaszerują ku przyszłości!"
+ tfv_new_zealand.2.a:1 "[ROOT.GetNameDef] i [From.GetFactionName] pomaszerują ramię w ramię!"
  tfv_new_zealand.3.t:0 "Odmowa przyjęcia do Kominternu"
  tfv_new_zealand.3.desc:0 "Nasza delegacja musiała wysłuchać długiego wykładu przewodniczącego Kominternu, który wyjaśnił, że kraj tak mały jak nasz nie jest państwem uprzemysłowionym, w którym można by przeprowadzić rewolucję komunistyczną. Okazuje się, że nie pasujemy i dlatego nie możemy stać się częścią Kominternu."
  tfv_new_zealand.3.a:0 "A może to oni się mylą?"

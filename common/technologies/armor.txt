@@ -169,7 +169,23 @@ technologies = {
 		start_year = 1934
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			
+			modifier = {
+				factor = 100
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 25
+						}
+					}
+				}
+			}
 
 			modifier = {
 				factor = 0
@@ -313,7 +329,23 @@ technologies = {
 		start_year = 1936
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+
+			modifier = {
+				factor = 120
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 27
+						}
+					}
+				}
+			}
 
 			modifier = {
 				factor = 0
@@ -442,7 +474,23 @@ technologies = {
 		start_year = 1941
 		
 		ai_will_do = {
-			factor = 0
+			factor = 1
+			
+			modifier = {
+				factor = 130
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 27
+						}
+					}
+				}
+			}
 		}
 		
 		categories = {
@@ -534,6 +582,12 @@ technologies = {
 				factor = 1.1
 				date > "1942.1.1"
 			}
+			
+			modifier = {
+				factor = 15.0
+				tag = GER
+				has_opinion_modifier = sov_ger_treaty
+			}
 		}
 		
 		categories = {
@@ -554,6 +608,22 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 140
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
+			}
 
 			modifier = {
 				factor = 0
@@ -737,6 +807,22 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 150
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
 
 			modifier = {
 				factor = 0
@@ -869,21 +955,22 @@ technologies = {
 			advanced_medium_spaa
 		}
 		
+
 		ai_will_do = {
 			factor = 1
 			
 			modifier = {
-				factor = 1.1
+				factor = 1.2
 				date > "1944.1.1"
 			}
 			
 			modifier = {
-				factor = 1.1
+				factor = 1.2
 				date > "1945.1.1"
 			}
 			
 			modifier = {
-				factor = 1.1
+				factor = 1.2
 				date > "1946.1.1"
 			}
 		}
@@ -905,6 +992,22 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			
+			modifier = {
+				factor = 160
+				OR = {
+					tag = GER
+					tag = SOV
+				}
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
+			}
 
 			modifier = {
 				factor = 0
@@ -1189,7 +1292,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 			
 			modifier = {
 				factor = 1.2
@@ -1333,7 +1436,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 			
 			modifier = {
 				factor = 1.2
@@ -1472,7 +1575,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 			
 			modifier = {
 				factor = 1.2
@@ -1600,7 +1703,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0 # Hitler cries on the inside
 		}
 		
 		categories = {

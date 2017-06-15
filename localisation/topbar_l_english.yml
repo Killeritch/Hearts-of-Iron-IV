@@ -46,6 +46,7 @@
  NO_THREAT_SOURCES:0 "§HNo current sources of tension§!"
  NO_THREAT_SOURCES_WINDOW:0 "The history is empty"
  GENERATE_WAR_GOAL_THREAT:0 "Justify War goal ($TYPE$) on $TARGET$"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "War goal justification against $TARGET$ canceled"
  THREAT_CB_WAR:0 "Declared war on $TARGET$"
  THREAT_NO_CB_WAR:0 "Declared unjustified war on $TARGET$"
  THREAT_ANNEX_STATE:0 "Annexed state(s)"

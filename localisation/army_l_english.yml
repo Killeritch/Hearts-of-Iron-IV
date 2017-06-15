@@ -1,4 +1,5 @@
 ﻿l_english:
+ ARMY_TEMPLATE_INFO:0 "$NAME$: $COUNT|H$"
  ARMY_ARMY_LABEL:0 "Division Overview"
  ARMY_NAVY_LABEL:0 "Navy Overview"
  ARMY_AIR_LABEL:0 "Air Forces Overview"

@@ -53,3 +53,6 @@
  MASTER_SURRENDER_FREEDOM_EFFECT:0 "Władca skapitulował"
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RWniosek o lend-lease z państwem marionetkowym może dać mu większą autonomię§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RWniosek o lend-lease z władcą może spowodować utratę autonomii§!"
+ autonomy_reichskommissariat:0 "Reichskommissariat"
+ autonomy_reichsprotectorate:0 "Reichsprotektorat"
+ autonomy_satellite:0 "Satelita"

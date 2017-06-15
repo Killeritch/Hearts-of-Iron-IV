@@ -12,6 +12,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_air_detection_strip"
+		textureFile = "gfx/interface/air_detection_strip.dds"
+		noOfFrames = 3
+	}
+
+	spriteType = {
 		name = "GFX_mission_spread_warning_icon"
 		texturefile = "gfx/interface/mission_spread_warning_icon.dds"
 	}
@@ -213,6 +219,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_wing_reinforce_small_btn"
+		textureFile = "gfx/interface/wing_reinforce_small_btn.dds"
+	}	
+	
+	spriteType = {
 		name = "GFX_wing_icon_background"
 		textureFile = "gfx/interface/strategicair/wing_icon_background.dds"
 		noOfFrames = 3
@@ -320,7 +331,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_strategicair_mission_btn_bg"
 		textureFile = "gfx/interface/strategicair/mission_btn_bg.dds"
-		noOfFrames = 2
+		noOfFrames = 4
 	}
 	
 	spriteType = {
@@ -347,15 +358,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_aggressivness_btn"
 		textureFile = "gfx/interface/strategicair/aggressivness_btn.dds"
-		noOfFrames = 3
+		noOfFrames = 6
 	}	
+
+	spriteType = {
+		name = "GFX_aggressivness_icons"
+		textureFile = "gfx/interface/strategicair/aggressivness_icons.dds"
+		noOfFrames = 6
+	}
 	
 	spriteType = {
 		name = "GFX_strategicair_day_night"
 		textureFile = "gfx/interface/strategicair/day_night.dds"
-		noOfFrames = 3
+		noOfFrames = 6
 	}
 
+	spriteType = {
+		name = "GFX_strategicair_day_night_icons"
+		textureFile = "gfx/interface/strategicair/day_night_icons.dds"
+		noOfFrames = 6
+	}	
+	
 	progressbartype = {
 		name = "GFX_strategicair_progress"
 		color = { 0.0 0.5 0.0 }
@@ -384,7 +407,20 @@ spriteTypes = {
 		name = "GFX_wing_types_own"
 		textureFile = "gfx/interface/strategicair/wing_types_own.dds"
 		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_wing_types_map"
+		textureFile = "gfx/interface/strategicair/wing_types_map.dds"
+		noOfFrames = 24
+	}
+
+	spriteType = {
+		name = "GFX_damage_types_strip"
+		textureFile = "gfx/interface/strategicair/damage_types_strip.dds"
+		noOfFrames = 6
 	}	
+	
 	spriteType = {
 		name = "GFX_strategicair_details_btn"
 		textureFile = "gfx/interface/strategicair/details_btn.dds"

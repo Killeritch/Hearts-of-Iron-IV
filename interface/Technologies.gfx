@@ -1604,7 +1604,7 @@ spriteTypes = {
 	}	
 	
 	### INDUSRTY TECH ###
-
+	
 	SpriteType = {
 		name = "GFX_excavation5_medium"
 		texturefile = "gfx/interface/technologies/excavation5.dds"
@@ -1660,6 +1660,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
 	}	
 	
+	SpriteType = {
+		name = "GFX_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion2.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_concentrated_industry_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
@@ -2309,11 +2319,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_CAS3_medium"
 		texturefile = "gfx/interface/technologies/ENG_CAS3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_ENG_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter_equipment_1.dds"
 	}
 	
 	SpriteType = {
@@ -3389,12 +3394,12 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_suicide_craft_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor.dds"
+		texturefile = "gfx/interface/technologies/JAP_suicide_craft_medium.dds"
 	}
 	
 	SpriteType = {
 		name = "GFX_JAP_suicide_craft_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor.dds"
+		texturefile = "gfx/interface/technologies/JAP_suicide_craft_medium.dds"
 	}
 	
 	SpriteType = {
@@ -3514,10 +3519,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/GER_early_fighter.dds"
 	}
 	
-#	SpriteType = {
-#		name = "GFX_GER_fighter_equipment_1_medium"
-#		texturefile = "gfx/interface/technologies/GER_fighter_equipment_1.dds"
-#	}
 		
 	### LAND DOCTRINES #############
 	SpriteType = {
@@ -3866,11 +3867,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_commonwealth_2d_CAS3_medium"
 		texturefile = "gfx/interface/technologies/ENG_CAS3.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_commonwealth_2d_fighter_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/ENG_fighter_equipment_1.dds"
 	}
 	
 	SpriteType = {

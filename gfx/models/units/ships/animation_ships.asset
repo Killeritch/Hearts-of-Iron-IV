@@ -207,5 +207,27 @@ animation = {
 }
 
 
+####
+# SUBMARINE
+####
+animation = {
+	name = "generic_submarine_death_animation"
+	file = "generic_submarine_death.anim"
+}
+
+animation = {
+	name = "generic_submarine_attack_animation"
+	file = "generic_submarine_attack.anim"
+}
+
+animation = {
+	name = "generic_submarine_defend_animation"
+	file = "generic_submarine_defend.anim"
+}
+
+animation = {
+	name = "generic_submarine_idle_animation"
+	file = "generic_submarine_idle.anim"
+}
 
 

@@ -216,7 +216,7 @@ guiTypes = {
 			position = { x = 70 y = 58 }
 			font = "hoi_18mbs"
 			text = "Stuff"
-		 	maxWidth = 120
+		 	maxWidth = 60
 			maxHeight = 20
 			format = left
 		}
@@ -232,7 +232,7 @@ guiTypes = {
 			position = { x = 160 y = 58 }
 			font = "hoi_18mbs"
 			text = "Stuff"
-		 	maxWidth = 120
+		 	maxWidth = 50
 			maxHeight = 20
 			format = left
 		}

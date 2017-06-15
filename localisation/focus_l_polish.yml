@@ -1461,7 +1461,7 @@
  SAF_demand_madagascar:0 "Żądanie Madagaskaru"
  SAF_demand_madagascar_desc:0 "Biorąc pod uwagę radykalne zmiany sytuacji w Europie, czas przewartościować cały system kolonialny. Dlaczego Madagaskar ma być przykuty do walącego się imperium."
  SAF_invite_soviet_advisers:0 "Zaproszenie radzieckich doradców"
- SAF_invite_soviet_advisers_desc:0 "Jeśli [SOV.GetNameDef] ma otrzymać nasze wsparcie w walce o wolność dla robotników, musimy ulepszyć swoje wojsko, ucząc się od naszego partnera."
+ SAF_invite_soviet_advisers_desc:3 "Jeśli Związek Radziecki ma otrzymać nasze wsparcie w walce o wolność dla robotników, musimy ulepszyć swoje wojsko, ucząc się od naszego partnera."
  SAF_south_african_soviet_research_treaty:0 "Traktat badawczy z ZSRR"
  SAF_south_african_soviet_research_treaty_desc:0 "Po wielu cennych lekcjach udzielonych nam przez naszych radzieckich przyjaciół przyszedł czas pogłębić relacje i zawrzeć formalne porozumienie."
  SAF_anti_colonialist_crusade:0 "Antykolonialna krucjata"

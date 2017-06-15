@@ -68,6 +68,14 @@ sub_units = {
 		type = { interceptor }
 		need = { rocket_interceptor_equipment = 1 }
 	}
+
+	suicide_craft = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { suicide }
+		need = { suicide_craft_equipment = 1 }
+	}
 	
 	tac_bomber = {
 		sprite = medium_plane

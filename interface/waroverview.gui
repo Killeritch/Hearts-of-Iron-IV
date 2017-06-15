@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 			name = "waroverview_window"
-			size = { width = 1024 height = 593}
+			size = { width = 1167 height = 593}
 			position = { x=-350 y=-250 }
 			Orientation = center
 			moveable = yes
@@ -14,7 +14,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "header_desc"
-			position = { x = -176 y = 23 }
+			position = { x = -177 y = 23 }
 			font = "hoi_24header"
 			text = "We forgot what this was about"
 			Orientation = center_up
@@ -26,109 +26,161 @@ guiTypes = {
 		iconType = {
 			name = "warscore_progressbar"
 			spriteType = "GFX_warscore_progressbar"
-			position = { x=222 y=71 }
+			position = { x=302 y=71 }
 		}
 
 		iconType = {
 			name = "warscore_progressbar_frame"
 			spriteType = "GFX_warscore_progressbar_frame"
-			position = { x=216 y=66 }
+			position = { x=295 y=66 }
 			alwaystransparent = yes
 		}	
 		
-		instantTextboxType = {
+		buttonType = {
 			name = "attacker_participants"
-			position = { x = 32 y = 118 }
+			position = { x = 32 y = 107 }
+			quadTextureSprite ="GFX_button_148x34"
 			font = "hoi_18mbs"
-			text = "PARTICIPANTS"
-			maxWidth = 350
-			maxHeight = 30
+			buttonText = "PARTICIPANTS"
 		}
 		
 		instantTextboxType = {
 			name = "attacker_wargoal"
-			position = { x = 228 y = 118 }
+			position = { x = 225 y = 116 }
 			font = "hoi_18mbs"
 			text = "WARGOAL"
-			maxWidth = 90
+			maxWidth = 80
 			maxHeight = 30
 		}
 
-		iconType ={
+		buttonType ={
 			name ="attacker_warscore"
 			quadTextureSprite = "GFX_warscore_icon"
-			position = { x = 304 y = 116 }
-		}		
-		
-		iconType ={
+			position = { x = 305 y = 112 }
+			pdx_tooltip = "WARSCORE_TITLE"
+		}
+
+		buttonType ={
 			name ="attacker_divisions"
 			quadTextureSprite = "GFX_division_icon"
-			position = { x= 367 y = 116 }
+			position = { x= 367 y = 114 }
+			pdx_tooltip = "DIVISIONS"
 		}
-			
-		iconType ={
+
+		buttonType ={
+			name ="attacker_ic"
+			quadTextureSprite = "GFX_industrial_capacity_icon"
+			position = { x= 442 y = 111 }
+			pdx_tooltip = "INDUSTRY"
+		}
+
+		buttonType ={
 			name ="attacker_casualty"
 			quadTextureSprite = "GFX_casuality_icon"
-			position = { x= 433 y = 118 }
+			position = { x= 510 y = 114 }
+			pdx_tooltip = "CASUALTY"
 		}
-		
+
 		instantTextboxType = {
 			name = "attacker_allies"
-			position = { x = 32 y = 398 }
+			position = { x = 32 y = 395 }
 			font = "hoi_18mbs"
 			text = "ALLIES_NOT_IN_WAR"
 			maxWidth = 350
 			maxHeight = 30
 		}
 		
-		instantTextboxType = {
+		buttonType = {
 			name = "defender_participants"
-			position = { x = 530 y = 118 }
+			position = { x = 602 y = 107 }
+			quadTextureSprite ="GFX_button_148x34"
 			font = "hoi_18mbs"
-			text = "PARTICIPANTS"
-			maxWidth = 350
-			maxHeight = 30
+			buttonText = "PARTICIPANTS"
 		}
 		
 		instantTextboxType = {
 			name = "defender_wargoal"
-			position = { x = 730 y = 118 }
+			position = { x = 798 y = 116 }
 			font = "hoi_18mbs"
 			text = "WARGOAL"
-			maxWidth = 350
+			maxWidth = 80
 			maxHeight = 30
 		}
 
-		iconType ={
+
+		buttonType ={
 			name ="defender_warscore"
 			quadTextureSprite = "GFX_warscore_icon"
-			position = { x = 803 y = 116 }
+			position = { x = 875 y = 112 }
+			pdx_tooltip = "WARSCORE_TITLE"
 		}
 
-		iconType ={
+		buttonType ={
 			name ="defender_divisions"
 			quadTextureSprite = "GFX_division_icon"
-			position = { x= 863 y = 116 }
+			position = { x= 935 y = 114 }
+			pdx_tooltip = "DIVISIONS"
 		}
 		
-		iconType ={
+		buttonType ={
+			name ="defender_ic"
+			quadTextureSprite = "GFX_industrial_capacity_icon"
+			position = { x= 1010 y = 111 }
+			pdx_tooltip = "INDUSTRY"
+		}
+
+		buttonType ={
 			name ="defender_casualty"
 			quadTextureSprite = "GFX_casuality_icon"
-			position = { x= 929 y = 118 }
+			position = { x= 1078 y = 114 }
+			pdx_tooltip = "CASUALTY"
 		}
 		
 		instantTextboxType = {
 			name = "defender_allies"
-			position = { x = 528 y = 398 }
+			position = { x = 605 y = 395 }
 			font = "hoi_18mbs"
 			text = "ALLIES_NOT_IN_WAR"
 			maxWidth = 350
 			maxHeight = 30
 		}
+
+		instantTextboxType = {
+			name = "attacker_fielded_man"
+			position = { x = 20 y = 60 }
+			font = "hoi_18mbs"
+			maxWidth = 250
+			maxHeight = 30
+			format = center
+		}
+		instantTextboxType = {
+			name = "attacker_losses"
+			position = { x = 20 y = 80 }
+			font = "hoi_18mbs"
+			maxWidth = 250
+			maxHeight = 30
+			format = center
+		}
+		instantTextboxType = {
+			name = "defender_fielded_man"
+			position = { x = 900 y = 60 }
+			font = "hoi_18mbs"
+			maxWidth = 250
+			maxHeight = 30
+			format = center
+		}
+		instantTextboxType = {
+			name = "defender_losses"
+			position = { x = 900 y = 80 }
+			font = "hoi_18mbs"
+			maxWidth = 250
+			maxHeight = 30
+			format = center
+		}
 		
 		containerWindowType = {
 			name = "attacker_window"
-			size = { width = 480 height = 220}
+			size = { width = 555 height = 220}
 			position = { x=25 y=152 }
 			margin = { top = 5 bottom = 5 }
 			verticalScrollbar = "right_vertical_slider"
@@ -143,7 +195,7 @@ guiTypes = {
 				name = "attacker_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 474 height = 42 }
+				slotsize = { width = 556 height = 42 }
 				max_slots_horizontal = 1
 				#format = "UPPER_LEFT"
 			}
@@ -151,8 +203,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "defender_window"
-			size = { width = 480 height = 220}
-			position = { x=522 y=152 }
+			size = { width = 555 height = 220}
+			position = { x=593 y=152 }
 			margin = { top = 5 bottom = 5 }
 			verticalScrollbar = "right_vertical_slider"
 
@@ -166,7 +218,7 @@ guiTypes = {
 				name = "defender_grid"
 				position = { x = 0 y = 0 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 474 height = 42 }
+				slotsize = { width = 556 height = 42 }
 				max_slots_horizontal = 1
 				#format = "UPPER_LEFT"
 			}
@@ -174,8 +226,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "attacker_ally_window"
-			size = { width = 484 height = 139}
-			position = { x=22 y=425 }
+			size = { width = 600 height = 139}
+			position = { x=28	 y=425 }
 			margin = { top = 10 bottom = 1 }
 			verticalScrollbar = "right_vertical_slider"
 
@@ -197,8 +249,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "defender_ally_window"
-			size = {  width = 484 height = 139}
-			position = { x=521 y=425 }
+			size = {  width = 600 height = 130}
+			position = { x=598 y=425 }
 			margin = { top = 10 bottom = 1 }
 			verticalScrollbar = "right_vertical_slider"
 
@@ -220,7 +272,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "call_all_allies_attackers"
-			position = { x = 370 y = 388 }
+			position = { x = 428 y = 386 }
 			quadTextureSprite ="GFX_button_123x34"
 			font = "hoi_16mbs"
 			buttonText = "CALL_ALL"
@@ -228,11 +280,12 @@ guiTypes = {
 		
 		buttonType = {
 			name = "call_all_allies_defenders"
-			position = { x = 867 y = 388 }
+			position = { x = 997 y = 386}
 			quadTextureSprite ="GFX_button_123x34"
 			font = "hoi_16mbs"
 			buttonText = "CALL_ALL"
 		}
+		
 		
 		buttonType = {
 			name = "close_button"
@@ -248,7 +301,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "war_ally_entry"
 		position = { x = 0 y = 0 }
-		size = { width = 451 height = 42 }
+		size = { width = 530 height = 41 }
 		
 		Background = {
 			name = "Background"
@@ -265,8 +318,23 @@ guiTypes = {
 			name = "country_flag_frame"
 			position {x= 4 y = 3}
 			spriteType = "GFX_small_flag_frame_thin2"
+			alwaystransparent = yes
 		}		
 		
+		iconType = { 
+			name = "major_country_overlay"
+			position {x= 8 y = 6}
+			spriteType = "GFX_major_country_flag_overlay"
+			alwaystransparent = yes
+		}
+
+		iconType = { 
+			name = "surrender_flag"
+			position {x= 32 y = 17}
+			spriteType = "GFX_surrender_tiny_flag"
+			alwaystransparent = yes
+		}
+
 		instantTextboxType = {
 			name = "country_name"
 			position = { x = 56 y = 4 }
@@ -307,7 +375,16 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "divisions"
-			position = { x = 314 y = 11 }
+			position = { x = 317 y = 11 }
+			font = "hoi_18mbs"
+			maxWidth = 80
+			maxHeight = 30
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "ic"
+			position = { x = 393 y = 11 }
 			font = "hoi_18mbs"
 			maxWidth = 80
 			maxHeight = 30
@@ -316,7 +393,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "casualties"
-			position = { x = 385 y = 11 }
+			position = { x = 466 y = 11 }
 			font = "hoi_18mbs"
 			text = "-"
 			maxWidth = 60
@@ -327,8 +404,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "ally_entry"
-		position = { x = 0 y = 2 }
-		size = { width = 445 height = 42 }
+		position = { x = -64 y = 0 }
+		size = { width = 531 height = 41 }
 		
 		Background = {
 			name = "Background"
@@ -345,8 +422,16 @@ guiTypes = {
 			name = "country_flag_frame"
 			position {x= 4 y = 3}
 			spriteType = "GFX_small_flag_frame_thin2"
-		}		
+			alwaystransparent = yes
+		}
 		
+		iconType = { 
+			name = "major_country_overlay"
+			position {x= 8 y = 6}
+			spriteType = "GFX_major_country_flag_overlay"
+			alwaystransparent = yes
+		}
+
 		instantTextboxType = {
 			name = "country_name"
 			position = { x = 56 y = 8 }
@@ -371,7 +456,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "call"
-			position = { x= 300 y = 3 }
+			position = { x= 400 y = 3 }
 			quadTextureSprite = "GFX_button_123x34"
 			font = "hoi_16mbs"
 			buttonText = "CALL"

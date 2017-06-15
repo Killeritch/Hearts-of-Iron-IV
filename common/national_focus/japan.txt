@@ -505,17 +505,25 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = oust_germans_focus
 		prerequisite = { focus = chinese_war_focus focus = chinese_puppet_focus}
-		bypass = { NOT = { country_exists = CHI } }
 		x = 5
 		y = 2
 		cost = 10
 		icon = GFX_goal_generic_dangerous_deal
 		ai_will_do = {
 			factor = 10
-		}	
+		}
+		
+		bypass = {
+			OR = {
+				NOT = { country_exists = CHI }
+				CHI = { is_puppet_of = ROOT }
+			}
+		}
+
 		completion_reward = {
 			GER = {
 				country_event = germany.24
@@ -529,6 +537,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	focus = {
 		id = found_own_faction_focus
 		available = {

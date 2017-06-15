@@ -32,6 +32,13 @@ autonomy_state = {
 		always = no
 	}
 
+	allowed = {
+		if = {
+			limit = { has_dlc = "Death or Dishonor" }
+			NOT = { has_government = fascism }
+		}
+	}
+
 	can_take_level = {
 		#trigger here
 	}

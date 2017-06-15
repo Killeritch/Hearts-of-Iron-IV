@@ -130,7 +130,7 @@ units = {
 		location = 9203
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -138,7 +138,7 @@ units = {
 		location = 142
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -146,7 +146,7 @@ units = {
 		location = 11181
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -156,7 +156,7 @@ units = {
 		location = 3134
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -169,7 +169,7 @@ units = {
 		location = 149
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -177,7 +177,7 @@ units = {
 		location = 149
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -185,7 +185,7 @@ units = {
 		location = 3151
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -193,7 +193,7 @@ units = {
 		location = 3151
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -205,7 +205,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -214,7 +214,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -239,7 +239,7 @@ units = {
 		location = 104
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -247,7 +247,7 @@ units = {
 		location = 9408
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -255,7 +255,7 @@ units = {
 		location = 9120
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -263,7 +263,7 @@ units = {
 		location = 126
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -273,7 +273,7 @@ units = {
 		location = 415
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -281,7 +281,7 @@ units = {
 		location = 3310
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -289,7 +289,7 @@ units = {
 		location = 3333
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -297,7 +297,7 @@ units = {
 		location = 11202
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -307,7 +307,7 @@ units = {
 		location = 6293
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -315,7 +315,7 @@ units = {
 		location = 6293
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -325,7 +325,7 @@ units = {
 		location = 3219
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -333,7 +333,7 @@ units = {
 		location = 6371
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -341,7 +341,7 @@ units = {
 		location = 6220
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -351,7 +351,7 @@ units = {
 		location = 3267
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -359,7 +359,7 @@ units = {
 		location = 11216
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -370,7 +370,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -379,7 +379,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -388,7 +388,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -406,7 +406,7 @@ units = {
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -414,7 +414,7 @@ units = {
 		location = 6380
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -422,7 +422,7 @@ units = {
 		location = 6380
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -432,7 +432,7 @@ units = {
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -440,7 +440,7 @@ units = {
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -448,7 +448,7 @@ units = {
 		location = 6262
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -461,7 +461,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -470,7 +470,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	# Subordinate to AG
@@ -489,7 +489,7 @@ units = {
 		location = 11241
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -497,7 +497,7 @@ units = {
 		location = 11241
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -505,7 +505,7 @@ units = {
 		location = 11241
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -515,7 +515,7 @@ units = {
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -523,7 +523,7 @@ units = {
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -531,7 +531,7 @@ units = {
 		location = 306
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -542,7 +542,7 @@ units = {
 		location = 9288
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -550,7 +550,7 @@ units = {
 		location = 9288
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -558,7 +558,7 @@ units = {
 		location = 9288
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 			
@@ -568,7 +568,7 @@ units = {
 		location = 3335
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -576,7 +576,7 @@ units = {
 		location = 3335
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	
@@ -586,7 +586,7 @@ units = {
 		location = 11271
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -594,7 +594,7 @@ units = {
 		location = 11271
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -602,7 +602,7 @@ units = {
 		location = 11271
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -613,7 +613,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -626,7 +626,7 @@ units = {
 		location = 215
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -634,7 +634,7 @@ units = {
 		location = 9554
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -642,7 +642,7 @@ units = {
 		location = 9493
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -650,7 +650,7 @@ units = {
 		location = 3470
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -660,7 +660,7 @@ units = {
 		location = 3511
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -668,7 +668,7 @@ units = {
 		location = 6509
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -676,7 +676,7 @@ units = {
 		location = 462
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -686,7 +686,7 @@ units = {
 		location = 3430
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -694,7 +694,7 @@ units = {
 		location = 6455
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -704,7 +704,7 @@ units = {
 		location = 525
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -712,7 +712,7 @@ units = {
 		location = 525
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -723,7 +723,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -732,7 +732,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 	division= {			
@@ -741,7 +741,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -751,7 +751,7 @@ units = {
 		location = 525
 		division_template = "Mekhanizirovaniy Korpus"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -761,7 +761,7 @@ units = {
 		location = 9423
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -769,7 +769,7 @@ units = {
 		location = 9576
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -777,7 +777,7 @@ units = {
 		location = 754
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -785,7 +785,7 @@ units = {
 		location = 11670
 		division_template = "Mekhanizirovaniy Korpus"		# 1x H Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -795,7 +795,7 @@ units = {
 		location = 741
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -803,7 +803,7 @@ units = {
 		location = 11670
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -811,7 +811,7 @@ units = {
 		location = 11670
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -821,7 +821,7 @@ units = {
 		location = 11437
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -829,7 +829,7 @@ units = {
 		location = 11437
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -849,7 +849,7 @@ units = {
 		location = 418
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -857,7 +857,7 @@ units = {
 		location = 418
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -865,7 +865,7 @@ units = {
 		location = 418
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -873,7 +873,7 @@ units = {
 		location = 418
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -883,7 +883,7 @@ units = {
 		location = 3580
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -891,7 +891,7 @@ units = {
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -899,7 +899,7 @@ units = {
 		location = 3580
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -910,7 +910,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -925,7 +925,7 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -934,7 +934,7 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -944,7 +944,7 @@ units = {
 		location = 3656
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -952,7 +952,7 @@ units = {
 		location = 6669
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -960,7 +960,7 @@ units = {
 		location = 12441
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -972,7 +972,7 @@ units = {
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -981,7 +981,7 @@ units = {
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -990,7 +990,7 @@ units = {
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -1001,7 +1001,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -1012,7 +1012,7 @@ units = {
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1020,7 +1020,7 @@ units = {
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1028,7 +1028,7 @@ units = {
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1037,7 +1037,7 @@ units = {
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1045,7 +1045,7 @@ units = {
 		location = 3686
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -1056,7 +1056,7 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -1065,7 +1065,7 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -1074,7 +1074,7 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 	division= {			
@@ -1083,7 +1083,7 @@ units = {
 		division_template = "Kavaleriyskaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -1093,7 +1093,7 @@ units = {
 		location = 9417
 		division_template = "Gornostrelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1102,7 +1102,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -1172,7 +1172,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -1185,7 +1185,7 @@ units = {
 		location = 7763
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1193,7 +1193,7 @@ units = {
 		location = 4725
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1201,7 +1201,7 @@ units = {
 		location = 10655
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1209,7 +1209,7 @@ units = {
 		location = 7801
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 	division= {			
@@ -1217,7 +1217,7 @@ units = {
 		location = 10722
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}			
 
@@ -1293,7 +1293,7 @@ units = {
 		location = 12189
 		division_template = "Mekhanizirovaniy Korpus"		# 3x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.85
 
 	}
 
@@ -1304,7 +1304,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -1346,7 +1346,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 
@@ -1394,7 +1394,7 @@ units = {
 		division_template = "NKVD Pogranichnaya Diviziya"		# NKVD -- older equipment, training
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}			
 

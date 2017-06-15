@@ -500,3 +500,7 @@
 # SPA_neutrality_party_long:0 "Partido Republicano Radical"
 # VIC_neutrality_party:0 "Régime de Vichy"
 # VIC_neutrality_party_long:0 "Régime de Vichy"
+ HUN_arrow_cross_party:0 "NPHM"
+ HUN_arrow_cross_party_long:0 "Nyilaskeresztes Párt – Hungarista Mozgalom"
+ HUN_legitimists_party:0 "Légitimistes"
+ HUN_legitimists_party_long:0 "Légitimistes"

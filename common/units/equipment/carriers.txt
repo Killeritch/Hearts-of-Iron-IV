@@ -1,6 +1,8 @@
 equipments = {
 
 	carrier = {
+		year = 1922
+
 		is_archetype = yes
 		is_buildable = no
 		type = carrier
@@ -53,11 +55,15 @@ equipments = {
 	}
 
 	carrier_1 = {
+		year = 1922
+
 		archetype = carrier
 		priority = 70
 	}
 
 	carrier_2 = {
+		year = 1936
+
 		archetype = carrier
 		parent = carrier_1
 		priority = 70
@@ -95,6 +101,8 @@ equipments = {
 	}
 
 	carrier_3 = {
+		year = 1940
+
 		archetype = carrier
 		parent = carrier_2
 		priority = 70
@@ -132,6 +140,8 @@ equipments = {
 	}
 
 	carrier_4 = {
+		year = 1944
+
 		archetype = carrier
 		parent = carrier_3
 		priority = 70

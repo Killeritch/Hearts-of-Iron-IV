@@ -26,7 +26,7 @@ guiTypes = {
 		}
 		
 		buttonType = {
-			name = "close_button"
+			name = "btn_close"
 			position = { x = -35 y = 3 }
 			quadTextureSprite ="GFX_NV_btn_close"
 			buttonFont = "Main_14_black"
@@ -63,13 +63,17 @@ guiTypes = {
 			scale = 0.5
 		}
 				
-		instantTextboxType = {
+		editBoxType = {
 			name = "air_wing_name"
 			position = { x = 113 y = 42 }
+			size = {x=267 y=20}
+			#textureFile = ""
 			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 300
-			maxHeight = 20
+			#maxWidth = 300
+			#maxHeight = 20
+			#format = left
 		}
 		
 		iconType = {

@@ -56,6 +56,7 @@
  GUARANTEE_TENSION_DESC:0 "$VAL|%Y0$ de tensions requises pour garantir l'indépendance d'une autre nation.\n"
  NUCLEAR_PRODUCTION_SPEED:0 "Réacteurs nucléaires construits : $NUM|Y$\nVitesse de production totale : $PROC|%1+$/jour"
  THREAT_WINDOW_NAME:0 "Historique de la tension mondiale"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "Justification d'un objectif de guerre contre $TARGET$ annulée"
 
 
 

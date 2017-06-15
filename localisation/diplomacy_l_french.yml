@@ -919,8 +919,26 @@
  CAN_NOT_JOIN_CIVIL_WAR:0 "La tension mondiale doit être supérieure à $LIMIT|H$ pour que nous puissions nous impliquer dans une guerre civile."
  CIVIL_WAR_TENSION_DESC:0 "Pour s'impliquer dans une guerre civile, la tension mondiale doit être supérieure à $MIN|0H%$. Elle n'est actuellement que de $CURRENT|0R%$."
  AVERAGE_MEMBER_STRENGTH:0 "Puissance moyenne des membres"
- 
-
+ DIPLOMACY_JOIN_ALLY_PUPPET_MASTER:0 "En tant que dépendance, nous ne pouvons participer qu'aux guerres de notre maître."
+ INCOMING_LEND_LEASE_VEHICLES_BUTTON_DISABLED:0 "§TNous ne savons pas si des blindés sont disponibles pour l'exportation§!"
+ INCOMING_LEND_LEASE_INFANTRY_BUTTON_DISABLED:0 "§TNous ne savons pas si du matériel d'infanterie ou d'artillerie est disponible pour l'exportation§!"
+ INCOMING_LEND_LEASE_AIRCRAFT_BUTTON_DISABLED:0 "§TNous ne savons pas si des avions sont disponibles pour l'exportation§!"
+ INCOMING_LEND_LEASE_NAVAL_BUTTON_DISABLED:0 "§TNous ne savons pas si des convois sont disponibles pour l'exportation§!"
+ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_TITLE:0 "Demander une licence de production"
+ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_ACTION_DESC:0 "Gérer les productions sous licence actuelles"
+ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_COST_DESC:0 "Coût estimé : $COST$£civ_factory_output  "
+ DIPLOMACY_SHOW_ACTIVE_LICENSES:0 "§HLicences en cours§!"
+ DIPLOMACY_SHOW_AVAILABLE_LICENSES:0 "§HLicences disponibles§!"
+ DIPLOMACY_CANCEL_LICENSED_PRODUCTION_TITLE:0 "Mettre fin à une licence de production"
+ DIPLOMACY_CANCEL_LICENSED_PRODUCTION_ACTION_DESC:0 "Annuler toutes les productions sous licence qui peuvent l'être"
+ CAN_DEACTIVATE_AFTER:0 "Ne peut pas être annulé avant le $DATE|H$"
+ CAN_CANCEL_ALL_AFTER:0 "Aucune licence ne peut être annulée avant le $DATE|H$"
+ CAN_NOT_SEND_LICENSE_NO_ACTIONS:0 "§RAucune action sélectionnée§!"
+ CAN_NOT_SEND_LICENSE_NO_FACTORIES:0 "§RPas assez d'usines civiles disponibles§!"
+ ESTIMATED_MANPOWER:0 "Réserves estimées"
+ DR_LICENSE_ACCEPTANCE:0 "§Y$THEM$§! est plus susceptible d'accepter les §Ydemandes de production sous licence§! de §Y$US$§! : "
+ DR_YEARS_DIFFERENCE:0 "Différence technologique pour le matériel demandé : "
+ DR_SAME_FACTION_AS:0 "Appartient à la même faction que $COUNTRY|H$ : "
 
 ######################
 ###  TO BE ERASED  ###
@@ -932,3 +950,9 @@
 # DIPLOMACY_UNSUCCESSFUL_COUP_TITLE:0 "Échec du coup d'État"
 # DIPLOMACY_UNSUCCESSFUL_COUP_DESC:0 "$COUNTRY1|H$ n'a pas réussi à fomenter un coup d'État en $COUNTRY2|H$ en raison du manque d'équipements à disposition des rebelles. Tous les instigateurs ont été arrêtés et exécutés."
  DIPLOMACY_STAGE_COUP_OTHER_ALREADY_STAGING:0 "$COUNTRY|H$ prépare déjà un coup d'État"
+ DR_LEND_LEASE_NO_EQUIPMENT_OR_REQUEST_HAS:0 "$SENDER|H$ a un équipement insuffisant ou nous avons trop d'équipement en stock."
+ DIPLOMACY_MESSAGE_DECLINED_TITLE_DIPLOMACY_REQUEST_LICENSED_PRODUCTION:0 "$COUNTRY$ rejette notre demande"
+ DIPLOMACY_MESSAGE_DECLINED_MESSAGE_DIPLOMACY_REQUEST_LICENSED_PRODUCTION:0 "§Y$COUNTRY$§! a §Rrejeté§! notre demande d'acquisition d'une licence de production."
+ DIPLOMACY_MESSAGE_ACCEPTED_TITLE_DIPLOMACY_REQUEST_LICENSED_PRODUCTION:0 "$COUNTRY$ accepte notre demande"
+ DIPLOMACY_MESSAGE_ACCEPTED_MESSAGE_DIPLOMACY_REQUEST_LICENSED_PRODUCTION:0 "§Y$COUNTRY$§! a §Gaccepté§! notre demande d'acquisition d'une licence de production."
+ DIPLOMACY_REQUEST_LICENSED_PRODUCTION_REQUEST_DESC:0 "$COUNTRY|Y$ demande une licence de production pour $LIST|Y$\nCe pays est prêt à payer $COST|Y$£civ_factory_output tant que la licence aura cours."

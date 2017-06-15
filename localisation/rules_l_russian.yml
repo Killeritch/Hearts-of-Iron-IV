@@ -5,6 +5,6 @@
  CAN_GUARANTEE_OTHER_IDEOLOGIES:0 "Может гарантировать независимость государств с другой идеологией."
  CAN_PUPPET:0 "Может установить марионеточный режим в государстве."
  CAN_ONLY_JUSTIFY_WAR_ON_THREAT_COUNTRY:0 "Может оправдывать цель войны только с тем государством, которое не создавало мировую напряженность."
- CAN_BOOST_OTHER_IDEOLOGIES:0 "Может повышать популярность других идеологий."
+ CAN_BOOST_OTHER_IDEOLOGIES:0 "Может повышать популярность других идеологий"
  CAN_JOIN_FACTIONS:0 "Может вступать в альянсы"
  CAN_JOIN_FACTIONS_NOT_ALLOWED_DIPLOMACY:0 "Государство $COUNTRY|NAME$ не имеет права вступать в альянсы."

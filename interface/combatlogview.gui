@@ -161,8 +161,8 @@ guiTypes = {
 
 		iconType ={
 			name ="manpower_icon"
-			spriteType = "GFX_manpower_icon"
-			position = { x = 20 y = 52 }
+			spriteType = "GFX_casuality_icon"
+			position = { x = 25 y = 55 }
 			Orientation = "UPPER_LEFT"
 		}		
 		

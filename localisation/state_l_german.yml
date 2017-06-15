@@ -57,3 +57,4 @@
  MONTHLY_BASE_GROWTH:0 "Basis: $VALUE|H%2$"
  STATE_POPULATION_GROWTH:0 "§HMonatliches Wachstum§!: $VALUE|%2$ ( $AVAIL|*+$ rekrutierbar, $LOCKED|*+$ Zivil )"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Gesamtwert für Wehrdienst (Nicht-Kernstaat). §R-$VAL|%$§!"
+ PROVINCE_STATE_IMPASSABLE:0 "§RNicht passierbares Gebiet – Kein Zugang für Truppen.§!"

@@ -252,4 +252,149 @@ spriteTypes = {
 		name = "GFX_RAJ_douglas_gracey"
 		textureFile = "gfx//leaders//Europe//Portrait_Europe_Generic_land_3.dds"
 	}
+
+
+	#Romania
+
+	spriteType = {
+		name = "GFX_Portrait_romania_Carol_II"
+		texturefile = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_romania_michael_i"
+		texturefile = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_romania_gheorghe_avramescu"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_romania_horia_macellariu"
+		texturefile = "gfx/leaders/Portrait_Europe_Generic_navy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_romania_ioan_mihail_racovita"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_romania_petre_dumitrescu"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	}
+
+	#Czechoslovakia
+
+	spriteType = {
+		name = "GFX_Portrait_czechoslovakia_josef_snejdarek"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_czechoslovakia_konstantin_von_neurath"
+		texturefile = "gfx/leaders/Europe/portrait_europe_generic_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_czechoslovakia_richard_tesarik"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_czechoslovakia_vojtech_luza"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	}
+	
+	#####
+
+	#Hungary
+	
+	spriteType = {
+		name = "GFX_Portrait_hungary_otto_von_hapsburg"
+		texturefile = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_hungary_friedrich_franz"
+		texturefile = "gfx/leaders/Europe/portrait_europe_generic_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_hungary_bela_kun"
+		texturefile = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_hungary_geza_lakatos"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_hungary_ivan_hindy"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_hungary_miklos_horthy_admiral"
+		texturefile = "gfx/leaders/HUN/Portrait_Hungary_Miklos_Horthy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_hungary_karoly_beregfy"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_hungary_lajos_veress"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	}
+
+
+	##########################
+	########Yugoslavia########
+	##########################
+
+	spriteType = {
+		name = "GFX_Portrait_yugoslavia_vladimir_cukavac"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_yugoslavia_ivan_gosnjak"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_yugoslavia_danilo_kalafatovic"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_yugoslavia_milutin_nedic"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"		
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_yugoslavia_petar_kosic"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"		
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_yugoslavia_marijan_polic"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	}	
+
 }

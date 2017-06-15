@@ -292,7 +292,7 @@ crush_ethiopia = {
 }
 
 
-ITA_template_design = {
+ITA_template_design_1 = {
 	enable = {
 	
 		original_tag = ITA
@@ -340,7 +340,7 @@ ITA_template_design = {
 }
 
 
-ITA_template_design = {
+ITA_template_design_2 = {
 	enable = {
 	
 		original_tag = ITA

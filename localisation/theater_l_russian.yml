@@ -3,7 +3,7 @@
  ACTIVATE_PHASE:0 "Активировать этап"
  ORDER_DETACH:0 "Разделить наступление"
  ORDER_DEFENSIVE_LINE:0 "Установить линию фронта"
- ORDER_OFFENSIVE_LINE:0 "Фронт наступления"
+ ORDER_OFFENSIVE_LINE:0 "Линия наступления"
  ORDER_PARADROP:0 "Воздушный десант"
  ORDER_AREA_DEFENSE:0 "Оборона территории"
  ORDER_INVASION:0 "Высадка с моря"

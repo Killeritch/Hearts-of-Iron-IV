@@ -4,6 +4,17 @@ oob = "YUG_1936"
 
 set_research_slots = 3
 
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		YUG_idea_croatian_opposition
+		YUG_idea_macedonian_opposition
+		YUG_idea_slovene_nationalism
+		YUG_idea_serbian_general_staff
+	}
+}
 add_ideas = {
 	anti_german_military
 }
@@ -29,9 +40,50 @@ set_technology = {
 	add_ideas = {
 		limited_conscription
 	}
+	if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		YUG_idea_foreign_capital
+		YUG_idea_expanded_mining_industry
+		YUG_license_production
+		YUG_idea_orthodox_church_support
+	}
+}
 
 	add_political_power = 1198
 	
+	if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+		complete_national_focus = YUG_western_focus
+		complete_national_focus = YUG_friendship_treaty_with_italy
+		complete_national_focus = YUG_attract_foreign_capital
+		complete_national_focus = YUG_industrialization_program
+		complete_national_focus = YUG_limited_self_government
+		complete_national_focus = YUG_army_modernization
+		complete_national_focus = YUG_mountain_brigades
+		complete_national_focus = YUG_expand_the_mining_industry
+		complete_national_focus = YUG_modernize_the_air_force
+		complete_national_focus = YUG_develop_civilian_industry
+		complete_national_focus = YUG_purchase_foreign
+		complete_national_focus = YUG_license_production
+		complete_national_focus = YUG_fighter_license
+		complete_national_focus = YUG_rare_minerals_exploitation
+		complete_national_focus = YUG_traditional_values
+		complete_national_focus = YUG_the_yugoslavian_nation
+		complete_national_focus = YUG_small_arms 
+		complete_national_focus = YUG_domestic_artillery_production
+		complete_national_focus = YUG_expand_the_serbian_shipyards
+		complete_national_focus = YUG_coastal_defense
+	}
+	
+	if = {
+	limit = {
+		NOT = { has_dlc = "Death or Dishonor" }
+	}
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -42,6 +94,7 @@ set_technology = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
+	}
 	
 	oob = "YUG_1939"
 	set_technology = {
@@ -151,7 +204,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Milan Stojadinovic"
+	name = "Milan Stojadinović"
 	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
 	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
 	expire = "1965.1.1"
@@ -184,18 +237,45 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Vladimir Cukavac"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Vladimir Čukavac"
+	gfx = GFX_Portrait_yugoslavia_vladimir_cukavac
 	traits = { trickster  }
 	skill = 3
 
 }
 
 create_corps_commander = {
-	name = "Ivan Gosnjak"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	name = "Ivan Gošnjak"
+	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
 	traits = { urban_assault_specialist }
 	skill = 3
 	
 }
 
+create_field_marshal = {
+	name = "Danilo Kalafatović"
+	gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
+	traits = {  }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Milutin Nedić"
+	gfx = GFX_Portrait_yugoslavia_milutin_nedic
+	traits = { thorough_planner }
+	skill = 3	
+}
+
+create_corps_commander = {
+	name = "Petar Kosić"
+	gfx = GFX_Portrait_yugoslavia_petar_kosic
+	traits = {  }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Marijan Polić"
+	gfx = GFX_Portrait_yugoslavia_marijan_polic
+	traits = {  }
+	skill = 2
+}

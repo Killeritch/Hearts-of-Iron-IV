@@ -1,4 +1,141 @@
 guiTypes = {
+	containerWindowType = {
+		name = "strategicair_split_wnd"
+		position = {x=-128 y=-84}
+		orientation = center
+		size = {width=276 height=228}
+		clipping = no
+		moveable = yes
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_w_close"
+		}
+		instantTextboxType = {
+			name = "title"
+			position = {x=20 y=13}
+			font = "hoi_16mbs"
+			maxWidth = 256
+			maxHeight = 26
+			format = left
+		}
+		instantTextboxType = {
+			name = "wings_name"
+			position = {x=20 y=29}
+			font = "hoi_16mbs"
+			maxWidth = 256
+			maxHeight = 26
+			format = left
+		}
+		buttonType = {
+			name = "close_btn"
+			position = {x=231 y=13}
+			orientation = upper_left
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+		instantTextboxType = {
+			name = "warning_text"
+			position = {x=16 y=133}
+			font = "hoi_18mbs"
+			maxWidth = 250
+			maxHeight = 50
+			format = left
+		}
+		buttonType = {
+			name = "confirm_btn"
+			position = {x=78 y=176}
+			spriteType = "GFX_button_123x34"
+			#quadTextureSprite ="button_type_7"	
+			#buttonText = "AIRWING_SPLIT_CONFIRM"
+			buttonFont = "hoi_20b"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+		
+		iconType = {
+			name = "slider_small_bg"
+			position = {x=16 y=93}	
+			spriteType = "GFX_slider_small_bg"
+		}		
+		
+		scrollbarType = {
+			name = "split_slider"	
+			slider = "landslider_SliderButton"
+			track= "landslider_TrackButton"
+			leftbutton = "landslider_upButton"
+			rightbutton = "landslider_downButton"
+			size = {x=230 y=26}
+			position = {x=23 y=103}
+			priority = 100			
+			borderSize = {x=16 y=16}	
+			maxValue = 100
+			minValue = 0
+			stepSize = 1
+			startValue = 50
+			horizontal = 1
+			guiButtonType = {
+				name = "landslider_SliderButton"	
+				quadTextureSprite = "GFX_scroll_drager"
+			
+				
+			
+				position = {x=0 y=0}
+			}
+			guiButtonType = {
+				name = "landslider_TrackButton"
+				quadTextureSprite = "yearslider_background"
+				position = {x=0 y=20}	
+			
+			
+				
+			}	
+			guiButtonType = {
+				name = "landslider_upButton"
+				quadTextureSprite = "GFX_scroll_left"
+				position = {x=0 y=0}
+				clicksound = click_default				
+			}
+			guiButtonType = {
+				name = "landslider_downButton"
+				quadTextureSprite = "GFX_scroll_right"
+				position = {x=0 y=120}
+				clicksound = click_default
+			}
+		}
+			
+		buttonType = {
+			name = "remove_planes_1"
+			position = {x=16 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"		
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "remove_planes_2"
+			position = {x=75 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"			
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "add_planes_1"
+			position = {x=144 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"		
+			clicksound = click_default
+		}
+			
+		buttonType = {
+			name = "add_planes_2"
+			position = {x=203 y=66}
+			spriteType = "GFX_tiling_sort_button"
+			font = "hoi_18mbs"		
+			clicksound = click_default
+		}
+	}
 	
 	containerWindowType = {
 		name = "air_wing_reorganization"

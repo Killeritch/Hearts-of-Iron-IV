@@ -27,3 +27,4 @@
  continuous_tech_share_group_desc:0 "Verringerte Forschungszeit durch Nationen in Ihrem Bündnis wegen Ihres aktiven Dauerhaften Schwerpunkts."
  NO_OTHER_SHARING_GROUPS:0 "Gehört keiner Gruppe zum Teilen von Technologien an"
  TECH_SHARNG_COUNTRY_BONUS:0 "Bonus: $VALUE|0%Y$\n"
+ LICENSED_PRODUCTION_RESEARCH_BONUS_VALUE_DESC:0 "Lizenzierte Produktion: $VALUE|Y%0$\n"

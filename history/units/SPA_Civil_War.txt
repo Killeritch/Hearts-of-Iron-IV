@@ -124,4 +124,125 @@ units = {
 		location = 7183  # Sevilla
 		division_template = "Brigada Legionario"
 	}
+
+	division = {
+		name = "24a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "25a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "26a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "27a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "28a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "29a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "30a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "31a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "32a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "33a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "34a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "35a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "36a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "37a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "38a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "39a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "40a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "41a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "42a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "43a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "44a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "45a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "46a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
+	division = {
+		name = "47a Brigada Legionario"
+		location = 7183  # Sevilla
+		division_template = "Brigada Legionario"
+	}
 }

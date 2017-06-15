@@ -61,3 +61,4 @@
  DAMAGED_MILITARY_FACTORIES:0 "Uszkodzone fabryki wojskowe: $COUNT|H$"
  DAMAGED_NAVAL_FACTORIES:0 "Uszkodzone stocznie: $COUNT|H$"
  DAMAGED_CIVILIAN_FACTORIES:0 "Uszkodzone fabryki cywilne: $COUNT|H$"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "Anulowano uzasadnienie celu wojennego ($TARGET$)"

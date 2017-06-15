@@ -759,7 +759,12 @@ sound =
 	file = "weather/weather_sandstorm_03.wav"
 	always_load = no
 }
-
+sound =
+{
+	name = "weather_sandstorm_04"
+	file = "weather/weather_sandstorm_04.wav"
+	always_load = no
+}
 sound =
 {
 	name = "weather_snow_blizzard_01"
@@ -782,6 +787,12 @@ sound =
 {
 	name = "weather_snow_blizzard_04"
 	file = "weather/weather_snow_blizzard_04.wav"
+	always_load = no
+}
+sound =
+{
+	name = "weather_snow_blizzard_05"
+	file = "weather/weather_snow_blizzard_05.wav"
 	always_load = no
 }
 sound =
@@ -977,121 +988,121 @@ sound =
 {
 	name = "distance_ship_hit_big_effect_01"
 	file = "animations/distance_ship_hit_big_effect_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_big_effect_02"
 	file = "animations/distance_ship_hit_big_effect_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_big_effect_03"
 	file = "animations/distance_ship_hit_big_effect_03.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_big_effect_04"
 	file = "animations/distance_ship_hit_big_effect_04.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_big_effect_05"
 	file = "animations/distance_ship_hit_big_effect_05.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_small_effect_01"
 	file = "animations/distance_ship_hit_small_effect_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_small_effect_02"
 	file = "animations/distance_ship_hit_small_effect_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_small_effect_03"
 	file = "animations/distance_ship_hit_small_effect_03.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_small_effect_04"
 	file = "animations/distance_ship_hit_small_effect_04.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_hit_small_effect_05"
 	file = "animations/distance_ship_hit_small_effect_05.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_big_effect_01"
 	file = "animations/distance_ship_miss_big_effect_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_big_effect_02"
 	file = "animations/distance_ship_miss_big_effect_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_big_effect_03"
 	file = "animations/distance_ship_miss_big_effect_03.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_big_effect_04"
 	file = "animations/distance_ship_miss_big_effect_04.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_big_effect_05"
 	file = "animations/distance_ship_miss_big_effect_05.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_small_effect_01"
 	file = "animations/distance_ship_miss_small_effect_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_small_effect_02"
 	file = "animations/distance_ship_miss_small_effect_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_small_effect_03"
 	file = "animations/distance_ship_miss_small_effect_03.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_small_effect_04"
 	file = "animations/distance_ship_miss_small_effect_04.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_ship_miss_small_effect_05"
 	file = "animations/distance_ship_miss_small_effect_05.wav"
-	always_load = no
+	volume = 0.4
 }
 ####################SUPER BATTLESHIP#############################
 sound =
@@ -1183,85 +1194,85 @@ sound =
 {
 	name = "distance_super_heavy_battleship_attack_01"
 	file = "animations/distance_super_heavy_battleship_attack_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_attack_02"
 	file = "animations/distance_super_heavy_battleship_attack_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_attack_03"
 	file = "animations/distance_super_heavy_battleship_attack_03.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_damaged_attack_01"
 	file = "animations/distance_super_heavy_battleship_damaged_attack_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_damaged_attack_02"
 	file = "animations/distance_super_heavy_battleship_damaged_attack_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_attacked_01"
 	file = "animations/distance_super_heavy_battleship_attacked_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_attacked_02"
 	file = "animations/distance_super_heavy_battleship_attacked_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_attacked_03"
 	file = "animations/distance_super_heavy_battleship_attacked_03.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_defend_01"
 	file = "animations/distance_super_heavy_battleship_defend_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_defend_02"
 	file = "animations/distance_super_heavy_battleship_defend_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_damaged_defend_01"
 	file = "animations/distance_super_heavy_battleship_damaged_defend_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_damaged_defend_02"
 	file = "animations/distance_super_heavy_battleship_damaged_defend_02.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_destroyed_01"
 	file = "animations/distance_super_heavy_battleship_destroyed_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
 	name = "distance_super_heavy_battleship_destroyed_02"
 	file = "animations/distance_super_heavy_battleship_destroyed_02.wav"
-	always_load = no
+	volume = 0.4
 }
 ##################### DESTROYER ########################
 sound = 
@@ -1339,71 +1350,85 @@ sound =
 {
 	name = "distance_ships_destroyer_attack_01"
 	file = "animations/distance_ships_destroyer_attack_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attack_02"
 	file = "animations/distance_ships_destroyer_attack_02.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attack_03"
 	file = "animations/distance_ships_destroyer_attack_03.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attack_04"
 	file = "animations/distance_ships_destroyer_attack_04.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attack_05"
 	file = "animations/distance_ships_destroyer_attack_05.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attack_06"
 	file = "animations/distance_ships_destroyer_attack_06.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attacked_01"
 	file = "animations/distance_ships_destroyer_attacked_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attacked_02"
 	file = "animations/distance_ships_destroyer_attacked_02.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attacked_03"
 	file = "animations/distance_ships_destroyer_attacked_03.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_attacked_04"
 	file = "animations/distance_ships_destroyer_attacked_04.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ship_destroyer_damaged_defending_01"
 	file = "animations/distance_ship_destroyer_damaged_defending_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ship_destroyer_damaged_attacking_01"
 	file = "animations/distance_ship_destroyer_damaged_attacking_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_death_01"
 	file = "animations/distance_ships_destroyer_death_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_ships_destroyer_death_02"
 	file = "animations/distance_ships_destroyer_death_02.wav"
+	volume = 0.4
 }
 ##################### HEAVY CRUSIER ########################
 sound = 
@@ -1436,26 +1461,31 @@ sound =
 {
 	name = "distance_heavy_cruiser_attack_01"
 	file = "animations/distance_heavy_cruiser_attack_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_heavy_cruiser_attack_02"
 	file = "animations/distance_heavy_cruiser_attack_02.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_heavy_cruiser_attack_03"
 	file = "animations/distance_heavy_cruiser_attack_03.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_heavy_cruiser_damaged_defend_loop"
 	file = "animations/distance_heavy_cruiser_damaged_defend_loop.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_heavy_cruiser_damaged_attacked_loop"
 	file = "animations/distance_heavy_cruiser_damaged_attacked_loop.wav"
+	volume = 0.4
 }
 ##################### LIGHT CRUSIER ########################
 sound = 
@@ -1494,31 +1524,37 @@ sound =
 {
 	name = "distance_light_cruiser_attack_01"
 	file = "animations/distance_light_cruiser_attack_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_light_cruiser_attack_02"
 	file = "animations/distance_light_cruiser_attack_02.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_light_cruiser_attack_03"
 	file = "animations/distance_light_cruiser_attack_03.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_light_cruiser_attack_04"
 	file = "animations/distance_light_cruiser_attack_04.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_light_cruiser_attack_damaged_01"
 	file = "animations/distance_light_cruiser_attack_damaged_01.wav"
+	volume = 0.4
 }
 sound = 
 {
 	name = "distance_light_cruiser_defend_damaged_01"
 	file = "animations/distance_light_cruiser_defend_damaged_01.wav"
+	volume = 0.4
 }
 #####################SHIP IDLE###########################
 sound = 
@@ -1605,26 +1641,102 @@ sound =
 {
 	name = "artillery_unit_fire_01"
 	file = "animations/artillery_unit_fire_01.wav"
-	always_load = no
 }
+sound = 
+{
+	name = "artillery_unit_fire_02"
+	file = "animations/artillery_unit_fire_02.wav"
+}
+sound = 
+{
+	name = "artillery_unit_fire_03"
+	file = "animations/artillery_unit_fire_03.wav"
+}
+sound = 
+{
+	name = "artillery_unit_fire_04"
+	file = "animations/artillery_unit_fire_04.wav"
+}
+sound = 
+{
+	name = "artillery_unit_fire_05"
+	file = "animations/artillery_unit_fire_05.wav"
+	volume = 0.7
+}
+########## ON DISTANCE
 sound = 
 {
 	name = "distance_artillery_unit_fire_01"
 	file = "animations/distance_artillery_unit_fire_01.wav"
-	volume = 0.5
+}
+sound = 
+{
+	name = "distance_artillery_unit_fire_02"
+	file = "animations/distance_artillery_unit_fire_02.wav"
+}
+sound = 
+{
+	name = "distance_artillery_unit_fire_03"
+	file = "animations/distance_artillery_unit_fire_03.wav"
+}
+sound = 
+{
+	name = "distance_artillery_unit_fire_04"
+	file = "animations/distance_artillery_unit_fire_04.wav"
+}
+sound = 
+{
+	name = "distance_artillery_unit_fire_05"
+	file = "animations/distance_artillery_unit_fire_05.wav"
 }
 ####################### ANIMATION TANKS #########################
 sound = 
 {
-	name = "tank_engine_idle_01"
-	file = "animations/tank_engine_loop_01.wav"
-	volume = 0.5
+	name = "tank_engine_light_idle_01"
+	file = "animations/tank_engine_light_loop_01.wav"
+	volume = 0.55
 }
 sound = 
 {
-	name = "tank_engine_idle_02"
-	file = "animations/tank_engine_loop_02.wav"
-	volume = 0.6
+	name = "tank_engine_light_idle_02"
+	file = "animations/tank_engine_light_loop_02.wav"
+	volume = 0.55
+}
+sound = 
+{
+	name = "tank_engine_light_idle_03"
+	file = "animations/tank_engine_light_loop_03.wav"
+	volume = 0.55
+}
+sound = 
+{
+	name = "tank_engine_light_idle_04"
+	file = "animations/tank_engine_light_loop_04.wav"
+	volume = 0.55
+}
+sound = 
+{
+	name = "tank_engine_medium_idle_01"
+	file = "animations/tank_engine_medium_loop_01.wav"
+	volume = 0.55
+}
+sound = 
+{
+	name = "tank_engine_medium_idle_02"
+	file = "animations/tank_engine_medium_loop_02.wav"
+	volume = 0.55
+}
+sound = 
+{
+	name = "tank_engine_medium_idle_03"
+	file = "animations/tank_engine_medium_loop_03.wav"
+	volume = 0.55
+}
+sound = 
+{
+	name = "tank_engine_medium_idle_04"
+	file = "animations/tank_engine_medium_loop_04.wav"
+	volume = 0.55
 }
 sound =
 {
@@ -1851,19 +1963,31 @@ sound =
 {
 	name = "infantry_move_animation_01"
 	file = "animations/infantry_move_animation_01.wav"
-	always_load = no
+	volume = 0.6
 }
 sound =
 {
 	name = "infantry_move_animation_02"
 	file = "animations/infantry_move_animation_02.wav"
-	always_load = no
+	volume = 0.6
 }
 sound =
 {
 	name = "infantry_move_animation_03"
 	file = "animations/infantry_move_animation_03.wav"
-	always_load = no
+	volume = 0.6
+}
+sound =
+{
+	name = "infantry_move_animation_04"
+	file = "animations/infantry_move_animation_03.wav"
+	volume = 0.6
+}
+sound =
+{
+	name = "infantry_move_animation_05"
+	file = "animations/infantry_move_animation_03.wav"
+	volume = 0.6
 }
 sound =
 {
@@ -1871,8 +1995,6 @@ sound =
 	file = "animations/cavalry_entity_move_01.wav"
 	volume = 0.4
 }
-
-
 ################### ANIMATION MOTORIZED + MECHANIZED #####################
 sound =
 {
@@ -1968,14 +2090,68 @@ sound =
 }
 sound =
 {
+	name = "airplane_medium_idle_02"
+	file = "animations/airplane_medium_idle_02.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_medium_idle_03"
+	file = "animations/airplane_medium_idle_03.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_medium_idle_04"
+	file = "animations/airplane_medium_idle_04.wav"
+	volume = 0.5
+}
+sound =
+{
 	name = "airplane_heavy_idle_01"
 	file = "animations/airplane_heavy_idle_01.wav"
 	volume = 0.5
 }
 sound =
 {
+	name = "airplane_heavy_idle_02"
+	file = "animations/airplane_heavy_idle_02.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_heavy_idle_03"
+	file = "animations/airplane_heavy_idle_03.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_heavy_idle_04"
+	file = "animations/airplane_heavy_idle_04.wav"
+	volume = 0.5
+}
+sound =
+{
 	name = "airplane_jet_idle_01"
 	file = "animations/airplane_jet_idle_01.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_jet_idle_02"
+	file = "animations/airplane_jet_idle_02.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_jet_idle_03"
+	file = "animations/airplane_jet_idle_03.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "airplane_jet_idle_04"
+	file = "animations/airplane_jet_idle_04.wav"
 	volume = 0.5
 }
 sound =
@@ -2131,6 +2307,27 @@ sound =
 }
 sound =
 {
+	name = "distance_airplane_medium_idle_02"
+	file = "animations/distance_airplane_medium_idle_02.wav"
+	always_load = no
+	volume = 0.3
+}
+sound =
+{
+	name = "distance_airplane_medium_idle_03"
+	file = "animations/distance_airplane_medium_idle_03.wav"
+	always_load = no
+	volume = 0.3
+}
+sound =
+{
+	name = "distance_airplane_medium_idle_04"
+	file = "animations/distance_airplane_medium_idle_04.wav"
+	always_load = no
+	volume = 0.3
+}
+sound =
+{
 	name = "distance_airplane_heavy_idle_01"
 	file = "animations/distance_airplane_heavy_idle_01.wav"
 	always_load = no
@@ -2138,8 +2335,43 @@ sound =
 }
 sound =
 {
+	name = "distance_airplane_heavy_idle_02"
+	file = "animations/distance_airplane_heavy_idle_02.wav"
+	always_load = no
+	volume = 0.3
+}
+sound =
+{
+	name = "distance_airplane_heavy_idle_03"
+	file = "animations/distance_airplane_heavy_idle_03.wav"
+	always_load = no
+	volume = 0.3
+}sound =
+{
+	name = "distance_airplane_heavy_idle_04"
+	file = "animations/distance_airplane_heavy_idle_04.wav"
+	always_load = no
+	volume = 0.3
+}
+sound =
+{
 	name = "distance_airplane_jet_idle_01"
 	file = "animations/distance_airplane_jet_idle_01.wav"
+}
+sound =
+{
+	name = "distance_airplane_jet_idle_02"
+	file = "animations/distance_airplane_jet_idle_02.wav"
+}
+sound =
+{
+	name = "distance_airplane_jet_idle_03"
+	file = "animations/distance_airplane_jet_idle_03.wav"
+}
+sound =
+{
+	name = "distance_airplane_jet_idle_04"
+	file = "animations/distance_airplane_jet_idle_04.wav"
 }
 sound =
 {
@@ -2205,6 +2437,18 @@ sound =
 {
 	name = "distance_light_airplane_fire_03"
 	file = "animations/distance_light_airplane_fire_03.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "distance_light_airplane_fire_04"
+	file = "animations/distance_light_airplane_fire_04.wav"
+	volume = 0.5
+}
+sound =
+{
+	name = "distance_light_airplane_fire_05"
+	file = "animations/distance_light_airplane_fire_05.wav"
 	volume = 0.5
 }
 sound =
@@ -2282,7 +2526,16 @@ sound =
 	name = "ambient_ocean_01"
 	file = "weather/ambient_ocean_01.wav"
 }
-
+sound =
+{
+	name = "ambient_ocean_02"
+	file = "weather/ambient_ocean_02.wav"
+}
+sound =
+{
+	name = "ambient_ocean_03"
+	file = "weather/ambient_ocean_03.wav"
+}
 ############ ALERTS #######################
 sound = 
 {
@@ -2319,6 +2572,31 @@ sound =
 {
 	name = "land_alert_01"
 	file = "menu/land_alert_01.wav"
+}
+sound = 
+{
+	name = "select_new_alert"
+	file = "menu/select_new_alert.wav"
+}
+sound = 
+{
+	name = "somethings_missing_alert"
+	file = "menu/somethings_missing_alert.wav"
+}
+sound = 
+{
+	name = "unable_manpower_alert"
+	file = "menu/unable_manpower_alert.wav"
+}
+sound = 
+{
+	name = "free_factories_alert"
+	file = "menu/free_factories_alert.wav"
+}
+sound = 
+{
+	name = "naval_result_alert"
+	file = "menu/naval_result_alert.wav"
 }
 sound = 
 {

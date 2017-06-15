@@ -39,7 +39,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_global_alert_icons"
 		texturefile = "gfx/interface/alerts/global_alert_icons.dds"
-		noOfFrames = 41
+		noOfFrames = 42
 	}
 	
 	spriteType = {

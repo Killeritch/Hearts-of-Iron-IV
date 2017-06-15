@@ -365,7 +365,21 @@ guiTypes = {
 				y = 0
 				relative = yes #It is default set to yes ( to the gui object )
 			}
-		}		
+		}	
+
+		buttonType = {
+			name = "button_radar"
+			position = { x=610 y=220 }
+			quadTextureSprite ="GFX_button_toggle_radar"
+			clicksound = click_default
+			pdx_tooltip = "TOGGLE_RADAR"
+			pdx_tooltip_anchor =
+			{
+				x = -249
+				y = 0
+				relative = yes #It is default set to yes ( to the gui object )
+			}
+		}	
 		
 	}
 

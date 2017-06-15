@@ -10,11 +10,12 @@ PixelShader =
 		MapTexture =
 		{
 			Index = 0
-			MagFilter = "linear"
-			MinFilter = "linear"
+			MagFilter = "Linear"
+			MinFilter = "Linear"
 			MipFilter = "None"
 			AddressU = "Clamp"
 			AddressV = "Clamp"
+			MipMapLodBias = -0.8
 		}
 		MaskTexture =
 		{

@@ -8,7 +8,7 @@ stop_making_horsies = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = cavalry
 		value = -100 # -100% cav
 	}		
@@ -39,7 +39,7 @@ no_cavalry = {
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = cavalry
 		value = -100 
 	}
@@ -55,23 +55,16 @@ mobile_warfare_ratios = {
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = armor
-		value = 10 # +30% armor
+		value = 10
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = motorized
-		value = 10 # +50% motorized
+		value = 2
 	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 10 # +50% motorized
-	}
-	
 }
 
 superior_firepower_ratios = {
@@ -83,27 +76,15 @@ superior_firepower_ratios = {
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 30
-	}
-	
-	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 30
+		value = 10
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = artillery
-		value = 30
+		value = 15
 	}
 	
 }
@@ -118,39 +99,21 @@ concentrated_fire_plans_ratios = {
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = -20
+		value = -5
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 50
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = artillery
-		value = 30
-	}
-
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = armor
-		value = 30
+		value = 10
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = cas
-		value = 20
+		value = 5
 	}
 	
 }
@@ -165,27 +128,15 @@ grand_battle_plan_ratios = {
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 25
+		value = 10
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 15
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 25
-	}
-	
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = anti_tank
-		value = 20
+		value = 5
 	}	
 
 	
@@ -201,15 +152,15 @@ mass_assault_ratios = {
 	}
 	
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 50
+		value = 25
 	}	
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = anti_tank
-		value = 20
+		value = 5
 	}
 
 }
@@ -224,27 +175,15 @@ large_front_operations_ratios = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
 		value = -10
 	}
-	
-	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 30
-	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 50
-	}
-
-	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = armor
-		value = 30
+		value = 10
 	}
 	
 }

@@ -11,6 +11,11 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
+		name = "GFX_endgame_manpower_button"
+		texturefile = "gfx/interface/endgame_manpower_button.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_endgame_civ_industry_button"
 		texturefile = "gfx/interface/endgame_civ_industry_button.dds"
 	}		

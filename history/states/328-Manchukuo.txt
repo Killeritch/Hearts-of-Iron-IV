@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 
+	resources={
+		aluminium=10
+	}
+
 	history={
 		owner = MAN
 		add_core_of = CHI

@@ -453,7 +453,6 @@ PixelShader =
 			//vColor.rgb = DayNight( vColor.rgb, CalcGlobeNormal( Input.prepos.xz ) );
 			return vColor;
 		}
-		
 	]]
 }
 
@@ -462,6 +461,16 @@ BlendState BlendState
 {
 	BlendEnable = yes
 	AlphaTest = no
+	SourceBlend = "src_alpha"
+	DestBlend = "inv_src_alpha"
+	WriteMask = "RED|GREEN|BLUE"
+}
+
+BlendState BlendStateAdd
+{
+	BlendEnable = yes
+	AlphaTest = no
+	BlendOp = "blend_op_add" 
 	SourceBlend = "src_alpha"
 	DestBlend = "inv_src_alpha"
 	WriteMask = "RED|GREEN|BLUE"
@@ -520,3 +529,10 @@ Effect MapSymbolDefault
 	DepthStencilState = "NoDepthStencilState"
 }
 
+Effect MapSymbolDefaultAdd
+{
+	VertexShader = "SymbolVertexShader"
+	PixelShader = "SymbolPixelShader"
+	DepthStencilState = "NoDepthStencilState"
+	BlendState = "BlendStateAdd"
+}

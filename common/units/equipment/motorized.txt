@@ -1,6 +1,8 @@
 equipments = {
 
 	motorized_equipment = {
+		year = 1936
+
 		is_archetype = yes
 		picture = archetype_motorized_equipment		
 		is_buildable = no
@@ -28,6 +30,8 @@ equipments = {
 	}
 
 	motorized_equipment_1 = {
+		year = 1936
+
 		archetype = motorized_equipment
 		priority = 30			
 	}

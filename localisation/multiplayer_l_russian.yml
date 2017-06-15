@@ -119,7 +119,7 @@
  MATCHMAKING_FRIEND_STATUS_PLAYING_OTHER:0 "§YВ другой игре§!"
  MATCHMAKING_FRIEND_STATUS_ONLINE:0 "§GВ сети§!"
  MATCHMAKING_SERVER_CONNECTING:0 "Соединение"
- MATCHMAKING_SERVER_DENIED:0 "Соединение прервано по таймауту"
+ MATCHMAKING_SERVER_DENIED:0 "Время соединения с сервером истекло"
  SERVER_NAME:0 "Имя сервера: $NAME$"
  SERVER_PASSWORD:0 "Пароль: $PASSWORD$"
  SERVER_BOOKMARK:0 "Закладка: $BOOKMARK$"

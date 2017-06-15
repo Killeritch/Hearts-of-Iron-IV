@@ -69,7 +69,7 @@ units = {
 		location = 4925
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	### 2nd Army Group (CO: Liu Shi) ###
@@ -78,7 +78,7 @@ units = {
 		location = 12408
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -86,7 +86,7 @@ units = {
 		location = 7256
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -94,7 +94,7 @@ units = {
 		location = 7256
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	## 1st Army ##
@@ -103,14 +103,14 @@ units = {
 		location = 2091
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
 		name = "1 Lujun Shi"
 		location = 8072
 		division_template = "Juntuán"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	## 14th Army ##
@@ -118,7 +118,7 @@ units = {
 		name = "14 Lujun Shi"
 		location = 10144
 		division_template = "Sanjiao Jun"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 
@@ -128,7 +128,7 @@ units = {
 		location = 1069
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -136,7 +136,7 @@ units = {
 		location = 1069
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -144,7 +144,7 @@ units = {
 		location = 1069
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	### 7th Army Group (CO: Fu Zuoyi) ###
@@ -153,7 +153,7 @@ units = {
 		location = 9958
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -161,7 +161,7 @@ units = {
 		location = 9958
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -169,7 +169,7 @@ units = {
 		location = 4114
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -177,7 +177,7 @@ units = {
 		location = 4114
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	### 14th Army Group (CO: Wei Lihuang) ###
@@ -186,7 +186,7 @@ units = {
 		location = 10043
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -194,7 +194,7 @@ units = {
 		location = 10043
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 
@@ -204,28 +204,28 @@ units = {
 		location = 7027
 		division_template = "Sanjiao Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
 		name = "1 Fujian Jingbei"
 		location = 9974
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "2 Fujian Jingbei"
 		location = 4169
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "3 Fujian Jingbei"
 		location = 4196
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	## Shanghai Defense Force ##
@@ -233,14 +233,14 @@ units = {
 		name = "Shanghai Jingbei"
 		location = 7014
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "Lu zhan Shi"
 		location = 7014
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	## 8th Army (CO: Zhang Fakui) ##
@@ -249,7 +249,7 @@ units = {
 		location = 10076
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -257,14 +257,14 @@ units = {
 		location = 10076
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
 		name = "8 Lujun Shi"
 		location = 4925
 		division_template = "Juntuán"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	## 9th Army (CO: Zhang Zhizhong) ##
@@ -273,7 +273,7 @@ units = {
 		location = 7191
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -281,7 +281,7 @@ units = {
 		location = 7191
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -289,7 +289,7 @@ units = {
 		location = 7191
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	## 10th Army (CO: Liu Jiangxu) ##
@@ -297,7 +297,7 @@ units = {
 		name = "10 Lujun Shi"
 		location = 10076
 		division_template = "Juntuán"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	### 15th Army Group (CO: Chen Cheng) ###
@@ -306,7 +306,7 @@ units = {
 		location = 12076
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -314,7 +314,7 @@ units = {
 		location = 12076
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -322,7 +322,7 @@ units = {
 		location = 12076
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -330,7 +330,7 @@ units = {
 		location = 12076
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -338,7 +338,7 @@ units = {
 		location = 4042
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -346,7 +346,7 @@ units = {
 		location = 4042
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -354,7 +354,7 @@ units = {
 		location = 4042
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	### 19th Army Group (CO: Xu Yue) ###
@@ -363,7 +363,7 @@ units = {
 		location = 7058
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -371,7 +371,7 @@ units = {
 		location = 7058
 		division_template = "Sanjiao Jun"		# German-trained division (frontline infantry, better equipment and experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -379,7 +379,7 @@ units = {
 		location = 1096
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 
@@ -388,7 +388,7 @@ units = {
 		name = "Wuhan Jingbei"
 		location = 4619
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	### River Defense Force (CO: ) ###
@@ -396,14 +396,14 @@ units = {
 		name = "11 Lujun Shi"
 		location = 1036
 		division_template = "Juntuán"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "12 Lujun Shi"
 		location = 7637
 		division_template = "Juntuán"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -411,7 +411,7 @@ units = {
 		location = 9959
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	### Capital Garrison Force (CO: ) ###
@@ -419,7 +419,7 @@ units = {
 		name = "2 Lujun Shi"
 		location = 11913
 		division_template = "Juntuán"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
@@ -427,33 +427,33 @@ units = {
 		location = 11913
 		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.8
 
 	}
 	division = {
 		name = "1 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "2 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "3 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.5
 	}
 	division = {
 		name = "4 Nanking Jingbei"
 		location = 11913
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.4
+		start_equipment_factor = 0.5
 	}
 
 	##### Fifth War Area (CO: Li Zongren) #####
@@ -462,14 +462,14 @@ units = {
 		location = 10000
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	division = {
 		name = "Qingdao Jingbei"
 		location = 10000
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.5
 
 	}
 	## 3rd Army (CO: Han Fuqu) ##
@@ -478,7 +478,7 @@ units = {
 		location = 4205
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 	division = {
@@ -486,7 +486,7 @@ units = {
 		location = 4205
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 
 	}
 

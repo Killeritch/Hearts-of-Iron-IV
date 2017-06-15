@@ -176,3 +176,5 @@
  achievement_EGY_colony:0 "Reached Colony Status"
  achievement_EGY_dominion:0 "Reached Dominion Status"
  achievement_EGY_free:0 "Reached Freedom Status"
+ ROM_lost_starting_state:0 "Romania lost one of its starting states"
+ YUG_delcared_war_on_axis_allies:0 "Declared war on Axis or Allies while in either Axis or Allies"

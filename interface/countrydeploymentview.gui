@@ -241,7 +241,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "symbols_grid"
 				position = { x=17 y=88 }
-				size = { width=280 height=750 }
+				size = { width=280 height=1100 }
 				slotsize = { width=84 height=50 }
 				max_slots_horizontal = 3
 				format = "UPPER_LEFT"

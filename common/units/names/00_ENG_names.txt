@@ -113,6 +113,34 @@
 			
 		}
 	}
+	air_wing_names_template = AIR_WING_NAME_ENG_FALLBACK
+
+	#Air wings can only be named through archetype
+
+	cv_fighter_equipment = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+		}	
+	}
+
+	cv_CAS_equipment = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = ""
+		generic = { "Squadron FAA" }
+		generic_pattern = AIR_WING_NAME_ENG_CARRIER
+		unique = {
+		}	
+	}
+
+	
 
 	infantry = {
 		prefix = ""

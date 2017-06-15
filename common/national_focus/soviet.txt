@@ -1780,8 +1780,14 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_state_claim = 78
-			add_state_claim = 80
+			if = {
+				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 78
+			}
+			if = {
+				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_claim = 80
+			}
 			add_named_threat = { threat = 1 name = SOV_claim_bessarabia }
 			random_other_country = {
 				limit = { owns_state = 78 }

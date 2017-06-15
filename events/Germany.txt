@@ -38,6 +38,15 @@ country_event = {
 		add_political_power = 75
 		add_named_threat = { threat = 10 name = germany.4.t }
 		set_country_flag = AUS_annexed
+		if = {
+			limit = {
+				has_dlc = "Death or Dishonor"
+			}
+			country_event = {
+				id = DOD_yugoslavia.30
+				days = 4
+			}
+		}
 		news_event = { hours = 6 id = news.36 }
 	}
 }
@@ -837,12 +846,20 @@ country_event = {
 			base = 10			
 			modifier = {
 				factor = 0
-				GER = { has_army_size = { size > 39 } }
 				is_historical_focus_on = yes
+				NOT = { HUN = { has_completed_focus = HUN_protect_austria } }
+			}
+			modifier = {
+				GER = { has_army_size = { size > 39 } }
+				factor = 0.5
 			}
 			modifier = {
 				add = 20
 				GER = { has_army_size = { size < 30 } }
+			}
+			modifier = {
+				add = 100
+				HUN = { has_completed_focus = HUN_protect_austria }
 			}
 		}
 		GER = {
@@ -897,8 +914,23 @@ country_event = {
 	
 	option = { # Abandon the Czechs
 		name = germany.40.a
-		ai_chance = { factor = 90 }
-		trigger = { NOT = { has_war_with = GER } }
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				factor = 0.3
+				has_government = communism
+				CZE = { has_government = communism }
+			}
+			modifier = {
+				has_global_flag = GER_has_started_war
+				NOT = { is_in_faction_with = GER }
+				factor = 0
+			}
+		}
+		trigger = { 
+			NOT = { has_war_with = GER } 
+			is_puppet = no # can't do anything if puppet
+		}
 		FRA = { country_event = germany.41 }
 		CZE = {
 			add_opinion_modifier = { target = ENG modifier = western_betrayal }
@@ -915,6 +947,11 @@ country_event = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
+			}				
+			modifier = {
+				factor = 3
+				has_government = communism
+				CZE = { has_government = communism }
 			}
 		}
 		if = {
@@ -984,6 +1021,15 @@ country_event = {
 				factor = 0
 				is_in_faction_with = CZE
 			}
+			modifier = {
+				factor = 0.3
+				has_government = communism
+				CZE = { has_government = communism }
+			}
+			modifier = {
+				has_global_flag = GER_has_started_war
+				factor = 0
+			}
 		}
 		CZE = { 
 			country_event = germany.46
@@ -1012,6 +1058,7 @@ country_event = {
 	}
 	option = { # Support the Czechs alone
 		name = germany.41.b	
+		trigger = { is_puppet = no }
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -1024,6 +1071,11 @@ country_event = {
 				NOT = {
 					is_in_faction_with = CZE
 				}
+			}
+			modifier = {
+				factor = 6
+				has_government = communism
+				CZE = { has_government = communism }
 			}
 		}
 		if = {
@@ -1077,6 +1129,7 @@ country_event = {
 				NOT = { is_in_faction_with = ENG }
 				NOT = { is_in_faction_with = GER }
 				NOT = { is_in_faction_with = CZE }
+				CZE = { is_in_faction = no }
 			}
 			add_to_faction = CZE
 			CZE = {
@@ -1096,6 +1149,7 @@ country_event = {
 					is_in_faction_with = GER
 				}
 				NOT = { is_in_faction_with = CZE }
+				CZE = { is_in_faction = no }
 			}
 			create_faction = "french_alliance"
 			set_rule = { can_create_factions = yes }
@@ -1127,6 +1181,9 @@ country_event = {
 	#Support
 	option = {
 		name = germany.42.a
+		trigger = {
+			is_puppet = no
+		}
 		ai_chance = {
 			factor = 90
 			modifier = {
@@ -1187,7 +1244,14 @@ country_event = {
 			NOT = { is_in_faction_with = ENG }
 			NOT = { is_in_faction_with = CZE }
 		}
-		ai_chance = { factor = 10 }
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				has_global_flag = GER_has_started_war
+				NOT = { is_in_faction_with = GER } #FRA doesn't care if in faction
+				factor = 0
+			}
+		}
 		CZE = {
 			country_event = germany.44
 			add_opinion_modifier = { target = FRA modifier = western_betrayal }
@@ -1299,8 +1363,18 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 0 #if you lead a faction, fight
+				is_faction_leader = yes
+			}
+			modifier = {
+				factor = 0.05 #if you are in a faction, maybe fight
+				is_faction_leader = no
+				is_in_faction = yes
+			}
+			modifier = {
 				factor = 0
 				is_puppet = yes
+				NOT = { is_puppet_of = GER } #puppeted CZE wouldn't surrender Sudetenland otherwise
 			}
 			modifier = { # Increase it again if other bordering nations are in Axis
 				any_neighbor_country = {
@@ -1443,6 +1517,19 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.56 }
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+					country_exists = YUG
+					ENG = { NOT = { has_war_with = YUG } }
+				}
+				ENG = {
+					country_event = {
+						id = DOD_yugoslavia.42
+						days = 3
+					}
+				}
+			}
 		}
 	}
 }
@@ -1535,6 +1622,17 @@ country_event = {
 			}
 		}
 		GER = { country_event = germany.55 }
+		if = {
+			limit = {
+				has_DLC = "Death or Dishonor"
+			}
+			GER = {
+				country_event = {
+					id = DOD_yugoslavia.32
+					hours = 6
+				}
+			}
+		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 	option = { # Refuse
@@ -1737,6 +1835,11 @@ country_event = {
 			SLO = { transfer_state = 72 } # Give Slovakia Zaolzie
 		}
 
+		if = {
+			limit = { has_global_flag = GER_HUN_CZE_split }
+			HUN = { country_event = DOD_hungary.106 }
+		}
+		
 		hidden_effect = {
 			country_event = { hours = 6 id = news.60 }
 			every_state = {
@@ -1766,6 +1869,7 @@ country_event = {
 			HUN = {
 				is_friend_or_potential_friend_of_GER = yes
 			}
+			NOT = { has_global_flag = GER_HUN_CZE_split }
 		}
 		HUN = { country_event = germany.56 }
 		if = {
@@ -1794,9 +1898,28 @@ country_event = {
 			limit = { country_exists = CZE }
 			annex_country = { target = CZE }
 		}
+		if = {
+			limit = { has_global_flag = GER_HUN_CZE_split }
+			HUN = { country_event = DOD_hungary.106 }
+		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.62 }
 		}
+	}
+
+	option = {
+		name = germany.55.do
+		trigger = {
+			has_global_flag = GER_HUN_CZE_split #promised Hungary Slovakia in earlier event 
+		}
+		ai_chance = { 
+			factor = 100
+			modifier = {
+				factor = 10
+				is_in_faction_with = HUN
+			}
+		}
+		HUN = { country_event = DOD_hungary.101 }
 	}
 }
 
@@ -2047,7 +2170,13 @@ country_event = {
 
 	option = { # Diplomatic response
 		name = germany.60.b
-		ai_chance = { factor = 99 }
+		ai_chance = { 
+			factor = 99 
+			modifier = {
+				has_global_flag = GER_has_started_war
+				factor = 0
+			}
+		}
 		ENG = { country_event = germany.62 }
 		add_opinion_modifier = { target = GER modifier = protest_action }
 	}
@@ -2064,7 +2193,13 @@ country_event = {
 	
 	option = { # War out of the question
 		name = germany.61.a
-		ai_chance = { factor = 90 }
+		ai_chance = { 
+			factor = 90 
+			modifier = {
+				has_global_flag = GER_has_started_war
+				factor = 0
+			}
+		}
 		FRA = { 
 			country_event = { hours = 6 id = germany.63 }
 		}
@@ -2819,6 +2954,10 @@ country_event = {
 		name = germany.79.a
 		ai_chance = {
 			factor = 70
+			modifier = {
+				NOT = { BUL = { is_in_faction_with = GER } }
+				factor = 0.5
+			}
 		}
 		GER = { puppet = TUR }
 		SOV = {
@@ -2833,7 +2972,13 @@ country_event = {
 	
 	option = {
 		name = germany.79.b
-		ai_chance = { factor = 10 }
+		ai_chance = { 
+			factor = 10 
+			modifier = {
+				GER = { surrender_progress > 0.25 }
+				factor = 5 #seems safe
+			}
+		}
 		trigger = {
 			TUR = {
 				is_puppet = no
@@ -2868,7 +3013,7 @@ country_event = {
 		name = germany.79.c
 		ai_chance = { factor = 20 }
 		GER = {
-			declare_war_on = {
+			create_wargoal = {
 				target = TUR
 				type = puppet_wargoal_focus
 			}
@@ -4968,6 +5113,12 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		if = {
+			limit = {
+				is_in_faction_with = GER
+			}
+			remove_from_faction = CZE #kicked from faction
+		}
 		effect_tooltip = {
 			GER = {
 				add_state_claim = 69
@@ -5159,8 +5310,7 @@ country_event = {
 	desc = germany.1000.desc
 	picture = GFX_report_event_german_reichstag_gathering
 
-	fire_only_once = yes
-	hidden = yes 
+	hidden = yes
 
 	trigger = {
 		SOV = {
@@ -5168,15 +5318,22 @@ country_event = {
 			owns_state = 217 
 			owns_state = 195 
 		}
+		OR = {
+			has_global_flag = GER_cities_renamed
+			has_global_flag = ROM_king_is_silly
+		}
 	}
+
+	mean_time_to_happen = { days = 2 }
 
 	option = { #a great idea!
 		name = germany.1000.a
 		ai_chance = {
 			base = 100
 		}
-		reset_province_name = 3529 
-		reset_province_name = 3151 
+		reset_province_name = 3529
+		reset_province_name = 3151
 		clr_global_flag = GER_cities_renamed
+		clr_global_flag = ROM_king_is_silly
 	}
 }

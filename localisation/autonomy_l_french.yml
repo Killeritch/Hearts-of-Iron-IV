@@ -53,3 +53,6 @@
  CONSTRUCTION_MASTER_BUILDING_CANT_REDUCE:0 "§RNous ne pouvons pas réduire le niveau de construction ni annuler cette construction.§!"
  CONSTRUCTION_INFO_MASTER:0 "Cette construction se trouve sur le territoire de $WHO|H$. Si nous n'utilisons pas toutes les usines, $WHO|H$ peut contribuer en utilisant les siennes."
  CONSTRUCTION_INFO_SUBJECT:0 "Cette construction est construite pour nous par $WHO|H$. Si $WHO|H$ n'utilise pas toutes les usines, nous pouvons contribuer en utilisant les nôtres."
+ autonomy_reichskommissariat:0 "Reichskommissariat"
+ autonomy_reichsprotectorate:0 "Reichsprotektorat"
+ autonomy_satellite:0 "Satellite"

@@ -17,7 +17,7 @@
  ARMY_AIR_WINGS_ASSIGNED_REGION:0 "$REGION$"
  ARMY_DIVISIONS_GROUP_NO_LEADER:0 "Em um exército"
  ARMY_DIVISIONS_GROUP_LEADER:0 "Em um exército liderado por $LEADER|Y$"
- ARMY_DIVISIONS_BUTTON:0 "Clique§! para selecionar.\n§GClique§! mantendo §HShift pressionado§! para selecionar vários exércitos.\n§GClique com o botão direito§! para ver o exército."
+ ARMY_DIVISIONS_BUTTON:0 "§GClique§! para selecionar.\n§GClique§! mantendo §HShift pressionado§! para selecionar vários exércitos.\n§GClique com o botão direito§! para ver o exército."
  ARMY_DIVISIONS_TYPE:0 "$TYPE|Y$"
  ARMY_NAVIES_SHIPS_HEADER:0 "$N|Y$ navio(s)"
  ARMY_NAVIES_SHIPS_ENTRY:0 "$TYPE|Y$ $DESC$ ($NAME|Y$)"
@@ -123,3 +123,4 @@
  THEATER_GROUP_DEFENSIVE_NO_TROUBLES:0 "§GNossa defesa está indo bem§!"
  THEATER_GROUP_OFFENSIVE_NO_COMBATS:0 "Sem combates ofensivos"
  THEATER_GROUP_DEFENSIVE_NO_COMBATS:0 "Sem combates defensivos"
+ ARMY_TEMPLATE_INFO:0 "$NAME$: $COUNT|H$"

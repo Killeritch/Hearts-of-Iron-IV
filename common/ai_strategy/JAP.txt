@@ -18,17 +18,11 @@ less_trucks_4_u_JAP = {
 	abort = { 
 		date > 1939.1.1
 	}
-	
-	ai_strategy = { 
-		type = unit_ratio
-		id = motorized 
-		value = 1 
-	}
 
 	ai_strategy = { 
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 10
+		value = 80
 	}
 
 	ai_strategy = {
@@ -54,7 +48,26 @@ less_trucks_4_u_JAP = {
 		id = infantry
 		value = 100
 	}
+	
+		ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 10 #20 to 10
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 20 #10 to 20
+	}
 }
+	
 
 southern_expansion = {
 	enable = {

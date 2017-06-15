@@ -53,3 +53,6 @@
  MASTER_SURRENDER_FREEDOM_EFFECT:0 "El amo ha capitulado"
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RSolicitar arriendo y préstamo del títere puede aportarles más autonomía§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RSolicitar arriendo y préstamos del amo podría eliminar la autonomía§!"
+ autonomy_reichskommissariat:0 "Reichskommissariat"
+ autonomy_reichsprotectorate:0 "Reichsprotectorate"
+ autonomy_satellite:0 "Satélite"

@@ -1509,6 +1509,16 @@ instant_effect = {
 		progress = 0.15
 		amount = 1
 	}
+	# Graf Zeppelin
+	add_equipment_production = {
+		equipment = {
+			type = carrier_3
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+	}
 }
 
 #####################

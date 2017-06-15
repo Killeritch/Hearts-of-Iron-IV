@@ -30,7 +30,7 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "ambient_water_mesh"
-		file = "gfx/models/units/ships/ger_submarine.mesh"
+		file = "gfx/models/units/ships/generic_submarine.mesh"
 		scale = 1.0
 		cull_distance = 999999.0
 	}

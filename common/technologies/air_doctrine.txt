@@ -33,7 +33,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
 		ai_research_weights = {
@@ -69,7 +69,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
 		ai_research_weights = {
@@ -105,7 +105,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
 		ai_research_weights = {
@@ -644,7 +644,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
 		ai_research_weights = {
@@ -1106,7 +1106,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			
 			modifier = {
 				factor = 0
@@ -1142,7 +1142,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 		}
 		
 		ai_research_weights = {

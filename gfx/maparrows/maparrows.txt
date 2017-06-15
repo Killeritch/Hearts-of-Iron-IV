@@ -691,3 +691,63 @@ arrowType = {
 	global_scale_max_points = 40 # Line will reach it's normal size after X points
 	texture_anim_speed = 0.2
 }
+
+symbolType = {
+	name = "radar"
+	technique = "MapSymbolDefaultAdd"
+	texture = "gfx/maparrows/radar.dds"
+	size = 1.0
+}
+
+symbolType = {
+	name = "air_range"
+	technique = "MapSymbolDefault"
+	texture = "gfx/maparrows/air_range.dds"
+	size = 1.0
+}
+
+arrowType = {
+	name = "air_mission_direction"
+	technique = "MapArrowDefault"
+	texture_mask = "gfx/maparrows/air_mission_mask.dds"
+	texture_pattern = "gfx/maparrows/air_mission.dds"
+	body_uv_scale = 0.4
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 7 13 }
+	#texture_loop = 3
+	width_scale_max = 22.0
+	width_scale = 1.0
+	head_length = 14
+	fade_in = 0.2
+	fade_out = 0
+	text_size = 1
+	text_offset = 5
+	global_scale_min_size = 0.1
+	global_scale_max_points = 40
+	texture_anim_speed = 0.4
+}
+
+arrowType = {
+	name = "air_transfer"
+	technique = "MapArrowNoHead"
+	texture_mask = "gfx/maparrows/air_transfer_mask.dds"
+	texture_pattern = "gfx/maparrows/air_transfer.dds"
+	body_uv_scale = 0.41
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 0.0 0.0 0.0 } # <- temporarly disabled outer mask
+	body_width = { 0.8 0.8 }
+	texture_loop = 1.5
+	text_size = 1
+	text_offset = 0
+	global_scale_min_size = 0.2
+	global_scale_max_points = 40 # Line will reach it's normal size after X points
+	texture_anim_speed = 0.2
+}
+
+symbolType = {
+	name = "air_transfer_progress"
+	technique = "MapSymbolDefault"
+	texture = "gfx/maparrows/paradrop_pattern.dds"
+	size = 4.0
+}

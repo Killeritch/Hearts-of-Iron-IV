@@ -1,6 +1,8 @@
 equipments = {
 
 	convoy = {
+		year = 1910
+
 		is_archetype = yes
 		type = convoy
 		picture = archetype_convoy		
@@ -43,6 +45,8 @@ equipments = {
 	}
 
 	convoy_1 = {
+		year = 1910
+
 		archetype = convoy
 		type = { 
 			convoy

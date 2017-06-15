@@ -3,6 +3,6 @@ archive = "dlc/dlc018_together_for_victory/dlc018.zip"
 steam_id = "530760"
 affects_checksum = yes
 affects_compatability = no
-checksum="064ba8253cfcc8765ba66537fda5eb4b"
+checksum="fed08fe186a8ed0fe901bceccc47ee43"
 third_party_content = no
 category = "expansion"

@@ -1,4 +1,383 @@
 ################################################################
+###########              VERSION 1.4 "Oak"             ###########
+################################################################
+
+#######################################################
+# Death or Dishonor Country Pack
+#######################################################
+- New focus trees, generals, companies, and ministers for Romania, Hungary, Czechoslovakia and Yugoslavia including alternate history paths.
+- New 3d models for vehicles, planes and infantry as well as accompanying 2d art for the new nations
+- 3 new war themed music tracks by composer Andreas Waldetoft
+- Voice over sounds for infantry units in Czechoslovakia, Romania and Hungary
+- You can now License Produce equipment from other nations
+- Added Equipment conversion ability on production lines that allow you to convert older equipment to newer and/or self-propelled models
+- Added 2 new industry techs that allow you to improve conversion efficiency
+- New subject levels for fascist nations: Satellite, Reichsprotectorate and Reichskommisariat
+- Added 10 new achievements 
+
+
+##################################
+# Free Features & Important
+##################################
+- All new air controls and interfaces including new air combat screen
+- Air missions and wings now visible and selectable on map with ranges etc
+- Radar now more visible with ranges on map that can be toggled
+- Added possibility to rename air wings and added historical naming schemes to most nations
+- Its now possible to stop being capitulated by getting back to 90% and recovering your capital. Rules show on war participant items when they have the capitulate icon up.
+- Grabbing territory occupied by others in peace conferences now much more expensive
+- Several changes to map and strategic areas for better play
+- New impassable borders and areas (Sahara) making warfare in certain parts of the world much more interesting
+- Updated interfaces for War and Trade
+
+
+##################################
+# AI
+##################################
+- Made AI not bother with fallback orders if the area they would be defending is tiny. Makes the AI better at pushing after landing a naval invasion.
+- Made unitcontroller units more decisive in where they are going, as well as various tweaks and fixes to reduce shuffling.
+- Significant improvements to front balancing( Units should be far less likely to abandon parts of the front and far better at spreading units out across the front )
+- Units controlled by the front should now cancel orders that are heading towards provinces that are no longer part of the front
+- Fixed bug that would cause units to get very poorly assigned when an attack order auto splits ( for instance when it reaches its target at a province at the center of the order )
+- Improved AI focus a little bit, making idea evaluation a little better.
+- Tweaked what it means for a front to have the same value for highest and lowest prio score. Used to cause some fronts to never move.
+- Made sure the AI is not trying to upgrade specialist templates before it has the tech. 
+- Removed mobile template designs, because the AI cannot handle them properly.  
+- Found and fixed an issue that could lead to AI not assigning units to a plan.
+- Found and fixed some rare situational plan activation bugs. 
+- Fixed to pretty nasty issues with plan activation that caused France to act dumber than usual and charge across the Maginot line again. 
+- Fixed major booboo that cause AI to often just redraw attack plans
+- AI now rebuilds attack plans if they are almost done and getting stuck
+- Fixed issue with SOV putting an anti tank battalion in their infantry divisions
+- Made sure AI does not convert equipment, for now. AI is better off using what it has than trying to optimize through conversion.
+- Tweaked what AI sees as an easy target and weak units for better front activation. 
+- Overhauled AI plan activation and mode setting.
+- Fixed mistake in AI fortification evaluation for plan activation, and made them better at taking advantage of weaknesses in fortified enemy fronts.
+- AI will now respect impassable borders when drawing plans.
+- Fixed a case of redundant unit shuffle.
+- Implemented scriptable production prio per template target. 
+- Made sure 4 hour rule applies when changing attack target.
+- Tons of AI template design bugfixes, improvements and tweaks in both code and script for many of the majors, as well as in the general script for other countries.
+- Integrated logic for adding battalions together with replace so both options are evaluated at the same time. 
+- Found a mistake in template match calculation and fixed it. Now seem 100% solid. 
+- AI non capital area garrison order no longer guards the whole coast.
+- Fixed bug in template match score calculation that could cause some countries to get stuck and not develop any new templates.
+- Made sure rounding error does not break unit distribution on fronts.
+- Tweaked port building desire based on AI naval focus.
+- AI production tweaks taking role changes into account. 
+- Germany and Soviet are now able to field anti armor divisions.
+- Soviet and Germany should now prioritize tank destroyer technology as they are facing enemies with increasing armor. 
+- Added first pass anti armor roles for Germany and Soviet as well as AI test scripts for it. 
+- Implemented caching of armor and piercing values per country as well as intel functions to get some of them (others can be added as needed, but keeping). 
+- Tiny change in AI personality; being hostile towards someone now also means they want to weaken them. 
+- Made custom icons for AI templates scriptable. 
+- Increased priority for infantry expert for Japan.
+- Trying out Japan starting out doing army primacy.
+- AI can handle reinforce priority better when designing templates. 
+- It is now possible to script reinforcement prio for AI templates, and the AI can handle it.
+- Rather drastic changes that effect how many troops end up in Africa. 
+- Fixed bug in AI deciding on which templates are best for production.
+- Improved unitcontroller front shuffling when fighting.
+- Improved distance factor for unitcontroller handling fronts during wars. 
+- Germany no longer loves spending time on motorized.
+- Improved Germany AI garrison template. 
+- Improved AI garrison template design. AI now badly wants to assign garrison units to garrison orders and will avoid assigning armor to garrison or naval invasion orders.
+- Separated strategies for building ships, airplanes and land units in order to make saves work with roles.
+- Added trigger for if AI has fielded divisions of a certain role for AI testing and template scripting. 
+- Germany should now be able to design and field garrison units.
+- Template roles should now be saved along with deployment lines (they get assigned one to make sure the count per role to build is proper.)
+- AI template design progression now works as earlier, but locked within role.
+- Roles now exist in upgrading templates and deployment.
+- The AI should now be sending and recalling expeditionaries intelligently.
+- Removed silly AI code that could potentially lead to AI only front shuffling.
+- Fixed the bug when air ai would not deploy any air wings if no airwings deployed already
+- Fixed the bug when air AI was too focus on naval air superiority rather than getting air superiority in land combat areas
+- Fixed the bug when air AI prioritized own units on friendly territory, rather own units on own territory
+- Now AI logic for request and recieve lend-lease equipment should be consistent with each other
+- tweaked China's templates so they try to aim for something less industrially costly until strong enough (burn manpower!)
+- fixed a case where AI would manage to sneek in nations it didnt actualy want in factions (like finland in axis too early) just because it really really really hated their opponents
+- fixed a case where ai would jump on total mobilization despite having low manpower laws and ruinign their reinforcement (probably only ever happened for big nations like china)
+- added separate ai scoring bonus for ahead of time techs so they better take advantage of them
+- Units that already have good positions on the front are no longer considered for moving along the front
+- Fixed bug that could cause units to take a naval path to nearby provinces they could just walk too.
+- Fixed bug that could cause units to cancel their move orders when they shouldn't.
+- Scripted higher prio for economic and manpower laws.
+- AI will ignore historical list when looking for focus to bypass.
+- Fixed case where AI could get stuck researching if only single techs were queued and they were not possible to research 
+- Fixed an issue where AI would queue up tech targets too early so they were not correctly evaluated
+- Improved logic for US involvement in the war in the case of swift japanese victory vs china. It will now get interested as australia and india start to fall also
+- Minors will now do economic mobilization laws if justified against rather than wait for tension or declaration of war (to help china)
+- China now a bit more on the ball on manpower laws as they need to throw anything they can at the invaders
+- All nations will now be less spendy on admirals early on
+- Soviet will now respect the spirit of the ribbentropp pact and not send volunteers to poland ever
+- Chinese AI will now consider naval ministers less interesting
+- Tweaked many ai research weights to remove wierd choices due to timing
+- Reduced AI research weights for picking heavy tank and special forces techs
+- Tweaked ai weights for nations to make better selection on manpower and economic laws
+- A lot of changes to AI target templates for majors
+- A lot of changes to AI production targets for majors
+- Several changes so default AI focus more on inf, capital ships, fighters, less on armor, random planes, and subs/destroyers
+
+
+##################################
+# UI
+##################################
+- Dramatically improved communist Korea by using DPRK (best Korea) flag
+- Console now can't be open in multilayer or ironman
+- Added tool tip information about amount of division templates in the army when you hover over division counts
+- Added option to double click for selection of all units in army with same template
+- Made significant fixes to how autoscrolling for selected units list to make sure that now it will follow the selection properly
+- Fixed overflow error that could cause wrong display of the intel data numbers
+- Fixed the bug when available wargoals alert could stuck in iteration trough countries player has wargoals against
+- Fixed the bug when you could request 0 troops from your puppet
+- Fixed the bug when civil war country manpower were displayed incorrectly
+- Tooltips for battalions in division designer now show correct change in the supply usage
+- Now 'Subject main soon rise Autonomy" alert opens subjects screen
+- Added reinforcement priority status for the template change menu entries
+- Now tooltip for time estimation shows "Never" in case if factories assigned but penalty is too big instead [No factories assigned]
+- Added manpower showing on the info diplo screen
+- Now equipment type buttons in the request lend lease screen does not depend on the production or stockpile of the requesting side, rather than if this equipment is known to be available for export
+- Airbase icons are 30% larger in the strategic air map mode
+- Expanded the war overview window to show more information. Major countries now also has a golden frame, and capitulated countries now has a white flag.
+- Impassable terrain now has a spiky outline.
+- Changed radar tool-tip to clarify it helps you detect enemy fleets rather than your own
+- Changed the icon for manpower losses in theater history. It was using the icon for manpower (top bar) but is now using the icon for losses (war casualties). 
+- Tweaked some interface stuff for air combat (stuff that was meant for the simplified version, but is of no use now).
+- Added new texture-files for the simplified air combat interface, to fit some old elements that would be moved into this air combat interface.  
+- Implemented a simplified version of future air combat interface (in case of planned interface can't be implemented, due to time constraints).
+- Changed the cropping width of the Air wing names and air zone names in the air wing interface.  This frees up more space for other elements that occupies the interface. 
+- Changed the highlight color for "outdated equipment", "available licenses" and "active licenses" in the Production window. They were in white but are now in yellow, for consistency. 
+- Change color of several text elements in naval battle, for more consistency. Parentheses for ship names during naval engagements have been changed from green to white. Changed "dispatch" to "dismiss" in the report for naval battles. 
+- Changed coloring of naval losses text, for consistency
+- Fixed some text-padding in the construction interface (some text was overlapping).
+- Added convoys count on lend lease trade route tooltip.
+- Fixed issue where there some plane icons had different sizes
+- Fixed an issue where animated sprites would sometimes "strobe"
+- Changed colors for strategic naval view to match air and be clearer
+- Strategic air mapmode now has clearer and more visible coloring
+- Fixed overflow issue in peace demand lists
+- Created effects and animations on submarine.
+- Fixed a bug where machine gun infantry trained with rifles.
+- Created march animations for some units that were missign them.
+- Tweaked several animations
+- Airbase indicator on counters no longer eats zoom-in from mouse
+- Efficiency growth now grouped with other modifiers of same type in production interface  
+- Clarified tooltip of what production is needed for icon in production interface and added tooltip to number also
+- Added mip bias to button texture loading as some drivers may be picking a worse mip level for our generals 
+- Console now can no longer be open in multiplayer or ironman to making life a bit harder for cheaters
+- When player is about to build a new radar, the new effect is drawn to indicate the next level range
+- Radars now has the on-map-icon. So player can see them when playing with 3d buildings disabled
+- Added setting for toggling visibility of radars on map 
+- Mouse over the radar icon shows the details tooltip and a range indication circle
+- While in the strategic air map mode, now the terrain is painted with stripes indicating if any of the selected air wings can be assigned to that region or not
+- Fixed missing scrollbar in division designer when selecting custom icon
+- Clicking on the army no longer swaps the map mode to the default one. Also it is now possible to draw battleplans in any map mode from pressing the "small" map mode buttons
+
+
+##################################
+# Audio
+##################################
+- Added and improved sound effects for airplanes.
+- Added and tweaked audio assets for infantry and artillery.
+- Added more weather sound effects
+- Added new notifications sound effects
+- Fixed several audio bugs
+
+
+##################################
+# Modding
+##################################
+- Added triggers for estimated max armor and piercing based on intel.
+- Fix for CTD that occurred after reloading focus trees
+- added console command "ai_pp_log" to log AI use of PP
+- has_idea trigger is no longer affected by order of files in database.
+- Fixed a crash when painting cities on the edge of the map.
+- Added possibility to hide parts of the focus tree with a trigger. allow_branch = { <trigger> }.
+- Added ability to reposition national focus based on trigger.
+- Added modifier: IMPROVE_RELATIONS_MAINTAIN_COST_FACTOR 
+- Added support for relation modifiers and valid_relation_trigger in the static modifiers file. Modifiers are removed if the trigger becomes false.
+- Added add_relation_modifier effect that adds a static modifier from current scope to target.
+- Added remove_relation_modifier effect.
+- Added trigger has_relation_modifier.
+- Added modifier license_purchase_cost_factor. Modifies total CIC cost of purchasing a license.
+- Added modifier license_production_speed_factor. Modifies production speed for license.
+- Added modifier license_tech_difference_speed_factor. Modifies production speed penalty from tech level difference.
+- Added dynamic cost_factor modifier for idea groups. Example political_advisor_cost_factor.
+- Added ai_license_acceptance modifier, for relation modifiers. Modifies desire for the ai to sell licenses.
+- Added modifiers for purchase cost of specific types of licenses. license_air_purchase_cost_factor license_infantry_purchase_cost_factor license_armor_purchase_cost_factor license_naval_purchase_cost_factor 
+- Added triggers for license production: is_licensing_to and is_licensing_any_to.
+- Added set_building_level effect, that sets the level of specified building.
+- Added a level < <number> limit for building province buildings.
+- Added any_province_building_level trigger.
+- Added console commands set_global_flag and set_country_flag.
+- Added guarantee_cost modifier. Modifies the PP cost of guaranteeing a nation.
+- Added autonomy_gain_global_factor modifier. Factor on all autonomy gained by a subject.
+- Added trigger amount_research_slots > <int>
+- Added trigger manpower_per_military_factory
+- Added allow_branch trigger to technology trees. Will disable and hide all children of a technology that does not meet the trigger.
+- Added possibility to look for a specific archetype of ship in has_navy_size trigger.
+- Added trigger amount_taken_ideas. Excludes national_spirit, hidden, law = yes. Example: amount_taken_ideas = { amount < <int> (mandatory)  category = { military_staff } 	slot = { army_chief political_advisor }	} Category and slot is optional.
+- Added on_state_control_changed to on action.
+- Added non_core_manpower modifier that can be used on country level to control manpower from non-core territory
+- Added new ai strategy land_xp_spend_priority with valid values of "division_template" or "equipment_variant"
+- Added new ai strategy pp_spend_priority with valid values of "admiral" or "general" or an idea
+- Added new parameter states_filter to start_civil_war effect which filters out invalid states from list
+- Added new defines to control costs in peace deals (BASE_PEACE_TAKE_UNCONTROLLED_STATE_FACTOR, BASE_PEACE_TAKE_FACTION_CONTROLLED_STATE_FACTOR)
+- States can now be marked as impassable and can then not be traversed by troops, they get special border graphics to signify this. Province view will indicate with an icon+tooltip, as will on-map tooltip
+- Borders between provinces can now be set up in adjacencies as impassable and can then not be passed
+- Added on_uncapitulate on-action to mirror capitulation
+- Added triggers for estimated max armor and piercing based on intel. 
+
+
+##################################
+# Database
+##################################
+- Fixed issue with Japanese Infantry Equipment flavor name (hi ceebie)
+- Added air wing naming schemes for many nations, including all majors, TfV and DoD countries
+- Made suicide planes their own archetype
+- added a few more Cosmetic tags based on historical research
+- Changed wwill to will in localization file
+- Soviet generals are no longer allowed to derp SU-152s in tank destroyer mode. The localization has been changed so that SU-152 is now self-propelled artillery and the SU-100-Y is the tank destroyer.
+- Added Takuo Godo war industrialist advisor for Japan
+- Added corps commanders and navy leaders to: Ion Antonescu, Gheorghe Avramescu, Horia Macellariu. Removed generic navy leader.
+- Yugoslavia high command: Changed area of expertise to "Army Drill - Expert"  Danilo Kalafatovic changed to "Maneuver - Expert".
+- Added new army leaders to Yugoslavia: Danilo Kalafatovic, Milutin Nedic, Petar Kosic, Marijan Polic.
+- Added new army leaders to Hungary: Ferenc Feketehalmy-Czeydmer, Kàvoly Beregfy, Lajos Veres.
+- Added Hungarian design companies: Ganz Danubius, MÁVAG and Fegyver- és Gépgyár
+- Bumped Walter Model to skill 2 field marshal with defensive traits
+- Added autogeneration of Air Wing names if none is scripted
+- German generals von Kleist and W. List both get +1 skill level
+- Added silly king renaming cities events instead of fixing the AI
+
+
+##################################
+# Balance
+##################################
+- Reworked airzones in several areas to be smaller and/or rational
+- Blocked Sudetenland focus for Germany if Germany is in a faction with CZE and together in a war
+- Changed event germany.122 (Sudetenland failsafe) to kick CZE out of the Axis if they refuse.
+- Changed number of building slots in greater Transylvanian area based on feedback
+- Added a core for Bulgaria in the Treaty of Craiova 
+- Added Aluminium to Asia
+- Blocked ENG/FRA from interfering in Sudetenland if they are puppets 
+- Added a global flag that is set if Germany starts a war. AI weights for the Sudetenland and Rhineland have been adjusted to ensure that Germany will be challenged if they started a war before taking those focuses
+- If FRA supports CZE alone in Munich they will no longer steal CZE from their existing faction
+- ENG/FRA are more likely to support CZE during munich if both they and CZE are communist 
+- CZE is more likely to fight over Munich even if abandoned if they are in a faction, even more so if they lead a faction
+- Changed demand sudetenland effect to send demand to Czechoslovakia's overlord if there is one
+- CAS, fighters and tac bombers now have a stat progression for naval_strike_attack instead of the same for all models.
+- Rebalanced damage scaling in air combat to avoid most of the wierdnesses. more planes generally more deaths etc, also less damage in the really bloody defend/intercept scenarios
+- Increased advantage of numerical superiority in air combat. 1000v100 test get around 30% bonus for big side rather than < 10%
+- Now possible to disrupt all incoming bombers/CAS if you have enough fighters in air combat
+- Scaled down damage done to planes on the ground during bombing to 1/5th
+- Hungary now gets to have great war tank starting tech
+- Prince of terror trait now gets +2% more recruitment from non-core territory
+- Tweaked equipment deficiencies and some factory setups for china and japan in 1936 to balance later war
+- Tweaked japanese/chinese tempaltes to slow down the war
+- Reduced equipment starting lack for soviets in 1936
+- Reduced stockpile gain on capitulate by 25%
+- Its now 10x more expensive to take territory occupied by another faction in a peace deal (e.g allies taking stuff commintern occupies)
+- Custom-difficulty slider now also reduces the impact of resource shortage for AI
+- The amount of spawned milita divisions in Spanish Civil War are now more and positioned better to draw out conflict
+- Spanish civil war equipment levels tweaked for longer conflict
+- Tweaked SCW participant NU levels
+- Bombing warscore now worth less on your participation
+
+
+##################################
+# Bugfix
+##################################
+- Fixed a duplicate advisor for Canada
+- Fixed an issue with Vichy France thinking it was actually a proper nation and changing its name while still a puppet. 
+- Fix for France and Britain gallantly coming to the rescue of a CZE that is allied to Germany 
+- Fixed an issue where Romania could still refuse Bessarabia demands on historical mode (will now never refuse on historical)
+- Fixed an issue with the name of Greek party in spanish loc
+- Fixed a trigger issue with the Germany befriends China focus (was OR, should have been AND) 
+- Fixed an issue with a tooltip to cancel all construction displaying the wrong key combination (Shift+click instead of Ctrl+click) 
+- Fixed critical spelling error in South African focus description
+- Changed event France.14: added ai chances (AI will now always create Vichy in historical mode), fixed a bug that would not assign Italy a state they were supposed to get when Vichy is created
+- Units can no longer be in multiple attack combats at the same time
+- Fixed the bug when quite damaged fleet never could be sinked by naval strike
+- Fixed the bug when large stacks of CAS could not enter combat after entering the combat
+- Fixed the bug when civil war side received only dead-zombie divisions
+- Research bonus now sticks to tech its applied to
+- Mission efficiency now affects air superiority
+- Fixed the bug when change of political setup could lead to blocking of lend lease cancelation by level of world tension
+- Now transfer_ships effect won't transfer wrong fleet in case of the ships with same name of in one fleet
+- Fixed the bug when you could not lend lease allies in case of fighting in war together
+- Now war overview shows the exact faction members that have to surrender to make sure that war ends
+- Unlocked technology now properly updates units and division template stats
+- Fix for the bug when ships port capacity was wrongly calculated while merging fleets
+- Radar levels now uses last non damaged level for calculations
+- Now subjects can join only master's wars
+- Rockets now get properly upgraded
+- Fixed the bug when military access was reversed for the strait rules
+- Fixed the bug when airplane transfer progress was not saved
+- Fixed the bug when building slots in revolter country were counted as non-core
+- Fixed the bug when puppets were not automatically included in the peace conferences as loosing sides
+- Fixed the bug when threat from the focuses with national focus were displayed incorrectly
+- Peace conference does not consider any more as loser side country occupied by another one that stays at war with occupied after piece conference
+- Fixed the map tooltip bug that occurred when units were selected in secondary mapmode but was showing still the unit movement info
+- Attacked units now can attack on their own
+- Made possible to declare war on puppets if already at war with master
+- Now subjects can always join master's wars
+- Fixed the bug when colonial troops disappeared after annexation of the subject
+- Fixed the issue when on map tooltip shown that rocketsite and air base were located in state even they were not built yet
+- Fixed the bug when political power was shown as progress for war goal justification
+- Fixed the bug when cancellation of the trade happened if influence of opposite country was below zero
+- Added removing of the war threat when canceling justification of the war goal
+- Naval service manpower now properly returns after ships are getting sink in the naval combat
+- Fixed the bug when factories could not be converted if there is no factory of other type in the state
+- Went grammar fascist on an error log message for when dupliacte ideas had been scripted in.
+- Fixed an issue where Slovakia used a Slovenian flag.
+- Fixed a number of errors in German localisation (thanks davewolf!)
+- Radar tool-tip no longer claims that it helps the enemy find your fleets
+- The Northern Lights achievement now recognizes dynamic tags spawned from the Scandinavian countries
+- Changed demand sudetenland focus to send the event to Czechoslovakia's overlord if they're a subject
+- Blocked the munich conference (from Demand Sudeteland) if england no longer exists or has become a subject. Czechoslovakia (or their overlord) get the direct demand event instead.
+- Fixed issue where units could be given multi-province retreat orders ( This could result in for instance retreats all the way back to your capital )
+- Canada has finally learned that no means no and will no longer join Germany's faction when the proposal is rejected.
+- Added bypass to Canadian focus 'Join Germany' if Canada is already in a faction with Germany.
+- Canada will no longer get wargoals on USA from focus when they are in the same faction.
+- Removed 0-1 cap from join_faction_tension and guarantee_tension modifiers to show tooltips when ideas reduce them.
+- Fixed every_enemy_country effect using same code as random_enemy_country effect.
+- Fixed database issue that caused has_available_idea_with_traits to not work for design companies.
+- Fixed an issue where splitting an uneven amount of resources down the middle would round up both piles and cause discrepancies between trade interface and production interface.
+- Units containing primarily licensed or lend leased variants now use 3D models from the equipments original creator.
+- Added tooltip generation for create unit commander effects.
+- Trade view now filters subjects properly.
+- Added bypass to Japanese focus Sever 'Sino-German Ties' if China is a puppet of Japan.
+- Request Lend Lease should no longer show as if it would be accepted if there is no equipment available for lease or the requester has too much equipment.
+- Yugoslavia now only loses ideology support when Italy completes 'Claims on Yugoslavia' if they are not obviously working towards that ideology.
+- Added support types so japanese suicide craft will work
+- Fixed some cases that made air outcomes wierd and where air speed has extremely little (or possibly bad) impact
+- Completing focuses no longer resets their tension impact. also tension given back now scales properly depending on when you cancel
+- Syria and tunisia no longer changes controller as part of vichy events if occupied by 3rd party
+- Fixed invalid caluclation for offer peace action. can now actually offer peace when losing
+- Fixed an issue where divisions would get deleted when being transfered to another nation due to manpower already reset
+- Total production line output can no longer go negative (caps at 0 and only appeared when doing certain modding)
+- Fixed a problem with overflows for large manpower numbers when calculating intel
+- Target for surrender now checks if we are allowed to surrender and scores appropriately. Fixes issues where multiple wars could block each other from ending despite a full side having capitulated, yet not called some party in
+- Bombing warscore is now properly capped to its max even when bombing multiple target nations
+- Portrait settings file no longer checksummed. Moved from common.
+- Portrait database can now load data correctly from multiple files.
+
+
+###############################
+# Stability & Performance
+###############################
+- Fix for CTD during end of the offered peace conference
+- Now pending diplomatic requests are cleared properly when exiting to main menu (could cause CTD as well as UI corruption)
+- Fix for CTD caused by wargoal alert being clicked with bad timing
+- Fixed CTD from deleting airwings by reducing size to 0 and then opening the air overview
+- Fixed the annoying "death by of a thousand savesgames" thing that could happen when running with a lot of debug saves enabled and jumping around date points
+- Fixed a CTD if a unit from a save with an invalid war with no capital was attempted to be teleported to it
+- Fixed a place where illegal memory could be accessed, potentially triggering the birth of a new chaos god
+- Fixed potential CTD/memory corruption in updatefrontdata averting the chaos gods once again
+- Fixed a potential mod related memory corruption in launcher that could lead to rare crashes
+- Fixed a case where certain scripted nations could make the game CTD selecting 1939 start
+
+
+################################################################
 ###########            Patch 1.3.3 "Torch"           ###########
 ################################################################
 

@@ -783,7 +783,8 @@ focus_tree = {
 		prerequisite = { focus = USA_prepare_intervention }
 		available = {
 			GER = {
-				country_exists = GER
+				exists = yes
+				NOT = { has_government = ROOT }
 				OR = { 
 					has_offensive_war = yes 
 					has_added_tension_amount > 30

@@ -1456,7 +1456,7 @@
  SAF_demand_madagascar:0 "Reclamar Madagascar"
  SAF_demand_madagascar_desc:0 "Debido a los dramáticos cambios de la situación en Europa, ha llegado la hora de reevaluar todo el sistema colonial. ¿Por qué debe permanecer Madagascar junto a un imperio decadente?"
  SAF_invite_soviet_advisers:0 "Invitar a consejeros soviéticos"
- SAF_invite_soviet_advisers_desc:0 "Si queremos apoyar a [SOV.GetNameDef] en su lucha para liberar a todos los trabajadores del mundo, debemos aprender de ellos y mejorar nuestro ejército."
+ SAF_invite_soviet_advisers_desc:3 "Si queremos apoyar a la Unión Soviética en su lucha para liberar a todos los trabajadores del mundo, debemos aprender de ellos y mejorar nuestro ejército."
  SAF_south_african_soviet_research_treaty:0 "Acuerdo de investigación con la URSS"
  SAF_south_african_soviet_research_treaty_desc:0 "Después de aprender tantas lecciones valiosas de nuestros amigos soviéticos, es el momento de afianzar nuestra relación firmando un tratado formal."
  SAF_anti_colonialist_crusade:0 "Cruzada anticolonizadora"

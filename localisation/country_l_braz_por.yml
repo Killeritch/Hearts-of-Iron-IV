@@ -58,6 +58,6 @@
  CONSCRIPTION_TOTAL_FACTOR_EXTRA_DESC:0 "\nMão de obra total efetiva modificada para $VAL|-%0$ devido a\n"
  RULES_TITLE:0 "§HSumário das regras:§!"
  RULES_DESC:0 "As regras do seu país são controladas por sua ideologia, a ideologia de sua facção e seu espírito nacional"
- MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TEsta §Hdivisão§! contém $AMOUNT|G$ tropas. Ela tem mão de obra de:"
+ MANPOWER_DIVISION_SIZE_BREAKDOWN_DESC:0 "§TEsta§! §Hdivisão§! contém $AMOUNT|G$ tropas. Ela tem mão de obra de:"
  MANPOWER_BREAKDOWN_ENTRY:0 "$FLAG$ $COUNTRY|H$: $CURRENT|H$/$MAX|H$"
  MANPOWER_BREAKDOWN_ENTRY_FULL:0 "$FLAG$ $COUNTRY|H$: $CURRENT|G$/$MAX|G$"

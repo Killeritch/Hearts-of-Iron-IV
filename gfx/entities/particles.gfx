@@ -214,6 +214,12 @@ objectTypes = {
 	}
 	
 	pdxparticle = {
+		name = "submarine_idle_particle"
+		type = "ship_idle"
+		scale = 0.5
+	}
+	
+	pdxparticle = {
 		name = "ship_carrier_airplane_death_particle"
 		type = "ship_carrier_airplane_death"
 		scale = 1.0
@@ -279,12 +285,24 @@ objectTypes = {
 		scale = 1
 	}
 	
+	pdxparticle = {
+		name = "submarine_torpedo_particle"
+		type = "submarine_torpedo_file"
+		scale = 1
+	}
+	
 # MISC
 
 
 	pdxparticle = {
 		name = "factory_smoke_particle"
 		type = "factory_smoke_file"
+		scale = 1
+	}
+	
+	pdxparticle = {
+		name = "building_damaged_particle"
+		type = "building_damaged_file"
 		scale = 1
 	}
 	

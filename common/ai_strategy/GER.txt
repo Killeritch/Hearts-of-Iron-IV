@@ -20,53 +20,59 @@ GER_unit_production = {
 	abort = {
 		always = no
 	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 8 #30 to 8
+	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = paratroopers
 		value = 0
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = mountaineers
 		value = 2
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = marines
 		value = 0
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = cavalry
 		value = 0
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = motorized
-		value = -8 #because doctrine this = 2
+		value = -3 #because doctrine this = 2
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = mechanized
-		value = 0
+		value = -5 #because doctrine this = 0
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = armor
-		value = 15
+		value = 0 #because doctrine this = 10
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = 80
+		value = 70 #88 to 70
 	}
 	
 	#Air unit factors
@@ -79,7 +85,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = cas
-		value = 15
+		value = -35 #because doctrine this = 15
 	}
 	
 	ai_strategy = {
@@ -105,13 +111,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = capital_ship
-		value = 15
+		value = 35
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 50
+		value = -150 #because doctrine this = 50
 	}
 
 	ai_strategy = {
@@ -135,57 +141,50 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
-		value = 30
+		value = 50 #30 to 50
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 20
+		value = 40 #20 to 40
 	}
 	
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 10
+		value = 20
 	}
 }	
 
-GER_motorized_production = {
+GER_anti_armor = {
 	enable = {
 		original_tag = GER
 		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
+		
+		any_enemy_country = {
+			ROOT = {
+				estimated_intel_max_armor = {
+					tag = PREV
+					value > 25
+				}
+			}
+		}
 	}
 	abort = {
 		ai_wants_divisions < 6 #Decreasing the amount of motorized the AI wants
 	}
 
 	ai_strategy = {
-		type = unit_ratio
-		id = motorized
-		value = 2
-	}
-}
-
-GER_mechanized_production = {
-	enable = {
-		original_tag = GER
-		ai_wants_divisions > 0 #Decreasing the amount of mechanized the AI wants
-	}
-	abort = {
-		ai_wants_divisions < 1 #Decreasing the amount of mechanized the AI wants
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = mechanized
-		value = 0
+		type = role_ratio
+		id = anti_armor
+		value = 15
 	}
 }
 
 GER_armored_production = {
 	enable = {
-		date > 1938.1.1
+		date > 1939.1.1
 		original_tag = GER
 		ai_wants_divisions > 24 #Decreasing the amount of tanks the AI wants
 	}
@@ -194,9 +193,9 @@ GER_armored_production = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = armor
-		value = 10
+		value = 5
 	}
 }
 
@@ -210,7 +209,7 @@ GER_highered_armored_production = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = armor
 		value = 10
 	}
@@ -318,12 +317,6 @@ GER_template_design = {
 	}
 	abort = { 
 		date > 1940.1.1
-	}
-	
-	ai_strategy = { 
-		type = unit_ratio
-		id = motorized 
-		value = -3
 	}
 
 	ai_strategy = {
@@ -868,7 +861,7 @@ GER_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = africa
-		value = 25
+		value = -90
 	}
 	
 	ai_strategy = {

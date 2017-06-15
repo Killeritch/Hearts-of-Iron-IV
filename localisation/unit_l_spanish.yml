@@ -307,3 +307,4 @@
  NAVAL_INVASION_CAN_NOT_TRANSFER_THROUGH_TITLE:0 "§RSuperioridad naval insuficiente en las regiones:§!\n"
  NAVAL_INVASION_WE:0 "Nostros"
  NAVAL_INVASION_CAN_NOT_TRANSFER_THROUGH_NO_INTEL_HINT:0 "\n\n§RAsignar más unidades navales o aéreas a las misiones, o cubrir las zonas mencionadas con radar.§!\n"
+ UNIT_IMPASSABLE:0 "El camino a $STATE|H$ es infranqueable."

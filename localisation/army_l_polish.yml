@@ -123,3 +123,4 @@
  THEATER_GROUP_DEFENSIVE_NO_TROUBLES:0 "§GNasza obrona przebiega dobrze.§!"
  THEATER_GROUP_OFFENSIVE_NO_COMBATS:0 "Brak walk ofensywnych."
  THEATER_GROUP_DEFENSIVE_NO_COMBATS:0 "Brak walk obronnych."
+ ARMY_TEMPLATE_INFO:0 "$NAME$: $COUNT|H$"

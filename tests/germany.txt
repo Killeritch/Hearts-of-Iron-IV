@@ -39,6 +39,45 @@ tests = {
              date > "1941.1.1"
          }
     }
+	
+	germany_design_garrison = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1945.1.1"
+             GER = { ai_has_role_template = garrison }
+         }
+
+         fail = {
+             date > "1945.1.1"
+         }
+    }
+	
+	germany_design_anti_tank = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1955.1.1"
+             GER = { ai_has_role_template = anti_armor }
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+    }
+	
+	germany_fields_garrison = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1945.1.1"
+             GER = { ai_has_role_division = garrison }
+         }
+
+         fail = {
+             date > "1941.1.1"
+         }
+    }
 
     germany_avoids_war_with_switzerland = {
         success = {

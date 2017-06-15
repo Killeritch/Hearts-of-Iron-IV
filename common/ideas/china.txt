@@ -197,7 +197,7 @@ ideas = {
 			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.5
 			}
 		}
 
@@ -216,7 +216,7 @@ ideas = {
 			traits = { air_chief_old_guard }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.5
 			}
 		}
 	}
@@ -253,7 +253,7 @@ ideas = {
 			traits = { navy_chief_reform_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 
@@ -270,7 +270,7 @@ ideas = {
 			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 	}
@@ -390,7 +390,7 @@ ideas = {
 			traits = { air_air_superiority_3 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -405,7 +405,7 @@ ideas = {
 			traits = { army_infantry_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.4
 			}
 		}
 
@@ -435,7 +435,7 @@ ideas = {
 			traits = { army_logistics_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 1.5
 			}
 		}
 	}

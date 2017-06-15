@@ -130,6 +130,11 @@ spriteTypes = {
 		name = "GFX_diplo_filter_area_bg"
 		textureFile = "gfx//interface//diplo_filter_area_bg.dds"		
 	}
+	
+		spriteType = {
+		name = "GFX_diplo_action_license_production_bg"
+		textureFile = "gfx//interface//diplo_action_license_production_bg.dds"		
+	}
 
 	spriteType = {
 		name = "GFX_request_lendlease_big_bg"

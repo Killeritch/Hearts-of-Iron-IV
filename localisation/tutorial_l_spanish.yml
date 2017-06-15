@@ -134,7 +134,7 @@
  HINT_PRODUCTION_LINES:0 "Pista: cadenas de producción"
  BUTTON_HINT_PAGE_1:0 "1"
  BUTTON_HINT_PAGE_2:0 "2"
- HINT_PRODUCTION_LINES_2_1:0 "En la imagen de abajo puedes ver un ejemplo de cadena de producción con §Y10§! £factory_item  §!fábricas militares§! asignadas."
+ HINT_PRODUCTION_LINES_2_1:0 "En la imagen de abajo puedes ver un ejemplo de cadena de producción con §Y10§! £factory_item  §Yfábricas militares§! asignadas."
  HINT_PRODUCTION_LINES_2_2:0 "Te recomendamos que también crees cadenas de producción para:"
  HINT_RESEARCH_TREE_TEXT:0 "Este es el §Yárbol de investigación§!. Aunque pueda parecer engorroso a primera vista, en realidad no es tan complicado. Hemos resaltado ciertas tecnologías que recomendamos investigar al principio de la partida.\n\nEs buena idea investigar tecnologías que aumenten la base industrial de tu país, amén de otras mejoras militares en general. A medida que la partida avance, podrías investigar tecnologías más especializadas, como las doctrinas o los aviones. Todo depende de lo que quieras conseguir.\n\nLas investigaciones de tecnologías adelantadas a su tiempo tardarán más. Existen §Yenfoques nacionales§! que pueden reducir la penalización por adelanto en algunas tecnologías."
  HINT_RESEARCH_SCREEN:0 "Pista: investigación"

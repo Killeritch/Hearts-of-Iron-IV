@@ -43,8 +43,8 @@ falloff = {
 falloff = {
 	name = falloff_distance
 
-	min_distance = 50
-	max_distance = 150
+	min_distance = 80
+	max_distance = 250
 	height_scale = 0.9
 }
 falloff = {

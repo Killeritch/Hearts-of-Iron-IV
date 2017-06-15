@@ -580,8 +580,9 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "Winner"
 			maxWidth = 230
-			maxHeight = 20
+			maxHeight = 10
 			format = center
+			fixedsize=yes
 		}
 		
 		buttonType = {

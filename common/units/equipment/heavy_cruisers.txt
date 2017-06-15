@@ -1,6 +1,8 @@
 equipments = {
 
 	heavy_cruiser = {
+		year = 1922
+
 		is_archetype = yes
 		is_buildable = no
 		type = capital_ship
@@ -48,12 +50,16 @@ equipments = {
 	}
 
 	heavy_cruiser_1 = {
+		year = 1922
+
 		archetype = heavy_cruiser
 		priority = 40
 		
 	}
 	
 	heavy_cruiser_2 = {
+		year = 1936
+
 		archetype = heavy_cruiser
 		parent = heavy_cruiser_1
 		priority = 40
@@ -90,6 +96,8 @@ equipments = {
 	}
 	
 	heavy_cruiser_3 = {
+		year = 1940
+
 		archetype = heavy_cruiser
 		parent = heavy_cruiser_2
 		priority = 40
@@ -126,6 +134,8 @@ equipments = {
 	}
 	
 	heavy_cruiser_4 = {
+		year = 1944
+
 		archetype = heavy_cruiser
 		parent = heavy_cruiser_3
 		priority = 40

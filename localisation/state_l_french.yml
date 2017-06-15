@@ -55,6 +55,7 @@
  pastoral:0 "Région pastorale"
  OCCUPATION_BREAKDOWN:0 "Détail de l'occupation :"
  OCCUPATION_BREAKDOWN_ENTRY:0 "\n$COUNTRY|Y$ : $OCCUPATION|Y%0$"
+ PROVINCE_STATE_IMPASSABLE:0 "§RRégion infranchissable. Les troupes ne peuvent y pénétrer.§!"
 
 
 

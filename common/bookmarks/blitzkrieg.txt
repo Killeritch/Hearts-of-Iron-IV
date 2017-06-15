@@ -122,7 +122,7 @@ bookmarks = {
 			history = "POL_BLITZKRIEG_DESC"
 			ideology = neutrality
 			ideas = {
-				
+				deterrence
 			}
 			focuses = {
 				POL_the_baltic_alliance
@@ -196,6 +196,53 @@ bookmarks = {
 				RAJ_all_india_forward_bloc
 				RAJ_indian_gurkhas
 				RAJ_the_smiling_buddha
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon_3
+				HUN_interventionism
+				HUN_strengthen_fascists
+			}
+			focuses = {
+				HUN_elect_a_king
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				ROM_preserve_greater_romania
+				ROM_iron_guard
+			}
+			focuses = {
+				ROM_balkans_dominance
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}
+		
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_BLITZ_DESC"
+			ideology = neutrality
+			ideas = {
+				anti_german_military
+				YUG_idea_croatian_opposition
+				YUG_idea_orthodox_church_support
+			}
+			focuses = {
+				YUG_join_axis
+				YUG_join_allies
+				YUG_the_ik_3
 			}
 		}
 

@@ -303,6 +303,7 @@
  PREPERATION_BASE_MAX:0 "Maximum de la base : $VALUE|0%Y$"
  PLAN_PREPERATION_BREAKDOWN:0 "$MAX_DESC$\n$SPEED_DESC$"
  CLICK_TO_ASSIGN:0 "Nommer"
+ UNIT_IMPASSABLE:0 "La route vers $STATE|H$ est infranchissable."
 
 
 

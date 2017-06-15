@@ -27,3 +27,4 @@
  continuous_tech_share_group_name:0 "Recherche de la faction"
  continuous_tech_share_group_desc:0 "Délais de recherches réduits par les pays de notre faction grâce à nos priorités permanentes."
  NO_OTHER_SHARING_GROUPS:0 "N'est membre d'aucun groupe de partage technologique"
+ LICENSED_PRODUCTION_RESEARCH_BONUS_VALUE_DESC:0 "Productions sous licence : $VALUE|Y%0$\n"

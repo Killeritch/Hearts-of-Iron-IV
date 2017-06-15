@@ -294,7 +294,7 @@
  tfv_new_zealand.1.b:0 "Accepter risque de nous entraîner dans des conflits lointains"
  tfv_new_zealand.2.t:0 "Adhésion au Komintern approuvée"
  tfv_new_zealand.2.desc:0 "Après y avoir mûrement réfléchi, le Comité central du Komintern a répondu favorablement à notre demande d'adhésion."
- tfv_new_zealand.2.a:0 "[ROOT.GetNameDef] et le [From.GetFactionName] sont en route pour l'avenir"
+ tfv_new_zealand.2.a:0 "[Root.GetNameDef] et le [From.GetFactionName] sont en route pour l'avenir"
  tfv_new_zealand.3.t:0 "Adhésion au Komintern refusée"
  tfv_new_zealand.3.desc:0 "La délégation que nous avions envoyée au Komintern a dû subir une longue lecture par le Président du Comité central, détaillant les raisons pour lesquelles aussi petit que le nôtre ne pouvait en aucune façon être l'un de ces pays développés et industriels qui pourrait permettre une révolution communiste. Nous sommes, semble-t-il, quelque chose d'autre. Quoi qu'il en soit, nous ne pouvons intégrer le Komintern."
  tfv_new_zealand.3.a:0 "Et si c'étaient eux qui se trompaient ?"

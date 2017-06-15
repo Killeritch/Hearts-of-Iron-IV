@@ -1,4 +1,107 @@
-﻿#Hearts of Iron IV: Together for Victory
+﻿#Hearts of Iron IV: Death or Dishonor
+
+#CREATIVE DIRECTOR
+Johan Andersson
+
+#GAME DIRECTOR
+Dan Lind
+
+#PROJECT LEAD
+Sofia Höglund
+
+#GAME DESIGN
+Dan Lind
+Kandra Dahlgren
+
+#PROGRAMMING
+Tomasz Kowalczyk
+Ilya Nikitin
+Carl Carenvall
+
+#ADDITIONAL PROGRAMMING
+Johan Lerström
+Dan Lind
+Jakob Have
+
+#AI DESIGNER
+Carl Carenvall
+
+#CONTENT DESIGNERS
+Jakob Have
+Gabriel Blum
+David Ballantyne
+
+#ADDITIONAL CONTENT DESIGNERS
+Drikus Kupier
+
+#2D ARTISTS
+Ylva Ljungqvist
+Mats Virtanen
+
+#3D ARTIST
+Joacim Carlberg
+
+#3D ANIMATION
+Niklas Tammpere
+
+#UI DESIGN
+Peter Johannesson
+
+#QA MANAGER
+Filippa Gannholm
+Felix Gladitz
+
+#EMBEDDED QA
+Katya Magnusson
+Niall Bird
+
+#QA
+Albin Wallin
+Daniel Moore
+Daniel Sjöberg
+Jesper Norberg
+Matthew Frary
+Sebastian Borg
+
+#COVER ART
+Mats Virtanen
+
+#COMPOSER
+Andreas Waldetoft
+
+#AUDIO DIRECTOR
+Björn Iversen
+
+#ADDITIONAL AUDIO
+David Schlein
+Thomas Andersson
+
+#USER MOD COORDINATOR
+Jakob Have
+
+#DLC MANAGER:
+Pernilla Sparrhult
+
+#LOCALIZATION MANAGER
+Sara Wendel-Örtqvist
+
+#LOCALIZATION
+Nicolas Fouqué
+QLOC S.A.
+Amadin LRM LTD
+S & H Entertainment Localization
+
+#VOICE OVER
+Binari Audio
+Sebastian Brandt
+
+#3D ART
+Vonboe Studios
+QLOC S.A.
+
+----------------
+
+#Hearts of Iron IV: Together for Victory
 
 #CREATIVE DIRECTOR
 Johan Andersson

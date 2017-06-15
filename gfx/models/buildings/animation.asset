@@ -4,6 +4,11 @@ animation = {
 }
 
 animation = {
+	name = "radar_damaged_animation"
+	file = "radar_damaged.anim"
+}
+
+animation = {
 	name = "88aagun_idle_animation"
 	file = "88aagun_idle.anim"
 }

@@ -1,4 +1,5 @@
 ﻿l_russian:
+ ARMY_TEMPLATE_INFO:0 "$NAME$: $COUNT|H$"
  ARMY_ARMY_LABEL:0 "Обзор дивизии"
  ARMY_NAVY_LABEL:0 "Обзор морского флота"
  ARMY_AIR_LABEL:0 "Обзор военно-воздушных сил"
@@ -72,7 +73,7 @@
  ARMY_AIR_CATEGORY_TOOLTIP_ITEM_NO_AREA:0 "нет района выполнения задания"
  ARMY_AIR_TOOLTIP_HEADER:0 "$NAME|H$:$COUNT|H$ из $LIMIT|H$"
  ARMY_AIR_VARIANT_AIRWING_ITEM:0 "$COUNT|H$ из $ALL|H$ самолетов в авиакрыле $NAME|H$ на базе $BASE|H$"
- PLAN_VALUE_TITLE:0 "Примерная стоимость плана: $VAL$"
+ PLAN_VALUE_TITLE:0 "Предполагаемая эффективность плана: $VAL$"
  PLAN_VALUE_DISADVANTAGE:0 "Этот план считается §Rневыгодным§! для нас."
  PLAN_VALUE_NEUTRAL:0 "Этот план считается §Rрискованным§!."
  PLAN_VALUE_ADVANTAGE:0 "Этот план считается §Gвыгодным§! для нас."

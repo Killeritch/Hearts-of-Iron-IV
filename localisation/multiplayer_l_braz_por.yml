@@ -118,7 +118,7 @@
  SERVER_BOOKMARK:0 "Marcador: $BOOKMARK$"
  SERVER_START_DATE:0 "Data de início: $DATE$"
  SERVER_LAUNCHING_MP:0 "*** Iniciando jogo de MULTIJOGADOR ***"
- OOS_CHECKS:0 "§GO servidor tem como definição as seguintes checagens de OOS: $CHECKS|Y$."
+ OOS_CHECKS:0 "§GO servidor tem como definição as seguintes checagens de OOS: $CHECKS|Y$.§!"
  SYSTEM_PLAYER_LOST:0 "§G§Y$NAME$§! perdeu a conexão.§!"
  SYSTEM_PLAYER_ARRIVED:0 "§G§Y$NAME$§! entrou no jogo.§!"
  YOUBANNED_TITLE:0 "Banido do servidor."

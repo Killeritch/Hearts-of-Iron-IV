@@ -82,4 +82,4 @@
  CONSTRUCTION_PAUSED_COMBAT:0 "§RKann wegen einer laufenden Schlacht nicht fortgesetzt werden.§!"
  CONSTRUCTION_MAPMODE_WATER_TOOLTIP:0 "$BUILDING|H$ kann nicht im Wasser gebaut werden."
  INFRA_VAL:0 "£infrastructure_texticon $VAL|0%+=$"
- INFRASTRUCTURE_COST_EFFECT:0 "Staatliche Infrastruktur: x$VAL|2H$"
+ INFRASTRUCTURE_COST_EFFECT:0 "Staatsinfrastruktur: x$VAL|2H$"

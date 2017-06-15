@@ -20,8 +20,33 @@ set_technology = {
 	early_destroyer = 1
 }
 
- #Ideas
- add_ideas = neutrality_idea
+#Ideas
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	add_ideas = {
+		ROM_king_carol_ii_hedonist
+	}
+	give_guarantee = CZE
+	give_guarantee = GRE
+	give_guarantee = TUR
+}
+add_ideas = neutrality_idea
+
+#Kick off kings crazy life
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+	ROM = {
+		#Pick from list of the sane events first
+		random_list = {
+			100 = { country_event = { id = DOD_romania.81 days = 2 random = 20 } }
+		}
+	}
+}
+
 
 set_convoys = 10
 1939.1.1 = {
@@ -29,17 +54,69 @@ set_convoys = 10
 	remove_ideas = neutrality_idea
 
 	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	if = {
+		limit = {
+			has_dlc = "Death or Dishonor"
+		}
+		complete_national_focus = ROM_preserve_greater_romania
+		complete_national_focus = ROM_army_maneuvers
+		complete_national_focus = ROM_expand_the_air_force
+		complete_national_focus = ROM_civil_works
+		complete_national_focus = ROM_agrarian_reform
+		complete_national_focus = ROM_local_development
+		complete_national_focus = ROM_army_war_college
+		complete_national_focus = ROM_danubian_transport_network
+		complete_national_focus = ROM_malaxa
+		complete_national_focus = ROM_flexible_foreign_policy
+		complete_national_focus = ROM_air_superiority
+		complete_national_focus = ROM_expand_the_galati_shipyards
+		complete_national_focus = ROM_trade_treaty_with_germany
+		complete_national_focus = ROM_iar_80
+		complete_national_focus = ROM_appoint_allied_friendly_government
+		complete_national_focus = ROM_cas
+		complete_national_focus = ROM_royal_guards_divisions
+		complete_national_focus = ROM_the_zb_53
+		complete_national_focus = ROM_vanatori_de_munte
+		complete_national_focus = ROM_hunedoara_steel_works
+		complete_national_focus = ROM_appoint_german_friendly_government
+		complete_national_focus = ROM_invite_german_advisors
+		complete_national_focus = ROM_iron_guard
+
+		#King stuff
+		unlock_national_focus = ROM_institute_royal_dictatorship
+		unlock_national_focus = ROM_revise_the_constitution
+		create_country_leader = {
+			name = "Carol II"
+			desc = "POLITICS_CAROL_II_DESC"
+			picture = GFX_Portrait_romania_Carol_II			
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				hedonist
+				camarilla_leader
+			}
+			id = 550
+		}
+		#ROM = {
+		#	#Pick from list of the sane events first
+		#	random_list = {
+		#		100 = { country_event = { id = DOD_romania.80 days = 2 random = 20 } }
+		#	}
+		#}
+
+		else = {		
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = large_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
 	
 	oob = "ROM_1939"
 	set_technology = {
@@ -118,11 +195,11 @@ set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 48
+				popularity = 20
 			}
 
 			fascism = {
-				popularity = 30
+				popularity = 35
 			}
 			
 			communism = {
@@ -130,11 +207,11 @@ set_politics = {
 			}
 			
 			neutrality = { 
-				popularity = 20
+				popularity = 43
 			}
 		}
 		
-		ruling_party = democratic
+		ruling_party = neutrality
 		last_election = "1939.7.15"
 		election_frequency = 48
 		elections_allowed = no
@@ -198,17 +275,45 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Petre Dumitrescu"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	gfx = GFX_Portrait_romania_petre_dumitrescu
 	traits = { offensive_doctrine logistics_wizard }
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Ion Antonescu"
+	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	traits = { offensive_doctrine }
 	skill = 4
 }
 
 create_corps_commander = {
 	name = "Ioan Mihail Racovita"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	gfx = GFX_Portrait_romania_ioan_mihail_racovita
 	traits = { hill_fighter }
 	skill = 3
 }
+
+if = {
+	limit = {
+		has_dlc = "Death or Dishonor"
+	}
+
+	create_corps_commander = {
+		name = "Gheorghe Avramescu"
+		gfx = GFX_Portrait_romania_gheorghe_avramescu
+		traits = { }
+		skill = 3
+	}
+
+	create_navy_leader = {
+		name = "Horia Macellariu"
+		gfx = "GFX_Portrait_romania_ioan_mihail_racovita"
+		traits = { spotter }
+		skill = 2
+	}
+}
+
 
 ### Ship Variants ###
 

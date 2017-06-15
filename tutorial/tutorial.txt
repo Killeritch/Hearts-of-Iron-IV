@@ -111,10 +111,7 @@ tutorial = {
 
 tutorial = {
 	window = "tutorial_screen_8"
-	text = "tut_8_text_1"	
-	
-	show_in_window = "strategicair_mission_entry"
-	show_objects_in_window = { "tutorial_highlight_mission_1"	}
+	text = "tut_8_text_1"
 
 	airwings_missions = {
 		textbox = "obj_1"

@@ -57,3 +57,4 @@
  MONTHLY_BASE_GROWTH:0 "Podst. wartość: $VALUE|H%2$"
  STATE_POPULATION_GROWTH:0 "§HPrzyrost miesięczny§!: $VALUE|%2$ ($AVAIL|*+$ zdolnych do służby, $LOCKED|*+$ cywili)"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Całkowita liczba poborowych (poza reg. narodowym): §R-$VAL|%$§!"
+ PROVINCE_STATE_IMPASSABLE:0 "§RTeren niedostępny – żołnierze nie mogą na niego wkroczyć.§!"

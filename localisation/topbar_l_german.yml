@@ -61,3 +61,4 @@
  DAMAGED_MILITARY_FACTORIES:0 "Beschädigte Militärfabriken: $COUNT|H$"
  DAMAGED_NAVAL_FACTORIES:0 "Beschädigte Werften: $COUNT|H$"
  DAMAGED_CIVILIAN_FACTORIES:0 "Beschädigte Zivilfabriken: $COUNT|H$"
+ GENERATE_WAR_GOAL_CANCEL_THREAT:0 "Kriegszielrechtfertigung gegen $TARGET$ abgebrochen"

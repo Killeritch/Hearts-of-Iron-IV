@@ -1,6 +1,6 @@
 ﻿l_russian:
  #THIS FILE SHOULD NOT BE TRANSLATED!!
- debug_event_scopes:0 "Охват - Основание: [Root.GetName] От: [From.GetName] Пред.: [Prev.GetName]"
+ debug_event_scopes:0 ""
  print_scope_names:0 "Охват - Основание: [Root.GetName] От: [From.GetName] Пред.: [Prev.GetName]"
  faction_created_names:0 "Создание альянса - Основание: [Root.GetName] Пред.: [Prev.GetName]"
  faction_joined_names:0 "Вступление в альянс - Основание: [Root.GetName] Пред.: [Prev.GetName]"
@@ -11,3 +11,7 @@
  test.2.a:0 "Тестовое событие 2"
  test.3.t:0 "Тестовое событие 3"
  test.3.a:0 "Тестовое событие 3"
+ test.4.t:0 "Тестовое событие 4"
+ test.4.d:0 "Охват - Основание: [Root.GetName] От: [From.From.GetName] Пред.: [Prev.GetName]"
+ test.4.a:0 "Тестовое событие 4"
+ TEST_FEST_FEMTEN:0 "лалала"

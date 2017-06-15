@@ -188,10 +188,6 @@ country_event = {
 			base = 0
 		}
 		
-		GER = {
-			add_to_faction = CAN
-		}
-		
 		hidden_effect = {
 			CAN = {
 				country_event = { id = tfv_canada.22 }

@@ -76,3 +76,8 @@
  AIR_DEFENSE_IN_STATE:0 "\n§HTotal de la réduction des dégâts causés par le bombardement : §! $TOT|%G$\nAnti-aérien : $AA|-%$\n"
  INSERT_CONVERSION:0 "§GCtrl + clic§! pour convertir et placer en début de file d'attente."
  INSERT_CONSTRUCTION:0 "§GCtrl + clic§! pour construire et placer en début de file d'attente."
+ RADAR_ONMAP_TOOLTIP:0 "Niveau de §Hstation radar§! : $LVL|G$ sur $TOT|H$\nAppartient à $WHO|H$"
+ RADAR_ONMAP_DAMAGED_TOOLTIP:0 "Niveau de §Hstation radar§! : $LVL|R$ sur $TOT|H$\nAppartient à $WHO|H$"
+ RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HCouverture de la région§! :"
+ RADAR_ONMAP_TOOLTIP_COVERAGE_ENTRY:0 "\n  $PERC|%$ en $REGION$"
+ RADAR_ONMAP_TOOLTIP_SUPPRESS:0 "\nMaintenir §GCtrl§! pour §Rsupprimer§! cette infobulle."

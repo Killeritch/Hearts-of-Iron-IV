@@ -2,6 +2,32 @@ last_date = "1945.1.1"
 
 tests = {
 
+	japan_design_garrison = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1945.1.1"
+             JAP = { ai_has_role_template = garrison }
+         }
+
+         fail = {
+             date > "1941.1.1"
+         }
+    }
+	
+	japan_fields_garrison = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1945.1.1"
+             JAP = { ai_has_role_division = garrison }
+         }
+
+         fail = {
+             date > "1941.1.1"
+         }
+    }
+	
     japan_starts_early_war_with_china = {
 
         success = {

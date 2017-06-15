@@ -1163,6 +1163,7 @@ guiTypes = {
 			instantTextBoxType = no
 		}
 		
+		
 		guiButtonType = {
 			name = "openfile_button"
 			position = { x = 10 y = 160 }

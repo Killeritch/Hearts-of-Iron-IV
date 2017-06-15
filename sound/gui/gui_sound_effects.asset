@@ -369,4 +369,6 @@ soundeffect =
 		sound = research_complete
 	}
 	volume = 0.5
+	max_audible = 1
+	max_audible_behaviour = fail
 }

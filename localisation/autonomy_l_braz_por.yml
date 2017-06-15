@@ -53,3 +53,6 @@
  MASTER_SURRENDER_FREEDOM_EFFECT:0 "Mestre capitulado"
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RSolicitar empréstimos e arrendamento do fantoche pode dar a ele mais autonomia§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RSolicitar empréstimos e arrendamento do mestre pode reduzir a autonomia§!"
+ autonomy_reichskommissariat:0 "Reichskommissariat"
+ autonomy_reichsprotectorate:0 "Reichsprotectorate"
+ autonomy_satellite:0 "Satélite"

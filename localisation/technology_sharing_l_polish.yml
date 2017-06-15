@@ -27,3 +27,4 @@
  continuous_tech_share_group_desc:0 "Skrócenie badań przez kraje w twojej frakcji dzięki twojej konsekwentnej pracy."
  NO_OTHER_SHARING_GROUPS:0 "Brak członkostwa w grupie dzielenia się technologią"
  TECH_SHARNG_COUNTRY_BONUS:0 "Premia: $VALUE|0%Y$\n"
+ LICENSED_PRODUCTION_RESEARCH_BONUS_VALUE_DESC:0 "Licencjonowana produkcja: $VALUE|Y%0$\n"

@@ -93,6 +93,11 @@ animation = {
 }
 
 animation = {
+	name = "GER_infantry_mg_march_animation"
+	file = "GER_infantry_march_mg.anim"
+}
+
+animation = {
 	name = "GER_infantry_mg_retreat_animation"
 	file = "GER_infantry_retreat_mg.anim"
 }
@@ -125,6 +130,11 @@ animation = {
 animation = {
 	name = "GER_infantry_mg_long_idle_05_animation"
 	file = "GER_infantry_long_idle05_mg.anim"
+}
+
+animation = {
+	name = "GER_infantry_aim_exercise_mg_animation"
+	file = "GER_infantry_aim_exercise_mg.anim"
 }
 
 	#	animation = {
@@ -200,6 +210,11 @@ animation = {
 }
 
 animation = {
+	name = "GER_infantry_rifle_march_animation"
+	file = "GER_infantry_march_rifle.anim"
+}
+
+animation = {
 	name = "GER_infantry_rifle_retreat_animation"
 	file = "GER_infantry_retreat_rifle.anim"
 }
@@ -257,11 +272,6 @@ animation = {
 animation = {
 	name = "GER_infantry_aim_exercise_animation"
 	file = "GER_infantry_aim_exercise.anim"
-}
-
-animation = {
-	name = "GER_infantry_aim_exercise_mg_animation"
-	file = "GER_infantry_aim_exercise_mg.anim"
 }
     #
 	#	animation = {

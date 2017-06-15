@@ -1,12 +1,16 @@
 equipments = {
 	
 	tac_bomber_equipment = {
+		year = 1933
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_strat_bomber_equipment		
 		is_buildable = no
 		type = { tactical_bomber }
 		group_by = archetype
 		sprite = medium_plane
+		air_map_icon_frame = 6
 		
 		manpower = 40
 		
@@ -26,8 +30,8 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
-		naval_strike_attack = 1.5
-		naval_strike_targetting = 0.6
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
 
 		#Space taken in convoy
 		lend_lease_cost = 10
@@ -41,13 +45,17 @@ equipments = {
 	}
 	
 	jet_tac_bomber_equipment = {
+		year = 1933
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
 		type = { tactical_bomber }
 		group_by = archetype
 		sprite = medium_plane
 		maximum_speed = 500
+		air_map_icon_frame = 7
 		
 		interface_category = interface_category_air
 		
@@ -65,8 +73,8 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - high damage / low hit chance / hard to hurt
-		naval_strike_attack = 1.5
-		naval_strike_targetting = 0.6
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
 		
 		build_cost_ic = 45
 		resources = {
@@ -79,12 +87,16 @@ equipments = {
 	}
 
 	heavy_fighter_equipment = {
+		year = 1933
+
 		is_archetype = yes
+		is_convertable = yes
 		picture = archetype_strat_bomber_equipment			
 		is_buildable = no
 		type = { fighter interceptor }
 		group_by = archetype
 		sprite = light_plane
+		air_map_icon_frame = 8
 		
 		interface_category = interface_category_air
 		
@@ -102,8 +114,8 @@ equipments = {
 		reliability = 0.8
 
 		# Air vs Navy - low damage / high hit chance / easy to hurt
-		naval_strike_attack = 0.5
-		naval_strike_targetting = 1.0
+		naval_strike_attack = 5
+		naval_strike_targetting = 10
 		
 		build_cost_ic = 28
 		resources = {
@@ -118,6 +130,8 @@ equipments = {
 
 	# Early Bomber
 	tac_bomber_equipment_0 = {
+		year = 1933
+
 		archetype = tac_bomber_equipment
 		priority = 105
 		
@@ -130,11 +144,15 @@ equipments = {
 		air_ground_attack = 3
 		
 		# build_cost_ic = 18
+		naval_strike_attack = 4
+		naval_strike_targetting = 6
 	}
 	
 	
 	# Basic tac_bomber
 	tac_bomber_equipment_1 = {
+		year = 1936
+
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_0
 		priority = 110
@@ -153,10 +171,14 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 8
+		naval_strike_targetting = 6
 	}
 
 	# Improved tac_bomber
 	tac_bomber_equipment_2 = {
+		year = 1940
+
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_1
 		priority = 110
@@ -175,11 +197,14 @@ equipments = {
 			aluminium = 4
 			rubber = 1
 		}
-		
+		naval_strike_attack = 12
+		naval_strike_targetting = 6
 	}
 
 	# Advanced tac_bomber
 	tac_bomber_equipment_3 = {
+		year = 1944
+
 		archetype = tac_bomber_equipment
 		parent = tac_bomber_equipment_2
 		priority = 110
@@ -198,10 +223,14 @@ equipments = {
 			aluminium = 5
 			rubber = 1
 		}
+		naval_strike_attack = 15
+		naval_strike_targetting = 6
 	}
 	
 	# Basic Jet tac_bomber
 	jet_tac_bomber_equipment_1 = {
+		year = 1945
+
 		archetype = jet_tac_bomber_equipment
 		priority = 120
 		
@@ -218,6 +247,8 @@ equipments = {
 
 	# Improved Jet tac_bomber
 	jet_tac_bomber_equipment_2 = {
+		year = 1950
+
 		archetype = jet_tac_bomber_equipment
 		parent = jet_tac_bomber_equipment_1
 		priority = 120
@@ -241,6 +272,8 @@ equipments = {
 
 	# Basic Heavy Fighter
 	heavy_fighter_equipment_1 = {
+		year = 1936
+
 		archetype = heavy_fighter_equipment
 		priority = 100
 		
@@ -251,9 +284,13 @@ equipments = {
 		air_defence = 19
 		
 		# build_cost_ic = 16
+		naval_strike_attack = 3
+		naval_strike_targetting = 6
 	}
 	
 	heavy_fighter_equipment_2 = {
+		year = 1940
+
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_1
 		priority = 100
@@ -270,9 +307,13 @@ equipments = {
 			aluminium = 3
 			rubber = 1
 		}
+		naval_strike_attack = 6
+		naval_strike_targetting = 10
 	}
 	
 	heavy_fighter_equipment_3 = {
+		year = 1944
+
 		archetype = heavy_fighter_equipment
 		parent = heavy_fighter_equipment_2
 		priority = 100
@@ -289,5 +330,7 @@ equipments = {
 			aluminium = 4
 			rubber = 1
 		}
+		naval_strike_attack = 9
+		naval_strike_targetting = 10
 	}
 }

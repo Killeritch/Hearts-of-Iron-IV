@@ -27,3 +27,4 @@
  continuous_tech_share_group_desc:0 "Tiempo de investigación reducido por naciones en tu facción debido a tu enfoque continuo activo."
  NO_OTHER_SHARING_GROUPS:0 "No forma parte del grupo que comparte tecnología"
  TECH_SHARNG_COUNTRY_BONUS:0 "Bonificación: $VALUE|0%Y$\n"
+ LICENSED_PRODUCTION_RESEARCH_BONUS_VALUE_DESC:0 "Producción licenciada: $VALUE|Y%0$\n"

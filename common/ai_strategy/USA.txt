@@ -11,6 +11,10 @@ USA_save_the_aussies = {
 			has_government = democratic			
 			surrender_progress > 0.15
 		}
+		has_opinion = {
+			target = AST
+			value > 0 # not if we hate AST
+		}
 	}
 	abort = {
 		OR = {
@@ -31,6 +35,45 @@ USA_save_the_aussies = {
 	ai_strategy = {
 		type = protect
 		id = "AST"			
+		value = 200
+	}
+}
+
+USA_save_india = { # in the case where japan has beaten china and is moving on india we should step up
+	enable = {
+		tag = USA
+		has_government = democratic
+		is_in_faction = no
+		has_war = no
+
+		JAP = {	
+			has_war_with = RAJ 
+			NOT = { has_war_with = CHI }
+		}
+		RAJ = {
+			is_in_faction_with = ENG
+			surrender_progress > 0.15
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = RAJ
+			is_in_faction_with = JAP
+			JAP = {	
+				NOT = { has_war_with = RAJ } 
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = contain
+		id = "JAP"			
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = protect
+		id = "RAJ"			
 		value = 200
 	}
 }
@@ -73,14 +116,8 @@ USA_stop_soviet_from_falling = {
 	}
 
 	ai_strategy = {
-		type = unit_ratio
+		type = role_ratio
 		id = infantry
-		value = -75
-	}
-
-	ai_strategy = {
-		type = unit_ratio
-		id = motorized
 		value = -75
 	}
 
@@ -140,7 +177,7 @@ USA_stop_soviet_from_falling_2 = {
 	}
 }
 
-USA_template_design = {
+USA_template_design_1 = {
 	enable = {
 		original_tag = USA
 		date < 1940.1.1				
@@ -192,7 +229,7 @@ USA_template_design = {
 	}
 }
 
-SOV_template_design = {
+USA_template_design_2 = {
 	enable = {
 		original_tag = USA
 		date > 1940.1.1				
@@ -250,5 +287,21 @@ SOV_template_design = {
 		type = template_prio
 		id = marines
 		value = 100
+	}
+}
+
+USA_garrison_production = {
+	enable = {
+		original_tag = USA
+		ai_wants_divisions >  12 #Massively decreasing the amount of paratroopers the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 13 #Massively decreasing the amount of paratroopers the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 3
 	}
 }
