@@ -1,0 +1,17 @@
+﻿l_spanish:
+ POPS_invalid-email:0 "El correo electrónico no es válido"
+ POPS_account-exists:0 "Ya existe una cuenta con ese correo electrónico"
+ POPS_dynamodb-failure:0 "Error al conectar"
+ POPS_ua:0 "No cumple los requisitos"
+ POPS_not-authorized:0 "El correo electrónico y la contraseña introducidos no encajan"
+# These should "never" happen, we should have validated before we sent the data
+ POPS_bad-password-length:0 "Contraseña demasiado corta" #Might be too long to, but upper limit is 128 chars (at the time of writing)
+ POPS_missing-required-account-details-keys:0 "Te falta información necesaria"
+ POPS_invalid-country-code:0 "Código de país no válido"
+ POPS_invalid-language-code:0 "Código de idioma no válido"
+ POPS_invalid-ISO-8601-format:0 "Formato de fecha no válido"
+# These should also not happen, but are not related to validating our form
+ POPS_parse-failure:0 "Fallo en el cliente (análisis)"
+ POPS_unsupported-account-details-keys:0 "Fallo en el cliente (teclas no compatibles)"
+ POPS_invalid-script-code:0 "Fallo en el cliente (script no válido)"
+ POPS_NO_MESSAGE: "Se ha producido un error inesperado"

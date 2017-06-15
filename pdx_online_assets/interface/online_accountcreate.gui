@@ -1,0 +1,668 @@
+guiTypes = 
+{	
+	windowType = {
+		name = "online_accountcreate_window"
+		backGround = "background"
+		position = { x=512 y=64 }
+		size = { x=480 y=716 }
+		moveable = 0
+		orientation="UPPER_LEFT"
+		
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "online_accountcreate_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		# Title
+		instantTextBoxType={
+			name = "online_accountcreate_title"
+			position = { x= 32 y = 38 }
+			text = "Create Account"
+			font = "accountcreate_title"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		# Email
+		instantTextBoxType={
+			name = "online_accountcreate_email"
+			position = { x= 32 y = 96 }
+			text = "Email§R *§!"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_suggestemail"
+			position = { x= 192 y = 102 }
+			text = "Enter a valid email address"
+			font = "accountcreate_suggestion"
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editemail"
+			position = { x= 192 y = 96 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_validemail"
+			quadTextureSprite = "online_accountcreate_valid"
+			position = { x=430 y = 104 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_invalidemail"
+			quadTextureSprite = "online_accountcreate_invalid"
+			position = { x=430 y = 104 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		# Password
+		instantTextBoxType={
+			name = "online_accountcreate_password"
+			position = { x= 32 y = 128 }
+			text = "Password§R *§!"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_suggestpassword"
+			position = { x= 192 y = 134 }
+			text = "Enter Password"
+			font = "accountcreate_suggestion"
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		editBoxType={
+			name = "online_accountcreate_editpassword"
+			position = { x= 192 y = 128 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_validpassword"
+			quadTextureSprite = "online_accountcreate_valid"
+			position = { x=430 y = 136 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_invalidpassword"
+			quadTextureSprite = "online_accountcreate_invalid"
+			position = { x=430 y = 136 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		# Password repeat
+		instantTextBoxType={
+			name = "online_accountcreate_passwordrepeat"
+			position = { x= 32 y = 160 }
+			text = "Repeat Password§R *§!"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_accountcreate_suggestpasswordrepeat"
+			position = { x= 192 y = 166 }
+			text = "Repeat Password"
+			font = "accountcreate_suggestion"
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editpasswordrepeat"
+			position = { x= 192 y = 160 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_validpasswordrepeat"
+			quadTextureSprite = "online_accountcreate_valid"
+			position = { x=430 y = 168 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_invalidpasswordrepeat"
+			quadTextureSprite = "online_accountcreate_invalid"
+			position = { x=430 y = 168 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		# Language
+		instantTextBoxType={
+			name = "online_accountcreate_language"
+			position = { x= 32 y = 192 }
+			text = "Language§R *§!"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_suggestlanguage"
+			position = { x= 192 y = 198 }
+			text = "Enter Language"
+			font = "accountcreate_suggestion"
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		editBoxType={
+			name = "online_accountcreate_editlanguage"
+			position = { x= 192 y = 192 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		# Country
+		instantTextBoxType={
+			name = "online_accountcreate_country"
+			position = { x= 32 y = 224 }
+			text = "Country§R *§!"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_accountcreate_suggestcountry"
+			position = { x= 192 y = 230 }
+			text = "Enter Country"
+			font = "accountcreate_suggestion"
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editcountry"
+			position = { x= 192 y = 224 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		# Birthday
+		instantTextBoxType={
+			name = "online_accountcreate_birthday"
+			position = { x= 32 y = 256 }
+			text = "Date of birth§R *§!"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_suggestbirthday"
+			position = { x= 192 y = 262 }
+			text = "YYYY-MM-DD"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editbirthday"
+			position = { x= 192 y = 256 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+
+		guiButtonType =	{
+			name = "online_accountcreate_validbirthday"
+			quadTextureSprite = "online_accountcreate_valid"
+			position = { x=430 y = 264 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		guiButtonType =	{
+			name = "online_accountcreate_invalidbirthday"
+			quadTextureSprite = "online_accountcreate_invalid"
+			position = { x=430 y = 264 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		# Firstname
+		instantTextBoxType={
+			name = "online_accountcreate_name"
+			position = { x= 32 y = 288 }
+			text = "Name"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_accountcreate_suggestfirstname"
+			position = { x= 192 y = 294 }
+			text = "First Name"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editfirstname"
+			position = { x= 192 y = 288 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		# Lastname
+		instantTextBoxType={
+			name = "online_accountcreate_suggestlastname"
+			position = { x= 192 y = 326 }
+			text = "Last Name"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editlastname"
+			position = { x= 192 y = 320 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+
+		# Address 1
+		instantTextBoxType={
+			name = "online_accountcreate_address1"
+			position = { x= 32 y = 352 }
+			text = "Address"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_accountcreate_suggestaddress1"
+			position = { x= 192 y = 358 }
+			text = "Address Line 1"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editaddress1"
+			position = { x= 192 y = 352 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		# Address 2
+		instantTextBoxType={
+			name = "online_accountcreate_suggestaddress2"
+			position = { x= 192 y = 390 }
+			text = "Address Line 2"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editaddress2"
+			position = { x= 192 y = 384 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		# City
+		instantTextBoxType={
+			name = "online_accountcreate_city"
+			position = { x= 32 y = 416 }
+			text = "City"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_suggestcity"
+			position = { x= 192 y = 422 }
+			text = "Enter City/Town"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editcity"
+			position = { x= 192 y = 416 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+
+		# State
+		instantTextBoxType={
+			name = "online_accountcreate_state"
+			position = { x= 32 y = 448 }
+			text = "State"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_suggeststate"
+			position = { x= 192 y = 454 }
+			text = "Enter State"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editstate"
+			position = { x= 192 y = 448 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+
+		# Zip Code
+		instantTextBoxType={
+			name = "online_accountcreate_zipcode"
+			position = { x= 32 y = 480 }
+			text = "Zip Code"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_accountcreate_suggestzipcode"
+			position = { x= 192 y = 486 }
+			text = "Enter Zip Code"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editzipcode"
+			position = { x= 192 y = 480 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		# Phone
+		instantTextBoxType={
+			name = "online_accountcreate_phone"
+			position = { x= 32 y = 512 }
+			text = "Phone"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_accountcreate_suggestphone"
+			position = { x= 192 y = 518 }
+			text = "Enter Phone/Mobile"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountcreate_editphone"
+			position = { x= 192 y = 512 }
+			text = ""
+			font = "accountcreate_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountcreate_line.dds"
+		}
+		
+		guiButtonType = {
+			name = "online_form_submitbutton"
+			quadTextureSprite = "tweaker_button"
+			position = { x= 320 y = 652 }
+			buttonText = "Accept and Submit"
+			buttonFont = "accountcreate_label"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		guiButtonType = {
+			name = "online_form_cancelbutton"
+			quadTextureSprite = "tweaker_button"
+			position = { x= 32 y = 652 }
+			buttonText = "Cancel"
+			buttonFont = "accountcreate_label"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		# Terms of use and privacy policy
+		instantTextBoxType={
+			name = "online_accountcreate_openbrowser"
+			position = { x= 32 y = 560 }
+			text = "Click to open in browser:"
+			font = "accountcreate_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		guiButtonType = {
+			name = "online_accountcreate_tos"
+			quadTextureSprite = "tweaker_button"
+			position = { x= 192 y = 560 }
+			buttonText = "Terms of Use"
+			buttonFont = "accountcreate_label"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		guiButtonType = {
+			name = "online_accountcreate_privacy"
+			quadTextureSprite = "tweaker_button"
+			position = { x= 320 y = 560 }
+			buttonText = "Privacy Policy"
+			buttonFont = "accountcreate_label"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		# Success
+		instantTextBoxType={
+			name = "online_accountcreate_success"
+			position = { x= 32 y = 610 }
+			text = ""
+			font = "accountcreate_success"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		# Errors
+		instantTextBoxType={
+			name = "online_accountcreate_error"
+			position = { x= 32 y = 610 }
+			text = ""
+			font = "accountcreate_error"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_accountcreate_required"
+			position = { x= 372 y = 20 }
+			text = "§R* §!Required Field"
+			font = "accountcreate_suggestion"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+	}
+}

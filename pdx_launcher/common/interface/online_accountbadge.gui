@@ -1,0 +1,72 @@
+@accountbadge_title_font = "newsfeed_title"
+@accountbadge_label_font = "newsfeed_body"
+@accountbadge_button_font = "newsfeed_body"
+
+guiTypes = {
+
+	########################
+	# Account Badge: Shows current login and a button to bring up the full interface
+	########################
+
+	windowType = {
+		name = "pdx_account_badge"
+	 	backGround = "background"
+		position = { x=428 y=448 }
+		size = { x=420 y=55 }
+		animation_type = "decelerated"
+		animation_time = 300				
+		moveable = 0
+		Orientation = "UPPER_LEFT"
+		
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "GFX_transp"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =	{
+			name = "account_badge_bg"
+			quadTextureSprite = "GFX_account_badge_bg"
+			position = { x= 0 y = 0 }
+		}
+
+		iconType =	{
+			name = "status"
+			quadTextureSprite = "GFX_pdx_logo"
+			position = { x= 10 y = 10 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}
+				
+		instantTextBoxType={
+			name = "account_name"
+			position = { x= 57 y = 24 }
+			text = ""
+			font = @accountbadge_label_font
+			maxWidth = 300
+			maxHeight = 24
+			format = left
+			fixedsize = no
+			truncate = no
+			ignore_special_chars = yes
+		}	
+
+		guiButtonType =	{
+			name = "create_account_button"
+			quadTextureSprite = "GFX_common_button"
+			position = { x= 198 y = 10 }
+			buttonText = "CREATE_ACCOUNT"
+			buttonFont = @accountbadge_button_font		
+		}		
+
+		guiButtonType =	{
+			name = "sign_in_button"
+			quadTextureSprite = "GFX_common_button"
+			position = { x= 373 y = 10 }
+			buttonText = "LOG_IN"
+			buttonFont = @accountbadge_button_font			
+		}		
+
+	}
+}

@@ -1,0 +1,6 @@
+assetviewer_interface/*
+interface/core*
+interface/general_stuff.gfx
+
+*tweaker*
+*previewer_*

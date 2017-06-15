@@ -1,0 +1,10 @@
+
+######################################
+category = {
+ name = "Launcher"
+ soundeffects = {
+
+	launcher_click
+ }
+ }
+

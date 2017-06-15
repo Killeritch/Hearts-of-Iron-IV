@@ -1,0 +1,18 @@
+﻿l_polish:
+ POPS_invalid-email: "Nieprawidłowy e-mail."
+ POPS_account-exists: "Konto z tym adresem e-mail już istnieje."
+ POPS_dynamodb-failure: "Połączenie nieudane."
+ POPS_ua: "Nieodpowiednie."
+ POPS_not-authorized: "Podany e-mail i hasło nie pasują do siebie."
+# These should "never" happen, we should have validated before we sent the data
+ POPS_bad-password-length: "Hasło jest za krótkie."
+ POPS_missing-required-account-details-keys: "Brakuje wymaganych informacji."
+ POPS_invalid-country-code: "Nieprawidłowy kod kraju."
+ POPS_invalid-language-code: "Nieprawidłowy kod języka."
+ POPS_invalid-ISO-8601-format: "Nieprawidłowy format daty."
+# These should also not happen, but are not related to validating our form
+ POPS_parse-failure: "Awaria klienta (rozbiór)"
+ POPS_unsupported-account-details-keys: "Awaria klienta (nieobsługiwane klucze)"
+ POPS_invalid-script-code: "Awaria klienta (nieprawidłowy skrypt)"
+#These can happen sometimes, when connection failed or some other error occured
+ POPS_NO_MESSAGE: "Wystąpił niespodziewany błąd."

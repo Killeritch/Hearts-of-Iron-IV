@@ -1,0 +1,125 @@
+guiTypes = 
+{	
+	containerWindowType = {
+		name = "online_offers_window"
+		position = { x=99920 y=150 }
+		size = { width=400 height=300 }
+		orientation= UPPER_LEFT
+		
+		background =	{
+			name = "background"
+			quadTextureSprite = "online_feed_background"
+			position = { x= 0 y = 0 }
+			Orientation = UPPER_LEFT
+		}
+
+		containerWindowType = {
+			name = "offer_window_container"
+			size = { width = 100% height = 100% }
+
+			background =	{
+				name = "background"
+				quadTextureSprite = "GFX_black"
+				position = { x= 0 y = 0 }
+				Orientation = UPPER_LEFT
+			}
+
+		}
+
+		gridBoxType = {
+			name = "page_dots"
+			position = { x = -5 y = -20 }
+			slotsize = { width = 15 height = 20 }
+			max_slots_vertical = 1
+			format = UPPER_RIGHT
+			orientation = LOWER_RIGHT
+		}
+
+
+
+		buttonType =	{
+			name = "prev"
+			quadTextureSprite = "GFX_prev_next_offer"
+			position = { x= 0 y = 0 }
+			frame = 1
+			scale = 0.3
+		}
+
+		buttonType =	{
+			name = "next"
+			quadTextureSprite = "GFX_prev_next_offer"
+			position = { x= -33 y = 0 }
+			orientation = UPPER_RIGHT
+			frame = 2
+			scale = 0.3
+		}
+	}
+
+	# Code puts this in "offer_window_container"
+	containerWindowType = {
+		name = "offer_entry_window"
+		size = { width = 100% height = 100% }
+
+		show_animation_type = decelerated
+		hide_animation_type = decelerated
+		animation_time = 1000
+
+		background =	{
+			name = "background"
+			quadTextureSprite = "GFX_black"
+			position = { x= 0 y = 0 }
+			Orientation = UPPER_LEFT
+		}
+
+		
+
+		# Image should go on the right hand side, as we dynamically resize the text box if an image doesn't exist
+		buttonType =	{
+			name = "image"
+			quadTextureSprite = "GFX_todo_button"
+			position = { x= 300 y = 22 }
+			size = { x=80 y=80 }
+			Orientation = UPPER_LEFT
+			buttonText = " "
+		}
+		
+		instantTextBoxType={
+			name = "title"
+			position = { x= 24 y = 20 }
+			text = ""
+			font = "newsfeed_title"
+			maxWidth = 400
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+			alwaystransparent = yes
+		}
+				
+		instantTextBoxType={
+			name = "text"
+			position = { x= 24 y = 40 }
+			text = ""
+			font = "newsfeed_body"
+			maxWidth = 400
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+			alwaystransparent = yes
+		}
+	}
+
+	# put in "page_dots"
+	containerWindowType = {
+		name = "offer_page_dot"
+
+		iconType =	{
+			name = "dot"
+			quadTextureSprite = "GFX_offer_dot"
+			scale = 0.5
+		}
+
+	}
+}
+

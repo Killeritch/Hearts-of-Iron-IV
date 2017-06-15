@@ -1,0 +1,127 @@
+guiTypes = 
+{	
+	windowType = {
+		name = "online_accountlogin_window"
+		backGround = "background"
+		position = { x=512 y=64 }
+		size = { x=480 y=264 }
+		moveable = 0
+		orientation="UPPER_LEFT"
+		
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "online_accountlogin_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		# Title
+		instantTextBoxType={
+			name = "online_accountlogin_title"
+			position = { x= 32 y = 38 }
+			text = "Login"
+			font = "accountlogin_title"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		# Email
+		instantTextBoxType={
+			name = "online_accountlogin_email"
+			position = { x= 32 y = 96 }
+			text = "Email"
+			font = "accountlogin_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		editBoxType={
+			name = "online_accountlogin_editemail"
+			position = { x= 192 y = 96 }
+			text = ""
+			font = "accountlogin_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountlogin_line.dds"
+		}
+		
+		# Password
+		instantTextBoxType={
+			name = "online_accountlogin_password"
+			position = { x= 32 y = 128 }
+			text = "Password"
+			font = "accountlogin_label"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		editBoxType={
+			name = "online_accountlogin_editpassword"
+			position = { x= 192 y = 128 }
+			text = ""
+			font = "accountlogin_label"
+			size = { x=256 y=28 }
+			instantTextBoxType = no
+			use_special_chars = no
+			textureFile = "gfx\\interface\\online_accountlogin_line.dds"
+		}
+		
+		guiButtonType = {
+			name = "online_form_submitbutton"
+			quadTextureSprite = "tweaker_button"
+			position = { x= 320 y = 200 }
+			buttonText = "Login"
+			buttonFont = "accountlogin_label"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		
+		guiButtonType = {
+			name = "online_form_cancelbutton"
+			quadTextureSprite = "tweaker_button"
+			position = { x= 32 y = 200 }
+			buttonText = "Cancel"
+			buttonFont = "accountlogin_label"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		# Success
+		instantTextBoxType={
+			name = "online_accountlogin_success"
+			position = { x= 32 y = 170 }
+			text = ""
+			font = "accountlogin_success"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		# Errors
+		instantTextBoxType={
+			name = "online_accountlogin_error"
+			position = { x= 32 y = 170 }
+			text = ""
+			font = "accountlogin_error"
+			maxWidth = 500
+			maxHeight = 32
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+	}
+}

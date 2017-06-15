@@ -1,0 +1,6 @@
+
+music = {
+	name = "launcher_music"
+	file = "/music/allies_peace_morningofdday.ogg"
+	volume = 0.42
+}

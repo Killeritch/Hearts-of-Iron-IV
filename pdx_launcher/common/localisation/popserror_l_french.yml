@@ -1,0 +1,19 @@
+﻿l_french:
+ POPS_invalid-email:0 "Adresse e-mail non valide"
+ POPS_account-exists:0 "Il existe déjà un compte avec cette adresse e-mail"
+ POPS_dynamodb-failure:0 "Échec de la connexion"
+ POPS_ua:0 "Non éligible"
+ POPS_not-authorized:0 "L'adresse e-mail et le mot de passe entrés ne correspondent pas"
+# These should "never" happen, we should have validated before we sent the data
+ POPS_bad-password-length:0 "Mot de passe trop court"
+ POPS_missing-required-account-details-keys:0 "Information oblitatoire non renseignée"
+ POPS_invalid-country-code:0 "Code du pays non valide"
+ POPS_invalid-language-code:0 "Code de la langue non valide"
+ POPS_invalid-ISO-8601-format:0 "Format de la date non valide"
+# These should also not happen, but are not related to validating our form
+ POPS_parse-failure:0 "Échec client (analyse)"
+ POPS_unsupported-account-details-keys:0 "Échec client (n° de série non valide)"
+ POPS_invalid-script-code:0 "Échec client (script non valide)"
+#These can happen sometimes, when connection failed or some other error occured
+ POPS_NO_MESSAGE: "Une erreur inattendue s'est produite."
+ POPS_UNEXPECTED_ERROR: "Une erreur inattendue s'est produite."

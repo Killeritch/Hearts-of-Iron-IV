@@ -1,0 +1,63 @@
+guiTypes = 
+{	
+	windowType = {
+		name = "online_feed_window"
+		backGround = "background"
+		position = { x=256 y=32 }
+		size = { x=600 y=200 }
+		moveable = 0
+		orientation="UPPER_LEFT"
+		
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "online_feed_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType =	{
+			name = "online_feed_image"
+			quadTextureSprite = "online_feed_image"
+			position = { x= 20 y = 20 }
+			size = { x=99 y=99 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		instantTextBoxType={
+			name = "online_feed_title"
+			position = { x= 194 y = 16 }
+			text = ""
+			font = "newsfeed_title"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_feed_timestamp"
+			position = { x= 196 y = 50 }
+			text = ""
+			font = "newsfeed_timestamp"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+		
+		instantTextBoxType={
+			name = "online_feed_body"
+			position = { x= 196 y = 80 }
+			text = ""
+			font = "newsfeed_body"
+			maxWidth = 500
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+	}
+}

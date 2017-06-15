@@ -1,0 +1,57 @@
+guiTypes = 
+{	
+	windowType = {
+		name = "online_feed_window"
+		backGround = ""
+		position = { x=0 y=0 }
+		size = { x=540 y=120 }
+		moveable = 0
+		orientation="UPPER_LEFT"
+		
+		instantTextBoxType={
+			name = "online_feed_title"
+			position = { x=10 y=20 }
+			text = ""
+			font = "newsfeed_title"
+			maxWidth = 540
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}	
+
+		## NOTE: If you change the size of this, you must also resize "online_feed_image" in the .gfx file.
+		guiButtonType =	{
+			name = "online_feed_image"
+			quadTextureSprite = "online_feed_image"
+			position = { x=10 y=50 }
+			size = { x=520 y=174 }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}			
+				
+		instantTextBoxType={
+			name = "online_feed_body"
+			position = { x=10 y=230 }
+			text = ""
+			font = "newsfeed_body"
+			maxWidth = 520
+			maxHeight = 32	
+			format = left
+			fixedsize = no
+			truncate = no
+		}
+
+		instantTextBoxType={
+			name = "online_feed_timestamp"
+			position = { x=10 y=360 }
+			text = ""
+			font = "newsfeed_timestamp"
+			maxWidth = 520
+			maxHeight = 32	
+			format = right
+			fixedsize = no
+			truncate = no
+		}		
+	}
+}

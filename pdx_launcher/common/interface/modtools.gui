@@ -1,0 +1,790 @@
+@title_font = "newsfeed_title"
+@standard_font = "newsfeed_body"
+
+guiTypes = 
+{	
+	containerWindowType = {
+		name = "ugc_main_window"
+		position = { x=0 y=0 }
+		size = { width = 100% height = 100% }
+
+		background =	{
+			name = "background"
+			quadTextureSprite = "GFX_transparent_black"
+			position = { x=0 y=0 }
+			orientation = UPPER_LEFT
+		}		
+
+		containerWindowType = {
+			name = "content_window"
+
+			position = { x=-480 y=-280 }
+			size = { width = 960 height = 560 }
+			
+			orientation = CENTER
+
+			background =	{
+				name = "background"
+				quadTextureSprite = "modtools_background"
+				position = { x=0 y=0 }
+				orientation = UPPER_LEFT
+			}		
+		
+			# Title
+			instantTextBoxType={
+				name = "online_accountlogin_title"
+				position = { x=32 y=32 }
+				text = "MODTOOLS"
+				font = @title_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+
+			# Close Button
+			buttonType =	{
+				name = "close_button"
+				orientation = UPPER_RIGHT
+				position = { x=-190 y=16 }
+				quadTextureSprite ="GFX_common_button"	
+				buttonText = "CLOSE"
+				buttonFont = "flaunch_16b"
+			}			
+
+			################
+			# Tab Menu
+			################
+
+			# Create Mod Button
+			buttonType =	{
+				name = "create_mod_tab_button"
+				orientation = UPPER_LEFT
+				position = { x=10 y=100 }
+				quadTextureSprite ="GFX_common_button"	
+				buttonText = "CREATE_MOD"
+				buttonFont = "flaunch_16b"
+			}	
+
+			# Upload Mod
+			buttonType =	{
+				name = "upload_mod_tab_button"
+				orientation = UPPER_LEFT
+				position = { x=10 y=140 }
+				quadTextureSprite ="GFX_common_button"	
+				buttonText = "UPLOAD_MOD"
+				buttonFont = "flaunch_16b"
+			}
+
+			# Upload Mod
+			buttonType =	{
+				name = "backend_info_tab_button"
+				orientation = UPPER_LEFT
+				position = { x=10 y=180 }
+				quadTextureSprite ="GFX_common_button"	
+				buttonText = "USAGE_INFO"
+				buttonFont = "flaunch_16b"
+			}			
+
+			# Tab Window Area
+			containerWindowType = {
+				name = "tab_window"
+				position = { x=180 y=80 }
+				size = { width = 760 height = 460 }
+				
+				orientation = UPPER_LEFT
+
+				background =	{
+					name = "background"
+					quadTextureSprite = "modtools_background"
+					position = { x=0 y=0 }
+					orientation = UPPER_LEFT
+				}	
+
+				##########################
+				# Create Mod Tab
+				##########################
+
+				containerWindowType = {
+					name = "create_mod_window"
+					position = { x=20 y=20 }
+					size = { width = 720 height = 420 }
+					
+					orientation = UPPER_LEFT
+
+					# View Title
+					instantTextBoxType={
+						name = "window_title"
+						position = { x=20 y=20 }
+						text = "CREATE_MOD"
+						font = @title_font
+						maxWidth = 500
+						maxHeight = 32	
+						format = left
+						fixedsize = no
+						truncate = no
+					}
+
+					# Mod Title
+					instantTextBoxType={
+						name = "mod_title_label"
+						position = { x=20 y=60 }
+						text = "MOD_TITLE"
+						font = @standard_font
+						maxWidth = 120
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}		
+
+					editBoxType={
+						name = "mod_title_editbox"
+						position = { x=160 y=60 }
+						text = ""
+						font = @standard_font
+						size = { x=200 y=20 }
+						instantTextBoxType = no
+						use_special_chars = no
+						textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+					}
+
+					instantTextBoxType={
+						name = "mod_title_help"
+						position = { x=380 y=60 }
+						text = "MOD_TITLE_HELP"
+						font = @standard_font
+						maxWidth = 300
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}						
+
+					# Mod Directory
+					instantTextBoxType={
+						name = "mod_dir_label"
+						position = { x=20 y=90 }
+						text = "MOD_DIRECTORY"
+						font = @standard_font
+						maxWidth = 120
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}		
+
+					editBoxType={
+						name = "mod_dir_editbox"
+						position = { x=160 y=90 }
+						text = ""
+						font = @standard_font
+						size = { x=200 y=20 }
+						instantTextBoxType = no
+						use_special_chars = no
+						textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+					}
+
+					instantTextBoxType={
+						name = "mod_dir_help"
+						position = { x=380 y=90 }
+						text = "MOD_DIRECTORY_HELP"
+						font = @standard_font
+						maxWidth = 300
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}	
+
+					# Supported Version
+					instantTextBoxType={
+						name = "version_label"
+						position = { x=20 y=120 }
+						text = "SUPPORTED_VERSION"
+						font = @standard_font
+						maxWidth = 120
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}		
+
+					editBoxType={
+						name = "version_editbox"
+						position = { x=160 y=120 }
+						text = ""
+						font = @standard_font
+						size = { x=200 y=20 }
+						instantTextBoxType = no
+						use_special_chars = no
+						textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+					}
+
+					instantTextBoxType={
+						name = "version_help"
+						position = { x=380 y=120 }
+						text = "SUPPORTED_VERSION_HELP"
+						font = @standard_font
+						maxWidth = 300
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}
+
+					# Tags
+					instantTextBoxType={
+						name = "tags_label"
+						position = { x=20 y=160 }
+						text = "SELECT_TAGS"
+						font = @title_font
+						maxWidth = 120
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}
+
+					# Must appear BEFORE tag_selection_box otherwise this text appears over 
+					# the dropdown menus for the mod tags.
+					instantTextBoxType={
+						name = "error_msg"
+						orientation = LOWER_RIGHT
+						position = { x=-700 y=-47 }
+						font = @standard_font
+						maxWidth = 520
+						maxHeight = 50
+						format = left
+						fixedsize = yes
+						truncate = no
+					}
+
+					# Submit Button
+					buttonType =	{
+						name = "create_mod_button"
+						orientation = LOWER_RIGHT
+						position = { x=-170 y=-50 }
+						quadTextureSprite ="GFX_common_button"	
+						buttonText = "CREATE_MOD"
+						buttonFont = "flaunch_16b"
+					}						
+
+					# Gridbox containing drop down boxes for the mod's tags
+					# Note. This should come AFTER error_msg and create_mod_button for 
+					# the drop down boxes to properly appear on top of them.
+					gridBoxType = {
+						name = "tag_selection_box"
+						position = { x=20 y=200 }
+						size = { width = 710 height = 140 }
+						slotsize = { width = 350 height = 50 }
+						max_slots_horizontal = 2
+						max_slots_vertical = 3
+						format = "UPPER_LEFT"
+					}					
+				}	
+
+
+				##########################
+				# Upload Mod Tab
+				##########################				
+
+				containerWindowType = {
+					name = "upload_mod_window"
+					position = { x=20 y=20 }
+					size = { width = 720 height = 420 }
+					
+					orientation = UPPER_LEFT
+
+					# Title
+					instantTextBoxType={
+						name = "window_title"
+						position = { x=20 y=20 }
+						text = "UPLOAD_MOD"
+						font = @title_font
+						maxWidth = 200
+						maxHeight = 32	
+						format = left
+						fixedsize = no
+						truncate = no
+					}	
+
+					# Select Mod Listbox...
+					instantTextBoxType={
+						name = "select_mod_label"
+						position = { x=20 y=50 }
+						text = "SELECT_MOD"
+						font = @title_font
+						maxWidth = 200
+						maxHeight = 32	
+						format = left
+						fixedsize = no
+						truncate = no
+					}
+
+					listboxType = {
+						name = "mod_listbox"
+						position = { x=20 y=80 }
+						backGround=""
+						size = { x=211 y=340 }
+						spacing = 0
+						scrollbartype = "standardlistbox_slider"
+						borderSize = {x = 0 y = 0}
+						orientation = UPPER_LEFT
+					}
+
+					#-------------------------
+					# Mod Details Subview
+					#-------------------------
+
+					containerWindowType = {
+						name = "detail_subwindow"
+						position = { x=240 y=0 }
+						size = { width = 460 height = 420 }
+						
+						orientation = UPPER_LEFT
+						
+						# Mod Details...
+						instantTextBoxType={
+							name = "mod_details_label"
+							position = { x=0 y=20 }
+							text = "MOD_DETAILS"
+							font = @title_font
+							maxWidth = 460
+							maxHeight = 32	
+							format = left
+							fixedsize = no
+							truncate = no
+						}	
+
+						# Mod Title
+						instantTextBoxType={
+							name = "mod_title_label"
+							position = { x=0 y=80 }
+							text = "MOD_TITLE"
+							font = @standard_font
+							maxWidth = 160
+							maxHeight = 18
+							format = left
+							fixedsize = no
+							truncate = no
+							vertical_alignment = center	
+						}		
+
+						editBoxType={
+							name = "mod_title_editbox"
+							position = { x=170 y=80 }
+							text = "SOME TEXT"
+							font = @standard_font
+							size = { x=200 y=20 }
+							instantTextBoxType = no
+							use_special_chars = no
+							textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+						}
+
+						# Mod ID
+						instantTextBoxType={
+							name = "mod_id_label"
+							position = { x=0 y=110 }
+							text = "MOD_ID"
+							font = @standard_font
+							maxWidth = 160
+							maxHeight = 18
+							format = left
+							fixedsize = no
+							truncate = no
+							vertical_alignment = center	
+						}		
+
+						editBoxType={
+							name = "mod_id_editbox"
+							position = { x=170 y=110 }
+							text = ""
+							font = @standard_font
+							size = { x=200 y=20 }
+							instantTextBoxType = no
+							use_special_chars = no
+							textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+						}		
+
+						# Mod Path
+						instantTextBoxType={
+							name = "mod_path_label"
+							position = { x=0 y=140 }
+							text = "MOD_PATH"
+							font = @standard_font
+							maxWidth = 160
+							maxHeight = 18
+							format = left
+							fixedsize = no
+							truncate = no
+							vertical_alignment = center	
+						}		
+
+						editBoxType={
+							name = "mod_path_editbox"
+							position = { x=170 y=140 }
+							text = ""
+							font = @standard_font
+							size = { x=200 y=20 }
+							instantTextBoxType = no
+							use_special_chars = no
+							textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+						}
+
+						# Supported Version
+						instantTextBoxType={
+							name = "mod_supportedversion_label"
+							position = { x=0 y=170 }
+							text = "SUPPORTED_VERSION"
+							font = @standard_font
+							maxWidth = 160
+							maxHeight = 18
+							format = left
+							fixedsize = no
+							truncate = no
+							vertical_alignment = center	
+						}		
+
+						editBoxType={
+							name = "mod_supportedversion_editbox"
+							position = { x=170 y=170 }
+							text = ""
+							font = @standard_font
+							size = { x=200 y=20 }
+							instantTextBoxType = no
+							use_special_chars = no
+							textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+						}						
+
+						# Feedback Label
+						instantTextBoxType={
+							name = "feedback_label"
+							position = { x=0 y=340 }
+							text = ""
+							font = @standard_font
+							maxWidth = 460
+							maxHeight = 18
+							format = left
+							fixedsize = no
+							truncate = no
+						}						
+
+						# Upload
+						buttonType =	{
+							name = "upload_button"
+							orientation = LOWER_RIGHT
+							position = { x=-170 y=-60 }
+							quadTextureSprite ="GFX_common_button"	
+							buttonText = "UPLOAD"
+							buttonFont = "flaunch_16b"
+						}	
+
+						# Fetch Mod Info
+						buttonType =	{
+							name = "fetch_info_button"
+							orientation = LOWER_RIGHT
+							position = { x=-340 y=-60 }
+							quadTextureSprite ="GFX_common_button"	
+							buttonText = "FETCH_INFO"
+							buttonFont = "flaunch_16b"
+						}	
+					}
+				}	
+
+
+				##########################
+				# Backend Info Tab
+				##########################				
+
+				containerWindowType = {
+					name = "backend_info_window"
+					position = { x=20 y=20 }
+					size = { width = 720 height = 420 }
+					
+					orientation = UPPER_LEFT
+
+					# Title
+					instantTextBoxType={
+						name = "window_title"
+						position = { x=20 y=20 }
+						text = "BACKEND_INFO"
+						font = @title_font
+						maxWidth = 500
+						maxHeight = 32	
+						format = left
+						fixedsize = no
+						truncate = no
+					}		
+
+					# Mod Title
+					instantTextBoxType={
+						name = "mod_title_label"
+						position = { x=20 y=60 }
+						text = "MOD_TITLE"
+						font = @standard_font
+						maxWidth = 120
+						maxHeight = 18
+						format = left
+						fixedsize = no
+						truncate = no
+					}
+				}					
+			}
+		}
+	}
+
+	##########################
+	# Scrollbar
+	##########################		
+	extendedScrollbarType = {
+		name = "launcher_vertical_scrollbar2"
+		position = { x = -6 y = 2 }
+ 		size = { width = 18 height = 18 }
+		startValue = 0
+		orientation = upper_right
+		origo = upper_right
+
+#		background = {
+#			name = "Background"	
+#			quadTextureSprite = "GFX_launcher_scrollbar_vertical_bg"
+#		}
+		
+		slider = {
+			name = "Slider"	
+			quadTextureSprite = "GFX_launcher_scroll_slider2"
+			position = { x = -1 y = -2 }
+		}
+
+		track = {
+			name = "Track"
+			quadTextureSprite = "GFX_launcher_scroll_track2"
+			position = { x = 0 y = -3 }
+			alwaystransparent = yes
+		}
+
+		decreaseButton = {
+			name = "Decrease"
+			quadTextureSprite = "GFX_launcher_scroll_up2"
+			position = { x = -1 y = 0 }
+		}
+		
+		increaseButton = {
+			name = "Increase"
+			quadTextureSprite = "GFX_launcher_scroll_down2"
+			position = { x=-19 y = -23}	
+		}
+	}
+
+	scrollbarType = {
+		name = "standardlistbox_slider"	
+		slider = "listboxSliderButton"
+		track= "listboxTrackButton"
+		leftbutton = "upButton"
+		rightbutton = "downButton"
+		size = {x =16 y =16 }
+		position = {x= 0 y =0}
+		priority = 100			
+		borderSize = {x = 24 y = 24}	
+		maxValue =1
+		minValue =0
+		stepSize =0.01
+		startValue = 0
+		horizontal = 0
+
+		buttonType = {
+			name = "listboxSliderButton"	
+			quadTextureSprite = "GFX_launcher_scroll_slider2"
+			tooltip = ""
+			tooltipText =""	
+			delayedTooltipText = ""
+			position = { x=0 y =0}
+		}
+
+		buttonType = {
+			name = "listboxTrackButton"
+			quadTextureSprite = "GFX_launcher_scroll_bg2"
+			position = { x=24 y =24}	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""	
+
+		}	
+
+		buttonType = {
+			parent = "listboxSliderButton"
+			name = "upButton"
+			quadTextureSprite = "GFX_launcher_scroll_down2"
+			position = { x=0 y =0}	
+		}
+	
+		buttonType = {
+			parent = "listboxSliderButton"
+			name = "downButton"
+			quadTextureSprite = "GFX_launcher_scroll_up2"
+			position = { x=0 y =120}	
+		}
+	}
+
+	##########################
+	# Upload Mod Listbox Item
+	##########################				
+
+	containerWindowType = {
+		name = "mod_listbox_item"
+		position = { x=0 y=0 }
+		size = { width = 211 height = 40 }
+		
+		orientation = UPPER_LEFT
+
+		# Close Button
+		buttonType =	{
+			name = "item_button"
+			orientation = UPPER_LEFT
+			position = { x=0 y=0 }
+			quadTextureSprite ="GFX_common_button"	
+			buttonText = "CLOSE"
+			buttonFont = "flaunch_16b"
+		}			
+	}		
+
+	##########################
+	# Mod Tag dropdown item
+	##########################	
+	# These are put inside "tag_dropdown" in "modtools_tag_dropdown"
+	containerWindowType = {
+		name = "modtools_tag_item"
+		size = { width=173 height=40 }
+
+		buttonType = {
+			name ="unselected"
+			quadTextureSprite ="GFX_common_button_small"	
+			buttonText = "none" #must have text here to avoid assert. Temp art so NBD
+			position = { x= 19 y = 0 }
+		}
+		
+		buttonType = {
+			name ="selected"
+			quadTextureSprite ="GFX_common_button_small"	
+			buttonText = "none" #must have text here to avoid assert. Temp art so NBD
+			position = { x= 29 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 34 y = 5 }
+			font = "flaunch_16b"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 265
+			maxHeight = 25
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+
+	##########################
+	# Add Mod Tag item
+	##########################	
+	# One of these is put at the end of "tag_selection_box"
+	containerWindowType = {
+		name = "modtools_add_dropdown"
+		size = { width=300 height=44 }
+		
+		
+		buttonType = {
+			name ="button"
+			quadTextureSprite ="GFX_todo_button"	
+			position = { x= 17 y = 0 }
+			frame = 2
+		}
+				
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 280 y = 5 }
+			font = "flaunch_16b"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 265
+			maxHeight = 25
+			fixedsize = yes
+			text = "ADD"
+			alwaystransparent = yes
+		}
+	}
+
+	##########################
+	# Mod Tag gridbox item
+	##########################	
+	# These are put inside "tag_selection_box"
+
+	containerWindowType = {
+		name = "modtools_tag_dropdown"
+
+
+		iconType = {
+			name = "tag_selection_bg"
+			quadTextureSprite = "GFX_tag_selection_bg"
+			position = { x= 0 y = -5 }
+			allwaystransparent = yes
+		}		
+				
+		
+		#buttonType = {
+		#	name ="remove"
+		#	quadTextureSprite ="GFX_todo_button"	
+		#	position = { x= 300 y = 0 }
+		#	frame = 1
+		#}
+
+
+		dropDownBoxType = {
+			name = "tag_dropdown"
+			position = { x = 20 y = 0 }
+			size = { width = 200 height = 30 }
+			
+			instantTextBoxType = {
+				name = "current"
+				position = { x = 5 y = 5 }
+				alwaystransparent = yes
+				font = "flaunch_16b"
+			}
+			
+			expandButton = {
+				name = "expand_button"	
+				position = { x = 80 y = 0 }
+				quadTextureSprite ="GFX_expand_minimize"
+				orientation = UPPER_RIGHT
+			}
+			
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=55 y= -320 }	
+				show_position = { x = 55 y = -5 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 300
+				size = { width=224 height=150 }	
+				verticalScrollbar = "launcher_vertical_scrollbar2"
+				margin = { top = 12 bottom = 12 right = 6 }
+				click_to_front = yes
+				
+				background = {
+					name = "bg"		
+					quadTextureSprite ="modtools_background"
+					position = { x = 0 y = 0 }
+				}
+				
+				gridBoxType = {
+					name = "tag_options"
+					position = { x = -10 y = 7 }
+					size = { width = 159 height = 100%% }
+					slotsize = { width = 159 height = 30 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+	}
+
+	
+}

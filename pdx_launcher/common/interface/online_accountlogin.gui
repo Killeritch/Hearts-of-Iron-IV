@@ -1,0 +1,161 @@
+@accountlogin_title_font = "newsfeed_title"
+@accountlogin_label_font = "newsfeed_body"
+@accountlogin_error_font = "newsfeed_body"
+@accountlogin_success_font = "newsfeed_body"
+
+guiTypes = 
+{	
+	windowType = {
+		name = "online_accountlogin_window"
+		backGround = "background"
+		position = { x=0 y=0 }
+		size = { x=200 y=200 }
+		fullscreen=yes
+		moveable = 0
+
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "GFX_transparent_black"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
+
+		windowType = {
+			name = "content_window"
+			backGround = "background"
+			position = { x=-215 y=-125 }
+			size = { x=430 y=250 }
+			moveable = 0
+			orientation="CENTER"
+
+			guiButtonType =	{
+				name = "background"
+				quadTextureSprite = "online_accountlogin_background"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}		
+		
+			# Title
+			instantTextBoxType={
+				name = "online_accountlogin_title"
+				position = { x= 32 y = 36 }
+				text = "LOG_IN"
+				font = @accountlogin_title_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+			
+			# Email
+			instantTextBoxType={
+				name = "online_accountlogin_email"
+				position = { x= 32 y = 80 }
+				text = "EMAIL"
+				font = @accountlogin_label_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+			
+			editBoxType={
+				name = "online_accountlogin_editemail"
+				position = { x= 100 y = 74 }
+				text = ""
+				font = @accountlogin_label_font
+				size = { x=256 y=28 }
+				instantTextBoxType = no
+				use_special_chars = no
+				textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+			}
+			
+			# Password
+			instantTextBoxType={
+				name = "online_accountlogin_password"
+				position = { x= 32 y = 110 }
+				text = "PASSWORD"
+				font = @accountlogin_label_font
+				maxWidth = 500
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+
+			editBoxType={
+				name = "online_accountlogin_editpassword"
+				position = { x= 100 y = 104 }
+				text = ""
+				font = @accountlogin_label_font
+				size = { x=256 y=28 }
+				instantTextBoxType = no
+				use_special_chars = no
+				textureFile = "pdx_launcher/common/gfx/interface/online_accountlogin_line.dds"
+			}
+
+			checkboxType = {
+				name = "online_accountlogin_peekpassword"
+				quadTextureSprite = "GFX_peekpassword"
+				position = { x= 360 y = 105 }			
+			}
+
+			
+			guiButtonType = {
+				name = "online_form_submitbutton"
+				quadTextureSprite = "GFX_green_button"
+				position = { x= -205 y = -70 }
+				Orientation = "LOWER_RIGHT"	
+				buttonText = "LOG_IN"
+				buttonFont = @accountlogin_label_font
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+
+			guiButtonType = {
+				name = "online_form_forgot_password"
+				quadTextureSprite = "GFX_common_button"
+				position = { x= 30 y = -70 }
+				Orientation = "LOWER_LEFT"			
+				buttonText = "FORGOT_PASSWORD"
+				buttonFont = @accountlogin_label_font
+			}
+			
+			guiButtonType = {
+				name = "online_form_cancelbutton"
+				quadTextureSprite = "GFX_close_cross"
+				position = { x= -30 y = 16 }
+				Orientation = "UPPER_RIGHT"			
+			}
+
+			# Success
+			instantTextBoxType={
+				name = "online_accountlogin_success"
+				position = { x= 32 y = 150 }
+				text = ""
+				font = @accountlogin_success_font
+				maxWidth = 500
+				maxHeight = 32
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+			
+			# Errors
+			instantTextBoxType={
+				name = "online_accountlogin_error"
+				position = { x= 32 y = 150 }
+				text = ""
+				font = @accountlogin_error_font
+				maxWidth = 500
+				maxHeight = 32
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+		}
+	}
+}

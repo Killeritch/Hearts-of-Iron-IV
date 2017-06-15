@@ -1,0 +1,240 @@
+guiTypes = {
+	scrollbarType = {
+			name = "standardlistbox_slider"	
+			slider = "listboxSliderButton"
+			track= "listboxTrackButton"
+			leftbutton = "upButton"
+			rightbutton = "downButton"
+			size = {x =16 y =16 }
+			position = {x= 0 y =0}
+			priority = 100			
+			borderSize = {x = 24 y = 24}	
+			maxValue =1
+			minValue =0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 0
+
+			guiButtonType = {
+				name = "listboxSliderButton"	
+				quadTextureSprite = "previewer_slider_slider"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "listboxTrackButton"
+				quadTextureSprite = "previewer_slider_background"
+				position = { x=24 y =24}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+
+			}	
+
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "upButton"
+				quadTextureSprite = "previewer_slider_downbutton"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "listboxSliderButton"
+				name = "downButton"
+				quadTextureSprite = "previewer_slider_upbutton"
+				position = { x=0 y =120}	
+			}
+	}
+	
+	windowType = {
+		name = "previewer_chat_window"
+		backGround=""
+		position = { x=0 y=-420 }	
+		size =   { x=376 y= 420 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		guiButtonType =
+		{
+			name = "previewer_close"
+			quadTextureSprite = "previewer_GFX_button_close"
+			position = { x= 356 y = -20 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "standard_font"
+		}
+
+		iconType =
+		{
+			name ="previewer_chatback"
+			spriteType = "previewer_GFX_chatback"
+			position = { x= 0 y = 0 }
+		}
+
+		OverlappingElementsBoxType = {
+			name = "previewer_channels"	
+			position = { x = 0  y = 0  }
+			size = { x=276 y= 18 }
+			spacing = 1.0
+		}
+
+		listboxType = 
+		{
+			name ="previewer_chat"
+			position = { x = 0 y = 18 }
+			backGround=""
+			size = { x=276 y =382}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		listboxType = 
+		{
+			name ="previewer_users"
+			position = { x = 276 y = 0 }
+			backGround=""
+			size = { x=100 y =382}
+			Orientation = "UPPER_LEFT"
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		editBoxType = {
+			position = { x = 0 y = 400  }
+			name = "previewer_chat_input"
+			textureFile = ""
+			font = "chat_input_font"
+			size = { x=276 y=120 }
+			text = ""
+			orientation = "UPPER_LEFT"
+		}
+	}
+
+	windowType = {
+		name = "previewer_chat_item"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=276 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		instantTextBoxType={
+			position = {x = 0 y = 0 }
+			name = "previewer_text"
+			font = "standard_font"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 276
+			maxHeight = 18
+			text = ""	
+		}
+	}
+
+
+	windowType = {
+		name = "previewer_chat_inbox_window"
+		backGround=""
+		position = { x=0 y=-18 }	
+		size = { x=276 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		Orientation = "LOWER_LEFT"
+
+		guiButtonType = {
+			name = "previewer_open"
+			quadTextureSprite = "previewer_GFX_channelback"
+			position = { x=0 y =0}	
+		}
+	}
+
+
+	windowType = {
+		name = "channel_window"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=100 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			name = "select"
+			quadTextureSprite = "previewer_GFX_channelback"
+			position = { x=0 y =0}	
+		}
+
+		guiButtonType =
+		{
+			name = "close"
+			quadTextureSprite = "previewer_GFX_button_close"
+			position = { x= 80 y = -7 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "standard_font"
+		}
+
+		instantTextBoxType={
+			position = {x = 0 y = 0 }
+			name = "name"
+			font = "standard_font"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 100
+			maxHeight = 18
+			fixedsize = yes
+			text = ""	
+		}
+	}
+
+	windowType = {
+		name = "user_item"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=100 y= 18 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			name = "whisper"
+			quadTextureSprite = "previewer_GFX_channelback"
+			position = { x=0 y =0}	
+		}
+
+		guiButtonType =
+		{
+			name = "kick"
+			quadTextureSprite = "previewer_GFX_button_close"
+			position = { x= 80 y = -7 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "standard_font"
+		}
+
+		instantTextBoxType={
+			position = {x = 0 y = 0 }
+			name = "name"
+			font = "standard_font"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 100
+			maxHeight = 18
+			text = ""	
+		}
+	}
+}

@@ -1,0 +1,208 @@
+guiTypes = {
+
+	windowType = {
+		name = "assetviewer_interface"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=64 y=64 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+			
+		guiButtonType =
+		{
+			name = "previewer_quit"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 0  }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Quit"
+			buttonFont = "standard_font"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_reload"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 50  }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Reload"
+			buttonFont = "standard_font"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_restart"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 100  }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Restart asset"
+			buttonFont = "standard_font"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_toggle_gui"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 150  }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Toggle gui"
+			buttonFont = "standard_font"
+			shortcut = "§"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_spawn_particle_editor"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 200  }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Particle Editor"
+			buttonFont = "standard_font"
+			shortcut = "§"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_prev_asset"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 250 }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Prev"
+			buttonFont = "standard_font"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_next_asset"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 170 y = 250 }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Next"
+			buttonFont = "standard_font"
+		}
+		
+		guiButtonType =
+		{
+			name = "previewer_record"
+			quadTextureSprite = "previewer_GFX_button"
+			position = { x= 0 y = 300 }
+			Orientation = "UPPER_LEFT"
+			buttonText = "Record"
+			buttonFont = "standard_font"
+		}
+		
+		instantTextBoxType = {
+			name = "previewer_info"
+			position = { x = -300 y = 8 }
+			font = "standard_font"
+			maxWidth = 300
+			maxHeight = 40	
+			format = left
+			allwaystransparent = yes
+			Orientation = "UPPER_RIGHT"
+		}
+		
+		windowType = {
+			name = "previewer_extra_gui"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=64 y=64 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+			
+		windowType = {
+			name = "previewer_lower_left"
+			backGround=""
+			position = { x=0 y=0 }	
+			size = { x=64 y=250 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			
+		
+				guiButtonType =
+				{
+					name = "previewer_clear_output"
+					quadTextureSprite = "previewer_GFX_button"
+					position = { x= 600 y = 194  }
+					Orientation = "UPPER_LEFT"
+					buttonText = "Clear Text"
+					buttonFont = "standard_font"
+				}
+				
+				windowType = {
+				name = "previewer_input_window"
+				backGround=""
+				position = { x=0 y=0 }	
+				size = { x=0 y=0 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+					
+					editBoxType = {
+						position = { x = 5 y = 200  }
+						name = "previewer_editbox"
+						textureFile = "gfx/interface/previewer_small_tiles_dialog.dds"
+						font = "standard_font"
+						borderSize = { x=4 y=4 }	
+						size = { x=600 y=40 }
+						orientation = "UPPER_LEFT"
+						instantTextBoxType = no
+					}
+					instantTextBoxType = {
+						name = "previewer_auto_complete"
+						position = { x = 9 y = 211 }
+						font = "standard_font"
+						maxWidth = 600
+						maxHeight = 40	
+						format = left
+						allwaystransparent = yes
+					}
+				}
+			
+				instantTextBoxType = {
+					name = "previewer_output"
+					position = { x = 10 y = 0 }
+					textureFile = ""
+					font = "standard_font"
+					borderSize = {x = 0 y = 0}
+					text = ""	
+					maxWidth = 500
+					maxHeight = 200	
+					format = left
+					scrollbartype = "standardlistbox_slider"
+				}
+			}
+		}
+	}
+	
+	windowType = {
+		name = "previewer_ButtonMenuWindow"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=64 y=64 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+	}
+	guiButtonType =	{
+		name = "previewer_ButtonMenuButton"
+		quadTextureSprite = "previewer_GFX_button"
+		position = { x= 0 y = 100  }
+		Orientation = "UPPER_LEFT"
+		buttonText = "Toggle gui"
+		buttonFont = "standard_font"
+	}
+}

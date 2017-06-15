@@ -1,0 +1,4 @@
+ship_cannon =
+{
+	file = "sound/cannon.wav"
+}
