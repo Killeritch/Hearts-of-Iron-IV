@@ -1,0 +1,1 @@
+.mw-cite-backlink,.cite-accessibility-label{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}sup.reference{unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}ol.references li:target,sup.reference:target{background-color:#def;background-color:rgba(0,127,255,0.133)}@media print{.mw-cite-backlink{display:none}}
