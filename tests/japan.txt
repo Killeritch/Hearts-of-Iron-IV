@@ -1,0 +1,35 @@
+last_date = "1945.1.1"
+
+tests = {
+
+    japan_starts_early_war_with_china = {
+
+        success = {
+            JAP = { has_war_with = CHI }
+        }
+
+        fail = {
+             date > "1939.1.1"
+        }
+    }
+
+	japan_at_war_with_uk = {
+
+        success = {
+            JAP = { has_war_with = ENG }
+        }
+    }
+
+    japan_capitulated = {
+
+        success = {
+            JAP = { 
+			OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			}
+        }
+    }
+
+}

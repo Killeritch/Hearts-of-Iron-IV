@@ -1,0 +1,797 @@
+guiTypes = {
+	windowType = {
+		name = "tweaker_window"
+		backGround="background"
+		position = { x=-400 y=-600 }	
+		size =   { x=400 y= 674 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_RIGHT"
+		
+		guiButtonType =	{
+			name = "background"
+			quadTextureSprite = "tweaker_background"
+			position = { x= 0 y = 0  }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+			buttonFont = "tweaker_garamond_12"
+		}
+		
+		smoothListBoxType = {
+			name ="tweaker_list"
+			position = { x=0 y=0 }
+			orientation = "UPPER_LEFT"
+			size = { x=400 y=674 }
+			priority = 100
+			borderSize = {x=0 y=0}
+			scrollbartype = "standardlistbox_slider"
+		}
+		
+		guiButtonType = {
+			name = "tweaker_closewindow"
+			quadTextureSprite = "tweaker_close"
+			position = { x= -50 y = 10  }
+			orientation = UPPER_RIGHT
+		}
+	}
+	
+	windowType = {
+			name = "tweaker_dropdownitem"
+			backGround=""
+			position = { x=120 y=25 }	
+			size =   { x=256 y=22 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "UPPER_LEFT"
+			
+			guiButtonType =	{
+				name = "background"
+				quadTextureSprite = "tweaker_dropdownbackground"
+				position = { x= 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+				buttonText = " "
+			}
+		
+			guiButtonType = {
+				name = "tweaker_dropdownbutton"
+				quadTextureSprite = "tweaker_dropdown"
+				position = { x=0 y =0}
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 16 y = 2 }
+				text = "Dropdown item!"
+				font = "tweaker_garamond_12"
+				maxWidth = 400
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+		}
+		
+	windowType = {
+		name = "tweaker_dropdown"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=50 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 30	
+				format = left
+				fixedsize = yes
+			}
+			
+		guiButtonType = {
+				name = "tweaker_dropdownbutton"
+				quadTextureSprite = "tweaker_dropdown"
+				position = { x=120 y=25 }	
+				size =   { x=256 y=22 }
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+			
+		instantTextBoxType={
+				name = "tweaker_currentlabel"
+				position = { x=136 y=27 }	
+				text = "Dropdown item!"
+				font = "tweaker_garamond_12"
+				maxWidth = 400
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		listBoxType = {
+			name ="tweaker_dropdownlist"
+			position = { x=120 y =25}
+			orientation = "UPPER_LEFT"
+			size = { x=0 y=0 }
+			scrollbartype = "standardlistbox_slider"
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_collapsable"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=200 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType =	{
+			name = "collapsable_background"
+			quadTextureSprite = "collapsable_background"
+			position = { x= 0 y = 28  }
+			Orientation = "UPPER_LEFT"
+			buttonText = " "
+		}
+		
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 30 }
+				text = "Title"
+				font = "tweaker_garamond_12"
+				maxWidth = 400
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		smoothListBoxType = {
+			name ="tweaker_list"
+			position = { x=0 y=50 }
+			orientation = "UPPER_LEFT"
+			size = { x=400 y=674 }
+			priority = 100
+			borderSize = {x=0 y=0}
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_titlecomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=40 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Title"
+				font = "tweaker_gar_35"
+				maxWidth = 400
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+	}
+	
+	windowType = {
+		name = "tweaker_labelcomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=22 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 20 }
+				text = "Title"
+				font = "tweaker_garamond_12"
+				maxWidth = 400
+				maxHeight = 32	
+				format = left
+				fixedsize = yes
+			}
+	}
+	
+	windowType = {
+		name = "tweaker_graphcomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=160 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		curveGraphType = {
+			name = "tweaker_graph"
+			position = { x=32 y=48 }	
+			size =   { x=340 y=128 }
+			spriteType = "tweaker_dummy_curvegraph"
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_listcomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=50 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "UPPER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "My list"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		guiButtonType = {
+				name = "tweaker_left"
+				quadTextureSprite = "tweaker_button_left"
+				position = { x=64 y =46}	
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+			
+		guiButtonType = {
+				name = "tweaker_right"
+				quadTextureSprite = "tweaker_button_right"
+				position = { x=256 y =46}	
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+			
+		instantTextBoxType={
+				name = "tweaker_listitem"
+				position = { x= 80 y = 48 }
+				text = "My list element!"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+	}
+	
+	windowType = {
+		name = "tweaker_slidercomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 20 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		instantTextBoxType={
+				name = "tweaker_valuelabel"
+				position = { x= 300 y = 25 }
+				text = "1"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		scrollbarType = {
+			name = "tweaker_slider"	
+			slider = "SliderButton"
+			track= "TrackButton"
+			leftbutton = "leftButton"
+			rightbutton = "rightButton"
+			size = {x = 250 y = 16 }
+			position = {x= 64 y = 36}
+			priority = 100			
+			borderSize = {x =16 y = 16}	
+			maxValue = 1
+			minValue = 0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 1
+
+			guiButtonType = {
+				name = "SliderButton"	
+				quadTextureSprite = "tweaker_sliderbutton"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "TrackButton"
+				quadTextureSprite = "tweaker_slidertrack"
+				position = { x=0 y =0}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+			}	
+
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "leftButton"
+				quadTextureSprite = "tweaker_sliderleft"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "rightButton"
+				quadTextureSprite = "tweaker_sliderright"
+				position = { x=0 y =0}	
+			}
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_vector3component"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=88 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		instantTextBoxType={
+				name = "tweaker_valuelabel"
+				position = { x= 290 y = 54 }
+				text = "1"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 40	
+				format = left
+				fixedsize = yes
+			}
+			
+		scrollbarType = {
+			name = "tweaker_slider_x"	
+			slider = "SliderButton"
+			track= "TrackButton"
+			leftbutton = "leftButton"
+			rightbutton = "rightButton"
+			size = {x = 250 y = 16 }
+			position = {x= 32 y = 64}
+			priority = 100			
+			borderSize = {x =16 y = 16}	
+			maxValue = 1
+			minValue = 0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 1
+
+			guiButtonType = {
+				name = "SliderButton"	
+				quadTextureSprite = "tweaker_sliderbutton"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "TrackButton"
+				quadTextureSprite = "tweaker_slidertrack"
+				position = { x=0 y =0}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+			}	
+
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "leftButton"
+				quadTextureSprite = "tweaker_sliderleft"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "rightButton"
+				quadTextureSprite = "tweaker_sliderright"
+				position = { x=0 y =0}	
+			}
+		}
+		
+		scrollbarType = {
+			name = "tweaker_slider_y"	
+			slider = "SliderButton"
+			track= "TrackButton"
+			leftbutton = "leftButton"
+			rightbutton = "rightButton"
+			size = {x = 250 y = 16 }
+			position = {x= 32 y = 80}
+			priority = 100			
+			borderSize = {x =16 y = 16}	
+			maxValue = 1
+			minValue = 0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 1
+
+			guiButtonType = {
+				name = "SliderButton"	
+				quadTextureSprite = "tweaker_sliderbutton"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "TrackButton"
+				quadTextureSprite = "tweaker_slidertrack"
+				position = { x=0 y =0}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+			}	
+
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "leftButton"
+				quadTextureSprite = "tweaker_sliderleft"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "rightButton"
+				quadTextureSprite = "tweaker_sliderright"
+				position = { x=0 y =0}	
+			}
+		}
+		
+		scrollbarType = {
+			name = "tweaker_slider_z"	
+			slider = "SliderButton"
+			track= "TrackButton"
+			leftbutton = "leftButton"
+			rightbutton = "rightButton"
+			size = {x = 250 y = 16 }
+			position = {x= 32 y = 96}
+			priority = 100			
+			borderSize = {x =16 y = 16}	
+			maxValue = 1
+			minValue = 0
+			stepSize =0.01
+			startValue = 0
+			horizontal = 1
+
+			guiButtonType = {
+				name = "SliderButton"	
+				quadTextureSprite = "tweaker_sliderbutton"
+				tooltip = ""
+				tooltipText =""	
+				delayedTooltipText = ""
+				position = { x=0 y =0}
+			}
+
+			guiButtonType = {
+				name = "TrackButton"
+				quadTextureSprite = "tweaker_slidertrack"
+				position = { x=0 y =0}	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""	
+			}	
+
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "leftButton"
+				quadTextureSprite = "tweaker_sliderleft"
+				position = { x=0 y =0}	
+			}
+			
+			guiButtonType = {
+				parent = "SliderButton"
+				name = "rightButton"
+				quadTextureSprite = "tweaker_sliderright"
+				position = { x=0 y =0}	
+			}
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_boolcomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 30	
+				format = left
+				fixedsize = yes
+			}
+		
+		guiButtonType = {
+				name = "tweaker_checkbox_ticked"
+				quadTextureSprite = "tweaker_checkbox_ticked"
+				position = { x=-155 y =25}	
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_RIGHT"
+			}
+			
+		guiButtonType = {
+				name = "tweaker_checkbox_unticked"
+				quadTextureSprite = "tweaker_checkbox_unticked"
+				position = { x=-155 y =25}	
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_RIGHT"
+			}
+	}
+	
+	windowType = {
+		name = "tweaker_aliascomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=40 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+		
+		guiButtonType = {
+				name = "tweaker_button"
+				quadTextureSprite = "tweaker_button"
+				position = { x= 32 y = 25 }
+				buttonText = "Disabled"
+				buttonFont = "tweaker_garamond_12"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+	}
+	
+	windowType = {
+		name = "tweaker_textboxcomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		#Label
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 30	
+				format = left
+				fixedsize = yes
+			}
+			
+		# Text edit box
+		editBoxType = {
+			position = { x=190 y =25}
+			name = "textbox_tweakable"
+			instantTextBoxType = no
+			textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+			font = "tweaker_garamond_12"
+			borderSize = { x=8 y=0 }	
+			size = { x=80 y=28 }
+			text = " "
+			orientation = "UPPER_RIGHT"
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_textboxcomponent_long"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		#Label
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 30	
+				format = left
+				fixedsize = yes
+			}
+			
+		# Text edit box
+		editBoxType = {
+			position = { x=120 y =25}
+			name = "textbox_tweakable"
+			instantTextBoxType = no
+			textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+			font = "tweaker_garamond_12"
+			borderSize = { x=8 y=0 }	
+			size = { x=256 y=28 }
+			text = " "
+			orientation = "UPPER_LEFT"
+		}
+	}
+	
+	windowType = {
+		name = "tweaker_curvearraycomponent"
+		backGround=""
+		position = { x=0 y=0 }	
+		size =   { x=400 y=45 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		Orientation = "LOWER_LEFT"
+
+		#Label
+		instantTextBoxType={
+				name = "tweaker_label"
+				position = { x= 32 y = 25 }
+				text = "Min Label"
+				font = "tweaker_garamond_12"
+				maxWidth = 300
+				maxHeight = 30	
+				format = left
+				fixedsize = yes
+			}
+			
+		guiButtonType = {
+				name = "tweaker_addelement"
+				quadTextureSprite = "tweaker_button_add"
+				position = { x=22 y =38}	
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+		guiButtonType = {
+				name = "tweaker_removeelement"
+				quadTextureSprite = "tweaker_button_remove"
+				position = { x=22 y =54}	
+				buttonText = "Disabled"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+	}
+			
+	editBoxType = {
+			position = { x=32 y =40}
+			name = "textbox_tweakable"
+			instantTextBoxType = no
+			textureFile = "gfx\\interface\\small_tiles_dialog.dds"
+			font = "tweaker_garamond_12"
+			borderSize = { x=8 y=0 }	
+			size = { x=120 y=28 }
+			text = " "
+			orientation = "UPPER_LEFT"
+		}
+	
+	guiButtonType = {
+				name = "tweaker_dropdownbutton"
+				quadTextureSprite = "tweaker_dropdown"
+				position = { x=120 y =25}
+				buttonText = "Disabled"
+				buttonFont = "tweaker_garamond_12"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				orientation = "UPPER_LEFT"
+			}
+}

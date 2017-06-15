@@ -1,0 +1,591 @@
+debug
+tdebug
+-debug
+debug
+tdebug
+news.suez.1
+news.1
+event news.suez1
+event syr.uar syr
+event syr.uar SYR
+event news.uar
+tag USA
+event usa.state49
+event usa.xxx
+event usa.hiofgewhiogwrreg
+event usa.s
+usa.s
+event usa.s
+-debug
+tdebug
+event news.520723
+event syr.1 SYR
+event syr.1
+event news.580201
+event news.1001
+event uk.10
+event eng.10
+event ENG.10
+event ENG.9
+event britain.10
+tag FRA
+tag ITA
+tag POR
+tag BEL
+tag SOV
+tag JAP
+tdebug
+hi
+
+tag GER
+tdebug
+event news.520723
+
+event news.520723
+tag ENG
+tag FRA
+tag POR
+tag BEL
+tag SPA
+tag SPR
+tdebug
+tag FRA
+tag POR
+tag BEL
+tag FRA
+tag POR
+tag BEL
+event news.520723
+event news.580201
+tag SOV
+tag USA
+event usa.49
+event usa.50
+event usa.521
+event usa.561
+event news.520723
+tdebug
+event news.520723
+tdebug
+event news.520723
+tdebug
+tag SOV
+tdebug
+tag FRA
+tdebug
+tag BEL
+tag ENG
+tdebug
+tag FRA
+tdebug
+tag ENG
+tdebug
+tag SOV
+tdebug
+tag FRA
+tag BEL
+tag POR
+tag SOV
+tag NIE
+tag CAR
+annex 69
+own 69
+colonise 69
+colonize 69
+tag ENG
+setowner CAR 69
+reload
+setcontroller CAR 7978
+tag YUG
+tdebug
+event politics.6
+event politics.3
+event news.3
+tag EGY
+event news.520723
+tag YUG
+tag SER
+tag CZE
+tdebug
+tag SOV
+tdebug
+tag YUG
+tag USA
+tag ENG
+tag FRA
+tdebug
+tag EGY
+event news.520723
+event news.580201
+event news.520723
+event news.580201
+event political.3
+event political.9
+event news.520723
+event news.580201
+event news.520723
+event news.580201
+event news.520723
+event news.580201
+pp 500
+add_autonomy 500
+add_autonomy EGY 500
+add_autonomy_EGY 1000
+add_autonomy_EGY 999
+add_autonomy EGY 100
+add_autonomy EGY 900
+nocb
+yesman
+event news.520723
+event news.580201
+event election.11
+event news.520723
+event news.580201
+tag ENG
+tag EGY
+tdebug
+event news.520723
+event news.580201
+tag USA
+event usa.49]
+event usa.49
+event usa.521
+event usa.49
+event usa.521
+event news.520723
+event news.580201
+tag UAR
+tag EGY
+add_autonomy 500
+add_autonomy EGY 500
+pp 500
+add_autonomy EGY 1000
+annex ISR
+tdebug
+setowner EGY 803
+setcontroller EGY 803
+annex ENG
+reloadui
+reload loc
+reload strategic_regions_l_english
+reloadinterface
+tdebug
+tag WGR
+annex SAA
+annex DDR
+tdebug
+tag usa
+event usa.521
+event usa.49
+event usa.50
+tdebug
+tag MAF
+tag GER
+tdebug
+tag CAN
+tag USA
+event usa.49
+event usa.50
+event usa.49
+event usa.50
+event usa.521
+tdebug
+event usa.50
+usa.49
+event usa.49
+event usa.50
+tag ENG
+tag CYR
+tag FRA
+tdebug
+tag ENG
+tag NIE
+tdebug
+event news.520723
+tdebug
+tag FRA
+tag ENG
+tag BEL
+tag POR
+tdebug
+tag TAN
+event political.3
+event political.9
+tag FRA
+event political.3
+tag ENG
+tag BEL
+tag ENG
+tag BEL
+tag USA
+event usa.49
+event usa.50
+tdebug
+tag BUR
+event political.3
+event usa.49
+event usa.50
+tag EGY
+event news.520723
+event usa.49
+event usa.50
+tag EGY
+event news.520723
+event usa.50
+event usa.49
+event usa.50
+event news.520723
+event usa.50
+event news.520723
+event usa.50
+event news.520723
+event usa.50
+event news.520723
+event usa.50
+event news.520723
+event usa.50
+event news.520723
+event news.580201
+event news.1001
+event usa.50
+event political.17
+tdebug
+event uk.10002
+set_cosmetic_tag = LBA
+set_cosmetic_tag = UAR
+set_cosmetic_tag = FRA_FREE
+set_cosmetic_tag = EGY_REP
+tag PRC
+tag WGR
+annex DDR
+tdebug
+setowner WGR 188
+setcontroller WGR 188
+setowner WGR 5
+
+setowner WGR63
+setowner WGR 63
+setowner WGR 68
+setowner WGR 66
+setowner WGR 67
+annex SAA
+setowner POL 95
+setowner pol 96
+setowner POL 96
+setowner pol 94
+setowner POL 94
+setowner POL 93
+setowner POL 91
+setowner POL 89
+setowner CZE 73
+setowner ROM 79
+setowner ROM78
+setowner ROM 78
+setowner ROM 80
+tag ITA
+annex TRI
+annex ALB
+annex LBA
+annex ETH
+tag WGR
+tag SOV
+setowner WGR 85
+setowner WGR 86
+annex POL
+annex FIN
+setowner WGR 769
+setowner WGR 777
+setowner WGR 780
+setowner WGR 81
+setowner ROM 80
+setowner ROM 81
+setowner WGR 781
+setowner WGR 546
+setowner WGR 792
+setowner WGR 541
+tdebug
+setowner LBA 273
+tag BEL
+tdebug
+tag SOV
+tdebug
+tag PRC
+tdebug
+tag SOV
+tdebug
+tag LBA
+tag CHI
+tag JAP
+tag POL
+tag TUR
+tag HOL
+tdebug
+tag SWE
+tag RAJ
+tdebug
+annex CAN
+tdebug
+tag SOV
+tag USA
+tag FRA
+tdebug
+tag MAF
+tdebug
+tag FRA
+tag BEL
+tag POR
+tdebug
+tag SPR
+tag ENG
+kill_country_leader
+tag HOL
+tag DEN
+tdebug
+tag SOV
+tag ETH
+tag SOM
+tdebug
+tag ETH
+tag SOM
+tdebug
+tag SOV
+tag WGR
+tag SOV
+tag YUG
+tag SOV
+tag USA
+tdebug
+tag SOV
+tag USA
+tag SOV
+tag USA
+tag SOV
+tag YUG
+tag WGR
+tag SOV
+tag ITA
+tag YUG
+tag SOV
+tag WGR
+tag SOV
+tdebug
+tag RAJ
+tag POL
+tag USA
+tag EGY
+tag PAL
+tag EGY
+tag USA
+tdebug
+tag EGY
+tag USA
+tag SOV
+tdebug
+
+tag USA
+tag WGR
+tag SOV
+tdebug
+tag USA
+tdebug
+tag JAP
+tdebug
+tag JAP
+tdebug
+tag JAP
+tdebug
+tag POL
+tag SWE
+tag MEX
+tag SWE
+tag BEL
+tag ROM
+tag ITA
+tag USA
+tdebug
+tag ENG
+tag FRA
+tag EGY
+tag ALB
+tdebug
+tag SOV
+tag BEL
+tdebug
+taG egy
+tdebug
+tag SOV
+tag EGY
+tag SYR
+tag EGY
+tdebug
+tag KOR
+tag NKR
+tag KOR
+tag WGR
+tag KOR
+setowner NKR 828
+setowner KOR 827
+setcontroller NKR 828
+tag USA
+tag RAJ
+tag KOR
+tag USA
+tdebug
+tag ITA
+tdebug
+tag IRQ
+event news.580201
+event arab.3
+event arab.2
+event news.1001
+event news.520723
+tag irq
+event news.580201
+event arab.3
+event arab.2
+event arab.3
+tag IRQ
+event arab.3
+tag EGY
+event arab.6
+event arab.4
+event arab.3
+event arab.2
+arab.5
+event arab.5
+tag JOR
+tag EGY
+tag JOR
+tag EGY
+reloadui
+reload
+reloadinterface
+tdebug
+tag USA
+tdebug
+tag SOV
+tdebug
+tag QAT
+annex SAU
+tag ENG
+tdebug
+tag FRA
+tag ENG
+event britain.1
+event britain.1001
+event uk.1001
+event uk.1
+event uk.10001
+tag SOM
+tag ENG
+tdebug
+annex KEN
+annex TAN
+annex UGA
+tag DDR
+tag ENG
+tag FRA
+tag BEL
+tag POR
+tag SPR
+tdebug
+tag SYM
+event political.3
+tag SYR
+tag ENG
+tag EGY
+event news.520723
+tdebug
+event egypt.3
+tag ENG
+event decolonisation.1
+event decolonisation.3
+tag EGY
+tag ENG
+event decolonisation.3
+tag ENG
+event decol.3
+tdebug
+event news.520723
+tag FRA
+tag USA
+tag SOV
+tag MAL
+tag MAI
+tag MOR
+event decolonisation.1
+tag FRA
+tag EGY
+tag MOR
+event decolonisation.1
+tag FRA
+tag EGY
+tag ALG
+tag ENG
+event decolonisation.1
+tag FRA
+tag EGY
+tag ALG
+tag EGY
+tag PER
+tag SOV
+tag PER
+tag PRC
+tag CHI
+tag TUR
+tag SAU
+tdebug
+tag SOV
+event political.6
+event political.3
+event political.9
+event political.3
+tag EGY
+tag PAK
+tag EGY
+tag PAK
+tag PRC
+tag RAJ
+tag PAK
+tdebug
+annex 753
+set_owner 753 PAK
+own 753
+tag POR
+tag YUG
+tag FRA
+tag BEL
+tag FRA
+tag EGY
+tag SOV
+tag LBA
+tag DDR
+tag SOV
+event news.1001
+event news.580201
+event news.520723
+event news.580201
+annex ISR
+annex LEB
+annex PAL
+annex JOR
+annex IRQ
+tag ENG
+tag EGY
+tag USA
+tag ENG
+tag ISR
+tag ENG
+tag SOV
+tag TUR
+tag EGY
+tag TUR
+tag ENG
+tag SOV
+annex ISR
+event egypt.4
+event egypt.3
+event egypt.4
+nocb
+tag PHI
+nocb

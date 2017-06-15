@@ -1,0 +1,45 @@
+
+directory
+name = common
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = common
+sub_directories = yes
+file_extension = .lua
+
+directory
+name = events
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = decisions
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = history
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = map
+sub_directories = yes
+file_extension = .txt
+
+directory
+name = map
+sub_directories = yes
+file_extension = .map
+
+directory
+name = map
+sub_directories = yes
+file_extension = .bmp
+
+directory
+name = map
+sub_directories = yes
+file_extension = .csv

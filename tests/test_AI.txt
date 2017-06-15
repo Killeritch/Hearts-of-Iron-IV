@@ -1,0 +1,154 @@
+last_date = "1995.1.1"
+
+tests = {
+
+	england_has_fallen = {
+         success = {
+             date > "1936.1.1"
+             date < "1995.1.1"
+             ENG = {  
+				OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			}
+         }
+
+         fail = {
+             date > "1945.1.1"
+         }
+    }
+	
+	china_deafeated_by_japan = {
+         success = {
+             date > "1936.1.1"
+             date < "1945.1.1"
+             CHI = {  
+				OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			}
+         }
+
+         fail = {
+             date > "1945.1.1"
+         }
+    }
+	
+	italy_defeats_ethiopia = {
+         success = {
+             date > "1936.1.1"
+             date < "1945.1.1"
+             ETH = { 
+				OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			}
+         }
+
+         fail = {
+             date > "1937.5.5"
+         }
+    }
+	
+	germany_has_medium_armor = {
+		success = {
+             date > "1936.1.1"
+             date < "1955.1.1"
+             GER = { 
+				has_equipment = {
+					medium_tank_equipment > 0
+				}
+			}
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+
+        loggers = {
+
+            log_equipment_in_field = {
+                country = GER
+                value = medium_tank_equipment
+            }
+
+        }
+	}
+	
+	germany_has_medium_armor_design = {
+		success = {
+             date > "1936.1.1"
+             date < "1955.1.1"
+             GER = { 
+				has_template_majority_unit = medium_armor
+			}
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+	}	
+	
+	soviet_has_medium_armor = {
+		success = {
+             date > "1936.1.1"
+             date < "1955.1.1"
+             SOV = { 
+				has_equipment = {
+					medium_tank_equipment > 0
+				}
+			}
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+	}
+	
+	soviet_has_medium_armor_design = {
+		success = {
+             date > "1936.1.1"
+             date < "1955.1.1"
+             SOV = { 
+				has_template_majority_unit = medium_armor
+			}
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+	}
+	
+	usa_has_medium_armor = {
+		success = {
+             date > "1936.1.1"
+             date < "1955.1.1"
+             USA = { 
+				has_equipment = {
+					infantry_equipment > 0
+				}
+			}
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+	}
+	
+	usa_has_medium_armor_design = {
+		success = {
+             date > "1936.1.1"
+             date < "1955.1.1"
+             USA = { 
+				has_template_majority_unit = medium_armor
+			}
+         }
+
+         fail = {
+             date > "1955.1.1"
+         }
+	}
+}

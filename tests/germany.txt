@@ -1,0 +1,149 @@
+last_date = "1945.1.1"
+
+tests = {
+
+    germany_defeats_france = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1941.1.1"
+             FRA = { has_capitulated = yes }
+         }
+
+         fail = {
+             date > "1941.1.1"
+         }
+    }
+	
+	germany_at_war_with_poland = {
+
+        success = {
+            GER = { has_war_with = POL }
+        }
+    }
+	
+	germany_defeats_poland = {
+
+         success = {
+             date > "1939.1.1"
+             date < "1941.1.1"
+             POL = {   
+				OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			 }
+         }
+
+         fail = {
+             date > "1941.1.1"
+         }
+    }
+
+    germany_avoids_war_with_switzerland = {
+        success = {
+            GER = {   
+				OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			}
+        }
+
+        fail = {
+            GER = { has_war_with = SWI }
+        }
+    }
+
+    germany_at_war_with_luxembourg = {
+
+        success = {
+            GER = { has_war_with = LUX }
+        }
+    }
+
+    germany_at_war_with_belgium = {
+
+        success = {
+            GER = { has_war_with = BEL }
+        }
+    }
+
+    germany_at_war_with_netherlands = {
+
+        success = {
+            GER = { has_war_with = HOL }
+        }
+    }
+
+    germany_at_war_with_denmark = {
+
+        success = {
+            GER = { has_war_with = DEN }
+        }
+    }
+
+    germany_at_war_with_norway = {
+        success = {
+            GER = { has_war_with = NOR }
+        }
+    }
+
+    germany_at_war_with_soviet_union = {
+
+        success = {
+            GER = { has_war_with = SOV }
+        }
+
+        fail = {
+             date > "1942.1.1"
+        }
+    }
+
+    germany_capitulated = {
+
+        success = {
+            GER = {  
+				OR = { 
+					has_capitulated = yes 
+					exists = no
+				}
+			}
+        }
+    }
+
+    germany_develops_nukes = {
+         success = {
+             GER = { num_of_nukes > 0 }
+         }
+    }
+
+    spain_not_in_axis_early = {
+        success = {
+            has_global_flag = scw_over
+
+            any_country = {
+                original_tag = SPR
+                has_government = fascism
+                exists = yes
+
+                # they got rid of idea then we dont care
+                NOT = { has_idea = SPA_recovering_from_civil_war }
+            }
+        }
+
+        fail = {
+            has_global_flag = scw_over
+
+            any_country = {
+                original_tag = SPR
+                has_government = fascism
+                exists = yes
+
+                has_idea = SPA_recovering_from_civil_war
+                is_in_faction_with = GER
+            }
+        }
+    }
+    
+}
