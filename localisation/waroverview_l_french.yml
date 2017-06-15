@@ -1,0 +1,42 @@
+﻿l_french:
+ PARTICIPANTS:0 "Participants"
+ WARGOAL:0 "Objectif"
+ WARSCORE_TITLE:0 "§HParticipation à la guerre§!\nMesure l'effort de guerre consenti par un pays pour amener l'ennemi à se rendre. Un pourcentage plus élevé permet de dicter plus de conditions lors de la conférence de paix qui suivra la guerre."
+ LOSSES:0 "Pertes"
+ CALL:0 "Appel"
+ CALL_ALL:0 "Appel aux alliés"
+ DIVISIONS:0 "Divisions"
+ DIVISIONS_COUNTRY:0 "§T$COUNTRY|H$ compte $VAL|H$ divisions§!"
+ CASUALTY:0 "Pertes militaires"
+ CASUALTY_COUNTRY:0 "§T$COUNTRY|H$ a perdu $VAL|H2*$ hommes§!"
+ WARSCORE_PROGRESSBAR:0 "§TLa guerre penche à $VAL|H0%$ en faveur des $SIDE$§!"
+ WARSCORE_PROGRESSBAR_STATUS_QUO:0 "§TLa guerre est en situation de statu quo§!"
+ WARSCORE_COUNTRY:0 "$COUNTRY|H$ : $VAL|H0%$"
+ WARSCORE_STATE_INSTANT:0 "§TTotal de la participation à la guerre :§!"
+ WARSCORE_STATE_NO_VICTORY_POINTS:0 "§T$COUNTRY|H$ ne contrôle aucun point de victoire ennemi§!"
+ WARSCORE_STATE:0 "$STATE$ : $VAL|H0%$"
+ AGGRESSORS:0 "§Tagresseurs§!"
+ DEFENDERS:0 "§Tdéfenseurs§!"
+ MAJOR_AGGRESSORS:0 "§TGrands pays agresseurs§!"
+ MAJOR_DEFENDERS:0 "§TGrands pays défenseurs§!"
+ PARTICIPANT:0 "$COUNTRY|H$"
+ SURRENDER:1 "§T$COUNTRY|H$ est à $SURRENDER|H0%$ de capituler.\nCe pays contrôle $CONTROL|0%H$ des points de victoire et capitulera s'il tombe à moins de $VAL|0%H$.§!"
+ CAN_SURRENDER_FACTION_MEMBERS:0 "Actuellement il combat avec sa faction et ne se rendra que lorsque tous les grands pays de sa faction impliqués dans le conflit auront capitulé.\nGrands pays de la faction impliqués : $MEMBER_LIST|Y$."
+ CAN_SURRENDER:0 "Actuellement il combat seul et se rendra dès qu'il aura capitulé."
+ ALLY_CALLED:0 "§RNous avons déjà appelé cet allié§!"
+ NO_ALLIES_TO_CALL:0 "§RNous ne pouvons appeler aucun allié§!"
+ ALLIES_NOT_IN_WAR:0 "Alliés ne participant pas au conflit"
+ WARSCORE_PARTICIPATION:0 "A contribué à hauteur d'environ §Y$VALUE$%§! à l'effort de guerre."
+ WARSCORE_BREAKDOWN_NOCASUALTIES:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$"
+ WARSCORE_BREAKDOWN:0 "Détails :\nOccupations : $OCCUPATION|Y0$\nBombardements : $BOMBING|Y0$ sur $BOMBING_MAX|Y0$\nPertes : $CASUALTIES|Y0$"
+
+
+
+######################
+###  TO BE ERASED  ###
+######################
+# CAN_SURRENDER_FACTION:0 "Ils combattent actuellement $COUTNRY|H$ avec leur leader de faction et celui-ci ne se rendra que lorsqu'ils le feront."
+# CAN_SURRENDER_FACTION_LIMITED:0 "Ils combattent actuellement $COUTNRY|H$ avec leur leader de faction et celui-ci ne se rendra que lorsqu'ils le feront."
+# ALLIES_CALLED:0 "§RNous avons déjà appelé tous nos alliés§!"
+# WARSCORE_CONTROLLED:0 "Contrôle $COUNT|Y$ $MAX|Y$ États ennemis dans cette guerre"
+# WARSCORE_LOSSES:0 "Compte $VALUE|%Y$ des victimes totales du camp. "
