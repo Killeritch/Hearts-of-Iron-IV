@@ -1,0 +1,135 @@
+particle = {
+	name = "snow_storm_clouds_file"
+
+# Snow smoke
+	subsystem = {
+
+		# values that can be curves or values, with or without variation
+		# always local time
+		
+		# fixed values, cannot be curves, cannot add variation
+		max_amount = 20
+		
+		#sort = "depth" 
+		#invert = yes
+		texture = {
+			shader = "ParticleAlphaBlend"   #ParticleAdditive   #ParticleAlphaBlend 
+			file = "gfx/particles/snow_cloud.dds"   
+			#x = 2	
+			#y = 2		
+		}
+		
+		emitter_type = "sphere" #"box" #"point" #"sphere"
+		sphere_emitter_radius = { 30 29 }
+		sphere_emitter_pitch = { 0 0 }
+		sphere_emitter_yaw = { 0 180 }
+		
+		
+		#box_emitter_x = { 15 5 }
+		#box_emitter_y = { 0 1 }
+		#box_emitter_z = { 0 10 }
+		
+		position = { 	x = 0	y = 25	z = 6 }
+		emitter_yaw = { 0 0 }  
+		emitter_pitch = { 0 0 }
+		
+		start = 0				 
+		duration = -1
+		emission = { 20 }
+		
+		
+		velocity = { 10 6 }
+		velocity_pitch = { -10 0 }
+		velocity_yaw =  { 90 0 }
+		
+		rotation = { 0 0 } 
+	
+
+
+		
+
+		life = { 2.5 0.6 }
+		size = { 60.5 20 }
+	
+		# values that can be curves or values, with or without variation
+		# 'spawn'/'system'/'particle' time is valid
+
+		color = { 
+			r = { 255 }
+			g = { 255 }
+			b = { 255 }
+			alpha = { 25,smoke_fade }
+		}
+
+
+
+
+		# Forces
+		force = chaos
+	}
+	
+
+	
+#ANIMATIONS
+	
+	# spawn - sets value of particle when they spawn, does not change afterwards. 
+	# system - affects all particles based on system time. regardless of when they are born they are all the same. 
+	# life - duration scales over particle lifttime. So if its 1 its correct. If its 0.5 then it happens twice as fast.  , constrains animation within particle lifetime. 
+	# life_abs - controlls particle during lifetime, uses duration. 
+
+	animation = {
+		time = "life"
+		name = "fade_alpha"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.2	1
+			0.8	1
+			1 	0 
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "cloud_fade"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.1	1
+			0.8	1
+			1 	0 
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "smoke_fade"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.3	1
+			0.8	1
+			1 	0 
+		}
+	}
+	
+	force = {
+		type = "turbulence"
+		name = "chaos"
+		amount = 10.0
+	}

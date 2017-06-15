@@ -1,0 +1,27 @@
+# information about the ship assets
+# For the naval_formation scene, the node named "root" is where the capital ship will be placed, there should also be at least 3 nodes named "l_position_1", "l_position_2" etc, and "r_position_1", "r_position_2" etc
+# these will be used to randomly place support ships around the capital ship
+
+# For the naval_combat_formation, there are 4 types of nodes. "defend_position_big_X" (where X is a number 1-9), "defend_position_small_X", "attack_position_big_X", "attack_position_small_X". Capital ships
+# will be placed at the xxx_big_X positions depending on if it is attacking or defending, support ships will be placed in the xxx_small_X positions. There should be at least 1 big and 3 small positions for each side.
+
+# The ships themselves should have nodes named "hit_effect_locator1", "hit_effect_locator2" etc, and "miss_effect_locator1", "miss_effect_locator2" etc where the hit and miss effects will be played when ship is hit/missed
+
+naval_formation = "ships_formation_template"
+naval_formation_scale = 1.0
+naval_combat_formation = "ships_combat_template"
+naval_combat_formation_scale = 0.5
+naval_death_time = 15.0
+naval_random_start_time = 1.5
+naval_hit_effects_big = {
+	ship_hit_big_effect
+}
+naval_hit_effects_small = {
+	ship_hit_small_effect
+}
+naval_miss_effects_big = {
+	ship_miss_big_effect
+}
+naval_miss_effects_small = {
+	ship_miss_small_effect
+}

@@ -1,0 +1,334 @@
+particle = {
+	name = "rain_small_file"
+	
+
+
+# Rain
+	subsystem = {
+
+		# values that can be curves or values, with or without variation
+		# always local time
+		
+		# fixed values, cannot be curves, cannot add variation
+		max_amount = 100
+		
+		#sort = "depth" 
+		#invert = yes
+		texture = {
+			shader = "ParticleAlphaBlend"   #ParticleAdditive   #ParticleAlphaBlend 
+			file = "gfx/particles/rain.dds"   
+			#x = 2	
+			#y = 2		
+		}
+		
+		emitter_type = "sphere" #"box" #"point" #"sphere"
+		sphere_emitter_radius = { 12 11 }
+		sphere_emitter_pitch = { 0 0 }
+		sphere_emitter_yaw = { 0 180 }
+		
+		
+		#box_emitter_x = { 15 5 }
+		#box_emitter_y = { 0 1 }
+		#box_emitter_z = { 0 10 }
+		
+		position = { 	x = 0	y = 25	z = 0 }
+		emitter_yaw = { 0 0 }  
+		emitter_pitch = { 0 0 }
+		
+		start = 0				
+		duration = -1
+		emission = { 150 }
+		
+		
+		velocity = { 45 0 }
+		velocity_pitch = { -90 0 }
+		velocity_yaw =  { 0 0 }
+		
+		rotation = { 0 0 } 
+	
+
+
+		
+
+		life = { 0.5 0.1 }
+		size = { 8.5 4 }
+	
+		# values that can be curves or values, with or without variation
+		# 'spawn'/'system'/'particle' time is valid
+
+		color = { 
+			r = { 220 }
+			g = { 220 }
+			b = { 255 }
+			alpha = { 25,smoke_fade }
+		}
+
+
+
+
+		# Forces
+		force = sidewind
+	}
+	
+# Rain smoke
+	subsystem = {
+
+		# values that can be curves or values, with or without variation
+		# always local time
+		
+		# fixed values, cannot be curves, cannot add variation
+		max_amount = 0#20
+		
+		#sort = "depth" 
+		#invert = yes
+		texture = {
+			shader = "ParticleAdditiveNoBillboard"   #ParticleAdditive   #ParticleAlphaBlend 
+			file = "gfx/particles/cloud.dds"   
+			#x = 2	
+			#y = 2		
+		}
+		
+		emitter_type = "sphere" #"box" #"point" #"sphere"
+		sphere_emitter_radius = { 15 14 }
+		sphere_emitter_pitch = { 0 0 }
+		sphere_emitter_yaw = { 0 180 }
+		
+		particle_yaw = { 0 0 }
+		particle_pitch = { 90 0 }
+		particle_roll = { 0 0 }
+		
+		#box_emitter_x = { 15 5 }
+		#box_emitter_y = { 0 1 }
+		#box_emitter_z = { 0 10 }
+		
+		position = { 	x = 0	y = 25	z = 6 }
+		emitter_yaw = { 0 0 }  
+		emitter_pitch = { 0 0 }
+		
+		start = 0				
+		duration = -1
+		emission = { 30 }
+		
+		
+		velocity = { 5 3 }
+		velocity_pitch = { -10 0 }
+		velocity_yaw =  { 90 0 }
+		
+		rotation = { 0 0 } 
+	
+
+
+		
+
+		life = { 2.6 0.7 }
+		size = { 60.5 20 }
+	
+		# values that can be curves or values, with or without variation
+		# 'spawn'/'system'/'particle' time is valid
+
+		color = { 
+			r = { 220 }
+			g = { 220 }
+			b = { 255 }
+			alpha = { 20,smoke_fade }
+		}
+
+
+
+
+		# Forces
+		force = chaos
+	}
+	
+
+	
+#ANIMATIONS
+	
+	# spawn - sets value of particle when they spawn, does not change afterwards. 
+	# system - affects all particles based on system time. regardless of when they are born they are all the same. 
+	# life - duration scales over particle lifttime. So if its 1 its correct. If its 0.5 then it happens twice as fast.  , constrains animation within particle lifetime. 
+	# life_abs - controlls particle during lifetime, uses duration. 
+
+	animation = {
+		time = "life"
+		name = "fade_alpha"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.2	1
+			0.8	1
+			1 	0 
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "cloud_fade"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.1	1
+			0.8	1
+			1 	0 
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "smoke_fade"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.3	0.1
+			0.5	1
+			0.8	1
+			1 	0 
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "increase_size"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.2	0.5
+			1 	1
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "smoke_spread"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.1
+			0.2	0.5
+			1 	1
+		}
+	}
+	
+	animation = {
+		time = "life"
+		name = "groundsize"
+		start = 0
+		duration = 1
+		repeat = no
+		op = "MUL" # "MUL"/"ADD"/"ABS"
+		minValue = 0
+		maxValue = 1
+		curve = { 
+			0 	0.2
+			0.3	0.5
+			1 	1
+		}
+	}
+	
+#FORCES
+	
+	force = {
+		type = "friction"
+		name = "drag"
+		amount = 7.0
+		
+	}
+	
+	force = {
+		type = "friction"
+		name = "firedrag"
+		amount = 10.0
+		
+	}
+	
+	force = {
+		type = "friction"
+		name = "drag_side"
+		amount = 7.0
+		
+	}
+	
+	force = {
+		type = "friction"
+		name = "drag_ground"
+		amount = 6.0
+		
+	}
+	
+	force = {
+		type = "planar"
+		name = "sidewind"
+		direction = { -1 0 0 }
+		amount = { 25.5 }
+	}	
+	
+	force = {
+		type = "planar"
+		name = "upforce"
+		direction = { 0 1 0 }
+		amount = { 5.5 }
+	}	
+
+	force = {
+		type = "planar"
+		name = "upforce_ground"
+		direction = { 0 1 0 }
+		amount = { 1.5 }
+	}
+
+	force = {
+		type = "planar"
+		name = "gravity"
+		direction = { 0 -1 0 }
+		amount = { 10.5 }
+	}	
+	
+	
+	force = {
+		type = "turbulence"
+		name = "chaos"
+		amount = 5.0
+	}
+	
+	force = {
+		type = "turbulence"
+		name = "chaos_ground"
+		amount = 5.0
+	}
+	
+	force = {
+		type = "point"
+		name = "point"
+		position = { 2 -1 0 }
+		amount = 20
+	}
+
+
+
+}
+
+
