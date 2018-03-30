@@ -128,8 +128,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "attacking_side"
 			position = { x=110 y=50 }
-			size = { width=230 height=414 }
-			
+			size = { width=246 height=414 }
+
 			background = {
 				name = "Background"
 				spriteType ="GFX_tiled_window_transparent"
@@ -200,8 +200,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "defending_side"
-			position = { x=362 y=50 }
-			size = { width=240 height=414 }
+			position = { x=350 y=50 }
+			size = { width=246 height=414 }
 			
 			background = {
 				name = "Background"
@@ -367,7 +367,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "fleet"
-			position {x=0 y=20}
+			position = {x=0 y=20}
 			spriteType = "GFX_navalcombat_ship_icon_battle_cruiser"
 		}	
 		
@@ -398,7 +398,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "fleet"
-			position {x=0 y=20}
+			position = {x=0 y=20}
 			spriteType = "GFX_navalcombat_ship_icon_battle_cruiser"
 		}	
 		
@@ -429,7 +429,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "ship"
-			position {x=58 y=20}
+			position = {x=58 y=20}
 			spriteType = "GFX_navalcombat_ship_icon_battle_cruiser" # In code it swaps the icon type
 			centerposition = yes
 		}	
@@ -451,7 +451,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "ship"
-			position {x=-9 y=20}
+			position = {x=-9 y=20}
 			spriteType = "GFX_navalcombat_ship_icon_battle_cruiser" # In code it swaps the icon type
 			centerposition = yes
 		}	
@@ -523,7 +523,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "plane"
-			position {x=0 y=20}
+			position = {x=0 y=20}
 			spriteType = "GFX_navalcombat_air_icon_fighter_equipment"
 		}	
 		
@@ -554,7 +554,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "plane"
-			position {x=0 y=20}
+			position = {x=0 y=20}
 			spriteType = "GFX_navalcombat_air_icon_fighter_equipment"
 		}	
 		

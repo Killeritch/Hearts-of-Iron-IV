@@ -134,3 +134,4 @@
  MATCHMAKING_SERVER_DENIED:0 "A conexão expirou"
  MULTIPLAYER_RESYC:0 "Sincronizar"
  FE_CONFIRM:0 "Confirmar"
+ FAILED_TO_CONNECT:0 "Falha ao conectar-se"

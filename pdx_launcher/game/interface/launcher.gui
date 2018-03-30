@@ -949,7 +949,7 @@ guiTypes = {
 	
 	textBoxType={
 		name = "launcher_tooltip"
-		textureFile = "gfx/interface/tiles_dialog.tga"
+		textureFile = "gfx/interface/tiles/tiles_dialog.tga"
 		font = "hoi_16mbs"
 		borderSize = { x=18 y=18 }
 		position = { x= 10 y=10 }

@@ -299,10 +299,6 @@ colors = { # R G B A
 	leader_group = { 0.00 0.76 1.00 1.0 }
 	leader_group = { 0.00 0.16 1.00 1.0 }
 	leader_group = { 1.00 0.00 0.18 1.0 }
-
-
-
-
 }
 
 arrowText = {
@@ -461,6 +457,64 @@ arrowType = {
 
 arrowType = {
 	name = "blitz"
+	technique = "MapArrowDefault"
+	texture_mask = "gfx/maparrows/blitz_mask.dds"
+	texture_mask_alt = "gfx/maparrows/blitz_unassigned_mask.dds"
+	texture_pattern = "gfx/maparrows/blitz_pattern.dds"
+	body_uv_scale = 1
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 18.5 13.2 }
+	width_scale_max = 52.0
+	width_scale = 15.0
+	head_length =30
+	fade_in = 0.2
+	fade_out = 0
+	text_size = 1
+	text_offset = 5
+	global_scale_min_size = 0.2
+	global_scale_max_points = 50 # Arrow will reach it's normal size after X points
+	texture_anim_speed = 0.17
+}
+
+arrowType = {
+	name = "withdraw_line"
+	technique = "MapArrowNoHead"
+	texture_mask = "gfx/maparrows/offensive_line_mask.dds"
+	texture_mask_alt = "gfx/maparrows/offensive_line_unassigned_mask.dds"
+	texture_pattern = "gfx/maparrows/offensive_line.dds"
+	body_uv_scale = 1
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 1.1 1.1 }
+	width_scale_max = 44.0
+	width_scale = 1.0	
+	texture_loop = 2 
+	text_size = 1
+	text_offset = 0
+	global_scale_min_size = 0.2
+	global_scale_max_points = 30 # Line will reach it's normal size after X points
+	culling_direction = 1
+
+	#button = {
+	#	name = "select_front"
+	#	type = "btn_select"
+	#	position = { 0.5 0.0 }
+	#}
+	button = {
+		name = "expand_ahead"
+		type = "btn_drag"
+		position = { 1.0 0.0 }
+	}
+	button = {
+		name = "expand_behind"
+		type = "btn_drag"
+		position = { 0.0 0.0 }
+	}
+}
+
+arrowType = {
+	name = "withdraw"
 	technique = "MapArrowDefault"
 	texture_mask = "gfx/maparrows/blitz_mask.dds"
 	texture_mask_alt = "gfx/maparrows/blitz_unassigned_mask.dds"
@@ -681,6 +735,7 @@ arrowType = {
 	texture_mask = "gfx/maparrows/trade_line_mask.dds"
 	texture_pattern = "gfx/maparrows/trade_line.dds"
 	body_uv_scale = 0.41
+	body_uv_scale_2 = 1.0
 	mask_inner = { 0.0 1.0 0.0 }
 	mask_outer = { 0.0 0.0 0.0 } # <- temporarly disabled outer mask
 	body_width = { 0.8 0.8 }
@@ -690,6 +745,7 @@ arrowType = {
 	global_scale_min_size = 0.2
 	global_scale_max_points = 40 # Line will reach it's normal size after X points
 	texture_anim_speed = 0.2
+	texture_variant_count = 2
 }
 
 symbolType = {
@@ -750,4 +806,92 @@ symbolType = {
 	technique = "MapSymbolDefault"
 	texture = "gfx/maparrows/paradrop_pattern.dds"
 	size = 4.0
+}
+
+
+arrowType = {
+	name = "ag_offence_line"
+	technique = "MapArrowNoHead"
+	texture_mask = "gfx/maparrows/ag_offensive_line_mask.dds"
+	texture_mask_alt = "gfx/maparrows/ag_offensive_line_unassigned_mask.dds"
+	texture_pattern = "gfx/maparrows/ag_offensive_line.dds"
+	body_uv_scale = 1
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 1.1 1.0 }
+	width_scale_max = 30.0
+	width_scale = 0.5	
+	texture_loop = 2 
+	text_size = 1
+	text_offset = 0
+	global_scale_min_size = 0.2
+	global_scale_max_points = 30 # Line will reach it's normal size after X points
+	culling_direction = 1
+
+	#button = {
+	#	name = "select_front"
+	#	type = "btn_select"
+	#	position = { 0.5 0.0 }
+	#}
+	button = {
+		name = "expand_ahead"
+		type = "btn_drag"
+		position = { 1.0 0.0 }
+	}
+	button = {
+		name = "expand_behind"
+		type = "btn_drag"
+		position = { 0.0 0.0 }
+	}
+}
+
+arrowType = {
+	name = "ag_move_thick"
+	technique = "MapArrowDefault"
+	texture_mask = "gfx/maparrows/ag_default_mask.dds"
+	texture_mask_alt = "gfx/maparrows/ag_default_unassigned_mask.dds"
+	texture_pattern = "gfx/maparrows/ag_default_pattern.dds"
+	body_uv_scale = 1
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 12.5 3.2 }
+	width_scale_max = 62.0
+	width_scale = 55.0
+	head_length = 10
+	fade_in = 0.2
+	fade_out = 0
+	text_size = 1
+	text_offset = 5
+	global_scale_min_size = 0.5
+	global_scale_max_points = 50 # Arrow will reach it's normal size after X points
+	texture_anim_speed = 0.17
+}
+
+arrowType = {
+	name = "ag_defence_line"
+	technique = "MapArrowNoHead"
+	texture_mask = "gfx/maparrows/ag_defensive_line_mask.dds"
+	texture_mask_alt = "gfx/maparrows/ag_defensive_line_unassigned_mask.dds"
+	texture_pattern = "gfx/maparrows/ag_defensive_line.dds"
+	body_uv_scale = 1
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 0.5 0.5 }
+	texture_loop = 3.2
+	text_size = 1
+	text_offset = 0
+	global_scale_min_size = 0.2
+	global_scale_max_points = 0 # Line will reach it's normal size after X points
+	culling_direction = 1
+
+	button = {
+		name = "expand_ahead"
+		type = "btn_drag"
+		position = { 1.0 0.0 }
+	}
+	button = {
+		name = "expand_behind"
+		type = "btn_drag"
+		position = { 0.0 0.0 }
+	}
 }

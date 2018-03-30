@@ -96,7 +96,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		size = { width=300 height=70%% }
+		size = { width=300 height=100%% }
 		clipping = no
 		
 		background = {
@@ -263,13 +263,13 @@ guiTypes = {
 		iconType = {
 			name = "owner_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 13 y = 15 }
+			position = { x= 13 y = 24 }
 			alwaystransparent = yes
 		}
-	
+		
 		instantTextboxType = {
 			name = "name"
-			position = { x = 60 y = 20 }
+			position = { x = 65 y = 25 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
@@ -285,6 +285,12 @@ guiTypes = {
 			position = { x = -50 y = 15 }
 			quadTextureSprite = "GFX_autonomy_unknown_icon"
 			Orientation = "UPPER_RIGHT"
+		}
+		
+		iconType = {
+			name = "div_designer_colonial_flag_frame"
+			position = { x = 10 y = 6 }
+			quadTextureSprite = "GFX_div_designer_colonial_flag_frame"
 		}
 	}
 	
@@ -306,6 +312,20 @@ guiTypes = {
 			spriteType = "GFX_technology_medium"
 			clicksound = click_default
 			pdx_tooltip = "DIV_TEMPL_SYMBOL_TOOLTIP"
+		}
+		
+		iconType = {
+			name = "special_forces_icon"
+			spriteType = "GFX_special_forces_icon"
+			position = { x = 7 y = 46 }
+			frame = 3
+		}
+		
+		iconType = {
+			name = "can_paradrop_icon"
+			spriteType = "GFX_can_paradrop_icon_small"
+			position = { x = 7 y = 42 }
+			frame = 2
 		}
 
 		iconType = {
@@ -362,16 +382,17 @@ guiTypes = {
 		}
 		
 		iconType = {
-			name = "colonial_force_flag_frame"
-			quadTextureSprite ="GFX_unitlist_colonial_flag_frame"
-			position = { x = 12 y = 49 }
-		}
-		
-		iconType = {
 			name = "colonial_force_flag"
-			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
-			position = { x = 13 y = 55 }
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 8 y = 17 }
 		}
+
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_colonial_flag_frame2"
+			position = { x= 9 y = 10 }
+			alwaystransparent = yes
+		}	
 	}
 
 	containerWindowType = {
@@ -485,7 +506,7 @@ guiTypes = {
 		iconType = {
 			name = "equipment_progressbar"
 			spriteType = "GFX_deployment_progressbar"
-			position = { x=191 y=44 }
+			position = { x=193 y=44 }
 		}
 		
 		buttonType = {
@@ -631,8 +652,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "military_deployment_conveyor_summary_view"
-		position = { x=0 y=0 }
-		size = { width=488 height=40 }
+		position = { x=-15 y=0 }
+		size = { width=510 height=40 }
 		
 		background = {
 			name = "background"
@@ -641,7 +662,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "conveyor_collapse_btn"
-			position = { x=453 y=4 }
+			position = { x=481 y=4 }
 			quadTextureSprite = "GFX_conveyor_collapse_btn"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
@@ -650,7 +671,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "lines_count"
-			position = { x = 282 y = 8 }
+			position = { x = 330 y = 8 }
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = "1"
@@ -663,18 +684,18 @@ guiTypes = {
 		iconType = {
 			name = "army_equipment"
 			spriteType = "GFX_equipment_state_icon"
-			position = { x=150 y=7 }		
+			position = { x=215 y=7 }		
 		}
 		
 		iconType = {
 			name = "equipment_progressbar"
 			spriteType = "GFX_deployment_entry_progressbar"
-			position = { x=172 y=9 }
+			position = { x=237 y=9 }
 		}
 		
 		buttonType = {
 			name = "priority_up_btn"
-			position = { x=13 y=4 }
+			position = { x=11 y=4 }
 			quadTextureSprite = "GFX_change_conveyor_order_btn"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
@@ -683,7 +704,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "priority_down_btn"
-			position = { x=37 y=4 }
+			position = { x=36 y=4 }
 			quadTextureSprite = "GFX_change_conveyor_order_btn"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
@@ -693,7 +714,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "military_deployment_conveyor_end_view"
-		position = { x=2 y=-3 }
+		position = { x=-14 y=-3 }
 		size = { width=486 height=9 }
 		
 		background = {
@@ -704,49 +725,102 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "military_deployment_line_view"
-		position = { x=0 y=0 }
-		size = { width=488 height=40 }
+		position = { x=-13 y=0 }
+		size = { width=520 height=40 }
 		
 		background = {
 			name = "background"
 			quadTextureSprite ="GFX_military_deployment_line_view_bg"
 		}
 
-		editBoxType = {
-			name = "prefix_name_edit"
-			position = { x = 11 y = 10 }
-			font = "hoi_18mbs"
-			size = { x=120 y=25 }
-			pdx_tooltip = "CONVEYOR_LINE_PREFIX_NAME_EDIT_DESC"
+		dropDownBoxType = {
+			name = "division_name_dropdown"
+			position = { x = 5 y = 5 }
+			size = { width = 150 height = 30 }
+			
+			editBoxType = {
+				name = "editbox"
+				position = { x = 3 y = 6 }
+				font = "hoi_16mbs"
+				size = { x=175 y=19 }
+			}
+			
+			expandButton = {
+				name = "expand_button"	
+				position = { x = 30 y = 7 }
+				quadTextureSprite ="GFX_collapse_or_close" # Frame 1 = down, 2 = up, 3 = cancel
+				buttonFont = "Main_14_black"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_default
+				scale = 0.8
+			}
+			
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=0 y= -300 }	
+				show_position = { x = -5 y = 30 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 300
+				size = { width=250 height=300 }
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 7 bottom = 7 right = 6 }
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+					position = { x = 0 y = 0 }
+				}
+
+				gridBoxType = {
+					name = "grid"
+					position = { x = 8 y = 0 }
+					size = { width = 250 height = 286 }
+					slotsize = { width = 250 height = 30 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+
+				instantTextboxType = {
+					name = "empty"
+					position = { x = 10 y = 130 }
+					font = "hoi_18mbs"
+					borderSize = {x = 0 y = 0}
+					maxWidth = 210
+					maxHeight = 60
+					format = center
+					text = "DEPLOYMENT_LINE_OUT_OF_NAMES"
+				}
+			}
 		}
 		
 		iconType = {
 			name = "army_equipment"
 			spriteType = "GFX_equipment_state_icon"
-			position = { x=150 y=12 }		
+			position = { x=214 y=12 }		
 		}
 		
 		iconType = {
 			name = "equipment_progressbar"
 			spriteType = "GFX_deployment_entry_progressbar"
-			position = { x=172 y=13 }
+			position = { x=235 y=13 }
 		}
 		
 		iconType = {
 			name = "army_training"
 			spriteType = "GFX_army_experience"
-			position = { x=262 y=13 }		
+			position = { x=312 y=13 }		
 		}
 		
 		iconType = {
 			name = "training_progressbar"
 			spriteType = "GFX_deployment_entry_progressbar"
-			position = { x=281 y=13 }
+			position = { x=329 y=13 }
 		}
 		
 		instantTextboxType = {
 			name = "series_number"
-			position = { x = 363 y = 11 }
+			position = { x = 398 y = 11 }
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = "1"
@@ -759,17 +833,44 @@ guiTypes = {
 		
 		buttonType = {
 			name = "deploy_line_button"
-			position = { x=426 y=7 }
+			position = { x=458 y=7 }
 			quadTextureSprite = "GFX_deploy_line_button"
 			clicksound = click_default
 		}
 		
 		buttonType = {
 			name = "cancel_line_button"
-			position = { x=456 y=7 }
+			position = { x=484 y=7 }
 			quadTextureSprite = "GFX_closebutton_small"
 			pdx_tooltip = "CONVEYOR_LINE_CANCEL_DESC"
 			clicksound = click_close
+		}
+	}
+
+
+	containerWindowType = {
+		name = "division_name_dropdown_entry"
+		position = { x=0 y=0 }
+		size = { width = 218 height = 30 }
+		clipping = no
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_mini_tooltip"
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 9 y = 8 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 215
+			maxHeight = 30
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
 		}
 	}
 	
@@ -798,16 +899,17 @@ guiTypes = {
 		}
 		
 		iconType = {
-			name = "colonial_force_flag_frame"
-			quadTextureSprite ="GFX_unitlist_colonial_flag_frame"
-			position = { x = 14 y = 49 }
-		}
-		
-		iconType = {
 			name = "colonial_force_flag"
-			quadTextureSprite ="GFX_mapicon_unit_flag_stripe_visible"
-			position = { x = 15 y = 55 }
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 12 y = 49 }
 		}
+
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_colonial_flag_frame2"
+			position = { x= 13 y = 44 }
+			alwaystransparent = yes
+		}	
 
 		editBoxType = {
 			name = "generic_name_edit"
@@ -904,6 +1006,24 @@ guiTypes = {
 			buttonText = "ADD_CONVEYOR_LINE_BUTTON_LABEL"
 			buttonFont = "hoi_18mbs"
 			clicksound = click_default
+		}
+		
+		iconType = {
+			name = "add_limit_bg"
+			position = { x=315 y=52 }
+			spriteType = "GFX_add_limit_bg"
+			alwaystransparent = yes		
+		}
+		
+		instantTextboxType = {
+			name = "add_limit"
+			position = { x = 316 y = 52 }
+			font = "hoi_18b"
+			text = "4"
+			maxWidth = 17
+			maxHeight = 33
+			format = center
+			alwaystransparent = yes			
 		}
 
 		iconType = {

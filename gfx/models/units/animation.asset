@@ -52,8 +52,49 @@ animation = {
 	file = "cavalry_frame_cavalry_move.anim"
 }
 
+animation = {
+	name = "cavalry_horse_charge_animation"
+	file = "cavalry_horse_charge.anim"
+}
 
+animation = {
+	name = "cavalry_horse_charge_2_animation"
+	file = "cavalry_horse_charge_2.anim"
+}
 
+###########
+# BICYCLE
+###########
+
+animation = {
+	name = "infantry_bicycle_idle_animation"
+	file = "bicycle_infantry_idle.anim"
+}
+
+animation = {
+	name = "infantry_bicycle_idle_2_animation"
+	file = "bicycle_infantry_idle_2.anim"
+}
+
+animation = {
+	name = "infantry_bicycle_move_animation"
+	file = "bicycle_infantry_moving.anim"
+}
+
+animation = {
+	name = "infantry_bicycle_move_2_animation"
+	file = "bicycle_infantry_moving_2.anim"
+}
+
+animation = {
+	name = "infantry_bicycle_retreat_animation"
+	file = "bicycle_infantry_retreat.anim"
+}
+
+animation = {
+	name = "infantry_bicycle_retreat_2_animation"
+	file = "bicycle_infantry_retreat_2.anim"
+}
 
 
 

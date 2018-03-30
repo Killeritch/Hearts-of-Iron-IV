@@ -2,6 +2,8 @@
 division_template = {
 	name = "Mixed Division"				# Mixed Division - Divisions raised in 1939, still at reserve levels at start of war
 
+	division_names_group = PER_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -16,6 +18,8 @@ division_template = {
 }
 division_template = {
 	name = "Infantry Group"				# Represents groups of independent infantry brigades
+
+	division_names_group = PER_GAR_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -32,7 +36,11 @@ units = {
 	######## LAND OOB ########
 	##### Royal Iranian Army #####
 	division = {
-		name = "1st Division"
+		#name = "1st Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 1896
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -40,7 +48,11 @@ units = {
 
 	}
 	division = {
-		name = "2nd Division"
+		#name = "2nd Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 10913
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -48,7 +60,11 @@ units = {
 
 	}
 	division = {
-		name = "3rd Division"
+		#name = "3rd Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 10837
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -56,7 +72,11 @@ units = {
 
 	}
 	division = {
-		name = "4th Division"
+		#name = "4th Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 5029
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -64,7 +84,11 @@ units = {
 
 	}
 	division = {
-		name = "5th Division"
+		#name = "5th Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 7982
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -72,7 +96,11 @@ units = {
 
 	}
 	division = {
-		name = "6th Division"
+		#name = "6th Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 2026
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -80,7 +108,11 @@ units = {
 
 	}
 	division = {
-		name = "7th Division"
+		#name = "7th Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 9 # When looking into PER OOBS of the time, it looked like there was no 7th or 8th Div - could be wrong though, research very limited.
+		}
 		location = 8117
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -88,7 +120,11 @@ units = {
 
 	}
 	division = {
-		name = "8th Division"
+		#name = "8th Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10 # When looking into PER OOBS of the time, it looked like there was no 7th or 8th Div - could be wrong though, research very limited.
+		}
 		location = 7953
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2
@@ -96,7 +132,11 @@ units = {
 
 	}
 	division = {
-		name = "9th Division"
+		#name = "9th Division"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 5005
 		division_template = "Mixed Division"		
 		start_experience_factor = 0.2

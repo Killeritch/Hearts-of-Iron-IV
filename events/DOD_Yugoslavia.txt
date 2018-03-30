@@ -30,6 +30,10 @@ country_event = {
 		name = DOD_yugoslavia.1.a
 		ai_chance = {
 			factor = 70
+			modifier = {
+				has_war_with = ENG
+				factor = 0
+			}
 		}	
 		retire_country_leader = yes
 		create_country_leader = {
@@ -47,7 +51,19 @@ country_event = {
 			limit = {
 				is_in_faction_with = GER
 			}
-			remove_from_faction = YUG
+			GER = { remove_from_faction = YUG }
+		}
+		if = {
+			limit = {
+				is_puppet_of = GER
+			}
+			set_autonomy = {
+				target = YUG
+				autonomy_state = autonomy_free
+			}
+			set_politics = { ruling_party = neutrality elections_allowed = yes }
+			add_popularity = { ideology = neutrality popularity = 0.5 }
+			set_party_name = { ideology = neutrality long_name = YUG_neutrality_party_2 name = YUG_neutrality_party_2 }
 		}
 	}
 	option = { #resistance to the coup, call on Germans for support
@@ -162,6 +178,13 @@ country_event = {
 		GER = {
 			has_government = fascism
 		}
+		OR = {
+			AND = {
+				CRO = { exists = yes }
+				CRO = { is_subject_of = YUG }
+			}
+			109 = { is_owned_and_controlled_by = YUG }
+		}
 	}
 	mean_time_to_happen = {
 		days = 4
@@ -210,18 +233,19 @@ country_event = {
 				CRO = {
 					exists = no
 				}
-				109 = { is_owned_by = YUG }
+				109 = { is_owned_and_controlled_by = YUG }
 			}
 			CRO = { transfer_state = 109 }
 			if = {
 				limit = {
-					103 = { is_owned_by = YUG }
+					103 = { is_owned_and_controlled_by = YUG }
 				}
 				CRO = { transfer_state = 103 }
 			}
 			CRO = {
 				declare_war_on = {
 					target = YUG
+					type = annex_everything
 				}
 				load_oob = "CRO_YUG_independence"
 			}
@@ -234,7 +258,7 @@ country_event = {
 	id = DOD_yugoslavia.20
 	title = DOD_yugoslavia.20.t
 	desc = DOD_yugoslavia.20.desc
-	picture = GFX_report_event_generic_fighters
+	picture = GFX_report_event_fighters
 	
 	is_triggered_only = yes
 	
@@ -343,7 +367,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { # cool
-		name = DOD_yugoslavia.22.a
+		name = DOD_yugoslavia.21.a
 		ai_chance = {
 			factor = 30
 		}
@@ -1048,6 +1072,7 @@ country_event = {
 		YUG = { is_in_faction = no }
 		YUG = { NOT = { has_war_with = GER } }
 		YUG = { exists = yes }
+		is_historical_focus_on = no
 	}
 
 	mean_time_to_happen = { days = 4 }
@@ -1875,10 +1900,7 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.155 }
-		add_relation_modifier = {
-			target = YUG
-			modifier = free_license # name is from static_modifiers.txt
-		}
+		air_experience = 20
 		if = {
 			limit = {
 				has_tech = fighter1
@@ -1973,6 +1995,7 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.155 }
+		air_experience = 20
 		if = {
 			limit = {
 				has_tech = heavy_fighter1
@@ -1983,7 +2006,7 @@ country_event = {
 				equipment = {
 					type = heavy_fighter_equipment_1
 				}
-				cost_factor = 1
+				cost_factor = 0
 			}
 		}
 		if = {
@@ -2812,6 +2835,7 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.165 }
+		air_experience = 20
 		if = {
 			limit = {
 				has_tech = CAS1
@@ -2905,6 +2929,7 @@ country_event = {
 			}
 		}
 		YUG = { country_event = DOD_yugoslavia.165 }
+		air_experience = 20
 		if = {
 			limit = {
 				has_tech = tactical_bomber1

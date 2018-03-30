@@ -11,6 +11,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.a #yes
+		ai_chance = {
+			factor = 80
+		}
 		CZE = {
 			country_event = { id = czech.2 hours = 6 }
 		}
@@ -22,7 +25,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.b
-		
+		ai_chance = {
+			factor = 20
+		}
 		CZE = {
 			country_event = { id = czech.3 hours = 6 }
 		}
@@ -80,6 +85,9 @@ country_event = {
 	
 	option = {
 		name = czech.4.a #yes
+		ai_chance = {
+			factor = 80
+		}
 		CZE = {
 			country_event = { id = czech.5 hours = 6 }
 		}
@@ -96,7 +104,9 @@ country_event = {
 	
 	option = {
 		name = czech.4.b
-		
+		ai_chance = {
+			factor = 20
+		}
 		CZE = {
 			country_event = { id = czech.6 hours = 6 }
 		}
@@ -156,6 +166,9 @@ country_event = {
 	
 	option = {
 		name = czech.7.a #yes
+		ai_chance = {
+			factor = 80
+		}
 		CZE = {
 			country_event = { id = czech.8 hours = 6 }
 		}
@@ -171,7 +184,9 @@ country_event = {
 	
 	option = {
 		name = czech.4.b
-		
+		ai_chance = {
+			factor = 20
+		}
 		CZE = {
 			country_event = { id = czech.9 hours = 6 }
 		}
@@ -231,6 +246,13 @@ country_event = {
 	
 	option = {
 		name = czech.10.a #yes
+		ai_chance = {
+			factor = 90
+			modifier = {
+				is_in_faction_with = SOV
+				factor = 0.1
+			}
+		}
 		CZE = {
 			country_event = { id = czech.11 hours = 6 }
 		}
@@ -246,7 +268,9 @@ country_event = {
 	
 	option = {
 		name = czech.4.b
-		
+		ai_chance = {
+			factor = 10
+		}
 		CZE = {
 			country_event = { id = czech.12 hours = 6 }
 		}
@@ -307,15 +331,46 @@ country_event = {
 	
 	option = {
 		name = czech.14.a
-		start_civil_war = {
-				ideology = neutrality
-				size = 0.45
-				capital = 70
-				states = { 70 71 664 73 }
+		#start_civil_war = {
+		#		ideology = neutrality
+		#		size = 0.45
+		#		capital = 70
+		#		states = { 70 71 664 73 }
+		#	}
+
+		SLO = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 73
+			if = {
+				limit = {
+					CZE = {
+						owns_state = 664
+					}
+				}
+				transfer_state = 664
 			}
+			
+		}
+		declare_war_on = {
+			target = SLO
+			type = annex_everything
+		}
+		every_state = {
+			limit = { is_owned_by = SLO }
+			add_core_of = SLO
+		}
+		if = {
+			limit = {
+				664 = { NOT = { is_owned_by = SLO } }
+			}
+			SLO = { add_state_claim = 664 }
+		}
 		
 		hidden_effect = {
-			
+			SLO = {
+				load_oob = "SLO_independence"
+			}
 		}
 	}
 }
@@ -349,6 +404,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.a #yes
+		ai_chance = {
+			factor = 80
+		}
 		CZE = {
 			country_event = { id = czech.17 hours = 6 }
 		}
@@ -360,7 +418,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.b
-		
+		ai_chance = {
+			factor = 20
+		}
 		CZE = {
 			country_event = { id = czech.18 hours = 6 }
 		}
@@ -498,6 +558,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.a #yes
+		ai_chance = {
+			factor = 100
+		}
 		GER = { transfer_state = 69 }
 		CZE = {
 			country_event = { id = czech.23 hours = 6 }
@@ -510,7 +573,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.b
-		
+		ai_chance = {
+			factor = 0
+		}
 		CZE = {
 			country_event = { id = czech.24 hours = 6 }
 		}
@@ -566,6 +631,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.a #yes
+		ai_chance = {
+			factor = 90
+		}
 		CZE = { add_to_faction = ROOT }
 		CZE = {
 			country_event = { id = czech.26 hours = 6 }
@@ -578,7 +646,15 @@ country_event = {
 	
 	option = {
 		name = czech.1.b
-		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				CZE = {
+					surrender_progress > 0
+				}
+				factor = 15
+			}
+		}
 		CZE = {
 			country_event = { id = czech.27 hours = 6 }
 		}
@@ -640,6 +716,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.a #yes
+		ai_chance = {
+			factor = 90
+		}
 		CZE = { add_to_faction = ROOT }
 		CZE = {
 			country_event = { id = czech.29 hours = 6 }
@@ -652,7 +731,15 @@ country_event = {
 	
 	option = {
 		name = czech.1.b
-		
+		ai_chance = {
+			factor = 10
+			modifier = {
+				CZE = {
+					surrender_progress > 0
+				}
+				factor = 15
+			}
+		}
 		CZE = {
 			country_event = { id = czech.30 hours = 6 }
 		}
@@ -714,6 +801,17 @@ country_event = {
 	
 	option = {
 		name = czech.1.a #yes
+		ai_chance = {
+			factor = 60
+			modifier = {
+				has_government = democratic
+				factor = 2
+			}
+			modifier = {
+				has_completed_focus = HUN_rapproachement_with_little_entente
+				factor = 10
+			}
+		}
 		CZE = {
 			country_event = { id = czech.33 hours = 6 }
 		}
@@ -725,7 +823,9 @@ country_event = {
 	
 	option = {
 		name = czech.1.b
-		
+		ai_chance = {
+			factor = 40
+		}
 		CZE = {
 			country_event = { id = czech.34 hours = 6 }
 		}

@@ -79,7 +79,7 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = fascist
+			has_government = fascism
 		}		
 	}	
 }
@@ -92,7 +92,7 @@ music = {
 			factor = 2
 
 			has_war = no
-			has_government = fascist
+			has_government = fascism
 		}		
 	}	
 }
@@ -131,7 +131,7 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = fascist
+			has_government = fascism
 		}		
 	}	
 }
@@ -144,7 +144,7 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = fascist
+			has_government = fascism
 		}		
 	}	
 }
@@ -157,7 +157,7 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = fascist
+			has_government = fascism
 		}		
 	}	
 }
@@ -170,7 +170,7 @@ music = {
 			factor = 2
 
 			has_war = yes
-			has_government = fascist
+			has_government = fascism
 		}		
 	}	
 }

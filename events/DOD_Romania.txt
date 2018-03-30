@@ -262,7 +262,9 @@ country_event = {
 
 	option = { #cool
 		name = DOD_romania.31.a
-		give_military_access = SOV
+		SOV = {
+			give_military_access = ROM
+		}
 	}
 
 }
@@ -330,14 +332,16 @@ country_event = {
 	id = DOD_romania.41 
 	title = DOD_romania.41.t
 	desc = DOD_romania.41.desc
-	picture = GFX_report_event_sign_treaty2
+	picture = GFX_report_event_generic_sign_treaty2
 	
 	is_triggered_only = yes
 
 	option = { #cool
 		name = DOD_romania.41.a
 		puppet = BUL
-		news_event = { id = news.318 days = 1 }
+		hidden_effect = {
+			news_event = { id = news.318 days = 1 }
+		}
 	}
 
 }
@@ -378,7 +382,7 @@ country_event = {
 			type = puppet_wargoal_focus
 			target = BUL
 		}
-		news_event = { id = news.318 days = 1 }
+		news_event = { id = news.319 days = 1 }
 	}
 
 }
@@ -482,6 +486,7 @@ country_event = {
 			type = puppet_wargoal_focus
 			target = HUN
 		}
+		set_country_flag = HUN_ROM_puppet_war
 	}
 
 }
@@ -855,7 +860,7 @@ country_event = {
 	option = { #oh well
 		name = DOD_romania.68.a
 		create_wargoal = {
-			type = annex_all
+			type = annex_everything
 			target = YUG
 		}
 		news_event = { id = news.320 days = 1 }
@@ -1297,7 +1302,7 @@ country_event = {
 				}
 			}
 		}
-		add_national_unity = -0.05
+		add_stability = -0.05
 		add_popularity = { ideology = fascism popularity = 0.05 } #because she is Jewish
 		add_popularity = { ideology = democratic popularity = 0.05 } #because Freedom of the Press
 		hidden_effect = {
@@ -1800,7 +1805,7 @@ country_event = {
 				transfer_state = 664 #might as well throw them a bone
 			}
 			else = { #Need to get rid of everything
-				GER = { transfer_state = 664 }
+				SLO = { transfer_state = 664 }
 			}
 		}
 		SLO = {
@@ -1816,6 +1821,7 @@ country_event = {
 		}
 		ROM = {
 			puppet = SLO
+			annex_country = { target = CZE } #cleanup
 		}
 	}
 	option = {# refuse
@@ -2680,10 +2686,7 @@ country_event = {
 			}
 		}
 		ROM = { country_event = DOD_romania.155 }
-		add_relation_modifier = {
-			target = ROM
-			modifier = free_license # name is from static_modifiers.txt
-		}
+		air_experience = 20
 		if = {
 			limit = {
 				has_tech = fighter1
@@ -2778,6 +2781,7 @@ country_event = {
 			}
 		}
 		ROM = { country_event = DOD_romania.155 }
+		air_experience = 20
 		if = {
 			limit = {
 				has_tech = heavy_fighter1
@@ -2788,7 +2792,7 @@ country_event = {
 				equipment = {
 					type = heavy_fighter_equipment_1
 				}
-				cost_factor = 1
+				cost_factor = 0
 			}
 		}
 		if = {

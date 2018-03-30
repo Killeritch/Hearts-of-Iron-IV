@@ -64,8 +64,8 @@ set_technology = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -74,7 +74,7 @@ set_technology = {
 }
 
 set_convoys = 30
-set_national_unity = 0.85
+set_stability = 0.75
 
 set_politics = {
 

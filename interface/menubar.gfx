@@ -138,13 +138,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_zoom_in"
-		texturefile = "gfx//interface//zoom_in.tga"
+		texturefile = "gfx//interface//topbar//zoom_in.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
 	spriteType = {
 		name = "GFX_zoom_out"
-		texturefile = "gfx//interface//zoom_out.tga"
+		texturefile = "gfx//interface//topbar//zoom_out.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
@@ -168,24 +168,24 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_show_dismissed_alerts_icon"
-		texturefile = "gfx//interface//show_dismissed_alerts_icon.tga"
+		texturefile = "gfx//interface//topbar//show_dismissed_alerts_icon.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
 	spriteType = {
 		name = "GFX_menu_button"
-		texturefile = "gfx//interface//button_menu.tga"
+		texturefile = "gfx//interface//topbar//button_menu.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
 	spriteType = {
 		name = "GFX_help_button"
-		texturefile = "gfx//interface//button_help.tga"
+		texturefile = "gfx//interface//topbar//button_help.tga"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}	
 	spriteType = {
 		name = "GFX_achievements_button"
-		texturefile = "gfx//interface//achievements_button.dds"
+		texturefile = "gfx//interface//topbar//achievements_button.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}	
 

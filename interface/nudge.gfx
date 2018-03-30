@@ -2,7 +2,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "nudge_bg"
 		size= {x=190 y=310 }		
-		textureFile ="gfx//interface//tiles_dialog.tga"
+		textureFile ="gfx//interface//tiles//tiles_dialog.tga"
 		borderSize = { x=32 y=32 }
 	}
 

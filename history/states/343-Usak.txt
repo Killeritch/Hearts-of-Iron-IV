@@ -4,7 +4,7 @@ state={
 	name="STATE_343" # Afyon
 	manpower = 955763
 	resources={
-		chromium=32
+		chromium=25 # was: 32
 	}
 	
 	state_category = rural

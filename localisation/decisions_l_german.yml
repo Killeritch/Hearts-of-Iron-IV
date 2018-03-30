@@ -1,0 +1,12 @@
+﻿l_german:
+ DECISIONVIEW_TITLE:0 "Ereignisse und Entscheidungen"
+ DECISIONSVIEW_EVENT_HEADER:0 "Ereignisse"
+ POPUP_NEWS:0 "News-Popup"
+ POPUP_EVENTS:0 "Ereignis-Popup"
+ CATEGORY_COLLAPSE_DESC:0 "§GKlicken§! zum Ausklappen"
+ CATEGORY_EXPAND_DESC:0 "§GKlicken§! zum Einklappen"
+ DECISION_KEEP_NOTIFIED:1 "§HBenachrichtigen§!\n\n§GKlicken§!, um §Rnicht benachrichtigt zu werden§!, wenn diese Entscheidung getroffen werden kann.\n"
+ DECISION_NOT_KEEP_NOTIFIED:1 "§HBenachrichtigen§!\n\n§GKlicken§!, um §Gbenachrichtigt zu werden§!, wenn diese Entscheidung getroffen werden kann.\n"
+ TAKE_DECISION_HEADER:0 "§HEntscheidung fällen§!\n\n"
+ DECISION_COST_DESC:0 "Es kostet £pol_power $VAL|H0$, die Entscheidung zu fällen"
+ DECISION_COST_NOT_ENOUGH:0 "Es kostet £pol_power $VAL|HR0$, die Entscheidung zu fällen"

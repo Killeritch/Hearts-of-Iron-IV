@@ -7,7 +7,8 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 }
-
+set_war_support = 0.1
+set_stability = 0.8
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -84,7 +85,7 @@ set_politics = {
 create_country_leader = {
 	name = "Juddha Rana"
 	desc = "POLITICS_JUDDHA_RANA_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+	picture = "GFX_portrait_nepal_portrait_juddah_rana"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

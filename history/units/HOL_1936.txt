@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infanterie Divisie"
+	division_names_group = HOL_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,6 +16,7 @@
 }
 division_template = {
 	name = "Koloniale Garnizoen"		# miltia forces, lower experience and equipment
+	division_names_group = INS_GAR_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -27,16 +29,22 @@ units = {
 	##### OLZ Nederland #####
 	### Veldleger ###
 	# 1e Legerkorps
-	division= {	
-		name = "1e Divisie"
+	division= {	# "1e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 3314  # Amsterdam
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "3e Divisie"
+	division= {	# "3e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 3211 # The Hague
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
@@ -45,16 +53,22 @@ units = {
 	}
 
 	# 2e Legerkorps
-	division= {	
-		name = "2e Divisie"
+	division= {	# "2e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 9498  # Rotterdam
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "4e Divisie"
+	division= {	# "4e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 9498  # Rotterdam
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
@@ -63,16 +77,22 @@ units = {
 	}
 
 	# 3e Legerkorps
-	division= {	
-		name = "5e Divisie"
+	division= {	# "5e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 6500  # Venlo
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "6e Divisie"
+	division= {	# "6e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 11562  # Maastricht
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
@@ -81,16 +101,22 @@ units = {
 	}
 
 	# 4e Legerkorps
-	division= {	
-		name = "7e Divisie"
+	division= {	# "7e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 9335  # Gronigen
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "8e Divisie"
+	division= {	# "8e Divisie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 9335  # Gronigen
 		division_template = "Infanterie Divisie"
 		start_experience_factor = 0.1

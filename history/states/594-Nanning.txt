@@ -5,9 +5,9 @@ state={
 	manpower = 6550000
 	state_category = town
 	resources={
-		tungsten=14
-		steel = 10
-		chromium = 4
+		tungsten=11 # was: 14
+		steel = 8 # was: 10
+		chromium = 3 # was: 4
 	}
 
 	history={
@@ -23,9 +23,14 @@ state={
 			7137 10 
 		}
 
-		1938.10.25 = {		
-			remove_core_of = GXC
-			owner = CHI
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
 			JAP = {
 				set_province_controller = 1018
 				set_province_controller = 4023

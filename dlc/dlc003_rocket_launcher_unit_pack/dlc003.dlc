@@ -3,6 +3,6 @@ archive = "dlc/dlc003_rocket_launcher_unit_pack/dlc003.zip"
 steam_id = "460559"
 affects_checksum = no
 affects_compatability = no
-checksum="d1a9f5102fa4b02471e772df87adf250"
+checksum = "58bfad2714b1e64d05e05d3b67d5dccb"
 third_party_content = no
 category="unit_pack"

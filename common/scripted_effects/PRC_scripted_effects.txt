@@ -118,17 +118,6 @@ PRC_execute_infiltration_effects_for_PREV = {
 			}
 		}
 	}
-
-	#TODO_WTT REMOVE THIS BEFORE RELEASE - Placed here to get warning if flags go above allowed level.
-	if = {
-		limit = {
-			has_state_flag = {
-				flag = PRC_infiltration_@PREV
-				value > 4
-			}
-		}
-		log = "PRC_infiltration_ flag in state is above max"
-	}
 }
 
 #looks for 1 less than what is needed in the effect to match tooltip, since flag is modified after effect is run

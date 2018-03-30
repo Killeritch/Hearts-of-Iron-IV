@@ -4,7 +4,7 @@ leader_traits = {
 ##################################
 # Common Traits
 ##################################
-	JAP_samurai_lineage = { #TODO_WTT_ART icon
+	JAP_samurai_lineage = { 
 		type = all
 		trait_type = personality_trait
 		gain_xp = {
@@ -27,7 +27,7 @@ leader_traits = {
 		}
 	}
 
-	JAP_communist_sympathizer = { #TODO_WTT_ART icon
+	JAP_communist_sympathizer = { 
 		type = all
 		trait_type = personality_trait
 		gain_xp = {
@@ -49,7 +49,8 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	
+}
+
 ##################################
 # Field Marshal traits.
 ##################################

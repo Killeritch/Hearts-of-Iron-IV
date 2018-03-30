@@ -4,9 +4,9 @@ state= {
 	manpower = 8685200
 	state_category = town
 	resources={
-		tungsten=20
-		steel= 20
-		chromium = 4
+		tungsten=15 # was: 20
+		steel= 15 # was: 20
+		chromium = 3 # was: 4
 	}
 
 	history= {
@@ -25,7 +25,12 @@ state= {
 		}
 
 		1938.10.25 = {
-			owner = CHI
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				CHI = { transfer_state = PREV }
+			}
 		}
 
 	}

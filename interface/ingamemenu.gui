@@ -384,8 +384,8 @@ guiTypes = {
 		size = { width = 280 height = 50 }
 		clipping = no
 		
-		background = {
-			name = "Background"		
+		buttonType = {
+			name = "BackgroundButton"		
 			quadTextureSprite ="GFX_load_save_entry2"
 		}
 		
@@ -418,6 +418,7 @@ guiTypes = {
 			maxHeight = 18
 			format = left
 			fixedsize = yes
+			allwaystransparent = yes
 		}
 		
 		instantTextBoxType={
@@ -427,7 +428,8 @@ guiTypes = {
 			maxWidth = 217
 			maxHeight = 18
 			format = left
-			fixedsize = yes			
+			fixedsize = yes	
+			allwaystransparent = yes		
 		}
 		
 		iconType = {

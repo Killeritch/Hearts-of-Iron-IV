@@ -3,6 +3,8 @@
 oob = "ROM_1936"
 
 set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.6
 
 # Starting tech
 set_technology = {
@@ -155,8 +157,8 @@ set_convoys = 10
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -278,6 +280,10 @@ create_field_marshal = {
 	gfx = GFX_Portrait_romania_petre_dumitrescu
 	traits = { offensive_doctrine logistics_wizard }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -285,6 +291,10 @@ create_field_marshal = {
 	picture = "Portrait_Romania_Ion_Antonescu.dds"
 	traits = { offensive_doctrine }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -292,26 +302,27 @@ create_corps_commander = {
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
 	traits = { hill_fighter }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-
-	create_corps_commander = {
-		name = "Gheorghe Avramescu"
-		gfx = GFX_Portrait_romania_gheorghe_avramescu
-		traits = { }
-		skill = 3
-	}
-
-	create_navy_leader = {
-		name = "Horia Macellariu"
-		gfx = "GFX_Portrait_romania_ioan_mihail_racovita"
-		traits = { spotter }
-		skill = 2
-	}
+create_corps_commander = {
+	name = "Gheorghe Avramescu"
+	gfx = GFX_Portrait_romania_gheorghe_avramescu
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_navy_leader = {
+	name = "Horia Macellariu"
+	gfx = "GFX_Portrait_romania_horia_macellariu"
+	traits = { spotter }
+	skill = 2
 }
 
 

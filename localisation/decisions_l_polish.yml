@@ -1,0 +1,12 @@
+﻿l_polish:
+ DECISIONVIEW_TITLE:0 "Wydarzenia i decyzje"
+ DECISIONSVIEW_EVENT_HEADER:0 "Wydarzenia"
+ POPUP_NEWS:0 "Okno wiadomości"
+ POPUP_EVENTS:0 "Okno wydarzeń"
+ CATEGORY_COLLAPSE_DESC:0 "§GKliknij§!, by schować"
+ CATEGORY_EXPAND_DESC:0 "§GKliknij§!, by rozwinąć"
+ DECISION_KEEP_NOTIFIED:1 "§HPowiadamianie§!\n\n§GKliknij§!, żeby §Rnie otrzymywać powiadomień§!, gdy możliwe jest podjęcie tej decyzji.\n"
+ DECISION_NOT_KEEP_NOTIFIED:1 "§HPowiadamianie§!\n\n§GKliknij§!, żeby §Gotrzymywać powiadomienia§!, gdy możliwe jest podjęcie tej decyzji.\n"
+ TAKE_DECISION_HEADER:0 "§HPodejmij decyzję§!\n\n"
+ DECISION_COST_DESC:0 "Podjęcie decyzji kosztuje £pol_power $VAL|H0$"
+ DECISION_COST_NOT_ENOUGH:0 "Podjęcie decyzji kosztuje £pol_power $VAL|HR0$"

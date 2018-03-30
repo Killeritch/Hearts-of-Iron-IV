@@ -75,7 +75,7 @@ set_technology = {
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		oil_processing = 1
 		construction1 = 1
 		concentrated_industry = 1
 	}
@@ -138,7 +138,7 @@ set_politics = {
 		elections_allowed = yes
 	}
 }
-set_national_unity = 0.6
+set_stability = 0.6
 
 create_country_leader = {
 	name = "Draza Mihailovic"

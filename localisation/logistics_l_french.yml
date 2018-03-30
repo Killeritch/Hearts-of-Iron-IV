@@ -28,7 +28,7 @@
  LOGISTICS_AVERAGE_EFFICIENCY_DELAYED:0 "Pour augmenter la production, améliorez la £prod_eff productivité."
  LOGISTICS_MILITARY_FACTORIES_LABEL:0 "Usines militaires"
  LOGISTICS_NAVAL_FACTORIES_LABEL:0 "Chantiers navals"
- LOGISTICS_WEEKLY_PRODUCTION_LABEL:0 "Production/sem."
+ LOGISTICS_WEEKLY_PRODUCTION_LABEL:0 "Prod./sem."
  LOGISTICS_VIEW_GRAPH_VALUE:0 "$VALUE|0*$"
  LOGISTICS_EQUIPMENT_VARIANT_LABEL:0 "Matériel"
  LOGISTICS_AMOUNT_PRODUCTION_LINES:0 "Production de $AMOUNT|Y1$ unités par semaine sur $NUMBER|Y0$ lignes."
@@ -77,9 +77,9 @@
  LOGISTICS_ESTIMATED_NO_PRODUCTION:0 "Actuellement, nous ne produisons pas de $EQUIPMENT|Y$."
  LOGISTICS_RESOURCE:0 "Nos §Hlignes de production§! requièrent $RESOURCE|H$ pour produire $EQUIPMENT|H$."
  LOGISTICS_RESOURCE_OTHER_LINES:0 "Nous avons $LINES|Y$ §Hlignes de production§! produisant d'autres matériels que $EQUIPMENT|H$ et nécessitant aussi $RESOURCE|H$ pour produire."
- LOGISTICS_RESOURCE_SHORTAGE:0 "Les §Hlignes de production§! produisant $EQUIPMENT|H$ ont du mal à obtenir suffisamment de $RESOURCE|H$ pour avoir une productivité maximale."
+ LOGISTICS_RESOURCE_SHORTAGE:0 "Les §Hlignes de production§! de $EQUIPMENT|H$ ont du mal à obtenir suffisamment de $RESOURCE|H$ pour avoir une productivité maximale."
  LOGISTICS_MILITARY_FACTORY:0 "$PERCENTAGE|%0Y$ de nos §Husines militaires§! produisent actuellement du matériel."
- LOGISTICS_NAVAL_FACTORY_NONE:0 "Nous n'avons aucun §Hchantier naval§!!"
+ LOGISTICS_NAVAL_FACTORY_NONE:0 "Nous n'avons aucun §Hchantier naval§!."
  LOGISTICS_NAVAL_FACTORY:0 "$PERCENTAGE|%0Y$ de nos §Hchantiers navals§! construisent actuellement des navires."
  LOGISTICS_RESOURCES_SUMMERY:0 "Actuellement, nous avons accès à $HAVE|Y$ unités de $RESOURCE|H$ et il nous faudrait $NEED|Y$ unités pour un rendement maximal."
  LOGISTICS_RESOURCES_NAVAL:0 "Notre production de matériel naval requiert $NEED|Y$ unités de $RESOURCE|H$ pour un rendement maximal."
@@ -95,6 +95,9 @@
  LOGISTICS_STORAGE_FOREIGN:0 "§TMatériel étranger : $AMOUNT|Y$ unités§!"
  LOGISTICS_STORAGE_PRODUCTION_POOL:0 "§TDu fait de la production : $AMOUNT|Y$ unités§!"
  PRODUCTION_OUTPUT:1 "Réserves"
+ LOGISTICS_DELETE_EQUIPMENT:0 "§RDétruire§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_TITLE:0 "§HDétruire le matériel en réserve§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_DESC:0 "\n\nVoulez-vous vraiment §Rdétruire§! les réserves de $EQUIPMENT|Y$ ?\n\nCe matériel sera retiré des réserves et ne pourra plus être utilisé – de façon définitive.\n\nEn cas de capitulation ou d'annexion, l'ennemi aura toujours accès à ce matériel pendant $NUM_DAYS|Y$ jours."
 
 
 

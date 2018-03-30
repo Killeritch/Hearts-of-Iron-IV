@@ -1,7 +1,8 @@
 ﻿capital = 285
 
 oob = "AST_1936"
-
+set_stability = 0.8
+set_war_support = 0.3
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -108,8 +109,8 @@ if = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -228,6 +229,10 @@ create_corps_commander = {
 	gfx = "GFX_AST_leslie_morshead"
 	traits = { }
 	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 5
+    logistics_skill = 2
 }
 
 
@@ -237,30 +242,50 @@ create_corps_commander = {
 	gfx = "GFX_AST_thomas_blamey"
 	traits = { }
 	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Henry Wynter"
 	gfx = "GFX_AST_henry_wynter"
 	traits = { }
 	skill = 4
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Alan Vasey"
 	gfx = "GFX_AST_alan_vasey"
 	traits = { hill_fighter }
 	skill = 3
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Horace Robertson"
 	gfx = "GFX_AST_horace_robertson"
 	traits = { desert_fox }
 	skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 3
 }
 create_corps_commander = {
 	name = "John Northcott"
 	gfx = "GFX_AST_john_northcott"
-	traits = { panzer_leader}
+	traits = { armor_officer}
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 create_navy_leader = {
 	name = "Harold Farncomb"

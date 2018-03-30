@@ -245,7 +245,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "national_focus_item"
 		position = { x=0 y=0 }
-		size = { width = 80 height = 64 }
+		size = { width = 165 height = 128 }
 		clipping = no
 
 		iconType = {
@@ -262,8 +262,10 @@ guiTypes = {
 		
 		buttonType = {
 			name = "symbol"
-			position = { x = 42 y = -18 }
-			quadTextureSprite = "GFX_goal_unknown"			
+			position = { x = 5 y = -44 }
+			quadTextureSprite = "GFX_goal_unknown"
+			centerposition = yes
+			Orientation = CENTER
 		}
 		
 		iconType = {
@@ -458,7 +460,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 300
+			maxWidth = 287
 			maxHeight = 100
 			scrollbarType = standardtext_slider
 		}
@@ -624,7 +626,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 300
+			maxWidth = 287
 			maxHeight = 100
 			scrollbarType = standardtext_slider
 		}

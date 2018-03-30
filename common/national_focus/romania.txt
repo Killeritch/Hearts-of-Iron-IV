@@ -3561,6 +3561,10 @@ focus_tree = {
 					gfx = GFX_Portrait_romania_barbu_paraianu
 					traits = {  }
 					skill = 2
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 3
+					logistics_skill = 1
 				}
 			}
 		}

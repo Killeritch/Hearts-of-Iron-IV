@@ -8,7 +8,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_transparent_transparent"
 		size= { x=96 y=96 }
-		textureFile = "gfx//interface//tiled_window_transparent.dds"
+		textureFile = "gfx//interface//tiles//tiled_window_transparent.dds"
 		borderSize = { x=32 y=32 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -18,7 +18,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_plain_bg"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_plain_bg.dds"
+		textureFile = "gfx//interface//tiles//tiled_plain_bg.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -41,7 +41,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window2_1b_border"
 		size= { x=192 y=192 }
-		textureFile = "gfx//interface//tiled_window2_1b_border.dds"
+		textureFile = "gfx//interface//tiles//tiled_window2_1b_border.dds"
 		borderSize = { x=64 y=64 }
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"		
+	division_names_group = IRE_INF_01
 	# Ireland did not have full divisions until 1941, but their garrison command 
 	#	was division strength by 1939
 	regiments = {

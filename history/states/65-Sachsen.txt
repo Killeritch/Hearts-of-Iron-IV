@@ -4,7 +4,7 @@ state={
 	name="STATE_65"
 	manpower = 5592576
 	resources={
-		steel=90
+		steel=53 # was: 90
 	}
 
 	state_category = metropolis
@@ -14,7 +14,7 @@ state={
 		owner = GER
 		buildings = {
 			infrastructure = 7
-			arms_factory = 3
+			arms_factory = 2
 			industrial_complex = 7
 		}
 		victory_points = {

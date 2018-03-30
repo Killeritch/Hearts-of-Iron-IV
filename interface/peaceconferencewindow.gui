@@ -164,6 +164,26 @@ guiTypes = {
 			buttonFont = "hoi_18mbs"
 			orientation = "lower_left"
 		}
+		
+		buttonType = {
+			name = "reopen_ingame_lobby"
+			quadTextureSprite ="GFX_reopen_lobby"
+			position = { x= 0 y = -42 }
+			Orientation = "LOWER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name ="reopen_ingame_lobby_label"
+			position = { x= 22 y = -36 }
+			font = "hoi_16mbs"
+			text = "LOBBY"
+			format = centre
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			Orientation = "LOWER_LEFT"
+			allwaystransparent = yes
+		}
 	}
 	
 	containerWindowType = {

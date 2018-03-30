@@ -112,3 +112,6 @@
  LOGISTICS_NEED_LEND_LEASE_LOW_VALUE:0 "Leih-Pacht-Vertrag: $NEED|^1Y$ Einheiten"
  LOGISTICS_NEED_LEND_LEASE_HIGH_VALUE:0 "Leih-Pacht-Vertrag: $NEED|^0Y$ Einheiten"
  LOGISTICS_STORAGE_FOREIGN:0 "§TAusländische Ausrüstung: $AMOUNT|Y$ Einheiten§!"
+ LOGISTICS_DELETE_EQUIPMENT:0 "§RZerstören§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_TITLE:0 "§HGelagerte Ausrüstung zerstören§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_DESC:0 "\n\nMöchten Sie $EQUIPMENT|Y$ wirklich §Rzerstören§!?\n\nDie Ausrüstung wird aus Ihrem Lager entfernt und Sie können sie nicht mehr verwenden. Dieser Vorgang lässt sich nicht umkehren.\n\nDie Ausrüstung ist im Falle einer Kapitulation oder Annektierung für Feinde noch $NUM_DAYS|Y$ Tage lange zugänglich."

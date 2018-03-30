@@ -34,7 +34,7 @@
  synthetic_refinery_resource:0 "£resources_strip|$FRAME$"
  radar_station:0 "Radar Station"
  radar_station_plural:0 "Radar Stations"
- radar_station_desc:2 "Radar allows you to gain intel on enemy troops in nearby states.\nA higher radar level in a state increases the effective range of the radar.\nRadar also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition the radars are increasing detection of enemy fleets at sea."
+ radar_station_desc:3 "Radar allows you to gain intel on enemy troops in nearby states.\nA higher radar level in a state increases the effective range of the radar.\nRadar also provides the state with better detection of enemy air forces, giving your planes a better chance to engage them.\nIn addition the radars are increasing detection of enemy fleets at sea."
  rocket_site:0 "Rocket Site"
  rocket_site_plural:0 "Rocket Sites"
  rocket_site_desc:0 "This building provides the state with deployment for produced rockets."

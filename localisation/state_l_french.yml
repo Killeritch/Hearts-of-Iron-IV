@@ -1,5 +1,5 @@
 ﻿l_french:
- STATE_UPGRADE_BUILDING:0 "Améliorez $BUILDING|H$."
+ STATE_UPGRADE_BUILDING:0 "Améliorer $BUILDING|H$."
  STATE_UPGRADE_BUILDING_DESC:0 "Nombre de jours pour construire : $COST|H$"
  STATE_BUILDING_LEVEL:1 "$BUILDING|H$ ($LEVEL|H$ dans l'État)"
  STATE_BUILDING_LEVEL_SHARED_SLOTS:0 "$LEVEL|H$ $BUILDING|H$"
@@ -14,14 +14,15 @@
  STATE_OWNER_NON_CORE:0 "§YÉtat colonial§!"
  STATE_MANPOWER_VALUE:0 "$VAL|2*$"
  STATE_RESISTANCE_GUI:0 "$STRENGTH|%0-$ ($GROWTH|=%0-$)"
- STATE_CORE:0 "§T$COUNTRY|H$ possède $STATE|H$ en tant qu'État national.§!"
- STATE_CORE_DESC:0 "Un État national est considéré comme faisant partie intégrante de votre nation. S'il appartient à une autre nation, vous détenez un motif de déclaration de guerre pour le reprendre et si vous y parvenez, il vous faudra y instaurer une politique d'occupation - une fois repris, il rejoindra votre patrie."
- STATE_CLAIM:0 "§T$COUNTRY|H$ a une revendication sur $STATE|H$.§!"
+ STATE_CORE:0 "§T$STATE|H$ est un État national de $COUNTRY|H$.§!"
+ STATE_CORE_DESC:0 "Un État national est considéré comme faisant partie intégrante d'un pays. S'il appartient à un autre, cela offre un motif de déclaration de guerre afin de le reprendre, et en cas de victoire il n'y aura pas besoin d'y instaurer une politique d'occupation : aussitôt repris, il sera entièrement intégré."
+ STATE_CLAIM:0 "§T$COUNTRY|H$ revendique $STATE|H$.§!"
  STATE_POPULATION:3 "§HPopulation recrutable§! : $AVAIL|*Y$ sur $MAXAVAIL|*Y$\n§HPopulation civile§! : $LOCKED|*Y$ sur $MAXLOCKED|*Y$\n"
  MONTHLY_BASE_GROWTH:0 "Base : $VALUE|H%2$"
  STATE_POPULATION_GROWTH:0 "§HCroissance mensuelle§! : $VALUE|%2$ ($AVAIL|*+$ recrutables, $LOCKED|*+$ civils)"
  LOCAL_MANPOWER_ACCESSIBLE_FACTOR:0 "Aptes au service : §R-$VAL|%$§!"
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_FACTOR:0 "Aptes au service (État non national) : §R-$VAL|%$§!"
+ LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Total des aptes au service (État non national) : §R-$VAL|%$§!"
  STATE_POPULATION_DESC:1 "Nombre d'habitants de l'État. Les lois de conscription permettent d'en recruter une partie pour constituer les divisions, entretenir les navires et piloter les avions."
  STATE_POPULATION_VALUE:0 "$VAL|*H$"
  STATE_SET_POLICY:0 "§GCliquer pour définir la politique d'occupation de $STATE|H$§!"
@@ -40,8 +41,9 @@
  UNLOCKED_SLOTS_FROM_INFRASTRUCTURE_DESC_HEADER:0 "Limite à partir de l'infrastructure :"
  UNLOCKED_SLOTS_BASE:0 "Limite de base : $NUM|Y$"
  UNLOCKED_SLOTS_STATE_EXTRA:0 "Emplacements supplémentaires dans cet État : $NUM|Y$"
- PROVINCE_STATE_CATERGORY_TOOLTIP:0 "$NAME$ est $CATEGORY|Y$.\n"
- wasteland:0 "Terrain vague"
+ PROVINCE_STATE_CATERGORY_TOOLTIP:1 "Catégorie : $CATEGORY|Y$"
+ PROVINCE_STATE_IMPASSABLE:1 "Infranchissable : §Rles troupes ne peuvent y accéder§!."
+ wasteland:0 "Région sauvage"
  city:0 "Région urbaine"
  large_city:0 "Région urbaine dense"
  metropolis:0 "Région de métropole"
@@ -55,7 +57,6 @@
  pastoral:0 "Région pastorale"
  OCCUPATION_BREAKDOWN:0 "Détail de l'occupation :"
  OCCUPATION_BREAKDOWN_ENTRY:0 "\n$COUNTRY|Y$ : $OCCUPATION|Y%0$"
- PROVINCE_STATE_IMPASSABLE:0 "§RRégion infranchissable. Les troupes ne peuvent y pénétrer.§!"
 
 
 
@@ -63,4 +64,3 @@
 ### TO BE ERASED  ###
 #####################
 # STATE_POPULATION_RECRUITABLE:0 "Effectifs recrutables : $VAL|*0G$"
- LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_TOTAL:0 "Total des aptes au service (État non national) : §R-$VAL|%$§!"

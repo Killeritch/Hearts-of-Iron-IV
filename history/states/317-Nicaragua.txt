@@ -2,9 +2,7 @@ state={
 	id=317
 	name="STATE_317"
 	resources={
-
-		chromium=1
-
+		chromium=1 # was: 1
 	}
 
 	state_category = town

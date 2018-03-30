@@ -349,16 +349,6 @@ soundeffect = {
 	max_audible = 3
 }
 soundeffect = {
-	name = ships_destroyer_damage_defend
-	falloff = "falloff_100"
-	sounds = {
-		#sound = ships_destroyer_damage_defend_01
-	} 
-	volume = 0.45
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
 	name = ships_destroyer_death
 	falloff = "falloff_100"
 	sounds = {
@@ -416,16 +406,6 @@ soundeffect = {
 	falloff = "falloff_distance"
 	sounds = {
 		sound = distance_ship_destroyer_damaged_attacking_01
-	} 
-	volume = 0.2
-	is3d = yes
-	max_audible = 3
-}
-soundeffect = {
-	name = distance_ships_destroyer_damage_defend
-	falloff = "falloff_distance"
-	sounds = {
-		#sound = distance_ships_destroyer_damage_defend_01
 	} 
 	volume = 0.2
 	is3d = yes
@@ -862,7 +842,6 @@ soundeffect = {
 soundeffect =
 {
 	name = select_army
-	volume = 1
 	sounds = {
 		sound = select_army01
 		sound = select_army02
@@ -876,7 +855,6 @@ soundeffect =
 soundeffect =
 {
 	name = select_vehicle
-	volume = 1
 	sounds = {
 		sound = select_vehicle01
 		sound = select_vehicle02
@@ -887,7 +865,6 @@ soundeffect =
 soundeffect =
 {
 	name = select_tank
-	volume = 1
 	sounds = {
 		sound = select_tank_01
 		sound = select_tank_02
@@ -910,7 +887,6 @@ soundeffect =
 soundeffect =
 {
 	name = infantry_move
-	volume = 1
 	sounds = {
 		sound = move_order_army_01
 		#sound = move_order_army_02
@@ -936,9 +912,15 @@ soundeffect =
 	name = "order_airwing_effect"
 	volume = 0.25
 	sounds = {
-		sound = order_airwing_01
-		sound = order_airwing_02
+		sound = select_aircraft_01
+		sound = select_aircraft_02
+		sound = select_aircraft_03
+		sound = select_aircraft_04
+		sound = select_aircraft_05
+		sound = select_aircraft_06
+		sound = select_aircraft_07
 	}
+	playbackrate_random_offset = { -15.0 15.0 }
 }
 soundeffect =
 {
@@ -953,15 +935,27 @@ soundeffect =
 	name = select_aircraft
 	volume = 0.25
 	sounds = {
-		sound = select_aircraft_01
-		sound = select_aircraft_02
-		sound = select_aircraft_03
+		sound = order_airwing_01
+		sound = order_airwing_02
+		sound = order_airwing_03
+		sound = order_airwing_04
+		sound = order_airwing_05
+		sound = order_airwing_06
 	}
+	playbackrate_random_offset = { -15.0 15.0 }
+}
+soundeffect = {
+	name = "air_mission_select"
+	volume = 0.5
+	sounds = {
+		sound = "air_mission_select_01"
+	}
+	max_audible = 2
+	max_audible_behaviour = fail
 }
 soundeffect =
 {
 	name = "order_invalid_effect"
-	volume = 1
 	sounds = {
 		sound = order_invalid
 	}
@@ -970,7 +964,7 @@ soundeffect =
 soundeffect =
 {
 	name = "orders_disband"
-	volume = 1
+	volume = 0.0
 	sounds = {
 		sound = disband_01
 		sound = disband_02
@@ -980,7 +974,6 @@ soundeffect =
 soundeffect =
 {
 	name = "nuke"
-	volume = 1
 	sounds = {
 		sound = nuke_01
 	}
@@ -993,7 +986,6 @@ soundeffect =
 soundeffect =
 {
 	name = "distance_nuke"
-	volume = 1
 	sounds = {
 		sound = distance_nuke_01
 	}
@@ -1076,12 +1068,12 @@ soundeffect = {
 		sound = infantry_rifle_attack10
 		sound = infantry_rifle_attack11
 	} 
-	max_audible = 10
+	max_audible = 6
 	delay_random_offset = { 0.0 0.15 }
 	playbackrate_random_offset = { -0.15 0.15 }
 	max_audible_behaviour = fail
 	is3d = yes
-	volume = 0.5
+	volume = 0.35
 }
 soundeffect = {
 	name = infantry_rifle_cartridge
@@ -1101,7 +1093,7 @@ soundeffect = {
 	volume_random_offset = { -0.05 0.15 }
 	max_audible_behaviour = fail
 	is3d = yes
-	volume = 0.18
+	volume = 0.09
 }
 soundeffect = {
 	name = infantry_mg_attack
@@ -1222,7 +1214,7 @@ soundeffect = {
 		sound = heavy_armour_fire_03
 		sound = heavy_armour_fire_04
 	} 
-	volume = 0.55
+	volume = 0.65
 	delay_random_offset = { 0.00 0.25 }
 	volume_random_offset = { -0.15 0.15}
 	playbackrate_random_offset = { -0.15 0.15 }
@@ -1237,7 +1229,7 @@ soundeffect = {
 		sound = medium_armour_fire_02
 		sound = medium_armour_fire_03
 	} 
-	volume = 0.55
+	volume = 0.65
 	delay_random_offset = { 0.00 0.25 }
 	volume_random_offset = { -0.15 0.15}
 	playbackrate_random_offset = { -0.15 0.15 }
@@ -1252,7 +1244,7 @@ soundeffect = {
 		sound = light_armour_fire_02
 		sound = light_armour_fire_03
 	} 
-	volume = 0.55
+	volume = 0.65
 	delay_random_offset = { 0.00 0.25 }
 	volume_random_offset = { -0.15 0.15}
 	playbackrate_random_offset = { -0.15 0.15 }
@@ -1307,7 +1299,7 @@ soundeffect = {
 	max_audible_behaviour = fail
 	playbackrate_random_offset = { -2.0 2.0 }
 	is3d = yes
-	volume = 0.65
+	volume = 0.45
 }
 soundeffect = {
 	name = airplane_light_fire
@@ -1429,7 +1421,7 @@ soundeffect = {
 	max_audible_behaviour = fail
 	playbackrate_random_offset = { -2.0 2.0 }
 	is3d = yes
-	volume = 0.5
+	volume = 0.35
 }
 soundeffect = {
 	name = distance_airplane_light_fire
@@ -1771,12 +1763,16 @@ soundeffect =
 soundeffect =
 {
 	name = "amb_battle_distant"
-	volume = 0.7
+	volume = 1.2
 	sounds = {
 		sound = amb_battle_distant_01
+		sound = amb_battle_distant_02
 
 	}
 	falloff = "falloff_100"
+	polyphony = 2
+	max_audible = 1
+	max_audible_behaviour = fail
 }
 soundeffect =
 {
@@ -1927,6 +1923,26 @@ soundeffect =
 }
 soundeffect =
 {
+	name = "alert_is_at_war_sound"
+	volume = 0.35
+	sounds = {
+		sound = "low_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_border_conflict_sound"
+	volume = 0.35
+	sounds = {
+		sound = "low_alert_01"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
 	name = "alert_deployment_ready_sound"
 	volume = 0.35
 	sounds = {
@@ -1968,6 +1984,26 @@ soundeffect =
 soundeffect =
 {
 	name = "alert_pick_new_idea_sound"
+	volume = 0.40 
+	sounds = {
+		sound = "select_new_alert"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_decision_new_sound"
+	volume = 0.40 
+	sounds = {
+		sound = "select_new_alert"
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
+soundeffect =
+{
+	name = "alert_decision_timeout_sound"
 	volume = 0.40 
 	sounds = {
 		sound = "select_new_alert"
@@ -2317,4 +2353,70 @@ soundeffect =
 	}
 	max_audible = 1
 	max_audible_behaviour = fail
+}
+######### TRAITS GUI
+sound = {
+	name = "traits_ui_click_01"
+	file = "menu/traits_ui_click_01.wav"
+}
+sound = {
+	name = "traits_ui_over_01"
+	file = "menu/traits_ui_over_01.wav"
+}
+
+######### TRAITS GUI
+
+soundeffect = {
+	name = "traits_ui_click"
+	volume = 0.9
+	sounds = {
+		sound = "traits_ui_click_01"
+	}
+}
+soundeffect = {
+	name = "traits_ui_over"
+	volume = 0.2
+	max_audible = 1
+	sounds = {
+		sound = "traits_ui_over_01"
+	}
+}
+
+######### DECISIONS GUI
+sound = {
+	name = "decisions_ui_checkbox_01"
+	file = "menu/decisions_ui_checkbox_01.wav"
+}
+sound = {
+	name = "decisions_ui_tab_01"
+	file = "menu/decisions_ui_tab_01.wav"
+}
+sound = {
+	name = "decisions_ui_button_01"
+	file = "menu/decisions_ui_button_01.wav"
+}
+
+######### DECISIONS GUI
+
+soundeffect = {
+	name = "decisions_ui_checkbox"
+	volume = 0.7
+	sounds = {
+		sound = "decisions_ui_checkbox_01"
+	}
+}
+soundeffect = {
+	name = "decisions_ui_tab"
+	volume = 0.55
+	max_audible = 1
+	sounds = {
+		sound = "decisions_ui_tab_01"
+	}
+}
+soundeffect = {
+	name = "decisions_ui_button"
+	volume = 0.7
+	sounds = {
+		sound = "decisions_ui_button_01"
+	}
 }

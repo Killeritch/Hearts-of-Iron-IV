@@ -43,6 +43,14 @@ adjacency_rule
 	}
 	
 	required_provinces = { 12049 1155 4073 9947 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = SUEZ_CANAL_BLOCKED
+			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
 		
 	icon = 12049
 	offset = { 1 0 -6 }
@@ -163,6 +171,14 @@ adjacency_rule
 	}
 	
 	required_provinces = { 4624 7617 }
+
+	is_disabled = {
+		OR = {
+			has_global_flag = PANAMA_CANAL_BLOCKED
+			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+		}
+		tooltip = disable_canal_tt
+	}
 		
 	icon = 7617
 	offset = { -3 0 -2 }

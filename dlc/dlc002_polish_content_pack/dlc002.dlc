@@ -3,6 +3,6 @@ archive = "dlc/dlc002_polish_content_pack/dlc002.zip"
 steam_id = "460600"
 affects_checksum = no
 affects_compatability = no
-checksum="732fea910cb49e18259ff361ae5aac41"
+checksum = "d2dd09c2d12e1ef0e173fc55e82e8894"
 third_party_content = no
 category = "content_pack"

@@ -9,6 +9,11 @@ set_technology = {
 
 1939.1.1 = {
 
+	add_to_war = {
+		targeted_alliance = JAP
+		enemy = CHI
+	}
+	
 	add_political_power = 1198
 	
 	#generic focuses
@@ -41,7 +46,7 @@ set_technology = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -80,7 +85,7 @@ set_politics = {
 create_country_leader = {
 	name = "Prince Demchugdongrub"
 	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	picture = "GFX_portrait_men_demchugdongrub"
 	expire = "1965.1.1"
 	ideology = rexism
 	traits = {

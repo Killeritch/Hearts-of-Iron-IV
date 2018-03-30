@@ -3,7 +3,8 @@
 oob = "HOL_1936"
 
 set_research_slots = 3
-
+set_stability = 0.8
+set_war_support = 0.1
 
 set_technology = {
 	infantry_weapons = 1
@@ -90,8 +91,8 @@ if = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -124,7 +125,7 @@ set_politics = {
 }
 
 set_convoys = 500
-set_national_unity = 0.75
+set_stability = 0.75
 
 create_country_leader = {
 	name = "Dirk Jan de Geer"
@@ -162,7 +163,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Hendrikus Colijn"
 	desc = "POLITICS_HENDRIKUS_COLJIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	picture = "GFX_portrait_holland_hendrikus_colijn"
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
@@ -173,8 +174,12 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Petrus Wilhelmus Best"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { panzer_leader fortress_buster }
+	traits = { armor_officer fortress_buster }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_navy_leader = {

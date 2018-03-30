@@ -479,7 +479,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
-			#TODO_WTT_CD maybe something sexier...
 		}
 	}
 
@@ -1227,16 +1226,12 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			is_subject = no
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
@@ -1387,9 +1382,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_stability = 0.1
@@ -1422,9 +1414,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = MAN_expand_the_imperial_guards_tt
@@ -1578,9 +1567,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
@@ -1754,7 +1740,6 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "People's Volunteers Division"
-					is_locked = yes
 					priority = 2
 					division_names_group = MAN_INF_01
 					regiments = {
@@ -1955,7 +1940,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		#WTT_TODO_CD: check if this actually works as supposed to
 			set_autonomy = { target = ROOT autonomy_state = autonomy_free }
 			if = {
 				limit = {
@@ -1971,7 +1955,7 @@ focus_tree = {
 			}
 			declare_war_on = {
 				target = JAP
-				type = puppet_focus
+				type = puppet_wargoal_focus
 			}
 			hidden_effect = {
 				news_event = { id = wtt_news.48 days = 2 }
@@ -2134,12 +2118,30 @@ focus_tree = {
 			hidden_effect = {
 				news_event = { id = wtt_news.44 days = 2 }
 				kill_country_leader = yes 
-				create_country_leader = {
-					name = "Xuantong"
-					picture = "GFX_portrait_man_henry_pu_yi_emperor"
-					expire = "1960.1.1"
-					ideology = rexism
-					traits = {
+				if = {
+					limit = {
+						has_government = fascism
+					}
+					create_country_leader = {
+						name = "Xuantong"
+						picture = "GFX_portrait_man_henry_pu_yi_emperor"
+						expire = "1960.1.1"
+						ideology = rexism
+						traits = {
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_government = neutrality
+					}
+					create_country_leader = {
+						name = "Xuantong"
+						picture = "GFX_portrait_man_henry_pu_yi_emperor"
+						expire = "1960.1.1"
+						ideology = despotism
+						traits = {
+						}
 					}
 				}
 			}

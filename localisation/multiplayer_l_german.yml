@@ -118,7 +118,7 @@
  SERVER_BOOKMARK:0 "Lesezeichen: $BOOKMARK$"
  SERVER_START_DATE:0 "Startdatum: $DATE$"
  SERVER_LAUNCHING_MP:0 "*** MULTIPLAYER-Spiel wird gestartet ***"
- OOS_CHECKS:0 "§GServer setzt folgende OOS-Checks: $CHECKS|Y$."
+ OOS_CHECKS:0 "§GServer setzt folgende OOS-Checks: $CHECKS|Y$.§!"
  SYSTEM_PLAYER_LOST:0 "§G§Y$NAME$§! hat die Verbindung verloren.§!"
  SYSTEM_PLAYER_ARRIVED:0 "§G§Y$NAME$§! ist dem Spiel beigetreten.§!"
  YOUBANNED_TITLE:0 "Vom Server ausgeschlossen"
@@ -134,3 +134,4 @@
  MATCHMAKING_SERVER_DENIED:0 "Zeitüberschreitung bei der Verbindung"
  MULTIPLAYER_RESYC:0 "Neu synchronisieren"
  FE_CONFIRM:0 "Bestätigen"
+ FAILED_TO_CONNECT:0 "Verbindung fehlgeschlagen"

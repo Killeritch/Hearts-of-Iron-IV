@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Division d'Infanterie"		# Same for "Active" and "Reserve" Infantry Divisions
+	division_names_group = BEL_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -18,6 +19,7 @@
 }
 division_template = {
 	name = "Division de Cavalerie"  	# Cavalry Division
+	division_names_group = BEL_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -34,6 +36,7 @@ division_template = {
 }
 division_template = {
 	name = "Cavalerie Motorisée"  		# Motorized Cavalry Brigade
+	division_names_group = BEL_MOT_01
 										# Note: motorized cavalry. Most sources have them truck-equipped.
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -44,7 +47,7 @@ division_template = {
 }
 division_template = {
 	name = "Division Coloniale"			# Colonial militia, lower experience, equipment
-
+	division_names_group = BEL_GAR_01 	#TODO make separate namelist for colonial divisions
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -60,8 +63,11 @@ division_template = {
 units = {
 	##### L'Armée Belge #####
 	# I Corps d'Armée
-	division= {	
-		name = "4ème Division d'Infanterie"
+	division= {	# "4ème Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
 		location = 9574  # Hoeselt
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
@@ -70,8 +76,11 @@ units = {
 	}
 
 	# II Corps d'Armée
-	division= {	
-		name = "6ème Division d'Infanterie"
+	division= {	# "6ème Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
 		location = 13068  # Leuven
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
@@ -80,16 +89,22 @@ units = {
 	}
 
 	# III Corps d'Armée
-	division= {	
-		name = "2ème Division d'Infanterie"
+	division= {	# "2ème Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
 		location = 11519  # Liege
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "3ème Division d'Infanterie"
+	division= {	# "3ème Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
 		location = 11519  # Liege
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
@@ -98,8 +113,11 @@ units = {
 	}
 
 	# IV Corps d'Armée
-	division= {	
-		name = "5ème Division d'Infanterie"
+	division= {	# "5ème Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
 		location = 516  #Brussels
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
@@ -108,16 +126,22 @@ units = {
 	}
 
 	# Corps d'Cavalerie
-	division= {	
-		name = "1ère Division d'Infanterie"
+	division= {	# "1ère Division d'Infanterie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 11519  # Liege
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "2ème Division de Cavalerie"
+	division= {	# "2ème Division de Cavalerie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
 		location = 13068  # Leuven
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2
@@ -134,14 +158,20 @@ units = {
 	}
 
 	# Groupement K
-	division= {	
-		name = "1ère Division de Chasseurs Ardennais"
+	division= {	# "1ère Division de Chasseurs Ardennais"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 101
+		}
 		location = 11407  # St Hubert
 		division_template = "Division d'Infanterie"		# elite bicycle infantry
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "1ère Division de Cavalerie"
+	division= {	# "1ère Division de Cavalerie"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 11407  # St Hubert
 		division_template = "Division de Cavalerie"
 		start_experience_factor = 0.2

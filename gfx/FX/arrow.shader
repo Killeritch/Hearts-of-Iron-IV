@@ -12,7 +12,7 @@ PixelShader =
 			Index = 0
 			MagFilter = "Linear"
 			MinFilter = "Linear"
-			MipFilter = "Linear"
+			MipFilter = "Linear" 
 			AddressU = "Clamp"
 			AddressV = "Clamp"
 		}
@@ -40,15 +40,19 @@ PixelShader =
 
 VertexStruct VS_INPUT
 {
-    float3 vPosition  : POSITION;
-	float2 vTexCoord  : TEXCOORD0;
+    float3 vPosition	: POSITION;
+	float2 vTexCoord	: TEXCOORD0;
+	float3 vTangent		: TEXCOORD1;
 };
-
+ 
 VertexStruct VS_OUTPUT
 {
-    float4 vPosition : PDX_POSITION;
-    float2 vTexCoord : TEXCOORD0;
-	float3 vPos		 : TEXCOORD1;
+    float4 vPosition		: PDX_POSITION;
+    float2 vTexCoord		: TEXCOORD0;
+	float3 vPos				: TEXCOORD1;
+	float3 vWorldSpacePos	: TEXCOORD2;
+	float3 vTangent			: TEXCOORD3;
+	float3 vBitangent		: TEXCOORD4;
 };
 
 
@@ -56,7 +60,7 @@ ConstantBuffer( 1, 32 )
 {
 	float4x4 ViewProj;
 	float3 vProgress_MoveArmy;
-	float4 vDesaturationLengths;
+	float4 vDesaturationLengths; 
 	float fOffsetX;
 };
 
@@ -64,7 +68,7 @@ ConstantBuffer( 1, 32 )
 VertexShader =
 {
 	MainCode VertexShader
-	[[
+	[[ 
 		VS_OUTPUT main(const VS_INPUT v )
 		{
 		 	VS_OUTPUT Out;
@@ -74,8 +78,12 @@ VertexShader =
 			pos.x += fOffsetX;
 			Out.vPos = pos.xyz;
 		   	Out.vPosition  = mul( ViewProj, pos );	
+			Out.vWorldSpacePos = Out.vPosition.xyz;
 			Out.vTexCoord = v.vTexCoord;
 		
+			Out.vTangent = v.vTangent; 
+			Out.vBitangent = normalize( cross( Out.vTangent, float3( 0, 1.0f, 0 ) ) ); 
+
 			return Out;
 		}
 		
@@ -87,9 +95,21 @@ PixelShader =
 {
 	MainCode PixelShader
 	[[
+
+		float3 CalculateLighting( float3 prepos, float4 vScreenCoord, float3 vNormal, float4 vColor )
+		{
+			// Using the general lighting system makes the arrows looks terrible,
+			// especially at night. Let's use much simplified lighting against some static light.
+			float3 diffuseLight = vec3(0.0); 
+			float3 vLightSourceDirection = normalize( float3( 0.4, -1, -0.55 ) );
+			float NdotL = dot( vNormal, -vLightSourceDirection );
+			NdotL = clamp( NdotL + 0.55f, 0.0f, 1.0f );
+			diffuseLight = lerp( vColor.xyz, vec3( 1 ), 1.0f - NdotL );
+			return diffuseLight;
+		}
+
 		float4 main( VS_OUTPUT v ) : PDX_COLOR
 		{
-			//return float4( 1, 0, 0, 0.75f );
 		 	clip( vProgress_MoveArmy.x - v.vTexCoord.y );
 			clip( v.vTexCoord.y - vProgress_MoveArmy.z );
 		
@@ -127,26 +147,29 @@ PixelShader =
 					lerp( NormalBodyPass, NormalArrowPass, vArrow ),
 					vPassed );
 			vNormal = normalize( vNormal );
-			
-			//Calculate Specular
-			float4 SpecBody = tex2D( SpecularMap, float2( vBodyV, v.vTexCoord.x * 0.5f ) );
-			float4 SpecBodyPass = tex2D( SpecularMap, float2( vBodyV, 0.5f + v.vTexCoord.x * 0.5f ) );
-			float4 SpecArrow = tex2D( SpecularMap, float2( vArrowV, v.vTexCoord.x * 0.5f ) );
-			float4 SpecArrowPass = tex2D( SpecularMap, float2( vArrowV, 0.5f + v.vTexCoord.x * 0.5f ) );					
-			float4 vSpecColor = lerp(
-					lerp( SpecBody, SpecArrow, vArrow ),
-					lerp( SpecBodyPass, SpecArrowPass, vArrow ),
-					vPassed );
-				
+
+			float3x3 TBN = Create3x3( v.vTangent, v.vBitangent, float3( 0, 1, 0 ) );
+			vNormal = normalize( mul( TBN, vNormal ) );
+			 
+			//Calculate Specular 
+			//float4 SpecBody = tex2D( SpecularMap, float2( vBodyV, v.vTexCoord.x * 0.5f ) );
+			//float4 SpecBodyPass = tex2D( SpecularMap, float2( vBodyV, 0.5f + v.vTexCoord.x * 0.5f ) );
+			//float4 SpecArrow = tex2D( SpecularMap, float2( vArrowV, v.vTexCoord.x * 0.5f ) );
+			//float4 SpecArrowPass = tex2D( SpecularMap, float2( vArrowV, 0.5f + v.vTexCoord.x * 0.5f ) );					
+			//float4 vSpecColor = lerp(
+			//		lerp( SpecBody, SpecArrow, vArrow ),
+			//		lerp( SpecBodyPass, SpecArrowPass, vArrow ),
+			//		vPassed );
+	
 			//Lightning
-			//OutColor.rgb = CalculateLighting( OutColor.rgb, vNormal );
+			OutColor.rgb = CalculateLighting( v.vWorldSpacePos, float4( 0,0,0,0 ), vNormal, OutColor );
 			
-			float vFadeLength = vProgress_MoveArmy.z + 2.0f;
+			float vFadeLength = vProgress_MoveArmy.z + 0.5f;
 			float vAlpha = v.vTexCoord.y - vFadeLength;
 			vAlpha = vAlpha * saturate( 1.0f - ( vAlpha/-vFadeLength ) );
+			vAlpha = OutColor.a * saturate( vAlpha ) * 0.75f; 
 			
-			return float4( ToLinear(OutColor.rgb), OutColor.a * saturate( vAlpha ) * 0.85f );
-			//return float4( ComposeSpecular( OutColor.rgb, CalculateSpecular( v.vPos, vNormal, ( vSpecColor.a * 2.0f ) ) ), OutColor.a );
+			return float4( ToLinear(OutColor.rgb), vAlpha );
 		}
 		
 	]]

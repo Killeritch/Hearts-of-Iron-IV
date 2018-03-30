@@ -44,7 +44,7 @@ set_technology = {
 
 set_research_slots = 4
 set_convoys = 50
-set_national_unity = 0.7
+set_stability = 0.75
 
 1939.1.1 = {
 
@@ -100,8 +100,8 @@ set_national_unity = 0.7
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -170,8 +170,8 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-		stalins_puppet
-		exiled
+		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
+		exiled # He left in 1933 so he should still be exiled
 	}
 }
 

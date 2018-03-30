@@ -67,10 +67,17 @@ check_has_focus_tree_to_switch_to_fascism = {
 	NOT = { tag = GER }
 	NOT = { tag = MAN }
 	NOT = { tag = ITA }
-	NOT = {
+	OR = {
+		NOT = {
+			AND = {
+				tag = SAF
+				has_dlc = "Together for Victory"
+			}
+		}
 		AND = {
 			tag = SAF
 			has_dlc = "Together for Victory"
+			has_completed_focus = SAF_south_africa_first
 		}
 	}
 	NOT = {
@@ -197,5 +204,13 @@ is_controlled_by_ROOT_or_subject = {
 			tag = ROOT
 			is_subject_of = ROOT
 		}
+	}
+}
+
+#Country scope
+is_free_or_subject_of_root = {
+	OR = {
+		is_subject = no
+		is_subject_of = ROOT
 	}
 }

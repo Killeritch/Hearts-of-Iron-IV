@@ -1,8 +1,9 @@
 ﻿l_french:
+ #THIS FILE SHOULD NOT BE TRANSLATED!! ### Trop tard, c'est fait !!
  debug_event_scopes:0 ""
- print_scope_names:0 "Étendues - Racine : [Root.GetName] Depuis : [From.GetName] Préc. : [Prev.GetName]"
- faction_created_names:0 "Faction créée - Racine : [Root.GetName] Préc. : [Prev.GetName]"
- faction_joined_names:0 "Faction rejointe - Racine : [Root.GetName] Préc. : [Prev.GetName]"
+ print_scope_names:0 "Scopes : Root = [Root.GetName] / From = [From.GetName] / Prev = [Prev.GetName]"
+ faction_created_names:0 "Faction créée : Root = [Root.GetName] / Prev = [Prev.GetName]"
+ faction_joined_names:0 "Faction intégrée : Root = [Root.GetName] / Prev = [Prev.GetName]"
  test.1.t:0 "Événement test 1"
  test.1.d:0 "Événement test 1 [Root.GetNameDef] £army_experience  £navy_experience"
  test.1.a:0 "Événement test 1 [GER.GetName]"
@@ -10,7 +11,7 @@
  test.2.a:0 "Événement test 2"
  test.3.t:0 "Événement test 3"
  test.3.a:0 "Événement test 3"
- test.4.t:0 "Test Event 4"
- test.4.d:0 "Scopes - Root: [Root.GetName] From: [From.From.GetName]  Prev: [Prev.GetName]"
- test.4.a:0 "Test Event 4"
+ test.4.t:0 "Événement test 4"
+ test.4.d:0 "Scopes : Root = [Root.GetName] From = [From.From.GetName]  Prev = [Prev.GetName]"
+ test.4.a:0 "Événement test 4"
  TEST_FEST_FEMTEN:0 "lalallalalalal"

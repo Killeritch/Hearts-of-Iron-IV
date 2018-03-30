@@ -687,23 +687,23 @@ GER_PAR_01 =
 
 	division_types = { "paratrooper"  }
 
-	fallback_name = "%d. Fallschirm-Jäger-Division"
+	fallback_name = "%d. Fallschirmjäger-Division"
 
 	# Names with numbers (only one number per entry)
 	ordered =
 	{
-		1 = { "%d. Fallschirm-Jäger-Division" }
-		2 = { "%d. Fallschirm-Jäger-Division" }
-		3 = { "%d. Fallschirm-Jäger-Division" }
-		4 = { "%d. Fallschirm-Jäger-Division" }
-		5 = { "%d. Fallschirm-Jäger-Division" }
-		6 = { "%d. Fallschirm-Jäger-Division" }
-		7 = { "%d. Fallschirm-Jäger-Division" }
-		8 = { "%d. Fallschirm-Jäger-Division" }
-		9 = { "%d. Fallschirm-Jäger-Division" }
-		10 = { "%d. Fallschirm-Jäger-Division" }
-		11 = { "%d. Fallschirm-Jäger-Division" }
-		20 = { "%d. Fallschirm-Jäger-Division" }
+		1 = { "%d. Fallschirmjäger-Division" }
+		2 = { "%d. Fallschirmjäger-Division" }
+		3 = { "%d. Fallschirmjäger-Division" }
+		4 = { "%d. Fallschirmjäger-Division" }
+		5 = { "%d. Fallschirmjäger-Division" }
+		6 = { "%d. Fallschirmjäger-Division" }
+		7 = { "%d. Fallschirmjäger-Division" }
+		8 = { "%d. Fallschirmjäger-Division" }
+		9 = { "%d. Fallschirmjäger-Division" }
+		10 = { "%d. Fallschirmjäger-Division" }
+		11 = { "%d. Fallschirmjäger-Division" }
+		20 = { "%d. Fallschirmjäger-Division" }
 		
 		# sadly had to leave out 7. Flieger-Division, the original name of 1. FJD, as it wouldn't be worth the interface clutter to have an alternate name list with one division in it. Put it first in the name list despite formally receiving the 1. FJD designation after 2. Fallschirm-Division was formed, so at least it gets built first. 
 		# considered making 5th Division and above actually part of the infantry list since historically they had almost no jump trained personnel, but since this would conflict with players who might invest in a larger than historical airborne arm, decided against this.

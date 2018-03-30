@@ -3,7 +3,8 @@
 oob = "ITA_1936"
 
 set_research_slots = 4
-
+set_stability = 0.6
+set_war_support = 0.7
 add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
@@ -127,8 +128,8 @@ set_technology = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -137,13 +138,12 @@ set_technology = {
 		concentrated_industry3 = 1
 	}
 	
-	set_national_unity = 0.8
+	set_stability = 0.8
 	GER = { add_to_faction = ITA }
 }
 
 
 set_convoys = 200
-set_national_unity = 0.6
 
 set_politics = {
 
@@ -181,62 +181,116 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Ferruccio Parri"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "GFX_portrait_italy_ferruccio_parri"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Palmiro Togliatti"
+	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+	picture = "GFX_portrait_ita_palmiro_togliatti"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		
+	}
+}
+
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Emilio De Bono"
 	picture = "portrait_italy_emilio_de_bono.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard politically_connected trait_cautious }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Ugo Cavallero"
 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
-	traits = {  old_guard }
-	skill = 1
+	traits = {  old_guard trait_cautious career_officer }
+	skill = 2
 	rank = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Giovanni Messe"
 	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = {  panzer_leader }
+	traits = {  armor_officer war_hero }
 	skill = 4
 	rank = 1
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_corps_commander = {
 	name = "Sebastiano Visconti Prasca"
 	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
-	traits = {  }
+	traits = { career_officer inflexible_strategist }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Ubaldo Soddu"
 	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
-	traits = {  }
+	traits = { career_officer trait_cautious }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Italo Balbo"
 	picture = "portrait_italy_italo_balbo.dds"
-	traits = {  }
+	traits = { career_officer politically_connected }
 	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Rodolfo Graziani"
 	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { offensive_doctrine }
+	traits = { offensive_doctrine politically_connected trait_cautious }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_navy_leader = {

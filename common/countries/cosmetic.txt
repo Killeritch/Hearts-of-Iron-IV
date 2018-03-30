@@ -163,6 +163,7 @@ MAN_restored = {
 	color_ui = rgb { 224 139 5 }
 }
 JAP_showa_restoration = {
+	color = rgb { 230 230 230 }
 }
 
 GER_greater_german_reich = {

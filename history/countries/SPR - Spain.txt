@@ -48,7 +48,7 @@ set_politics = {
 }
 
 set_convoys = 150
-set_national_unity = 0.5
+set_stability = 0.5
 
 1939.1.1 = {
 
@@ -101,8 +101,8 @@ set_national_unity = 0.5
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -186,6 +186,10 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { defensive_doctrine }
 	skill = 2
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
 }
 
 

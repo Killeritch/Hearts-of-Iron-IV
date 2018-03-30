@@ -76,10 +76,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -119,10 +115,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_country_leader = {
@@ -170,10 +162,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			remove_ideas = PRC_power_struggles
 		}
@@ -209,10 +197,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
@@ -259,10 +243,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			SOV = { country_event = generic.2 }
 		}
@@ -294,10 +274,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -333,10 +309,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			remove_ideas = PRC_power_struggles
 		}
@@ -368,12 +340,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_stability = 0.1
+			add_ideas = PRC_maoism
 		}
 	}
 
@@ -407,13 +376,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
-			create_faction = PRC_mao_faction
+			if = {
+				limit = {
+					is_in_faction = no
+				}
+				create_faction = PRC_mao_faction
+			}
 		}
 	}
 
@@ -679,7 +649,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			CHI = { add_stability = -0.05 } #TODO_WTT_CD: opinion modifier? Buff commies instead? Can't just hurt Nationalists.
+			CHI = { add_stability = -0.05 } 
 		}
 	}
 
@@ -789,16 +759,24 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-
+			622 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 
 		completion_reward = {
 			622 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
+				add_extra_state_shared_building_slots = 1
 			}
 		}
 	}
@@ -903,9 +881,43 @@ focus_tree = {
 		}
 
 		bypass = {
-			AND = {
-				is_in_faction = yes
-				not = { is_in_faction_with = CHI } #in any other faction that doesn't include CHI
+			OR = {
+				AND = {
+					is_in_faction = yes
+					not = { is_in_faction_with = CHI } #in any other faction that doesn't include CHI
+				}
+				AND = {
+					YUN = {
+						OR = {
+							exists = no
+							is_in_faction_with = ROOT
+						}
+					}
+					GXC = {
+						OR = {
+							exists = no
+							is_in_faction_with = ROOT
+						}
+					}
+					SHX = {
+						OR = {
+							exists = no
+							is_in_faction_with = ROOT
+						}
+					}
+					XSM = {
+						OR = {
+							exists = no
+							is_in_faction_with = ROOT
+						}
+					}
+					SIK = {
+						OR = {
+							exists = no
+							is_in_faction_with = ROOT
+						}
+					}
+				}
 			}
 		}
 
@@ -1209,10 +1221,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = PRC_peoples_war

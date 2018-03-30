@@ -66,8 +66,8 @@ set_country_flag = monroe_doctrine
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -191,6 +191,10 @@ create_field_marshal = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	traits = { defensive_doctrine }
 	skill = 3
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -198,6 +202,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
 	traits = { urban_assault_specialist fortress_buster }
 	skill = 3
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
 }
 
 create_navy_leader = {

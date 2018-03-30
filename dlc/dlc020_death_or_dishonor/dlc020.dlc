@@ -1,0 +1,8 @@
+name = "Death or Dishonor"
+archive = "dlc/dlc020_death_or_dishonor/dlc020.zip"
+steam_id = "584140"
+affects_checksum = yes
+affects_compatability = no
+checksum = "ba65f1fad03f4a09a3bb1f8d810cee90"
+third_party_content = no
+category = "expansion"

@@ -73,7 +73,7 @@ set_technology = {
 		complete_national_focus = YUG_fighter_license
 		complete_national_focus = YUG_rare_minerals_exploitation
 		complete_national_focus = YUG_traditional_values
-		complete_national_focus = YUG_the_yugoslavian_nation
+		complete_national_focus = YUG_greater_yugoslavia
 		complete_national_focus = YUG_small_arms 
 		complete_national_focus = YUG_domestic_artillery_production
 		complete_national_focus = YUG_expand_the_serbian_shipyards
@@ -127,7 +127,7 @@ set_technology = {
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		oil_processing = 1
 		construction1 = 1
 		concentrated_industry = 1
 	}
@@ -190,7 +190,7 @@ set_politics = {
 	}
 
 }
-set_national_unity = 0.6
+set_stability = 0.6
 
 create_country_leader = {
 	name = "Prince Paul"
@@ -242,6 +242,10 @@ create_corps_commander = {
 	traits = { trickster  }
 	skill = 3
 
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -250,6 +254,10 @@ create_corps_commander = {
 	traits = { urban_assault_specialist }
 	skill = 3
 	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -257,6 +265,10 @@ create_field_marshal = {
 	gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
 	traits = {  }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_field_marshal = {
@@ -264,6 +276,10 @@ create_field_marshal = {
 	gfx = GFX_Portrait_yugoslavia_milutin_nedic
 	traits = { thorough_planner }
 	skill = 3	
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -271,6 +287,10 @@ create_corps_commander = {
 	gfx = GFX_Portrait_yugoslavia_petar_kosic
 	traits = {  }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_navy_leader = {

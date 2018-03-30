@@ -189,7 +189,10 @@ guiTypes = {
 			position = { x = 0 y = 130 }
 			size = { width = 440 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 13 left = 13 bottom = 15 right = 25}			
+			vertical_scroll_step = 50
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+			margin = { top = 13 left = 13 bottom = 15 right = 25}
 			
 			background = {
 				name = "Background"
@@ -205,7 +208,7 @@ guiTypes = {
 				name = "item_grid"
 				position = { x = 1 y = 5 }
 				size = { width = 100% height = 100%% }
-				slotsize = { width = 500 height = 52 }
+				slotsize = { width = 500 height = 1 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
 			}	
@@ -329,6 +332,15 @@ guiTypes = {
 			clicksound = click_close
 		}
 		
+		#todo remove, text icons are not being displayed unless they are in gui
+		buttonType = {
+			name = "temp"
+			position = { x = -402 y = 9 }
+			quadTextureSprite ="GFX_backhoe_icon_small"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+		}
+		
 		iconType ={
 			name ="tutorial_glow"
 			spriteType = "GFX_tutorial_building_icon_glow"
@@ -368,6 +380,7 @@ guiTypes = {
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_construction_entry_bg"
+			pdx_tooltip = "PRODUCTION_DRAG_N_DROP"
 		}
 
 		buttonType = {
@@ -583,6 +596,54 @@ guiTypes = {
 			name = "picture"
 			position = { x = 210 y = 25 }
 			spriteType = "GFX_traded_factories_icon"
+			centerposition = yes
+			
+			allwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 254 y = 17 }
+			textureFile = ""
+			font = "hoi_18b"
+			text = "-"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+			
+			allwaystransparent = yes
+		}		
+	}
+
+	containerWindowType = {
+		name = "static_project_factories_entry"
+		position = { x=0 y=0 }
+		size = { width = 400 height = 52 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_construction_special_entry_bg"
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 20 y = 16 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "CONSTRUCTION_FACTORIES_PROJECTS_LABEL"
+			maxWidth = 250
+			maxHeight = 20
+			format = left
+			
+			allwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "picture"
+			position = { x = 210 y = 26}
+			spriteType = "GFX_special_project_icon"
 			centerposition = yes
 			
 			allwaystransparent = yes

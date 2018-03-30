@@ -31,7 +31,7 @@ WTT_can_ROOT_select_state_support_decision_state = {
 			}
 			controls_state = PREV
 		}
-		CONTROLLER = { NOT = { has_war_with = ROOT } }		
+		CONTROLLER = { NOT = { has_war_with = ROOT } }
 	}
 	if = {
 		limit = {
@@ -69,7 +69,6 @@ WTT_has_politcal_support_points_17 = {
 WTT_is_potential_political_struggle_state = {
 	OR = {
 		has_variable = state_political_support_value
-		#TODO_WTT_CD update when we have settled on which states to include		
 		#state = 283 # Gansu
 		#state = 287 # Taklamakan
 		#state = 325 # Yunnan
@@ -150,5 +149,16 @@ WTT_not_china_leader_refused_to_give_up_national_leadership = {
 	custom_trigger_tooltip = {
 		tooltip = WTT_china_leader_refused_to_give_up_national_leadership
 		NOT = { has_global_flag = wtt_war_over_national_leadership }
+	}
+}
+
+#State scope
+WTT_is_active_political_struggle_state = {
+	WTT_is_potential_political_struggle_state = yes
+	OR = {
+		is_controlled_by = event_target:WTT_current_china_leader
+		CONTROLLER = { is_subject_of = event_target:WTT_current_china_leader }
+		#Own state points
+		CONTROLLER = { has_country_flag = wtt_political_struggle }
 	}
 }

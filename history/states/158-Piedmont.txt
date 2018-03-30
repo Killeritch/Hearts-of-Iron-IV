@@ -6,10 +6,10 @@ state={
 	
 	state_category = metropolis
 	resources={
-		steel=40
-		aluminium=28
-		chromium = 4
-		tungsten = 2
+		steel=24 # was: 40
+		aluminium=16 # was: 28
+		chromium = 2 # was: 4
+		tungsten = 1 # was: 2
 	}
 
 	history={

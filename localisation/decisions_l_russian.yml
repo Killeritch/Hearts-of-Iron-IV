@@ -1,0 +1,12 @@
+﻿l_russian:
+ DECISIONVIEW_TITLE:0 "События и решения"
+ DECISIONSVIEW_EVENT_HEADER:0 "События"
+ POPUP_NEWS:0 "Всплывающие новости"
+ POPUP_EVENTS:0 "Всплывающие события"
+ CATEGORY_COLLAPSE_DESC:0 "§GЩелкните§!, чтобы свернуть"
+ CATEGORY_EXPAND_DESC:0 "§GЩелкните§!, чтобы развернуть"
+ DECISION_KEEP_NOTIFIED:0 "§HОповещения§!\n\n§GЩелкните§!, чтобы §Rне получать оповещения§! о том, когда можно принять решение.\n"
+ DECISION_NOT_KEEP_NOTIFIED:0 "§HОповещения§!\n\n§GЩелкните§!, чтобы §Gполучать оповещения§! о том, когда можно принять решение.\n"
+ TAKE_DECISION_HEADER:0 "§HПринять решение§!\n\n"
+ DECISION_COST_DESC:0 "Стоимость принятия решения: £pol_power $VAL|H0$"
+ DECISION_COST_NOT_ENOUGH:0 "Стоимость принятия решения: £pol_power $VAL|HR0$"

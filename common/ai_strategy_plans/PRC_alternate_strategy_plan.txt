@@ -11,7 +11,7 @@ PRC_alternate_plan_1 = {
 			}
 		}
 		JAP = {
-			has_government = communist
+			has_government = communism
 		}
 	}
 	abort = {

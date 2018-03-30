@@ -5,7 +5,7 @@ state={
 	manpower = 9069000
 	state_category = large_city
 	resources={
-		chromium=88
+		chromium=52 # was: 88
 	}
 
 	history={

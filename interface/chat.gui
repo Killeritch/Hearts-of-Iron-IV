@@ -216,7 +216,7 @@ guiTypes = {
 
 		iconType = { 
 			name = "small_flag_frame_thin"
-			position {x= -66 y = -3}
+			position = {x= -66 y = -3}
 			spriteType = "GFX_small_flag_frame_thin"
 			Orientation = "UPPER_LEFT"			
 		}		

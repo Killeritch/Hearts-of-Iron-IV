@@ -7,8 +7,8 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=116
-		aluminium=32
+		chromium=70 # was: 116
+		aluminium=16 # was: 32
 	}
 
 	history={

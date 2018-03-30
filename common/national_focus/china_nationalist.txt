@@ -2042,7 +2042,9 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {
+				has_idea = CHI_hyper_inflation_5
+			}
 		}
 
 		bypass = {

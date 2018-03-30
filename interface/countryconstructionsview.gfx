@@ -60,6 +60,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_special_project_icon"
+		textureFile = "gfx//interface//projects_factories_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_consumer_goods_icon"
 		textureFile = "gfx//interface//consumer_goods_icon.dds"
 	}
@@ -188,5 +193,9 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 
+	spriteType = {
+		name = "GFX_backhoe_icon_small"
+		textureFile = "gfx/interface/backhoe_icon_small.dds"
+	}
 	
 }

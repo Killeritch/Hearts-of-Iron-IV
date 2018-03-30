@@ -102,6 +102,9 @@ country_event = {
 
 	option = {
 		name = usa.3.a
+		USA = {
+			add_war_support = 0.5
+		}
 		create_wargoal = {
 			type = take_state
 			target = USA
@@ -276,7 +279,6 @@ country_event = {
 			factor = 75
 		}
 		add_political_power = 40
-		add_national_unity = -0.15
 		remove_ideas = great_depression
 	}
 
@@ -326,7 +328,6 @@ country_event = {
 	option = { 
 		name = usa.8.a
 		add_political_power = -40
-		add_national_unity = 0.1
 		remove_ideas = great_depression
 	}
 
@@ -569,6 +570,7 @@ country_event = {
 			popularity = 0.5
 		}
 		remove_ideas = great_depression
+		add_war_support = 0.2
 		add_timed_idea = { idea = fascism_defeated days = 730 }
 		if = {
 			limit = {
@@ -596,7 +598,7 @@ country_event = {
 }
 
 #DO NOT USE USA.15 AS EVENT ID
-#It will make the event text pop up as the name or requirement for two radar technologies for Finland if they are Fascist.
+#It will make the event text pop up as the name or requirement for two radar technologies for Finland if they are Fascist due to a hash conflict.
 
 
 # USA option to intervene in war
@@ -863,6 +865,7 @@ country_event = {
 			popularity = 0.5
 		}
 		remove_ideas = great_depression
+		add_war_support = 0.2
 		add_timed_idea = { idea = communism_defeated days = 730 }
 		if = {
 			limit = {

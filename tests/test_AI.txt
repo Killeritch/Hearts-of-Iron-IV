@@ -206,7 +206,7 @@ tests = {
          }
     }
 
-        HUN_joined_GER = {
+    HUN_joined_GER = {
          success = {
              date > "1936.1.1"
              date < "1943.1.1"
@@ -217,6 +217,24 @@ tests = {
 
          fail = {
              date > "1942.1.1"
+         }
+    }
+
+    allies_should_not_fight_china = {
+         success = {
+            CHI = { 
+                OR = { #dumb scoping because testing assumes some kind of ok top scope for checks
+                    date > 1944.1.1
+                    is_in_faction_with = JAP 
+                }
+            }
+         }
+
+         fail = {
+             CHI = { 
+                has_war_with = ENG 
+                NOT = { is_in_faction_with = JAP }
+            }            
          }
     }
 }

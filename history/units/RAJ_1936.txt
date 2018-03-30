@@ -1,6 +1,23 @@
 ﻿division_template = {
-	name = "Indian Division"
+	name = "Infantry Division"
+	division_names_group = RAJ_INF_01
 
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "District Garrison"			# Represents precursors to Indian Infantry Divisions (district divisions)
+	division_names_group = RAJ_GAR_01
+										# Has older equipment, lower experience
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -16,6 +33,7 @@
 
 division_template = {
 	name = "Armored-Division"
+	division_names_group = RAJ_ARM_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -25,102 +43,123 @@ division_template = {
 	}
 }
 
+
+####### OOB #######
 units = {
 	#India Command
 	
 	#Northern Command
 	
-	division= {	
-		name = "Pashawar District"
+	division= {	# "Pashawar District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
 		location = 12717
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Kohat District"
+	division= {	# "Kohat District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
 		location = 4998
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Rawalpindi District"
+	division= {	# "Rawalpindi District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
 		location = 12005
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Lahore District"
+	division= {	# "Lahore District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
 		location = 10843
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Waziristan District"
+	division= {	# "Waziristan District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
 		location = 1978
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	
 	#Eastern Command
-	division= {	
-		name = "Meerut District"
+	division= {	# "Meerut District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
 		location = 11955
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Lucknow District"
+	division= {	# "Lucknow District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
 		location = 12137
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	division= {	
 		name = "Presidency & Assam District"
 		location = 1497
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 	
 	#Southern Command
-	division= {	
-		name = "Deccan District"
+	division= {	# "Deccan District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
 		location = 12781
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Bombay District"
+	division= {	# "Bombay District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
 		location = 1349
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
-	division= {	
-		name = "Madras District"
+	division= {	# "Madras District"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
 		location = 10278
-		division_template = "Indian Division"
+		division_template = "District Garrison"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
-
 	}
 }
 

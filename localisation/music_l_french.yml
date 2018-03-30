@@ -21,4 +21,23 @@
  allies_peace_2:0 "La fin des épreuves"
  comintern_peace_3:0 "Victoire russe"
  general_peace_2:0 "La fin de la guerre"
- # NEW MUSIC NAMES HERE BELOW
+# NEW MUSIC NAMES HERE BELOW
+# DLC 11 / "German March Order Music Pack"
+ der_machtigste_konig_im_luftrevier:0 "Der Mächtigste König im Luftrevier"
+ panzerlied:0 "Panzerlied"
+ schwarzbraun_ist_die_haselnuss:0 "Schwarzbraun ist die Haselnuss"
+# DLC 12 / "Allied Radio Music Pack"
+ from_glen_to_glen:0 "From Glen to Glen"
+ the_man_on_the_british_countryside:0 "The Man on the British Countryside"
+ dance_your_troubles_away:0 "Dance Your Troubles Away"
+ winter_came_spring:0 "Winter Came Spring"
+# DLC 13 / Sabaton Soundtrack
+ hearts_of_iron:0 "Hearts of Iron"
+ night_witches:0 "Night Witches"
+ primo_victoria:0 "Primo Victoria"
+ stalingrad:0 "Stalingrad"
+ wolfpack:0 "Wolfpack"
+### DLC Together for Victory
+ heroesofelalamein:0 "Les héros d'El-Alamein"
+ londoninflames:0 "Londres en flammes"
+ operationcompas:0 "Opération Compass"

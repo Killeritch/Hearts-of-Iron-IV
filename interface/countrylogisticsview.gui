@@ -468,7 +468,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "equipment_variant"
-				position = { x = 20 y = 9 }
+				position = { x = 32 y = 9 }
 				font = "hoi_16mbs"
 				text = "LOGISTICS_EQUIPMENT_VARIANT_LABEL"
 				maxWidth = 200
@@ -478,7 +478,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "in_stock"
-				position = { x = 220 y = 9 }
+				position = { x = 210 y = 9 }
 				font = "hoi_16mbs"
 				text = "LOGISTICS_IN_STOCK_LABEL"
 				maxWidth = 50
@@ -498,7 +498,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "weekly_production"
-				position = { x = 270 y = 9 }
+				position = { x = 267 y = 9 }
 				font = "hoi_16mbs"
 				text = "LOGISTICS_WEEKLY_PRODUCTION_LABEL"
 				maxWidth = 100
@@ -978,7 +978,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "equipment_variant"
-			position = { x = 22 y = 9 }
+			position = { x = 22 y = 10 }
 			font = "hoi_16mbs"
 			text = "name"
 			maxWidth = 154
@@ -989,7 +989,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "in_stock"
-			position = { x = 198 y = 9 }
+			position = { x = 192 y = 10 }
 			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 63
@@ -999,12 +999,12 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "weekly_production"
-			position = { x = 273 y = 9 }
+			position = { x = 260 y = 10 }
 			font = "hoi_16mbs"
 			text = "amount"
 			maxWidth = 50
 			maxHeight = 20
-			format = right
+			format = center
 		}
 		
 		instantTextboxType = {
@@ -1016,5 +1016,15 @@ guiTypes = {
 			maxHeight = 20
 			format = centre
 		}
+		
+		buttonType = {
+			name = "delete_button"
+			position = { x = -29 y = 6 }
+			quadTextureSprite = "GFX_NV_btn_delete"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_default
+			pdx_tooltip = "LOGISTICS_DELETE_EQUIPMENT"
+			scale = 0.9
+		}		
 	}
 }

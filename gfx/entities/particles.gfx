@@ -140,6 +140,12 @@ objectTypes = {
 	}
 	
 	pdxparticle = {
+		name = "supply_drop_particle"
+		type = "supply_drop_file"
+		scale = 1
+	}
+	
+	pdxparticle = {
 		name = "plane_mg_muzzle_particle"
 		type = "plane_mg_muzzle_file"
 		scale = 1

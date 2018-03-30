@@ -23,6 +23,14 @@ objectTypes = {
 		specular = "gfx/mapitems/movearrow_spec.dds"
 		effect = "gfx/FX/arrow.lua"
 	}
+
+	arrowType = {
+		name = "withdrawArrow"
+		texture = "gfx/mapitems/movearrow_withdraw.dds"
+		normal = "gfx/mapitems/movearrow_normals.dds"
+		specular = "gfx/mapitems/movearrow_spec.dds"
+		effect = "gfx/FX/arrow.lua"
+	}
 	
 	arrowType = {
 		name = "attackArrow"

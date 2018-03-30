@@ -328,6 +328,12 @@ spriteTypes = {
 	}
 
 	spriteType = { 
+		name = "GFX_alt"
+		texturefile = "gfx/keyicons/alt.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { 
 		name = "GFX_tab"
 		texturefile = "gfx/keyicons/tab.dds"
 		legacy_lazy_load = no

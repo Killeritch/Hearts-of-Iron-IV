@@ -80,8 +80,8 @@ set_convoys = 20
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -157,6 +157,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 2
 	
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -165,6 +169,10 @@ create_corps_commander = {
 	traits = {  }
 	skill = 3
 	
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Akbar Khan"
@@ -172,4 +180,8 @@ create_corps_commander = {
 	traits = { trickster }
 	skill = 3
 	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }

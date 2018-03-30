@@ -8,7 +8,8 @@ set_technology = {
 }
 
 set_convoys = 10
-
+set_war_support = 0.1
+set_stability = 0.8
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -43,8 +44,8 @@ set_convoys = 10
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -82,7 +83,7 @@ set_politics = {
 create_country_leader = {
 	name = "Said bin Taimur"
 	desc = "POLITICS_SAID_BIN_TAIMUR_DESC"
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_fascism1.dds"
+	picture = "GFX_portrait_oman_said_bin_taimur"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

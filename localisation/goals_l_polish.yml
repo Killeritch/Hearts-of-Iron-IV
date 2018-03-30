@@ -31,7 +31,7 @@
  civil_war_short_desc:0 "Ten cel zmniejszy koszt dokonania aneksji w ramach traktatu pokojowego."
  topple_government:0 "Obal rząd"
  topple_government_desc:0 "Obalenie aktualnego rządu."
- topple_government_shor_desc:0 "Ten cel zmniejszy koszt obalenia rządu w ramach traktatu pokojowego."
+ topple_government_short_desc:0 "Ten cel wojenny zmniejszy koszt obalenia rządu w ramach traktatu pokojowego."
  anti_comintern_pact:0 "Pakt antykominternowski"
  anti_comintern_pact_desc:0 "Pora stworzyć pakt wymierzony w Międzynarodówkę Komunistyczną, zwaną też Kominternem, której głównym celem jest obalenie istniejących ustrojów politycznych wszelkimi dostępnymi środkami. Tolerowanie komunistycznych ingerencji w cudze sprawy wewnętrzne stanowi zagrożenie nie tylko dla stabilności poszczególnych państw, ale i pokoju na świecie, w związku z czym należy podjąć wspólnie odpowiednie kroki zapobiegawcze.\n Poprawi to relacje z sygnatariuszami paktu."
  anti_comintern_pact_short_desc:0 "§LSformowanie zjednoczonego frontu antykominternowskiego z Włochami i Japonią.§!"

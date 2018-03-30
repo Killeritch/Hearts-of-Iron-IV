@@ -1,2 +1,0 @@
-debug_assert
-gamespeed 5

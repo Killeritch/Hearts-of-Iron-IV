@@ -7,7 +7,8 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 }
-
+set_war_support = 0.1
+set_stability = 0.8
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -78,7 +79,7 @@ set_politics = {
 create_country_leader = {
 	name = "Jigme Wangchuck"
 	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+	picture = "GFX_portrait_buthan_jigme_wangchuk"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {

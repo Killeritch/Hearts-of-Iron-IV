@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Brigada de Infanteria"
+	division_names_group = SPAN_INFB_02
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,6 +11,7 @@
 }
 division_template = {
 	name = "Brigada de Caballería"  
+	division_names_group = SPAN_CAVB_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -21,16 +23,22 @@ division_template = {
 
 units = {
 	##### Ejército de Cuba #####
-	division= {	
-		name = "1a Brigada de Ejercito"
+	division= {	# "1a Brigada de Ejercito"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 7622 # Havana
 		division_template = "Brigada de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "1a Brig. de Caballería 'Floridita'"
+	division= {	# "1a Brig. de Caballería 'Floridita'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 7622 # Havana
 		division_template = "Brigada de Caballería" 
 		start_experience_factor = 0.1

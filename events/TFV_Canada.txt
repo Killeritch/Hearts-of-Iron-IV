@@ -3,7 +3,7 @@
 ###########################
 
 add_namespace = tfv_canada
-
+add_namespace = canada_vanilla
 
 # Completed CAN_north_american_alliance.
 # Canadian national focus.
@@ -283,7 +283,8 @@ country_event = {
 					has_government = neutrality
 				}
 				set_equipment_fraction = 0.3
-				set_national_unity = 0.9
+				set_stability = 0.9
+				set_war_support = 0.8
 				add_popularity = {
 					ideology = democratic
 					popularity = 0.35
@@ -292,7 +293,8 @@ country_event = {
 			news_event = { hours = 6 id = news.250 }
 			
 			set_equipment_fraction = 0.3
-			set_national_unity = 0.9
+			set_stability = 0.9
+			set_war_support = 0.8
 			
 			add_popularity = {
 				ideology = fascism
@@ -316,7 +318,8 @@ country_event = {
 					has_government = fascism
 				}
 				set_equipment_fraction = 0.3
-				set_national_unity = 0.9
+				set_stability = 0.9
+				set_war_support = 0.8
 			}
 			news_event = { hours = 6 id = news.250 }
 			
@@ -333,7 +336,8 @@ country_event = {
 				popularity = -1
 			}
 			set_equipment_fraction = 0.3
-			set_national_unity = 0.8
+			set_stability = 0.9
+			set_war_support = 0.8
 			
 			remove_ideas = synarchist_support_surge
 		}
@@ -698,3 +702,21 @@ country_event = {
 		}
 	}
 }
+
+# Ronnie the Bren Gun Girl
+# Triggered by Women in the Workforce decision
+
+country_event = {
+	id = canada_vanilla.1
+	title = canada_vanilla.1.title
+	desc = canada_vanilla.1.desc
+	
+	picture = GFX_report_event_canada_ronnie
+
+	is_triggered_only = yes
+
+	option = {
+		name = canada_vanilla.1.opt
+	}
+}
+

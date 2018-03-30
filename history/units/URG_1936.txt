@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "División de Infanteria"			# Divisions were at reserve levels during peacetime
+	division_names_group = SPAN_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -12,16 +13,22 @@
 
 units = {
 	##### Ejercito de Uruguay #####
-	division= {	
-		name = "1era División de Infantería"
+	division= {	# "1era División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 10362 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "2da División de Infantería"
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
 		location = 10362 # Montevideo
 		division_template = "División de Infanteria"
 		start_experience_factor = 0.1

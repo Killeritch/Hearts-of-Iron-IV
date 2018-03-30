@@ -1,0 +1,12 @@
+﻿l_french:
+ DECISIONVIEW_TITLE:0 "Événements et décisions"
+ DECISIONSVIEW_EVENT_HEADER:0 "Événements"
+ POPUP_NEWS:0 "Informations"
+ POPUP_EVENTS:0 "Événements"
+ CATEGORY_COLLAPSE_DESC:0 "§GCliquer§! pour replier."
+ CATEGORY_EXPAND_DESC:0 "§GCliquer§! pour déplier."
+ DECISION_KEEP_NOTIFIED:1 "§HNotification§!\n\n§GCliquer§! pour §Rne pas recevoir de notification§! lorsqu'il sera possible de prendre cette décision."
+ DECISION_NOT_KEEP_NOTIFIED:1 "§HNotification§!\n\n§GCliquer§! pour §Grecevoir une notification§! lorsqu'il sera possible de prendre cette décision."
+ TAKE_DECISION_HEADER:0 "§HDécision§!\n\n"
+ DECISION_COST_DESC:0 "Prendre cette décision coûterait $VAL|H0$£pol_power£"
+ DECISION_COST_NOT_ENOUGH:0 "Prendre cette décision coûterait $VAL|HR0$£pol_power£"

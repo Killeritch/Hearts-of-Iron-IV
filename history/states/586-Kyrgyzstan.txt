@@ -3,10 +3,10 @@ state={
 	id=586
 	name="STATE_586" #Alma Alta
 	resources={
-		steel=48
-		chromium=44
-		tungsten=14
-		aluminium=32
+		steel=20 # was: 48
+		chromium=12 # was: 44
+		tungsten=4 # was: 14
+		aluminium=10 # was: 32
 	}
 
 

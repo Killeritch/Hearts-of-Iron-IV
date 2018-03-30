@@ -389,6 +389,30 @@ sound =
 }
 sound =
 {
+	name = "order_airwing_03"
+	file = "menu/order_airwing_03.wav"
+	always_load = no
+}
+sound =
+{
+	name = "order_airwing_04"
+	file = "menu/order_airwing_04.wav"
+	always_load = no
+}
+sound =
+{
+	name = "order_airwing_05"
+	file = "menu/order_airwing_05.wav"
+	always_load = no
+}
+sound =
+{
+	name = "order_airwing_06"
+	file = "menu/order_airwing_06.wav"
+	always_load = no
+}
+sound =
+{
 	name = "order_invalid"
 	file = "menu/give_orders_invalid_01.wav"
 	always_load = no
@@ -530,6 +554,30 @@ sound =
 	file = "menu/select_aircraft_03.wav"
 	always_load = no
 }
+sound =
+{
+	name = "select_aircraft_04"
+	file = "menu/select_aircraft_04.wav"
+	always_load = no
+}
+sound =
+{
+	name = "select_aircraft_05"
+	file = "menu/select_aircraft_05.wav"
+	always_load = no
+}
+sound =
+{
+	name = "select_aircraft_06"
+	file = "menu/select_aircraft_06.wav"
+	always_load = no
+}
+sound =
+{
+	name = "select_aircraft_07"
+	file = "menu/select_aircraft_07.wav"
+	always_load = no
+}
 #################################################################
 ########################## MISC #################################
 #################################################################
@@ -642,7 +690,7 @@ sound =
 {
 	name = "disband_01"
 	file = "menu/disband_unit_01.wav"
-	always_load = no
+	volume = 0.4
 }
 sound =
 {
@@ -660,6 +708,10 @@ sound =
 {
 	name = "ambient_town_entites_01"
 	file = "animations/ambient_town_entites_01.wav"
+}
+sound = {
+	name = "air_mission_select_01"
+	file = "menu/air_mission_select_01.wav"
 }
 #################################################################
 #################### PEACE CONFERENCE ###########################
@@ -2517,6 +2569,12 @@ sound =
 }
 sound =
 {
+	name = "amb_battle_distant_02"
+	file = "animations/amb_battle_distant_02.wav"
+	volume = 0.9
+}
+sound =
+{
 	name = "amb_neutral_wind_01"
 	file = "weather/amb_neutral_wind_01.wav"
 	volume = 0.6
@@ -2577,6 +2635,7 @@ sound =
 {
 	name = "select_new_alert"
 	file = "menu/select_new_alert.wav"
+	volume = 1.2
 }
 sound = 
 {

@@ -19,7 +19,8 @@
  NEXT_PAGE:0 "Page suivante"
  EXIT_TO_MENU:0 "Retour au menu"
  tut_1_text_1:0 "Bienvenue dans le didacticiel de §YHearts of Iron IV§! !\nVous allez contrôler l'Italie@ITA au cours de la période précédant la guerre. Faites bon usage des infobulles, qui vous aideront à comprendre certaines choses lors de la partie.\nCommencez par §Ygérer les alertes§! en haut de l'écran."
- tut_1_text_alert:0 "  "
+### PLEASE DON'T CHANGE THE FOLLOWING LINE!!! ###
+ tut_1_text_alert:0 ""
  tut_2_text_1:0 "Parfait ! Maintenant que vous vous êtes occupé des alertes, vous pouvez vous pencher sur les détails liés à la guerre. L'Italie a déclaré la guerre à l'Éthiopie, et vous devriez facilement remporter la victoire après avoir appris comment vous y prendre.\n\nDéplacez la caméra en direction du sud-est jusqu'à trouver l'Érythrée, sur le continent africain. Une fois la caméra positionnée, §Ysélectionnez les divisions§! dans l'État d'$STATE|Y$."
  tut_3_text_1:1 "Très bien ! À présent, vous allez apprendre à planifier une offensive.\n\nLes divisions peuvent être regroupées au sein d'§Yarmées§!. Une armée est utilisée pour dresser des plans de bataille et être dirigée par un §Ycommandant§!.\n\nCliquez sur le bouton §YNouvelle armée§!, en bas de l'écran."
  tut_4_text_1:1 "Parfait ! La création d'une armée était la première étape.\n\nVous pouvez donner des ordres à cette armée en dressant des §Yplans de bataille§!.\n\nCliquez sur le bouton §YDéfinir une ligne de front§!, puis sur la frontière de l'Éthiopie."

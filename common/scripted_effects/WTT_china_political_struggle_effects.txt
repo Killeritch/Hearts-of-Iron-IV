@@ -278,7 +278,7 @@ WTT_remove_opposition_state_support = {
 	ROOT = {
 		add_stability = -0.03
 		custom_effect_tooltip = other_political_support_down_1
-		subtract_from_variable = { other_political_support = -1 }
+		subtract_from_variable = { other_political_support = 1 }
 	}
 
 	set_variable = { support_to_remove = 3 }

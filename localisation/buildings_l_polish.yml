@@ -20,7 +20,7 @@
  synthetic_refinery:0 "Rafineria paliw syntetycznych"
  synthetic_refinery_desc:0 "Ten budynek zapewnia w regionie"
  radar_station:0 "Stacja radarowa"
- radar_station_desc:2 "Radar pozwala ci zdobywać informacje o wojskach wroga w pobliskich regionach.\nWyższy poziom radaru zwiększa jego zasięg działania.\nRadar ułatwia także wykrywanie lotnictwa wroga, co daje twoim samolotom większą szansę na neutralizację zagrożenia.\nDzięki temu rozwiązaniu także wrogą flotę wykryć można z większej odległości."
+ radar_station_desc:3 "Radar pozwala ci zdobywać informacje o wojskach wroga w pobliskich regionach.\nWyższy poziom radaru zwiększa jego zasięg działania.\nRadar ułatwia także wykrywanie lotnictwa wroga, co daje twoim samolotom większą szansę na neutralizację zagrożenia.\nDzięki temu rozwiązaniu także wrogie floty wykryć można z większej odległości."
  rocket_site:0 "Ośrodek rakietowy"
  rocket_site_desc:0 "Ten budynek umożliwia wystawienie w regionie wyprodukowanych rakiet."
  nuclear_reactor:0 "Reaktor jądrowy"

@@ -112,3 +112,6 @@
  LOGISTICS_NEED_LEND_LEASE_LOW_VALUE:0 "Lend-Lease: $NEED|^1Y$ szt."
  LOGISTICS_NEED_LEND_LEASE_HIGH_VALUE:0 "Lend-Lease: $NEED|^0Y$ szt."
  LOGISTICS_STORAGE_FOREIGN:0 "§TZagraniczne wyposażenie: $AMOUNT|Y$ szt.§!"
+ LOGISTICS_DELETE_EQUIPMENT:0 "§RZniszcz§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_TITLE:0 "§HZniszcz zgromadzone wyposażenie§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_DESC:0 "\n\nNa pewno chcesz §Rzniszczyć§!: $EQUIPMENT|Y$?\n\nWyposażenie zostanie usunięte z twojego magazynu i nie będzie można z niego więcej korzystać. Ten proces jest nieodwracalny.\n\nWyposażenie będzie nadal dostępne dla wrogów przez $NUM_DAYS|Y$ na wypadek kapitulacji albo aneksji."

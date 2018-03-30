@@ -74,8 +74,8 @@ add_ideas = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -193,6 +193,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
 	traits = { winter_specialist ranger }
 	skill = 4
+    attack_skill = 4
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -200,4 +204,8 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	traits = { winter_specialist commando }
 	skill = 3
+    attack_skill = 3
+    defense_skill = 1
+    planning_skill = 4
+    logistics_skill = 2
 }

@@ -1131,7 +1131,7 @@ focus_tree = {
 			}
 		}
 
-		available {
+		available = {
 
 		}
 

@@ -746,7 +746,7 @@ ideas = {
 
 		CHI_chiang_ching_kuo = {
 
-			picture = GFX_idea_chi_chiang_ching_kuo
+			picture = chi_chiang_ching_kuo
 			
 			allowed = {
 				original_tag = CHI
@@ -757,7 +757,7 @@ ideas = {
 
 		CHI_h_h_kung = {
 
-			picture = GFX_idea_chi_chiang_ching_kuo
+			picture = chi_h_h_kung
 				
 			allowed = {
 				original_tag = CHI
@@ -768,7 +768,7 @@ ideas = {
 
 		CHI_chen_yi = {
 
-			picture = cool_pix_here #TODO_WTT_ART idea pic	
+			picture = chi_chen_yi
 			
 			allowed = {
 				original_tag = CHI
@@ -803,7 +803,10 @@ ideas = {
 			}
 			
 			allowed = {
-				original_tag = CHI
+				OR = {
+					original_tag = CHI
+					is_chinese_warlord = yes
+				}
 				has_dlc = "Waking the Tiger"
 			}
 			
@@ -823,7 +826,7 @@ ideas = {
 		}
 		CHI_chen_guofu = {
 
-			picture = cool_pix_here #TODO_WTT_ART idea pic
+			picture = GFX_idea_chi_chen_guofu
 			
 			allowed = {
 				original_tag = CHI
@@ -858,7 +861,10 @@ ideas = {
 			}
 			
 			allowed = {
-				original_tag = CHI
+				OR = {
+					original_tag = CHI
+					is_chinese_warlord = yes
+				}
 				has_dlc = "Waking the Tiger"
 			}
 			
@@ -908,7 +914,7 @@ ideas = {
 
 		CHI_li_zongren = {
 			
-			picture = cool_pix_here #TODO_WTT_ART idea pic	
+			picture = generic_army_asia_2
 
 			allowed = {
 				original_tag = CHI
@@ -923,7 +929,7 @@ ideas = {
 
 		CHI_he_yingqin = {
 			
-			picture = cool_pix_here #TODO_WTT_ART idea pic	
+			picture = generic_army_asia_1
 
 			allowed = {
 				original_tag = CHI
@@ -1070,7 +1076,7 @@ ideas = {
 
 
 	theorist = {
-		CHI_bo_yibo = { #WTT_TODO: This guy is a commie
+		CHI_bo_yibo = { 
 
 			picture = generic_army_asia_2
 			
@@ -1085,7 +1091,7 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		CHI_fang_zeyi = { #WTT_TODO: commie
+		CHI_fang_zeyi = { 
 
 			picture = generic_air_asia_2
 			
@@ -1167,7 +1173,7 @@ ideas = {
 
 		CHI_yu_hanmou = {
 
-			picture = WTT_TODO_ART
+			picture = generic_army_asia_1
 			
 			allowed = {
 				original_tag = CHI

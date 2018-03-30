@@ -4,10 +4,10 @@ state={
 	name="STATE_47" # Thessaly
 	manpower=2312500
 	resources={
-		steel=4
-		chromium=22
-		aluminium=58
-		tungsten = 20
+		steel=3 # was: 4
+		chromium=12 # was: 22
+		aluminium=30 # was: 58
+		tungsten = 10 # was: 20
 	}
 	
 	state_category = city

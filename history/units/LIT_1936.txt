@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Pestininku Divizija"			# Infantry Division
+	division_names_group = LIT_INF_01
 	# Note: Divisions were nowhere near full strength until mobilized
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,8 +18,11 @@
 units = {
 	######## LAND OOB ########
 	##### Lietuva Aukaèiausiosios Vadaviete #####
-	division = {
-		name = "I. Divizija"
+	division = { # "I. Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 6296
 		division_template = "Pestininku Divizija"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
@@ -26,8 +30,11 @@ units = {
 		start_equipment_factor = 0.2
 
 	}
-	division = {
-		name = "II. Divizija"
+	division = { # "II. Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
 		location = 6296
 		division_template = "Pestininku Divizija"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
@@ -35,8 +42,11 @@ units = {
 		start_equipment_factor = 0.2
 
 	}
-	division = {
-		name = "III. Divizija"
+	division = { # "III. Divizija"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
 		location = 6296
 		division_template = "Pestininku Divizija"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }

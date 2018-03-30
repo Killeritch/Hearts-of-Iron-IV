@@ -3,6 +3,8 @@
 oob = "FRA_1936"
 
 set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.15
 
 # Starting tech
 set_technology = {
@@ -124,8 +126,8 @@ set_technology = {
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -136,7 +138,7 @@ set_technology = {
 }
 
 set_convoys = 300
-set_national_unity = 0.4
+
 
 set_politics = {
 
@@ -195,7 +197,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Maurice Thorez"
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "Portrait_France_Generic_3.dds"
+	picture = "GFX_portrait_fra_maurice_thorez"
 	expire = "1965.1.1"
 	ideology = 	stalinism
 	traits = {
@@ -217,64 +219,100 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
-	traits = { trickster }
+	traits = { trickster brilliant_strategist cavalry_officer war_hero }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Alphonse Juin"
 	picture = "Portrait_France_Alphonse_Juin.dds"
-	traits = { panzer_leader  }
+	traits = { armor_officer career_officer trait_cautious  }
 	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
 	name = "Maurice Gamelin"
 	picture = "Portrait_France_Maurice_Gamelin.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
 	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Maxime Weygand"
 	picture = "Portrait_France_Maxime_Weygand.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_field_marshal = {
 	name = "Alphonse Georges"
 	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
-	traits = { defensive_doctrine old_guard }
+	traits = { defensive_doctrine old_guard trait_cautious }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Charles De Gaulle"
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	traits = {  panzer_leader }
-	skill = 3
+	traits = {  armor_officer harsh_leader media_personality }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Philippe Leclerc"
 	picture = "portrait_france_philippe_leclerc.dds"
-	traits = {  panzer_leader }
+	traits = {  armor_officer trait_reckless career_officer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "Henri Giraud"
 	picture = "portrait_france_henri_giraud.dds"
-	traits = {  trickster }
+	traits = {  trickster trait_cautious career_officer infantry_officer }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Charles Huntziger"
 	picture = "portrait_france_charles_huntziger.dds"
-	traits = { old_guard }
+	traits = { old_guard infantry_officer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 

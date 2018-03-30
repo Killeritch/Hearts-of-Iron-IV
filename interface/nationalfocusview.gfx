@@ -21,7 +21,7 @@ spriteTypes = {
 	corneredTileSpriteType = {
 		name = "GFX_tiled_focus_bg"
 		size= { x=988 y=1031 }
-		textureFile = "gfx//interface//tiled_focus_bg.dds"
+		textureFile = "gfx//interface//tiles//tiled_focus_bg.dds"
 		borderSize = { x=495 y=495 }
 		tilingCenter = no
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
@@ -125,7 +125,7 @@ spriteTypes = {
 	}
 #	spriteType = {
 #		name = "GFX_focus_current"
-#		textureFile = "gfx/interface/technology_available_item_bg.dds"
+#		textureFile = "gfx/interface/techtree/technology_available_item_bg.dds"
 #	}
 #	spriteType = {
 #		name = "GFX_focus_completed"

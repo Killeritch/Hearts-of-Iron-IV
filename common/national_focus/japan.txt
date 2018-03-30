@@ -256,10 +256,26 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = cast_the_die_TT
-			set_autonomy = { target = MAN autonomy_state = autonomy_free } 
-			set_autonomy = { target = MEN autonomy_state = autonomy_free }
-			MAN = {
-				set_autonomy = { target = MEN autonomy_state = autonomy_integrated_puppet }
+			if = {
+				limit = {
+					MEN = { is_subject_of = ROOT }
+				}
+				set_autonomy = { target = MEN autonomy_state = autonomy_free }
+			}
+			if = {
+				limit = {
+					MAN = { is_subject_of = ROOT }
+				}
+				set_autonomy = { target = MAN autonomy_state = autonomy_free } 
+				MAN = {
+					set_autonomy = { target = MEN autonomy_state = autonomy_integrated_puppet }
+				}
+			}
+			if = {
+				limit = {
+					MAN = { has_idea = MAN_kwantung_veto }
+				}
+				MAN = { remove_ideas = MAN_kwantung_veto }
 			}
 			hidden_effect = {
 				division_template = { name = "Japanese People's Regiment" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
@@ -406,7 +422,6 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = MAN
 			has_civil_war = no
 		}
 
@@ -523,6 +538,14 @@ focus_tree = {
 			OR = {
 				has_wargoal_against = MAN
 				has_war_with = MAN
+				MAN = {
+					exists = no
+				}
+				MAN = {
+					not = {
+						has_government = fascism
+					}
+				}
 			}
 		}
 
@@ -1339,7 +1362,10 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_non_aggression_pact_with = SOV
+			OR = {
+				has_non_aggression_pact_with = SOV
+				has_war_with = SOV
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1720,7 +1746,33 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = JAP_sign_tripartite_pact_bypass_tt
+				OR = {
+					NOT = {
+						any_country = {
+							original_tag = GER
+							has_government = fascism
+						}
+					}
+					any_country = {
+						original_tag = GER
+						has_government = fascism
+						has_war_with = ROOT
+					}
+					NOT = {
+						any_country = {
+							original_tag = ITA
+							has_government = fascism
+						}
+					}
+					any_country = {
+						original_tag = ITA
+						has_government = fascism
+						has_war_with = ROOT
+					}	
+				}	
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2373,7 +2425,7 @@ focus_tree = {
 			}
 			swap_ideas = {
 				remove_idea = JAP_zaibatsus
-				add_idea = JAP_nationalize_the_zaibatsus				
+				add_idea = JAP_zaibatsus_challenged			
 			}
 		}
 
@@ -2721,7 +2773,9 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			MAN = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2790,7 +2844,10 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_non_aggression_pact_with = CHI
+			OR = {
+				has_war_with = event_target:WTT_current_china_leader
+				has_non_aggression_pact_with = CHI
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3358,6 +3415,12 @@ focus_tree = {
 						MAN = { is_subject_of = ROOT }
 					}
 					set_autonomy = { target = MAN autonomy_state = autonomy_free }
+				}
+				if = {
+					limit = {
+						MAN = { has_idea = MAN_kwantung_veto }
+					}
+					MAN = { remove_ideas = MAN_kwantung_veto }
 				}
 				if = {
 					limit = {

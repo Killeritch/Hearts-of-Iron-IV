@@ -1,5 +1,6 @@
 ﻿division_template = {
-	name = "Mixed Infantry Brigade"				# 
+	name = "Bubing Shi"				# Regular Infantry Division (brigade sized)
+	division_names_group = MAN_INF_01
 									# Militia-level training and equipment
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -7,97 +8,128 @@
 		infantry = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
-	name = "District Army"				# 
+	name = "Qu Jun"					# "District Army" (garrison)
+	division_names_group = MAN_GAR_01
 									# Militia-level training and equipment
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 	}
+	priority = 0
 }
-
 division_template = {
-	name = "Cavalry Brigade"			# Cavalry Division
+	name = "Qibing Shi"			# Cavalry Division
+	division_names_group = MAN_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-
 	}
 }
 
+
+##### OOB #####
 units = {
-	division = {
-		name = "1. District Army"
+	division = { # "1 Qu Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 800
-		division_template = "District Army"
+		division_template = "Qu Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "2. District Army"
+	division = { # "2 Qu Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 11771
-		division_template = "District Army"
+		division_template = "Qu Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "3. District Army"
+	division = { # "3 Qu Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 3944
-		division_template = "District Army"
+		division_template = "Qu Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "4. District Army"
+	division = { # "4 Qu Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 4809
-		division_template = "District Army"
+		division_template = "Qu Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "5. District Army"
+	division = { # "5 Qu Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 3877
-		division_template = "District Army"
+		division_template = "Qu Jun"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "1. Cavalry Brigade"
+	division = { # "1 Qibing Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 800
-		division_template = "Cavalry Brigade"
+		division_template = "Qibing Shi"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "2. Cavalry Brigade"
+	division = { # "2 Qibing Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 11771
-		division_template = "Cavalry Brigade"
+		division_template = "Qibing Shi"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "3. Cavalry Brigade"
+	division = { # "3 Qibing Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 3944
-		division_template = "Cavalry Brigade"
+		division_template = "Qibing Shi"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
-	division = {
-		name = "4. Cavalry Brigade"
+	division = { # "4 Qibing Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 4809
-		division_template = "Cavalry Brigade"
+		division_template = "Qibing Shi"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 	}
 }
+
+
+########## STARTING PRODUCTION ##########
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

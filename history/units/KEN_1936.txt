@@ -1,7 +1,8 @@
-﻿
+﻿### Kenya OOB ###
 
 division_template = {
 	name = "Infantry Division"		
+	division_names_group = BRENGL_INF_01		# Uses generic English templates
 	# Note: Represents both regular infantry and militia units
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -17,6 +18,7 @@ division_template = {
 
 division_template = {
 	name = "Cavalry Division"		
+	division_names_group = BRENGL_CAV_01		# Uses generic English templates
 	
 	regiments = {
 		cavalry = { x = 0 y = 0 }

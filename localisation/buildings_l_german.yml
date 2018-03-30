@@ -20,7 +20,7 @@
  synthetic_refinery:0 "Synthetische Raffinerie"
  synthetic_refinery_desc:0 "Dieses Gebäude produziert"
  radar_station:0 "Radarstation"
- radar_station_desc:2 "Mit Hilfe von Radar können Sie Informationen über feindliche Truppen in Staaten in der Nähe sammeln.\nJe höher die Radarstufe in einem Staat, desto höher die effektive Reichweite des Radars.\nRadar ermöglicht dem Staat zudem eine bessere Erkennung feindlicher Lufteinheiten, wodurch Ihre Flugzeuge eine höhere Chance haben, sie anzugreifen.\nRadar verbessert auch die Ortung von feindlichen Flotten auf See."
+ radar_station_desc:3 "Mit Hilfe von Radar können Sie Informationen über feindliche Truppen in Staaten in der Nähe sammeln.\nJe höher die Radarstufe in einem Staat, desto höher die effektive Reichweite des Radars.\nRadar ermöglicht dem Staat zudem eine bessere Erkennung feindlicher Lufteinheiten, wodurch Ihre Flugzeuge eine höhere Chance haben, sie anzugreifen.\nRadar verbessert auch die Ortung von feindlichen Flotten auf See."
  rocket_site:0 "Raketenbasis"
  rocket_site_desc:0 "Dieses Gebäude ermöglicht der Region die Produktion und den Einsatz von Raketen."
  nuclear_reactor:0 "Atomreaktor"

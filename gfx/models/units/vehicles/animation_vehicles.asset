@@ -118,4 +118,57 @@ animation = {
 	file = "US_motorized_01_moving.anim"
 }
 
+###########
+# BICYCLE
+###########
+
+animation = {
+	name = "bicycle_frame_idle_animation"
+	file = "bicycle_frame_idle.anim"
+}
+
+animation = {
+	name = "bicycle_frame_move_animation"
+	file = "bicycle_frame_moving.anim"
+}
+
+animation = {
+	name = "bicycle_frame_attack_animation"
+	file = "bicycle_frame_attack.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_idle_animation"
+	file = "bicycle_vehicle_idle.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_idle_2_animation"
+	file = "bicycle_vehicle_idle_2.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_move_animation"
+	file = "bicycle_vehicle_moving.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_move_2_animation"
+	file = "bicycle_vehicle_moving_2.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_retreat_animation"
+	file = "bicycle_vehicle_retreat.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_retreat_2_animation"
+	file = "bicycle_vehicle_retreat_2.anim"
+}
+
+animation = {
+	name = "bicycle_vehicle_still_animation"
+	file = "bicycle_vehicle_still.anim"
+}
 

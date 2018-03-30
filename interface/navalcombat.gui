@@ -45,32 +45,32 @@ guiTypes = {
 
 		iconType = { 
 			name = "weather_none"
-			position {x=111 y=58}
+			position = {x=111 y=58}
 			spriteType = "GFX_navalcombat_bg_weather_none"
 		}
 		iconType = { 
 			name = "weather_light_rain"
-			position {x=111 y=58}
+			position = {x=111 y=58}
 			spriteType = "GFX_navalcombat_bg_weather_light_rain"
 		}
 		iconType = { 
 			name = "weather_heavy_rain"
-			position {x=111 y=58}
+			position = {x=111 y=58}
 			spriteType = "GFX_navalcombat_bg_weather_heavy_rain"
 		}
 		iconType = { 
 			name = "weather_none_night"
-			position {x=111 y=58}
+			position = {x=111 y=58}
 			spriteType = "GFX_navalcombat_bg_weather_none_night"
 		}
 		iconType = { 
 			name = "weather_light_rain_night"
-			position {x=111 y=58}
+			position = {x=111 y=58}
 			spriteType = "GFX_navalcombat_bg_weather_light_rain_night"
 		}
 		iconType = { 
 			name = "weather_heavy_rain_night"
-			position {x=111 y=58}
+			position = {x=111 y=58}
 			spriteType = "GFX_navalcombat_bg_weather_heavy_rain_night"
 		}
 
@@ -255,7 +255,7 @@ guiTypes = {
 
 				iconType = { 
 					name = "test"
-					position {x=1 y=1}
+					position = {x=1 y=1}
 					spriteType = "GFX_naval_battlemap_overlay1"
 				}				
 				
@@ -371,7 +371,7 @@ guiTypes = {
 		
 		iconType = { 
 			name = "icon"
-			position {x=0 y=0}
+			position = {x=0 y=0}
 			spriteType = "GFX_navalcombat_ship_icon_battle_cruiser" # In code it swaps the icon type
 		}	
 

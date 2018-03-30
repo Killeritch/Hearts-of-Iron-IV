@@ -112,3 +112,6 @@
  LOGISTICS_NEED_LEND_LEASE_LOW_VALUE:0 "Empréstimos e Arrendamentos: $NEED|^1Y$ unidades"
  LOGISTICS_NEED_LEND_LEASE_HIGH_VALUE:0 "Empréstimos e Arrendamentos: $NEED|^0Y$ unidades"
  LOGISTICS_STORAGE_FOREIGN:0 "§TEquipamento estrangeiro: $AMOUNT|Y$ unidades§!"
+ LOGISTICS_DELETE_EQUIPMENT:0 "§RDestruir§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_TITLE:0 "§HDestruir estoque de equipamentos§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_DESC:0 "\n\nTem certeza que deseja §Rdestruir§! $EQUIPMENT|Y$?\n\nO equipamento será removido de seus estoques e você não poderá mais usá-lo. Esse processo é irreversível.\n\nO equipamento ainda será acessível para inimigos por $NUM_DAYS|Y$ dias em caso de capitulação ou anexação."

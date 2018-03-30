@@ -2,34 +2,46 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_playlist_bg"
-		texturefile = "gfx//interface//playlist_bg.dds"
+		texturefile = "gfx//interface//topbar//musicplayer//playlist_bg.dds"
 	}
 
 	spriteType = {
 		name = "GFX_playlist_button"
-		texturefile = "gfx//interface//playlist_button.dds"
+		texturefile = "gfx//interface//topbar//musicplayer//playlist_button.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}	
 	
 	spriteType = {
 		name = "GFX_music_pause_button"
-		texturefile = "gfx//interface//music_pause_button.dds"
+		texturefile = "gfx//interface//topbar//musicplayer//music_pause_button.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 2		
 	}
 
 	spriteType = {
 		name = "GFX_music_next_button"
-		texturefile = "gfx//interface//music_next_button.dds"
+		texturefile = "gfx//interface//topbar//musicplayer//music_next_button.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
 	spriteType = {
 		name = "GFX_musicplayer_button"
-		texturefile = "gfx//interface//musicplayer_button.dds"
+		texturefile = "gfx//interface//topbar//musicplayer//musicplayer_button.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 
+	frameAnimatedSpriteType = {
+		name = "GFX_decisions_glow"
+		texturefile = "gfx/interface/decisionview/decisions_glow.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		allwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	
 	frameAnimatedSpriteType = {
 		name = "GFX_WT_anim_strip"
 		texturefile = "gfx//interface//WT_anim_strip.dds"
@@ -44,7 +56,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_armyoverview_buttons_bg"
-		texturefile = "gfx//interface//armyoverview_buttons_bg.dds"
+		texturefile = "gfx//interface//topbar//armyoverview_buttons_bg.dds"
 	}
 
 	spriteType = {
@@ -145,11 +157,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_industrial_capacity_icon"
 		texturefile = "gfx//interface//industrial_capacity_icon.dds"
+		noOfFrames = 2
 	}
 
 	spriteType = {
 		name = "GFX_topbar_convoys"
-		texturefile = "gfx//interface//topbar_convoys.dds"
+		texturefile = "gfx//interface//topbar//topbar_convoys.dds"
 	}
 
 	spriteType = {
@@ -170,6 +183,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pol_power_icon"
 		texturefile = "gfx//interface//pol_power_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_war_support_icon"
+		texturefile = "gfx//interface//war_support_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_stability_icon"
+		texturefile = "gfx//interface//stability_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_command_power"
+		texturefile = "gfx/interface/command_power_icon.dds"
 	}
 
 	spriteType = {
@@ -212,55 +240,60 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_topbar_production"
-		texturefile = "gfx//interface//production_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//production_button.dds"
 	}	
 	
 	spriteType = {
 		name = "GFX_topbar_technology"
-		texturefile = "gfx//interface//sience_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//sience_button.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_topbar_decisionview_button"
+		texturefile = "gfx//interface//topbar//toolbar//topbar_decisionview_button.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_topbar_diplomacy"
-		texturefile = "gfx//interface//diplomacy_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//diplomacy_button.dds"
 	}
 
 	spriteType = {
 		name = "GFX_deployment_button"
-		texturefile = "gfx//interface//deployment_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//deployment_button.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ledger_button"
-		texturefile = "gfx//interface//ledger_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//ledger_button.dds"
 	}
 
 	spriteType = {
 		name = "GFX_airoverview_button"
-		texturefile = "gfx//interface//airoverview_button.dds"
+		texturefile = "gfx//interface//topbar//airoverview_button.dds"
 		noOfFrames = 2		
 	}	
 	
 	spriteType = {
 		name = "GFX_navyoverview_button"
-		texturefile = "gfx//interface//navyoverview_button.dds"
+		texturefile = "gfx//interface//topbar//navyoverview_button.dds"
 		noOfFrames = 2		
 	}	
 	
 	spriteType = {
 		name = "GFX_armyoverview_button"
-		texturefile = "gfx//interface//armyoverview_button.dds"
+		texturefile = "gfx//interface//topbar//armyoverview_button.dds"
 		noOfFrames = 2		
 	}
 	
 	spriteType = {
 		name = "GFX_construction_button"
-		texturefile = "gfx//interface//construction_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//construction_button.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_topbar_trade_button"
-		texturefile = "gfx//interface//trade_button.dds"
+		texturefile = "gfx//interface//topbar//toolbar//trade_button.dds"
 	}		
 	
 	spriteType = {

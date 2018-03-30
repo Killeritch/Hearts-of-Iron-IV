@@ -1,0 +1,12 @@
+﻿l_spanish:
+ DECISIONVIEW_TITLE:0 "Eventos y decisiones"
+ DECISIONSVIEW_EVENT_HEADER:0 "Eventos"
+ POPUP_NEWS:0 "Noticia emergente"
+ POPUP_EVENTS:0 "Aviso emergente de evento"
+ CATEGORY_COLLAPSE_DESC:0 "§GHaz clic§! para plegar"
+ CATEGORY_EXPAND_DESC:0 "§GHaz clic§! para expandir"
+ DECISION_KEEP_NOTIFIED:1 "§HNotificar§!\n\n§GClic§! para que §Rno se te notifique§! cuándo es posible tomar esta decisión.\n"
+ DECISION_NOT_KEEP_NOTIFIED:1 "§HNotificar§!\n\n§GClic§! para que §Gse te notifique§! cuándo es posible tomar esta decisión.\n"
+ TAKE_DECISION_HEADER:0 "§HTomar decisión§!\n\n"
+ DECISION_COST_DESC:0 "La decisión cuesta £pol_power $VAL|H0$"
+ DECISION_COST_NOT_ENOUGH:0 "La decisión cuesta £pol_power $VAL|HR0$"

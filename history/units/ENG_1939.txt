@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"				# Reinforced divisions (1st - 5th), most experienced, latest equipment
+	division_names_group = ENG_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -20,6 +21,7 @@
 }
 division_template = {
 	name = "Infantry Division (ME)"
+	division_names_group = ENG_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -35,6 +37,7 @@ division_template = {
 }
 division_template = {
 	name = "Motorised Division" 	# Represents both frontline and reserve motorized divisions (excluding London Divs)
+	division_names_group = ENG_MOT_01
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -51,6 +54,7 @@ division_template = {
 }
 division_template = {
 	name = "Armour Division" 				# 1st Armoured Division, 7th Armoured 'Desert 
+	division_names_group = ENG_ARM_01
 
 	regiments = {
 		medium_armor = { x = 0 y = 0 }		# Cruiser Tanks Mks I, II
@@ -71,7 +75,7 @@ division_template = {
 }
 division_template = {
 	name = "Tank Brigade"				# Represents (light) Army Tank Brigades (LT Mk VIs, some Matilda Is)
-
+	division_names_group = ENG_ARM_02
 	regiments = {
 		light_armor = { x = 0 y = 0 }		# Light Tanks Mk VI, or Matilda I's
 		light_armor = { x = 0 y = 1 }
@@ -80,7 +84,7 @@ division_template = {
 }
 division_template = {
 	name = "Cavalry Brigade"
-
+	division_names_group = ENG_CAV_02
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -89,6 +93,7 @@ division_template = {
 }
 division_template = {
 	name = "Colonial Garrison"			# Represents local militias, garrisons
+	division_names_group = ENG_COL_01
 										# Low experience, oldest equipment, mostly militias
 	regiments = { 
 		infantry = { x = 0 y = 0 }
@@ -106,8 +111,11 @@ division_template = {
 units = {
 	####### HOME THEATRE #######
 	### Northern Command (CO: Bartholomew) ###
-	division= {	
-		name = "5th Infantry Division"
+	division= {	# "5th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 351
 		division_template = "Infantry Division"		# one-third strength, still mobilizing
 		start_experience_factor = 0.3
@@ -115,16 +123,22 @@ units = {
 
 	}
 	# Northumbrian Area (CO: Shears) #
-	division= {	
-		name = "23rd 'Northumbrian' Motorised Div."
+	division= {	# "23rd 'Northumbrian' Motorised Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
 		location = 9397
 		division_template = "Motorised Division"		# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "50th 'Northumbrian' Motorised Div."
+	division= {	# "50th 'Northumbrian' Motorised Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
 		location = 9397
 		division_template = "Motorised Division"
 		start_experience_factor = 0.2
@@ -138,16 +152,22 @@ units = {
 		start_experience_factor = 0.2
 	}
 	# West Riding Area (CO: Wooten) #
-	division= {	
-		name = "46th 'North Midlands' Infantry Div."
+	division= {	# "46th 'North Midlands' Infantry Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
 		location = 11218
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "49th 'West Riding' Infantry Div."
+	division= {	# "49th 'West Riding' Infantry Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
 		location = 11218
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -164,23 +184,32 @@ units = {
 	}
 	
 	### Eastern Command (CO: Williams) ###
-	division= {	
-		name = "4th Infantry Division"
+	division= {	# "4th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 271
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	# East Anglia Area (CO: Buckley) #
-	division= {	
-		name = "12th 'Eastern' Infantry Division"
+	division= {	# "12th 'Eastern' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
 		location = 11374
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "44th 'Home Counties' Infantry Div."
+	division= {	# "44th 'Home Counties' Infantry Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
 		location = 11374
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -194,16 +223,22 @@ units = {
 		start_experience_factor = 0.2
 	}
 	# Home Counties Area (CO: MacDougall) #
-	division= {	
-		name = "18th Infantry Division"
+	division= {	# "18th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
 		location = 3287
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "54th 'East Anglia' Infantry Div."
+	division= {	# "54th 'East Anglia' Infantry Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
 		location = 3287
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -213,16 +248,22 @@ units = {
 	
 	### Western Command (CO: Haining) ###
 	# Welsh Area (CO: Garnier) #
-	division= {	
-		name = "38th 'Welsh' Infantry Division"
+	division= {	# "38th 'Welsh' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
 		location = 311
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "53rd 'Welsh' Infantry Division"
+	division= {	# "53rd 'Welsh' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
 		location = 311
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -230,16 +271,22 @@ units = {
 
 	}
 	# West Lancashire Area (CO: Ramsden) #
-	division= {	
-		name = "55th 'West Lancashire' Motorised Div."
+	division= {	# "55th 'West Lancashire' Motorised Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
 		location = 6384
 		division_template = "Motorised Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "59th 'Staffordshire' Motorised Division"
+	division= {	# "59th 'Staffordshire' Motorised Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
 		location = 6384
 		division_template = "Motorised Division"		# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
@@ -261,16 +308,22 @@ units = {
 
 	}
 	# East Lancashire Area (CO: Drew) #
-	division= {	
-		name = "42nd 'East Lancashire' Infantry Div."
+	division= {	# "42nd 'East Lancashire' Infantry Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
 		location = 6318
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "66th Infantry Division"
+	division= {	# "66th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
 		location = 6318
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
@@ -285,29 +338,41 @@ units = {
 	}
 	
 	### Southern Command (CO: Fisher) ###
-	division= {	
-		name = "3rd Infantry Division"
+	division= {	# "3rd Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 13070
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "1st 'Royal Hussars' Armoured Div."
+	division= {	# "1st 'Royal Hussars' Armoured Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 13070
 		division_template = "Armour Division"
 		start_experience_factor = 0.3
 	}
 	# South-Western Area (CO: Green) #
-	division= {	
-		name = "43rd 'Wessex' Infantry Division"
+	division= {	# "43rd 'Wessex' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
 		location = 3369
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "45th 'Wessex' Infantry Division"
+	division= {	# "45th 'Wessex' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
 		location = 3369
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
@@ -315,16 +380,22 @@ units = {
 
 	}
 	# South Midland Area (CO: MacMullen) #
-	division= {	
-		name = "48th 'South Midland' Infantry Div."
+	division= {	# "48th 'South Midland' Infantry Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
 		location = 6351
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "61st Infantry Division"
+	division= {	# "61st Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
 		location = 6351
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
@@ -339,14 +410,20 @@ units = {
 	}
 
 	### Aldershot Command (CO: Dill) ###
-	division= {	
-		name = "1st Infantry Division"
+	division= {	# "1st Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 9458
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "2nd Infantry Division"
+	division= {	# "2nd Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 9458
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
@@ -360,16 +437,22 @@ units = {
 
 	### Scottish Command (CO: Grant) ###
 	# Highland Area (CO: ) #
-	division= {	
-		name = "9th 'Highland' Infantry Division"
+	division= {	# "9th 'Highland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
 		location = 3273
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "51st 'Highland' Infantry Division"
+	division= {	# "51st 'Highland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
 		location = 3273
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -377,16 +460,22 @@ units = {
 
 	}
 	# Lowland Area (CO: ) #
-	division= {	
-		name = "15th 'Scottish' Infantry Division"
+	division= {	# "15th 'Scottish' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
 		location = 9392
 		division_template = "Infantry Division"			# Reserve division (older equipment, low experience)
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "52nd 'Lowland' Infantry Division"
+	division= {	# "52nd 'Lowland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
 		location = 9392
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -447,16 +536,22 @@ units = {
 	}
 
 	### British Troops in Egypt (CO: Wilson) ###
-	division= {	
-		name = "7th Infantry Division"
+	division= {	# "7th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 7011
 		division_template = "Infantry Division (ME)"			
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.5
 
 	}
-	division= {	
-		name = "7th 'Desert Rats' Armoured Div."
+	division= {	# "7th 'Desert Rats' Armoured Div."
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 7011
 		division_template = "Armour Division"			# Under-strength, still mobilizing
 		start_experience_factor = 0.3
@@ -483,8 +578,11 @@ units = {
 	}
 
 	# Palestine & Transjordan Area (CO: MacMichael) #
-	division= {	
-		name = "8th Infantry Division"
+	division= {	# "8th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 4206
 		division_template = "Infantry Division (ME)"			
 		start_experience_factor = 0.3

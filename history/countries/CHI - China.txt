@@ -1,7 +1,8 @@
 ﻿capital = 613 # Nanjing
 
 oob = "CHI_1936"
-
+set_stability = 0.2
+set_war_support = 0.5
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -16,39 +17,106 @@ set_technology = {
 
 add_ideas = {
 	german_advisors
-	CHI_communist_uprisings
 }
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	add_ideas = {
+		CHI_communist_uprisings
+	}
+}
+
+
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}		
+	add_ideas = {
+		CHI_nine_power_treaty
+		CHI_army_corruption_1
+		CHI_ineffective_bureaucracy
+		CHI_incompetent_officers
+		free_trade
+		CHI_hyper_inflation_1
+	}
+}
+save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
 
 1939.1.1 = {
 
 	add_political_power = 1198
+	set_stability = 0.5
+	set_war_support = 0.7
 	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
+	if = {
+		limit = { has_dlc = "Waking the Tiger" }
+		complete_national_focus = CHI_unified_industrial_planning
+		complete_national_focus = CHI_mission_to_germany
+		complete_national_focus = CHI_rural_reconstruction_movement
+		complete_national_focus = CHI_british_cooperation
+		unlock_national_focus = CHI_fighter_purchases
+		complete_national_focus = CHI_mission_to_the_us
+		complete_national_focus = CHI_mission_to_the_soviet_union
+		complete_national_focus = CHI_hire_chennault
+		complete_national_focus = CHI_rapprochement_with_soviet_union
+		complete_national_focus = CHI_invite_soviet_advisers
+		complete_national_focus = CHI_military_affairs_commission
+		complete_national_focus = CHI_burma_road
+		unlock_national_focus = CHI_the_soviet_volunteer_group
+		complete_national_focus = CHI_bureau_of_investigation_and_statistics
+		complete_national_focus = CHI_camco
+		complete_national_focus = CHI_three_principles_of_the_people
+		complete_national_focus = CHI_army_reform
+		complete_national_focus = CHI_nationalism
+		else = {
+			#generic focuses
+			complete_national_focus = army_effort
+			complete_national_focus = equipment_effort
+			complete_national_focus = motorization_effort
+			complete_national_focus = aviation_effort
+			complete_national_focus = naval_effort
+			complete_national_focus = flexible_navy
+			complete_national_focus = industrial_effort
+			complete_national_focus = construction_effort
+			complete_national_focus = production_effort
+		}
+	}
 
 	add_ideas = {
 		#laws
-		tot_economic_mobilisation
+		war_economy
 		service_by_requirement
 		closed_economy
 
 		#ministers
-		CHI_xie_juezai
-		CHI_deng_xiaoping
 		CHI_bo_yibo
 		CHI_xiao_yisu
 		CHI_chen_shaokuan
 		jiangnan_shipyard_group
+		camco
+
+	}
+	if = {
+		limit = {
+			has_dlc = "Waking the Tiger"
+		}
+		remove_ideas = CHI_army_corruption_1
+		add_ideas = {
+			#national spirits
+			CHI_hyper_inflation_1
+			CHI_nine_power_treaty
+			CHI_army_corruption_2
+			CHI_ineffective_bureaucracy
+			CHI_incompetent_officers
+			free_trade
+			CHI_military_affairs_commission
+		}
 	}
 	
 	set_global_flag = fall_of_nanjing
@@ -87,8 +155,8 @@ set_convoys = 40
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -126,13 +194,13 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Chiang Kai-shek"
+	name = "Chiang Kai-Shek"
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
 	picture = "Portrait_China_Chiang_Kai_Shek.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
-		#
+		generallissimo
 	}
 }
 
@@ -150,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Wang Jingwei"
 	desc = "POLITICS_WANG_JINGWEI_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_fascism.dds"
+	picture = "GFX_portrait_chi_wang_jingwei"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -159,7 +227,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zhang Lan"
+	name = "Zhang Lan" #WTT_TODO_CD: this guy is now a possible leader in communist china. Replace? Chiang should probably stay chairman if China goes democratic
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
@@ -202,28 +270,110 @@ add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 create_field_marshal = {
 	name = "Tu Yu-ming"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
-	traits = { defensive_doctrine }
+	gfx = "GFX_portrait_chi_du_yuming"
+	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_field_marshal = {
 	name = "Hsueh Yueh"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
-	traits = { offensive_doctrine }
+	gfx = "GFX_portrait_chi_xue_yue"
+	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
 }
 
 create_field_marshal = {
 	name = "Tai An-lan"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
-	traits = {  offensive_doctrine }
+	gfx = "GFX_portrait_chi_tai_an_lan"
+	traits = {  offensive_doctrine trait_reckless career_officer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Wang Yao-wu"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	traits = { defensive_doctrine }
+	gfx = "GFX_portrait_chi_wang_yaowu"
+	traits = { defensive_doctrine trait_cautious infantry_officer }
 	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sun Li Jen"
+	gfx = "GFX_portrait_chi_sun_li_jen"
+	traits = { brilliant_strategist }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hu Zongnan"
+	gfx = "GFX_portrait_chi_hu_zongnan"
+	traits = { politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gu Zhutong"
+	gfx = "GFX_portrait_chi_gu_zhutong"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Wei Lihuang"
+	gfx = "GFX_portrait_chi_wei_lihuang"
+	traits = { infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Fu Zuoyi"
+	gfx = "GFX_portrait_chi_fu_zuoyi"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Zhang Xueliang"
+	gfx = "GFX_portrait_chi_zhang_xueliang"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }

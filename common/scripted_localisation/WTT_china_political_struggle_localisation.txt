@@ -543,7 +543,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			595 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -556,7 +556,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			595 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -571,7 +571,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			596 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -584,7 +584,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			596 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -599,7 +599,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			597 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -612,7 +612,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			597 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -627,7 +627,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			598 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -640,7 +640,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			598 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -655,7 +655,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			600 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -668,7 +668,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			600 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -683,7 +683,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			601 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -696,7 +696,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			601 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -711,7 +711,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			602 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -724,7 +724,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			602 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -739,7 +739,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			603 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -752,7 +752,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			603 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -767,7 +767,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			605 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -780,7 +780,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			605 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -795,7 +795,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			606 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -808,7 +808,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			606 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -823,7 +823,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			607 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -836,7 +836,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			607 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -851,7 +851,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			608 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -864,7 +864,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			608 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -879,7 +879,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			613 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -892,7 +892,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			613 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -907,7 +907,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			614 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -920,7 +920,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			614 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -935,7 +935,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			620 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -948,7 +948,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			620 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -965,7 +965,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			615 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -978,7 +978,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			615 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -993,7 +993,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			621 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1006,7 +1006,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			621 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1023,7 +1023,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			622 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1036,7 +1036,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			622 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1053,7 +1053,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			283 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1066,7 +1066,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			283 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1081,7 +1081,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			604 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1094,7 +1094,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			604 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1109,7 +1109,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			616 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1122,7 +1122,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			616 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1139,7 +1139,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			287 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1152,7 +1152,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			287 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1167,7 +1167,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			617 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1180,7 +1180,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			617 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1195,7 +1195,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			618 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1208,7 +1208,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			618 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1223,7 +1223,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			619 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1236,7 +1236,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			619 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1253,7 +1253,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			325 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1266,7 +1266,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			325 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1283,7 +1283,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			591 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1296,7 +1296,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			591 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1311,7 +1311,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			592 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1324,7 +1324,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			592 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1339,7 +1339,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			593 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1352,7 +1352,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			593 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1367,7 +1367,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			594 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1380,7 +1380,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			594 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1395,7 +1395,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			599 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}
@@ -1408,7 +1408,7 @@ defined_text = { #Country
 	text = {
 		trigger = {
 			599 = {
-				has_variable = state_political_support_value
+				WTT_is_active_political_struggle_state = yes
 				has_state_flag = majority_political_platform_@PREV
 			}
 		}

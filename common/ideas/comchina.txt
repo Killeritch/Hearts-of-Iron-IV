@@ -137,7 +137,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_org_regain = -0.1
+				army_org_regain = -0.1
 				training_time_factor = 0.2
 				land_reinforce_rate = -0.01
 			}
@@ -248,7 +248,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				local_org_regain = 0.1
+				army_org_regain = 0.1
 				army_core_attack_factor = 0.2
 			}
 		}
@@ -263,6 +263,27 @@ ideas = {
 
 			modifier = {
 				partisan_effect = 0.75
+			}
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		PRC_maoism = {
+
+			picture = generic_infantry_bonus
+
+			allowed = { original_tag = PRC }
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
 	}
@@ -282,7 +303,7 @@ ideas = {
 
 		PRC_zhou_enlai = {
 
-			picture = TODO_WTT_ART
+			picture = generic_political_advisor_asia_2
 				
 			allowed = {
 				original_tag = PRC
@@ -293,7 +314,7 @@ ideas = {
 
 		PRC_liu_shaoqi = {
 
-			picture = TODO_WTT_ART
+			picture = generic_political_advisor_asia_1
 				
 			allowed = {
 				original_tag = PRC
@@ -304,7 +325,7 @@ ideas = {
 
 		PRC_he_yuandang = {
 
-			picture = generic_political_advisor_asia_3
+			picture = generic_political_advisor_asia_1
 			
 			allowed = {
 				original_tag = PRC
@@ -315,15 +336,18 @@ ideas = {
 
 		PRC_deng_xiaoping = {
 			
-			picture = cool_pix_here #TODO_WTT_ART
+			picture = generic_political_advisor_asia_2
 
 			available = {
 				has_completed_focus = PRC_socialist_market_economy
 			}
 						
 			allowed = {
-				original_tag = PRC
-				has_dlc = "Waking the Tiger" #WTT_TODO: should probably be available to all but locked behind focus in DLC
+				OR = {
+					original_tag = PRC
+					is_chinese_warlord = yes
+				}
+				has_dlc = "Waking the Tiger"
 			}
 
 			traits = { captain_of_industry }
@@ -335,7 +359,7 @@ ideas = {
 
 		PRC_dong_biwu = {
 			
-			picture = cool_pix_here #TODO_WTT_ART
+			picture = generic_political_advisor_asia_1
 						
 			allowed = {
 				original_tag = PRC
@@ -351,14 +375,17 @@ ideas = {
 
 		PRC_kang_sheng = {
 			
-			picture = cool_pix_here #TODO_WTT_ART
+			picture = generic_political_advisor_asia_2
 
 			available = {
 				has_completed_focus = PRC_military_intelligence_department
 			}
 			
 			allowed = {
-				original_tag = PRC
+				OR = {
+					original_tag = PRC
+					is_chinese_warlord = yes
+				}
 				has_dlc = "Waking the Tiger"
 			}
 
@@ -376,7 +403,7 @@ ideas = {
 		
 		PRC_zhu_de = {
 			
-			picture = WTT_TODO_ART
+			picture = generic_army_asia_3
 
 			allowed = {
 				original_tag = PRC
@@ -391,7 +418,7 @@ ideas = {
 
 		PRC_su_yu = {
 			
-			picture = WTT_TODO_ART
+			picture = generic_army_asia_4
 
 			allowed = {
 				original_tag = PRC
@@ -406,7 +433,7 @@ ideas = {
 
 		PRC_otto_braun = {
 			
-			picture = WTT_TODO_ART
+			picture = generic_army_europe_3
 
 			allowed = {
 				original_tag = PRC
@@ -514,6 +541,8 @@ ideas = {
 	high_command = {
 
 		PRC_xu_xiangqian = {
+
+			picture = generic_army_asia_1
 			
 			allowed = {
 				original_tag = PRC
@@ -543,7 +572,7 @@ ideas = {
 
 		PRC_chen_geng = {
 
-			picture = WTT_TODO_ART
+			picture = generic_army_asia_2
 			
 			allowed = {
 				original_tag = PRC
@@ -558,7 +587,7 @@ ideas = {
 		
 		PRC_chen_yi = {
 
-			picture = generic_army_asia_1
+			picture = generic_army_asia_2
 			
 			allowed = {
 				original_tag = PRC
@@ -620,7 +649,7 @@ ideas = {
 	theorist = {
 		PRC_liu_bocheng = {
 
-			picture = TODO_WTT_ART
+			picture = generic_air_asia_1
 			
 			allowed = {
 				original_tag = PRC

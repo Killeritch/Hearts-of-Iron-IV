@@ -15,11 +15,19 @@ country_event = {
 	
 	option = { # Breaking point!
 		name = china.1.a
-		ai_chance = { factor = 85 }
+		ai_chance = { factor = 90 }
 		effect_tooltip = {
 			JAP = {
-				add_national_unity = 0.05
+				add_war_support = 0.05
 				country_event = { id = japan.1 }
+				create_wargoal = {
+  					type = annex_everything
+  					target = CHI
+  				}
+  				create_wargoal = {
+  					type = annex_everything
+  					target = SHX
+  				}
 			}
 		}
 		hidden_effect = {
@@ -28,12 +36,14 @@ country_event = {
 	}
 	option = { # Make more concessions
 		name = china.1.b
-		ai_chance = { factor = 15 }
+		ai_chance = { factor = 10 }
 		JAP = {
+			set_truce = { target = ROOT days = 180 }
 			effect_tooltip = {
 				transfer_state = 608
 				transfer_state = 597
 				transfer_state = 614
+				add_state_claim = 613
 			}
 			country_event = { id = japan.2 }
 		}
@@ -99,6 +109,7 @@ country_event = {
 	trigger = {
 		tag = PRC
 		num_of_controlled_states > 3
+		has_country_leader = { ruling_only = yes name = "Mao Zedong" }
 	}
 	
 	option = {
@@ -123,6 +134,9 @@ country_event = {
 	trigger = {
 		tag = CHI
 		NOT = { has_war_with = PRC }
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
 		any_neighbor_country = {
 			tag = PRC
 			has_opinion_modifier = hostile_status
@@ -431,14 +445,11 @@ country_event = {
 
 	trigger = {
 		has_country_flag = CCW_offensive_executed
+		NOT = { has_dlc = "Waking the Tiger" }
 		has_opinion_modifier = hostile_status
 		OR = {
 			divisions_in_state = {
-				state = 605
-				size > 0
-			}
-			divisions_in_state = {
-				state = 620
+				state = 744
 				size > 0
 			}
 			divisions_in_state = {
@@ -466,32 +477,25 @@ country_event = {
 	
 	option = {
 		name = china.13.a
-		if = {
-			limit = {
-				divisions_in_state = {
-					state = 605
-					size > 0
+		CHI = {
+			if = {
+				limit = {
+					divisions_in_state = {
+						state = 744
+						size > 0
+					}
 				}
+				744 = { set_border_war = yes }
 			}
-			605 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				divisions_in_state = {
-					state = 620
-					size > 0
+			if = {
+				limit = {
+					divisions_in_state = {
+						state = 607
+						size > 0
+					}
 				}
+				607 = { set_border_war = yes }
 			}
-			620 = { set_border_war = yes }
-		}
-		if = {
-			limit = {
-				divisions_in_state = {
-					state = 607
-					size > 0
-				}
-			}
-			607 = { set_border_war = yes }
 		}
 		622 = { set_border_war = yes }
 	}
@@ -547,7 +551,7 @@ country_event = {
 	option = {
 		name = china.14.a
 		add_political_power = -100
-		add_national_unity = -0.05
+		add_stability = -0.05
 		PRC = { country_event = { id = china.15 } }
 	}
 }
@@ -564,7 +568,8 @@ country_event = {
 	option = {
 		name = china.15.a
 		add_political_power = 100
-		add_national_unity = 0.05
+		add_stability = 0.05
+		add_war_support = 0.1
 	}
 }
 
@@ -613,7 +618,7 @@ country_event = {
 	option = {
 		name = china.16.a
 		add_political_power = -100
-		add_national_unity = -0.05
+		add_stability = -0.05
 		CHI = { country_event = { id = china.17 } }
 	}
 }
@@ -630,7 +635,8 @@ country_event = {
 	option = {
 		name = china.17.a
 		add_political_power = 100
-		add_national_unity = 0.05
+		add_stability = 0.05
+		add_war_support = 0.1
 	}
 }
 
@@ -651,20 +657,11 @@ country_event = {
 				if = {
 					limit = {
 						divisions_in_state = {
-							state = 605
+							state = 744
 							size > 0
 						}
 					}
-					605 = { set_border_war = yes }
-				}
-				if = {
-					limit = {
-						divisions_in_state = {
-							state = 620
-							size > 0
-						}
-					}
-					620 = { set_border_war = yes }
+					744 = { set_border_war = yes }
 				}
 				if = {
 					limit = {
@@ -690,6 +687,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
 		tag = CHI
 		has_war_with = JAP
 		JAP = { has_offensive_war = yes }
@@ -725,6 +725,9 @@ country_event = {
 	picture = GFX_report_event_chinese_officers
 
 	trigger = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
 		NOT = { has_country_flag = china.101_fired }
 		has_global_flag = CHI_unite
 		OR = {
@@ -774,6 +777,11 @@ country_event = {
 			add_to_faction = ROOT 
 			country_event = china.106
 		}
+		add_ai_strategy = {
+			type = alliance
+			id = "CHI"
+			value = 200
+		}
 		#Nothing
 	}
 }
@@ -788,6 +796,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
 		has_global_flag = CHI_unite
 		tag = SIK
 		GER = { has_war_with = SOV }
@@ -849,6 +860,11 @@ country_event = {
 			}
 		}
 		CHI = { add_to_faction = ROOT }
+		add_ai_strategy = {
+			type = alliance
+			id = "CHI"
+			value = 200
+		}
 	}
 	option = {
 		ai_chance = { 
@@ -885,6 +901,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
 		has_global_flag = CHI_unite_PRC
 		tag = PRC
 		CHI = {
@@ -919,6 +938,11 @@ country_event = {
 			add_to_faction = ROOT
 			PRC = { add_opinion_modifier = { target = CHI modifier = unstable_alliance } }
 			CHI = { add_opinion_modifier = { target = PRC modifier = unstable_alliance } }			
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "CHI"
+			value = 200
 		}
 		add_to_war = {
 			targeted_alliance = CHI
@@ -1204,6 +1228,9 @@ country_event = {
 	trigger = {
 		original_tag = CHI
 		has_government = communism
+		Not = {
+			has_dlc = "Waking the Tiger"
+		}
 		OR = {
 			is_subject_of = PRC
 			is_subject = no
@@ -1267,6 +1294,9 @@ country_event = {
 	trigger = {
 		original_tag = CHI
 		has_government = neutrality
+		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
 		PRC = {
 			exists = yes
 			has_government = communism
@@ -1342,6 +1372,9 @@ country_event = {
 	trigger = {
 		tag = PRC
 		NOT = {
+			has_dlc = "Waking the Tiger"
+		}
+		NOT = {
 			country_exists = CHI
 		}
 		OR = {
@@ -1383,7 +1416,10 @@ country_event = {
 		trigger = {
 			owns_state = 613
 		}
-		set_capital = 613
+		custom_effect_tooltip = CHI_nanjing_tt
+		hidden_effect = {
+			set_capital = 613
+		}
 	}
 
 	#Stay where you are

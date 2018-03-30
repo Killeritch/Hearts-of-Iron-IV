@@ -150,7 +150,7 @@ objectTypes = {
 		animation = { id = "idle" type = "bomber_default_idle_animation" }
 	}
 	
-	# Meshes for internal scenes, placeholders:
+##### Meshes for internal scenes, placeholders:
 	pdxmesh = {
 		name = "fighter_default_mesh"
 		file = "gfx/models/units/planes/generic_plane_light.mesh"
@@ -175,7 +175,7 @@ objectTypes = {
 		animation = { id = "idle" type = "missile_1_bombing_animation" }
 	}
 	
-	# Meshes for world scenes (contains just empty animated joints that we attach above meshes)
+##### Meshes for world scenes (contains just empty animated joints that we attach above meshes)
 	pdxmesh = {
 		name = "fighter_1_patrol_mesh"
 		file = "gfx/models/units/planes/fighter_1_patrol.mesh"
@@ -246,5 +246,21 @@ objectTypes = {
 		animation = { id = "pass" 		type = "fighter_3_vs_fighter_3_pass_animation" }
 		animation = { id = "success" 	type = "fighter_3_vs_fighter_3_success_animation" }
 		animation = { id = "fail" 		type = "fighter_3_vs_fighter_3_fail_animation" }
+	}
+	pdxmesh = {
+		name = "fighter_1_vs_transport_1_mesh"
+		file = "gfx/models/units/planes/fighter_1_vs_bomber_1.mesh"
+		animation = { id = "pass" 		type = "fighter_1_vs_bomber_1_pass_animation" }
+		animation = { id = "success" 	type = "fighter_1_vs_bomber_1_success_animation" }
+	}
+	pdxmesh = {
+		name = "transport_1_supplying_mesh"
+		file = "gfx/models/units/planes/bomber_1_bombing.mesh"
+		animation = { id = "default" type = "bomber_1_bombing_animation" }
+	}
+	pdxmesh = {
+		name = "transport_3_supplying_mesh"
+		file = "gfx/models/units/planes/bomber_3.mesh"
+		animation = { id = "default" type = "bomber_3_bombing_animation" }
 	}
 }

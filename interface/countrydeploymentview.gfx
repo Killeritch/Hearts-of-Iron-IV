@@ -159,6 +159,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_add_limit_bg"
+		texturefile = "gfx/interface/add_limit_bg.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_conveyor_group_btn"
 		texturefile = "gfx/interface/conveyor_group_btn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -170,6 +175,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/conveyor_location_btn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_collapse_or_close"
+		textureFile = "gfx//interface//collapse_or_close_buttons.dds"
+		noOfFrames = 3
 	}
 	
 	textSpriteType = {
@@ -203,7 +214,7 @@ spriteTypes = {
 		colortwo = { 1.0 1.0 1.0 }
 		textureFile1 = "gfx/interface/deployment_entry_progressbar.dds"
 		textureFile2 = "gfx/interface/deployment_entry_progressbar_bg.dds"
-		size = { x = 79 y = 12 }
+		size = { x = 68 y = 12 }
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	
@@ -213,7 +224,7 @@ spriteTypes = {
 		colortwo = { 1.0 1.0 1.0 }
 		textureFile1 = "gfx/interface/deployment_entry_stalled_progressbar.dds"
 		textureFile2 = "gfx/interface/deployment_entry_progressbar_bg.dds"
-		size = { x = 79 y = 12 }
+		size = { x = 68 y = 12 }
 		effectFile = "gfx/FX/progress_startend.lua"
 	}
 	

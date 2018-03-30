@@ -1,4 +1,130 @@
-﻿#Hearts of Iron IV: Death or Dishonor
+﻿#Hearts of Iron IV: Waking the Tiger
+
+#CREATIVE DIRECTOR
+Johan Andersson
+
+#GAME DIRECTOR
+Dan Lind
+
+#PROJECT LEAD
+Sofia Höglund
+
+#GAME DESIGN
+Dan Lind
+Kandra Dahlgren
+
+#PROGRAMMING
+Tomasz Kowalczyk
+Ilya Nikitin
+Engin Mercan
+Carl Carenvall
+Johan Lerström
+Jakob Have
+
+#ADDITIONAL PROGRAMMING
+Dan Lind
+Andy Gainey
+Baptiste Careil
+Henrik Hansson
+
+#AI PROGRAMMING
+Carl Carenvall
+Engin Mercan
+
+#CONTENT DESIGNERS
+Jakob Have
+Gabriel Blum
+Drikus Kuiper
+
+#ADDITIONAL CONTENT DESIGN
+Tristan Edge
+
+#2D ARTIST
+Ylva Ljungqvist
+
+#ADDITIONAL 2D ART
+Timor Khanagov
+
+#COVER ART
+Ylva Ljungqvist
+
+#3D ARTIST
+Joacim Carlberg
+
+#3D ANIMATION
+Niklas Tammpere
+
+#UI DESIGN
+Tomas Friberg
+
+#QA MANAGERS
+Filippa Gannholm
+Felix Gladitz
+
+#EMBEDDED QA
+Katya Magnusson
+Niall Bird
+
+#QA PRIMARY PROJECT COORDINATOR
+Albin Wallin
+
+#QA TESTERS
+Albin Wallin
+Daniel Sjöberg
+Eva Mayer
+Jesper Norberg
+Joseph Gardener
+Tegan Harris
+William Riggott
+
+#QLOC QA Team Leader
+Marcin Jankowski
+Karolina Jagnyziak
+
+#QLOC QA Testers
+Bartosz Maciejewski
+Oskar Nowak
+Uroš Rudolf
+Jan Starosz
+Maksymilian Szczepańczyk
+Gabriel Urban
+
+#QLOC ADDITIONAL QA Testers
+Sofiane Boukoffa
+Michał Wągrocki
+
+#COMPOSER
+Andreas Waldetoft
+Mangalf
+
+#AUDIO DIRECTOR
+Björn Iversen
+
+#ADDITIONAL AUDIO
+David Schlein-Andersen
+Thomas Andersson
+
+#DLC MANAGER
+Pernilla Sparrhult
+
+#ADDITIONAL DLC MANAGER
+Adrian Banninga
+
+#LOCALIZATION MANAGER
+Sara Wendel-Örtqvist
+
+#LOCALIZATION
+Nicolas Fouqué
+QLOC S.A.
+Amadin LRM LTD
+S & H Entertainment Localization
+
+#3D ART
+Vonboe Studios
+
+----------------
+
+#Hearts of Iron IV: Death or Dishonor
 
 #CREATIVE DIRECTOR
 Johan Andersson
@@ -32,7 +158,7 @@ Gabriel Blum
 David Ballantyne
 
 #ADDITIONAL CONTENT DESIGNERS
-Drikus Kupier
+Drikus Kuiper
 
 #2D ARTISTS
 Ylva Ljungqvist
@@ -541,7 +667,7 @@ Charles Ewell
 Carlos Armando Castro Sánchez
 Nick "Kadanz" Frans
 Nick Williams
-Michał Łasek
+Michal Lasek
 Maxim Vertunov
 Benjamin Thomas Fuller
 Alejandro Harasich

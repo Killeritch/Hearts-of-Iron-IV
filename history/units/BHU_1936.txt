@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "Infantry Division"		# Bhutanese Army never expanded past battalion size (in 1943)
 
+	division_names_group = BHU_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }

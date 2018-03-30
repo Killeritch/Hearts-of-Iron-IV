@@ -1364,7 +1364,7 @@ shared_focus = {
 	}
 
 	available = {
-		all_other_country { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
+		all_other_country = { NOT = { has_completed_focus = CHI_guarantee_the_hanoi_route } }
 		FRA_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
@@ -2048,7 +2048,6 @@ shared_focus = {
 	available = {
 		is_subject = no
 		NOT = { has_government = fascism }
-		#TODO_WTT_CD check for flag if Chinese faction exists
 	}
 
 	bypass = {
@@ -2632,7 +2631,7 @@ shared_focus = {
 			is_subject = no
 			is_subject_of = ENG
 		}
-		all_other_country { NOT = { has_completed_focus = CHI_burma_road } }
+		all_other_country = { NOT = { has_completed_focus = CHI_burma_road } }
 		ENG_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
@@ -2723,7 +2722,7 @@ shared_focus = {
 			is_subject = no
 			is_subject_of = ENG
 		}
-		all_other_country { NOT = { has_completed_focus = CHI_ledo_road } }
+		all_other_country = { NOT = { has_completed_focus = CHI_ledo_road } }
 		ENG_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
@@ -3009,7 +3008,7 @@ shared_focus = {
 			is_subject = no
 			is_subject_of = ENG
 		}
-		all_other_country { NOT = { has_completed_focus = CHI_the_hump } }
+		all_other_country = { NOT = { has_completed_focus = CHI_the_hump } }
 		OR = {
 			AND = {
 				has_completed_focus = CHI_british_cooperation
@@ -3689,8 +3688,10 @@ shared_focus = {
 	}
 
 	available = {
-		JAP = { has_government = ROOT }
-		JAP_will_support = yes
+		OR = {
+			JAP = { has_government = ROOT }
+			JAP_will_support = yes
+		}
 		NOT = { has_wargoal_against = JAP }
 		NOT = { has_war_with = JAP }
 	}

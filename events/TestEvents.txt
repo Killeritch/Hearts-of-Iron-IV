@@ -10,41 +10,51 @@ country_event = {
 	title = test.1.t
 	desc = test.1.d
 	
-	trigger = {
-		always = no
-		tag = FRA
-		date > 1936.2.1
-	}
-
-	mean_time_to_happen = { days = 2 }
-
 	immediate = {
-		set_province_name = { id = 3529 name="LOL_TEST" }
+		
 	}
+	trigger = {
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = test.1.a
+	}
+}
+
+add_namespace = test_state
+# Test Event 1
+state_event = {
+	id = test_state.1
+	title = test_state.1.t
+	desc = test_state.1.d
+	
+	trigger = {
+
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = test_state.1.a		
+	}
+}
+
+# Test Event 1
+country_event = {
+	id = test.2
+	title = test.1.t
+	desc = test.2.d
+	
+	trigger = {
+	}
+
+	is_triggered_only = yes
 	
 	option = {
 		name = test.1.a
 		
-		reset_province_name = 3529
-	}
-}
-
-# Test Event 2
-country_event = {
-	id = test.2
-	title = test.2.t
-	desc = test.2.d
-	
-	is_triggered_only = yes
-	
-	immediate = { FROM = { add_political_power = 100 } }
-
-	option = {
-		name = test.2.a
-		FROM = { add_political_power = 100 }
-		event_target:yalta_partner = {
-			add_political_power = 100
-		}
 	}
 }
 
@@ -72,4 +82,60 @@ country_event = {
 			}
 		}
 	}
+}
+
+country_event = {
+	id = generic.1011
+	title = generic.1011.t
+	desc = test_border_war_loc
+	
+	picture = GFX_report_event_physics_lab_01
+
+	is_triggered_only = yes
+
+	immediate = {
+		ROOT = { save_event_target_as = our_country }
+		FROM = { save_event_target_as = our_state }
+		FROM.FROM = { save_event_target_as = their_country }
+		FROM.FROM.FROM = { save_event_target_as = their_state }
+	}
+	
+	option = {
+		name = generic.10.a
+
+		event_target:our_country = {
+			add_political_power = 100
+		}
+		event_target:their_country = { add_political_power = 100 }
+
+		FROM = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		FROM.FROM.FROM = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+
+	}	
+}
+country_event = {
+	id = generic.1012
+	title = generic.1012.t
+	desc = test_border_war_loc
+	
+	picture = GFX_report_event_physics_lab_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = generic.10.a
+		add_political_power = 200
+	}	
 }

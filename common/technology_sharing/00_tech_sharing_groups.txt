@@ -104,7 +104,7 @@ technology_sharing_group = {
 					ENG = { has_government = communism } 
 				}
 				AND = {
-					USA = { has_government = facsism }
+					USA = { has_government = fascism }
 					ENG = { has_government = fascism } 
 				}
 				AND = {

@@ -1,0 +1,12 @@
+﻿l_braz_por:
+ DECISIONVIEW_TITLE:0 "Eventos e decisões"
+ DECISIONSVIEW_EVENT_HEADER:0 "Eventos"
+ POPUP_NEWS:0 "Janela de notícias"
+ POPUP_EVENTS:0 "Janela de eventos"
+ CATEGORY_COLLAPSE_DESC:0 "§GClique§! para abrir"
+ CATEGORY_EXPAND_DESC:0 "§GClique§! para expandir"
+ DECISION_KEEP_NOTIFIED:1 "§HNotificação§!\n\n§GClique§! para §Rnão ser notificado§! quando essa decisão se tornar possível.\n"
+ DECISION_NOT_KEEP_NOTIFIED:1 "§HNotificação§!\n\n§GClique§! para §Rser notificado§! quando essa decisão se tornar possível.\n"
+ TAKE_DECISION_HEADER:0 "§HTomar decisão§!\n\n"
+ DECISION_COST_DESC:0 "Há um custo de £pol_power $VAL|H0$ para se tomar a decisão"
+ DECISION_COST_NOT_ENOUGH:0 "Há um custo de £pol_power $VAL|HR0$ para se tomar a decisão"

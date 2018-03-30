@@ -79,6 +79,7 @@ news_event = {
 		name = dod_news.2.b
 		trigger = {
 			is_in_faction_with = CZE
+			NOT = { TAG = CZE }
 		}
 	}
 	option = {
@@ -113,6 +114,7 @@ news_event = {
 		name = dod_news.2.b
 		trigger = {
 			is_in_faction_with = CZE
+			NOT = { TAG = CZE }
 		}
 	}
 	option = {
@@ -153,6 +155,10 @@ news_event = {
 		name = dod_news.4.c
 		trigger = {
 			is_in_faction_with = GER
+			NOT = {
+				TAG = GER
+			}
+			NOT = { TAG = CZE }
 		}
 	}
 	option = {

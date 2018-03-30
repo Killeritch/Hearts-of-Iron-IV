@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "Alfurqat Almasha"				# Infantry Division
 
+	division_names_group = IRQ_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -15,6 +17,8 @@
 }
 division_template = {
 	name = "Alfurqat Aljabalia"				# Mountain Division
+
+	division_names_group = IRQ_MTN_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -33,7 +37,11 @@ division_template = {
 units = {
 	##### Royal Iraqi Army #####
 	division = {
-		name = "1 Alfurqat"
+		#name = "1 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 2097
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
@@ -41,7 +49,11 @@ units = {
 
 	}
 	division = {
-		name = "2 Alfurqat"
+		#name = "2 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 10106
 		division_template = "Alfurqat Aljabalia"	
 		start_experience_factor = 0.2
@@ -49,7 +61,11 @@ units = {
 
 	}
 	division = {
-		name = "3 Alfurqat"
+		#name = "3 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 2097
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2
@@ -57,7 +73,11 @@ units = {
 
 	}
 	division = {
-		name = "4 Alfurqat"
+		#name = "4 Alfurqat"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 2089
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.2

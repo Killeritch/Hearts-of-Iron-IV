@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Juntuán"				# Represents a corps of 3 NRA divisions (2 brigades of 2 regiments each)
+	division_names_group = MEN_INF_01
 									# Militia-level training and equipment
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,7 +11,8 @@
 }
 
 division_template = {
-	name = "Morit Diviziin"			# Cavalry Division
+	name = "Qibing Jun"			# Cavalry Division
+	division_names_group = MEN_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -21,28 +23,40 @@ division_template = {
 }
 
 units = {
-	division = {
-		name = "1 Juntuán"
+	division = { # "1 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 828
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division = {
-		name = "1 Morit Diviziin"
+	division = { # "1 Qibing Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 1590
-		division_template = "Juntuán"
+		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
-	division = {
-		name = "2 Morit Diviziin"
+	division = { # "2 Qibing Jun"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 828
-		division_template = "Juntuán"
+		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 	}
 }
+
+
+########## STARTING PRODUCTION ##########
 instant_effect = {
 	add_equipment_production = {
 		equipment = {

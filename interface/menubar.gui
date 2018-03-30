@@ -498,13 +498,28 @@ guiTypes = {
 				#maxWidth = 340
 				format = center
 			}
-			
-			gridboxType = {
-				name ="faction_list"
-				position = { x = 130 y = 50 }
-				size = { width = 100%% height = 100%% }
-				slotsize = { width = 500 height = 25 }
-				#add_horizontal = no
+
+			containerWindowType = {
+				name ="factions_list_container"
+				position = { x = -185 y = 46 }
+				size = { width = 438 height = 136 }
+				verticalScrollbar = "right_vertical_slider"
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent"
+				}				
+
+				gridboxType = {
+					name ="faction_list"
+					position = { x = 0 y = 0 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 200 height = 25 }
+					#add_horizontal = no
+					#padding = { top = 50 bottom = 50 }
+					format = "UPPER_LEFT"
+					max_slots_horizontal = 1
+				}
 			}
 		}
 		

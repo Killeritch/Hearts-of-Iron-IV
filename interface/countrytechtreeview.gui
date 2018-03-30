@@ -296,6 +296,14 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
+
+
+			gridboxtype = {
+				name = "tech_special_forces_tree"
+				position = { x = 140 y = 1140 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
 		}
 
 		containerWindowType = {
@@ -1741,7 +1749,7 @@ guiTypes = {
 				name = "size_filler"
 				position = { x=0 y=0 }
 				size = {
-					width = 1350 height = 1000 
+					width = 1550 height = 1000 
 					min = { width = 100%% height = 100%% }
 				}
 				
@@ -1995,7 +2003,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_subtitle_construction"
-					position = { x = 929 y = 255  }
+					position = { x = 871 y = 255  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -2032,7 +2040,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "construction1_tree"
-				position = { x = 950 y = 312 }
+				position = { x = 894 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2041,7 +2049,7 @@ guiTypes = {
 			iconType = {
 				name = "highlight_industry_2"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
-				position = { x=946 y=312}
+				position = { x=890 y=312}
 				hide = yes
 				alwaystransparent = yes
 			}			
@@ -3446,7 +3454,8 @@ guiTypes = {
 				maxWidth = 495
 				maxHeight = 70
 				format = left
-				vertical_alignment = center				
+				vertical_alignment = center		
+				format = center		
 			}
 			
 			background = {

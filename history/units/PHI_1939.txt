@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"			# Represents both regular and reserve Philippines divisions
+	division_names_group = PHI_INF_01
 										# Regular division had decent experience, close to up-to-date US equipment
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -21,8 +22,11 @@
 units = {
 	######## LAND OOB ########
 	##### Philippine High Command #####
-	division = {
-		name = "1st Philippines Division"
+	division = { # "1st Philippines Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 10265
 		division_template = "Infantry Division"		
 		start_experience_factor = 0.2

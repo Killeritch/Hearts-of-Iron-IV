@@ -1,5 +1,8 @@
-﻿division_template = {
+﻿### Pakistan OOB ###
+
+division_template = {
 	name = "Infantry Division"
+	division_names_group = BRENGL_INF_01		# Uses generic English templates
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -15,7 +18,8 @@
 }
 
 division_template = {
-	name = "Armored-Division"
+	name = "Armoured Division"
+	division_names_group = BRENGL_ARM_01		# Uses generic English templates
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }

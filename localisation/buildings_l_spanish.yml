@@ -20,7 +20,7 @@
  synthetic_refinery:0 "Refinería sintética"
  synthetic_refinery_desc:0 "Este edificio proporciona al estado"
  radar_station:0 "Estación de radar"
- radar_station_desc:2 "El radar permite reunir información sobre las tropas enemigas presentes en los estados cercanos.\nUn nivel alto de radar en un estado aumenta el alcance efectivo del radar.\nTambién sirve para que el estado detecte mejor las fuerzas aéreas enemigas, con lo que los aviones tendrán más opciones de enfrentarse a ellas.\nAdemás, los radares aumentan la detección de flotas enemigas en el mar."
+ radar_station_desc:3 "El radar permite reunir información sobre las tropas enemigas presentes en los estados cercanos.\nUn nivel alto de radar en un estado aumenta el alcance efectivo del radar.\nTambién sirve para que el estado detecte mejor las fuerzas aéreas enemigas, con lo que los aviones tendrán más opciones de enfrentarse a ellas.\nAdemás, los radares aumentan la detección de flotas enemigas en el mar."
  rocket_site:0 "Emplazamiento de cohetes"
  rocket_site_desc:0 "Este edificio proporciona al estado el despliegue de los cohetes producidos."
  nuclear_reactor:0 "Reactor nuclear"

@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "Paidala Dibhijana"		# Represents groupings of independent Nepalese battalions	
 									# Army totalled 16 Gurkha battalions that were committed to allied war effort
+	division_names_group = NEP_MTN_01
+
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -16,7 +18,11 @@
 units = {
 	##### Sahi Nepali Sena #####
 	division = {
-		name = "1 Nepali Dibhijana"
+		#name = "1 Nepali Dibhijana"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 4987
 		division_template = "Paidala Dibhijana"
 		start_experience_factor = 0.3
@@ -24,7 +30,11 @@ units = {
 
 	}
 	division = {
-		name = "2 Nepali Dibhijana"
+		#name = "2 Nepali Dibhijana"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 4987
 		division_template = "Paidala Dibhijana"
 		start_experience_factor = 0.3

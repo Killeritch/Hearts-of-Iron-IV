@@ -8,7 +8,7 @@ set_technology = {
 	early_fighter = 1
 }
 set_country_flag = monroe_doctrine
-
+set_war_support = 0.1
 set_convoys = 20
 
 1939.1.1 = {
@@ -50,7 +50,7 @@ set_convoys = 20
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -84,7 +84,7 @@ set_politics = {
 create_country_leader = {
 	name = "José Agripino Barnet"
 	desc = "POLITICS_JOSE_AGRIPINO_BARNET_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+	picture = "GFX_portrait_cuba_jose_barnet"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

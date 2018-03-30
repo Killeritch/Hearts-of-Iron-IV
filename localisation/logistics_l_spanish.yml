@@ -97,3 +97,6 @@
  LOGISTICS_STORAGE_AIR_REINFORCEMENT:0 "§TDe refuerzo aéreo: $AMOUNT|Y$ unidades§!"
  LOGISTICS_STORAGE_PRODUCTION_POOL:0 "§TDe producción: $AMOUNT|Y$ unidades§!"
  PRODUCTION_OUTPUT:0 "Reservas"
+ LOGISTICS_DELETE_EQUIPMENT:0 "§RDestruir§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_TITLE:0 "§HDestruir equipo almacenado§!"
+ LOGISTICS_DELETE_EQUIPMENT_CONFIRM_DESC:0 "\n\n¿Seguro que quieres §Rdestruir§! $EQUIPMENT|Y$?\n\nEl equipo se eliminará de tus reservas y no podrás usarlo más. Este proceso no se puede deshacer.\n\nEl enemigo podrá seguir teniendo acceso al equipo durante $NUM_DAYS|Y$ días en caso de anexión o capitulación."

@@ -61,12 +61,22 @@ country_event = {
 			modifier = {
 				factor = 0				
 				any_other_country = {
-					is_major = yes
+					OR = {
+						is_major = yes
+						tag = YUG
+					}
 					NOT = { tag = ITA }
 					OR = {
 						has_guaranteed = ALB
 						is_in_faction_with = ALB
 					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_government = communism
+					has_government = fascism #glorious Albania will never yield!
 				}
 			}
 		}
@@ -272,6 +282,13 @@ country_event = {
 				value = 200
 			}
 		}
+		FRA = {
+			add_ai_strategy = {
+				type = alliance
+				id = "ITA"
+				value = 200
+			}
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.181 }
 		}
@@ -402,6 +419,7 @@ country_event = {
 			}			
 		}
 		GER = { country_event = { id = germany.96 hours = 6 } }
+		YUG = { country_event = { id = yugoslavia.6 hours = 6 } }
 	}	
 	option = {
 		ai_chance = {

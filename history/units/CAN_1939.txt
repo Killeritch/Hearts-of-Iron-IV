@@ -1,6 +1,8 @@
 ﻿division_template = {
 	name = "Infantry Division"			# For 1st, 2nd Canadian Infantry Divisions
 										# Frontline divisions, most experienced, best-equipped
+	division_names_group = CAN_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -18,6 +20,9 @@
 division_template = {
 	name = "District Militia"			# For largest Military District Forces (2 brigade forces)
 										# Note: all forces at reserve levels in 1939, low experience and WWI-era equipment
+
+	division_names_group = CAN_GAR_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -30,6 +35,9 @@ division_template = {
 division_template = {
 	name = "Cavalry Militia"  
 	# Note: all forces at reserve levels in 1936
+
+	division_names_group = CAN_CAV_01
+
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -38,6 +46,8 @@ division_template = {
 
 division_template = {
 	name = "Armored-Division"
+
+	division_names_group = CAN_ARM_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -52,13 +62,21 @@ units = {
 	##### Royal Canadian Army #####
 	### Canadian Active Service Force (CO: Crerar) ###
 	division= {	
-		name = "1st Canadian Infantry Division"			# CO: McNaughton
+		#name = "1st Canadian Infantry Division"			# CO: McNaughton
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 7361  # Halifax
 		division_template = "Infantry Division"			
 		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "2nd Canadian Infantry Division"			# CO: Odium
+		#name = "2nd Canadian Infantry Division"			# CO: Odium
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 3775 # Toronto
 		division_template = "Infantry Division"			# Still forming and under-strength with reserve equipment
 		start_experience_factor = 0.3
@@ -69,7 +87,11 @@ units = {
 	
 	## 1st Military District ##
 	division= {	
-		name = "1st District Militia"
+		#name = "1st District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 722 # London ONT
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -79,7 +101,11 @@ units = {
 
 	## 2nd Military District ##
 	division= {	
-		name = "2nd District Militia"
+		#name = "2nd District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 3775 # Toronto
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -87,7 +113,11 @@ units = {
 
 	}
 	division= {	
-		name = "2nd District Cavalry"
+		#name = "2nd District Cavalry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 3775 # Toronto
 		division_template = "Cavalry Militia" 
 		start_experience_factor = 0.2
@@ -97,7 +127,11 @@ units = {
 
 	## 3rd Military District ##
 	division= {	
-		name = "3rd District Militia"
+		#name = "3rd District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 3605 # Kingston ONT
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -107,7 +141,11 @@ units = {
 
 	## 4th Military District ##
 	division= {	
-		name = "4th District Militia"
+		#name = "4th District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 4345 # Montreal
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -115,7 +153,11 @@ units = {
 
 	}
 	division= {	
-		name = "4th District Cavalry"
+		#name = "4th District Cavalry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 4345 # Montreal
 		division_template = "Cavalry Militia" 
 		start_experience_factor = 0.2
@@ -125,7 +167,11 @@ units = {
 
 	## 5th Military District ##
 	division= {	
-		name = "5th District Militia"
+		#name = "5th District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 12149 # Quebec City
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -135,7 +181,11 @@ units = {
 
 	## 6th Military District ##
 	division= {	
-		name = "6th District Militia"
+		#name = "6th District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 7361  # Halifax
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -145,7 +195,11 @@ units = {
 
 	## 7th Military District ##
 	division= {	
-		name = "7th District Militia"
+		#name = "7th District Militia"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 7
+		}
 		location = 4285 # St Johns
 		division_template = "District Militia"
 		start_experience_factor = 0.2
@@ -154,7 +208,11 @@ units = {
 	}
 
 	division= {	
-		name = "10th District Cavalry"
+		#name = "10th District Cavalry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 10
+		}
 		location = 4872  # Winnipeg
 		division_template = "Cavalry Militia" 
 		start_experience_factor = 0.2
@@ -164,7 +222,11 @@ units = {
 
 	## 12th Military District ##
 	division= {	
-		name = "12th District Cavalry"
+		#name = "12th District Cavalry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 12
+		}
 		location = 12603  # Regina SASK
 		division_template = "Cavalry Militia" 
 		start_experience_factor = 0.2
@@ -174,7 +236,11 @@ units = {
 
 	## 13th Military District ##
 	division= {	
-		name = "13th District Cavalry"
+		#name = "13th District Cavalry"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 13
+		}
 		location = 3706  # Calgary ALB
 		division_template = "Cavalry Militia" 
 		start_experience_factor = 0.2

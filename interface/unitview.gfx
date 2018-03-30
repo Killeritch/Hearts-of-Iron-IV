@@ -4,6 +4,11 @@ spriteTypes = {
 		name = "GFX_div_designer_colonial_flag_frame"
 		texturefile = "gfx/interface/div_designer_colonial_flag_frame.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_div_designer_colonial_flag_frame2"
+		texturefile = "gfx/interface/div_designer_colonial_flag_frame2.dds"
+	}
 
 	spriteType = {
 		name = "GFX_colonial_flag_small_golden_frame"
@@ -25,7 +30,74 @@ spriteTypes = {
 		texturefile = "gfx/interface/execution_strip_icons.dds"
 		noOfFrames = 3
 	}
-
+	spriteType = { 
+		name = "GFX_minimap_world"
+		textureFile = "gfx/minimap/minimap.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_minimap_border"
+		textureFile = "gfx/minimap/border.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_minimap_defensive_ping_btn"
+		textureFile = "gfx/minimap/defensive_ping_btn.dds" 
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_minimap_offensive_ping_btn"
+		textureFile = "gfx/minimap/offensive_ping_btn.dds" 
+		noOfFrames = 2
+	}
+	
+	spriteType = { 
+		name = "GFX_minimap_handle_default"
+		textureFile = "gfx/minimap/handle_default.dds" 
+	}
+	
+	spriteType = { 
+		name = "GFX_minimap_handle_pinged"
+		textureFile = "gfx/minimap/handle_pinged.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_minimap_ping_offensive"
+		textureFile = "gfx/minimap/minimap_ping_offensive.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_minimap_ping_defensive"
+		textureFile = "gfx/minimap/minimap_ping_defensive.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_worldmap_ping_offensive"
+		textureFile = "gfx/minimap/worldmap_ping_offensive.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_worldmap_ping_defensive"
+		textureFile = "gfx/minimap/worldmap_ping_defensive.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_worldmap_ping_circle"
+		textureFile = "gfx/minimap/worldmap_ping_circle.dds" 
+	}	
+	
+	
+	spriteType = { 
+		name = "GFX_minimap_quad_pixel"
+		textureFile = "gfx/minimap/minimap_quad_pixel.dds" 
+	}	
+	
+	spriteType = { 
+		name = "GFX_minimap_ping_circle"
+		textureFile = "gfx/minimap/ping_circle.dds" 
+	}	
+	
 	spriteType = {
 		name = "GFX_exercise_btn"
 		texturefile = "gfx/interface/exercise_btn.dds"
@@ -35,6 +107,24 @@ spriteTypes = {
 	textSpriteType = {
 		name = "GFX_select_all_armylist_btn"
 		texturefile = "gfx/interface/select_all_armylist_btn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"		
+	}
+	
+	textSpriteType = {
+		name = "GFX_select_all_armylist_short_btn"
+		texturefile = "gfx/interface/select_all_armylist_short_btn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"		
+	}
+
+	spriteType = {
+		name = "GFX_army_group_toggle_armies_divisions_btn"
+		texturefile = "gfx/interface/army_group_toggle_armies_divisions_btn.dds"
+		noOfFrames = 2
+	}
+	
+	textSpriteType = {
+		name = "GFX_army_select_wings_btn"
+		texturefile = "gfx/interface/army_select_wings_btn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"		
 	}
 
@@ -107,12 +197,25 @@ spriteTypes = {
 		name = "GFX_div_count_bg"
 		texturefile = "gfx/interface/div_count_bg.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_group_div_count_bg"
+		texturefile = "gfx/interface/group_div_count_bg.dds"
+	}
 
 	spriteType = {
 		name = "GFX_unitlist_dig_in_icon"
 		texturefile = "gfx/interface/unitlist_dig_in_icon.dds"
 	}
 	
+	# The frames in this image, must match the order of acclimatizations defined in
+	# game/common/acclimatization.txt with 2 images per frame (enabled/disabled).
+	spriteType = {
+		name = "GFX_unitlist_acclimatization"
+		texturefile = "gfx/interface/unitlist_acclimatizations.dds"
+		noOfFrames = 4
+	}
+
 	spriteType = {
 		name = "GFX_unitlist_movement_icon"
 		texturefile = "gfx/interface/unitlist_movement_icon.dds"
@@ -151,6 +254,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_select_half"
 		texturefile = "gfx/interface/select_half.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_consolidate"
+		texturefile = "gfx/interface/consolidate.dds"
 	}	
 
 	spriteType = {
@@ -228,6 +336,24 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_group_leader_portrait_frame"
+		texturefile = "gfx/interface/unitcontrol/group_leader_portrait_frame.dds"
+		allwaystransparent = yes		
+	}
+	
+	spriteType = {
+		name = "GFX_unit_leader_portrait_frame_badge"
+		texturefile = "gfx/interface/unitcontrol/unit_leader_portrait_frame_badge.dds"
+		allwaystransparent = yes		
+	}
+	
+	spriteType = {
+		name = "GFX_group_leader_portrait_frame_badge"
+		texturefile = "gfx/interface/unitcontrol/group_leader_portrait_frame_badge.dds"
+		allwaystransparent = yes		
+	}
+	
+	spriteType = {
 		name = "GFX_plan_execute_level"
 		textureFile = "gfx//interface//execution_strip.dds"
 		noOfFrames = 4
@@ -241,8 +367,13 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_army_group_bg"
+		name = "GFX_army_bg"
 		texturefile = "gfx/interface/unitcontrol/army_group_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_army_group_bg"
+		texturefile = "gfx/interface/unitcontrol/army_group_group_bg.dds"
 	}
 
 	spriteType = {
@@ -254,6 +385,22 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_list_header"
 		texturefile = "gfx/interface/unitcontrol/unit_list_header.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_leader_details_icon"
+		texturefile = "gfx/interface/unitcontrol/leader_details_icon.dds"
+	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_leader_details_icon_available_trait"
+		texturefile = "gfx/interface/unitcontrol/leader_details_icon_available_trait.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	
 	spriteType = {
@@ -317,12 +464,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_execute_stop_small_bg"
 		texturefile = "gfx/interface/unitcontrol/execute_stop_small_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excecute_stop_border_war_bg"
+		texturefile = "gfx/interface/unitcontrol/excecute_stop_border_war_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_border_war_theatre_icon"
+		texturefile = "gfx/interface/unitcontrol/border_war_theatre_icon.dds"
 	}	
 	
 	spriteType = {
 		name = "GFX_execute_button_stop_small"
 		texturefile = "gfx/interface/unitcontrol/execute_btn_stop_small.dds"
-		noOfFrames = 2
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_execute_button_stop_small_ag"
+		texturefile = "gfx/interface/unitcontrol/execute_btn_stop_small_ag.dds"
+		noOfFrames = 4
 	}	
 	
 	spriteType = {
@@ -339,7 +502,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_execute_button_play_small"
 		texturefile = "gfx/interface/unitcontrol/execute_btn_play_small.dds"
-		noOfFrames = 2
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_execute_button_play_small_ag"
+		texturefile = "gfx/interface/unitcontrol/execute_btn_play_small_ag.dds"
+		noOfFrames = 4
 	}	
 	
 	spriteType = {
@@ -360,6 +529,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_group_marker3"
 		texturefile = "gfx/interface/unitcontrol/group_marker3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_group_marker4"
+		texturefile = "gfx/interface/unitcontrol/group_marker4.dds"
 	}
 	
 	spriteType = {
@@ -496,4 +670,59 @@ spriteTypes = {
 		texturefile = "gfx/interface/unitcontrol/color_picker_scroll_drager.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	
+	spriteType = {
+		name = "GFX_trait_planning"
+		textureFile = "gfx/interface/unitcontrol/trait_planning.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_attack"
+		textureFile = "gfx/interface/unitcontrol/trait_attack.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_logistics"
+		textureFile = "gfx/interface/unitcontrol/trait_logistics.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_defense"
+		textureFile = "gfx/interface/unitcontrol/trait_defense.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sort_attack_trait"
+		textureFile = "gfx/interface/unitcontrol/sort_attack_trait.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_sort_defense_trait"
+		textureFile = "gfx/interface/unitcontrol/sort_defense_trait.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_sort_planning_trait"
+		textureFile = "gfx/interface/unitcontrol/sort_planning_trait.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_sort_supply_trait"
+		textureFile = "gfx/interface/unitcontrol/sort_supply_trait.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_attached_air_bg"
+		textureFile = "gfx/interface/attached_air_bg.dds"
+	}
 }
+	
+	
+	
+	
+	
+	

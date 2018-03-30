@@ -23,7 +23,7 @@
  PEACE_CONFERENCE_RESET:0 "Deshacer acciones tomadas"
  PEACE_CONFERENCE_PASS:0 "Termina tu turno en la conferencia"
  PEACE_CONFERENCE_PASS_DESC:0 "¡Todavía tienes §Y$VALUE$§! de puntuación que puedes gastar.\nPuedes no tener otra oportunidad de gastarlos"
- PEACE_CONFERENCE_PASS_ACTIONS_DESC:0 "¡§RNo puedes pasar mientras si sólo has elegido acciones sin enviar!"
+ PEACE_CONFERENCE_PASS_ACTIONS_DESC:0 "¡§RNo puedes pasar mientras si sólo has elegido acciones sin enviar§!"
  PEACE_CONFERENCE_SEND:0 "Enviar medidas tomadas"
  PEACE_WINNER_SCORE:0 "Calificar: $CURRENT|Y$"
  PEACE_CURRENTLY_MAKING_DEMANDS:0 "$COUNTRY$ está haciendo exigencias."

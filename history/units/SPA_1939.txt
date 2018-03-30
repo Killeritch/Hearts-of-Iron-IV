@@ -1,6 +1,7 @@
 ﻿##### Division Templates #####
 division_template = {
 	name = "División de Infantería" 		# Regular infantry divisions, all at reserve levels in 1939
+	division_names_group = SPA_INF_01
 	# Note: Spanish divisions were 2x brigades of 2x2 rgts each, + support
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,6 +20,7 @@ division_template = {
 }
 division_template = {
 	name = "División de Caballería"  		# Cavalry Division semi-motorized by 1939
+	division_names_group = SPR_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -37,6 +39,7 @@ division_template = {
 }
 division_template = {
 	name = "Fuerza Colonial" 		# Collection of Spanish Legion, native militias, and cavalry 
+	division_names_group = SPR_GAR_01
 									# Averages out to regular experience and equipment (Legion = elite, militias = low-quality)
 	regiments = {
 		infantry = { x = 0 y = 0 }	
@@ -65,24 +68,33 @@ units = {
 	}		
 	
 	# I Cuerpo # 
-	division = {			
-		name = "11a División de Infantería"		
+	division = { # "11a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
 		location = 3938  # Madrid
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "12a División de Infantería"		
+	division = { # "12a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
 		location = 3938  # Madrid
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "13a División de Infantería"		
+	division = { # "13a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 13
+		}
 		location = 3938  # Madrid
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -91,24 +103,33 @@ units = {
 	}			
 
 	# II Cuerpo # 
-	division = {			
-		name = "21a División de Infantería"		
+	division = { # "21a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 21
+		}
 		location = 7183  # Sevilla
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "22a División de Infantería"		
+	division = { # "22a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 22
+		}
 		location = 7183  # Sevilla
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "23a División de Infantería"		
+	division = { # "23a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 23
+		}
 		location = 7183  # Sevilla
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -117,16 +138,22 @@ units = {
 	}		
 	
 	# III Cuerpo # 
-	division = {			
-		name = "31a División de Infantería"		
+	division = { # "31a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 31
+		}
 		location = 6906  # Valencia
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "32a División de Infantería"		
+	division = { # "32a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 32
+		}
 		location = 6906  # Valencia
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -135,24 +162,33 @@ units = {
 	}	
 
 	# IV Cuerpo # 
-	division = {			
-		name = "41a División de Infantería"		
+	division = { # "41a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 41
+		}
 		location = 3816  # Zaragosa
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division = {			
-		name = "42a División de Infantería"		
+	division = { # "42a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 42
+		}
 		location = 3816  # Zaragosa
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}
-	division = {			
-		name = "43a División de Infantería"		
+	division = { # "43a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 43
+		}
 		location = 3816  # Zaragosa
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -161,16 +197,22 @@ units = {
 	}
 
 	# V Cuerpo # 
-	division = {			
-		name = "51a División de Infantería"		
+	division = { # "51a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 51
+		}
 		location = 9764  # Barcelona
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "52a División de Infantería"		
+	division = { # "52a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 52
+		}
 		location = 9764  # Barcelona
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -179,16 +221,22 @@ units = {
 	}			
 
 	# VI Cuerpo # 
-	division = {			
-		name = "61a División de Infantería"		
+	division = { # "61a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 61
+		}
 		location = 740  #Bilbao
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "62a División de Infantería"		
+	division = { # "62a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 62
+		}
 		location = 740  #Bilbao
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -197,16 +245,22 @@ units = {
 	}			
 
 	# VII Cuerpo # 
-	division = {			
-		name = "71a División de Infantería"		
+	division = { # "71a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 71
+		}
 		location = 885  # Burgos
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "72a División de Infantería"		
+	division = { # "72a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 72
+		}
 		location = 11825  # Valladolid
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -215,16 +269,22 @@ units = {
 	}	
 
 	# VIII Cuerpo # 
-	division = {			
-		name = "81a División de Infantería"		
+	division = { # "81a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 81
+		}
 		location = 758  # La Coruña
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
 	}			
-	division = {			
-		name = "82a División de Infantería"		
+	division = { # "82a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 82
+		}
 		location = 758  # La Coruña
 		division_template = "División de Infantería"
 		start_experience_factor = 0.2
@@ -233,18 +293,24 @@ units = {
 	}			
 
 	### Island Garrisons ###
-	division = {			
-		name = "Comandancia de Baleares"		
+	division = { # "Comandancia de Baleares"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
 		location = 9793  #Mallorca
-		division_template = "División de Infantería"		
+		division_template = "Fuerza Colonial"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}			
-	division = {			
-		name = "Comandancia de Canarias"		
+	division = { # "Comandancia de Canarias"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
 		location = 13071  # Canary Islands
-		division_template = "División de Infantería"		
+		division_template = "Fuerza Colonial"		
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
@@ -253,24 +319,33 @@ units = {
 
 	### Ejército de África ###
 	# IX Cuerpo # 
-	division = {			
-		name = "91a División de Infantería"		
+	division = { # "91a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 91
+		}
 		location = 12100  #Melilla
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}			
-	division = {			
-		name = "92a División de Infantería"		
+	division = { # "92a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 92
+		}
 		location = 12100  #Melilla
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}				
-	division = {			
-		name = "Circunscripción Morocco"		
+	division = { # "Circunscripción Morocco"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
 		location = 12100  #Melilla
 		division_template = "Fuerza Colonial"
 		start_experience_factor = 0.1
@@ -279,24 +354,33 @@ units = {
 	}			
 
 	# X Cuerpo # 
-	division = {			
-		name = "101a División de Infantería"		
+	division = { # "101a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 101
+		}
 		location = 9945  #Ceuta
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}			
-	division = {			
-		name = "102a División de Infantería"		
+	division = { # "102a División de Infantería"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 102
+		}
 		location = 9945  #Ceuta
 		division_template = "División de Infantería"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}			
-	division = {			
-		name = "Circunscripción Maestrazgo"		
+	division = { # "Circunscripción Maestrazgo"		
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
 		location = 9945  #Ceuta
 		division_template = "Fuerza Colonial"
 		start_experience_factor = 0.1

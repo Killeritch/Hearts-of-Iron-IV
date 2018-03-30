@@ -119,18 +119,18 @@ PixelShader =
 
 VertexStruct VS_INPUT_MAPARROW
 {
-    float3 position			: POSITION;
-	float3 uv_isHead		: TEXCOORD0;
+	float3 position				: POSITION;
+	float4 uv_isHead_variant	: TEXCOORD0;
 };
 
 VertexStruct VS_OUTPUT_MAPARROW
 {
-    float4 position			: PDX_POSITION;
-	float3 uv_isHead		: TEXCOORD0;
-	float4 vScreenCoord		: TEXCOORD1;
-	float2 uv_terrain		: TEXCOORD2;
-	float2 uv_terrain_id	: TEXCOORD3;
-	float3 prepos			: TEXCOORD4;
+	float4 position				: PDX_POSITION;
+	float4 uv_isHead_variant	: TEXCOORD0;
+	float4 vScreenCoord			: TEXCOORD1;
+	float2 uv_terrain			: TEXCOORD2;
+	float2 uv_terrain_id		: TEXCOORD3;
+	float3 prepos				: TEXCOORD4;
 };
 
 VertexStruct VS_INPUT_MAPSYMBOL
@@ -154,8 +154,12 @@ ConstantBuffer( 3, 32 ) # For arrow shader
 {
 	float4 ArrowMask;
 	float4 ArrowColor;
+	float4 ArrowSecondaryColor;
 	float4 vTime_IsSelected_FadeInOut;
 	float4 vOfsX_vOfsTex_vOfsFx;
+	float vBodyUvScale;
+	float vSecondaryBodyUvScale;
+	float vTextureVariantScale; // 1.0f / (number of variants)
 	float fCullingOffset;
 };
 
@@ -179,11 +183,11 @@ VertexShader =
 			vPos.x += vOfsX_vOfsTex_vOfsFx.x;
 			VertexOut.prepos = vPos;
 			VertexOut.position = mul( ViewProjectionMatrix, float4( vPos, 1.0f ) );
-			VertexOut.uv_isHead = VertexIn.uv_isHead;
+			VertexOut.uv_isHead_variant = VertexIn.uv_isHead_variant;
 		#ifdef ANIM_TEXTURE
-			VertexOut.uv_isHead.x -= vTime_IsSelected_FadeInOut.x * vOfsX_vOfsTex_vOfsFx.y;
+			VertexOut.uv_isHead_variant.x -= vTime_IsSelected_FadeInOut.x * vOfsX_vOfsTex_vOfsFx.y;
 		#endif
-			VertexOut.uv_isHead.y = fCullingOffset > 0 ? fCullingOffset - VertexOut.uv_isHead.y : VertexOut.uv_isHead.y;
+			VertexOut.uv_isHead_variant.y = fCullingOffset > 0 ? fCullingOffset - VertexOut.uv_isHead_variant.y : VertexOut.uv_isHead_variant.y;
 			VertexOut.uv_terrain_id = float2( ( vPos.x + 0.5f ) / MAP_SIZE_X, ( vPos.z + 0.5f ) / MAP_SIZE_Y );
 			VertexOut.uv_terrain.x = ( vPos.x + 0.5f ) / MAP_SIZE_X;
 			VertexOut.uv_terrain.y = ( vPos.z + 0.5f - MAP_SIZE_Y ) / -MAP_SIZE_Y;	
@@ -338,31 +342,39 @@ PixelShader =
 		float4 main( VS_OUTPUT_MAPARROW Input ) : PDX_COLOR
 		{
 			//return float4( 1, 0, 1, 1 );
-			float vIsHead = Input.uv_isHead.z < 0.5f ? 0.0f : 1.0f;
+			float vIsHead = Input.uv_isHead_variant.z < 0.5f ? 0.0f : 1.0f;
+			float vTextureVariant = 1.0f - step( Input.uv_isHead_variant.w, 0.0f );
+			
+			float vVariantBodyUvScale = lerp( vBodyUvScale, vSecondaryBodyUvScale, vTextureVariant );
+
 			float2 vUV;
-			vUV.y = Input.uv_isHead.y;
-			vUV.x = Input.uv_isHead.x * 0.5f + ( vIsHead * 0.5f );
+			vUV.x = Input.uv_isHead_variant.x * 0.5f + ( vIsHead * 0.5f );
+			float vHeadV = Input.uv_isHead_variant.y;
+			float vBodyV = ( ( Input.uv_isHead_variant.y - 0.5f ) * vVariantBodyUvScale + 0.5f + vTextureVariant ) * vTextureVariantScale; // Adjust UV vertically to select the correct packed texture variant.
+			vUV.y = lerp( vBodyV, vHeadV, vIsHead );
+
 			float vWaterValue = 0;
 			float3 vNormal = CalculateTerrainNormal( Input.uv_terrain, Input.uv_terrain_id, vWaterValue, vTime_IsSelected_FadeInOut.x );
 			vUV += vNormal.xz * ( /*vNormal.y **/ MAP_ARROW_NORMALS_STR_TERR );
 			vUV -= vNormal.xz * ( vWaterValue * MAP_ARROW_NORMALS_STR_WATER );
 			vUV = clamp( vUV, 0.001f, 0.998f );
+
 			float4 vMask = tex2D( TexMask, vUV );
 			vMask -= ( ( sin( vTime_IsSelected_FadeInOut.x * MAP_ARROW_SEL_BLINK_SPEED ) * MAP_ARROW_SEL_BLINK_RANGE + 1.0f - MAP_ARROW_SEL_BLINK_RANGE * 0.5f ) * 0.5f ) * vTime_IsSelected_FadeInOut.y;
 			vMask = saturate( vMask );
 			clip( vMask.a <= 0 ? -1 : 1 );
 			vMask.rgb = vMask.rgb * ArrowMask.rgb * vMask.a;
 			float vMaskValue = saturate( vMask.r + vMask.g + vMask.b );
-			vMaskValue *= vTime_IsSelected_FadeInOut.z > 0 ? saturate( Levels( Input.uv_isHead.x, 0.0f, vTime_IsSelected_FadeInOut.z ) + vIsHead ) : 1;
-			vMaskValue *= vTime_IsSelected_FadeInOut.w > 0 ? saturate( Levels( 1.0f - Input.uv_isHead.x, 0.0f, vTime_IsSelected_FadeInOut.w ) + vIsHead ) : 1;
+			vMaskValue *= vTime_IsSelected_FadeInOut.z > 0 ? saturate( Levels( Input.uv_isHead_variant.x, 0.0f, vTime_IsSelected_FadeInOut.z ) + vIsHead ) : 1;
+			vMaskValue *= vTime_IsSelected_FadeInOut.w > 0 ? saturate( Levels( 1.0f - Input.uv_isHead_variant.x, 0.0f, vTime_IsSelected_FadeInOut.w ) + vIsHead ) : 1;
 			clip( vMaskValue <= 0 ? -1 : 1 );
 			vMaskValue *= FxMask( float2( vUV.x * 2.0f, vUV.y ), vIsHead );
+
 			float4 vPattern = tex2D( TexPattern, vUV );
 
-
+			float4 vArrowColor = lerp( ArrowColor, ArrowSecondaryColor, vTextureVariant );
 		#if 1
-			float4 vArrowColor = ArrowColor;
-			vArrowColor.rgb = RGBtoHSV(ArrowColor.rgb);
+			vArrowColor.rgb = RGBtoHSV(vArrowColor.rgb);
 			vArrowColor.r = mod( vArrowColor.r, 6.0 ); //H
 			vArrowColor.g *= 0.8; //S
 			vArrowColor.b *= 0.7; //V
@@ -372,7 +384,7 @@ PixelShader =
 			float3 vColor2 = CalculateLighting( Input.prepos, Input.vScreenCoord, vNormal, vColor );
 			vColor.rgb = lerp(vColor.rgb, vColor2, 0.5);
 		#else
-			float4 vColor = saturate( vPattern * ArrowColor );
+			float4 vColor = saturate( vPattern * vArrowColor );
 			vColor.rgb = CalculateLighting( Input.prepos, Input.vScreenCoord, vNormal, vColor );
 		#endif
 
@@ -388,11 +400,17 @@ PixelShader =
 		float4 main( VS_OUTPUT_MAPARROW Input ) : PDX_COLOR
 		{
 			//return float4( 1, 0, 1, 1 );
-			float2 vUV = Input.uv_isHead.xy;
+			float vTextureVariant = 1.0f - step( Input.uv_isHead_variant.w, 0.0f );
+			
+			float vVariantBodyUvScale = lerp( vBodyUvScale, vSecondaryBodyUvScale, vTextureVariant );
+			float2 vUV = Input.uv_isHead_variant.xy;
+			vUV.y = ( ( vUV.y - 0.5f ) * vVariantBodyUvScale + 0.5f + vTextureVariant ) * vTextureVariantScale; // Adjust UV vertically to select the correct packed texture variant.
+
 			float vWaterValue = 0;
 			float3 vNormal = CalculateTerrainNormal( Input.uv_terrain, Input.uv_terrain_id, vWaterValue, vTime_IsSelected_FadeInOut.x );
 			vUV += vNormal.xz * ( vNormal.y * MAP_ARROW_NORMALS_STR_TERR );
 			vUV -= vNormal.xz * ( vWaterValue * MAP_ARROW_NORMALS_STR_WATER );
+
 			float4 vMask = tex2D( TexMask, vUV );
 			vMask -= ( ( sin( vTime_IsSelected_FadeInOut.x * MAP_ARROW_SEL_BLINK_SPEED ) * MAP_ARROW_SEL_BLINK_RANGE + 1.0f - MAP_ARROW_SEL_BLINK_RANGE * 0.5f ) * 0.5f ) * vTime_IsSelected_FadeInOut.y;
 			vMask = saturate( vMask );
@@ -400,11 +418,12 @@ PixelShader =
 			vMask.rgb = vMask.rgb * ArrowMask.rgb * vMask.a;
 			float vMaskValue = saturate( vMask.r + vMask.g + vMask.b );
 			clip( vMaskValue <= 0 ? -1 : 1 );
+
 			float4 vPattern = tex2D( TexPattern, vUV );
 
+			float4 vArrowColor = lerp( ArrowColor, ArrowSecondaryColor, vTextureVariant );
 			#if 1
-				float4 vArrowColor = ArrowColor;
-				vArrowColor.rgb = RGBtoHSV(ArrowColor.rgb);
+				vArrowColor.rgb = RGBtoHSV(vArrowColor.rgb);
 				vArrowColor.r = mod( vArrowColor.r, 6.0 ); //H
 				vArrowColor.g *= 0.8; //S
 				vArrowColor.b *= 0.8; //V
@@ -414,7 +433,7 @@ PixelShader =
 				float3 vColor2 = CalculateLighting( Input.prepos, Input.vScreenCoord, vNormal, vColor );
 				vColor.rgb = lerp(vColor.rgb, vColor2, 0.5);
 			#else
-				float4 vColor = saturate( vPattern * ArrowColor );
+				float4 vColor = saturate( vPattern * vArrowColor );
 				vColor.rgb = CalculateLighting( Input.prepos, Input.vScreenCoord, vNormal, vColor );
 			#endif
 			

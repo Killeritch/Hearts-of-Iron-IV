@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = ENG_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -19,6 +20,7 @@
 }
 division_template = {
 	name = "Cavalry Brigade"
+	division_names_group = ENG_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -32,7 +34,7 @@ division_template = {
 }
 division_template = {
 	name = "Tank Brigade"
-
+	division_names_group = ENG_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -41,7 +43,8 @@ division_template = {
 }
 division_template = {
 	name = "Colonial Garrison"
-
+	division_names_group = ENG_COL_01
+	
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -56,29 +59,41 @@ division_template = {
 
 units = {
 	#Aldershot Command
-	division= {	
-		name = "1st Infantry Division"
+	division= {	# "1st Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 9458
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "2nd Infantry Division"
+	division= {	# "2nd Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 9458
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	#Scottish Command
-	division= {	
-		name = "51st 'Highland' Infantry Division"
+	division= {	# "51st 'Highland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
 		location = 3273
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "52nd 'Lowland' Infantry Division"
+	division= {	# "52nd 'Lowland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
 		location = 9392
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -94,22 +109,31 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "5th Infantry Division"
+	division= {	# "5th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 351
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "50th 'Northumbrian' Motorized Division"
+	division= {	# "50th 'Northumbrian' Motorized Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
 		location = 9397
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "49th 'West Riding' Infantry Division"
+	division= {	# "49th 'West Riding' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
 		location = 11218
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -117,22 +141,31 @@ units = {
 
 	}
 	#Eastern Command
-	division= {	
-		name = "4th Infantry Division"
+	division= {	# "4th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
 		location = 11253
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "44th 'Home Counties' Infantry Division"
+	division= {	# "44th 'Home Counties' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
 		location = 11221
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "54th 'East Anglia' Infantry Division"
+	division= {	# "54th 'East Anglia' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
 		location = 3287
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -148,24 +181,33 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "42nd 'East Lancashire' Infantry Division"
+	division= {	# "42nd 'East Lancashire' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
 		location = 6318
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "53rd 'Welsh' Infantry Division"
+	division= {	# "53rd 'Welsh' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
 		location = 311
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "55th 'West Lancashire' Infantry Division"
+	division= {	# "55th 'West Lancashire' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
 		location = 6384
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
@@ -179,22 +221,31 @@ units = {
 		division_template = "Tank Brigade"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "3rd Infantry Division"
+	division= {	# "3rd Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 13070
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
-	division= {	
-		name = "43rd 'Wessex' Infantry Division"
+	division= {	# "43rd 'Wessex' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
 		location = 3369
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
 	}
-	division= {	
-		name = "48th 'South Midland' Infantry Division"
+	division= {	# "48th 'South Midland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
 		location = 6351
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2

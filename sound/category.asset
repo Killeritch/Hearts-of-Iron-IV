@@ -59,6 +59,10 @@ category = {
 	alert_subject_gain_autonomy_sound
 	alert_unassigned_divisions_sound
 	alert_players_lagging_behind_sound
+	alert_decision_new_sound
+	alert_decision_timeout_sound
+	alert_border_conflict_sound
+	alert_is_at_war_sound
 	
 	######## INGAME ALERT - sidebar
 	# important and less so by type (naval/air/land)
@@ -107,7 +111,18 @@ category = {
 	building_bombed
 	ambient_town_entites
 	building_sabotaged
+	air_mission_select
 	
+	###### DECISIONS
+ 	decisions_ui_checkbox
+ 	decisions_ui_tab
+ 	decisions_ui_button
+
+	
+	####### TRAIT
+ 	traits_ui_click
+ 	traits_ui_over
+
 	####### TEST
 	pause_button
 	time_down
@@ -159,7 +174,6 @@ category = {
 	ships_destroyer_attacked
 	ship_destroyer_damaged_defending_01
 	ship_destroyer_damaged_attacking_01
-	ships_destroyer_damage_defend
 	ships_destroyer_death
 	ships_heavy_cruiser_attack
 	ships_heavy_cruiser_death
@@ -189,7 +203,6 @@ category = {
 	distance_ships_destroyer_attacked
 	distance_ship_destroyer_damaged_defending_01
 	distance_ship_destroyer_damaged_attacking_01
-	distance_ships_destroyer_damage_defend
 	distance_ships_destroyer_death
 	distance_ships_heavy_cruiser_attack
 	distance_ships_heavy_cruiser_death

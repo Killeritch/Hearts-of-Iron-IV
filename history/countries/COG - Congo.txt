@@ -39,7 +39,7 @@ set_convoys = 5
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
+		oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
@@ -76,7 +76,7 @@ set_politics = {
 create_country_leader = {
 	
 	name = "François Tolenga"
-	picture = "Portrait_Africa_Generic_2.dds"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
 	expire = "1965.1.1"
 	ideology = despotism
 	traits = {
@@ -86,7 +86,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "Lumumba Lomendja"
-	picture = "Portrait_Africa_Generic_1.dds"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_1.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -97,7 +97,7 @@ create_country_leader = {
 create_country_leader = {
 	
 	name = "David Manera"
-	picture = "Portrait_Africa_Generic_Land_3.dds"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_Land_3.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {

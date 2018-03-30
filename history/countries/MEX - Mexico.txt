@@ -53,8 +53,8 @@ set_country_flag = monroe_doctrine
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -93,7 +93,7 @@ set_politics = {
 	elections_allowed = yes
 }
 
-set_national_unity = 0.8
+set_stability = 0.75
 
 create_country_leader = {
 	name = "Lázaro Cárdenas"
@@ -183,6 +183,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
 	traits = { }
 	skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 2
+    logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -190,6 +194,10 @@ create_corps_commander = {
 	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
 	traits = { desert_fox }
 	skill = 3
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 3
 }
 
 create_navy_leader = {

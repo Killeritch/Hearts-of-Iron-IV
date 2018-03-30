@@ -2,6 +2,8 @@
 division_template = {
 	name = "Pesi Divize"					# Infantry Division
 
+	division_names_group = SLO_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -16,7 +18,7 @@ division_template = {
 }
 division_template = {
 	name = "Mobilná Skupina" 				# Mobile Group
-
+	division_names_group = SLO_CAV_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		cavalry = { x = 1 y = 0 }
@@ -30,19 +32,31 @@ division_template = {
 units = {
 	##### Slovenská Polná Armádna (CO: Catlos) #####
 	division = {
-		name = "1. Pesi Divize 'Janosík'"
+		#name = "1. Pesi Divize 'Janosík'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 6604
 		division_template = "Pesi Divize"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "2. Pesi Divize 'Skultéty'"
+		#name = "2. Pesi Divize 'Skultéty'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 3550
 		division_template = "Pesi Divize"
 		start_experience_factor = 0.2
 	}
 	division = {
-		name = "3. Pesi Divize 'Razus'"
+		#name = "3. Pesi Divize 'Razus'"
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 3581
 		division_template = "Pesi Divize"
 		start_experience_factor = 0.2

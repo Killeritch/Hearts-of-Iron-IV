@@ -125,7 +125,7 @@
  SERVER_BOOKMARK:0 "Закладка: $BOOKMARK$"
  SERVER_START_DATE:0 "Дата начала: $DATE$"
  SERVER_LAUNCHING_MP:0 "*** Запуск СЕТЕВОЙ игры ***"
- OOS_CHECKS:0 "§GСервер установил проверку следующих параметров: $CHECKS|Y$."
+ OOS_CHECKS:0 "§GСервер установил проверку следующих параметров: $CHECKS|Y$.§!"
  ACTIVATE_OBSERVER_MODE:0 "Включить режим наблюдателя"
  DEACTIVATE_OBSERVER_MODE:0 "Выйти из режима наблюдателя"
  OBSERVER_MODE_DESC:0 "В режиме наблюдателя вы можете смотреть за ходом игры глазами других игроков, никак не влияя на происходящее"
@@ -133,4 +133,5 @@
  PLAYER_REMOVED_TITLE:0 "$PLAYER$ покидает игру"
  PLAYER_REMOVED_DESC:0 "$PLAYER|Y$, к сожалению, больше не участвует в игре.\nХотите, чтобы государство $COUNTRY|Y$ перешло под контроль ИИ?"
  MULTIPLAYER_RESYC:0 "Повторная синхронизация"
+ FAILED_TO_CONNECT:0 "Подключение не выполнено"
  

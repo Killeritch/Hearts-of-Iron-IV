@@ -154,7 +154,9 @@ country_event = {
 			factor = 100	
 		}
 
-		news_event = { id = news.170 hours = 2}
+		hidden_effect = {
+			news_event = { id = news.170 hours = 2}
+		}
 		if = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_BUL_184

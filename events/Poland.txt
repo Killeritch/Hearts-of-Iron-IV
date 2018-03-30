@@ -40,7 +40,22 @@ country_event = {
 	
 	option = {
 		name = poland.2.a
-		ai_chance = { factor = 30 }
+		ai_chance = { 
+			factor = 30 
+			modifier = {
+				factor = 0
+				OR = {
+					any_other_country = {
+						is_major = yes
+						OR = {
+							is_in_faction_with = POL
+							has_guaranteed = POL
+						}
+					}
+					has_idea = anti_soviet_pact
+				}
+			}
+		}
 		effect_tooltip = {
 			SOV = {
 				if = {

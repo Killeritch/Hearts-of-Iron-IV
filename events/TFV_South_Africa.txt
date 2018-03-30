@@ -1159,19 +1159,7 @@ country_event = {
 	desc = tfv_south_africa.60.d	#
 	picture = GFX_report_event_african_soldiers
 	
-	trigger = {
-		tag = SAF
-		has_completed_focus = SAF_anti_colonialist_crusade
-		AND = {
-			SAF = {
-				controls_state = 540
-			}
-			ANG = { exists = no }
-		}
-	
-	}
-
-	mean_time_to_happen = { days = 180 }
+	is_triggered_only = yes
 	
 	option = { #puppet new state
 		name = tfv_south_africa.60.a
@@ -1226,25 +1214,13 @@ country_event = {
 		}		
 	}
 	
-	country_event = {
+country_event = {
 	id = tfv_south_africa.61
 	title = tfv_south_africa.61.t	# Freedom for MZB
 	desc = tfv_south_africa.61.d	#
 	picture = GFX_report_event_african_soldiers
 	
-	trigger = {
-		tag = SAF
-		has_completed_focus = SAF_anti_colonialist_crusade
-		AND = {
-			SAF = {
-			controls_state = 544
-			}
-			MZB = { exists = no }
-		}
-	
-	}
-
-	mean_time_to_happen = { days = 180 }
+	is_triggered_only = yes
 	
 	option = { #puppet new state
 		name = tfv_south_africa.61.a
@@ -1300,27 +1276,13 @@ country_event = {
 		}		
 	}
 
-	country_event = {
+country_event = {
 	id = tfv_south_africa.62
 	title = tfv_south_africa.62.t	# Freedom for COG
 	desc = tfv_south_africa.62.d	#
 	picture = GFX_report_event_african_soldiers
 	
-	trigger = {
-		tag = SAF
-		has_completed_focus = SAF_anti_colonialist_crusade
-		AND = {
-			SAF = {
-				controls_state = 295
-				controls_state = 718
-				controls_state = 538
-			}
-			COG = { exists = no }
-		}
-	
-	}
-
-	mean_time_to_happen = { days = 180 }
+	is_triggered_only = yes
 	
 	option = { #puppet new state
 		name = tfv_south_africa.61.a
@@ -1390,25 +1352,14 @@ country_event = {
 		}		
 	}
 
-	country_event = {
+country_event = {
 	id = tfv_south_africa.63
 	title = tfv_south_africa.63.t	# Freedom for ZIM
 	desc = tfv_south_africa.63.d	#
 	picture = GFX_report_event_african_soldiers
 	
-	trigger = {
-		tag = SAF
-		has_completed_focus = SAF_anti_colonialist_crusade
-		AND = {
-			SAF = {
-				controls_state = 545
-			}
-			ZIM = { exists = no }
-		}
-	
-	}
 
-	mean_time_to_happen = { days = 180 }
+	is_triggered_only = yes
 	
 	option = { #puppet new state
 		name = tfv_south_africa.63.a
@@ -1472,27 +1423,13 @@ country_event = {
 		}		
 	}
 
-	country_event = {
+country_event = {
 	id = tfv_south_africa.64
 	title = tfv_south_africa.64.t	# Freedom for KEN
 	desc = tfv_south_africa.64.d	#
 	picture = GFX_report_event_african_soldiers
 	
-	trigger = {
-		tag = SAF
-		has_completed_focus = SAF_anti_colonialist_crusade
-		AND = {
-			SAF = {
-				controls_state = 546
-				controls_state = 547
-				controls_state = 548
-			}
-			KEN = { exists = no }
-		}
-	
-	}
-
-	mean_time_to_happen = { days = 180 }
+	is_triggered_only = yes
 	
 	option = { #puppet new state
 		name = tfv_south_africa.64.a

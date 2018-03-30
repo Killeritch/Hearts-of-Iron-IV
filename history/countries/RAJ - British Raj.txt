@@ -2,6 +2,9 @@
 
 oob = "RAJ_1936"
 
+
+set_stability = 0.6
+set_war_support = 0.1
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -104,8 +107,8 @@ set_cosmetic_tag = RAJ_UK # British Raj
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
-		oil_plant = 1
-		improved_oil_plant = 1
+		oil_processing = 1
+		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
@@ -189,8 +192,12 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Noel Beresford-Peirse"
 	gfx = "GFX_RAJ_noel_beresford_peirse"
-	traits = { panzer_leader }
+	traits = { armor_officer }
 	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -198,6 +205,10 @@ create_corps_commander = {
 	gfx = "GFX_RAJ_frank_messervy"
 	traits = { hill_fighter }
 	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -205,6 +216,10 @@ create_corps_commander = {
 	gfx = "GFX_RAJ_douglas_gracey"
 	traits = { desert_fox }
 	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_navy_leader = {
