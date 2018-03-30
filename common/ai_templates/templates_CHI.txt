@@ -3,6 +3,14 @@ infantry_CHI = {
 
 	available_for = {
 		CHI
+		PRC 
+		GXC
+		YUN
+		SHX
+		XSM
+		SIK
+		MEN
+		MAN
 	}
 
 	roles = {
@@ -49,18 +57,19 @@ infantry_CHI = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -121,18 +130,19 @@ infantry_CHI = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {

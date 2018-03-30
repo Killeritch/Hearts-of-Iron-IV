@@ -1,0 +1,43 @@
+ai_historical_focus_list_CHI = {
+	ai_national_focuses = {
+		CHI_unified_industrial_planning #March 10 1936
+		CHI_mission_to_germany #May 20 1936
+		CHI_rural_reconstruction_movement #July 30 1936
+		CHI_british_cooperation #October 10 1936
+		CHI_fighter_purchases #December 20 1936
+		CHI_mission_to_the_us #February 30 1937
+		CHI_mission_to_the_soviet_union #May 10 1937
+		CHI_hire_chennault #July 20 1937
+		CHI_rapprochement_with_soviet_union #September 30 1937
+		CHI_invite_soviet_advisers #December 10 1937
+		CHI_military_affairs_commission #February 20 1938
+		CHI_burma_road #April 30 1938
+		CHI_the_soviet_volunteer_group #July 10 1938
+		CHI_bureau_of_investigation_and_statistics #September 20 1938
+		CHI_camco #November 30 1938
+		CHI_three_principles_of_the_people #February 10 1939
+		CHI_army_reform #April 20 1939
+		CHI_nationalism #June 30 1939
+		CHI_financial_policy #September 10 1939
+		CHI_foreign_threats #November 20 1939
+		CHI_war_of_resistance #January 30 1940
+		CHI_scorched_earth_tactics #April 10 1940
+		CHI_expand_the_academica_sinica #June 20 1940
+		CHI_mining_commission #August 30 1940
+		CHI_welfare #November 10 1940
+		CHI_refugee_relief_agency #January 20 1941
+		CHI_invite_the_flying_tigers #March 30 1941
+		CHI_purchase_tanks #June 10 1941
+		CHI_experimental_mechanised_unit #August 20 1941
+		CHI_land_tax_reform #October 30 1941
+		CHI_forced_conscription #January 10 1942
+		CHI_the_hump #March 20 1942
+		CHI_chinese_expeditionary_force #May 30 1942
+		CHI_sino_american_cooperative_organisation #August 10 1942
+		CHI_price_controls #October 20 1942
+		CHI_ledo_road #December 30 1942
+		CHI_the_chu_x_po #March 10 1943
+		CHI_new_life_movement #May 20 1943
+		CHI_modern_logistics #July 30 1943
+	}
+}

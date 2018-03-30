@@ -135,6 +135,33 @@ CHI_unit_production = {
 		id = armor
 		value = 0
 	}
+	
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = 50
+	}
+}
+
+CHI_dont_waste_on_offensive_air_early = {
+	enable = {
+		original_tag = CHI
+		date < 1940.1.1
+	}
+	abort = {
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = tac_bomber_equipment
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = strat_bomber_equipment
+		value = -100
+	}
 }
 
 CHI_armored_production = {
@@ -167,4 +194,57 @@ CHI_highered_armored_production = {
 		id = armor
 		value = 0
 	}
+}
+
+CHI_prio_military_even_at_peace = {
+	enable = {
+		original_tag = CHI
+	}
+	
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+	
+}
+	
+CHI_dont_mess_with_the_soviets = {
+
+	enable = {
+		original_tag = CHI
+		
+		NOT = { has_war_with = SOV }
+	}
+	
+	abort = {
+		has_war_with = SOV
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "SOV"			
+		value = -200
+	}
+}
+
+CHI_some_safer_places_to_build = {
+	enable = {
+		original_tag = CHI
+	}
+
+	abort = {
+		date > 1941.1.1
+	}
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  602
+        value = 300
+    }
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target =  605
+        value = 300
+    }
 }

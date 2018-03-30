@@ -1,4 +1,978 @@
 ################################################################
+########            Update 1.5 "Cornflakes"             ########
+################################################################
+
+##################################
+# Waking The Tiger Expansion
+##################################
+- New Focus trees for China, PRC and Warlords
+- New alt-history branches for Japanese focus tree
+- New alt-history branches for German focus tree
+- Lots of new gainable and assignable traits and commander overview screen
+- 9 new Command Power Abilities let commanders activate bonuses and abilities on their divisions at the cost of a new resource: Command Power
+- Added many Decisions to go with the new (free) Decisions mechanic.
+- Several new decisions allowing you to form new nations such as the Roman Empire, Gran Colombia and others
+- Several new decisions allowing you to do "special projects" that require industry (such as excavating for resources etc)
+- Added winter and desert looks to units that they swap to once acclimatized (both for vehicles and infantry)
+- Its now possible to capture enemy equipment in battle. Maintenance companies and tech help with this
+- Can now send airwings as volunteers
+- Its now possible to prioritize what your strategic bombers target (makes those target smore likely to be hit)
+- Can now assign transport planes to air supply units
+- New diplomatic action: Send Attaché. Places an attaché in receivers nation that gives advantages to both sides
+- New Consolidate forces action allows you to merge understrength divisions together and retain experience and equipment
+- Can now select custom insignias for your armies (both historical and ahistorical. Some are also nation specific)
+- Added a toggleble minimap
+- Can now ping in two different ways (defensive and offensive) on the map or minimap to your allies in multiplayer
+- Its now possible to destroy stockpiled equipment (has a 3 month timer to avoid exploiting scorched earth)
+- New Border Conflict mechanics where you can have battles over states or other advantages through the decision system (available to unlock from the new asian focus trees)
+- New 3d models for the different chinese infantry, cavalry, artillery as well as airplane models
+- Revamped battle sound system making combat sounds EXTREMELY METAL
+- 3 new thematic musical tracks
+- Added 18 new achievements
+
+##################################
+# Free Features and Important
+##################################
+- New Stability and War Support mechanics replace National Unity to better model the state of your nation and many decisions and changes to go with these
+- New focus tree for Japan
+- Overhauled and expanded German focus tree: added new focuses for the Industrial, Air, Naval, and Fascist paths, and improved certain existing ones.
+- Added Chain of Command - Can now put Field Marshals in charge of Generals leading armies to get bonuses from both
+- Generals now have 4 skill values - Attack, Defense, Planning, Logistics instead of a single skill.
+- Traits are no longer lost on promotion of commanders
+- Commanders can (and usualy do) start with new personality traits
+- Added Decisions - a middle ground between focus trees and events allowing tons of moddability and mechanics
+- Added many Decisions to go with the new Decisions mechanic.
+- Added Acclimatization core mechanic letting troops get used to harsh climate
+- Can now dedicate some Command Power to improve air efficiency in a zone using Extra Ground Crews ability
+- Added "kick from faction" diplomatic action (for SPAAAAARTA!!! /Podcat am I 2011 meme:ing again?)
+- New historical template namelists. Increased immersion when meeting AI and a lot of power to letting player control how things get named
+- New retreat mechanic. We now separate between withdrawing and forced retreat meaning you dont get overruna nd crushed when ordering retreat on units and falling back wil lrequire a lot less microing
+- New interface for looking at lost and sunk ships
+- Massively improved production interface with more filters, collapsing, drag and drop and allowing more than 15 factories to be assigned to a single line
+- New War overview with factions, filters, sorting. It also has a summarized war overview which we recommend. Wars are now much more fluid to be able to handle 3-way wars and avoid lots of issues in the past with war merging etc.
+- Several new Refinery techs allow you to control how much rubber and oil is outputted
+- Infrastructure now effect how much resources can be extracted. Build up an area to unlock more, bomb it to hurt output
+- Special forces are now limited to a % of your army, or a minimum count of battalions
+- Several new techs allow you to bonus special forces or control quantity vs quality
+- Can now attach air wings to armies and they will follow them and do missions
+
+
+##################################
+# AI
+##################################
+- Made sure checks for if a country is AI controlled respects human_ai so AI does not alter behavior when observed.
+- Fixed issue where AI was unable to assign divisions in different areas with no land connection.
+- Fixed number of stats issue for AI that could cause bad behavior.
+- Fixed a few issues in AI template evaluation.
+- Added focus weight list to AI strategy plan. 0.0 blocks from picking.
+- Added scriptable trait priority for AI strategy plans.
+- AI strategy plans now include scriptable idea scores.
+- Slight AI front rebalance to help out allies more when self is not really threatened.
+- AI should now micro attack naval invasion targets if they land next to it.
+- Made AI activate invasion plans if they have a front as well (meaning they have landed).
+- Made AI more proactive in redrawing their plans as they advance.
+- AI now actively stops resending units on naval invasions when they are low on org.
+- AI should now take leader stat levels into account when picking them
+- Unitcontroller will now use strategic redeployment for all movements while country is not threatened, even for player.
+- Added a generic ai template for suppression divisions
+- Added strategies for most countries to train some suppression divisions (more for countries that tend to conquer a lot)
+- AI will now create an area defence order (for the non-devs: “Garrison order”) specifically for suppression of resistance (the old area defence order is still used for defence of ports and VPs)
+- Fixed bug where unitcontroller was failing to distribute divisions correctly in a garrison order
+- Improved the AI logic for prioritizing construction/repair of buildings
+- AI should now be able to cancel and change execution level based on units having low org or str (was previously considering a unit "strong" if it had high org OR str, now it will be considered "strong" if it has high org AND str)
+- Made unitcontroller less likely to send divisions to supply areas that would put them over the supply limit (before they would only not send divisions to supply areas that were ALREADY over supply)
+- Added an AI strategy to CHI to not mess with SOV (prevents CHI from asking FIN to join their faction when SOV attacks FIN)
+- Major change to how area defence order units are moved around, they should now stay in their positions more and when moving be much better at picking nearby units to move
+- fix for ahistorical wars between ENG and YUG: ENG will only declare war in ahistorical mode, YUG will attempt to side with Germany in the coup if at war with ENG to avoid being kicked out of faction
+- added an AI strategy plan that make minor European countries less keen to ally with China while at war
+- AI PRC will not ally Japan in historical mode, even if at war with Nationalists as well
+- fix for wrong focus being checked in an AI modifier in Soviet tree
+- added strategy plan for fascist European minors to nudge them away from Japan if fascist Japan forms its own faction (you will join the Axis and you will like it!)
+- Massively decreased SOV AI's want to use special AT templates to soft block them from wasting XP. Also improved the SOV AT template if they do end up using them in the future.
+- Taught the AI to not fight over units for its garrisons. Now sorts garrison orders correctly to priority
+- AI should be way better when it comes to garrison orders and guard the coastline
+- Fascist AI will now puppet nation in a peace deal if it controls the surrounding land
+- Made AI consider bit more things than only their amount of dockyards for if they wanna focus naval
+- Tweaked how willing ai is to help out on allied fronts
+- Reworked how unit controller calculates which states get what divisions for a garrison
+- Some changes to templates and production strategy for Japan.
+- Britain will now avoid piling in on the dutch and belgian borders during the attack on france to avoid stuff bogging down and them losing their troops (“AI smarter than historical”-count: 1)
+- Ai Germany will now call in Italy to help against France after low countries capitulate rather than wait until all of france does
+- Japan will now stay away from sending volunteers to most European majors until late game
+- The Ai now checks single province fronts to see if enemy is encircled when evaluating their strength
+- blocked some fascist majors from too much volunteering
+- Japan will now focus more on naval production once it has enough civilian industry for 2 lines of construction
+- Japan starts out with aiming for a cheaper less punchy template for infantry until 1940, unless vs player china in which case SPARE NO EXPENSE
+- Germany now focuses a bit more on making suppression divisions after Poland falls
+- Added safety check to avoid Germany starting to justify vs Poland because of timing after getting claims
+- Portugal should now avoid restrictive trade laws. let the tungsten flow!
+- tweaked china build strategy to make it focus on safer areas
+- nationalist china more likely to pick good infantry minister earlier
+- Chinese AI will now try to go more short term with techs, focusing on free bonuses, shunning AT and late doctrines, they will also prefer people's army doctrine
+- Italy and Germany now more keen to send volunteers to Spain
+- Chinese ai now will be more likely to research support weapons
+- minor AI is now allowed to support its master in war with expeditionaries even if not neighboring as long as they are linked by another in the faction
+- changed expeditionary and volunteer ai code to be more reliable and better at picking best units with least disruption
+- made USA lend lease strategies more flexible in case of non fascist germany
+- Japan now considers China weak from start of game, but may change its mind if things go badly
+- AI now more likely to research radios in war and past mid 1939
+- AI is now able to remove support battalions that don't match its wanted template
+- Tweaked some garrison templates where ai got stuck and never completed them
+- Generic nations are now able to progress to a larger 40-width division template once they have a large stockpile, and it’s past 1938
+- AI is now allowed to go more in the red on equipment building for transitional upgrades in the field
+- AI no longer keeps ruining its training of divisions by canceling and adding new ones and will only remove divisions in the order of least trained now
+- AI now correctly applies strategy limits for equipment, so German strategic bombing program is now properly canceled (“AI smarter than historical”-count: 2)
+- Fixed an issue where production shortage was not properly calculated if there was a big stockpile for AI
+- AI will now keep track of bottlenecks and manage deployment queue so it fills up faster and also increase its needs in line to not starve itself
+- The ai will now be careful with upgrades in the field if it means too long time to fulfill the lack of some equipment(at the moment 50 days)
+- Ai will now avoid doing template changes that will hurt its manpower buffer on deployed units
+- Germany will no longer wastefully produce light tanks once its decided to start phasing them out and will burn through its buffer instead (for real this time!)
+- AI will now be able to justify wargoals on nations while still at war if they have a sufficiently high antagonize score (>2000)
+- AI will now care a bit about garrison costs rather than not at all if it had lowest reinforcement prio
+- fixed issues where AI refused to update deployment with best templates
+- AI is now able to remove battalions it doesnt want in the middle of its templates (rather than on edges only)
+- Tweaked ai template matching so its more consistent and wont get stuck on minor differences
+- ai should now queue up less units at once
+- reduced german armor production focus a bit
+- increased german fighter production a bit
+- AI Germany should no longer use its wargoals against the low countries until Poland is fully capitulated
+- AI will now send expeditionary forces to allies in need if they don’t need those troops (would only do under a particularly lucky star before).
+- fixed an issue where Ai would eventually give away all its troops as expeditionaries. it now respects a percentage limit (this fix has absolutely nothing to do with the one above)
+- Fixed incorrect AI strategies in german focus tree
+- AI now can overfill their carriers if they have the doctrines that reduces penalties
+- Added unit pools for AIs, which are used to make AI avoid grabbing units that would cause dangerous naval transfers and also make it less likely to assign units from areas that are not accessible to front
+- Added Desperate Mode(tm) for AI where it will try to break out from low supply or to a port rather than slowly perish
+- Improvements with AI front assignments & unit controller that should reduce shuffling
+- Various AI scoring tweaks for fronts to make AI assign units more logically
+- Disabled ai taking pp costing actions when there are high prio decisions/ideas
+- Fixed some non-severe potential enemies being evaluated as too dangerous by AI
+- Fixed an issue that would cause ai to shuffle units constantly on the way towards the front
+- Improved a couple cases AI recreates fronts when it is not really have to
+- Added in some crazy experimental code
+- Commented out some crazy code
+- fixed ai under-manning fronts that it shouldn't
+- AI now uses more detailed checks for when to activate plans
+- Improvements to ai unit assignments, ai now tries to fill provinces one by one
+- Fixed a typo that could make ai prioritize armies incorrectly
+- Added a new scoring system for distributing units between different armies of a front
+- AI is now a bit more reluctant to change size of war fronts
+- Fixed some naval pathing issues for ai (picking correct ports to use)
+- AI's front assignment should be more stable on savegame load now
+- Fixed some problems with joninig wars, made ai less shy towards enemy of allies in peace time
+- made add_ai_strategy effect persistent, fixes cases where ai would forget its strategy on save load
+- fixed a case where ENG would kick GER from faction while they are actually cool with each other
+- AI will now be a bit more careful about its front setup before joining wars in some cases
+- AI considers enemies of faction members as threat, bumps the threat of its fronts in such cases
+- AI now prios manpower laws if it is going war but has not enough manpower to support its army
+- Fixed FRA attacking through maginot, again (bad France bad!)
+- ai handles manpower evaluation a little better now
+- non major countries now at least builds half amount of units required to build
+- made low prio templates be more ok for garrisons
+
+##################################
+# UI
+##################################
+- Disable Join and Host buttons in the multiplayer window, and other checks to prevent joining or hosting a game if a player name is blank. This blocks abusers who spam a lobby and cannot be kicked.
+- Production screen tooltips and some UI items no longer flicker on daily update
+- Changed province tooltip to show current weather with gameplay impact as well as temperature.
+- Effect for SOV focus NKVD divisions now displays effective change in tooltip instead.
+- Added scrollbar to faction window if there are too many factions
+- new portraits for ITA and FRA communist leaders as well as MON leader
+- added new SHX leader portrait
+- Commonwealth countries now use British portraits for generic generals and admirals
+- new icons for Polish infantry weapons
+- new icons for US infantry weapon
+- added a number of new leader portraits for Costa Rica, Guatemala, Honduras, Nepal, Uruguay, Nicaragua)
+- Added tooltip and ability to pan to the naval combat by the right click on the mapicon
+- Added lobby button shown during the peace conference
+- Fixed the bug when air bases was not deselected after opening country view
+- Removed ability to reshape orders in air mapmode
+- Added popup for puppet nation when the master creates a faction.
+- Fixed so garrison settings are available even if you don't have any states selected.
+- Added new leader portraits for MAN and MEN. Puyi no longer looks like a potato.
+- Added Leader portrait for ICE
+- Unit details view now shows stats calculated using current manpower rather than max
+- buttons using orientation=center should no longer wander over the interface if updated several times
+- focus icons now properly centered no matter their size (new internal bug prio level = ocd)
+- Tooltip for deployments blocked from training will now say if too low on equipment rather than say its manpower for both equipment lack and manpower lack
+- Map icons for air no longer show wrong tooltip shortcut
+- Scenario selector window during startup is now bypassed if there is only a single scenario available (useful for mods that typically only have one)
+- Capital map icons (stars) has a cut off so you can the pretty screenshots
+- Added linebreak after trade modifiers tooltip.
+- Swapped order of selection for navies and armies in naval map mode
+
+##################################
+# Modding
+##################################
+- Added focus weight list to AI strategy plan that has effect. 0.0 blocks from picking.
+- Added scriptable trait priority for AI strategy plans.
+- AI strategy plans now include scriptable idea scores.
+- Decision descriptions can now have tag and ideology specific variants, just like decision names.
+- Trade route colors are now configurable in the 00_graphics.lua file.
+- Added effect to change focus tree, that also retains already completed shared focuses
+- Unsupported (incompatible) mods now are auto disabled during game startup when:
+- It's first time a new game version being launched
+- The game crashed in the last session.
+- Added error log when some div.template in OOB refers to unavailable unit nameslist.
+- Fixed "party_popularity@xxx" script support function, to return a value in range 0.0-1.0 instead of 0-100, so we keep consistency in the scripts, and avoid problems.
+- Fixed so the decisions now can create corps commanders through the effects.
+- Bookmarked countries can now be scripted to be shown based on a trigger.
+- Overriding name of an idea now uses the override key for description.
+- Added unit_leader_event effect. Displays a portrait of the affected leader in the event window. Selects current units for leader when picture is clicked. Pan too units when clicked again. Selecting leader picture in event opens details if leader has no units.
+- Fixed extra spaces and comma in tooltip for equipment bonuses when using show_ideas_tooltip.
+- Added any and all trigger for for unit leaders. all_unit_leader any_unit_leader all_army_leader any_army_leader all_navy_leader any_navy_leader
+- Added basic effect for scoping to unit leader. random_unit_leader every_unit_leader random_army_leader every_army_leader random_navy_leader every_navy_leader
+- Added localisation support for unit leaders. GetName (returns full name), GetLastName (returns last name), GetNationality (returns TAG.GetAdjective of nationality), GetRank (returns General or Field Marshal), GetHerHim (returns her or him, depending on gender), GetHerselfHimself (returns herself or himself, depending on gender), GetHerHis (returns her or his, depending on gender), GetHerHisCap (returns Her or His, depending on gender), GetHersHis (returns hers or his, depending on gender), GetHersHisCap (returns Hers or His, depending on gender), GetSheHe (returns she or he, depending on gender), GetSheHeCap (returns She or He, depending on gender), GetWomanMan (returns woman or man, depending on gender).
+- Added female = yes to create unit leader effects.
+- Added triggers to unit leader scope: has_id, is_assigned, num_units, is_field_marshal, has_trait, tag, skill
+- Added transfer_navy effect. Transfers the entire navy of scope country to target country.
+- Fixed modify_state_flag, which was looking for the wrong scope
+- Added flag triggers and effects to unit leader scope. set_unit_leader_flag, modify_unit_leader_flag, clr_unit_leader_flag, has_unit_leader_flag
+- Added unit leader effects. promote_leader, Promotes scope general to field marshal. set_nationality, Sets nationality of scope unit leader.
+- Added scoping to the country from a unit leader using OWNER.
+- Added add_command_power effect.
+- Added trigger has_decision. Looks for a selected decision that is active in the interface.
+- Added compare triggers command_power command_power_daily
+- Decision naming scheme is consistent with cosmetic tag naming. TAG_id_ideology, TAG_id, id_ideology
+- Added effect modify_building_resources. Modifies how many resources a building outputs for scope country only.
+- Added support for equality when checking a country flag value.
+- Added trigger is_fully_controlled_by. Use in a state scope to see if target country fully controls the state.
+- Added trigger political_power_daily.
+- Fixed "is_coastal = no" being a stupid liar! (returning true for coastal states).
+- Added variables to get level of AF, IC and infra from scope state. arms_factory_level industrial_complex_level infrastructure_level.
+- Change add_building_construction to round variables instead of floor.
+- Added support for variables to remove_building
+- Target for diplomatic_relation can now take a scope and event targets.
+- Added global_every_army_leader effect. Runs effect on every army leader in the world.
+- Added keep_unit_leaders_trigger to civilwar effect. Unit leaders that match the trigger will not be randomly distributed.
+- Added has_active_mission trigger. Checks if specified mission is currently active.
+- Added remove_mission effect. Removes specified mission. Refreshes decisions interface.
+- Added has_attache_from and has_attache triggers.
+- Added recall_attache effect.
+- Added set_truce effect
+- Added effect tooltip to technology tooltip.
+- Added is_capital trigger.
+- Added Effect activate_targeted_decision: Adds targeted decision against specified target tag. Reactivates fire_only_once decisions.
+- Fixed a crash in region trigger
+- Added cheat to ignore focus prerequisites: Focus.IgnorePrerequisites. Lets you complete a focus in the middle of a tree. Will NOT make you complete the focus instantly (use fa for that)
+- Added trigger amount_manpower_in_deployment_queue.
+- Added variable support to AI base chance for events
+- Added ruling_party as argument for party_popularity variable.
+- Added script variables num_controlled_states num_owned_states num_core_states num_owned_controlled_states.
+- Added effect activate_decision. Does the same as if the decision was select from the UI.
+- Added static game variable days_mission_timeout@mission_id to find how many days are left on a specific mission.
+- Added GetOldName GetOldNameDef GetOldNameDefCap GetOldAdjective GetOldAdjectiveCap to get a country's name prior to last name change.
+- Added GetNameDefCap.
+- Added generate_wargoal_tension_against targeted modifier.
+- Added variable support for effects: send_equipment add_manpower.
+- Added variable support for triggers: has_equipment has_manpower has_army_experience has_air_experience has_navy_experience.
+- Fixed ic_ratio reversed tooltip and not supporting scopes and event targets in tooltip.
+- Added on action for on_peaceconference_ended.
+- Added effect to round a variable.
+- National focus can now handle multiple position offsets.
+- Added leave_faction effect. Works similarly to remove_from_faction, except YOU dump THEM before THEY can break up with YOU!
+- Added support to reverse the direction of ai_strategies
+- white_peace effect now only peaces out targeted nations, their factions and subjects
+- the send_volunteer_factor modifier now is only affecting the calculation looking at your own nation, not the size of the receiver (meaning it acts like you have a bigger army)
+- added a new enabled trigger on templates to better control when Ai should consider them good enough to use
+- AI Template picking now also includes templates score in matches when going for best template so its possible to have 2 separate infantry templates and AI will pick the best. This can also be seen in the aiview tooltip on division designer screen.
+- error handling of incorrect checked focuses in triggers now available if you use -debug start flag
+- Added ai strategy for being more generous with spare units
+- Added stockpile_ratio trigger allowing you to check the status of stockpiling for certain equipment versus how much is fielded
+- add_ai_strategy effect can now handle event targets and scope targets for its id parameter
+- added new ai strategy equipment_variant_production_factor that lets you set a production factor on specific equipment archetypes. so -100 means 0% of total logistics need for something to be produced
+- added new equipment_production_min_factories strategy that lets you set minimum targets for factory assignment by archetype
+- its now possible to see debugging scoring for ai templates and roles when tooltipping them in the template list in deployment with aiview
+- added ai strategy (war_declare) for making a nation hold off on war declares even if everything else is fine
+- focus.autocomplete now speed up player active focus if one is picked already
+- weather modifers can now affect supply consumption
+- added -quickstart experimental option that loads game at half the time by skipping stuff like map borders etc you wont need when iterating over UI/decisions etc. Don't play with it.
+- Use cheatcode Decision.NoChecks to bypass decision checks. note that this also turns off costs on decisions.
+- scriptable localization now has correct reload functionality
+- added new ai strategy consider_weak which will make AI consider a target nation as weaker in certain evaluations (currently wargoal justifications)
+- added better error handling to has_equipment trigger.
+- can now have a description as part of instant tooltip on ideas. use <key>_instant_desc in localization files
+- create_unit effect now handles owner = ROOT and other standard targets
+- Added dont_defend_ally_borders, force_defend_ally_borders, ignore_claim strategies
+- Added variables
+- Added attack modifier vs specific countries
+- Added on action for creating unit leaders
+- New Modifiers cic_to_target_factor, mic_to_target_factor, extra_trade_to_target_factor, trade_cost_for_target_factor
+- Added a warning for flag textures with wrong size
+- Added "allowideas" command to let you pick ideas always
+- added war_preparation strategy for AI letting it prepare against certain nations
+- Added support for having national focuses that are shared between national focus trees
+
+##################################
+# Database
+##################################
+- Renamed Fascist Turkey from "Neo-Ottoman Empire" to "Turkish Empire", to not overlap with the name of a new formable nation.
+- Added new loading screen quotes.
+- Added Qingdao state.
+- Unaligned and Democratic Germanies now also have a chance of integrating Austria, under certain conditions.
+- Switching ideology is now handled through decisions rather than through MTTH events.
+- Most old Ideology switching MTTH events have been disabled.
+- Divisions spawned in Spanish Civil War are now 'locked' and impossible to edit or delete.
+- Switched around aluminum values for French Guiana and Suriname to properly respect the historical levels in aluminum production of these regions. (This fix paid for by the “Justice for Suriname Association”. Chairman and sole member: @Bratyn)
+- Generals may now become sick or wounded, suffering penalties to their stats for the duration.
+- Edits to Lodz, Poznan, and Danzig states to make historical WW1 German borders possible.
+- Took into account recently-revealed CIA data regarding certain high-profile country leaders featured in the game.
+- Added a way to celebrate International Women's Day in the game.
+- A French-Italian alliance is now possible and stable.
+- Fascist France received a new focus to go to war with Germany if the latter is democratic.
+- Added AI strategy plans to France and Italy.
+- Removed script using national unity
+- Changed default event timeout from 30 to 13 days
+- Changed Soviet focus that instantly moves industry to use decisions instead.
+- New infantry type, bicycle.
+- Added generic propaganda decisions to build war support.
+- Added missions for Soviet to hold Leningrad, Stalingrad and Moscow
+- Added decisions where the player can increase stability in exchange for something else.
+- Added decision for United Kingdom to call Portugal to faction.
+- Added decision for United Kingdom to lease Azores from POR. Added events for accept/deny and event to transfer control back after the war.
+- Added unit leader trait "Hidden Sympathies". Trait use in political decisions before igniting civil war.
+- Added decisions for warlord to start borderwars against neighboring Chinese countries after selecting Border Clashes focus.
+- Rearranged the Japanese Air Research tree for improved historical accuracy
+- party names for Chinese parties
+- changed PRC name and flag at game start to better represent history
+- some small changes to Latvia based on user research
+- added a number of important loading tips
+- moved Anti-Colonialist Crusade events to decisions
+- Medium tank designer trait now has "medium" at the front (to differentiate it from the generic tank designer with poorer stats)
+- Cavalry advisor now boosts cavalry, motorised and mechanised (previously didn't boost mechanised, so upgrading from motorised to mechanised wasn't as good)
+- Stravropol now called Stavropol
+- USA focus tree now also uses relative positioning. This should now be working for all focus forests.
+- Fixed incorrect path to portraits for communist Syrian leader
+- Several chinese divisions now start at better equipment levels in '36
+- Moved some factories in china towards inland so they are not lost as fast
+- Mao is now younger and sexier
+- repositioned naval bases in florida to avoid inland ships
+
+
+##################################
+# Audio
+##################################
+- Ambient battle sounds, are now better at freeing the played effects. (not leaving the memory leaks)
+- Added more flavor to Combat Ambient with VO (graciously provided by the HoI dev team)
+- Created and implemented new sound effects for moving aircrafts between stations and ordering to regions.
+- Fixed invalid destroyer ship sound effects
+
+##################################
+# Balance
+##################################
+- Changed computations for convoy efficiency to be per region instead of per delivery route. Convoys now compute their efficiency by subtracting the efficiency losses all along their delivery route.
+- Yugoslavia "Orthodox Church Support" now gives +25% PP instead of only +0.25.
+- Germany now correctly already possesses the technology to build the "Admiral Hipper" cruiser class in 1936.
+- Certain German advisers and military leaders now require a fascist government.
+- Poland, Romania, and the Baltics now take guarantees and alliances into consideration when on the receiving end of Soviet pressure.
+- Germany now starts with, and can extend, MEFO bills for rapid military build-up.
+- "Anschluss", "Fate of Czechoslovakia", and "Fate of Yugoslavia" focuses now simulate capture of gold reserves by reducing MEFO bills cost.
+- Adjusted 1939 start date to take into account MEFO bills and the new German focus tree.
+- Adjusted old trees to take into account the possibility of Germany going anything other than Fascist.
+- Non-aligned Vichy France is now possible.
+- Adjusted the areas and forces Vichy France starts with to be more historically accurate.
+- Refusing Japanese demands as China, in the Marco Polo Bridge Incident event, now gives a wargoal to Japan.
+- Accepting Japanese demands as China, in the Marco Polo Bridge Incident event, now gives Japan a claim on Shanghai and a brief truce.
+- Spanish Civil War ending events now remove the 'locked' divisions that were spawned at its start.
+- Civil Wars now give some positive effects upon their conclusion that makes them overall less detrimental to a nation.
+- French Spanish Civil War intervention focuses are now only 35 days long.
+- Leftist France is now more likely to take the Spanish Civil War intervention focuses.
+- Austria is now slightly less likely to go fascist.
+- Added a minimum number of days of a war before anyone can surrender ( they can still capitulate whenever unless they would happen at the same time )
+- Removed block preventing declarations of war that would lead to 3-way wars (...and let slip the dogs of waaaar!)
+- Reduced air wing deployment time from 5 days to 2 days.
+- Also reduced the acclimatization gain speed by about 8x, because after recent changes it was ultra fast.
+- Locked Maori volunteers division template.
+- Reichskommissariats and Reichsprotektorats now have a -50%/-25% penalty to recruitable population
+- Hongkong is now a core of PRC
+- added a starting general for each of the Chinese warlords
+- added a generic special forces bonus to the special forces focus in the generic tree
+- changed British rearmament focuses to no longer give factories in the most god-forsaken corners of the world
+- Reworked a number of states in China, splitting up larger states into smaller ones. Overall number of population and number of factory slots has been adjusted accordingly
+- Added German general Felix Steiner. Mit dem Angriff Steiners wird das alles in Ordnung kommen!
+- removed a number of duplicate Manchurian Divisions from the Japanese OOB
+- added a trait to Chiang Kai-Shek to give him +40% stability if in a defensive war (adds up to +10% stability after base stability hit)
+- added decisions for Japan to surrender after losing the Asian mainland or getting nuked twice
+- made a number of Japanese states non-core to avoid them being selected for factory placement in focuses
+- Franco-British Union now gives Britain all French generals
+- reduced war support for minor nations to prevent them from building giant armies
+- Anschluss and Restoring AH peacefully now transfers all generals of those countries to the respective new owner
+- Swapped France's historical order of FRA_alpine_forts and FRA_naval_doctrine focuses to give France a slightly better chance against Italy.
+- Backhand Blow tactic is now locked (unlocked by Deep Battle and Modern Blitzkrieg doctrine trees).
+- Tactical Withdrawal tactic is now locked (unlocked by the Superior Firepower trees).
+- Chinese divisions which started at untrained now start at trained so players aren't inclined to disband them and train them from scratch (losing their unique names and wasting everyone's time)
+- Hungary's DOD focus tree is now more responsive to countries being at war - diplomatic demands for territory will be bypassed if they are at war.
+- USA will now support nations fighting against extremism
+- Rebalanced starting military factories for Japan
+- World tension generated from sending land volunteers reduced (Air volunteers do not affect WT).
+- Base max planning reduced to 30%
+- Grand Battle Plan doctrine tree planning bonuses reduced
+- Urban Assault Specialist now costs 500 xp (was 700).
+- Commando now also gains XP when fighting in hot climates.
+- Leaders that had the Panzer Leader trait now have the Armor Officer trait
+- German starting industry has been reduced to account for the MEFO bills that will pay for German industry buildup. It all makes sense in the end.
+- Soviet Purged Officers idea now has impact on training and factories as well to slow down Soviet somewhat. their effect on volunteers is also a bit more flat
+- Officers Purged spirit in soviet union now impacts how many volunteers can be sent abroad based on army size (decaying in effect by level)
+- Continuous air production focus now gives 10% bonus rather than 20%
+- Superior firepowers techs under Shock & Awe now only apply to infantry and artillery and with reduced bonuses
+- Upgraded soviet NKVD spirit now gives 5% reinforcement rate bonus rather than 30%
+- The Deep battle branch in Mass assault now give a total of +10% reinforcement rate
+- The Mass Mobilization branch in Mass assault now give a total of +20% reinforcement rate with most of it coming from Human Wave Offensive
+increased air attack for towed '36 anti-air from 17 to 19
+- Made extreme weather modifiers stronger (except attrition) including increased supply usage from extreme heat
+- Made Walter Model more defensive
+- Lowered cost of mechanized to 8/10/12 from 12/13/14 to make them more attractive
+- Added timed en-route penalty while switching generals
+- Rebalanced Soft Attack:
+- removed hidden bonuses to line artillery and tanks
+- reduced number of guns in support artillery to 12
+- support arty now 10% less penalty compared to regular
+- artillery soft attack reduced between 15-30% depending on level (from 1.4 base)
+- Self propelled arty soft attack reduced 20-30% depending on level (from 1.4 base)
+- tank soft attack reduced 13-20% depending on model (from 1.4 base)
+
+##################################
+# Bugfix
+##################################
+- Combat leader portraits are now always properly updated.
+- Fixed highlighting of taken army leaders in leader selection window.
+- Fixed disappearing attack orders when editing.
+- Fixed some modifier localizations.
+- Fixed booboo that made units, in certain situations, withdraw from combats they should remain in.
+- Portraits for leaders at the bottom now reload correctly.
+- Removed the extra bit on top of the leader portraits in the bottom view for the create buttons.
+- Fixed problem where it was not possible to create a new army from a selection of divisions already in an army.
+- Fixed an issue with disappearing fronts and orders.
+- Decreased max width of national focus detail view's prerequisite panel to having the same padding on the right as on the left, preventing text from occasionally overlapping the visual frame a little bit.
+- Fixed the tooltip estimation of a naval transfer's chance of getting intercepted along the way. Used probabilistic math to determine overall chance that none of the random checks for interception will pass over the whole path, affected by movement speed since the checks occur hourly, and subtract that from 100% to get chance of interception.
+- Fixed naval supply paths to correctly take into account actual versus needed convoy counts when determining convoy efficiency.
+- A navy told to retreat to a distant province will no longer have its path truncated to just one province, and if it successfully retreats, it will clear its retreat flag and switch to normal movement as soon as it moves out of the original province where combat was taking place.
+- Prevented divisions being transported over water from being given a new destination while their transport ships are in combat; this prevents the exploit of letting them magically escape from combat.
+- Fixed alignment of a couple of tutorial glow rectangles.
+- Fixed main menu background so that it preserves its aspect ratio even when enlarged to fill a 4K monitor.
+- Removed potential for mismatch of casualty count display in war dialog and tooltips.
+- Fake News will now no longer report Bulgaria "Accepted Romanian Demands", when Bulgaria in fact rejected them.
+- "Pressure Yugoslavia" events will now check whether Yugoslavia is at war.
+- Romanian Communist Revolutionary minister is now locked behind the 'Appoint Soviet Friendly Government' focus.
+- Czechoslovak focus "Knowledge Sharing Teams" now correctly gives the 5th research slot if you have 4 research slots already.
+- Fixed typos and other text errors.
+- Fixed even more typos and text errors.
+- Fixed more typos than we are willing to admit. (wait you just did! /Podcat)
+- Fake News now no longer reports on "Germany being under attack", if Germany is only in a civil war.
+- Clarified the tooltips for German naval focuses.
+- Nations will no longer be pulled out of a faction when invited to another through a focus.
+- The 1936 Olympics will no longer occur during a German civil war.
+- Hindenburg no longer travels to the USA if Germany is in a civil war.
+- Fixed issue where you could not occupy territory from countries after they had a civil war
+- Fixed a bunch of issues with colonial flags in division deployment
+- Fixed a case where volunteers would sometimes count twice in calculations
+- Fixed bug where supply areas did not take edge control into account when building the path to the capital
+- Fixed an issue where event flags would not be properly read in binary saves
+- Hid a bug that caused rebasing airplane icons in east asia to appear far below the ground ( note, this only hides the bug by clamping the icon height to the water level, it does not fix the actual problem )
+- Only majors in your faction that are at war with the country you are about to surrender to counts towards preventing minors from surrendering when they have major faction members who are still fighting ( previously faction members who were NOT in the war would also count )
+- Might possibly have fixed an issue where the capitulation flag in the war overview screen was not shown/hidden correctly
+- Ships in navies set to never auto-repair no longer flee if their strength drops below 99%. They now flee at 10% like if auto-repair is set to low
+- Fixed issue where casualties would not go the correct country when killing volunteers
+- Fixed an issue where war merged and warscore was lost for one side
+- Combat tactics that are setup to end a combat phase will now correctly end the phase
+- Several bug fixes in battleplans about: shrinking defensive lines, over-expanding defensive lines, and other overall messups.
+- Fixed issues with defensive lines leaving gaps, and misbehaving when mixed army and army group's def.lines along the same front.
+- 3d fleets should be now better at avoiding swimming through the ground.
+- 3d fleets are now no longer so oversized.
+- Made the radar circle effect prettier (more precise), and less annoying when there is lots of them overlapping each other.
+- Crazy amount of fixes has been done to the new custom division names system.
+- The movement arrow has now different color, when withdrawing.
+- Movement arrows are now using normal maps (against static lighting for simplicity).
+- Fixed combat withdrawing speed (no longer ultra slow, nearly stand still).
+- Fixed naval combat retreating, so it finally works correctly (using the in-combat retreating mechanics, before actually moving the fleet away).
+- Fixed drawing movement arrows in OpenGL.
+- Fixed the custom texture override functionality so now it properly supports swapping textures for complex assets (that has more than 1 mesh). Feature used by the new feature of soldiers changing their camo.
+- Fixed bug in strategic air superiority map colors, and land combats having air superiority penalty on both sides.
+- Fixed bug in which the bonuses from tech to the acclimatization didn't worked.
+- Fixed eternal problem of units being stuck in the naval transportation. Solves also the problem of units standing forever idle in the source ports.
+- Fixed the behaviour of the units being navaly transported that can't reach their destination (bcoz for example impassable areas), will try to return home, before giving up and staying idle on the sea.
+- Fixed issue with the theater data not being cleared after sending back the volunteers home.
+- Fixed issues with battleplan freakouts for volunteers.
+- When game was launched with "hoi4.exe -start_tag=ABC" it's now possible to go back to main menu without being pushed back to the game.
+- Fixed badly offset rivers map.
+- Fixed acclimatization console message from command "acc", so the confirmation values are between 0-100%.
+- Historical division names > Interface bug > In division template editor, tooltiping names no longer gives tooltip from elements underneath.
+- Historical division names > Fixed bug with missing names in the depl.lines after loading the save.
+- Fixed very old issue with defensive lines being drawn with incorrect thickness offset.
+- Several fixes to the battleplan system related to the new level of the orders from the Army Groups.
+- Defensive lines no longer changes color to "beige" when holding ALT.
+- No longer drawing frontlines when editing def.lines by holding ALT. Looks much cleaner.
+- Production lines > Fixed bug that Click on Add new ship construction, added it always at the top instead of the bottom. Also made the scrollbar arrows up/down more responsive.
+- Production lines > Fixed bug in lines being stuck (drag'n drop stopped working + many dangerous malfunctions happened) after adding new line at the top by holding SHIFT.
+- Production lines > Fixed bug in not being able to assign any naval factories, caused by adding drag'n drop feature.
+- Plenty of general fixes in drag'n drop of elements in production view.
+- Fixed bug with disappearing Army group's battleplans.
+- The game checksum now should be ALWAYS the same in the launcher as in the game. The cheating prohibition is no longer done by breaking the checksum version, but via the interface instead - the multiplayer button is locked, and the tooltip explains why.
+- Setting the 1st option from the screen refresh rates list, actually does set that refresh rate.
+- Right click with Alt+Ctrl and click to "Open" to open a interface element in the external editor, didn't worked on OSX until now.
+- Fixed an issue where some diplomatic actions that does not require a response would have REPLYTEXT as localisation or an empty background.
+- Fixed a crash when using set_autonomy_state on a country and its overlord in the same effect.
+- Australian NF 'Support the Centre Party' and 'Empower the Workers' now requires colony/protectorate or higher instead of exact level.
+- Carriers now recalculate their airbase capacity when changing owner.
+- Fixed tooltip for supply consumption modifier showing as bad when negative.
+- Fixed "Wrong root scope in has_government trigger." going in the error log when a country had a civil war.
+- Fixed name for tech bonus from CHI_elite_mountaineers, CZE_inf_and_artillery_advancement, HUN_danuvia_submachine_guns, HUN_destroyers, HUN_carriers, ITA_armored_effort, ITA_naval_air_effort, NZL_form_the_rnzaf, ROM_air_defense, ROM_modern_destroyers, SAF_invite_soviet_advisers, USA_CAS, YUG_the_ik_3, YUG_heavy_fighter_proje, YUG_bomber_project, YUG_motorize_the_cavalr, YUG_motorized_logistics, YUG_armored_cavalry
+- Changed name for tech bonus from equipment_effort, HUN_motorized_logistics, GER_coal_liquidization, RAJ_battaglione_azad_hindoustan
+- Added name for tech bonus from USA_air_war_plans_division, USA naval focuses
+- Fixed a bunch of double options appearing for news events in specific cases.
+- Fixed some missing or wrong loc for event options.
+- Enabled an event where italy can help yugoslavia during the London conference
+- Added comma separation of focus names to focus with more than one mutual exclusive.
+- Setting a country's autonomy to free no longer tooltips as the overlord going free.
+- Using transfer_state effect against a country on its final state is now considered the same as annexing them.
+- Vichy/Franco British Union no longer happens if France has pushed a fair bit into Germany or Italy.
+- Fixed a bug in original_tag trigger, causing Spain to not gain recovering from civil war spirit.
+- Fixed Soviet soldier using wrong rifle animation.
+- Fixed an issue where civil wars would grab all controlled states instead of home area. Added cores state distribution for leftover states not connected to capital. Changed calculation for best capital to put lower priority on capital neighboring old one.
+- fix for Vichy event not firing if Italy isn't in the war with France
+- fix for incorrect Ranger trait description
+- rephrased tooltip LOW_MANPOWER_STAT_EFFECT
+- fixed an issue where Nationalist Spain did not have portraits for some military advisors
+- locked Tizard mission if Britain is at war with US
+- fixed an unattainable focus in RAJ focus tree
+- fix for non-Mao leader losing Mao's trait
+- fixed a Programmer english tooltip for coups
+- fixed an issue with a non-western Character in Japanese Division names
+- fix for Manchukuo not being called that in diplomatic options
+- fixed an inaccurate description in Division Designer tooltip.
+- fix for duplicate event option in Canadian event
+- fix for missing uppercase in CZE/POL air wing names. Game once again playable
+- fix for missing flag in MAN save games
+- fix for stupid (may be temporary)
+- fix for nuke events sometime not firing correctly
+- fixed an issue where Germany could exert pressure on Yugoslavia even after Yugoslavia ceased to exist
+- fix for strategic bomber air wings not getting flavor names
+- fixed Yugoslavian independence war event to prevent it from firing if it would have no effect
+- Fixed wing redeployment and air mission arrows wrapping around the globe.
+- Fix for units manpower incorrectly affecting unit stats
+- Now convoys transporting units
+- Now country skips the turn in peace conference, if there are none humans controlling it
+- Added caps for the equipment counts to avoid overflows
+- Fixed the bug when save games were growing hugely due to combat logs not being properly cleared
+- Now timed ideas continue being timed ideas even after civil war split
+- Fixed the bug when it was possible to research 2 same techonologies at the same time
+- Fix for occupation rules and master being always prioritized over puppet except owned province case
+- Now only equipment produced in your own country will bring you autonomy points
+- Improved randomization of the mission targets
+- Fixing the bug when you could assign divisions for naval invasion above the limit
+- Multiple nations air combats now are equivalent as they were usual 1 vs 1 combats
+- Fixed a bug where saving and loading a game would cause event timeout to be reset
+- Fixing an issue when unit stats were not properly updated after switching doctrine technology
+- Puppet and leader can exchange territories no matter if they are in the same faction or not
+- Fix convoy sometime being added twice to naval combats.
+- For the umteenth time. Fixed formatting errors in the credits.
+- Fixed small fleet intercepting too many convoys
+- Fixed combat logs not showing caused equipment loss when it was lost to an encirclement
+- Fixed some flags with incorrect size.
+- Expeditionary forces in an army no longer block selected divisions from changing templates
+- Partition of Poland event now requires that Germany not be a subject for USSR to hand over any territory
+- EFFECT_ADD_CORE_OF now localised as "core of" instead of "core by"
+- Refining concern is now upper case (it was Friday afternoon okay)
+- Fix for mis-reporting of the number of available factory to build in the production view.
+- Fixed multiplayer lobby filter by version (praise Xenu!)
+- Fixed damaged shipyard always repairing ships at maximum speed
+- Fixed localization issue in the diplomatic action panel.
+- Fixed a localization error in New Zealand focuses.
+- puppets can no longer grab back expeditionaries from their master
+- You can no longer get benefit from having more equipment than manpower % for unit stat calculations
+- If a player is kicked or disconnected in a peace conference their slot is now bypassed and the conference doesnt stall forever
+- air xp gain from LL now also require an active LL relation, just like for land equipment
+- Fixed terrain adjuster bonuses not working correctly
+- Fixed faction map not being updated after diplomatic actions
+- Fixed faction colors not being updated when a faction changes by an event
+- Releasing states to a country/liberating a country is no longer possible if you are in control of all states you want to release.
+
+
+##################################
+# Stability & Performance
+##################################
+- Fixed CTD where unit can look like it is moving without having a path (yes, this was a strange one)
+- Med various code safer to avoid theoretically possible but improbable crashes.
+- Fixed a resource leak of the ambient battle sound which also led to heavy audio falloff computations after a long time of watching battles closely. Sound effect instances were being stopped but never destroyed.
+- Added an error and prevented a crash if a supply area is missing
+- Fixed crash when loading a savegame while in a peace conference
+- Fixed crash when adding manpower to casualties when the killer was not at war with the owner of the manpower ( for instance volunteers ), casualties will now be added to the logicalcountry of the army in such situations
+- Fixed memory leak due to old messages piling up over time that were never used
+- Optimized the amount of calculations related to front systems (base mechanics required by the battleplans) used by the volunteers battleplans.
+- Optimized a function that was doing a "country tag lookup" (an internal thing) which was a bottleneck at some moments of gameplay.
+- Fixed CTD and by the way the inconsistency between the ordinary AI, and the volunteers AI.
+- Lots of memory leaks fixes in general (Leaked memory means that the game consumes more and more RAM over the time).
+- Fixed several CTDs in a new division names system.
+- Fixed CTDs that occured after loading the older save games.
+- Fixed CTD that sometimes happened when going back to main menu.
+- Lots of memory fragmentation preventions and fixes. (A memory fragmentations may cause the game to crash after a very long sessions).
+- A game consumes a little bit less of RAM now.
+- Fixed CTDs related to the naval transportation code base.
+- Fixed corrupted memory allocation attempt caused by the AI code.
+- Fixed CTD in border combat code referring to a deleted unit.
+- Fixed CTD when trying to naval transport a divisions but there is no naval route (regions being blocked).
+- Fixed CTD in AI strategy referring to the leaders being deleted by spawning a civil war.
+- Fixed invalid access to a deleted memory in the decision status (making very low probability for a CTD).
+- Fixed CTD in going back to main menu. Airbase access code was referring to the carriers after deleting them.
+- Huge optimizations in how we calculate the relative air superiority. This unlocks plenty of bottlenecks in: units, navies, air calculations (and much more)...
+- Another large performance optimization in the naval unit transportation system.
+- Optimized the amount of the network commands spammed by the AI.
+- Small optimization in pathfinding for the naval transportation. Units ready to set off from the same location will get only 1 naval pathfind done and share the data.
+- Optimized performance by about 20% in places by reworking the careless usage of "can battleplans be executed" function.
+- Got rid of the several seconds stall on daily updates. Related to the sending/receiving volunteer forces.
+- Fixed plenty of very long game freezes.
+- Fixed CTD caused by switching the focus trees.
+- Fixed CTD caused by incorrect re-assignment of the armies between the theatres.
+- Fixed CTD if you launch the game "hoi4.exe -start_tag=ABC" where ABC is an invalid country tag.
+- Fixed CTD due to lack of clearing border conflicts in states. Happened when return to main menu, and try starting new game.
+- Fixed CTD in loading save games > Related to active leader abilities.
+- Fixed crash that happens after loading older saves, or by removing some insignias in patches/mods.
+- Fixed rare CTD after deleting defensive line.
+- Fixed several Out of Sync bugs in MP.
+- Fixed OOS from pinned strat.regions mismatch after hotjoin.
+- Fixed invalid memory access, after returning to main menu. The nature of the problem didn't cause a CTD, but it was a very bad thing to have in code.
+- More CTD protections when drawing battleplans.
+- Fix for the OOS happening after certain joins
+- Fixing CTD in subject relation view
+- Fix for probable rehost CTD
+- Fixed the major cause for the CTDs in the peace conference window
+- Fixing CTD in balancing of military deployments during civil war spawning
+- Fix crash upon clicking the load button with no savegame selected.
+- Optimized AI update by sorting by time taken to update it last tick. Guarantees the biggest nations (SOV & GER) to be on separate threads
+- Fixed a division by zero crash
+- Fixed crash that happens on rare occasions when sending telemetry data
+- added crash safety checks for invalid data on writing sunk ships to savegame
+- Fixed CTD when naval transfering units during a peace conference annexing you (and killing said units at the same time as orders were given, as a side note also invented a time machine and solved world hunger.)
+- Fixed memory overrun issue in ai front handling
+- Portraits and other sprite updates are now cached to reduce ui strain
+- Fixed an issue where deleted units could be put back into combats.
+- fixed an issue where licensing information was not read in an MP safe format and could cause OOS
+- Fixed a potential OOS when reading saved event scopes
+- fixed CTD when tooltipping to cancel war justification right when it hits 100%
+- added various savegame ctd safeties
+- Various small ai performance improvements
+- Fixed a history related OOS
+- Fixed a CTD when selecting airplanes while getting annexed (but I promise it still respected your your fighting spirit)
+- Improved reliability of hotjoin save transfer, in situations where the client is slow.
+- Fixed hotjoin related OOS with resources and relations
+- Fix for a freeze when you ended up in a civil war at war with your own puppets (o_O). Fix stops all inter-faction wars so modders need to be careful to kick ppl before war etc.
+
+
+################################################################
+###########            Hotfix 1.4.2 "Oak"            ###########
+################################################################
+
+##################################
+# AI
+##################################
+- Added AI strategy to avoid some naval strategic regions
+- AI now realises that puppets will also join the war when their overlord does ( fixes situation where China does not put any troops on their border with Japan's puppets )
+- AI should now prefer even shorter naval routes when picking what ports to navally transfer between
+- Nations with low manpower are now less likely to burn pp on relation boosting as they need it for laws
+- AI should be less likely to waste PP on guarantees when low on manpower and at war
+- Removed AI weight modifier is_in_faction from JAP axis leaning focus
+- Tweaked ai weights for carrier plane research. AI will now always research the most modern carrier version available and not research any carrier planes if they don't have carriers, the US and Japan will also be more eager to research carrier planes and particularly so when at war with each other
+- Tweaked AT gun research to take enemy armor values into account (AI will be more willing to research AT upgrades if facing an enemy with high armor divisions)
+- AI will no longer research basic heavy tanks if it can already research improved heavy tanks
+- AI now clears the trades that are not being fulfilled due to having no access to trade country
+- Italy should now be more careful about transports across the Med
+- Enemies of UK will now be wary of transporting through the english channel
+
+##################################
+# Modding
+##################################
+- Can now use "relation" as target for pp_spend_priority ai strategy
+- Can now use "guarantee" as target for pp_spend_priority ai strategy
+
+##################################
+# Database
+##################################
+- Added flavor names for German named fighter squadrons
+- Added namelist for FAA squadrons in the 800-list
+- Added a number of shipnames to the German roster (thanks davewolf!)
+- Added Night Witches to the Soviet “Women in Aviation” focus
+- Added German historic airwing names after player feedback
+- New icons for Italian small arms and truck
+- New icons for French infantry weapons (prime condition, only dropped once)
+- Added a flavor name for a Yugoslavian light cruiser class
+- New leader portraits for Yemen, Haiti, Malaysia, Luxembourg, Indonesia/Dutch East Indies, El Salvador, Buthan, Cuba, Panama, Dominican Republic, Netherlands (alternative)
+- Commonwealth leaders now fallback on British portraits if TfV is not activated
+
+##################################
+# Audio
+##################################
+- Adjusted volume on some of the airplane sound effects
+
+##################################
+# Balance
+##################################
+- First level Radar now have a much longer range to make initial investment more attractive
+- Expanded bypass criteria for puppet Bulgaria focus to allow focus to bypass if Romania holds all of Bulgaria in a war
+- Albania should now not fold to Italian pressure if in a faction with Yugoslavia
+- Added bypass to anschluss if AUS is a puppet
+- Turkey will now only join the Axis through the German focus if they are fascist.
+- Anschluss event now takes guarantees into account
+- Lowered upgrade bonus to self propelled AA variants air attack from 30% per level to 15% 
+- Changed Demand Sudetenland focus to fire fallback event if England is a subject
+- Changed South Tyrol to be a core of Austria 
+- Nerfed CZE fascism gain through focus by 50%
+- Reduced starting fascism in CZE to 5% (down from 25%)
+- Fixed wrong tech bonus in a Romanian focus
+- A country that initiates coup on an another country gets a bonus while inviting revolting country to its faction
+
+##################################
+# Bugfix
+##################################
+- Fixed an issue where frontlines could sometimes dissapear
+- It is now ok to transfer resources from your territories through subjects at war time
+- Fixed issue where declaring war on a puppet could pull the puppet into an existing war on the wrong side of the war
+- Subjects are now added to a faction if their master is
+- Convoys used for naval transfers are no longer locked in a state of being permanently "in use" when saving/loading while navally transferring
+- Fixed issue where merged wars made it impossible to surrender because you were not marked as war leader
+- License production description now updates properly
+- Fixed bug where division size affected how much attrition they took and how their supply status was affected by being out of supply
+- Fixed a bug where volunteers could appear in an impassible area
+- Fix for incorrect use of has_government = fascist/communist instead of fascism/communism
+- Fixed a horrific bordergore issue in Romanian "Split CZE" focus 
+- Ensured that split CZE event chain did not result in CZE units sitting around after their country got annexed
+- Doing the Indian focus "Battaglione Azad Hindoustan" should now fire the proper event for Italy rather than give them the option to collect money for the RAF
+- Cheating on the Austria-Hungary Referendum and going with the annexation should no longer report that Hitler was assassinated. (the proper news event should fire instead)
+- France now joins the Czech entente if they decide to support the Czechs and Czechs have their own faction
+- Fixed a wrong tag in URG loc string
+- Fixed Italy Befriend Bulgaria strategy not requiring Bulgaria to exist
+- Reenabled Vichy France cosmetic tag in a cynical move to squeeze out a tiny bit of profit
+- Fixed an event firing several times for Romania
+- Fixed an issue with continuous naval/air production idea not being localised
+- Fixed a situation that could cause an infinite loop of naval transports
+- Made game several times less fun ( Fixed an exploit with nukes persisting after loading or starting new game )
+- Design companies should no longer be lost when loading and older savegame in a new version
+
+##################################
+# Stability
+##################################
+- Fixed a division by zero CTD in airmissions when aircraft are fighting missiles
+- Fixed various rare CTDs
+
+
+################################################################
+###########            Patch 1.4.1 "Oak"             ###########
+################################################################
+
+##################################
+# Highlights & Important
+##################################
+- Units getting pushed back in naval invasions are now removed from the order so they won't automatically try it again (no more ping pong)
+- Fixed the Stug tech icon to have correct barrel length
+- Major rewrite of air combat system (the underlying stuff), should now have less wierd special cases and be easier to balance
+- Fixed issue where generic leaders would be replaced randomly in the world due to mistake in focus tree
+- Each wing of CAS should now be able to attack more than one combat removing the need to split them up in small wings
+
+##################################
+# AI
+##################################
+- Fixed a case where Chinese AI would delete units incorrectly due to supply evaluation
+- Fixed case where AI would think that it was being encircled and would pile up its divisions in few provinces and abandon fronts
+- Took care of another situation that cause indecisive units
+- Made AI respect waiting after already sending lend lease requests
+- A fix for front abandonment that makes it spread out the units being taken from other fronts
+- Units getting pushed back in naval invasions are now removed from the order so they won't automatically try it again (no more ping pong)
+- Several tweaks to allied AI to avoid "suicide invasions" agaisnt axis nations before they are at war with soviets
+- Germany no longer wastes time prepping naval invasiosn vs france just before it takes around maginot
+- Made sure AI cannot pick event options with weight 0 if another option with higher score exists
+- AI now considers enemies as obstacles when planning invasions on nations its not yet at war with when comparing fleets leading for less wasted preparation
+- ai can now cancel invasions that are bad if started during a time they were ok
+- Fix for case where Germany would use too aggressive stance versus maginot line again
+- Air AI can now evaluate zones for bombing and such more than 1-2 zones away
+- Tweaked ai_chance for all CZE events to be saner
+- If CZE exists when Germany demands Danzig from poland, they will now be very interested in joining the war rather than waiting for Germany to get around to beating them
+- fixed ai scoring for volunteer only manpower law that meant hungary (maybe others?) could get stuck on Disarmed Nation.
+- lowered prioritiy more for doctrines for ai if already researching one
+- fixes for ai strategy files referencing the wrong focuses
+- Tweaks to ai research weights, now considers 1940 fighters more important
+- Spanish civil war spirit about recovery now has higher penalty for AI evaluation to join factions
+- Fixed a case where AI would use the wrong execution mode and be overly aggressive when attackign maginot line
+- AI should now be more active with CAS usage
+- Fixed an issue where AI would not assign NAV to sea zones
+
+##################################
+# UI
+##################################
+- Fixed UI bug that made GER to never show tech bonuses
+- Splitted "In Combat: x83" tooltip into two. Now In Combat shows default combat speed (x33) and movement gain from tactics is shown separately
+- Double click in army list now deselects previous selection if shift is down
+- Mission icons on the map should now include port strike
+- Movement bonus from tactics were being shown in damage tooltip of a unit in battle window, remove it from tooltip.
+- Added missing localization for base strike research bonuses
+- Can now unassign aces with right-click like tooltip says
+- Added a new text icon for cost in license production screen
+- Added tooltip for air wing state
+- Create airwing interface properly resets the right side when all planes are removed
+- Tweaked license tooltip in production view to be somewhat clearer
+- Changed Hungary 1936 bookmark to highlight restoration of Austria-Hungary 
+- The person who unpaused the game is now shown in pause tooltip (if someone keeps unpausing annoyingly in MP)
+- Changed license production cost icon in tool-tip
+- Added description in add new air wing tool-tip
+- fixed color issue for Israel
+- fixed color issue with Korea
+- Encirclement loses now displays on combat log. Manpower lost in convoys (which is shot by navy forces) now displayed as "Losses to enemy navy" in combat log tooltip.
+- Added overrun casualties to combat log.
+- Fixed air stats showing too small in wing detail view
+- fix for CZE civil war not being advertised enough in focus tooltip
+- added two more portraits (Japanese communist leader, Ecuador historical leader)
+- Now you can mark all of the equipment as obsolete (even if base type) and equipment conversion is only done for obsolete equipment
+
+##################################
+# Modding
+##################################
+- Fixed a problem with the format for build_army strategy
+- Fixed issue where scripted amounts for force_equipment_variants did nothing
+- Added has_carrier_airwings_in_own_combat trigger for combatants
+
+##################################
+# Database
+##################################
+- Added missing localization for UNITS_VIEW_WINGS_COUNT in French
+- Fixed missing faces for Congo
+- Fixed a misspelled loc string in war goals
+- Fixed the Stug tech icon to have correct barrel length
+- Fixed some issues with ship names in 00_GER_names
+- Made dead sea a lake
+- Fixed a number of mistakes and inconsistencies in German OoB
+- Improved several items of flavor text for CZE focuses
+- added HMS Dreadnought to Royal Navy ship names 
+- added cosmetic tag for Hungary if it elects a King but then changes ideology away from neutral (democratic, fascist branch) 
+- fix for a missing event picture gfx that has been in since launch and wasn't noticed 
+- fix for US missing air wing names for jets 
+- East/west germany now get nicer colors and dont bug out
+- Fixed incorrect portrait for Horthy when admiral
+- fixed an issue with news event 311 refering to the wrong country 
+- Added 4 new portraits for South america for historical leaders for Peru, Chile, Colombia, Paraguay
+- Added new portrait for Bulgarian fascist leader
+- Hooked in three new portraits for Baltic leaders (Police is still hunting for the set of identical triplets that were impersonating them) 
+- Added proper Slovenian and Slovakian flags (honestly at this point I dont even know which one is correct /Podcat)
+- Added pdxcon magic winner portrait to generic soviet portrait list 
+- Dramatically improved communist Korea by using DPRK (best Korea) flag AGAIN
+- Fixed 2 missing images in Romanian/hungarian events
+- Added 4 new portraits (Iraq and Oman historical leaders, Italian and Japanese democratic leaders)
+- Added renaming of YUG unaligned party to 'Monarchists' after Peter II takes the throne.
+- Renamed Czech Export Focus national spirits to not resemble Export Focus law.
+- Reenabled flavor names for German puppets for people without DoD in a cold and calculating move designed to maximize profits
+
+##################################
+# Balance
+##################################
+- Lowered the amount of ground based planes that can enter naval combats over time
+- Reduced cost for giving core states back to our puppets
+- Slightly increased fascist support in Hungary fascist king chain
+- Rebalance of additional building slots for Serbian rail network focus
+- Fixed a balance issue with Integrated/Serbian rail network focuses in Yugoslav tree
+- Fix for air accidents being scaled depending on the number of wing 
+- Increased manpower requirements for CZE alliance with Germany focuses by 50k each
+- fix for Romania being able to appoint a government friendly to a faction they are at war with
+- locked CZE political ideology pushers behind appropriate focuses
+- lowered CZE fighter output boost
+- rebalanced tech sharing group bonuses for CZE to be more in line with everyone else
+- tactical bombers can now pick the naval strike mission
+- Added building slots and infrastructure to balanced industry path for CZE, toned down the export focus spirits
+
+##################################
+# Bugfix
+##################################
+- Fixed the bug when conversion could not convert last pieces of equipment
+- Removed Demand Transnistria from the Romanian historical focus list. Romania should no longer think attacking the soviet union is a great idea
+- Fixed bug where technologies was not updated in case of unlocking tech from another technology folder
+- Fixed bug where some modifiers were not applied to airplanes after loading a save
+- Fix for Soft Attack/Hard Attack values ignoring some combat bonuses in battle gui
+- Overriding an idea with custom name, now overrides the modifier name as well, instead of using idea ID as key
+- Fix for trade path not being recalculated when strait control has changed
+- Fixed for a potential issue if CZE becomes a puppet of AH that may lead to intra-faction warfare
+- Fix for dual mediation events in Transylvania chain (RIP Katya's sanity)
+- Germany should now only leave the Romanian Tech group if Romania is in a faction germany is not in
+- Changed the Sudetenland failsafe event to give the war goal against the controller of Sudetenland (was hardcoded to CZE)
+- changed "His Majesty' loyal government" to work even if Hungary did not roll over in the event 
+- Fixed Horty not being leader of Hungary at gamestart without DoD
+- Fixed an issue where Germany could be stuck with the Demand Sudetenland focus under some circumstances
+- Made the demand Transylvania event chain remove the correct core (North Transylvania) for Romania if they instantly fold.
+- Fixed a bug where generic unit names would not work if starting letters were the same for different generics
+- Fixed an issue where existing airwing names were never returned to the pool
+- Fixed a bug where traded away resources decreased amount of factories available for trade
+- Fixed CZE only being angry with Allies if they decide not to fight over Southern Slovakia (CZE now always angry, all the time)
+- Fix for Zalozie not being transfered if Soviet union honors MR pact
+- Added a number of sanity checks for AH reclamaition focuses (must not be in faction with owners of claimed provinces)
+- fixed an issue where the Ljubljana award could give out states not owned by Germany or Yugoslavia
+- "Death or Dishonor or Cake" achievement now has a tooltip that tells the player to have Carol II as the country leader.
+- Fix for Yugoslavia being allowed to try and buy planes from a country they are at war with 
+- Blocked vanilla YUG coup event if player has DoD 
+- Fix for Yugoslavia spawning Croatia even if they did not own the territory 
+- Fix for Czech-Slovak civil war not actually being between Czechs and Slovaks 
+- Fixed issue where aid event from Sweden to Hungary after getting democratic king would fire more than once 
+- Equipment conversion now properly converts to variants from older equipment
+- Fixed bug where planes set on CAS mission could join naval battles without using naval strike mission 
+- Fix for two missing locs in Romania 
+- Overlord of CZE telling Germany to get bent during Sudetenland crisis now removes both CZE and Overlord from faction with Germany
+- Fixed an issue where democratic Romania could not even handle King Carol II right now (or ever, really) 
+- Fix for AH not being able to justify wargoals due to world tension being too low 
+- Fixed France being able to take CZE into their faction if they do little entente and AH puppets CZE 
+- Austria-Hungary should now get Banat if Romania folds in the event chain
+- Fixed an issue where Romania could steal CZE from out under Austria-Hungary by creating the Cordon Sanitaire 
+- Fixed fixedpoint overflow in peace conference which could give small nations lots of extra points
+- Tweaked occupation rules fix for impassible zones, now it uses core and ownership prios
+- Removed retire_country_leader from generic focus tree
+- Fixed the bug when merging of airwings didn't update air wing manpower properly
+- Fixed a few issues with yugoslavian historical focus list referencing focuses that no longer exist
+- Fixed Bordergore if Hungary not in a position to gain state 73 in fate of CZE event chain (should go to SLO, now actually does)
+- Fix for volunteers transfers ending up in the impassible states
+- fixed a localisation issue with a Hungarian event
+- added an effect for German leaning focus
+- fixed a bug with CZE "Sudden Shipyard" focus which would have required the rest of Europe to sink into the sea to work
+- refusing the Sudetenland now kicks CZE out of the axis (was originally only handled in failsafe event)
+- fix for Yugoslavia not actually leaving axis when they should be leaving axis in coup event (still some issues with automatic faction joining if Yugoslavia and Germany are in a war together)
+- Slovenian and Slovakian flags now has proper med and small flags
+- fixed dual event options for CZE news events (turns out countries are in a faction with themselves, who knew?)
+- fix for logic bug in event DOD_hungary.1
+- fix for incorrect Romanian Admiral's portrait
+- fixed an issue with Hungarian Pact of Rome faction dragging Italy into a faction against its will
+- fix for a number of text inconsitencies in news events
+- Design companies now stick to licensed equipment
+- fixed a Romanian division being assigned to Hungary
+- Updated script for Invite German Advisors. Germany now correctly removed when Romania joins another faction.
+- Planes are able to attack several ground targets at the same time now rather than one per wing
+- TfV trees checking for an autonomy level will now accept DoD autonomy levels as well
+- Supply areas now ignores impassable states while building the connection graph
+- added missing localisation for a number of tech sharing group descriptions
+- Navy leader can now gain the air_controller trait by having carrier airplanes in combat.
+- Now rockets does not cancel their mission in case of non of the rockets left
+- Foreign equipment now qualifies again for conversion
+- Who counts as attacker and defender in paradrops should no longer be country order dependent (sorry french paratroopers)
+- Ensured hungarian mediator events revert to 'rebuffed twice' outcome when no eligible mediators can be found.
+- Fixed YUG being freed when they are a puppet of GER and get the anti-German coup.
+- Fixed anti-German coup not switching YUG ideology to unaligned when picking that option.
+- Removed fascist requirement from Second Vienna Award focus
+- abandoning the czechs during Munich now cancels any guarantees and tells the ai to stop caring about CZE (to avoid renewing the guarantee right away)
+- fixed military access being given to the wrong country in a Romanian event
+- fixed a number of faction joining focuses to prevent intra-faction warfare
+- fixed issue where air wings without assigned region would lose their set mission
+
+###############################
+# Stability & Performance
+###############################
+- Added safety code for terrain calculation when loading broken mod files (could lead to deleted units)
+- Fixed stack out of bounds issue when generating unit names
+- Fix for CTD in the airview details view 
+- Fixed CTD while tooltiping port strike air wing mission entry 
+- Fix for CTD when airbase were removed or deleted while being selected
+- Fixed a possible null pointer exception
+- Fixing CTD in air interface
+- Increased the size of atlas used for the country flags on map to fix glitches
+- Fixed CTD when AI tried to evaluate returning expeditionaries for someone with no homeland
+- Fixed CTD in mods related to naval base assignment
+- Fixed a CTD related to hotjoining in while selecting airbases
+- Fixed a case where savegames would keep growing and becoming huge
+- Fixed a cross plaform out of synch
+- Fixed a multithread related out of synch in multiplayer
+
+
+################################################################
 ###########              VERSION 1.4 "Oak"             ###########
 ################################################################
 

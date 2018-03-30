@@ -15,11 +15,6 @@ sub_directories = yes
 file_extension = .txt
 
 directory
-name = decisions
-sub_directories = yes
-file_extension = .txt
-
-directory
 name = history
 sub_directories = yes
 file_extension = .txt

@@ -60,18 +60,19 @@ armor_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			30.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			2.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -134,18 +135,19 @@ armor_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			10.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -227,18 +229,19 @@ armor_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			50.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			1.0 #-- maximum_speed
 			10.0 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 
@@ -318,18 +321,19 @@ armor_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			50.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			10.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -396,15 +400,15 @@ infantry_JAP = {
 		}
 	}
 	
-	match_to_count = 0.70 #0.45 to 0.70
+	match_to_count = 0.60 #0.45 to 0.70 to 0.6
 
 	infantry_default_JAP = {
 	
 		upgrade_prio = {
-			factor = 2
+			factor = 5
 
 			modifier = {
-				factor = 4
+				factor = 2
 				OR = {
 					CHI = { has_capitulated = no }
 					country_exists = CHI
@@ -412,8 +416,8 @@ infantry_JAP = {
 			}
 		}
 		
-		target_width = 20.0
-		width_weight = 1.0
+		target_width = 21.0
+		width_weight = 1.5
 		column_swap_factor = 0.5
 		
 		stat_weights = {
@@ -432,27 +436,27 @@ infantry_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
 			weight = 0.9
-			match_value = 3000.0
+			match_value = 2500.0
 			
 			support = {
 				engineer = 1
-				recon = 1
 				artillery = 1
 			}
 			
@@ -472,35 +476,50 @@ infantry_JAP = {
 			anti_tank
 			military_police
 			artillery
-	#		anti_air
 			rocket_artillery
 			anti_tank_brigade
 			artillery_brigade
 			rocket_artillery_brigade
-	#		light_tank_destroyer_brigade 
-	#		medium_tank_destroyer_brigade 
 		}
-	}
-	
-	
-	
-	infantry_2_JAP = {
+
+		#replace_at_match = 0.6
+		#replace_with = infantry_JAP_2
+		#target_min_match = 0.5
+	}	
+
+	infantry_JAP_2 = {
 	
 		upgrade_prio = {
-			factor = 2
+			factor = 20
 
 			modifier = {
-				factor = 4
+				factor = 0
 				
-				OR = {
-					CHI = { has_capitulated = yes }
-					NOT = { country_exists = CHI }
+				date < 1940.1.1
+				CHI = {
+					is_ai = yes
+					has_capitulated = no
+					exists = yes
+					NOT = { is_subject_of = JAP	}
 				}
 			}
 		}
 		
-		target_width = 20.0
-		width_weight = 1.0
+		# more expensive infantry template. we save it for later
+		enabled = {
+			#date > 1940.1.1
+			CHI = {
+				OR = {
+					is_ai = no
+					has_capitulated = yes
+					exists = no
+					is_subject_of = JAP
+				}
+			}
+		}
+
+		target_width = 26.0
+		width_weight = 5.0
 		column_swap_factor = 0.5
 		
 		stat_weights = {
@@ -519,23 +538,24 @@ infantry_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
 			weight = 0.9
-			match_value = 3000.0
+			match_value = 6000.0
 			
 			support = {
 				engineer = 1
@@ -546,7 +566,7 @@ infantry_JAP = {
 			
 			regiments = {
 				infantry = 10
-				artillery_brigade = 4
+				artillery_brigade = 2
 			}
 		}
 		
@@ -560,16 +580,12 @@ infantry_JAP = {
 			anti_tank
 			military_police
 			artillery
-			anti_air
 			rocket_artillery
 			anti_tank_brigade
 			artillery_brigade
 			rocket_artillery_brigade
-			light_tank_destroyer_brigade 
-			medium_tank_destroyer_brigade 
 		}
-	}
-	
+	}	
 }
 
 mountaineers_JAP = {
@@ -625,18 +641,19 @@ mountaineers_JAP = {
 			0 #-- suppression
 			0 #-- suppression_factor
 			0 #-- experience_loss_factor
+			0 #-- equipment_capture_factor
 			#-- Air Values
 			0 #-- air_attack
 			#-- Common Values
 			1 #-- max_organisation
 			1 #-- max_strength
-			-0.1 #-- build_cost_ic
 			0 #-- maximum_speed
 			0 #-- armor_value
 			0 #-- ap_attack
 			0 #-- reliability
 			0 #-- reliability_factor
 			0 #-- weight
+			-0.1 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -721,18 +738,19 @@ marines_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			-0.1 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.05 #-- armor_value
 			0.00 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-0.2 #-- weight
+			-0.1 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -811,18 +829,19 @@ paratrooper_JAP = {
 			0.01 #-- suppression
 			0.01 #-- suppression_factor
 			0.05 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.01 #-- air_attack
 			#-- Common Values
 			0.6 #-- max_organisation
 			0.4 #-- max_strength
-			-0.1 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-1.0 #-- weight
+			-0.1 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -868,16 +887,15 @@ garrison_JAP = {
 	}
 	
 	upgrade_prio = {
-		factor = 80
+		factor = 10
 
 		modifier = {
-			factor = 0
-			ai_has_role_template = garrison
+			factor = 2
 			date < "1939.1.1"
 		}
 	}
 	
-	match_to_count = 0.8
+	match_to_count = 0.6
 
 
 	garrison_JAP = {
@@ -893,7 +911,7 @@ garrison_JAP = {
 			}
 		}
 		
-		target_width = 5.0
+		target_width = 10.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -913,18 +931,19 @@ garrison_JAP = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -936,7 +955,7 @@ garrison_JAP = {
 			}
 			
 			regiments = {
-				infantry = 4
+				infantry = 5
 			}
 		}
 		

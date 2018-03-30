@@ -40,11 +40,6 @@ armored_GER = {
 		width_weight = 1.0
 		column_swap_factor = 0.5
 
-		# this is a stop-gap towards medium tanks, if deployed dont upgrade to medium tanks until we burn out our light tanks
-		can_upgrade_in_field = {
-			has_equipment = { light_tank_equipment < 1500 } 
-		}
-		
 		stat_weights = {
 			0.00 #-- default_morale
 			1.10 #-- defense
@@ -61,18 +56,19 @@ armored_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			30.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			2.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -134,18 +130,19 @@ armored_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			10.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -202,7 +199,7 @@ armored_GER = {
 			factor = 2
 
 			modifier = {
-				factor = 6
+				factor = 10
 				has_tech = basic_medium_tank
 				NOT = {
 					has_tech = main_battle_tank
@@ -216,7 +213,7 @@ armored_GER = {
 
 		# this is a stop-gap towards medium tanks, if deployed dont upgrade to medium tanks until we burn out our light tanks
 		can_upgrade_in_field = {
-			has_equipment = { light_tank_equipment < 500 } 
+			has_equipment = { light_tank_equipment < 600 } 
 		}
 		
 		stat_weights = {
@@ -235,23 +232,24 @@ armored_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			5.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			1.0 #-- maximum_speed
 			10.0 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 
 		target_template = {
 			weight = 0.9
-			match_value = 7000.0
+			match_value = 6000.0
 			
 			support = {
 				engineer = 1
@@ -300,11 +298,11 @@ armored_GER = {
 			factor = 2
 
 			modifier = {
-				factor = 6
+				factor = 10
 			}
 			
 			modifier = {
-				factor = 20
+				factor = 30
 				has_tech = basic_medium_tank
 				NOT = {
 					has_tech = main_battle_tank
@@ -334,18 +332,19 @@ armored_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			5.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.5 #-- maximum_speed
 			10.0 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 
@@ -381,10 +380,11 @@ armored_GER = {
 			signal_company
 			maintenance_company
 			logistics_company
+			artillery
 			#anti_tank
 		}
 		
-		replace_at_match = 0.75
+		replace_at_match = 0.95
 		replace_with = modern_armor_default_GER
 		target_min_match = 0.5
 	}
@@ -420,18 +420,19 @@ armored_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			50.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			10.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -543,18 +544,19 @@ garrison_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -562,7 +564,7 @@ garrison_GER = {
 			match_value = 3000.0
 			
 			support = {
-				military_police = 1
+				engineer = 1
 			}
 			
 			regiments = {
@@ -571,8 +573,8 @@ garrison_GER = {
 		}
 		
 		allowed_types = {
-			infantry		
-			military_police
+			infantry
+			engineer
 		}
 	}
 }
@@ -631,18 +633,19 @@ infantry_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -729,18 +732,19 @@ mountaineers_GER = {
 			0 #-- suppression
 			0 #-- suppression_factor
 			0 #-- experience_loss_factor
+			0 #-- equipment_capture_factor
 			#-- Air Values
 			0 #-- air_attack
 			#-- Common Values
 			1 #-- max_organisation
 			1 #-- max_strength
-			-0.1 #-- build_cost_ic
 			0 #-- maximum_speed
 			0 #-- armor_value
 			0 #-- ap_attack
 			0 #-- reliability
 			0 #-- reliability_factor
 			0 #-- weight
+			-0.1 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -826,18 +830,19 @@ marines_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			-0.1 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.05 #-- armor_value
 			0.00 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-0.2 #-- weight
+			-0.1 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -922,18 +927,19 @@ paratroopers_GER = {
 			0.01 #-- suppression
 			0.01 #-- suppression_factor
 			0.05 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.01 #-- air_attack
 			#-- Common Values
 			0.6 #-- max_organisation
 			0.4 #-- max_strength
-			-0.1 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-1.0 #-- weight
+			-0.1 #-- build_cost_ic
 		}
 
 		target_template = {
@@ -1039,18 +1045,19 @@ anti_armor_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
 			0.60 #-- max_organisation
 			0.40 #-- max_strength
-			0.00 #-- build_cost_ic
 			0.00 #-- maximum_speed
 			0.00 #-- armor_value
 			0.20 #-- ap_attack
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -1124,18 +1131,19 @@ anti_armor_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			30.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			2.0 #-- maximum_speed
 			0.20 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 		
 		target_template = {
@@ -1209,18 +1217,19 @@ anti_armor_GER = {
 			0.00 #-- suppression
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
+			0.00 #-- equipment_capture_factor
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
 			50.00 #-- max_organisation
 			0.80 #-- max_strength
-			0.00 #-- build_cost_ic
 			1.0 #-- maximum_speed
 			10.0 #-- armor_value
 			0.05 #-- ap_attack
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- build_cost_ic
 		}
 
 		target_template = {

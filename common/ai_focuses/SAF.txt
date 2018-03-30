@@ -17,14 +17,14 @@ ai_historical_focus_list_SAF = {
 		SAF_armament_effort
 		SAF_equipment_effort
 		SAF_mechanization_effort
-		SAF_commemorate_battle_of_blood_river
+		SAF_commemorate_the_battle_of_blood_river
 		SAF_work_for_all_poor
 		SAF_war_measures_act 								#should probably do this as soon as possible
 		SAF_emergency_workers
 		SAF_cape_garrison_artillery	
 		SAF_perfect_the_cab_rank_technique
 		SAF_secure_the_cape_sea_route	
-		SAF_q_service_corps
+		SAF_q_services_corps
 		SAF_csir 
 		SAF_joint_air_training_scheme
 		SAF_reconstitute_the_cape_corps	
@@ -38,14 +38,14 @@ ai_historical_focus_list_SAF = {
 		SAF_expand_the_simons_town_base
 		SAF_expand_the_rand_mines
 		SAF_fund_the_university_of_south_africa
-		SAF_submarine_tactics
+		SAF_anti_submarine_tactics
 		SAF_strengthen_the_cape_garrison_artillery
-		SAF_desert_airforce
+		SAF_desert_air_force
 		SAF_retain_experienced_pilots
 		SAF_expand_the_cape_corps
 		SAF_suppress_the_stormjaers	
 		SAF_desert_equipment
 		SAF_south_african_special_forces
-		SAF_establish_the_atmoics_energy_board	
+		SAF_establish_the_atomics_energy_board	
 	}
 }

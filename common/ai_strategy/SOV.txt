@@ -21,9 +21,14 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 5
+		value = 3
 	}
 
+	ai_strategy = { 
+		type = role_ratio
+		id = suppression
+		value = 2
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -284,7 +289,7 @@ claims_on_finland = {
 claims_on_turkey = {
 	enable = {
 		tag = SOV
-		has_completed_focus = SOV_claims_on_turkey
+		has_completed_focus = SOV_claim_on_the_straits
 		country_exists = TUR
 	}
 	abort = {
@@ -406,8 +411,10 @@ germany_enemy = {
 	}	
 }
 
-spanish_civil_war = {
+spanish_civil_war_SOV = {
 	enable = {
+		original_tag = SOV
+		has_government = communism
 		SPR = { has_civil_war = yes }
 		NOT = { has_global_flag = scw_over }
 	}
