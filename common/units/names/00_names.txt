@@ -410,7 +410,7 @@ AUS = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Fernkampfgeschwader" }
 		generic_pattern = AIR_WING_NAME_GER_GENERIC
@@ -418,7 +418,7 @@ AUS = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Fernkampfgeschwader zbV." "Schnellbombergeschwader" "Erprobungskommando" }
 		generic_pattern = AIR_WING_NAME_GER_GENERIC
@@ -569,7 +569,7 @@ BEL = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
@@ -577,7 +577,7 @@ BEL = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Escadrille de Bombardement" "Bommenwerpergroep" }
 		generic_pattern = AIR_WING_NAME_BEL_GENERIC
@@ -736,7 +736,7 @@ BRA = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Grupo de Bombardeiros" }
 		generic_pattern = AIR_WING_NAME_BRA_GENERIC
@@ -744,7 +744,7 @@ BRA = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Grupo de Bombardeiros" }
 		generic_pattern = AIR_WING_NAME_BRA_GENERIC
@@ -895,7 +895,7 @@ BUL = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombardirovatchen polk" }
 		generic_pattern = AIR_WING_NAME_BUL_GENERIC
@@ -903,7 +903,7 @@ BUL = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombardirovatchen polk" }
 		generic_pattern = AIR_WING_NAME_BUL_GENERIC
@@ -1199,7 +1199,7 @@ CHI = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Zhanlue Hongzhaji Dadui" }
 		generic_pattern = AIR_WING_NAME_CHI_GENERIC
@@ -1207,7 +1207,7 @@ CHI = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Zhanlue Hongzhaji Dadui" }
 		generic_pattern = AIR_WING_NAME_CHI_GENERIC
@@ -1394,7 +1394,7 @@ CZE = {
 	#Air wings can only be named through archetype
 	fighter_equipment = {
 		prefix = ""
-		generic = { "stihaci letecky pluk" }
+		generic = { "Stihaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1402,7 +1402,7 @@ CZE = {
 
 	jet_fighter_equipment = {
 		prefix = ""
-		generic = { "stihaci letecky pluk" }
+		generic = { "Stihaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1410,7 +1410,7 @@ CZE = {
 
 	heavy_fighter_equipment = {
 		prefix = ""
-		generic = { "stihaci letecky pluk" }
+		generic = { "Stihaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1418,7 +1418,7 @@ CZE = {
 
 	CAS_equipment = {
 		prefix = ""
-		generic = { "bombardovaci letecky pluk" }
+		generic = { "Bombardovaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1426,7 +1426,7 @@ CZE = {
 
 	cv_fighter_equipment = {
 		prefix = ""
-		generic = { "stihaci letecky pluk" }
+		generic = { "Stihaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1434,14 +1434,14 @@ CZE = {
 
 	cv_CAS_equipment = {
 		prefix = ""
-		generic = { "bombardovaci letecky pluk" }
+		generic = { "Bombardovaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
 	}
 	cv_nav_bomber_equipment = {
 		prefix = ""
-		generic = { "námorni letecky pluk" }
+		generic = { "Námorni letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1449,7 +1449,7 @@ CZE = {
 
 	tac_bomber_equipment = {
 		prefix = ""
-		generic = { "bombardovaci letecky pluk" }
+		generic = { "Bombardovaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1457,7 +1457,7 @@ CZE = {
 
 	jet_tac_bomber_equipment = {
 		prefix = ""
-		generic = { "bombardovaci letecky pluk" }
+		generic = { "Bombardovaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1465,23 +1465,23 @@ CZE = {
 
 	nav_bomber_equipment = {
 		prefix = ""
-		generic = { "námorni letecky pluk" }
+		generic = { "Námorni letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
-		generic = { "bombardovaci letecky pluk" }
+		generic = { "Bombardovaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
-		generic = { "bombardovaci letecky pluk" }
+		generic = { "Bombardovaci letecky pluk" }
 		generic_pattern = AIR_WING_NAME_CZE_GENERIC
 		unique = {
 		}	
@@ -1837,7 +1837,7 @@ FIN = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Kaukopommituslennosto" }
 		generic_pattern = AIR_WING_NAME_FIN_BOMBER
@@ -1845,7 +1845,7 @@ FIN = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Kaukopommituslennosto" }
 		generic_pattern = AIR_WING_NAME_FIN_BOMBER
@@ -2160,7 +2160,7 @@ HOL = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bommenwerpergroep" }
 		generic_pattern = AIR_WING_NAME_HOL_GENERIC
@@ -2168,7 +2168,7 @@ HOL = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bommenwerpergroep" }
 		generic_pattern = AIR_WING_NAME_HOL_GENERIC
@@ -2319,7 +2319,7 @@ HUN = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Stratégiaibombázó osztály" }
 		generic_pattern = AIR_WING_NAME_HUN_GENERIC
@@ -2327,7 +2327,7 @@ HUN = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Stratégiaibombázó osztály" }
 		generic_pattern = AIR_WING_NAME_HUN_GENERIC
@@ -3230,7 +3230,7 @@ PER = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Daste Bombon Razmarayi" }
 		generic_pattern = AIR_WING_NAME_BRA_GENERIC
@@ -3238,7 +3238,7 @@ PER = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Daste Bombon Razmarayi" }
 		generic_pattern = AIR_WING_NAME_BRA_GENERIC
@@ -3499,7 +3499,7 @@ PRC = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Zhanlue Hongzhaji Dadui" }
 		generic_pattern = AIR_WING_NAME_CHI_GENERIC
@@ -3507,7 +3507,7 @@ PRC = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Zhanlue Hongzhaji Dadui" }
 		generic_pattern = AIR_WING_NAME_CHI_GENERIC
@@ -3773,7 +3773,7 @@ ROM = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Grup Strategic Bombardier" }
 		generic_pattern = AIR_WING_NAME_ROM_GENERIC
@@ -3781,7 +3781,7 @@ ROM = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Grup Strategic Bombardier" }
 		generic_pattern = AIR_WING_NAME_ROM_GENERIC
@@ -3932,7 +3932,7 @@ YUG = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombarderski Puk" }
 		generic_pattern = AIR_WING_NAME_YUG_GENERIC
@@ -3940,7 +3940,7 @@ YUG = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombarderski Puk" }
 		generic_pattern = AIR_WING_NAME_YUG_GENERIC
@@ -4203,7 +4203,7 @@ SWE = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombflyggruppen" }
 		generic_pattern = AIR_WING_NAME_SWE_GENERIC
@@ -4211,7 +4211,7 @@ SWE = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombflyggruppen" }
 		generic_pattern = AIR_WING_NAME_SWE_GENERIC
@@ -4368,7 +4368,7 @@ TUR = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombardiman Filosu" }
 		generic_pattern = AIR_WING_NAME_TUR_GENERIC
@@ -4376,7 +4376,7 @@ TUR = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
 		generic = { "Bombardiman Filosu" }
 		generic_pattern = AIR_WING_NAME_TUR_GENERIC
@@ -4617,7 +4617,7 @@ POL = {
 	#Air wings can only be named through archetype
 	fighter_equipment = {
 		prefix = ""
-		generic = { "dywizjon mysliwski" }
+		generic = { "Dywizjon mysliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4625,7 +4625,7 @@ POL = {
 
 	jet_fighter_equipment = {
 		prefix = ""
-		generic = { "dywizjon mysliwski" }
+		generic = { "Dywizjon mysliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4633,7 +4633,7 @@ POL = {
 
 	heavy_fighter_equipment = {
 		prefix = ""
-		generic = { "dywizjon mysliwski" }
+		generic = { "Dywizjon mysliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4641,7 +4641,7 @@ POL = {
 
 	CAS_equipment = {
 		prefix = ""
-		generic = { "dywizjon bombowy" }
+		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4649,7 +4649,7 @@ POL = {
 
 	cv_fighter_equipment = {
 		prefix = ""
-		generic = { "dywizjon mysliwski" }
+		generic = { "Dywizjon mysliwski" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4657,14 +4657,14 @@ POL = {
 
 	cv_CAS_equipment = {
 		prefix = ""
-		generic = { "dywizjon bombowy" }
+		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
 	}
 	cv_nav_bomber_equipment = {
 		prefix = ""
-		generic = { "morski dyon lotniczy" }
+		generic = { "Morski dyon lotniczy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4672,7 +4672,7 @@ POL = {
 
 	tac_bomber_equipment = {
 		prefix = ""
-		generic = { "dywizjon bombowy" }
+		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4680,7 +4680,7 @@ POL = {
 
 	jet_tac_bomber_equipment = {
 		prefix = ""
-		generic = { "dywizjon bombowy" }
+		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4688,23 +4688,23 @@ POL = {
 
 	nav_bomber_equipment = {
 		prefix = ""
-		generic = { "morski dyon lotniczy" }
+		generic = { "Morski dyon lotniczy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
 	}
 
-	strategic_bomber_equipment = {
+	strat_bomber_equipment = {
 		prefix = ""
-		generic = { "dywizjon bombowy" }
+		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
 	}
 
-	jet_strategic_bomber_equipment = {
+	jet_strat_bomber_equipment = {
 		prefix = ""
-		generic = { "dywizjon bombowy" }
+		generic = { "Dywizjon bombowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	
@@ -4712,7 +4712,7 @@ POL = {
 
 	transport_plane_equipment = {
 		prefix = ""
-		generic = { "dywizjon transportowy" }
+		generic = { "Dywizjon transportowy" }
 		generic_pattern = AIR_WING_NAME_POL_GENERIC
 		unique = {
 		}	

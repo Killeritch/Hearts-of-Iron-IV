@@ -21,6 +21,24 @@ ideas = {
 				join_faction_tension = 0.20
 			}
 		}
+
+		USA_homeland_defense = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			#picture = #WTT_TODO_CD: Art
+
+			modifier = {
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+			}
+		}
 		
 		new_deal = {
 			
@@ -37,7 +55,7 @@ ideas = {
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
-				unity_factor = 0.10
+				stability_factor = 0.10
 			}
 		}
 
@@ -56,7 +74,7 @@ ideas = {
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
-				unity_factor = 0.05
+				stability_factor = 0.05
 				drift_defence_factor = 0.2
 			}
 		}
@@ -547,11 +565,7 @@ ideas = {
 
 			
 			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = communism
@@ -574,10 +588,6 @@ ideas = {
 			
 			traits = { democratic_reformer }
 	
-			on_add = {
-				country_event = political.13
-			}
-	
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -599,10 +609,6 @@ ideas = {
 
 			
 			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
 	
 			do_effect = {
 				NOT = {
@@ -853,6 +859,9 @@ ideas = {
 				original_tag = USA
 			}
 			
+			available = {
+				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
+			}
 
 			
 			traits = { army_logistics_2 }

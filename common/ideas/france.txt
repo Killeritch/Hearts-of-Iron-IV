@@ -22,6 +22,7 @@ ideas = {
 			}
 			modifier = {
 				conscription = -0.003
+				war_support_factor = -0.05
 			}
 		}
 
@@ -42,7 +43,8 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = 0.8
-				unity_factor = -0.10
+				stability_factor = -0.10
+				surrender_limit = -0.5
 			}
 		}
 
@@ -231,7 +233,7 @@ ideas = {
 				}
 
 				modifier = {
-					unity_weekly = 0.002
+					stability_weekly = 0.002					
 				}
 		}		
 		FRA_support_the_right_focus = {
@@ -304,9 +306,10 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory  = -0.9
+				industrial_capacity_factory = -0.9
 				industrial_capacity_dockyard = -0.9
-				unity_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
 			}
 		}
 
@@ -323,7 +326,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory =  -0.3
+				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 			}
 		}
@@ -360,11 +363,7 @@ ideas = {
 			}
 			
 			traits = { communist_revolutionary }
-	
-			on_add = {
-				country_event = political.1
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = communism
@@ -386,11 +385,7 @@ ideas = {
 
 			
 			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -413,11 +408,7 @@ ideas = {
 			}
 			
 			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = fascism

@@ -19,7 +19,7 @@ ideas = {
 				consumer_goods_factor = 0.20
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25
-				unity_factor = -0.10
+				stability_factor = -0.10
 			}
 		}
 		
@@ -104,7 +104,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 				industrial_capacity_factory = 0.07
 				industrial_capacity_dockyard = 0.07
-				unity_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 
@@ -126,7 +126,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-				unity_factor = 0.10
+				stability_factor = 0.10
 			}
 		}
 
@@ -249,7 +249,7 @@ ideas = {
 			modifier = {
 				drift_defence_factor = 0.25
 				foreign_subversive_activites = -0.25
-				unity_factor = -0.03
+				stability_factor = -0.05
 			}
 		}
 
@@ -582,10 +582,6 @@ ideas = {
 			
 			traits = { fascist_demagogue }
 		
-			on_add = {
-				country_event = political.7
-			}
-		
 			do_effect = {
 				NOT = {
 					has_government = fascism
@@ -613,10 +609,6 @@ ideas = {
 			picture = generic_communist_revolutionary_western_european_2d
 			
 			traits = { communist_revolutionary }
-		
-			on_add = {
-				country_event = political.1
-			}
 		
 			do_effect = {
 				NOT = {
@@ -648,10 +640,6 @@ ideas = {
 			picture = generic_democratic_reformer_western_european_2d
 			
 			traits = { democratic_reformer }
-		
-			on_add = {
-				country_event = political.13
-			}
 		
 			do_effect = {
 				NOT = {

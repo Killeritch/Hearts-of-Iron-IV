@@ -62,6 +62,18 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_tech = fighter1 
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
+			}
 		}
 	}
 	
@@ -95,7 +107,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 4
 			
 			modifier = {
 				factor = 2
@@ -142,13 +154,27 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				tag = JAP
+			}
+
+			modifier = {
+				factor = 0
+				has_tech = fighter2
+			}
+
+			modifier = {
+				factor = 2.5
+				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
 			}
 		}
 	}
@@ -187,10 +213,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3
+			factor = 4
 			
 			modifier = {
-				factor = 2
+				factor = 4
 				is_major = yes
 			}
 			
@@ -234,13 +260,38 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				tag = JAP
+			}
+
+			modifier = {
+				factor = 10
+				AND = {
+					is_historical_focus_on = yes
+					tag = JAP
+				}
+			}
+			modifier = {
+				factor = 1.5
+				date > "1941.6.1"
+			}
+
+			modifier = {
+				factor = 0
+				has_tech = fighter3
+			}
+			modifier = {
+				factor = 2.5
+				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
 			}
 		}
 	}
@@ -275,10 +326,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
+			factor = 4
 			
 			modifier = {
-				factor = 2
+				factor = 4
 				is_major = yes
 			}
 			
@@ -322,13 +373,25 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 2.5
 				tag = JAP
+			}
+			modifier = {
+				factor = 1.5
+				date > "1945.1.1"
+			}
+			modifier = {
+				factor = 2.5
+				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
 			}
 		}
 	}
@@ -451,6 +514,32 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_tech = CAS2
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_war_with = USA
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
+			}
 		}
 	}
 	
@@ -514,6 +603,32 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				has_tech = CAS3
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_war_with = USA
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
+			}
 		}
 	}
 	
@@ -576,6 +691,28 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 2
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_war_with = USA
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
+			}
 		}
 	}
 
@@ -640,13 +777,30 @@ technologies = {
 			factor = 1
 			
 			modifier = {
-				factor = 5
-				tag = USA
+				factor = 0
+				has_tech = naval_bomber2
 			}
-			
 			modifier = {
-				factor = 5
-				tag = JAP
+				factor = 2
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_war_with = USA
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
 			}
 		}
 	}
@@ -711,14 +865,31 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			
-			modifier = {
-				factor = 5
-				tag = USA
+		modifier = {
+				factor = 0
+				has_tech = naval_bomber3
 			}
-			
 			modifier = {
-				factor = 5
-				tag = JAP
+				factor = 2
+				OR = {
+					tag = USA
+					tag = JAP
+				}
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_war_with = USA
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
 			}
 		}
 	}
@@ -782,15 +953,27 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
 			modifier = {
-				factor = 5
-				tag = USA
+				factor = 2
+				OR = {
+					tag = USA
+					tag = JAP
+				}
 			}
-			
 			modifier = {
-				factor = 5
-				tag = JAP
+				factor = 1.5
+				OR = {
+					has_war_with = USA
+					has_war_with = JAP
+				}
+			}
+			modifier = {
+				factor = 2
+				has_navy_size = { type = carrier size > 0 }# if nation has carriers, more likely
+			}
+			modifier = {
+				factor = 0
+				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
 			}
 		}
 	}

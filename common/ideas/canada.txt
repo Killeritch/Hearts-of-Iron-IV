@@ -221,7 +221,7 @@ ideas = {
 				industrial_capacity_factory = 0.02
 				industrial_capacity_dockyard = 0.02
 				conscription_factor = 0.05
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 
@@ -414,7 +414,7 @@ ideas = {
 			modifier = {
 				democratic_drift = -0.1
 				fascism_drift = 0.2
-				unity_factor = 0.05
+				war_support_factor = 0.05
 				conscription = 0.02
 			}
 		}
@@ -435,7 +435,7 @@ ideas = {
 			modifier = {
 				democratic_drift = -0.1
 				fascism_drift = 0.2
-				unity_factor = 0.05
+				war_support_factor = 0.05
 				conscription = 0.02
 				send_volunteer_divisions_required = -1
 				send_volunteer_size = 1
@@ -573,11 +573,7 @@ ideas = {
 			picture = generic_fascist_demagogue_commonwealth_2d
 			
 			traits = { fascist_demagogue }
-			
-			on_add = {
-				country_event = political.7
-			}
-			
+
 			do_effect = {
 				NOT = {
 					has_government = fascism
@@ -610,10 +606,6 @@ ideas = {
 			
 			traits = { democratic_reformer }
 			
-			on_add = {
-				country_event = political.13
-			}
-			
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -642,10 +634,6 @@ ideas = {
 			picture = generic_communist_revolutionary_commonwealth_2d
 			
 			traits = { communist_revolutionary }
-			
-			on_add = {
-				country_event = political.1
-			}
 			
 			do_effect = {
 				NOT = {

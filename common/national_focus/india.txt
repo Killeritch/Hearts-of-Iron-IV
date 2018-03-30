@@ -306,7 +306,18 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state < autonomy_dominion
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				compare_autonomy_state < autonomy_dominion
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				compare_autonomy_state < autonomy_satellite
+			}
 			has_civil_war = no
 			NOT = { has_country_flag = RAJ_seek_help_from_germany_promised }
 			SOV_can_help_against_ENG = yes
@@ -569,24 +580,25 @@ focus_tree = {
 				gfx = "GFX_RAJ_lakshmi_sahgal"
 				traits = { }
 				skill = 3
+				female = yes
 			}
 			division_template = {
-			name = "Rani of Jhansi Division"
-
-		regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-
-        infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+				name = "Rani of Jhansi Division"
+				division_names_group = RAJ_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+		        	infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+		
+		        	infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
 			}
-		}
 
 		random_owned_controlled_state = {
 			prioritize = { 439 }
@@ -745,7 +757,16 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state < autonomy_dominion
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state < autonomy_dominion
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				compare_autonomy_state < autonomy_satellite
+			}
 			has_civil_war = no
 			NOT = { has_global_flag = RAJ_seek_help_from_soviet_promised }
 			GER = {				
@@ -917,7 +938,7 @@ focus_tree = {
 				
 				else = {
 					add_tech_bonus = {
-						name = paratrooper_bonus
+						name = RAJ_battaglione_azad_hindoustan
 						bonus = 0.5
 						uses = 1
 						technology = paratroopers2
@@ -928,7 +949,7 @@ focus_tree = {
 			
 		
 			ITA = {
-				country_event = { id = tfv_raj.1 }
+				country_event = { id = tfv_raj.201 }
 			}
 			
 			if = {
@@ -938,7 +959,7 @@ focus_tree = {
 				
 				division_template = {
 					name = "Battaglione Azad Hindoustan" #Hindu paratrooper division created for Italy
-
+					division_names_group = RAJ_PAR_01
 					regiments = {
 						paratrooper = { x = 0 y = 0 }
 						paratrooper = { x = 0 y = 1 }
@@ -974,7 +995,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = RAJ_seek_help_from_germany
-
+		dynamic = yes
 		cost = 10
 
 		ai_will_do = {
@@ -982,7 +1003,10 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = GER
+			OR = {
+				is_in_faction_with = GER
+				is_in_faction_with = JAP
+			}
 		}
 
 		bypass = {
@@ -1010,7 +1034,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		relative_position_id = RAJ_seek_help_from_germany
-
+		dynamic = yes
 		cost = 10
 
 		ai_will_do = {
@@ -1018,8 +1042,10 @@ focus_tree = {
 		}
 
 		available = {
-			is_in_faction_with = GER
-			is_in_faction_with = JAP
+			OR = {
+				is_in_faction_with = GER
+				is_in_faction_with = JAP
+			}
 		}
 
 		bypass = {
@@ -1392,7 +1418,7 @@ focus_tree = {
 				division_template = {
 					name = "Red Eagles Division"
 					priority = 2
-	
+					division_names_group = RAJ_INF_01
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1407,10 +1433,10 @@ focus_tree = {
 						infantry = { x = 2 y = 2 }
 					}
 
-						support = {
-        					artillery = { x = 0 y = 0 }
-        					engineer = { x = 0 y = 1 }
-							}
+					support = {
+        				artillery = { x = 0 y = 0 }
+        				engineer = { x = 0 y = 1 }
+					}
 				}
 	
 				random_owned_controlled_state = {
@@ -1640,7 +1666,7 @@ focus_tree = {
 				division_template = {
 					name = "Gorkha Rifles"
 					priority = 2
-	
+					division_names_group = RAJ_MNT_01
 					regiments = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
@@ -1760,7 +1786,7 @@ focus_tree = {
 
 				division_template = {
 				name = "Sikh Regiment" #sikh regiment, bro
-
+				division_names_group = RAJ_INF_01
 				regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1804,7 +1830,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {
@@ -2434,7 +2467,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_government = fascims } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {
@@ -2711,7 +2751,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			640 = {
+			432 = {
 				add_resource = {
 					type = oil
 					amount = 3
@@ -3500,7 +3540,14 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_state > autonomy_colony
+			if = {
+				limit = { NOT = { has_government = fascism } }
+				compare_autonomy_state > autonomy_colony
+			}
+			if = {
+				limit = { has_government = fascism }
+				compare_autonomy_state > autonomy_reichsprotectorate
+			}
 		}
 
 		bypass = {

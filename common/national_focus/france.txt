@@ -119,6 +119,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_metropolitan_france }
 		x = 0
 		y = 1
+		relative_position_id = FRA_metropolitan_france
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -259,7 +260,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = FRA_industrial_expansion }
 		x = 0
-		y = 2
+		y = 1
+		relative_position_id = FRA_industrial_expansion
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -608,8 +610,9 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = FRA_algerie_france }
-		x = 2
+		x = 0
 		y = 1
+		relative_position_id = FRA_algerie_france
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -731,8 +734,9 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = FRA_colonial_industry }
-		x = 2
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = FRA_colonial_industry
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -857,8 +861,9 @@ focus_tree = {
 			focus = FRA_colonial_military_factories
 			focus = FRA_military_factories
 		}
-		x = 1
-		y = 3
+		x = -1
+		y = 1
+		relative_position_id = FRA_colonial_military_factories
 		cost = 10
 
 		available_if_capitulated = yes
@@ -878,8 +883,9 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = FRA_extra_research_slot }
-		x = 0
-		y = 4
+		x = -1
+		y = 1
+		relative_position_id = FRA_extra_research_slot
 		cost = 10
 
 		available_if_capitulated = yes
@@ -905,8 +911,9 @@ focus_tree = {
 		available = {
 		}
 		prerequisite = { focus = FRA_extra_research_slot }
-		x = 2
-		y = 4
+		x = 1
+		y = 1
+		relative_position_id = FRA_extra_research_slot
 		cost = 10
 
 		available_if_capitulated = yes
@@ -935,8 +942,9 @@ focus_tree = {
 		available = {
 			num_of_factories > 75
 		}
-		x = 1
-		y = 5
+		x = -1
+		y = 1
+		relative_position_id = FRA_jet_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -972,8 +980,9 @@ focus_tree = {
 		id = FRA_fortification_focus
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = FRA_defensive_focus }
-		x = 4
+		x = -2
 		y = 1
+		relative_position_id = FRA_defensive_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -986,8 +995,9 @@ focus_tree = {
 		id = FRA_alpine_forts
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = FRA_fortification_focus }
-		x = 4
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = FRA_fortification_focus
 		cost = 10
 
 		available = {
@@ -1008,8 +1018,9 @@ focus_tree = {
 		id = FRA_extend_the_maginot_line
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = FRA_alpine_forts }
-		x = 4
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = FRA_alpine_forts
 		cost = 10
 
 		available = {
@@ -1034,8 +1045,9 @@ focus_tree = {
 		id = FRA_infantry_focus
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = FRA_defensive_focus }
-		x = 6
+		x = 0
 		y = 1
+		relative_position_id = FRA_defensive_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1049,8 +1061,9 @@ focus_tree = {
 		id = FRA_artillery_focus
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = FRA_infantry_focus }
-		x = 6
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = FRA_infantry_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1069,8 +1082,9 @@ focus_tree = {
 		id = FRA_heavy_armor_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FRA_artillery_focus }
-		x = 6
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = FRA_artillery_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1108,8 +1122,9 @@ focus_tree = {
 		id = FRA_motorized_focus
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = FRA_aggressive_focus }
-		x = 8
+		x = 0
 		y = 1
+		relative_position_id = FRA_aggressive_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1123,8 +1138,9 @@ focus_tree = {
 		id = FRA_mechanized_focus
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = FRA_motorized_focus }
-		x = 8
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = FRA_motorized_focus
 		cost = 10
 		completion_reward = {
 			army_experience = 5
@@ -1140,8 +1156,9 @@ focus_tree = {
 		id = FRA_light_medium_armor
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = FRA_mechanized_focus }
-		x = 8
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = FRA_mechanized_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1164,8 +1181,9 @@ focus_tree = {
 			focus = FRA_light_medium_armor 
 			focus = FRA_heavy_armor_focus 
 		}
-		x = 7
-		y = 4
+		x = -1
+		y = 1
+		relative_position_id = FRA_light_medium_armor
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1189,7 +1207,6 @@ focus_tree = {
 
 #### END ####
 
-
 	focus = {
 		id = FRA_initiate_government_reform
 		icon = GFX_goal_generic_national_unity
@@ -1208,6 +1225,55 @@ focus_tree = {
 		}
 	}
 	
+
+	focus = {
+		id = FRA_revise_versailles
+		icon = GFX_goal_generic_forceful_treaty
+	 	mutually_exclusive = {
+	 		focus = FRA_support_status_quo
+	 	}
+	 	available = {
+		}
+	 	prerequisite = { focus = FRA_initiate_government_reform }
+		x = 1
+		y = 1
+		relative_position_id = FRA_initiate_government_reform
+		cost = 10
+
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 0.1
+
+			modifier = {
+				factor = 10
+				ai_irrationality > 20
+			}
+			modifier = {
+				factor = 2
+				ai_irrationality > 30
+			}
+			modifier = {
+				factor = 2
+				ai_irrationality > 40
+			}
+			modifier = {
+				factor = 0
+				NOT = { GER = { has_completed_focus = GER_rhineland } }
+				NOT = { GER = { has_completed_focus = GER_reestablish_free_elections } }
+				NOT = { GER = { has_completed_focus = GER_expatriate_the_communists } }
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_revise_versailles
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+
 	focus = {
 		id = FRA_support_the_left
 		icon = GFX_goal_support_communism
@@ -1217,11 +1283,16 @@ focus_tree = {
 	 	available = {
 		}
 	 	prerequisite = { focus = FRA_revise_versailles }
-		x = 16
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = FRA_revise_versailles
 		cost = 10
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 10
+				GER = { has_completed_focus = GER_reestablish_free_elections }
+			}
 		}
 
 		available_if_capitulated = yes
@@ -1235,7 +1306,7 @@ focus_tree = {
 	}
 
 	focus = {	
-		id =  FRA_scw_intervention_republicans
+		id = FRA_scw_intervention_republicans
 		icon = GFX_goal_generic_military_deal
 	 	available = {
 	 		AND = {
@@ -1244,12 +1315,13 @@ focus_tree = {
 			}
 		}
 	 	prerequisite = { focus = FRA_support_the_left }
-		x = 16
-		y = 3
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		x = 0
+		y = 1
+		relative_position_id = FRA_support_the_left
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			SPR = {
 				add_opinion_modifier = {				
@@ -1267,6 +1339,61 @@ focus_tree = {
 					modifier = FRA_scw_intervention_republicans_SPA
 				}
 			}
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = SPR
+						has_government = communism
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = ROOT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = ROOT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = antagonize
+						id = ROOT
+						value = -200
+					}
+					FRA = {
+						add_ai_strategy = {
+							type = befriend
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = send_volunteers_desire
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = support
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = PREV
+							value = -200
+						}
+					}
+				}
+			}
 			set_rule = {
 				can_send_volunteers = yes
 			}
@@ -1280,8 +1407,9 @@ focus_tree = {
 	 	available = {
 		}
 	 	prerequisite = { focus = FRA_support_the_left }
-		x = 14
-		y = 3
+		x = -2
+		y = 1
+		relative_position_id = FRA_support_the_left
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1334,8 +1462,9 @@ focus_tree = {
 	 		}
 		}
 	 	prerequisite = { focus = FRA_leftist_rhetoric }
-		x = 14
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = FRA_leftist_rhetoric
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1372,8 +1501,9 @@ focus_tree = {
 	 	bypass = {
 	 		is_in_faction_with = SOV
 	 	}
-		x = 15
-		y = 5
+		x = 1
+		y = 1
+		relative_position_id = FRA_national_mobilization
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1394,8 +1524,9 @@ focus_tree = {
 	 		is_puppet = no
 		}
 	 	prerequisite = { focus = FRA_national_mobilization }
-		x = 13
-		y = 5
+		x = -1
+		y = 1
+		relative_position_id = FRA_national_mobilization
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1417,8 +1548,9 @@ focus_tree = {
 		available = {
 		}
 	 	prerequisite = { focus = FRA_initiate_government_reform }
-		x = 13
+		x = -1
 		y = 1
+		relative_position_id = FRA_initiate_government_reform
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1434,10 +1566,20 @@ focus_tree = {
 				factor = 0.5
 				ai_irrationality > 30
 			}
+			modifier = {
+				factor = 0
+				has_idea = GER_communist_refugees
+			}
+			modifier = {
+				factor = 0
+				NOT = { GER = { has_completed_focus = GER_rhineland } }
+				NOT = { GER = { has_completed_focus = GER_reestablish_free_elections } }
+				NOT = { GER = { has_completed_focus = GER_focus_on_the_true_enemy } }
+			}
 		}
 		completion_reward = {
 			#add_ideas = {	FRA_support_the_centre_focus }
-			add_national_unity = 0.05
+			add_stability = 0.05
 		}
 	}
 
@@ -1462,8 +1604,9 @@ focus_tree = {
 	 		is_in_faction_with = CZE
 	 		is_faction_leader = yes
 	 	}
-		x = 11
-		y = 2
+		x = -2
+		y = 1
+		relative_position_id = FRA_support_status_quo
 		cost = 10
 
 		ai_will_do = {
@@ -1479,8 +1622,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_national_unity = 0.05
-			
+			add_stability = 0.05
+			add_war_support = 0.1
 			if = {
 				limit = { 
 					has_dlc = "Death or Dishonor"
@@ -1494,7 +1637,7 @@ focus_tree = {
 			if = {
 				limit = {
 					CZE = { 
-						is_puppet = no
+						is_subject = no
 						NOT = { has_war_with = FRA }
 						is_in_faction = no
 					}
@@ -1529,8 +1672,9 @@ focus_tree = {
 		}
 	 	prerequisite = { focus = FRA_support_status_quo }
 	 	mutually_exclusive = { focus = FRA_little_entente }
-		x = 13
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = FRA_support_status_quo
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1550,6 +1694,10 @@ focus_tree = {
 				factor = 0.5
 				ai_irrationality > 30
 			}
+			modifier = {
+				factor = 0
+				has_idea = GER_communist_refugees
+			}
 		}
 		completion_reward = {
 			ENG = { country_event = { id = britain.13 } }
@@ -1566,8 +1714,9 @@ focus_tree = {
 	 		focus = FRA_little_entente
 	 		focus = FRA_go_with_britain
 	 	}
-		x = 12
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = FRA_little_entente
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1595,8 +1744,9 @@ focus_tree = {
 			}
 		}
 	 	prerequisite = { focus = FRA_strengthen_government_support }
-		x = 12
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = FRA_strengthen_government_support
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1625,8 +1775,9 @@ focus_tree = {
 	 			}
 	 		}
 	 	}
-		x = 10
-		y = 3
+		x = -1
+		y = 1
+		relative_position_id = FRA_little_entente
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1651,8 +1802,9 @@ focus_tree = {
 	 			}
 	 		}
 	 	}
-		x = 10
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = FRA_invite_yugoslavia
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1671,8 +1823,9 @@ focus_tree = {
 			NOT = { has_war_with = POL }
 		}
 	 	prerequisite = { focus = FRA_invite_romania }
-		x = 10
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = FRA_invite_romania
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1689,8 +1842,9 @@ focus_tree = {
 	#		NOT = { has_war_with = CZE }
 	#	}
 	# 	prerequisite = { focus = FRA_defensive_strategems }
-	#	x = 13
-	#	y = 4
+	#	x = 1
+	#	y = 0
+	#	relative_position_id = FRA_defensive_strategems
 	#	cost = 10
 	#	#ai_will_do = {
 	#	#	factor = 1
@@ -1701,47 +1855,6 @@ focus_tree = {
 	#}
 
 	focus = {
-		id = FRA_revise_versailles
-		icon = GFX_goal_generic_forceful_treaty
-	 	mutually_exclusive = {
-	 		focus = FRA_support_status_quo
-	 	}
-	 	available = {
-		}
-	 	prerequisite = { focus = FRA_initiate_government_reform }
-		x = 15
-		y = 1
-		cost = 10
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 0.1
-
-			modifier = {
-				factor = 10
-				ai_irrationality > 20
-			}
-			modifier = {
-				factor = 2
-				ai_irrationality > 30
-			}
-			modifier = {
-				factor = 2
-				ai_irrationality > 40
-			}
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_revise_versailles
-				bonus = 0.5
-				uses = 2
-				category = land_doctrine
-			}
-		}
-	}
-
-	focus = {
 		id = FRA_support_the_right
 		icon = GFX_goal_support_fascism
 	 	mutually_exclusive = {
@@ -1750,15 +1863,24 @@ focus_tree = {
 	 	available = {
 		}
 	 	prerequisite = { focus = FRA_revise_versailles }
-		x = 18
-		y = 2
+		x = 3
+		y = 1
+		relative_position_id = FRA_revise_versailles
 		cost = 10
 
 		available_if_capitulated = yes
 
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				has_idea = GER_communist_refugees
+			}
+			modifier = {
+				factor = 100
+				GER = { has_completed_focus = GER_reestablish_free_elections }
+			}
+		}
 		completion_reward = {
 			add_ideas = FRA_support_the_right_focus
 			hidden_effect = {
@@ -1777,12 +1899,13 @@ focus_tree = {
 			}
 		}
 	 	prerequisite = { focus = FRA_support_the_right }
-		x = 18
-		y = 3
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		x = 0
+		y = 1
+		relative_position_id = FRA_support_the_right
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			random_other_country = {
 				limit = {
@@ -1804,6 +1927,61 @@ focus_tree = {
 				can_send_volunteers = yes
 			}
 			add_ideas = {	FRA_scw_intervention_nationalists_focus	} ## does not seem to work. ask someone
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = SPR
+						has_government = fascism
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = ROOT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = ROOT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = antagonize
+						id = ROOT
+						value = -200
+					}
+					FRA = {
+						add_ai_strategy = {
+							type = befriend
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = send_volunteers_desire
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = support
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = PREV
+							value = -200
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -1811,15 +1989,16 @@ focus_tree = {
 		id = FRA_right_wing_rhetoric
 		icon = GFX_goal_generic_propaganda
 	 	prerequisite = { focus = FRA_support_the_right }
-		x = 20
-		y = 3
+		x = 2
+		y = 1
+		relative_position_id = FRA_support_the_right
 		cost = 10
 
 		available_if_capitulated = yes
 
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			add_ideas = marcel_bucard
 			every_other_country = {
@@ -1865,15 +2044,16 @@ focus_tree = {
 	 		}
 		}
 	 	prerequisite = { focus = FRA_right_wing_rhetoric }
-		x = 20
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = FRA_right_wing_rhetoric
 		cost = 10
 
 		available_if_capitulated = yes
 
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			remove_ideas = FRA_protected_by_the_maginot_line
 			remove_ideas = FRA_disjointed_government
@@ -1898,8 +2078,9 @@ focus_tree = {
 	 		is_puppet = no	 		
 		}
 	 	prerequisite = { focus = FRA_army_of_aggression }
-		x = 18
-		y = 5
+		x = -2
+		y = 1
+		relative_position_id = FRA_army_of_aggression
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -1916,10 +2097,7 @@ focus_tree = {
 	 	available = {
 	 		is_puppet = no
 	 		NOT = { has_war_with = ITA }
-	 		OR = {
-	 			has_government = fascism
-	 			fascism > 0.4
-	 		}
+	 		has_government = fascism
 	 		OR = {
 	 			is_faction_leader = yes
 	 			is_in_faction = no
@@ -1932,15 +2110,265 @@ focus_tree = {
 	 		}
 		}
 	 	prerequisite = { focus = FRA_army_of_aggression }
-		x = 20
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = FRA_army_of_aggression
 		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				GER = { has_completed_focus = GER_reestablish_free_elections }
+			}
+		}
 		completion_reward = {
 			ITA = { country_event = { id = italy.8 days = 1 } }			
 			### Fires event to ITA asking them to join your faction - creates faction if you don't already lead one.
+			hidden_effect = {
+				if = {
+					limit = {
+						AUS = { has_government = fascism }
+					}
+					AUS = {
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = -200
+						}
+						FRA = {
+							add_ai_strategy = {
+								type = befriend
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = antagonize
+								id = PREV
+								value = -200
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						HUN = { has_government = fascism }
+					}
+					HUN = {
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = -200
+						}
+						FRA = {
+							add_ai_strategy = {
+								type = befriend
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = antagonize
+								id = PREV
+								value = -200
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROM = { has_government = fascism }
+					}
+					ROM = {
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = -200
+						}
+						FRA = {
+							add_ai_strategy = {
+								type = befriend
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = antagonize
+								id = PREV
+								value = -200
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						YUG = { has_government = fascism }
+					}
+					YUG = {
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = -200
+						}
+						FRA = {
+							add_ai_strategy = {
+								type = befriend
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = antagonize
+								id = PREV
+								value = -200
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						BUL = { has_government = fascism }
+					}
+					BUL = {
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = 200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = -200
+						}
+						FRA = {
+							add_ai_strategy = {
+								type = befriend
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = 200
+							}
+							add_ai_strategy = {
+								type = antagonize
+								id = PREV
+								value = -200
+							}
+						}
+					}
+				}
+	 			if = {
+	 				limit = {
+	 					GER = { has_completed_focus = GER_reestablish_free_elections }
+	 				}
+	 				random_other_country = {
+	 					limit = {
+	 						original_tag = SPR
+	 						has_government = fascism
+	 					}
+	 					remove_ideas = SPA_recovering_from_civil_war
+	 				}
+	 			}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_dismantle_the_democracies
+		icon = GFX_goal_generic_major_war
+	 	available = {
+	 		is_puppet = no
+	 		GER = { has_government = democratic }
+		}
+	 	prerequisite = { focus = FRA_woo_italy }
+	 	will_lead_to_war_with = GER
+		x = 0
+		y = 1
+		relative_position_id = FRA_woo_italy
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 1940.1.1
+			}
+			modifier = {
+				factor = 0
+				NOT = { GER = { has_completed_focus = GER_central_european_alliance } }
+			}
+			modifier = {
+				factor = 200
+				GER = { has_war_with = SOV }
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GER
+			}
 		}
 	}
 
@@ -1964,8 +2392,9 @@ focus_tree = {
 	 		}
 		}
 	 	prerequisite = { focus = FRA_army_of_aggression }
-		x = 22
-		y = 5
+		x = 2
+		y = 1
+		relative_position_id = FRA_army_of_aggression
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2042,8 +2471,9 @@ focus_tree = {
 		id = FRA_improved_screen_ships
 		icon = GFX_goal_generic_navy_cruiser
 	 	prerequisite = { focus = FRA_navy_focus }
-		x = 20
+		x = -3
 		y = 1
+		relative_position_id = FRA_navy_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2065,8 +2495,9 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_battleship
 	 	mutually_exclusive = { focus = FRA_carrier_focus }
 	 	prerequisite = { focus = FRA_navy_focus }
-		x = 22
+		x = -1
 		y = 1
+		relative_position_id = FRA_navy_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2087,8 +2518,9 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_carrier
 	 	mutually_exclusive = { focus = FRA_capital_ship_focus }
 	 	prerequisite = { focus = FRA_navy_focus }
-		x = 24
+		x = 1
 		y = 1
+		relative_position_id = FRA_navy_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2111,8 +2543,9 @@ focus_tree = {
 	 		focus = FRA_capital_ship_focus
 	 		focus = FRA_improved_screen_ships
 	 	}
-		x = 23
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = FRA_carrier_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2135,8 +2568,9 @@ focus_tree = {
 	 		focus = FRA_carrier_focus
 	 		focus = FRA_fighter_focus
 	 	}
-		x = 25
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = FRA_carrier_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2154,8 +2588,6 @@ focus_tree = {
 	focus = {
 		id = FRA_air_focus
 		icon = GFX_goal_generic_build_airforce
-	 	prerequisite = { 
-	 	}
 		x = 29
 		y = 0
 		cost = 10
@@ -2241,8 +2673,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		mutually_exclusive = { focus = FRA_bomber_focus }
 	 	prerequisite = { focus = FRA_air_focus }
-		x = 28
+		x = -1
 		y = 1
+		relative_position_id = FRA_air_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2261,8 +2694,9 @@ focus_tree = {
 		id = FRA_heavy_fighter_focus
 		icon = GFX_goal_generic_air_fighter2
 	 	prerequisite = { focus = FRA_fighter_focus }
-		x = 27
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = FRA_fighter_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2282,8 +2716,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		mutually_exclusive = { focus = FRA_fighter_focus }
 	 	prerequisite = { focus = FRA_air_focus }
-		x = 30
+		x = 1
 		y = 1
+		relative_position_id = FRA_air_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2305,8 +2740,9 @@ focus_tree = {
 	 		focus = FRA_fighter_focus 
 	 		focus = FRA_bomber_focus
 	 	}
-		x = 29
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = FRA_fighter_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2327,8 +2763,9 @@ focus_tree = {
 		id = FRA_heavy_bomber_focus
 		icon = GFX_goal_generic_occupy_start_war
 	 	prerequisite = { focus = FRA_bomber_focus }
-		x = 31
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = FRA_bomber_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2347,8 +2784,9 @@ focus_tree = {
 		id = FRA_naval_bomber_focus
 		icon = GFX_goal_generic_air_naval_bomber
 	 	prerequisite = { focus = FRA_bomber_focus }
-		x = 33
-		y = 2
+		x = 3
+		y = 1
+		relative_position_id = FRA_bomber_focus
 		cost = 10
 
 		available_if_capitulated = yes

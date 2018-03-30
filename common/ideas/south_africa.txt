@@ -262,7 +262,7 @@ ideas = {
 			picture = triumphant_will
 
 			modifier = {
-				unity_factor = 0.07
+				stability_factor = 0.07
 				autonomy_gain = 0.5
 			}
 		}
@@ -281,7 +281,7 @@ ideas = {
 			picture = triumphant_will
 
 			modifier = {
-				unity_factor = 0.07
+				stability_factor = 0.07
 				conscription = 0.005
 				autonomy_gain = 0.75
 			}
@@ -302,6 +302,7 @@ ideas = {
 
 			modifier = {
 				conscription = 0.01
+				war_support_factor = 0.05
 			}
 		}
 
@@ -340,6 +341,7 @@ ideas = {
 
 			modifier = {
 				subversive_activites_upkeep = -0.5
+				war_support_factor = 0.05
 			}
 		}
 
@@ -436,7 +438,7 @@ ideas = {
 			picture = king_edward
 
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 				army_morale_factor = 0.02
 				army_org_factor = 0.02
 			}
@@ -552,11 +554,7 @@ ideas = {
 			picture = generic_democratic_reformer_western_european_2d
 			
 			traits = { democratic_reformer }
-		
-			on_add = {
-				country_event = political.13
-			}
-		
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -585,11 +583,7 @@ ideas = {
 			picture = generic_communist_revolutionary_western_european_2d
 			
 			traits = { communist_revolutionary }
-			
-			on_add = {
-				country_event = political.1
-			}
-			
+
 			do_effect = {
 				NOT = {
 					has_government = communism
@@ -619,10 +613,6 @@ ideas = {
 			picture = generic_political_advisor_europe_4
 			
 			traits = { fascist_demagogue }
-		
-			on_add = {
-				country_event = political.7
-			}
 		
 			do_effect = {
 				NOT = {

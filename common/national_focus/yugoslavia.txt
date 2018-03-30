@@ -496,8 +496,15 @@ focus_tree = {
 		available = {
 			GER = {
 				NOT = { has_war_with = ROOT }
+				has_government = fascism
 				has_capitulated = no
 				is_faction_leader = yes
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = GER
+					has_war_with = YUG
+				}
 			}
 		}
 
@@ -779,7 +786,8 @@ focus_tree = {
 		}
 
 		available = {
-
+			controls_state = 109
+			controls_state = 103
 		}
 
 		bypass = {
@@ -798,7 +806,9 @@ focus_tree = {
 			remove_ideas = YUG_idea_croatian_opposition
 			release_puppet = CRO 
 			set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
-			news_event = { id = news.326 hours = 6 }
+			hidden_effect = {
+				news_event = { id = news.326 hours = 6 }
+			}
 		}
 	}
 
@@ -857,6 +867,12 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				has_capitulated = no
 				is_faction_leader = yes
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = ENG
+					has_war_with = YUG
+				}
 			}
 		}
 
@@ -1151,6 +1167,12 @@ focus_tree = {
 				NOT = { has_war_with = ROOT }
 				exists = yes
 				has_capitulated = no
+			}
+			NOT = {
+				any_other_country = {
+					is_in_faction_with = SOV
+					has_war_with = YUG
+				}
 			}
 		}
 
@@ -1815,6 +1837,7 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
 				}
 				add_building_construction = {
 					type = infrastructure
@@ -2116,7 +2139,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 45 }
 				45 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2128,7 +2151,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 105 }
 				105 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2140,7 +2163,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 107 }
 				107 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2152,7 +2175,7 @@ focus_tree = {
 			if = {
 				limit = { has_full_control_of_state = 108 }
 				108 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -2572,7 +2595,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = HUN_ik3_bonus
+				name = YUG_the_ik_3
 				bonus = 0.75
 				ahead_reduction = 0.75
 				uses = 1
@@ -2613,7 +2636,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = HUN_heavy_fighter_bonus
+				name = YUG_heavy_fighter_project
 				bonus = 0.5
 				uses = 1
 				category = cat_heavy_fighter
@@ -2653,7 +2676,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = HUN_tactical_bomber_bonus
+				name = YUG_bomber_project
 				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
@@ -2693,10 +2716,37 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = GER
+					}
+				}
 			GER = { country_event = DOD_yugoslavia.20 }
-			ENG = { country_event = DOD_yugoslavia.20 }
+			}if = {
+				limit = {
+					NOT = {
+						has_war_with = ITA
+					}
+				}
 			ITA = { country_event = DOD_yugoslavia.20 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = ENG
+					}
+				}
+			ENG = { country_event = DOD_yugoslavia.20 }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = FRA
+					}
+				}
 			FRA = { country_event = DOD_yugoslavia.20 }
+			}
 		}
 	}
 
@@ -2986,7 +3036,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = YUG_motorized_bonus
+				name = YUG_motorize_the_cavalry
 				bonus = 0.75
 				technology = motorised_infantry
 			}
@@ -3029,7 +3079,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = YUG_motorized_support_bonus
+				name = YUG_motorized_logistics
 				bonus = 0.5
 				uses = 2
 				category = hospital_tech
@@ -3074,7 +3124,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = YUG_mechanized_focus
+				name = YUG_armored_cavalry
 				bonus = 0.5
 				uses = 1
 				category = cat_mechanized_equipment

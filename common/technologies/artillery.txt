@@ -544,6 +544,19 @@ technologies = {
 			factor = 1
 			
 			modifier = {
+				factor = 0.5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -751,6 +764,19 @@ technologies = {
 			factor = 1
 			
 			modifier = {
+				factor = 0.2
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -763,6 +789,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1939.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
 			}
 		}
 		
@@ -799,7 +836,17 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-			
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 30
+						}
+					}
+				}
+			}
 			modifier = {
 				factor = 2
 				date > "1939.1.6"
@@ -863,6 +910,17 @@ technologies = {
 				factor = 5
 				date > "1940.1.6"
 			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
 		}
 		
 		categories = {
@@ -913,6 +971,17 @@ technologies = {
 				factor = 5
 				date > "1943.1.1"
 			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 32
+						}
+					}
+				}
+			}
 		}
 		
 		categories = {
@@ -957,6 +1026,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1943.1.1"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
 			}
 		}
 		
@@ -1006,6 +1086,17 @@ technologies = {
 			modifier = {
 				factor = 5
 				date > "1943.1.6"
+			}
+			modifier = {
+				factor = 10
+				any_enemy_country = {
+					ROOT = {
+						estimated_intel_max_armor = {
+							tag = PREV
+							value > 35
+						}
+					}
+				}
 			}
 		}
 		

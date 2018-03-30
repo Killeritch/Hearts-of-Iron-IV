@@ -153,7 +153,7 @@ air_wing_names_template = AIR_WING_NAME_SOV_FALLBACK
 
 	tac_bomber_equipment = {
 		prefix = ""
-		generic = { "BAD" "NBAD" }
+		generic = { "BAD" }
 		generic_pattern = AIR_WING_NAME_SOV_GENERIC
 		unique = {
 		}	

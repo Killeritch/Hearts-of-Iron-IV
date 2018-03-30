@@ -90,7 +90,7 @@ ideas = {
 			
 			modifier = {
 				subversive_activites_upkeep = -0.5
-				land_reinforce_rate = 0.3
+				land_reinforce_rate = 0.05
 			}
 		}
 		
@@ -217,7 +217,7 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = -0.2
+				stability_factor = -0.2
 			}
 		}
 		
@@ -233,7 +233,7 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 
@@ -256,6 +256,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.5
+				send_volunteer_factor = -0.8
+				industrial_capacity_factory = -0.2
+				training_time_factor = 0.5
 			}
 		}
 
@@ -280,6 +283,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.45
+				send_volunteer_factor = -0.74
+				industrial_capacity_factory = -0.18
+				training_time_factor = 0.45
 			}
 		}
 		officers_purged_3 = {
@@ -298,11 +304,14 @@ ideas = {
 			research_bonus = {
 				land_doctrine = -0.08
 				naval_doctrine = -0.08
-				air_doctrine = -0.08
+				air_doctrine = -0.08				
 			}
 
 			modifier = {
 				army_org_factor = -0.4
+				send_volunteer_factor = -0.68
+				industrial_capacity_factory = -0.16
+				training_time_factor = 0.4
 			}
 		}
 		officers_purged_4 = {
@@ -321,11 +330,14 @@ ideas = {
 			research_bonus = {
 				land_doctrine = -0.07
 				naval_doctrine = -0.07
-				air_doctrine = -0.07
+				air_doctrine = -0.07				
 			}
 
 			modifier = {
 				army_org_factor = -0.35
+				send_volunteer_factor = -0.62
+				industrial_capacity_factory = -0.14
+				training_time_factor = 0.35
 			}
 		}
 		officers_purged_5 = {
@@ -349,6 +361,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.30
+				send_volunteer_factor = -0.56
+				industrial_capacity_factory = -0.12
+				training_time_factor = 0.3
 			}
 		}
 		officers_purged_6 = {
@@ -372,6 +387,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.25
+				send_volunteer_factor = -0.5
+				industrial_capacity_factory = -0.10
+				training_time_factor = 0.25
 			}
 		}
 		officers_purged_7 = {
@@ -395,6 +413,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.20
+				send_volunteer_factor = -0.44
+				industrial_capacity_factory = -0.08
+				training_time_factor = 0.2
 			}
 		}
 		officers_purged_8 = {
@@ -418,6 +439,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.15
+				send_volunteer_factor = -0.38
+				industrial_capacity_factory = -0.06
+				training_time_factor = 0.15
 			}
 		}
 		officers_purged_9 = {
@@ -441,6 +465,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.10
+				send_volunteer_factor = -0.32
+				industrial_capacity_factory = -0.04
+				training_time_factor = 0.1
 			}
 		}
 		officers_purged_10 = {
@@ -464,6 +491,9 @@ ideas = {
 
 			modifier = {
 				army_org_factor = -0.05
+				send_volunteer_factor = -0.26
+				industrial_capacity_factory = -0.02
+				training_time_factor = 0.05
 			}
 		}
 
@@ -488,6 +518,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.45
+				war_support_factor = 0.2
 			}
 		}
 
@@ -512,6 +543,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.35
+				war_support_factor = 0.15
 			}
 		}
 
@@ -536,6 +568,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.25
+				war_support_factor = 0.1
 			}
 		}
 
@@ -560,6 +593,7 @@ ideas = {
 
 			modifier = {
 				army_org_factor = 0.15
+				war_support_factor = 0.05
 			}
 		}
 
@@ -617,7 +651,7 @@ ideas = {
 			}
 			
 			modifier = {
-				unity_factor = 0.2
+				stability_factor = 0.2
 			}
 
 		}
@@ -635,7 +669,6 @@ ideas = {
 			}
 
 		}
-
 	}
 
 
@@ -736,10 +769,6 @@ ideas = {
 			
 			traits = { communist_revolutionary }
 	
-			on_add = {
-				country_event = political.1
-			}
-	
 			do_effect = {
 				NOT = {
 					has_government = communism
@@ -761,11 +790,7 @@ ideas = {
 
 			
 			traits = { democratic_reformer }
-	
-			on_add = {
-				country_event = political.13
-			}
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
@@ -791,10 +816,6 @@ ideas = {
 
 			
 			traits = { fascist_demagogue }
-	
-			on_add = {
-				country_event = political.7
-			}
 	
 			do_effect = {
 				NOT = {
@@ -1351,10 +1372,32 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = SOV
+				OR = {
+					original_tag = SOV
+					AND = {
+						OR = {
+							is_literally_china = yes
+							tag = MAN
+						}
+						has_dlc = "Waking the Tiger"
+					}
+				}
 			}
-			
 
+			available = {
+				if = {
+					limit = {
+						OR = {
+							is_literally_china = yes
+							tag = MAN
+						}
+					}
+					has_completed_focus = CHI_hire_soviet_designer
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+			}
 			
 			research_bonus = {
 				armor = 0.10

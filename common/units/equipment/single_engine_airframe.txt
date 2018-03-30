@@ -316,7 +316,7 @@ equipments = {
 		maximum_speed = 330
 		air_agility = 45
 		air_attack = 9
-		air_defence = 6
+		air_defence = 8
 
 		naval_strike_attack = 1
 		naval_strike_targetting = 10
@@ -361,7 +361,7 @@ equipments = {
 		maximum_speed = 650
 		air_agility = 65
 		air_attack = 27
-		air_defence = 16		
+		air_defence = 12		
 
 				
 		build_cost_ic = 26
@@ -387,7 +387,7 @@ equipments = {
 		maximum_speed = 720
 		air_agility = 80
 		air_attack = 32
-		air_defence = 20	
+		air_defence = 14	
 		
 				
 		build_cost_ic = 28
@@ -413,7 +413,7 @@ equipments = {
 		maximum_speed = 950
 		air_agility = 72
 		air_attack = 36
-		air_defence = 20
+		air_defence = 15
 		
 	}
 
@@ -429,7 +429,7 @@ equipments = {
 		maximum_speed = 1100
 		air_agility = 72
 		air_attack = 40
-		air_defence = 26
+		air_defence = 18
 
 		build_cost_ic = 32
 		resources = {
@@ -451,7 +451,7 @@ equipments = {
 		maximum_speed = 297 #CV planes have less speed than their land based counterparts 
 		air_agility = 45
 		air_attack = 9
-		air_defence = 6
+		air_defence = 8
 		
 		build_cost_ic =	26.4 # cv_version costs 20% more of base archetype
 
@@ -496,7 +496,7 @@ equipments = {
 		maximum_speed =	585
 		air_agility = 65
 		air_attack = 27
-		air_defence = 17
+		air_defence = 13
 
 		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
 		resources = {
@@ -520,7 +520,7 @@ equipments = {
 		maximum_speed =	648
 		air_agility = 80
 		air_attack = 32
-		air_defence = 22
+		air_defence = 15
 		
 		build_cost_ic = 32.4 # cv_version costs 20% more of base archetype
 		resources = {
@@ -544,7 +544,7 @@ equipments = {
 		maximum_speed = 390 
 		air_agility = 35
 		air_attack = 6
-		air_defence = 16
+		air_defence = 14
 		air_ground_attack = 10
 
 		naval_strike_attack = 3
@@ -563,7 +563,7 @@ equipments = {
 		maximum_speed = 450
 		air_agility = 39
 		air_attack = 10
-		air_defence = 20
+		air_defence = 16
 		air_ground_attack = 15
 		
 		build_cost_ic = 24
@@ -589,7 +589,7 @@ equipments = {
 		maximum_speed = 550
 		air_agility = 44
 		air_attack = 14
-		air_defence = 24
+		air_defence = 20
 		air_ground_attack = 20
 		
 		build_cost_ic = 26
@@ -615,7 +615,7 @@ equipments = {
 		maximum_speed =	351
 		air_agility = 35
 		air_attack = 6
-		air_defence = 17
+		air_defence = 14
 		air_ground_attack = 10
 		
 		build_cost_ic = 26.4 # cv_version costs 20% more of base archetype
@@ -636,7 +636,7 @@ equipments = {
 		maximum_speed =	405
 		air_agility = 39
 		air_attack = 10
-		air_defence = 22
+		air_defence = 16
 		air_ground_attack = 15
 		
 		build_cost_ic = 28.4 # cv_version costs 20% more of base archetype
@@ -662,7 +662,7 @@ equipments = {
 		maximum_speed =	495
 		air_agility = 44
 		air_attack = 14
-		air_defence = 26
+		air_defence = 20
 		air_ground_attack = 20
 		
 		build_cost_ic = 30.4 # cv_version costs 20% more of base archetype
@@ -687,7 +687,7 @@ equipments = {
 		maximum_speed = 230 
 		air_agility = 30
 		air_attack = 6
-		air_defence = 16
+		air_defence = 12
 
 	}
 	# Improved nav_bomber
@@ -702,7 +702,7 @@ equipments = {
 		maximum_speed = 300 
 		air_agility = 35
 		air_attack = 10
-		air_defence = 20
+		air_defence = 14
 		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		
@@ -726,7 +726,7 @@ equipments = {
 		maximum_speed = 400
 		air_agility = 40
 		air_attack = 14
-		air_defence = 24
+		air_defence = 16
 		naval_strike_attack = 25
 		naval_strike_targetting = 12.5
 	
@@ -750,7 +750,7 @@ equipments = {
 		maximum_speed =	207
 		air_agility = 30
 		air_attack = 6
-		air_defence = 17
+		air_defence = 13
 		
 		build_cost_ic = 31.2 # cv_version costs 20% more of base archetype
 	}
@@ -767,7 +767,7 @@ equipments = {
 		maximum_speed =	270
 		air_agility = 35
 		air_attack = 10
-		air_defence = 22
+		air_defence = 15
 		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		build_cost_ic = 33.2 # cv_version costs 20% more of base archetype
@@ -790,7 +790,7 @@ equipments = {
 		maximum_speed =	360
 		air_agility = 40
 		air_attack = 14
-		air_defence = 26
+		air_defence = 17
 		naval_strike_attack = 25
 		naval_strike_targetting = 12.5
 		build_cost_ic = 35.2 # cv_version costs 20% more of base archetype
@@ -871,7 +871,7 @@ equipments = {
 		maximum_speed = 1100
 		air_agility = 36
 		air_attack = 56
-		air_defence = 8	
+		air_defence = 7	
 		reliability = 0.5
 		build_cost_ic = 18
 		resources = {
@@ -893,7 +893,7 @@ equipments = {
 		maximum_speed = 1150
 		air_agility = 60
 		air_attack = 60
-		air_defence = 12	
+		air_defence = 10	
 		reliability = 0.8
 		build_cost_ic = 20
 		resources = {

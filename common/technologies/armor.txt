@@ -1308,6 +1308,11 @@ technologies = {
 				factor = 1.2
 				date > "1939.1.1"
 			}
+
+			modifier = {
+				factor = 0
+				can_research = improved_heavy_tank
+			}
 		}
 		
 		categories = {
@@ -1451,6 +1456,10 @@ technologies = {
 			modifier = {
 				factor = 1.2
 				date > "1944.1.1"
+			}
+			modifier = {
+				factor = 0
+				can_research = advanced_heavy_tank
 			}
 		}
 		

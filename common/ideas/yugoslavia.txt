@@ -308,7 +308,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.25
+				political_power_factor = 0.25
 			}
 		}
 		
@@ -346,7 +346,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				unity_factor = -0.3
+				stability_factor = -0.3
 			}
 		}
 
@@ -445,7 +445,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				unity_factor = 0.1
+				stability_factor = 0.1
 			}
 		}
 		

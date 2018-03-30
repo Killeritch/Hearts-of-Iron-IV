@@ -16,7 +16,7 @@ ideas = {
 			}
 
 			modifier = {
-				ai_get_ally_desire_factor = -90
+				ai_get_ally_desire_factor = -200
 				join_faction_tension = 0.5
 			}
 		}
@@ -257,7 +257,7 @@ ideas = {
 	high_command = {
 		SPA_emilio_esteban_infantes = {
 			
-			
+			picture = generic_army_europe_5
 			allowed = {
 				original_tag = SPR
 				has_government = fascism
@@ -274,7 +274,7 @@ ideas = {
 		
 		SPA_agustin_munoz_grandes = {
 			
-			
+			picture = generic_army_europe_3
 			allowed = {
 				original_tag = SPR
 				has_government = fascism
@@ -291,7 +291,7 @@ ideas = {
 	
 		SPA_joaquin_garcia_morato = {
 			
-			
+			picture = generic_air_europe_2
 			allowed = {
 				original_tag = SPR
 				has_government = fascism
@@ -308,7 +308,7 @@ ideas = {
 		
 		SPA_angel_salas_larrazabal = {
 			
-			
+			picture = generic_air_europe_1
 			allowed = {
 				original_tag = SPR
 				has_government = fascism

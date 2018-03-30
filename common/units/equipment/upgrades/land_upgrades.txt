@@ -32,7 +32,7 @@ upgrades = {
 		max_level = 5
 
 		cost = land
-		air_attack = 0.3
+		air_attack = 0.15
 		maximum_speed = -0.02
 		reliability = -0.05
 	}

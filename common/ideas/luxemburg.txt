@@ -52,7 +52,7 @@ ideas = {
 			}
 		}
 		
-		LUX_alexander_von_falkenhausen = {
+		LUX_alexander_von_falkenhausen = { #TODO_WTT_CD if this is the Falkenhausen that is sent to China. Replace this guy probably
 			
 			picture = generic_army_europe_2
 			

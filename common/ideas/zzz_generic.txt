@@ -2,7 +2,7 @@ ideas = {
 
 	hidden_ideas = {
 
-		idea_continuous_naval_production = {
+		continuous_naval_production = {
 			allowed = {
 				always = no
 			}
@@ -19,7 +19,7 @@ ideas = {
 		}
 
 
-		idea_continuous_air_production = {
+		continuous_air_production = {
 			allowed = {
 				always = no
 			}
@@ -33,63 +33,63 @@ ideas = {
 			equipment_bonus = {
 				fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				cv_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				jet_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				cv_CAS_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				CAS_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				cv_nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				rocket_interceptor_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				tac_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				jet_tac_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				jet_strat_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				heavy_fighter_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				strat_bomber_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				transport_plane_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 				guided_missile_equipment = {
 					instant = yes
-					build_cost_ic = -0.20
+					build_cost_ic = -0.10
 				}
 			}		
 		}
@@ -254,7 +254,23 @@ ideas = {
 		
 		# Generic Focus Ideas
 
-		
+		special_forces = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				special_forces_cap = 0.02
+			}
+		}
 		
 		collectivist_ethos_focus = {
 			
@@ -382,7 +398,7 @@ ideas = {
 			picture = generic_pp_unity_bonus
 	
 			modifier = {
-				unity_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 	
@@ -406,7 +422,7 @@ ideas = {
 			}
 	
 			modifier = {
-				unity_factor = 0.05
+				war_support_factor = 0.05
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
@@ -533,7 +549,8 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			
 			modifier = {
-				unity_factor = 0.10
+				stability_factor = 0.10
+				war_support_factor = 0.1
 			}
 		}	
 
@@ -590,6 +607,299 @@ ideas = {
 				fascism_drift = -0.05
 			}
 		}
+
+		race_for_the_bomb = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.2
+			}
+			research_bonus = {
+				nuclear = 0.10
+			}
+		}
+
+		race_for_the_bomb_outclassed = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.25
+				political_power_factor = -0.5
+			}
+			research_bonus = {
+				nuclear = 0.15
+			}
+		}
+		
+		received_attache = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.02
+				planning_speed = 0.10
+			}
+		}
+		draft_dodging = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.2
+			}
+		}
+
+		draft_dodging_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.3
+			}
+		}
+
+		draft_dodging_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = -0.4
+			}
+		}
+
+		strikes_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		strikes_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				local_resources_factor = -0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+			}
+		}
+		strikes_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+			}
+		}
+		mutiny_1 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.2
+				training_time_factor = 0.2
+				army_attack_factor = -0.25
+				experience_gain_army = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		mutiny_2 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.35
+				training_time_factor = 0.35
+				army_attack_factor = -0.5
+				experience_gain_army = -0.2
+				army_org_factor = -0.20
+			}
+		}
+		mutiny_3 = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_army_problems
+			
+			modifier = {
+				army_morale_factor = -0.5
+				training_time_factor = 0.5
+				army_attack_factor = -0.75
+				experience_gain_army = -0.3
+				army_org_factor = -0.5
+			}
+		}
+
+		# Civil War Ideas
+		civil_war_surprise_attack_plan = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus # TODO_CD
+			
+			modifier = {
+				army_core_attack_factor = 0.2
+			}
+		}	
+
+		civil_war_rebuild_nation = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_production_bonus
+			
+			modifier = {
+				political_power_factor = 0.15
+				industry_repair_factor = 0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.005
+				war_support_factor = -0.002
+			}
+		}
+
 	}
 	
 	political_advisor = {
@@ -597,7 +907,7 @@ ideas = {
 		generic_communist_revolutionary = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CHI tag = AST tag = RAJ tag = CAN tag = SAF} }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 }
 				}
@@ -612,19 +922,13 @@ ideas = {
 					}
 					has_completed_focus = NZL_the_lee_affair
 				}
-				if = {
-					limit = { 
-						original_tag = CZE
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = CZE_go_left
-				}
+				
 			}
 			
 			traits = { communist_revolutionary }
 	
 			on_add = {
-				country_event = political.1
+				#country_event = political.1
 			}
 	
 			do_effect = {
@@ -641,7 +945,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -665,7 +969,7 @@ ideas = {
 			traits = { democratic_reformer }
 	
 			on_add = {
-				country_event = political.13
+				#country_event = political.13
 			}
 	
 			do_effect = {
@@ -682,7 +986,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
@@ -697,19 +1001,13 @@ ideas = {
 					}
 					has_completed_focus = NZL_in_the_darkness
 				}
-				if = {
-					limit = { 
-						original_tag = CZE
-						has_dlc = "Death or Dishonor"
-					}
-					has_completed_focus = CZE_go_right
-				}
+				
 			}
 			
 			traits = { fascist_demagogue }
 	
 			on_add = {
-				country_event = political.7
+				#country_event = political.7
 			}
 	
 			do_effect = {
@@ -746,6 +1044,13 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 				}
+				NOT = {
+					OR = {
+						is_literally_china = yes
+						tag = MAN
+					}
+					has_dlc = "Waking the Tiger"
+				}
 			}
 			
 			cost = 150
@@ -776,6 +1081,12 @@ ideas = {
 					AND = {
 						OR = { tag = AST tag = CAN tag = NZL tag = RAJ }
 						has_dlc = "Together for Victory"
+					}
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
 					}
 				}
 			}
@@ -810,6 +1121,12 @@ ideas = {
 					}
 					NOT = { tag = ROM } NOT = { tag = YUG }
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
 			}
 			
 			cost = 150
@@ -836,6 +1153,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { tag = YUG }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
 				}
 			}
 			
@@ -864,6 +1187,12 @@ ideas = {
 					}
 					NOT = { tag = YUG }
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						
+					}
+				}
 			}
 			
 			cost = 150
@@ -884,6 +1213,14 @@ ideas = {
 				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
+				}
+				if = {
+					limit = {
+						has_dlc = "Waking the Tiger"
+					}
+					NOT = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+					}
 				}
 			}
 			
@@ -909,6 +1246,12 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = industrial_concern limit = 1 }
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
 			}
 			
 			cost = 150
@@ -929,6 +1272,13 @@ ideas = {
 				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = electronics_concern limit = 1 }
+				}
+				NOT = {
+					has_DLC = "Waking the Tiger"
+					OR = {
+						original_tag = MAN
+						is_literally_china = yes
+					}
 				}
 			}
 			
@@ -956,6 +1306,12 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = motorized_equipment_manufacturer limit = 1 }
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
 			}
 			
 			cost = 150
@@ -977,6 +1333,12 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
 				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
+				}
 			}
 			
 			cost = 150
@@ -997,6 +1359,12 @@ ideas = {
 				NOT = { OR { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA } }
 				NOT = {
 					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
+				NOT = {
+					AND = {
+						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						has_dlc = "Waking the Tiger"
+					}
 				}
 			}
 			

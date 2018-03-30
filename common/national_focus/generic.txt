@@ -18,7 +18,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			retire_country_leader = yes
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -33,15 +32,16 @@ focus_tree = {
 		id = equipment_effort
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = army_effort }
-		x = 0
+		x = -1
 		y = 1
+		relative_position_id = army_effort
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = infantry_weapons_bonus
+				name = infantry_artillery_bonus
 				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
@@ -55,8 +55,9 @@ focus_tree = {
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = army_effort }
 		bypass = { has_tech = motorised_infantry }
-		x = 2
+		x = 1
 		y = 1
+		relative_position_id = army_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -74,8 +75,9 @@ focus_tree = {
 		id = doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = army_effort }
-		x = 1
+		x = 0
 		y = 2
+		relative_position_id = army_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -96,7 +98,8 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = equipment_effort }
 		x = 0
-		y = 3
+		y = 2
+		relative_position_id = equipment_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -116,8 +119,9 @@ focus_tree = {
 		id = mechanization_effort
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = motorization_effort }
-		x = 2
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = motorization_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -136,8 +140,9 @@ focus_tree = {
 		id = doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = doctrine_effort }
-		x = 1
-		y = 4
+		x = 0
+		y = 2
+		relative_position_id = doctrine_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -158,7 +163,8 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = equipment_effort_2 }
 		x = 0
-		y = 5
+		y = 2
+		relative_position_id = equipment_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -178,8 +184,9 @@ focus_tree = {
 		id = armor_effort
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = mechanization_effort }
-		x = 2
-		y = 5
+		x = 0
+		y = 2
+		relative_position_id = mechanization_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -201,12 +208,14 @@ focus_tree = {
 		prerequisite = { focus = doctrine_effort_2 }
 		prerequisite = { focus = armor_effort }
 		x = 1
-		y = 6
+		y = 1
+		relative_position_id = equipment_effort_3
 		cost = 10
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 0.5
@@ -309,8 +318,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = aviation_effort }
 		mutually_exclusive = { focus = bomber_focus }
-		x = 4
+		x = -1
 		y = 1
+		relative_position_id = aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -336,8 +346,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = aviation_effort }
 		mutually_exclusive = { focus = fighter_focus }
-		x = 6
+		x = 1
 		y = 1
+		relative_position_id = aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -359,8 +370,9 @@ focus_tree = {
 		id = aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = bomber_focus focus = fighter_focus }
-		x = 5
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = bomber_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -446,8 +458,9 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = aviation_effort_2 }
 		prerequisite = { focus = motorization_effort }
-		x = 4
-		y = 3
+		x = -1
+		y = 1
+		relative_position_id = aviation_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -468,8 +481,9 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = aviation_effort_2 }
 		prerequisite = { focus = infrastructure_effort }
-		x = 5
-		y = 4
+		x = 0
+		y = 2
+		relative_position_id = aviation_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -498,8 +512,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { focus = aviation_effort_2 }
 		prerequisite = { focus = flexible_navy }
-		x = 6
-		y = 3
+		x = 1
+		y = 1
+		relative_position_id = aviation_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -646,8 +661,9 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = naval_effort }
 		mutually_exclusive = { focus = large_navy }
-		x = 8
+		x = -1
 		y = 1
+		relative_position_id = naval_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -685,8 +701,9 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = naval_effort }
 		mutually_exclusive = { focus = flexible_navy }
-		x = 10
+		x = 1
 		y = 1
+		relative_position_id = naval_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -719,8 +736,9 @@ focus_tree = {
 		id = submarine_effort
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = flexible_navy focus = large_navy }
-		x = 8
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = flexible_navy
 		cost = 10
 
 		available_if_capitulated = yes
@@ -757,8 +775,9 @@ focus_tree = {
 		id = cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = large_navy focus = flexible_navy }
-		x = 10
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = large_navy
 		cost = 10
 
 		available_if_capitulated = yes
@@ -795,8 +814,9 @@ focus_tree = {
 		id = destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = submarine_effort }
-		x = 8
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = submarine_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -833,8 +853,9 @@ focus_tree = {
 		id = capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = cruiser_effort }
-		x = 10
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = cruiser_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -919,8 +940,9 @@ focus_tree = {
 		id = construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = industrial_effort }
-		x = 12
+		x = -1
 		y = 1
+		relative_position_id = industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -991,8 +1013,9 @@ focus_tree = {
 		id = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = industrial_effort }
-		x = 14
+		x = 1
 		y = 1
+		relative_position_id = industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1062,8 +1085,9 @@ focus_tree = {
 		id = construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = construction_effort }
-		x = 12
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = construction_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1133,8 +1157,9 @@ focus_tree = {
 		id = production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = production_effort }
-		x = 14
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = production_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1204,8 +1229,9 @@ focus_tree = {
 		id = infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = construction_effort_2 }
-		x = 12
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = construction_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1297,8 +1323,9 @@ focus_tree = {
 		id = production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = production_effort_2 }
-		x = 14
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = production_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1368,8 +1395,9 @@ focus_tree = {
 		id = infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = infrastructure_effort }
-		x = 12
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = infrastructure_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1461,8 +1489,9 @@ focus_tree = {
 		id = construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = infrastructure_effort }
-		x = 14
-		y = 4
+		x = 2
+		y = 1
+		relative_position_id = infrastructure_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1532,8 +1561,9 @@ focus_tree = {
 		id = nuclear_effort
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = infrastructure_effort_2 }
-		x = 10
-		y = 5
+		x = -2
+		y = 1
+		relative_position_id = infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1559,8 +1589,9 @@ focus_tree = {
 		id = extra_tech_slot
 		icon = GFX_focus_research
 		prerequisite = { focus = infrastructure_effort_2 }
-		x = 12
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1579,8 +1610,9 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		x = 12
-		y = 6
+		x = 0
+		y = 1
+		relative_position_id = extra_tech_slot
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1594,8 +1626,9 @@ focus_tree = {
 		id = secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = infrastructure_effort_2 }
-		x = 14
-		y = 5
+		x = 2
+		y = 1
+		relative_position_id = infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1646,8 +1679,9 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 18
+		x = -1
 		y = 1
+		relative_position_id = political_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1683,8 +1717,9 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 16
-		y = 2
+		x = -2
+		y = 1
+		relative_position_id = collectivist_ethos
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1730,8 +1765,9 @@ focus_tree = {
 				}
 			}
 		}
-		x = 18
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = collectivist_ethos
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1771,8 +1807,9 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = 20
+		x = 1
 		y = 1
+		relative_position_id = political_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1807,8 +1844,9 @@ focus_tree = {
 		id = militarism
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = nationalism_focus }
-		x = 16
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = nationalism_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1828,8 +1866,9 @@ focus_tree = {
 		id = political_correctness
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = internationalism_focus }
-		x = 18
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = internationalism_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1849,11 +1888,20 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus = liberty_ethos }
 		mutually_exclusive = { focus = interventionism_focus }
-		x = 20
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = liberty_ethos
 		cost = 10
 
 		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = AUS
+			}
+		}
 
 		completion_reward = {
 			if = {
@@ -1869,8 +1917,9 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = liberty_ethos }
 		mutually_exclusive = { focus = neutrality_focus }
-		x = 22
-		y = 2
+		x = 2
+		y = 1
+		relative_position_id = liberty_ethos
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1898,8 +1947,9 @@ focus_tree = {
 		id = military_youth
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = militarism }
-		x = 16
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = militarism
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1927,8 +1977,9 @@ focus_tree = {
 		id = deterrence
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = neutrality_focus }
-		x = 20
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = neutrality_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1942,8 +1993,9 @@ focus_tree = {
 		id = volunteer_corps
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = interventionism_focus }
-		x = 22
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = interventionism_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1957,8 +2009,9 @@ focus_tree = {
 		id = paramilitarism
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = military_youth }
-		x = 16
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = military_youth
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1972,8 +2025,9 @@ focus_tree = {
 		id = indoctrination_focus
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = political_correctness }
-		x = 18
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = political_correctness
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1988,8 +2042,9 @@ focus_tree = {
 		id = foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = volunteer_corps }
-		x = 22
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = volunteer_corps
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2012,8 +2067,9 @@ focus_tree = {
 
 		continue_if_invalid = yes
 		
-		x = 20
-		y = 5
+		x = -2
+		y = 1
+		relative_position_id = foreign_expeditions
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2036,8 +2092,9 @@ focus_tree = {
 		prerequisite = { focus = indoctrination_focus }
 		available = {
 		}
-		x = 18
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = indoctrination_focus
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2066,8 +2123,9 @@ focus_tree = {
 		id = ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = paramilitarism focus = political_commissars }
-		x = 17
-		y = 6
+		x = 1
+		y = 1
+		relative_position_id = paramilitarism
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2099,8 +2157,9 @@ focus_tree = {
 				}
 			}
 		}		
-		x = 19
-		y = 7
+		x = 2
+		y = 1
+		relative_position_id = ideological_fanaticism
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2129,7 +2188,7 @@ focus_tree = {
 					category = industry
 				}	
 				add_tech_bonus = {
-					name = infantry_weapons_bonus
+					name = infantry_artillery_bonus #@#
 					bonus = 0.5
 					uses = 1
 					category = infantry_weapons

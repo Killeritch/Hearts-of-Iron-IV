@@ -139,7 +139,7 @@ equipments = {
 		maximum_speed = 250
 		air_agility = 16
 		air_attack = 5
-		air_defence = 20
+		air_defence = 15
 		air_bombing = 10
 		air_ground_attack = 3
 		
@@ -161,7 +161,7 @@ equipments = {
 		maximum_speed = 430
 		air_agility =20
 		air_attack = 8
-		air_defence = 23
+		air_defence = 18
 		air_bombing = 12
 		air_ground_attack = 6
 		
@@ -187,7 +187,7 @@ equipments = {
 		maximum_speed = 440
 		air_agility =25
 		air_attack = 13
-		air_defence = 26
+		air_defence = 21
 		air_bombing = 14
 		air_ground_attack = 9
 		
@@ -213,7 +213,7 @@ equipments = {
 		maximum_speed = 480
 		air_agility = 30
 		air_attack = 20
-		air_defence = 29
+		air_defence = 24
 		air_bombing = 16
 		air_ground_attack = 15
 		
@@ -238,7 +238,7 @@ equipments = {
 		maximum_speed = 1000
 		air_agility = 57
 		air_attack = 18
-		air_defence = 29
+		air_defence = 24
 		air_bombing = 16
 		air_ground_attack = 15
 		
@@ -257,7 +257,7 @@ equipments = {
 		maximum_speed = 1000
 		air_agility = 57
 		air_attack = 22
-		air_defence = 29
+		air_defence = 28
 		air_bombing = 20
 		air_ground_attack = 20
 		
@@ -281,7 +281,7 @@ equipments = {
 		maximum_speed = 500
 		air_agility = 25
 		air_attack = 36
-		air_defence = 19
+		air_defence = 13
 		
 		# build_cost_ic = 16
 		naval_strike_attack = 3
@@ -299,7 +299,7 @@ equipments = {
 		maximum_speed = 550
 		air_agility = 30
 		air_attack = 46
-		air_defence = 27
+		air_defence = 15
 		
 		build_cost_ic = 30
 		resources = {
@@ -322,7 +322,7 @@ equipments = {
 		maximum_speed = 600
 		air_agility = 33
 		air_attack = 54
-		air_defence = 33
+		air_defence = 18
 		
 		build_cost_ic = 32
 		resources = {
