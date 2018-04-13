@@ -59,4 +59,4 @@
  autonomy_wtt_imperial_associate:0 "Membro imperial"
  autonomy_wtt_imperial_protectorate:0 "Protetorado imperial"
  ACTIVE_ATTACHES_EFFECT:0 "Diplomatas ativos"
- autonomy_wtt_imperial_subject:0 "Assunto Imperial"
+ autonomy_wtt_imperial_subject:1 "Súdito imperial"

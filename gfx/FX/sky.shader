@@ -62,7 +62,7 @@ PixelShader =
 			float3 color = texCUBE( ReflectionCubeMap, normalize( Input.pos - vCamPos ) ).rgb;
 			float3 fog = ApplyDistanceFog( color.rgb, Input.pos );
 		
-			color = lerp( fog, color, saturate( Input.pos.y / 300.0f ) );
+			color = lerp( fog, color, max( saturate( Input.pos.y / 300.0f ), NegFogMultiplier ) );
 			return float4( color, 1.0f );
 		}
 		

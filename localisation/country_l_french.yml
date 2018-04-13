@@ -84,6 +84,6 @@
  EQUIPMENT_VARIANTS_TOGGLE_ON:0 "§GCliquer pour afficher les détails.§!"
  EQUIPMENT_VARIANTS_TOGGLE_OFF:0 "§GCliquer pour masquer les détails.§!"
  CURRENT_EXPERIENCE_TOPBAR:0 "§TExpérience actuelle : $VALUE|Y2$§!"
- EXPERIENCE_FROM_ATTACHES:0 "Les attachés sur place nous allouent $XPSHARE|H%0$ de l'expérience militaire de $COUNTRIES$"
+ EXPERIENCE_FROM_ATTACHES:0 "Les attachés sur place nous allouent $XPSHARE|H%0$ de l'expérience militaire de $COUNTRIES$."
  RULES_TITLE:0 "§HRécapitulatif des règles :§!"
  RULES_DESC:0 "Les règles dépendent de l'idéologie et des esprits nationaux en vigueur dans le pays, ainsi que de l'idéologie de la faction à laquelle il peut appartenir."

@@ -361,7 +361,7 @@
  SEND_VOL_TARGET_IS_ALLY:0 "Wir sind mit @$TAG$$WHO|H$ verbündet. Es können keine Freiwilligen an Verbündete entsendet werden. Treten Sie stattdessen ihrem Krieg bei und senden Sie Expeditionstruppen."
  SEND_VOL_TARGET_AT_WAR:0 "Um ihnen freiwillige Streitkräfte schicken zu können, muss sich @$TAG$$WHO|H$ im Krieg befinden."
  SEND_VOL_WE_NOT_AT_WAR:0 "Wir müssen uns im Frieden befinden, um freiwillige Streitkräfte entsenden zu können."
- SEND_VOL_SENT_VOL_TO_ENEMY:0 "Wir haben bereits freiwillige Streitkräfte zu @$TAG$$WHO|H$s Gegner geschickt."
+ SEND_VOL_SENT_VOL_TO_ENEMY:1 "Wir haben bereits freiwillige Streitkräfte zum Gegner von @$TAG$$WHO|H$ geschickt oder die Flugerlaubnis von ihm erhalten."
  SEND_EXP_WE_AT_WAR:0 "Wir müssen uns im Krieg befinden, um Expeditionsstreitkräfte entsenden zu können."
  SEND_EXP_TARGET_AT_WAR:0 "Um ihnen Expeditionsstreitkräfte schicken zu können, muss sich @$TAG$$WHO|H$ im Krieg befinden."
  SEND_EXPEDITIONARY_DESCRIPTION:0 "Entsenden Sie $SEND|H$ Divisionen.\nSie haben derzeit $CURRENT|H$ Divisionen als Expeditionsstreitkräfte."
@@ -1024,3 +1024,4 @@
  X_JOINS_ALLIED_WARS:1 "$WHO|H$ ist Kriegen von $WHOM|H$ beigetreten"
  DR_THEM_DO_NOT_WANT_US:0 "$THEM|UY$ will nicht mit §Y$US|U$§! in den Krieg ziehen: "
  DR_THEM_WANTS_US:0 "$THEM|UY$ will mit §Y$US|U$§! in den Krieg ziehen: "
+ send_attache_active:0 "Attaché geschickt nach"

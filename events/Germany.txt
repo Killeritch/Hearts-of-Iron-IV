@@ -673,6 +673,7 @@ country_event = {
 		name = germany.22.a
 		GER = { 
 			transfer_state = 188
+			add_state_core = 188
 		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.19 }
@@ -3514,6 +3515,7 @@ country_event = {
 			limit = {
 				has_idea = anti_soviet_pact
 				NOT = { has_war_with = SOV }
+				is_subject = no
 				any_other_country = {
 					has_idea = anti_soviet_pact
 					has_war_with = SOV
@@ -3589,6 +3591,7 @@ country_event = {
 		add_to_war = {
 			targeted_alliance = FROM
 			enemy = SOV
+			hostility_reason = ally
 		}
 		hidden_effect = {
 			if = {
@@ -3650,7 +3653,9 @@ country_event = {
 		effect_tooltip = {
 			GER = {
 				transfer_state = 85
+				add_state_core = 85
 				remove_state_claim = 86
+				remove_state_claim = 762
 			}
 		}
 		country_event = { id = poland.1 days = 7 }
@@ -3771,6 +3776,7 @@ country_event = {
 			generator = { 85 }
 			target = POL
 		}
+		add_state_core = 85
 		if = {
 			limit = {
 				ENG = {
@@ -5087,16 +5093,15 @@ country_event = {
 				add_state_core = 60
 				add_state_core = 61
 				add_state_core = 62
-				add_state_core = 63
 				add_state_core = 64
 				add_state_core = 65
 				add_state_core = 66
 				add_state_core = 67
-				add_state_core = 68
 			}
 			POL = {
 				add_state_core = 66
 				add_state_core = 67
+				add_state_core = 68
 				add_state_core = 63
 				add_state_core = 5
 			}
@@ -5145,16 +5150,15 @@ country_event = {
 			add_state_core = 60
 			add_state_core = 61
 			add_state_core = 62
-			add_state_core = 63
 			add_state_core = 64
 			add_state_core = 65
 			add_state_core = 66
 			add_state_core = 67
-			add_state_core = 68
 		}
 		POL = {
 			add_state_core = 66
 			add_state_core = 67
+			add_state_core = 68
 			add_state_core = 63
 			add_state_core = 5
 		}
@@ -5681,6 +5685,7 @@ country_event = {
 				add_to_war = {
 					targeted_alliance = ROOT
 					enemy = PREV
+					hostility_reason = war
 				}
 				annex_country = { target = ROOT transfer_troops = yes }
 				hidden_effect = { news_event = { id = news.237 } }

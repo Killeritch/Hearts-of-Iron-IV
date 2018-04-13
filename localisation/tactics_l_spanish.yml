@@ -11,7 +11,7 @@
  tactic_cc_storm:0 "Asalto a corta distancia"
  tactic_cc_local_strong_point:0 "Punto fortificado local a corta distancia"
  tactic_cc_withdraw:0 "Retirada a corta distancia"
- tactic_encirclement:0 "Envolvimiento"
+ tactic_encirclement:0 "Cerco"
  tactic_delay:0 "Demora"
  tactic_shock:0 "Shock"
  tactic_tactical_withdrawal:0 "Retirada estratégica"

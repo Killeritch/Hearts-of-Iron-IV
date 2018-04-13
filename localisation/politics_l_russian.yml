@@ -3,6 +3,7 @@
  POLITICS_SUBGOAL:0 "Задача #$NUMBER$"
  DRIFT_DIM_RETURN:0 "Инертность партии: §R-$VAL$§!\n"
  POL_DAILY_CHANGE:0 "Изменение в день: $VAL$"
+ POL_OTHERS_DRIFT:0 "В связи с изменениями в других партиях: $VAL$"
  POLITICS_NOELECTIONS:0 "Выборов нет"
  POLITICS_NEXTELECTION:0 "Следующие выборы"
  POLITICS_ELECTION_FREQUENCY:0 "Выборы через каждые $MONTHS|H$ г."

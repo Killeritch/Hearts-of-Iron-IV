@@ -947,6 +947,7 @@ country_event = {
 		add_to_war = {
 			targeted_alliance = CHI
 			enemy = JAP
+			hostility_reason = asked_to_join
 		}
 		if = {
 			limit = { 

@@ -367,7 +367,7 @@ PixelShader =
 			float vMaskValue = saturate( vMask.r + vMask.g + vMask.b );
 			vMaskValue *= vTime_IsSelected_FadeInOut.z > 0 ? saturate( Levels( Input.uv_isHead_variant.x, 0.0f, vTime_IsSelected_FadeInOut.z ) + vIsHead ) : 1;
 			vMaskValue *= vTime_IsSelected_FadeInOut.w > 0 ? saturate( Levels( 1.0f - Input.uv_isHead_variant.x, 0.0f, vTime_IsSelected_FadeInOut.w ) + vIsHead ) : 1;
-			clip( vMaskValue <= 0 ? -1 : 1 );
+			clip( vMaskValue <= 0 ? 0 : 1 );
 			vMaskValue *= FxMask( float2( vUV.x * 2.0f, vUV.y ), vIsHead );
 
 			float4 vPattern = tex2D( TexPattern, vUV );
@@ -417,7 +417,7 @@ PixelShader =
 			clip( vMask.a <= 0 ? -1 : 1 );
 			vMask.rgb = vMask.rgb * ArrowMask.rgb * vMask.a;
 			float vMaskValue = saturate( vMask.r + vMask.g + vMask.b );
-			clip( vMaskValue <= 0 ? -1 : 1 );
+			clip( vMaskValue <= 0 ? 0 : 1 );
 
 			float4 vPattern = tex2D( TexPattern, vUV );
 

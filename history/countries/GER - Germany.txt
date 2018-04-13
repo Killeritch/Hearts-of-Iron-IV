@@ -49,7 +49,7 @@ set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 set_research_slots = 4
 set_convoys = 200
-set_stability = 0.75 #TODO_WTT_CD: If stability effects in tree, lower this accordings
+set_stability = 0.75 
 set_war_support = 0.3
 
 #Trade
@@ -138,7 +138,7 @@ create_import = {
 
 	set_global_flag = end_of_czechoslovakia
 	set_global_flag = olympics_1936
-	set_variable = { var = GER_mefo_bill_counter value = 50 }
+	set_variable = { var = GER_mefo_bill_counter value = 90 }
 	complete_national_focus = GER_autobahn
 	complete_national_focus = GER_west_wall
 	complete_national_focus = GER_army_innovation

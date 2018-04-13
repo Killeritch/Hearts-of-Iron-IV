@@ -362,7 +362,7 @@
  SEND_VOL_TARGET_AT_WAR:0 "Aby wysłać ochotników, @$TAG$$WHO|H$ musi być w stanie wojny."
  SEND_VOL_TARGET_CAPITULATED:1 "@$TAG$$WHO|UH$ kapituluje."
  SEND_VOL_WE_NOT_AT_WAR:0 "Możemy wysyłać ochotników tylko w czasie pokoju."
- SEND_VOL_SENT_VOL_TO_ENEMY:0 "Wysłaliśmy już ochotników do wroga tego kraju (@$TAG$$WHO|H$)."
+ SEND_VOL_SENT_VOL_TO_ENEMY:1 "Wysłaliśmy już ochotników do wroga tego kraju (@$TAG$$WHO|H$) albo otrzymaliśmy korytarz powietrzny."
  SEND_EXP_WE_AT_WAR:0 "Możemy wysyłać korpusy ekspedycyjne tylko w czasie wojny."
  SEND_EXP_TARGET_AT_WAR:0 "Byśmy mogli wysłać korpus ekspedycyjny, @$TAG$$WHO|H$ musi być w stanie wojny."
  SEND_EXPEDITIONARY_DESCRIPTION:0 "Wyślij dywizje: $SEND|H$.\nAktualnie w korpusie ekspedycyjnym znajduje się następująca liczba dywizji: $CURRENT|H$."
@@ -1024,3 +1024,4 @@
  X_JOINS_ALLIED_WARS:1 "$WHO|H$ dołącza do wojen, które toczy $WHOM|H$"
  DR_THEM_DO_NOT_WANT_US:0 "$THEM|UY$ nie chce toczyć wojny z: §Y$US|U$§!: "
  DR_THEM_WANTS_US:0 "$THEM|UY$ chce toczyć wojnę z: §Y$US|U$§!: "
+ send_attache_active:0 "wysłać attaché do"

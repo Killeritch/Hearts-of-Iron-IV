@@ -180,7 +180,7 @@
  PRODUCTION_CIVILIAN_FACTORIES_SENT_TO_MASTER:0 "Dadas para nossos Senhores: $VAL|R$"
  PRODUCTION_VEHICLES_BUTTON_NO_FACTORIES_DISABLED:0 "Nós §Rnão temos fábricas militares!§!"
  PRODUCTION_INFANTRY_BUTTON_NO_FACTORIES_DISABLED:0 "Nós §Rnão temos fábricas militares!§!"
- PRODUCTION_AIRCRAFT_BUTTON_NO_FACTORIES_DISABLED:0 "Nós §Rnão temos fábricas militares!§!"
+ PRODUCTION_AIRCRAFT_BUTTON_NO_FACTORIES_DISABLED:0 "Não possuímos §Rfábricas militares!§!"
  PRODUCTION_SHIPS_BUTTON_NO_DEPLOY_DISABLED:0 "Nós §Rnão temos portos§!!"
  PRODUCTION_SHIPS_BUTTON_NO_FACTORIES_DISABLED:0 "Nós §Rnão temos docas§!!"
  PRODUCTION_LINE_CHANGE_NAVAL:0 "§GClique para §Hmudar§! o equipamento produzido.\n§!§RVocê perderá todo o progresso desta linha.§!"

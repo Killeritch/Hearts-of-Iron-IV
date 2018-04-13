@@ -1,7 +1,7 @@
 ﻿l_spanish:
  POLITICS_REPLACE_IDEA_DESC:0 "¿Quieres cambiar §Y$OLD_IDEA$§! por §Y$NEW_IDEA$§! por un coste total de £pol_power $COST|-0$?"
  POLITICS_IDEA_COST_COMPACT:0 "£pol_power  $VALUE|0$"
- POLITICS_GOAL_COST:0 "Coste (£pol_power): $VALUE|0$"
+ POLITICS_GOAL_COST:0 "Coste: £pol_power $VALUE|0$)"
  POLITICS_GOAL_COST_COMPACT:0 "£pol_power  $VALUE|0$"
  REMOVE_GOAL_DESC:0 "¿Quieres desechar el objetivo $GOAL|H$?"
  POLITICAL_RESEARCH_BONUS_ENTRY:0 "$CATEGORY$: $FACTOR|=-0%$"
@@ -41,7 +41,7 @@
  POLITICS_REMOVE_IDEA_TILE:0 "Desechar idea"
  POLITICS_REMOVE_IDEA_DESC:0 "¿Quieres desechar §Y$IDEA$§! por un coste de £pol_power $COST|-0$?"
  POLITICS_REPLACE_IDEA_TILE:0 "Cambiar idea"
- POLITICS_IDEA_COST:0 "Coste (£pol_power): $VALUE|-0$"
+ POLITICS_IDEA_COST:0 "Coste: £pol_power $VALUE|-0$)"
  POLITICS_IDEA_REMOVE_COST:0 "Coste de desechar (£pol_power): $VALUE|0$"
  POLITICS_IDEA_NO_REMOVE:0 "§RNo se puede desechar.§!\n"
  POLITICS_IDEA_CANCEL_DESC:0 "Se cancelará si:"
@@ -141,3 +141,4 @@
  WAR_SUPPORT_EFFECT_HEADER:0 "§HAfectado por:§!\n"
  RELEASE_NATION_STATES_NOT_POSSIBLE:1 "§TNo es posible liberar $COUNTRY|H$ en $LIST|H$§!:\n\nLos estados en rojo no los controlas tú."
  RETURN_TERRITORY_STATES_NOT_POSSIBLE:1 "§TNo se puede devolver $LIST|H$§! a $COUNTRY|H$:\n\nLos estados en rojo no los controlas tú."
+ POL_OTHERS_DRIFT:0 "Debido a los cambios en otros partidos: $VAL$"

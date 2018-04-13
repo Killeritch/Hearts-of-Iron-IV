@@ -1,7 +1,7 @@
 ﻿l_spanish:
  STRATEGICREGION_1:0 "Inglaterra meridional"
  STRATEGICREGION_2:0 "Inglaterra septentrional"
- STRATEGICREGION_3:1 "Escocia"
+ STRATEGICREGION_3:0 "Escocia"
  STRATEGICREGION_4:0 "Irlanda"
  STRATEGICREGION_5:0 "Región de Benelux"
  STRATEGICREGION_6:0 "Alemania del noroeste"
@@ -139,7 +139,7 @@
  STRATEGICREGION_139:0 "Suráfrica"
  STRATEGICREGION_140:0 "África subsahariana"
  STRATEGICREGION_141:0 "India oriental"
- STRATEGICREGION_142:0 "Asia Sur-Oriental"
+ STRATEGICREGION_142:0 "Sudeste Asiático"
  STRATEGICREGION_143:0 "China septentrional"
  STRATEGICREGION_144:0 "China occidental"
  STRATEGICREGION_145:0 "Asia central"

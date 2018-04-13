@@ -828,8 +828,18 @@ defined_text = {
 		localization_key = FRLOC_MAL_ADJ_MS
 	}
 	text = {
-		trigger = { OR = { tag = MAN original_tag = MAN } }
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			NOT = { has_cosmetic_tag = MAN_restored }
+		}
 		localization_key = FRLOC_MAN_ADJ_MS
+	}
+	text = {
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			has_cosmetic_tag = MAN_restored
+		}
+		localization_key = FRLOC_CHI_ADJ_M
 	}
 	text = {
 		trigger = { OR = { tag = MEN original_tag = MEN } }
@@ -1369,8 +1379,18 @@ defined_text = {
 		localization_key = FRLOC_MAL_ADJ_FS
 	}
 	text = {
-		trigger = { OR = { tag = MAN original_tag = MAN } }
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			NOT = { has_cosmetic_tag = MAN_restored }
+		}
 		localization_key = FRLOC_MAN_ADJ_FS
+	}
+	text = {
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			has_cosmetic_tag = MAN_restored
+		}
+		localization_key = FRLOC_CHI_ADJ_FS
 	}
 	text = {
 		trigger = { OR = { tag = MEN original_tag = MEN } }
@@ -1910,8 +1930,18 @@ defined_text = {
 		localization_key = FRLOC_MAL_ADJ_MP
 	}
 	text = {
-		trigger = { OR = { tag = MAN original_tag = MAN } }
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			NOT = { has_cosmetic_tag = MAN_restored }
+		}
 		localization_key = FRLOC_MAN_ADJ_MP
+	}
+	text = {
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			has_cosmetic_tag = MAN_restored
+		}
+		localization_key = FRLOC_CHI_ADJ_M
 	}
 	text = {
 		trigger = { OR = { tag = MEN original_tag = MEN } }
@@ -2451,8 +2481,18 @@ defined_text = {
 		localization_key = FRLOC_MAL_ADJ_FP
 	}
 	text = {
-		trigger = { OR = { tag = MAN original_tag = MAN } }
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			NOT = { has_cosmetic_tag = MAN_restored }
+		}
 		localization_key = FRLOC_MAN_ADJ_FP
+	}
+	text = {
+		trigger = {
+			OR = { tag = MAN original_tag = MAN }
+			has_cosmetic_tag = MAN_restored
+		}
+		localization_key = FRLOC_CHI_ADJ_FP
 	}
 	text = {
 		trigger = { OR = { tag = MEN original_tag = MEN } }

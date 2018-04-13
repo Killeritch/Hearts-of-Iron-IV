@@ -277,4 +277,4 @@
  BORDER_CONFLICT_CHANGE_STATE:0 "O controle de $STATE|H$ será transferido para $COUNTRY|H$"
  BORDER_CONFLICT_FOR_ENEMY:0 "Para o inimigo ($COUNTRY|H$):"
  NAVAL_COMBAT_CLICK_DESC:0 "§GClique para mostrar a batalha em progresso.§!\n§GClique com o botão direito para ir para a batalha§!"
- NAVAL_COMBAT_RESULT_SURVIVOR_COUNT_UNDAMAGED:0 "$FLAG$ $COUNT|H$ sem danos $TYPE|H$"
+ NAVAL_COMBAT_RESULT_SURVIVOR_COUNT_UNDAMAGED:0 "$FLAG$ $COUNT|H$ $TYPE|H$ sem danos"

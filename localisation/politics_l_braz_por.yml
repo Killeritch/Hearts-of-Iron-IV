@@ -141,3 +141,4 @@
  WAR_SUPPORT_EFFECT_HEADER:0 "§HAtualmente afetado por:§!\n"
  RELEASE_NATION_STATES_NOT_POSSIBLE:1 "§TLibertar $COUNTRY|H$ em $LIST|H$§! não é possível:\n\nOs estados em vermelho não estão sendo controlados por você."
  RETURN_TERRITORY_STATES_NOT_POSSIBLE:1 "§TDevolver $COUNTRY|H$  para $LIST|H$§! não é possível:\n\nOs estados em vermelho não estão sendo controlados por você."
+ POL_OTHERS_DRIFT:0 "Devido a mudanças em outros partidos: $VAL$"

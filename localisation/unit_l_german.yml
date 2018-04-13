@@ -17,7 +17,7 @@
  UNIT_LEADER_NO_GROUP:1 "Armee nicht erstellt"
  UNIT_LEADER_SKILL:0 "$SKILL|Y$"
  UNIT_LEADER_PROMOTE_POPUP_TITLE:0 "Anführer befördern"
- UNIT_LEADER_PROMOTE_POPUP_DESC:2 "Möchten Sie $LEADER$ wirklich befördern? Nach der Beförderung §Rverliert§! $LEADER$ vorübergehend einen Fähigkeitspunkt."
+ UNIT_LEADER_PROMOTE_POPUP_DESC:3 "Möchten Sie $LEADER$ wirklich befördern? Nach der Beförderung §Rverliert§! $LEADER$ vorübergehend eine Fähigkeitsstufe, während er sich an die Verantwortung des neuen Rangs gewöhnt."
  ATTRITION:0 "Verschleißrate:"
  ATTRITION_DESC:0 "Wahrscheinlichkeit von Ausrüstungsschaden pro Tag"
  ATTRITION_TOTAL:0 "Gesamtverschleiß: $TOT|=-1%2$"

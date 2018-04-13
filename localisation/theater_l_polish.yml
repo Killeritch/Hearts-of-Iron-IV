@@ -72,5 +72,5 @@
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_NO_LINE_ARMY_GROUP:0 "§HTryb przydzielania rozkazów§!\nPrzesuń kursor nad jeden z mrugających rozkazów, by przydzielić do niego wybrane armie."
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_CANNOT_ARMY_GROUP:0 "§HTryb przydzielania rozkazów§!\n§RNie możesz przydzielić wybranych armii do tego rozkazu.§!"
  UNIT_ASSIGN_TO_ORDER_HINT_ARMY_GROUP:0 "§GCtrl + klik§!, by przydzielić wybrane armie do tego rozkazu."
- UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GKliknij PPM§!, usunąć tylko front grupy armii bez usuwania frontów armii."
- ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Zaznacz całą grupę armii i wciśnij §GCtrl + klik§! by przydzielić wszystkie jednostki nie posiadające aktualnie żadnych rozkazów, do tego rozkazu."
+ UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GPPM§!, żeby usunąć tylko front grupy armii, nie usuwając frontów armii."
+ ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Wybierz całą grupę armii i wciśnij §GCtrl + LPM§!, żeby przydzielić do tego rozkazu wszystkie jednostki bez rozkazów armii."

@@ -491,23 +491,25 @@ on_actions = {
 			#Remove MEFO bills if Germany goes to war
 			if = {
 				limit = {
-					ROOT = { tag = GER }
+					ROOT = { original_tag = GER }
 					ROOT = { GER_has_mefo_bills = yes }
+					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
 				}
 				ROOT = {
-					country_event = { id = wtt_germany.61 }
+					GER_remove_mefo_bills = yes
+					set_country_flag = mefo_bills_removed_through_war
 				}
 			}
 
 			#Remove MEFO bills if Germany is declared war on
 			if = {
 				limit = {
-					FROM = { tag = GER }
+					FROM = { original_tag = GER }
 					FROM = { GER_has_mefo_bills = yes }
-					NOT = { ROOT = { original_tag = GER } }
 				}
 				FROM = {
-					country_event = { id = wtt_germany.61 }
+					GER_remove_mefo_bills = yes
+					set_country_flag = mefo_bills_removed_through_war
 				}
 			}
 
@@ -616,18 +618,6 @@ on_actions = {
 					original_tag = YUG
 				}
 				remove_ideas = YUG_idea_economic_aid
-			}
-			if = {
-				limit = {
-					original_tag = HOL
-					has_country_flag = netherlands_refused_return_kaiser
-					FROM = {
-						original_tag = GER
-						has_country_flag = germany_war_return_kaiser
-						has_government = neutrality
-					}
-				}
-				FROM = { country_event = { id = wtt_germany.6 } }
 			}
 			if = {
 				limit = {
@@ -932,6 +922,22 @@ on_actions = {
 				}
 				set_global_flag = fall_of_berlin_civil_war
 				country_event = { id = wtt_germany.50 days = 1 random = 3 }
+			}
+			if = {
+				limit = {
+					tag = GER
+					has_country_flag = germany_war_return_kaiser
+					has_government = neutrality
+					FROM = {
+						original_tag = HOL
+						has_country_flag = netherlands_refused_return_kaiser
+					}
+					OR = {
+						7 = { is_controlled_by = GER }
+						HOL = { is_subject_of = GER }
+					}
+				}
+				country_event = { id = wtt_germany.6 }
 			}
 		}
 	}

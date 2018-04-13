@@ -53,6 +53,13 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_the_unthinkable_option
+			if = {
+		    	limit = {
+		    	    has_DLC = "Waking the Tiger"
+		    	}
+		    	custom_effect_tooltip = available_political_advisor
+		    	show_ideas_tooltip = sanzo_nosaka
+			}
 			add_political_power = 200
 		}
 	}
@@ -1443,6 +1450,17 @@ focus_tree = {
 					NOT = { has_war_with = JAP }
 				}
 			}
+			modifier = {
+				has_war_with = SOV
+				factor = 0
+			}
+			modifier = {
+				has_War_with = event_target:WTT_current_china_leader
+				event_target:WTT_current_china_leader = {
+					surrender_progress < 0.2
+				}
+				factor = 0
+			}
 		}
 
 		available = {
@@ -1492,6 +1510,10 @@ focus_tree = {
 				factor = 0
 				ENG = { has_war = no }
 				HOL = { has_war = no }
+			}
+			modifier = {
+				has_war_with = SOV
+				factor = 0
 			}
 		}
 
@@ -2695,7 +2717,9 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			MAN = {
+				exists = no
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2982,7 +3006,14 @@ focus_tree = {
 					has_government = fascism
 					is_faction_leader = yes
 				}
-				country_event = generic.2
+				if = {
+					limit = {
+						not = {
+							is_in_faction_with = ROOT
+						}
+					}
+					country_event = generic.2
+				}
 				if = {
 					limit = {
 						OR = {
@@ -3177,7 +3208,6 @@ focus_tree = {
 					has_government = fascism
 					is_faction_leader = yes
 				}
-				country_event = generic.2
 				if = {
 					limit = {
 						OR = {
@@ -3840,17 +3870,15 @@ focus_tree = {
 		}
 
 		bypass = {
-			NOT = { country_exists = MAN }
-			MAN = { has_government = democratic }
+			OR = {
+				NOT = { country_exists = MAN }
+				MAN = { has_government = democratic }
+			}
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
@@ -3921,10 +3949,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_to_tech_sharing_group = JAP_ultimate_deterrence
 			every_country = {
@@ -3961,10 +3985,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			USA = { country_event = { id = wtt_japan.104 days = 1 } }
@@ -4013,10 +4033,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			MAN = {				

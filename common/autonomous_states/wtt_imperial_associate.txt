@@ -1,5 +1,5 @@
 autonomy_state = {
-	id = autonomy_wtt_imperial_associate #TODO_WTT_CD settle on name Associate, representative, subject, member, totally not a puppet
+	id = autonomy_wtt_imperial_associate 
 	
 	is_puppet = yes
 	

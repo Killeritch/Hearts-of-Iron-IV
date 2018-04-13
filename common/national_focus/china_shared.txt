@@ -36,7 +36,7 @@
 
 
 shared_focus = {
-	id = CHI_invite_foreign_investors #WTT_TODO_CD: Dynamic names for Commies/MAN
+	id = CHI_invite_foreign_investors 
 	icon = GFX_focus_generic_concessions
 	x = 40
 	y = 0
@@ -1035,9 +1035,12 @@ shared_focus = {
 	}
 
 	bypass = {
-		any_other_country = {
-			any_army_leader = {
-				has_id = 600
+		custom_trigger_tooltip = {
+			tooltip = soviet_advisers_tt
+			any_other_country = {
+				any_army_leader = {
+					has_id = 600
+				}
 			}
 		}
 	}
@@ -1091,16 +1094,14 @@ shared_focus = {
 	}
 
 	bypass = {
-
+		any_other_country = {
+			has_completed_focus = CHI_the_soviet_volunteer_group
+		}
 	}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		SOV = { country_event = wtt_china_shared.11 }
@@ -1140,10 +1141,6 @@ shared_focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		FRA = {
@@ -1201,10 +1198,6 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = yes
 
-	complete_tooltip = {
-
-	}
-
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_small_arms_expertise
@@ -1253,10 +1246,6 @@ shared_focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {		
 		add_ideas = CHI_elite_mountaineers
@@ -1328,10 +1317,6 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = yes
 
-	complete_tooltip = {
-
-	}
-
 	completion_reward = {
 		add_tech_bonus = {
 			name = CHI_heavy_weapons
@@ -1394,10 +1379,6 @@ shared_focus = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 
-	complete_tooltip = {
-
-	}
-
 	completion_reward = {
 		671 = { #Tonkin
 			set_state_flag = CHI_needed_for_hanoi_route
@@ -1438,10 +1419,6 @@ shared_focus = {
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = yes
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		add_ideas = CHI_construction_battalions
@@ -3292,16 +3269,14 @@ shared_focus = {
 	}
 
 	bypass = {
-
+		any_other_country = {
+			has_completed_focus = CHI_invite_the_flying_tigers
+		}
 	}
 
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
-
-	complete_tooltip = {
-
-	}
 
 	completion_reward = {
 		USA = {

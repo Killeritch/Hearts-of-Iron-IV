@@ -1279,7 +1279,7 @@ sun_tzu_reborn = {
 	happened = {
 		any_army_leader = {
 			is_field_marshal = yes
-			skill > 9
+			skill > 8
 		}
 	}
 }
@@ -1296,13 +1296,35 @@ the_people_have_stood_up = {
 	}
 	
 	happened = {
+		has_country_leader = { ruling_only = yes name = "Mao Zedong" }
 		custom_trigger_tooltip = {
 			tooltip = the_people_have_stood_up_tt
 			all_state = {
 				OR = {
 					AND = {
-						NOT = { is_core_of = CHI }
-						NOT = { is_core_of = PRC }
+						NOT = { state = 595 }
+						NOT = { state = 596 }
+						NOT = { state = 597 }
+						NOT = { state = 598 }
+						NOT = { state = 600 }
+						NOT = { state = 601 }
+						NOT = { state = 602 }
+						NOT = { state = 603 }
+						NOT = { state = 605 }
+						NOT = { state = 606 }
+						NOT = { state = 607 }
+						NOT = { state = 608 }
+						NOT = { state = 613 }
+						NOT = { state = 614 }
+						NOT = { state = 620 }
+						NOT = { state = 743 }
+						NOT = { state = 744 }
+						NOT = { state = 748 }
+						NOT = { state = 749 }
+						NOT = { state = 750 }
+						NOT = { state = 751 }
+						NOT = { state = 752 }
+						NOT = { state = 753 }
 					}
 					is_owned_by = ROOT
 				}
@@ -1612,7 +1634,10 @@ my_ships_dont_lie = {
 	}
 	
 	happened = {
-		has_government = fascism
+		custom_trigger_tooltip = {
+			tooltip = has_taken_decision_to_form_gran_columbia
+			has_global_flag = form_gran_colombia_flag
+		}
 		has_navy_size = { archetype = battleship size > 9 }
 		has_navy_size = { archetype = carrier size > 9 }
 	}

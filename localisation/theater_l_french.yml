@@ -73,4 +73,4 @@
  THEATRE_UNITS:0 "Le théâtre compte $N|Y$ divisions"
  THEATRE_GROUP_UNASSIGNED:0 "Non affecté"
  CAN_ONLY_HAVE_ONE_INVASION_PER_PORT:0 "§RPeut uniquement créer un seul ordre d'invasion depuis n'importe quel port.§!"
- ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Selectionner un groupe d'armée entier puis §GCtrl + Click§! pour affecter toutes les unités sans ordre à celui-ci."
+ ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Sélectionner un groupe d'armées au complet puis §GCtrl + clic§! pour assigner toutes les unités n'ayant pas reçu d'ordres à celui-ci."

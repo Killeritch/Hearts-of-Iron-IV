@@ -542,7 +542,7 @@ PixelShader =
 			float FogColorFactor = 0.0;
 			float FogAlphaFactor = 0.0;
 			GetFogFactors( FogColorFactor, FogAlphaFactor, vPos, 0.0 /*In.vPos_Height.w * 1.0 + 2.5*/, FOWNoise, FOWHeight, IntelMap);
-			vColor = ApplyFOW( vColor, FogColorFactor, FogAlphaFactor );
+			vColor = ApplyFOW( vColor, FogColorFactor, min( FogAlphaFactor, NegFogMultiplier ) );
 
 			vColor.rgb = ApplyDistanceFog( vColor.rgb, vPos );			
 			vColor.rgb = DayNight( vColor.rgb, vGlobalNormal );
@@ -554,7 +554,7 @@ PixelShader =
 */			
 
 			DebugReturn(vColor, lightingProperties, fShadowTerm);
-			return float4(vColor, alpha);
+			return float4(vColor, max(alpha, MinMeshAlpha));
 		}
 	]]
 	

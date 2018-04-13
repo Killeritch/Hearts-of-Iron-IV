@@ -675,7 +675,7 @@
  MODIFIER_WAR_SUPPORT_FACTOR:0 "Soutien à la guerre"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "Soutien hebdomadaire à la guerre"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "Gain hebdomadaire de soutien à la guerre"
- MODIFIER_EQUIPMENT_CAPTURE_FACTOR:0 "Gain de taux de capture de matériel"
+ MODIFIER_EQUIPMENT_CAPTURE:0 "Gain de taux de capture de matériel"
  MODIFIER_COMMAND_POWER_GAIN:0 "Évolution quotidienne de la puissance de commandement"
  MODIFIER_MAX_COMMAND_POWER:0 "Accroissement de la puissance de commandement maximale"
  MODIFIER_COMMAND_POWER_GAIN_MULT:0 "Multiplicateur de gain quotidien en puissance de commandement"
@@ -689,7 +689,7 @@
  MODIFIER_ARMY_LEADER_MAX_ARMY_GROUP_SIZE:0 "Taille maximale du groupe d'armées pour les généraux"
  MODIFIER_ARMY_GROUP_LEADER_MAX_ARMY_GROUP_SIZE:0 "Taille maximale du groupe d'armées pour les maréchaux"
  MODIFIER_TERRAIN_PENALTY_REDUCTION:0 "Réduction de la pénalité de terrain"
- MODIFIER_EQUIPMENT_CAPTURE_MULT:0 "Modificateur du taux de capture de matériel"
+ MODIFIER_EQUIPMENT_CAPTURE_FACTOR:0 "Modificateur du taux de capture de matériel"
  MODIFIER_PARATROOPER_EXTRA_SUPPLY_GRACE:0 "Durée supplémentaire sans ravitaillement des parachutistes"
  MODIFIER_MARINE_EXTRA_SUPPLY_GRACE:0 "Durée supplémentaire sans ravitaillement des marines"
  MODIFIER_CAS_DAMAGE_REDUCTION:0 "Réduction des dommages face à l'AAR"
@@ -727,7 +727,7 @@
  MODIFIER_WOUNDED_CHANCE_FACTOR_DESC:1 "Vraisemblance que ce général soit blessé après un revers sur le terrain."
  MODIFIER_NAVAL_INVASION_PREPARATION_SPEED:0 "Vitesse de préparation des invasions"
  MODIFIER_NAVAL_INVASION_PREPARATION_SPEED_DESC:0 "Facteur de vitesse de planification des invasions navales"
- MODIFIER_ARMY_ORG_REGAIN:0 "Régénération d'Organization d'Armée"
+ MODIFIER_ARMY_ORG_REGAIN:0 "Réorganisation des armées"
 ######################
 ###  TO BE ERASED  ###
 ######################
@@ -792,3 +792,5 @@
 # MODIFIER_PRODUCTION_SPEED_NUCLEAR_REACTOR_FACTOR_DESC:0 "Modifie la vitesse de construction d'un réacteur nucléaire."
 # MODIFIER_RESEARCH_SPEED_FACTOR_DESC:0 "Réduit le délai nécessaire à l'étude d'une nouvelle technologie."
 # MODIFIER_DECLARE_WAR_TENSION_LIMIT:0 "Limite de tension pour déclarer la guerre"
+ MODIFIER_STATIC_ANTI_AIR_DAMAGE_FACTOR:0 "Facteur des dégâts de la défense anti-aérienne statique"
+ MODIFIER_STATIC_ANTI_AIR_HIT_CHANCE_FACTOR:0 "Facteur des chances d'atteindre l'objectif de la défense anti-aérienne statique"

@@ -710,7 +710,6 @@ demobilization = {
 			has_war = no
 		}
 		timeout_effect = {
-
 			if = {
 				limit = {
 					has_government = communism

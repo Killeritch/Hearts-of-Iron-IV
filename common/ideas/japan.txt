@@ -1029,7 +1029,43 @@ ideas = {
 			picture = jap_ichi_go
 			
 			targeted_modifier = {
-				tag = event_target:WTT_current_china_leader
+				tag = CHI
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.05
+			}
+
+			targeted_modifier = {
+				tag = SIK
 				attack_bonus_against = 0.2
 				defense_bonus_against = 0.05
 			}
@@ -1195,7 +1231,14 @@ ideas = {
 	political_advisor = {	
 		sanzo_nosaka = {
 			
-			
+			available = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_the_unthinkable_option
+				}
+			}
 			allowed = {
 				original_tag = "JAP"
 			}
@@ -1218,7 +1261,12 @@ ideas = {
 		kijuro_shidehara = {
 			
 			available = {
-				has_completed_focus = JAP_strengthen_civilian_government
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_strengthen_civilian_government
+				}
 			}
 			
 			allowed = {

@@ -40,7 +40,7 @@
  LOCAL_MANPOWER_ACCESSIBLE_NON_CORE_FACTOR:0 "Base apta para el servicio (estado no esencial): §R-$VAL|%$§!"
  STATE_SET_POLICY:0 "§GHaz clic para gestionar la política de ocupación de $STATE|H$§!"
  STATE_NOT_OCCUPIED:0 "§RDebes ocupar $STATE|H$ para establecer una política de ocupación§!"
- STATE_CLAIMS:0 "Reivindicaciones del extranjero"
+ STATE_CLAIMS:0 "Disputado por"
  STATE_NO_RESOURCES:0 "§TNo hay recursos en $STATE|H$.§!"
  LOCAL_PROVINCE_MODIFIERS:0 "\n§HEfectos locales de provincia:§!"
  UNLOCKED_SLOTS:0 "Ranuras desbloqueadas: $NUM|Y$/$MAX|Y$"

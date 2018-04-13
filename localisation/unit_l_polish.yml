@@ -17,7 +17,7 @@
  UNIT_LEADER_NO_GROUP:1 "Nie stworzono armii"
  UNIT_LEADER_SKILL:0 "$SKILL|Y$"
  UNIT_LEADER_PROMOTE_POPUP_TITLE:0 "Awansuj dowódcę"
- UNIT_LEADER_PROMOTE_POPUP_DESC:2 "Czy $LEADER$ ma na pewno otrzymać awans? Jeśli $LEADER$ awansuje, tymczasowo §Rstraci§! punkt umiejętności."
+ UNIT_LEADER_PROMOTE_POPUP_DESC:3 "Czy $LEADER$ ma na pewno otrzymać awans? Jeśli $LEADER$ awansuje, §Rstraci§! tymczasowo poziom umiejętności, ponieważ musi przywyknąć do obowiązków związanych z nową rangą."
  ATTRITION:0 "Zmęczenie:"
  ATTRITION_DESC:0 "Codzienne ryzyko poniesienia strat w wyposażeniu."
  ATTRITION_TOTAL:0 "Zmęczenie: $TOT|=-1%2$"

@@ -249,14 +249,24 @@ foreign_support = {
 		}
 
 		available = {
-			any_other_country = {
+			NOT = {
+				has_global_flag = USA_support_the_anti_fascist_war_flag
+			}
+			FROM = {
+				has_completed_focus = CHI_mission_to_the_us
+				has_war_with = JAP
+			}
+		}
+
+		target_trigger = {
+			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_war_with = JAP
 			}
 		}
 
 		visible = {
-			any_other_country = {
+			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_war_with = JAP
 			}
@@ -295,28 +305,19 @@ foreign_support = {
 		days_remove = 180
 
 		complete_effect = {
-			random_country = {
-				limit = {
-					has_completed_focus = CHI_mission_to_the_us
-				}
+			FROM = {
 				add_offsite_building = { type = arms_factory level = 3 }
-				set_country_flag = USA_support_the_anti_fascist_war
+				set_global_flag = USA_support_the_anti_fascist_war_flag
 			}
 		}
 
 		remove_effect = {
 			add_war_support = 0.05
-			random_country = {
-				limit = {
-					if = {
-						limit = {
-							NOT = { any_other_country = { has_country_flag = USA_support_the_anti_fascist_war } }
-						}
-						has_completed_focus = CHI_mission_to_the_us
-						else = { has_country_flag = USA_support_the_anti_fascist_war }
-					}
-				}
+			FROM = {
 				add_offsite_building = { type = arms_factory level = -3 }
+				hidden_effect = {
+					clr_global_flag = USA_support_the_anti_fascist_war_flag
+				}
 			}
 		}
 	}
@@ -332,7 +333,15 @@ foreign_support = {
 
 		available = {
 			has_equipment = { infantry_equipment > 999 }
-			CHI = {
+			FROM = {
+				has_completed_focus = CHI_mission_to_the_us
+				has_idea = CHI_soong_mei_ling
+				has_war_with = JAP
+			}
+		}
+
+		target_trigger = {
+			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
 				has_war_with = JAP
@@ -340,7 +349,7 @@ foreign_support = {
 		}
 
 		visible = {
-			CHI = {
+			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
 				has_war_with = JAP
@@ -352,7 +361,7 @@ foreign_support = {
 			factor = 25
 			modifier = {
 				factor = 3
-				CHI = {
+				FROM = {
 					has_completed_focus = CHI_mission_to_the_us
 					has_idea = CHI_soong_mei_ling
 					surrender_progress > 0.2
@@ -378,7 +387,7 @@ foreign_support = {
 		complete_effect = {
 			ROOT = {
 				send_equipment = {
-					target = CHI
+					target = FROM
 					type = infantry_equipment
 					amount = 1000
 					old_prioritised = yes

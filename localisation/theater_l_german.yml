@@ -72,5 +72,5 @@
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_NO_LINE_ARMY_GROUP:0 "§HEinheiten-Auswahlmodus§!\nBitte bewegen Sie den Mauszeiger über einen der blinkenden Befehle, um die derzeit ausgewählten Armeen dort zuzuordnen."
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_CANNOT_ARMY_GROUP:0 "§HEinheiten-Auswahlmodus§!\n§RDie ausgewählten Armeen können diesem Befehl nicht zugeordnet werden.§!"
  UNIT_ASSIGN_TO_ORDER_HINT_ARMY_GROUP:0 "§GStrg + Maustaste§!, um ausgewählte Armeen diesem Befehl zuzuordnen."
- UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GRechtsklicken§!, um nur Armeegruppenfront zu löschen, ohne Armeefronten zu löschen."
- ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Wähle eine ganze Armeegruppe und durch §GStrg.+ Klick§! alle Einheiten ohne Plan diesem Plan hinzufügen."
+ UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GRechtsklicken§! Sie, um nur die Armeegruppenfront zu löschen, ohne Armeefronten zu löschen."
+ ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Wählen Sie eine volle Armeegruppe und weisen Sie mit §GStrg + Klick§! alle Einheiten ohne Armeebefehle diesem Befehl zu."

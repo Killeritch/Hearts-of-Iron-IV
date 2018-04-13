@@ -276,4 +276,4 @@
  BORDER_CONFLICT_CHANGE_STATE:0 "Kontrolę nad państwem ($STATE|H$) przejmie $COUNTRY|H$"
  BORDER_CONFLICT_FOR_ENEMY:0 "Dla wroga ($COUNTRY|H$):"
  NAVAL_COMBAT_CLICK_DESC:0 "§GKliknij, żeby zobaczyć toczącą się bitwę.§!\n§GUżyj PPM, żeby przenieść widok na walkę.§!"
- NAVAL_COMBAT_RESULT_SURVIVOR_COUNT_UNDAMAGED:0 "$FLAG$ $COUNT|H$ nie uszkodzonych typu $TYPE|H$"
+ NAVAL_COMBAT_RESULT_SURVIVOR_COUNT_UNDAMAGED:0 "$FLAG$ $COUNT|H$ $TYPE|H$ (brak uszkodzeń)"

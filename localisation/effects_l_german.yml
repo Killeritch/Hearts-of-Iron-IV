@@ -216,4 +216,4 @@
  EFFECT_MODIFY_TIMED_IDEA_DECREASE:0 "Dauer von '$IDEA|H$' bis $DATE$ verkürzen (§H-§!$DAYS|H$ Tage).\n"
  EFFECT_ACTIVATE_DECISION:0 "$NAME|H$ aktivieren"
  EFFECT_SET_TRUCE:0 "Waffenstillstand mit $COUNTRY|H$ bis $DATE|H$ eingehen"
- EFFECT_SUPPLY_UNITS:0 "Liefert den Armeen genügend Vorrat für $NUM|H.0$ Stunden"
+ EFFECT_SUPPLY_UNITS:0 "Armeen genügend Nachschub für $NUM|H.0$ Stunden liefern."

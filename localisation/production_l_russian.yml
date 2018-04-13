@@ -56,7 +56,7 @@
  PRODUCTION_AIRCRAFT_BUTTON:0 "Производство самолетов"
  PRODUCTION_AIRCRAFT_BUTTON_DISABLED:0 "Самолеты §Rне изобретены§!!"
  PRODUCTION_AIRCRAFT_BUTTON_NO_FACTORIES_DISABLED:0 "У нас §Rнет военных заводов§!!"
- PRODUCTION_SHIPS_BUTTON:0 "Производство кораблей"
+ PRODUCTION_SHIPS_BUTTON:0 "Строительство кораблей"
  PRODUCTION_SHIPS_BUTTON_DISABLED:0 "Корабли §Rне изобретены§!!"
  PRODUCTION_SHIPS_BUTTON_NO_DEPLOY_DISABLED:0 "У нас §Rнет портов§!!"
  PRODUCTION_SHIPS_BUTTON_NO_FACTORIES_DISABLED:0 "У нас §Rнет верфей§!!"

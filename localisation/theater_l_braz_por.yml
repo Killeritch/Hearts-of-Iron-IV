@@ -72,5 +72,5 @@
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_NO_LINE_ARMY_GROUP:0 "§HMode de tarefas da unidade§!\nPasse com o cursor sobre uma das ordens que estão piscando para designá-las a exércitos selecionados."
  ORDER_PROV_TOOLTIP_UNIT_ASSIGN_CANNOT_ARMY_GROUP:0 "§HModo de tarefas da unidade§!\n§RNão é possível designar essas ordens para os exércitos selecionados.§!"
  UNIT_ASSIGN_TO_ORDER_HINT_ARMY_GROUP:0 "§GCtrl + cliique§! para designar essa ordem para os exércitos selecionados."
- UNIT_DELETE_SINGLE_ORDER_HINT:0 "§GClique com o botão direito§! para excluir apenas a frente do grupo do exército sem excluir as frentes do exército."
- ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Selecione um grupo completo do exército e Ctrl + clique para atribuir todas as unidades sem ordens do Exército para atribuí-las a este pedido."
+ UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GClique com o botão direito§! para deletar apenas frontes de grupos de exércitos sem deletar frontes de exércitos."
+ ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Selecione um grupo de exército completo e pressione §GCtrl + clique§! para designar essa ordem para todas unidades sem ordens."

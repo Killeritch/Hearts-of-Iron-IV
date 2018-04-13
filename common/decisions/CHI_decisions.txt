@@ -131,7 +131,7 @@ CHI_army_reform = {
 		fire_only_once = yes
 
 		visible = {
-			tag = CHI
+			has_idea = CHI_incompetent_officers
 			has_completed_focus = CHI_army_reform
 		}
 
@@ -295,7 +295,7 @@ war_measures = {
 				limit = {
 					PRC_has_low_popular_support = yes
 				}
-				#TODO_WTT_CD maybe notification event?
+
 				PRC_low_popular_support_level_down = yes
 			}			
 		}
@@ -4821,6 +4821,7 @@ CHI_integrate_the_warlords = {
 				has_country_flag = CHI_integrate_the_army
 			}
 		}
+		cancel_if_not_visible = yes
 
 		cost = 150
 
@@ -4855,48 +4856,136 @@ CHI_integrate_the_warlords = {
 
 		remove_effect = {
 			FROM = { set_country_flag = CHI_integrate_the_army }
-		}
 
-		complete_effect = {
 			CHI_warlord_integration_up = yes
 			if = {
 				limit = { FROM = { tag = GXC } }
-				create_corps_commander = {
-					name = "Li Zongren"
-					gfx = GFX_portrait_li_zongren
-					skill = 3
+				if = {
+					limit = {
+						FROM = {
+							not = {
+								has_completed_focus = CHI_personal_leadership
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Li Zongren"
+						gfx = GFX_portrait_li_zongren
+						skill = 3
+						attack_skill = 3
+						defense_skill = 3
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+				FROM = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
 				}
 			}
 			else_if = {
 				limit = { FROM = { tag = YUN } }
-				create_corps_commander = {
-					name = "Long Yun"
-					gfx = GFX_portrait_yun_long_yun				
-					skill = 3
+				if = {
+					limit = {
+						FROM = {
+							not = {
+								has_completed_focus = CHI_personal_leadership
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Long Yun"
+						gfx = GFX_portrait_yun_long_yun				
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 2
+					}
+				}
+				FROM = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
 				}
 			}
 			else_if = {
 				limit = { FROM = { tag = SHX } }
-				create_corps_commander = {
-					name = "Yan Xishan"
-					gfx = GFX_portrait_yan_xishan
-					skill = 3
+				if = {
+					limit = {
+						FROM = {
+							not = {
+								has_completed_focus = CHI_personal_leadership
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Yan Xishan"
+						gfx = GFX_portrait_yan_xishan
+						skill = 3
+						attack_skill = 2
+						defense_skill = 3
+						planning_skill = 3
+						logistics_skill = 2
+					}
+				}
+				FROM = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
 				}
 			}
 			else_if = {
 				limit = { FROM = { tag = XSM } }
-				create_corps_commander = {
-					name = "Ma Bufang"
-					gfx = GFX_portrait_xsm_ma_bufang
-					skill = 3
+				if = {
+					limit = {
+						FROM = {
+							not = {
+								has_completed_focus = CHI_personal_leadership
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Ma Bufang"
+						gfx = GFX_portrait_xsm_ma_bufang
+						skill = 3
+						attack_skill = 4
+						defense_skill = 2
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+				FROM = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
 				}
 			}
 			else_if = {
 				limit = { FROM = { tag = SIK } }
-				create_corps_commander = {
-					name = "Sheng Shicai"
-					gfx = GFX_portrait_sheng_shicai
-					skill = 3
+				if = {
+					limit = {
+						FROM = {
+							not = {
+								has_completed_focus = CHI_personal_leadership
+							}
+						}
+					}
+					create_corps_commander = {
+						name = "Sheng Shicai"
+						gfx = GFX_portrait_sheng_shicai
+						skill = 3
+						attack_skill = 2
+						defense_skill = 4
+						planning_skill = 2
+						logistics_skill = 2
+					}
+				}
+				FROM = {
+					every_unit_leader = {
+						set_nationality = ROOT
+					}
 				}
 			}
 		}
@@ -4907,7 +4996,6 @@ CHI_integrate_the_warlords = {
 		available = {
 			FROM = { 
 				compare_autonomy_state < autonomy_colony 
-				has_country_flag = CHI_integrate_the_army
 			}
 		}
 
@@ -4915,8 +5003,10 @@ CHI_integrate_the_warlords = {
 			FROM = { 
 				is_subject_of = ROOT 
 				has_country_flag = CHI_integrate_the_army
+				NOT = { has_country_flag = CHI_integrate_the_administration}
 			}
 		}
+		cancel_if_not_visible = yes
 
 		cost = 150
 
@@ -4952,9 +5042,7 @@ CHI_integrate_the_warlords = {
 			FROM = {
 				set_country_flag = CHI_integrate_the_administration
 			}
-		}
 
-		complete_effect = {
 			FROM = {
 				every_state = {
 					limit = { is_core_of = FROM }
@@ -4975,6 +5063,7 @@ CHI_integrate_the_warlords = {
 		visible = {
 			FROM = { is_subject_of = ROOT }
 		}
+		cancel_if_not_visible = yes
 
 		cost = 150
 
@@ -5011,9 +5100,6 @@ CHI_integrate_the_warlords = {
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 10			
-		}
-
-		complete_effect = {
 		}
 	}
 }
@@ -5125,7 +5211,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5187,7 +5273,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5249,7 +5335,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5310,7 +5396,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5371,7 +5457,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5432,7 +5518,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5493,7 +5579,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5554,7 +5640,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5615,7 +5701,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5676,7 +5762,7 @@ CHI_communist_infiltration = {
 
 		
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 		
 		days_remove = 30
@@ -5734,21 +5820,21 @@ foreign_support = {
 		fire_only_once = yes
 		days_remove = -1
 		complete_effect = {
-				random_country = {
-					limit = {
-						has_completed_focus = CHI_invite_the_flying_tigers
-					}
-					custom_effect_tooltip = flying_tigers_tt
-					hidden_effect = {
-						USA = {
-							send_equipment = {
-								target = PREV
-								type = fighter_equipment
-								amount = 150
-							}
+			random_country = {
+				limit = {
+					has_completed_focus = CHI_invite_the_flying_tigers
+				}
+				custom_effect_tooltip = flying_tigers_tt
+				hidden_effect = {
+					USA = {
+						send_equipment = {
+							target = PREV
+							type = fighter_equipment
+							amount = 150
 						}
 					}
 				}
+			}
 			add_war_support = 0.05
 		}
 		modifier = {
@@ -6258,6 +6344,10 @@ political_actions = {
 				}
 				factor = 10
 			}
+			modifier = {
+				has_war_with = JAP
+				factor = 500
+			}
 		}
 		complete_effect = {
 			If = {
@@ -6443,6 +6533,11 @@ operations = {
 	
 	CHI_overlordship_over_indochina = {
 		icon = generic_operation
+
+		allowed = {
+			is_literally_china = yes
+		}
+
 		available = {
 			controls_state = 671
 			controls_state = 670
@@ -6471,7 +6566,10 @@ operations = {
 }
 
 prestigious_projects = {
-	CHI_build_a_carrier = { 
+	CHI_build_a_carrier = {
+		allowed = {
+			is_literally_china = yes
+		}
 		icon = generic_naval
 		available = {
 			has_navy_size = { archetype = carrier size > 0 }

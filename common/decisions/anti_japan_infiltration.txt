@@ -162,7 +162,7 @@ communist_infiltration = {
 		}
 
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -219,7 +219,7 @@ communist_infiltration = {
 		}
 
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -276,7 +276,7 @@ communist_infiltration = {
 		}
 
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -333,7 +333,7 @@ communist_infiltration = {
 		}
 
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -390,7 +390,7 @@ communist_infiltration = {
 		}
 
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 
 		ai_will_do = {
@@ -447,7 +447,7 @@ communist_infiltration = {
 		}
 
 		modifier = {
-			command_power_gain = -0.05
+			command_power_gain = -0.1
 		}
 
 		ai_will_do = {

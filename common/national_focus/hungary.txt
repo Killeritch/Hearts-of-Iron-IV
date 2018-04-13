@@ -1570,7 +1570,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		available = {
-			GER = { has_government = fascism }
+			NOT = { GER = { has_government = communism } }
 		}
 
 		cost = 10
@@ -2177,6 +2177,7 @@ focus_tree = {
 				owns_state = 82
 				owns_state = 45
 			}
+			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
 		}
 
 		bypass = {

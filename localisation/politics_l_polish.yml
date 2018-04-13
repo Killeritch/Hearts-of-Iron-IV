@@ -141,3 +141,4 @@
  WAR_SUPPORT_EFFECT_HEADER:0 "§HAktualnie pod wpływem:§!\n"
  RELEASE_NATION_STATES_NOT_POSSIBLE:1 "§T$COUNTRY|H$ - nie można wyzwolić w: $LIST|H$§!:\n\nKraje zaznaczone na czerwono nie znajdują się pod twoją kontrolą."
  RETURN_TERRITORY_STATES_NOT_POSSIBLE:1 "§T$LIST|H$ - powrót do $COUNTRY|H$§! jest niemożliwy:\n\nKraje zaznaczone na czerwono nie znajdują się pod twoją kontrolą."
+ POL_OTHERS_DRIFT:0 "Przez zmiany w innych partiach: $VAL$"

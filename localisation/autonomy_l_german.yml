@@ -58,5 +58,5 @@
  autonomy_satellite:0 "Satellit"
  autonomy_wtt_imperial_associate:0 "Kaiserliches Assoziat"
  autonomy_wtt_imperial_protectorate:0 "Kaiserliches Protektorat"
- autonomy_wtt_imperial_subject:0 "Kaiserlicher Untertan"
+ autonomy_wtt_imperial_subject:1 "Kaiserlicher Untertan"
  ACTIVE_ATTACHES_EFFECT:0 "Aktive Attachés"

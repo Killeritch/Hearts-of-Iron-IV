@@ -1,7 +1,7 @@
 ﻿l_french:
  GER_ss_factory_rerouted:0 "Projet secret de la SS"
  SS_recruitment:0 "Volontaires étrangers"
- SS_recruitment_desc:0 "La SS dirigée par Himmler pense qu'elle devrait être en charge du recrutement de volontaires étrangers pour combattre la menace posée par le bolchévisme international. Toutefois, la Wehrmacht désapprouve très clairement, et ne tolérera pas une chaîne de commandement parallèle. Provoquer l'une ou l'autre pourrait avoir de graves conséquences.\n\nÉtat d'esprit actuel au sein de l'OKW : [Root.GetWehrmachtAngerLevel] ([?GER.wehrmacht_anger|-0]).\n\nÉtat d'esprit actuel au sein de la SS : [Root.GetSSAngerLevel] ([?GER.SS_anger|-0])."
+ SS_recruitment_desc:1 "La SS dirigée par Himmler pense qu'elle devrait être en charge du recrutement de volontaires étrangers pour combattre la menace posée par le bolchévisme international. Toutefois, la Wehrmacht désapprouve très clairement, et ne tolérera pas une chaîne de commandement parallèle. Provoquer l'une ou l'autre pourrait avoir de graves conséquences.\n\n§YÉtat d'esprit§! actuel au sein de l'OKW : [Root.GetWehrmachtAngerLevel] ([?GER.wehrmacht_anger|-0]).\n\n§YÉtat d'esprit§! actuel au sein de la SS : [Root.GetSSAngerLevel] ([?GER.SS_anger|-0])."
  SS_loyal:0 "loyauté"
  SS_calm:0 "calme"
  SS_worried:0 "inquiétude"

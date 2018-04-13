@@ -322,8 +322,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
-
-		MAN_assertiveness = {
+		MAN_underground_gun_shops = {
 
 			allowed = {
 				always = no
@@ -332,17 +331,77 @@ ideas = {
 			allowed_civil_war = {
 				original_tag = MAN
 			}
+			
+			removal_cost = -1
 
-			available = {
-				compare_autonomy_state < autonomy_wtt_imperial_associate
+			picture = generic_central_management
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25
+					reliability = -0.4
+					instant = yes
+				}
+			}
+		}
+		MAN_arms_seized_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
 			}
 			
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = generic_army_problems
 			
-			modifier = {
-				autonomy_gain = 5
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+		}
+		MAN_arms_seized_2 = {
+
+			allowed = {
+				always = no
+			}
+			name = MAN_arms_seized_1
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+		}
+		MAN_arms_seized_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+			name = MAN_arms_seized_1
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = -0.4
+				defense_bonus_against = -0.4
 			}
 		}
 
@@ -362,8 +421,8 @@ ideas = {
 			
 			targeted_modifier = {
 				tag = JAP
-				attack_bonus_against = 0.15
-				defense_bonus_against = 0.3
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 	}

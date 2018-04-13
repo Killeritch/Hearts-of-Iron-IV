@@ -1,7 +1,7 @@
 ﻿l_braz_por:
  GER_ss_factory_rerouted:0 "Projeto SS Secreto"
  SS_recruitment:0 "Voluntários estrangeiros"
- SS_recruitment_desc:0 "A SS de Himmler acreditam que eles deveriam estar no comando do recrutamento de voluntários estrangeiros para a luta contra o bolchevismo global. A Wehrmacht discorda fortemente e não tolerará um estrutura paralela de comando. Forçar qualquer um deles pode ter consequências preocupantes.\n\nNível atual de raiva na OKW: [?GER.wehrmacht_anger|-0]\n\nNível atual de raiva na liderança da SS: [?GER.SS_anger|-0]"
+ SS_recruitment_desc:1 "A SS de Himmler acreditam que eles deveriam estar no comando do recrutamento de voluntários estrangeiros para a luta contra o bolchevismo global. A Wehrmacht discorda fortemente e não tolerará um estrutura paralela de comando. Forçar qualquer um deles pode ter consequências preocupantes.\n\nNível atual do §Yhumor§! na OKW: [Root.GetWehrmachtAngerLevel]\n\nNível atual do §Yhumor§! na liderança da SS: [Root.GetSSAngerLevel] ([?GER.SS_anger|-0])"
  SS_demands:0 "Demandas da SS"
  GER_SS_himmler_recruit:0 "\nCom Himmler em nosso gabinete poderemos recrutar §Ydivisões estrangeiras da SS§!.\n"
  wehrmacht_demands:0 "Demandas da Wehrmacht"

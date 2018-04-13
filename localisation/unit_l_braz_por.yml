@@ -17,7 +17,7 @@
  UNIT_LEADER_NO_GROUP:0 "O exército não foi criado"
  UNIT_LEADER_SKILL:0 "$SKILL|Y$"
  UNIT_LEADER_PROMOTE_POPUP_TITLE:0 "Promover líder"
- UNIT_LEADER_PROMOTE_POPUP_DESC:2 "Tem certeza de que deseja promover $LEADER$? Depois da promoção, $LEADER$ §perderá§! temporariamente um ponto de habilidade."
+ UNIT_LEADER_PROMOTE_POPUP_DESC:3 "Tem certeza de que deseja promover $LEADER$? Após a promoção, $LEADER$ §Rperderá§! temporariamente um nível de habilidade, ajustando-se à responsabilidades da nova patente."
  ATTRITION:0 "Atrito:"
  ATTRITION_DESC:0 "Chance de perda de equipamento todos os dias"
  ATTRITION_TOTAL:0 "Atrito total: $TOT|=-1%2$"

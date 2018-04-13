@@ -1,7 +1,7 @@
 ﻿l_spanish:
  GER_ss_factory_rerouted:0 "Proyecto secreto de las SS"
  SS_recruitment:0 "Voluntarios extranjeros"
- SS_recruitment_desc:0 "Las SS de Himmler opinan que deberían estar a cargo del reclutamiento de voluntarios extranjeros para luchar contra el bolchevismo mundial. La Wehrmacht no está de acuerdo y no tolerará una estructura de mando paralela. Presionar demasiado a ambas partes puede tener consecuencias graves.\n\nNivel de indignación en el Alto Mando de la Wehrmacht: [?GER.wehrmacht_anger|-0]\n\nNivel de indignación en la cúpula de las SS: [?GER.SS_anger|-0]"
+ SS_recruitment_desc:1 "Las SS de Himmler opinan que deberían estar a cargo del reclutamiento de voluntarios extranjeros para luchar contra el bolchevismo mundial. La Wehrmacht no está de acuerdo y no tolerará una estructura de mando paralela. Presionar demasiado a ambas partes puede tener consecuencias graves.\n\n§YEstado de ánimo§! actual en el Alto Mando de la Wehrmacht: [Root.GetWehrmachtAngerLevel] ([?GER.wehrmacht_anger|-0])\n\n§YEstado de ánimo§! actual en la cúpula de las SS: [Root.GetSSAngerLevel] ([?GER.SS_anger|-0])"
  SS_demands:0 "Exigencias de las SS"
  GER_SS_himmler_recruit:0 "\nTener a Himmler en tu gabinete posibilitará el reclutamiento de §Ydivisiones extranjeras de las SS§!.\n"
  wehrmacht_demands:0 "Exigencias de la Wehrmacht"

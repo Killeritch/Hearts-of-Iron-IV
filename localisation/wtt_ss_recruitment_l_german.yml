@@ -1,7 +1,7 @@
 ﻿l_german:
  GER_ss_factory_rerouted:0 "Geheimes SS-Projekt"
  SS_recruitment:0 "Ausländische Freiwillige"
- SS_recruitment_desc:0 "Die SS unter Himmler glaubt, dass sie für die Rekrutierung ausländischer Freiwillige für den Kampf gegen den weltweiten Bolschewismus verantwortlich sein sollte. Die Wehrmacht lehnt das strikt ab und duldet keine parallele Befehlsstruktur. Es könnte schwere Konsequenzen haben, wenn eine der beiden Seiten zu stark unter Druck gesetzt wird.\n\nAktuelles Zornniveau im OKW: [?GER.wehrmacht_anger|-0]\n\nAktuelles Zornniveau in der SS-Führung: [?GER.SS_anger|-0]"
+ SS_recruitment_desc:1 "Die SS unter Himmler glaubt, dass sie für die Rekrutierung ausländischer Freiwilliger für den Kampf gegen den weltweiten Bolschewismus verantwortlich sein sollte. Die Wehrmacht lehnt das strikt ab und duldet keine parallele Befehlsstruktur. Es könnte schwere Konsequenzen haben, wenn eine der beiden Seiten zu stark unter Druck gesetzt wird.\n\nAktuelle §YStimmung§! im OKW: [Root.GetWehrmachtAngerLevel] ([?GER.wehrmacht_anger|-0])\n\nAktuelle §YStimmung§! in der SS-Führung: [Root.GetSSAngerLevel] ([?GER.SS_anger|-0])"
  SS_demands:0 "Forderungen der SS"
  GER_SS_himmler_recruit:0 "\nWenn Himmler Ihrem Kabinett angehört, ist die Rekrutierung von §Yausländischen SS-Divisionen§! möglich.\n"
  wehrmacht_demands:0 "Forderungen der Wehrmacht"

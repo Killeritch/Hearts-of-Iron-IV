@@ -141,3 +141,4 @@
  WAR_SUPPORT_EFFECT_HEADER:0 "§HAktuell beeinflusst von:§!\n"
  RELEASE_NATION_STATES_NOT_POSSIBLE:1 "§TDie Befreiung von $COUNTRY|H$ in $LIST|H$§! ist nicht möglich:\n\nDie rot markierten Staaten werden nicht von Ihnen kontrolliert."
  RETURN_TERRITORY_STATES_NOT_POSSIBLE:1 "§TDie Rückgabe von $LIST|H$ an $COUNTRY|H$§! ist nicht möglich:\n\nDie rot markierten Staaten werden nicht von Ihnen kontrolliert."
+ POL_OTHERS_DRIFT:0 "Aufgründ der Änderungen in anderen Parteien: $VAL$"

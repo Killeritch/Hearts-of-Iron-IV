@@ -1145,3 +1145,18 @@ axis_dont_mess_with_volunteers = {
 	}
 }
 
+GER_industry_we_are_the_baddies = {
+	enable = {
+		tag = GER
+		date < 1940.1.1
+		date > 1937.1.1
+	}
+	abort={
+		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+}

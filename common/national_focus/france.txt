@@ -2506,7 +2506,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = FRA_capital_ship_focus
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = bb_tech
 				category = bc_tech
 			}

@@ -137,4 +137,4 @@
  POL_authoritarianism_focus:0 "Авторитарность"
  POL_polish_revanchism_focus:0 "Польский реваншизм"
  POL_internationalism_focus:0 "Интернационализм"
- POL_invite_to_faction_tooltip:0 "получает приглашение в альянс государства [Root.GetFlag]§Y[Root.GetName]§!.\n"
+ POL_invite_to_faction_tooltip:0 "получит приглашение в альянс государства [Root.GetFlag]§Y[Root.GetName]§!.\n"

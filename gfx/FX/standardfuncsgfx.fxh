@@ -20,7 +20,9 @@ ConstantBuffer( 0, 0 )
 	float3		AmbientNegX;
 	float		FOWFadeFactor;
 	float3		AmbientPosY;
+	float		MinMeshAlpha;
 	float3		AmbientNegY;
+	float		NegFogMultiplier;
 	float3		AmbientPosZ;
 	float3		AmbientNegZ;
 	float		CubemapIntensity;
@@ -446,7 +448,7 @@ PixelShader =
 	float3 AmbientLight( float3 WorldNormal, float vDayFactor, float3 DayAmbientColors_[6], float3 NightAmbientColors_[6] ) 
 	{	
 		// add more of bottom ambient below objects
-		WorldNormal = normalize(WorldNormal - smoothstep(-0.6, 0.5, dot(WorldNormal, float3(0, -1, 0))) * float3(0, 0.9, 0));
+		WorldNormal = lerp( WorldNormal, normalize(WorldNormal - smoothstep(-0.6, 0.5, dot(WorldNormal, float3(0, -1, 0))) * float3(0, 0.9, 0)), NegFogMultiplier );
 
 		float3 Squared = WorldNormal * WorldNormal; 
 	#ifdef	PDX_OPENGL
@@ -454,7 +456,7 @@ PixelShader =
 	#else
 		int3 isNegative = (WorldNormal < 0.0);
 	#endif
-
+	
 		float3 Color = Squared.x * lerp( DayAmbientColors_[isNegative.x], saturate(NIGHT_AMBIENT_BOOST * NightAmbientColors_[isNegative.x]), vDayFactor )
 			+ Squared.y * lerp( DayAmbientColors_[isNegative.y+2],  saturate(NIGHT_AMBIENT_BOOST * NightAmbientColors_[isNegative.y+2]), vDayFactor )
 			+ Squared.z * lerp( DayAmbientColors_[isNegative.z+4],  saturate(NIGHT_AMBIENT_BOOST * NightAmbientColors_[isNegative.z+4]), vDayFactor );

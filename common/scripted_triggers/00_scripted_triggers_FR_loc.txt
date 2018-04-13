@@ -111,6 +111,7 @@ frloc_ruler_name_male_vow = {
 		has_country_leader = { name = "Eleazar López Contreras" }
 		has_country_leader = { name = "Otto von Habsburg" }
 		has_country_leader = { name = "Augustus Mussolini" }
+		has_country_leader = { name = "Arthur Seyss-Inquart" }
 	}
 }
 
@@ -162,10 +163,10 @@ frloc_cosmtags_sg_masc_cons_dansle_01 = {
 		AND = { has_cosmetic_tag = EUR_UNIFIED has_government = neutrality OR = { original_tag = HOL original_tag = BEL original_tag = LUX original_tag = FRA original_tag = ITA original_tag = GER } } # EUR_UNIFIED_neutrality
 		AND = { has_cosmetic_tag = MUT_UNIFIED has_government = neutrality OR = { original_tag = SAF original_tag = BOT original_tag = ZIM original_tag = MZB } } # MUT_UNIFIED_neutrality
 		AND = { original_tag = ITA has_cosmetic_tag = SPQR_UNIFIED has_government = neutrality } # SPQR_UNIFIED_neutrality
-		AND = { original_tag = ITA has_cosmetic_tag = SPQR_UNIFIED has_government = communism } # SPQR_UNIFIED_communism
 		AND = { has_cosmetic_tag = RAT_UNIFIED original_tag = SIA has_government = neutrality } # RAT_UNIFIED_neutrality
 		AND = { has_cosmetic_tag = HRE_UNIFIED original_tag = GER has_government = neutrality } # HRE_UNIFIED_neutrality
 		AND = { tag = CHI is_subject_of = JAP has_government = fascism OR = { has_autonomy_state = autonomy_puppet has_autonomy_state = autonomy_reichsprotectorate has_autonomy_state = autonomy_wtt_imperial_protectorate } } # CHI_JAP_fascism_autonomy_puppet OR CHI_JAP_fascism_autonomy_reichsprotectorate OR CHI_JAP_fascism_autonomy_wtt_imperial_protectorate
+		AND = { original_tag = CHI has_cosmetic_tag = CHI_power_struggle_defeated has_government = democratic } # CHI_power_struggle_defeated_democratic
 	}
 }
 
@@ -213,6 +214,7 @@ frloc_cosmtags_sg_masc_vow_dansl_03 = {
 		AND = { has_cosmetic_tag = RAT_UNIFIED original_tag = SIA has_government = communism } # RAT_UNIFIED_communism
 		AND = { has_cosmetic_tag = HRE_UNIFIED original_tag = GER has_government = fascism } # HRE_UNIFIED_fascism
 		AND = { original_tag = MAN has_cosmetic_tag = MAN_restored OR = { has_government = fascism has_government = neutrality } } # MAN_restored_fascism OR MAN_restored_neutrality
+		AND = { OR = { original_tag = PRC original_tag = CHI original_tag = YUN original_tag = SIK original_tag = GXC original_tag = SHX original_tag = XSM } has_cosmetic_tag = CHI_warlord_PRC has_government = fascism } # CHI_warlord_PRC_fascism
 		AND = { original_tag = JAP has_cosmetic_tag = JAP_showa_restoration OR = { has_government = neutrality has_government = democratic } } # JAP_showa_restoration_neutrality OR JAP_showa_restoration_democratic
 	}
 }
@@ -271,10 +273,13 @@ frloc_cosmtags_sg_fem_cons_dansla_dela_05 = {
 		AND = { original_tag = PRC has_cosmetic_tag = PRC_proclaimed has_government = communism } # PRC_proclaimed_communism
 		AND = { original_tag = PRC has_cosmetic_tag = PRC_proclaimed has_government = democratic } # PRC_proclaimed_democratic
 		AND = { WTT_is_ROOT_current_leader_of_china = yes has_cosmetic_tag = CHI_warlord_leader has_government = democratic } # CHI_warlord_leader_democratic
+		AND = { OR = { original_tag = PRC original_tag = CHI original_tag = YUN original_tag = SIK original_tag = GXC original_tag = SHX original_tag = XSM } has_cosmetic_tag = CHI_warlord_PRC has_government = democratic } # CHI_warlord_PRC_democratic
 		AND = { original_tag = MAN has_cosmetic_tag = MAN_restored has_government = democratic } # MAN_restored_democratic
 		AND = { original_tag = MAN has_cosmetic_tag = MAN_restored has_government = communism } # MAN_restored_communism
 		AND = { original_tag = JAP has_cosmetic_tag = JAP_showa_restoration has_government = communism } # JAP_showa_restoration_communism
-		# LOWER ORDER OF PRIORITY / ORDRE DE PRIORITÉ BASSE
+		AND = { original_tag = ITA has_cosmetic_tag = SPQR_UNIFIED has_government = communism } # SPQR_UNIFIED_communism
+		AND = { original_tag = CHI has_cosmetic_tag = CHI_power_struggle_defeated has_government = neutrality } # CHI_power_struggle_defeated_neutrality
+		# LOWER ORDER OF PRIORITY / ORDRE DE PRIORITÉ BASSE #@#
 		AND = { tag = FRA is_subject_of = GER has_government = fascism OR = { has_autonomy_state = autonomy_reichsprotectorate has_autonomy_state = autonomy_puppet } } # FRA_GER_fascism_autonomy_reichsprotectorate OR FRA_GER_fascism_autonomy_puppet
 	}
 }
@@ -301,6 +306,7 @@ frloc_cosmtags_sg_fem_cons_en_de_06 = {
 		AND = { has_cosmetic_tag = PER_UNIFIED has_government = neutrality OR = { original_tag = PER original_tag = AFG } } # PER_UNIFIED_neutrality
 		AND = { original_tag = PRC has_cosmetic_tag = PRC_proclaimed has_government = neutrality } # PRC_proclaimed_neutrality
 		AND = { WTT_is_ROOT_current_leader_of_china = yes has_cosmetic_tag = CHI_warlord_leader has_government = neutrality } # CHI_warlord_leader_neutrality
+		AND = { OR = { original_tag = PRC original_tag = CHI original_tag = YUN original_tag = SIK original_tag = GXC original_tag = SHX original_tag = XSM } has_cosmetic_tag = CHI_warlord_PRC OR = { has_government = neutrality has_government = communism } } # CHI_warlord_PRC_neutrality OR CHI_warlord_PRC_communism
 	}
 }
 
@@ -1769,6 +1775,7 @@ frloc_capital_dansle_du_audessusdu = {
 		state = 728
 		state = 732
 		state = 759
+		state = 762
 	}
 }
 
@@ -2291,6 +2298,7 @@ frloc_state_sg_masc_cons_art_le_du_x_01 = {
 		state = 732
 		state = 741
 		state = 759
+		state = 762
 	}
 }
 

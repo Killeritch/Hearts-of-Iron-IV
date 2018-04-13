@@ -1,7 +1,7 @@
 ﻿l_polish:
  GER_ss_factory_rerouted:0 "Tajny projekt SS"
  SS_recruitment:0 "Zagraniczni ochotnicy"
- SS_recruitment_desc:0 "SS dowodzone przez Himmlera uważa, że powinno kierować rekrutacją zagranicznych ochotników do walki z bolszewizmem na świecie. Wehrmacht stanowczo protestuje i nie zgadza się na istnienie równoległej struktury dowodzenia. Jeśli jedna ze stron poczuje się skrzywdzona, konsekwencje mogą być poważne.\n\nAktualny poziom niezadowolenia w OKW: [?GER.wehrmacht_anger|-0]\n\nAktualny poziom niezadowolenia w dowództwie SS: [?GER.SS_anger|-0]"
+ SS_recruitment_desc:1 "SS dowodzone przez Himmlera uważa, że powinno kierować rekrutacją zagranicznych ochotników do walki z bolszewizmem na świecie. Wehrmacht stanowczo protestuje i nie zgadza się na istnienie równoległej struktury dowodzenia. Jeśli jedna ze stron poczuje się skrzywdzona, konsekwencje mogą być poważne.\n\nAktualny §Ynastrój§! w OKW: [Root.GetWehrmachtAngerLevel] ([?GER.wehrmacht_anger|-0])\n\nAktualny §Ynastrój§! w dowództwie SS: [Root.GetSSAngerLevel] ([?GER.SS_anger|-0])"
  SS_demands:0 "Żądania wobec SS"
  GER_SS_himmler_recruit:0 "\nJeżeli Himmler znajdzie się w twoim gabinecie, będzie możliwe stworzenie §Yzagranicznych dywizji SS§!.\n"
  wehrmacht_demands:0 "Żądania wobec Wehrmachtu"

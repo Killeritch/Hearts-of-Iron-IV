@@ -216,4 +216,4 @@
  EFFECT_MODIFY_TIMED_IDEA_DECREASE:0 "Duração reduzidade '$IDEA|H$’ até $DATE$ (§H-§!$DAYS|H$ dias).\n"
  EFFECT_ACTIVATE_DECISION:0 "Ativar: $NAME|H$"
  EFFECT_SET_TRUCE:0 "Trégua com $COUNTRY|H$ até $DATE|H$"
- EFFECT_SUPPLY_UNITS:0 "Entregue os exércitos suficientes para $NUM|H.0$ Horas"
+ EFFECT_SUPPLY_UNITS:0 "Entrega para os exércitos suprimentos o suficiente para $NUM|H.0$ Hours"

@@ -12,6 +12,7 @@ set_technology = {
 	add_to_war = {
 		targeted_alliance = JAP
 		enemy = CHI
+		hostility_reason = puppet
 	}
 	
 	add_political_power = 1198

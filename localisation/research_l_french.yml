@@ -1,9 +1,9 @@
 ﻿l_french:
  RESEARCH_BONUSES_TOOLTIP:0 "Avantages technologiques limités dont nous bénéficions :"
  RESEARCH_BONUSES_EMPTY_TOOLTIP:0 "Les avantages technologiques limités seront répertoriés ici."
- RESEARCH_BONUS_SPEED_DESC:0 "$NAME$ : $VALUE|G%0$ sur la durée de la recherche (x$COUNT|Y$)"
- RESEARCH_BONUS_AHEAD_DESC:0 "$NAME$ : $VALUE|G%0$ sur la pénalité d'avance (x$COUNT|Y$)"
- RESEARCH_BONUS_SPEED_AHEAD_DESC:0 "$NAME$ : $VALUE1|G%0$ sur la durée de la recherche, $VALUE2|G%0$ sur la pénalité d'avance (x$COUNT|Y$)"
+ RESEARCH_BONUS_SPEED_DESC:0 "$NAME$ : $VALUE|G%0$ sur la durée de la recherche (x$COUNT$)"
+ RESEARCH_BONUS_AHEAD_DESC:0 "$NAME$ : $VALUE|G%0$ sur la pénalité d'avance (x$COUNT$)"
+ RESEARCH_BONUS_SPEED_AHEAD_DESC:0 "$NAME$ : $VALUE1|G%0$ sur la durée de la recherche, $VALUE2|G%0$ sur la pénalité d'avance (x$COUNT$)"
  RESEARCH_BONUS_SPEED_NO_COUNT_DESC:0 "Durée de la recherche : §G-§!$VALUE|G%0$"
  RESEARCH_BONUS_AHEAD_NO_COUNT_DESC:0 "Pénalité d'avance : §G-§!$VALUE|G%0$"
  RESEARCH_BONUS_SPEED_AHEAD_NO_COUNT_DESC:0 "Durée de recherche : §G-§!$VALUE|G%0$\nPénalité d'avance : §G-§!$VALUE2|G%0$"

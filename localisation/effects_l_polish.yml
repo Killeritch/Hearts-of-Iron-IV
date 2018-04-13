@@ -216,4 +216,4 @@
  EFFECT_MODIFY_TIMED_IDEA_DECREASE:0 "'$IDEA|H$' trwa krócej, do $DATE$ (§H-§!$DAYS|H$ dni).\n"
  EFFECT_ACTIVATE_DECISION:0 "Uruchomienie: $NAME|H$"
  EFFECT_SET_TRUCE:0 "Zawarcie rozejmu z państwem $COUNTRY|H$ do $DATE|H$"
- EFFECT_SUPPLY_UNITS:0 "Dostarczyć armie wystarczającej ilości na $NUM|H.0$ godzin"
+ EFFECT_SUPPLY_UNITS:0 "Dostarczyć armiom zapasy na $NUM|H.0$ godz."

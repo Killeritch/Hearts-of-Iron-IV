@@ -71,6 +71,7 @@ save_global_event_target_as = WTT_communist_china
 	add_to_war = {
 		targeted_alliance = CHI
 		enemy = JAP
+		hostility_reason = asked_to_join
 	}
 	set_country_flag = PRC_joined_CHI_against_JAP
 	remove_opinion_modifier = { target = CHI modifier = hostile_status }

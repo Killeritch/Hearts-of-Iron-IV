@@ -79,14 +79,14 @@ guiTypes = {
 		buttonType = {
 			name ="army_item_bg"
 			quadTextureSprite = "GFX_theatre_army_shield"	
-			position = { x = 0 y = -3 }
+			position = { x = 0 y = -2 }
 		}
 
 		iconType = {
 			name ="army_item_frame"
 			quadTextureSprite = "GFX_theatre_army_shield_selected"	
 			alwaystransparent = yes
-			position = { x = 0 y = -3 }
+			position = { x = -1 y = -2 }
 		}
 
 		iconType = {
@@ -105,7 +105,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "armies_count_box"
-			position = { x = 10 y = 6 }
+			position = { x = 10 y = 10 }
 			font = "hoi_18mbs"
 			maxWidth = 28
 			maxHeight = 23
@@ -141,6 +141,7 @@ guiTypes = {
 			name ="selected_theatre_frame"
 			quadTextureSprite = "GFX_selected_theatre_frame"	
 			position = { x = 0 y = 2 }
+			alwaystransparent = yes
 		}
 		
  		buttonType = {
@@ -173,6 +174,7 @@ guiTypes = {
 			maxHeight = 32
 			fixedsize = yes
 			format = center
+			alwaystransparent = yes
 		}
 		
 		OverlappingElementsBoxType = {
@@ -490,24 +492,24 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "army_group_box"
-		position = { x=432 y=-8 }
+		position = { x=0 y=0 }
 		size = { width=23 height=33 }
 		
 		buttonType = {
 			name = "army_group_box_middle_bg"
 			quadTextureSprite = "GFX_theatre_dropdown_middle"	
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -8 }
 		}
 
 		buttonType = {
 			name = "army_group_box_bottom_bg"
 			quadTextureSprite = "GFX_theatre_dropdown_bottom"	
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -8 }
 		}
 
 		OverlappingElementsBoxType = {
 			name = "armies_box"
-			position = { x = 10 y = 2 }
+			position = { x = 10 y = -6 }
 			size = { x = 260 y = 23 }
 			format = left
 			spacing = 8.0

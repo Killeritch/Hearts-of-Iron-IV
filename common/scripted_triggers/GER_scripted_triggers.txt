@@ -121,26 +121,6 @@ GER_has_mefo_bills = {
 		limit = { has_idea = GER_mefo_bills_18 }
 		has_idea = GER_mefo_bills_18
 	}
-	else_if = {
-		limit = { has_idea = GER_mefo_bills_19 }
-		has_idea = GER_mefo_bills_19
-	}
-	else_if = {
-		limit = { has_idea = GER_mefo_bills_20 }
-		has_idea = GER_mefo_bills_20
-	}
-	else_if = {
-		limit = { has_idea = GER_mefo_bills_21 }
-		has_idea = GER_mefo_bills_21
-	}
-	else_if = {
-		limit = { has_idea = GER_mefo_bills_22 }
-		has_idea = GER_mefo_bills_22
-	}
-	else_if = {
-		limit = { has_idea = GER_mefo_bills_23 }
-		has_idea = GER_mefo_bills_23
-	}	
 	else = {		
 		has_idea = GER_mefo_bills_1
 	}
@@ -150,6 +130,6 @@ GER_has_mefo_bills = {
 GER_can_delay_mefo_payment = {
 	custom_trigger_tooltip = {
 		tooltip = GER_can_delay_mefo_payment
-		NOT = { has_idea = GER_mefo_bills_23 }
+		NOT = { has_idea = GER_mefo_bills_18 }
 	}
 }

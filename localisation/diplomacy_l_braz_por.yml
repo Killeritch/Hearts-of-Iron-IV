@@ -361,7 +361,7 @@
  SEND_VOL_TARGET_IS_ALLY:0 "Somos aliados de @$TAG$$WHO|H$. Não é possível enviar voluntários para os aliados. Junte-se à guerra com eles e envie forças expedicionárias em vez disso."
  SEND_VOL_TARGET_AT_WAR:0 "Para enviar forças voluntárias, @$TAG$$WHO|H$ deve estar em guerra."
  SEND_VOL_WE_NOT_AT_WAR:0 "Precisamos estar em paz para enviar forças voluntárias."
- SEND_VOL_SENT_VOL_TO_ENEMY:0 "Já enviamos forças voluntárias para o inimigo de @$TAG$$WHO|H$"
+ SEND_VOL_SENT_VOL_TO_ENEMY:1 "Já enviamos forças voluntárias para ou recebemos permissão aérea do inimigo de @$TAG$$WHO|H$"
  SEND_EXP_WE_AT_WAR:0 "Precisamos estar em guerra para mandar forças expedicionárias."
  SEND_EXP_TARGET_AT_WAR:0 "Para lhes enviar forças expedicionárias, @$TAG$$WHO|H$ deve estar em guerra."
  SEND_EXPEDITIONARY_DESCRIPTION:0 "Enviar $SEND|H$ divisões.\nVocê atualmente tem $CURRENT|H$ divisões como forças expedicionárias."
@@ -1022,3 +1022,4 @@
  X_JOINS_ALLIED_WARS:1 "$WHO|H$ entrou na guerra de $WHOM|H$"
  DR_THEM_DO_NOT_WANT_US:0 "$THEM|UY$ não quer entrar em guerra com §Y$US|U$§!: "
  DR_THEM_WANTS_US:0 "$THEM|UY$ quer entrar em guerra com §Y$US|U$§!: "
+ send_attache_active:0 "enviar diplomata para"

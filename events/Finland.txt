@@ -324,7 +324,6 @@ country_event = {
 			}
 			transfer_state = 146
 			transfer_state = 147
-			transfer_state = 722
 		}
 	}
 
@@ -359,7 +358,6 @@ country_event = {
 		white_peace = FIN
 		transfer_state = 146
 		transfer_state = 147
-		transfer_state = 722
 	}
 
 	#Take it all

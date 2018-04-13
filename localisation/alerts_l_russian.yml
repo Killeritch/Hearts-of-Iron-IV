@@ -49,7 +49,7 @@
  alert_enemy_generate_wargoal_instant:0 "§HОбоснованы цели войны с нами или нашими союзниками§!"
  alert_faction_generate_wargoal_instant:0 "§HЧлены нашего альянса обосновывают цели войны§!"
  ALERT_AT_WAR:0 "Мы находимся в состоянии войны с государством $OTHERS|H$."
- ALERT_WARSCORE:0 "Наше текущее участие в войне: $SCORE|%1H$."
+ ALERT_WARSCORE:0 "Наш вклад в войну: $SCORE|%1H$."
  ALERT_TRADE_IMPORT_UNFULFILLED_INSTANT:0 "§HНевыполненные запросы по импорту§!"
  ALERT_TRADE_IMPORT_UNFULFILLED_DELAYED_HEADER:0 "§TУ вас есть невыполненные запросы по импорту:§!"
  ALERT_TRADE_IMPORT_DELAYED_ITEM:0 "$RESOURCE|H$ от государства $COUNTRY|H$ ($AVAILABLE|R$/$REQUESTED$)"
