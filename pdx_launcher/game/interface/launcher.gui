@@ -1,6 +1,108 @@
 guiTypes = {
 	@dlc_entry_height = 35
 
+	containerWindowType = {
+		name = "blockClickThrough"
+		position = { x=0 y=0 }
+		size = { width = 1000 height = 600 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_transparent_black"
+		}
+	}
+
+	containerWindowType = {
+		name = "legal_browser_window"
+		position = { x=-320 y=-275 }
+		size = { width=640 height=540 }
+		Orientation = center
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_legal_bg"
+			position = { x = 0 y = 32 }
+		}
+		
+		buttonType = {
+			name = "back"
+			quadTextureSprite = "GFX_browser_back"
+			position = { x = 20 y = 11 }
+			pdx_tooltip = "BROWSER_BACK"
+		}
+		
+		buttonType = {
+			name = "forward"
+			quadTextureSprite = "GFX_browser_forward"
+			position = { x = 60 y = 11 }
+			pdx_tooltip = "BROWSER_FORWARD"
+		}
+		
+		buttonType = {
+			name = "reload"
+			quadTextureSprite = "GFX_browser_refresh"
+			position = { x = 100 y = 11 }
+			pdx_tooltip = "BROWSER_RELOAD"
+		}
+		
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_button_123x34"
+			position = { x = 230 y = 489 }
+			buttonFont = "hoi_18mbs"
+			buttonText = "OK"
+		}
+		
+		buttonType = {
+			name = "next"
+			quadTextureSprite = "GFX_button_123x34"
+			position = { x = 230 y = 489 }
+			buttonFont = "hoi_18mbs"
+			buttonText = "NEXT"
+		}
+		
+		containerWindowType = {
+			name = "legal_notices_window"
+			size = { width = 592 height = 420 }
+			position = { x = 24 y = 60 }
+			margin = { left = 10 top = 10 right = 10 bottom = 10 }
+			verticalScrollbar = "launcher_vertical_scrollbar"
+			
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_window_transparent_transparent"
+			}
+			
+			instantTextBoxType = {
+				name = "legal_notices"
+				position = { x = 0 y = 0 }
+				maxWidth = 572
+				textureFile = ""
+				font = "hoi_18mbs"
+				format = left
+			}
+		}
+		
+		browserType = {
+			name = "browser"
+			spriteType = "GFX_dummy_browser"
+			position = { x = 24 y = 60 }
+			size = { x = 592 y = 420 }
+		}
+		
+		iconType = {
+			name = "browser_overlay"
+			position = { x = 24 y = 60 }
+			spriteType = "GFX_legal_overlay"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "legal_dog"
+			quadTextureSprite = "GFX_legal_dog"
+			position = { x = 25 y = 454 }
+		}
+	}
 
 	containerWindowType = {
 		name = "launcher"
@@ -911,7 +1013,7 @@ guiTypes = {
 	extendedScrollbarType = {
 		name = "launcher_vertical_scrollbar"
 		position = { x = -6 y = 0 }
- 		size = { width = 18 height = 18 }
+		size = { width = 18 height = 18 }
 		startValue = 0
 		orientation = upper_right
 		origo = upper_right

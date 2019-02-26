@@ -1235,6 +1235,7 @@ focus_tree = {
 
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
+			set_country_flag = MAN_assertiveness
 			JAP = { 
 				set_autonomy = {
 					target = MAN

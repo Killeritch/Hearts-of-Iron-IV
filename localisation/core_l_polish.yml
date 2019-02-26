@@ -898,6 +898,7 @@
  MENU_FORUM:0 "Forum Hearts of Iron IV"
  MENU_FACEBOOK:0 "Hearts of Iron IV na Facebooku"
  MENU_TWITTER:0 "Hearts of Iron IV na Twitterze"
+ MENU_PRIVACY_POLICY:0 "Polityka prywatności"
  DISMISSED_ALERTS_MENU:0 "Pokaż odrzucone powiadomienia"
  DISMISSED_ALERTS_NONE:0 "Brak odrzuconych aktywnych powiadomień."
  DISMISSED_ALERTS_DESC_HEADER:0 "Zostaną dodane następujące powiadomienia:"

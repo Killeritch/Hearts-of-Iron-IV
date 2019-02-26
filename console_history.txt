@@ -1,679 +1,606 @@
-tag SOV
-tag GER
-setowner ROM 79
-setowner ROM 80
-setowner ROM 84
-tag AUS
-tag FRA
-tag EY
-tag EGY
 tdebug
-setowner 803 EGY
-setowner EGY 803
-tag GER
-pp 100
-nocb
-pp 100
-nocb
-pp 100
-nocb
-pp 100
-nocb
-pp 100
-
-tag GER
-tag FRA
-annex GER
-pp 100
-
-tag FRA
-tag ITA
-tag SWI
+annex POL
 tdebug
-Focus.AutoComplete
-tag CHI
-tag ENG
+TDEBUG
+annex HUN
+tdebug
 tag TUR
-tag GER
-tag SOV]
-tag SOV
-tag AUS
-tag FRA
-tag ITA
-tag TUR
-event revolt.1
-tdebug
-tag ITA
-tdebug
-tag SOV
-tag GER
-tdebug
-tag AUS
-tag SOV
-tag GER
-set_owner 290 FRA
-tdebug
-setowner FRA 165
-setcontroller FRA 165
-setowner ITA 167
-setowner ITA 168
-setowner ITA 173
-setowner ITA 177
-setowner ENG 118
-tag FRA
-annex SPR
-
-setcontroller FRA 6220
-tag FRA
-tag ITA
-tdebug
-tag CAT
-tag FRA
-event revolt.1
-tag POL
-tdebug
-tag FRA
-tdebug
-tag SOV
-annex SAU
-tdebug
-event revolt.2
-tag AUS
-annex CZE
-tag SPR
-tag MOR
-tag ALG
-tag TUN
-tag LBA
-tag TUN
-tag ALG
-tag EGY
-tag GER
-tag ENG
-tag SPR
-tag MOR
-tag FRA
-tdebug
-tag FRA
-
-tag TUR
-tdebug
-tag GER
-tag SOV
-tag FRA
-tag AUS
-tag FRA
-tag ENG
-tag SOV
-tag GER
-tag ITA
-tag TUR
-tdebug
-tag AUS
-tdebug
-tag SOV
-tag GER
-tag SOV
-tdebug
-tag FRA
-tag BEL
-tag POR
-event politics.9
-event political.9
-tag TUN
-event political.9
-tag CHA
-event political.9
-tdebug
-annex GRU
-event annex.75
-tdebug
-reload
-reloadui
-reload ui
-reload oob
-reloadoob
-reload history
-reload states
-
-reloadinterface
-tdebug
-tdebufg
-tdebug
-reload countrycolors
-
-tdebug
-reload countrycolors
-set_cosmetic_tag SOV
-set_cosmetic_tag RUS SOV
-reload countrycolors
-tdebug
-tag TAG
-event russia.1
-tag RUS
-event russia.1
-event russia.100
-event russia.12
-tag TAG
-event russia.12
-reload interface
-reloadinterface
-release_puppet = FIN
-release_puppet FIN
-tag SOV
-tdebug
-event russia.100
-tag FRA
-tag RUS
-event russia.100
-tag UKR
-set_ruling_party radical_socialist
-set_ruling_party t
-set_ruling_party totalist
-set_ruling_party radical_socialist
-reloadui
-reload ui
-reloadinterface
-tag UKR
-tag RUS
-event RUS_breakup.100
-set_ruling_party syndicalist
-set_ruling_party totalist
-set_ruling_party radical_socialist
-tdebug
-event RUS_breakup.13
-tag FRT
-event RUS_breakup.100
-tag POL
-event RUS_breakup.100
-tag POL
-set_ruling_party national_populist
-set_ruling_party paternal_autocrat
-set_ruling_party social_conservative
-set_ruling_party totalist
-set_ruling_party authoritarian_democrat
-event RUS_breakup.100
-tag RUS
-event RUS_breakup.100
-set_ruling_party totalist
-tdebug
-event rus_breakup.100
-event RUS_breakup.100
-tag RUS
-event RUS_breakup.100
-tag FIN
-tag EST
-tag LAT
-tag LIT
-tag LAT
-tdebug
-event RUS_breakup.100
-tag FIN
-tag EST
-tag LAT
-tag COU
-tag LIT
-tag ARA
-tag FRA
-tag ENG
-tag ITA
-tag GER
-tag ALP
-tag AUS
-tag GTU
-tag RUS
-tag LOL
-tag TAG
-event RUS_breakup.100
-tag RUS
-event RUS_breakup.100
-event decolonisation.1
-tdebug
-event DIS_breakup.100
-tdebug
-event DIS_breakup.100
-tdebug
-event DIS_breakup.100
-reload countrycolors
-tdebug
-reload countrycolors
-event DIS_breakup.100
-tdebug
-event DIS_breakup.100
-tdebug
-event DIS_breakup.100
-reload countrycolors
-tdebug
-event DIS_breakup.100
-tdebug
-event DIS_breakup.100
-tag RKY
-tag GPL
-event DWF_breakup.100
-ervent DWF_breakup.100
-event DWF_breakup.100
-wp USA
-event DWF_join.17
-clr_cosmetic_tag
-clear_cosmetic_trag
-clear_cosmetic_tag
-clear cosmetic_tag
-event DWF_breakup.100
-tag NYX
-event political.3
-event DWF_breakup.100
-tag UTX
-set_ruling_party neutrality
-reloadui
-reload ui
-tag CAX
-event political.3
-tag UTX
-event political.3
-set_ruling_party = neutrality
-set_ruling_party neutrality
-event DWF_breakup.100
-tag CSA
-tag GPL
-event DWF_breakup.100
-event DWF_breakup.31
-event DWF_breakup.100
-tag RST
-tag GPL
-tag CSA
-reload interface
-reloadui
-reloadinterface
-tag CAX
-tag RST
-tag ENG
-event DWF_breakup.100
-tdebug
-tag GER
-transfer_state 642 HIX
-transdfer 642 HIX
-set_owner 642 HIX
-setowner 642 HIX
-setowner HIX 642
-event DWF_breakup.100
-tag HIX
-tag RKY
-loadoob USA_1936
-
-event germany.4
-event RUS_breakup.7
-event RUS_breakup.13
-tag UKR
-setowner UKR 91
-setowner UKR 78
-setowner UKR 137
-tag RUS
-event RUS_breakup.100
-tag UKR
-event RUS_breakup.7
-setowner UKR 78
-setowner UKR 91
-setowner UKR 137
-tdebug
-tag UKR
-tag RUS
-tag UKR
-tag RUS
-tag UKR
-tag RUS
-event RUS_breakup.100
-tag UKR
-tag RUS
-tdebug
-tag UKR
-tag RUS
-event RUS_breakup.100
-annex LAX
-annex TXX
-annex FLX
-annex ARX
-annex TNX
-annex NCX
-annex OKX
-annex VAX
-annex KYX
-annex MOX
-annex NMX
-annex AZX
-focus.autocomplete
-annex VAX
-RUS_breakup.13
-event RUS_breakup.13
-observe
-event RUS_breakup.100
-tag GRE
-tag GTU
-wp DSE
-tag TAG
-observe
-reload countrycolors
-tag FLX
-tag CSA
-tag OKX
-tag CSA
-tdebug
-event april.1
-tag GER
-tag FRA
-tag ENG
-tag ITA
-tag AUS
-tag ARA
-tag ALP
-tag GTU
-tag TAG
-tag LOL
-tag UKR
-tag BLA#
-tag BLA
-tag BAA
-tag WLS
-tag STL
-tag IRL
-tag WLS
-tag STL
-tag IRL
-tag STL
-tag IRL
-tag WLS
-tag MGR
-tag PHO
-tag GRM
-tag RUS
-event RUS_breakup.100
-tag UKR
-tdebug
-tag TAG
-tag ITA
-reload countrycolors
-tag RAJ
-tag NOR
-reload countrycolors
-tdebug
-tag AST
-tdebug
-tag TAG
-tag RUS
-tdebug
-event RUS_breakup.100
-event RUS_breakup.11
-tag MNX
-event RUS_breakup.100
-event RUS_breakup.12
-reload countrycolors
-tag LAT
-tag fra
-tag rus
-event RUS_breakup.100
-tdebug
-event RUS_breakup.100
-tag CSA
-focus.autocomplete
-tag RST
-focus.autocomplete
-tdebug
-tag AKX
-tag HIX
-tag AKX
-tag VAX
-tag CSC
-tag CAX
-tag VAX
-tag MDX
-tag CAX
-tag TXX
-tag AKX
-tag TXX
-tag CAX
+TDEBUG
 tdebug
 ti
-fow
+!ti
 tdebug
-tag TXX
-tag AKX
-tag HIX
-tag GPL
-tag RST
-tag VAX
-tag NWN
-tag NYX
-tag MDX
-tag CSA
-tag PAX
-tdebug
-tag EGY
-reload countrycolors
-tag BAA
-tag RUS
-event RUS_breakup.100
+TDEBUG
+tag USA
+tag JAP
 tag FRA
-tag UKR
-tag ENG
-tag STL
-tag WLS
-tag IRL
-tag TAG
-tag ITA
-tag ARA
-tag ALP]
-tag ALP
-tag GTU
-tag MGR
-tag PHO
-tag GRM
-tag RUS
-tag FIN
-tag LHS
-set_ruling_party syndicalist
-set_ruling_party paternal_autocrat
-tdebug
-tag ITA
-tag ROM
 tag TUR
 tdebug
-tag MOR
-tag ALG
-tag TUN
-tag LBA
-tag EGY
-reload countrycolors
+tag JAP
+tag TUR
 tdebug
-tag LIB
+tag ITA
+tag TUR
+tag FRA
+tag USA
+tag FRA
 tdebug
-tag BLR
-tag UKR
-tag LIT
-tag SLO
-tag CZE
+tag ENG
+tag GER
+tag SOV
+tag AUS
 tdebug
-reload countrycolors
+tag GER
+tag AUS
+tag GER
+tag AUS
 tdebug
-setowner 839 GER
-setowner GER 839
-setcontroller GER 839
-setcore GER 839
+tag GER
+
 tdebug
-reload countrycolors
+tag ENG
 tdebug
 tag SOV
-event political.12
-event political.9
-tdebug
-reload countrycolors
-tdebug
-reload countrycolors
-tag OHX
-reload countrycolors
-nocb
-reload countrycolors
-tag DEN
-tag MEX
-tag BRA
-tag ARG
-tag USA
-tag ENG
-tag IRE
 tag GER
-tag BUR
-tag JAP
-tag MAF
-tag NFR
-tag FRR
-tag NFA
-tag BRA
-tdebug
-tag ITA
-tdebug
-tag MEX
-tdebug
-tag MEX
-tag YUC
-tag MEX
-tdebug
-tag ITA
-tag YUC
-tag SAV
-tdebug
-tag POL
-tdebug
-tag SAV
-tag RMA
-tag SAV
-tag BRA
-tag SAV
-tag GEN
-tag SAV
-tag PRS
-tag POL
-tag PRS
-tdebug
-tag SAV
-tag GEN
-event political.3
-event political.12
-event political.9
-event political.15
-event political.16
-event political.18]
-event political.17
-set_ruling_party neutrality
-set_ruling_party democratic
-tag HAN
-event political.3
-set_ruling_party neutrality
-tdebug
+tag ENG
+tag SOV
+tag GER
+tag eng
+tag FRA
 tag ITA
 tag TUR
+tag AUS
+tag SOV
+tag JAP
+tag USA
+tag SOV
+tdebug
+tag ROM
+tag AUS
+tag ROM
+tag AUS
+tag SER
+tag AUS
+tdebug
+tag GER
+tag FRA
+tag GER
+tdebug
+tag FRA
+tag GER
+tag AUS
+tag SER
+tdebug
+tag AUS
+tdebug
+tag AUS
+tag TUR
+tag SAU
+tag FRA
 tag ENG
-tag SPR
+tag AUS
+tdebug
+tag TUR
+tag EGY
+tag LBA
+tag GRE
+tag BUL
+tag TUR
+tag SER
+tag AUS
+tag TUR
+tag GRE
+tag BUL
+tag ITA
+tag SOV
+event DIS_breakup.100
+tdebug
+event DIS_breakup.100
+event DIS_breakup.29
+tag CSA
+tag NYX
+tag GPL
+event political.3
+tag CSA
+event political.6
+event political.9
+tag RST
+tag NYX
+event DIS_breakup.100
+reload countrycolors
+event DIS_breakup.100
+tag MOX
+event DIS_breakup.6
+tag RAJ
+tag PAK
+tdebug
+tag BUR
+tag KAS
+tag SKK
+tag PUN
+tag HYD
+tag MYS
+tag TRA
+tag NEP
+tag SKK
+tag RAJ
+tag SKK
+tag KAL
+tag RAJ
+nocb
+set_owner 433 HYD
+setowner 433 HYD
+setowner HYD 433
+setcontroller HYD 433
+tag PAK
+annex KAL
+annex PUN
+annex KAS
+tag MER
+tag ITA
+tag MER
+tag ITA
+tag LIT
+tag MAJ
+tag RAJ]
+tag RAJ
+tag PUN
+tag LKA]
+tag LKA
+tag RAJ
+tag TUR
+pp 100
+tag ALB
+tag ITA
+nocb
+yesman
+tag MER
+tag ITA
+tag ARA
+tag SAU
+tag ARI
+event 4cw.1
+tag DRR
+event 4cw.1
+tag D01
+event 4cw.1
+event spain.1
+tag GAL
+tag EUS
+tag ARA
 tag CAT
-reloadloc
-reload loc
-focus.autocomplete
-tag OLD
-tag GEN
-tag SAV
+tag CST
+tag NDA
+tag MUR
+event spain.1
+tag LEO
+tag MUR
+tag SER
+tdebug
+tag TWO
+tdebug
+tag TWI
+tdebug
+tag USA
+tag APC
+tdebug
+tag NEA
+event politicla.6
+event political.6
+event political.3
+event political.1
+event france.1
+event france.2
+event france.3
+event france.4
+event france.5
+event france.6
+event france.7
+event france.8
+event france.9
+event france.10
+event france.11
+event france.10
+tag PUN
+tag MUG
+tag UDA
+tag BAR
+tag GWa
+tag MAR
+tag BNG
+tag MNP
+tag HYD
+tag MYS
+tag ARC
+tdebug
+tag GRE
+tag PER
+tag ITA
+tag PUN
+tag MUG
+tag MNP
+tag ITA
+tdebug
+tag RAJ
+tdebug
+tag deh
+tdebug
+tag bhc
+tag AFG
+tag MUG
+tag BNG
+tag SOV
+tdebug
+tag JAP
+tag PER
+tag EGY
+tag LBA
+tag ORI
+tag LBA
+tag PER
+tag ORI
+tag TUr
 tag FRA
-tag SAV
+tag ITA
+tag GRe
+tag ORI
+tag PER
+tag ORI
+tag TUR
+tag ILL
+tag COG
+tag USA
+tag ITA
+reload ui
+reloadui
+tag RAJ
+tag SIN
+tag ita
+tag ITA
+tag AUS
+tag ITA
+
+tag FRA
+tag PUN
+tag SHA
+tag SUS
+tag FRA
+tag REM
+tag ILL
+tag ORI
+tag SOV
+tag GER
+tag HOL
+tag ROM
+tag ITA
+tag VIN
+tag JAP
+tag FRA
 tag SPR
+tag ENG
+tag ILL
+tag ORI
+tag PER
+tag ORI
+tag ETH
+tag ITA
+tag ROM
 tag FRA
+
+tag USA
+tag ITA
+tag AST
+tag SOV
+tag ORI
+tag KOR
+tag JAP
+tag POR
+tag FRA
+tag ENG
+tag ITA
+tag ORI
+tag ILL
+tag MUG
+yesman
+nocb
+tag MAR
+yesman
+tag MUG
+tag MAR
+tag BNG
+yesman
+tag MAR
+annex GWA
+annex BAR
+annex UDA
+tag ITA
+tag jap
+tag sov
 tag ENG
 tag YEM
 tag CAN
-tdebug
-tag AKX
+tag USA
+tag NUM
+tag POW
+tag NUM
+tag POW
+tag HAU
+tag USA
 tag CAN
-tag ENG
-tag CAN
-tdebug
-observe
-tag ENG
-tag PRS
-tag SAA
-tag SOV
-tag SIL
-tag PRS
-tag SIL
-tag EGY
-tdebug
-tag JAP
-focus.autocomplete
-tag SCO
-tag NIR
-tag WAL
-tag NIR
-tag SCO
-tag GXC
+tag WAB
+tag USA
 tag FRA
-tag CHI
-tdebug
-tag FRA
-tag ARG
-tag CHL
-tag ARG
-tag ENG
-tag FRA
-tag DEN
-reload countrycolors
-focus.autocomplete
-tag POR
-tag ITA
-tag POR
-tag ITA
-tag ROM
-tag ITA
-reload colors
-reload countrycolors
-tag POR
+tag ILL
 tag SPR
 tag ENG
-tag COG
+tag ORI
 tag ITA
-tag CZE
-tag SLo
-tag CZE
-tag SLO
-tag HUN
-tag SLO
-tag CZE
-tag HUN
-tag CAM
+tag FRA
+
+tag FRA
 tag GER
+tag FRA
+tag VIE
+
+tag HOL
+tag VIE
+tag HOL
 tag ITA
-tag HUN
-tag ITA
+tag ILL
+tag SLO
+tag ILL
+tag GER
+tag HOL
+tag WAB
+tag HOL
 tag SLO
 tag ITA
-event uscw.2
-event uscw.1
-event spain.1
-event uscw.1
-event spain.100
-event uscw.22
-event spain.6
-event uscw.1
-event uscw.2
-event uscw.1
-event ucsw.1
-event uscw.1
-tag D01
+tag CZE
+tag ROM
+tag IRE
+tag BRI
+tag ENG
+tag FRA
+tag SHA
+tag SPR
+tag ITA
+tag ARM
+tag SUS
+tag ORI
+tag CZE
+tag ILL
+tag BRI
+tag ILL
+tag SPR
+tag ORI
+tag PER
+tag ORI
+tag PER
+tag ILL
+tag GER
+tag HOL
+tag ORI
+tag POL
+tag ORI
+tag ILL
+tag ITA
+tag FRA
+tag ORI
+tag POL
+tag ORI
+event india.1
+event dev.1
+tag VIE
+tag ILL
+tag ORI
+nocb
+yesman
 tag USA
-event uscw.2
-tag D01
-tag USA
-event uscw.2
-event uscw.1
-tag D01
-event uscw.1
-event uscw.2
-tag D01
-tag USA
-taG raj
+tag fra
 tag ita
-tag OHX
-tag MNT
+tag ger
+tag jap
+tag sov
+tag MAN
+tag chi
+tag MEN
+tag SOV
+yesman
+nocb
+tag MEN
+tag SOV
+tag ENG
+tag JAP
+tag CHI
+annex MAN
+tag JAP
+tag ITA
+tag SOV
+tag ENG
+tag SCO
+tag ENG
+tag SCO
+tag ENG
+tag ARG
+tag DOM
+tag ENG
+tag JOL
+tag ENG
+tag MLI
+tag ENG
+tag JAP
+tag ENG
+annex ENG
+annex FRA
+annex VIE
+annex SPR
+annex ILL
+annex ORI
+annex SLO
+annex HOL
+annex ROM
+annex SUS
+annex SHA
+annex PER
+annex SAU
+tag JAP
+tag ENG
+tag KOR
+tag JAP
+tag AET
+tag MON
+tag KOR
+tag JAP
+tag KOR
+tag CHI
+tag MON
+tag AET
+tag usa
+tag HOL
+event political.3
+event political.4
+event political.5
+event political.6
+event political.1
+event political.2
+event political.7
+event political.8
+event political.9
+event political.10
+event political.11
+event political.12
+pp 1000
+pp 10000
+tag EGY
+tag USA
+us_elections_hold_vote
+tag AZX
+reload loc
+tag AZX
+tdebug
+tag ENG
+tag FRA
+event political.11
+event political.15
+event political.16
+event politicail.17
+event political.17
+event political.18
+event political.19
+event political.20
+tag MNX
+event political.20
+tag WIX
+event political.20
+tag ILX
+event political.20
+tag MIX
+event political.20
+tag CAX
+yesman
+nocb
+tag PAX
+tag CAX
+tdebug
+tag PAX
+tag FAR
+tah FRA
+tag FRA
+tag POL
+tag SOV
+set_ruling_party marxism_leninism
+tdebug
+tag CAR
+anex PRU
+annex PRU
+annex PAR
+annex BOL
+annex ARG
+annex CHL
+annex ECU
+annex COL
+annex VEN
+annex CNT
+focus.autocomplete
+tag CAN
+tdebug
+tag BRI
+tdebug
+tag USA
+tag CAN
+tag USA
+tg LAK
+tag LAK
+
+tag USA
+tag CAN
+tag USA
+tag MUS
+tag LAK
+tag SOV
+tag REM
+tag UKR
+tag SOV
+tag UKR
+tag GEO
+tag ARM
+tag UKR
+tag ILL
+tag ORI
+tag VIE
+tag sPR
+tag ITA
+tag UKR
+tag SOV
+tag PER
+tag MAS
+tag HIM
+tag PER
+tag MAS
+tag HIM
+tag ORI
+tag AEG
+tag REM
+tag CYR
+tag REM
+tag SAU
+tag ITA
+tag ORI
+tag IL
+tag ILL
+tag ORI
+tag ITA
+tag ORI
+tag PER
+tag ILL
+tag PER
+tag ILL
+tag ORI
+tag ITA
+tag ILL
+tag SOV
+tag ILL
+tag ORI
+tdebug
+tag ITA
+tag PER
+tag ORI
+tag EST
+tag ORI
+tag REM
+tag SOV
+SOV
+tag SOV
+
+tag UKR
+tag USA
+tag UKR
+tag ITA
+tag RHA
+tag PNA
+tag RHA
+tag ILY
+tag AFR
+tag MAU
+tag ILY
+tdebug

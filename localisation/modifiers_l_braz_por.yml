@@ -741,6 +741,7 @@
  MODIFIER_STABILITY_POPULARITY_FACTOR:0 "Modificador de Estabilidade de Popularidade do Partido"
  MODIFIER_STABILITY_WAR_FACTOR:0 "Modificador de Estabilidade de Penalidade de Guerra"
  MODIFIER_SURRENDER_LIMIT:0 "Limite de rendição"
+ MODIFIER_FORCED_SURRENDER_LIMIT:0 "Limite de rendição"
  MODIFIER_WAR_SUPPORT_FACTOR:0 "Suporte de Guerra"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "Suporte de Guerra Semanal"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "Ganho de Suporte de Guerra Semanal"

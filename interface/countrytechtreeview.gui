@@ -4293,7 +4293,7 @@ guiTypes = {
 		
 		gridboxtype = {
 			name = "research_groups_grid"
-			position = { x = 411 y = 1 }
+			position = { x = 422 y = 25 }
 			size = { width = 120 height = 60 }
 			slotsize = { width = 60 height = 60 }
 			max_slots_horizontal = 2

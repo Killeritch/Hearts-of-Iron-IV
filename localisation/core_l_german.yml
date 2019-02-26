@@ -883,6 +883,7 @@
  MENU_FORUM:0 "Hearts of Iron IV-Forum"
  MENU_FACEBOOK:0 "Hearts of Iron IV-Facebook"
  MENU_TWITTER:0 "Hearts of Iron IV-Twitter"
+ MENU_PRIVACY_POLICY:0 "Datenschutzbestimmungen"
  DISMISSED_ALERTS_MENU:0 "Verworfene Benachrichtigungen anzeigen"
  DISMISSED_ALERTS_NONE:0 "Keine verworfenen aktiven Benachrichtigungen"
  DISMISSED_ALERTS_DESC_HEADER:0 "Diese Benachrichtigungen werden hinzugefügt:"

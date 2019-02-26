@@ -673,6 +673,7 @@
  MODIFIER_STABILITY_OFFENSIVE_WAR_FACTOR:0 "Модификатор стабильности от штрафа за наступательную войну"
  MODIFIER_STABILITY_DEFENSIVE_WAR_FACTOR:0 "Модификатор стабильности от штрафа за оборонительную войну"
  MODIFIER_SURRENDER_LIMIT:0 "Лимит капитуляции"
+ MODIFIER_FORCED_SURRENDER_LIMIT:0 "Лимит капитуляции"
  MODIFIER_WAR_SUPPORT_FACTOR:0 "Поддержка войны"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "Поддержка войны в неделю"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "Еженедельный прирост поддержки войны"

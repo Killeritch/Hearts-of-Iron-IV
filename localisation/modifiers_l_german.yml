@@ -741,6 +741,7 @@
  MODIFIER_STABILITY_POPULARITY_FACTOR:0 "Modifikator der Parteibeliebtheitsstabilität"
  MODIFIER_STABILITY_WAR_FACTOR:0 "Modifikator der Kriegsmalusstabilität"
  MODIFIER_SURRENDER_LIMIT:0 "Kapitulationsgrenze"
+ MODIFIER_FORCED_SURRENDER_LIMIT:0 "Kapitulationsgrenze"
  MODIFIER_WAR_SUPPORT_FACTOR:0 "Kriegsunterstützung"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "Wöchentliche Kriegsunterstützung"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "Wöchentlicher Kriegsunterstützungszugewinn"

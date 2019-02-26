@@ -40,6 +40,7 @@
  AN_ERROR_OCCURRED:0 "Une erreur s'est produite"
  BACK:0 "Retour"
  CLOSE:0 "Fermer"
+ NEXT:0 "Suivant"
  PDXL_TT_ANY_THIRD_PARTY_DLC:0 "Le DLC contient du contenu tiers. Il doit être désactivé lorsque vous diffusez ou enregistrez une partie à des fins publiques."
  PDXL_UNGRACEFUL_EXIT:0 "Plantage"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "Il semble que le jeu a planté. Nous envoyer un rapport sur ce plantage nous aiderait à identifier le problème.\n\n§YEnvoyer un rapport de plantage en arrière-plan ?§!"

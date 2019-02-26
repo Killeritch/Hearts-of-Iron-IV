@@ -1,4 +1,39 @@
 ################################################################
+########            Hotfix 1.5.4 "Cornflakes"           ########
+################################################################
+- Added information dialogs to comply with the EU General Data Protection Regulation (GDPR).
+- Fixed an issue common in China where takeover of nation territory from events and during war would drop all foreign occupation.
+- Fixed a crash in some mods when an admiral would gain spotting traits in a certain order.
+
+
+################################################################
+########            Hotfix 1.5.3 "Cornflakes"           ########
+################################################################
+
+##################################
+# AI
+##################################
+- Improved ai use of planes and air missions
+
+##################################
+# Bugfix
+##################################
+- Hotjoining in multiplayer or loading saves no longer breaks the 3d model viewer
+- 3d model viewer has some improved UI work and avoids overlap on designer icon in tech screen
+- Manchukuo assertiveness focus now grants new puppet level as expected
+- Restored diplomatic information of friends and enemies list immediately after reloading a save.
+- Prevented extreme cases of unoccupied countries with no remaining war support from immediately surrendering to an enemy in an offensive war after winning a separate defensive war.
+
+
+##################################
+# Stability & Performance
+##################################
+- Added safety layers to rendering that should hopefully avoid some crashes on OSX and on AMD gfx cards
+- Added a performance optimization tied to non-existant nations calculating strategies, was more apparent on big mods
+- Fixed a rare crash when a country tried to declare a war on a puppet of another country that is in the same faction as aggressor.
+- Fixed a rare CTD case when someone accepts invitation to a war when they shouldn't have.
+
+################################################################
 ########            Patch 1.5.2 "Cornflakes"            ########
 ################################################################
 

@@ -40,6 +40,7 @@
  AN_ERROR_OCCURRED:0 "An error occurred"
  BACK:0 "Back"
  CLOSE:0 "Close"
+ NEXT:0 "Next"
  PDXL_TT_ANY_THIRD_PARTY_DLC:0 "You have enabled DLC with third party content. These should be disabled when you stream or record the game for the public."
  PDXL_UNGRACEFUL_EXIT:0 "Ungraceful Exit"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "It seems that the application closed ungracefully, sending us a crash report will help us track down your issue.\n\n§YSend crash report in the background?§!"

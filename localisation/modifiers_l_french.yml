@@ -672,6 +672,7 @@
  MODIFIER_STABILITY_OFFENSIVE_WAR_FACTOR:0 "Modificateur de stabilité lié à la guerre offensive"
  MODIFIER_STABILITY_DEFENSIVE_WAR_FACTOR:0 "Modificateur de stabilité lié à la guerre défensive"
  MODIFIER_SURRENDER_LIMIT:0 "Limite de capitulation"
+ MODIFIER_FORCED_SURRENDER_LIMIT:0 "Limite de capitulation"
  MODIFIER_WAR_SUPPORT_FACTOR:0 "Soutien à la guerre"
  MODIFIER_WAR_SUPPORT_WEEKLY:0 "Soutien hebdomadaire à la guerre"
  MODIFIER_WAR_SUPPORT_WEEKLY_FACTOR:0 "Gain hebdomadaire de soutien à la guerre"

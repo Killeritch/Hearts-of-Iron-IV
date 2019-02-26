@@ -60,6 +60,7 @@
  CANCEL:0 "Cancelar"
  BACK:0 "Atrás"
  CLOSE:0 "Cerrar"
+ NEXT:0 "Siguiente"
  PDXL_UNGRACEFUL_EXIT:0 "Salir sin gracia"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "Parece que la aplicación se cerró sin gracia, el envío de un informe de bloqueo le ayudará a localizar el problema.\n\n§YEnviar informe de bloqueo en el fondo?§!"
  PDXL_UNGRACEFUL_EXIT_SKIP:0 "Omitir"

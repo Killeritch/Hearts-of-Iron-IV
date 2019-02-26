@@ -173,6 +173,12 @@ spriteTypes = {
 		name = "GFX_value_bg"
 		textureFile = "gfx/interface/generic_bg.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_division_3d_entry"
+		textureFile = "gfx/interface/division_3d_entry.dds"
+		noOfFrames = 2
+	}
 
 	corneredTileSpriteType = {
 		name = "GFX_generic_background"

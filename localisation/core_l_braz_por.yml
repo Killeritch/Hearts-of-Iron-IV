@@ -883,6 +883,7 @@
  MENU_FORUM:0 "Hearts of Iron IV Fórum"
  MENU_FACEBOOK:0 "Hearts of Iron IV Facebook"
  MENU_TWITTER:0 "Hearts of Iron IV Twitter"
+ MENU_PRIVACY_POLICY:0 "Política de Privacidade"
  DISMISSED_ALERTS_MENU:0 "Exibir alertas descartados"
  DISMISSED_ALERTS_NONE:0 "Não há nenhum alerta descartado ativo"
  DISMISSED_ALERTS_DESC_HEADER:0 "Os seguintes alertas serão adicionados:"

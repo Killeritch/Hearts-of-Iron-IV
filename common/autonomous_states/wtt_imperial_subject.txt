@@ -37,8 +37,10 @@ autonomy_state = {
 		has_dlc = "Waking the Tiger"
 
 		original_tag = MAN
-		
-		has_completed_focus = MAN_assertiveness
+		OR = {
+			has_country_flag = MAN_assertiveness
+			has_completed_focus = MAN_assertiveness
+		}
 			
 		
 		OR = {

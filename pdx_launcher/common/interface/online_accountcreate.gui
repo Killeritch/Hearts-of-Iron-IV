@@ -667,6 +667,26 @@ guiTypes =
 				position = { x= -300 y = 220 }			
 			}
 			
+			instantTextBoxType={
+				name = "online_accountcreate_read_privacy_policy_label"
+				position = { x= -265 y = 270 }
+				Orientation = "UPPER_RIGHT"	
+				text = "HAVE_READ_PRIVACY_POLICY"
+				font = @accountcreate_label_font
+				maxWidth = 140
+				maxHeight = 32	
+				format = left
+				fixedsize = no
+				truncate = no
+			}
+
+			checkboxType = {
+				name = "online_accountcreate_read_privacy_policy_check"
+				Orientation = "UPPER_RIGHT"	
+				quadTextureSprite = "GFX_checkbox"
+				position = { x= -300 y = 270 }
+			}
+			
 			guiButtonType = {
 				name = "online_accountcreate_tos"
 				quadTextureSprite = "GFX_common_button"

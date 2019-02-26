@@ -54,6 +54,7 @@
  AN_ERROR_OCCURRED:0 "Es ist ein Fehler aufgetreten"
  BACK:0 "Zurück"
  CLOSE:0 "Schließen"
+ NEXT:0 "Weiter"
  PDXL_TT_ANY_THIRD_PARTY_DLC:0 "Sie haben DLC mit Inhalten von Dritten aktiviert. Sie sollten den DLC deaktivieren, wenn Sie das Spiel streamen oder für die Öffentlichkeit aufnehmen."
  POPS_UNEXPECTED_ERROR: "Es ist ein unerwarteter Fehler aufgetreten."
  PDXL_UNGRACEFUL_EXIT:0 "Unerwartet geschlossen"
