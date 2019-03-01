@@ -1,42 +1,42 @@
-ai_historical_focus_list_USA = {
-	ai_national_focuses = {
-		USA_issue_war_bonds
-		USA_wartime_industry
-		USA_office_of_strategic_services
-		USA_manifest_destiny
-		USA_scientist_haven
-		USA_first_special_service_force
-		USA_wpa
-		USA_war_propaganda
-		USA_military_construction
-		USA_USACE_projects
-		USA_prepare_intervention
-		USA_the_giant_wakes
-		USA_limited_intervention
-		USA_extra_tech_team
-		USA_arsenal_of_democracy
-		USA_liberty_ships
-		USA_manhattan_project
-		USA_war_plan_black
-		USA_war_plan_orange
-		USA_embargo_germany
-		USA_embargo_japan
-		USA_destroyers_for_bases
-		USA_pearl_harbor_gambit
-		USA_defense_of_the_pacific
-		USA_fascist_menace
-		USA_air_war_plans_division
-		USA_bureau_of_ships
-		USA_carrier_primacy
-		USA_strategic_bombing
-		USA_escort_effort
-		USA_amphibious_operations
-		USA_bureau_of_aeronautics
-		USA_convoy_tactics
-		USA_expand_the_USMC
-		USA_combined_bomber_offensive
-	}
-}
+#ai_historical_focus_list_USA = {
+#	ai_national_focuses = {
+#		USA_issue_war_bonds
+#		USA_wartime_industry
+#		USA_office_of_strategic_services
+#		USA_manifest_destiny
+#		USA_scientist_haven
+#		USA_first_special_service_force
+#		USA_wpa
+#		USA_war_propaganda
+#		USA_military_construction
+#		USA_USACE_projects
+#		USA_prepare_intervention
+#		USA_the_giant_wakes
+#		USA_limited_intervention
+#		USA_extra_tech_team
+#		USA_arsenal_of_democracy
+#		USA_liberty_ships
+#		USA_manhattan_project
+#		USA_war_plan_black
+#		USA_war_plan_orange
+#		USA_embargo_germany
+#		USA_embargo_japan
+#		USA_destroyers_for_bases
+#		USA_pearl_harbor_gambit
+#		USA_defense_of_the_pacific
+#		USA_fascist_menace
+#		USA_air_war_plans_division
+#		USA_bureau_of_ships
+#		USA_carrier_primacy
+#		USA_strategic_bombing
+#		USA_escort_effort
+#		USA_amphibious_operations
+#		USA_bureau_of_aeronautics
+#		USA_convoy_tactics
+#		USA_expand_the_USMC
+#		USA_combined_bomber_offensive
+#	}
+#}
 
 ai_focus_defense_USA = {
 	research = {

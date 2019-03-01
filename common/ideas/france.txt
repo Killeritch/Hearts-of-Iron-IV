@@ -360,6 +360,10 @@ ideas = {
 			}			
 			available = {
 				has_completed_focus = FRA_leftist_rhetoric
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { communist_revolutionary }
@@ -382,7 +386,12 @@ ideas = {
 				original_tag = "FRA"
 			}
 			
-
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			
 			traits = { democratic_reformer }
 
@@ -405,6 +414,10 @@ ideas = {
 			}
 			available ={
 				has_completed_focus = FRA_right_wing_rhetoric
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { fascist_demagogue }

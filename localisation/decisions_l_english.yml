@@ -10,3 +10,4 @@
  TAKE_DECISION_HEADER:0 "§HTake decision§!\n\n"
  DECISION_COST_DESC:0 "It costs £pol_power $VAL|H0$ to take the decision"
  DECISION_COST_NOT_ENOUGH:0 "It costs £pol_power $VAL|HR0$ to take the decision"
+ ON_MAP_DECISION_NAME_DEFAULT:0 "Find decisions on the map."

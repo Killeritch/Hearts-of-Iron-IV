@@ -37,6 +37,11 @@ USA_save_the_aussies = {
 		id = "AST"			
 		value = 200
 	}
+	ai_strategy = {
+		type = support
+		id = "AST"			
+		value = 100
+	}
 }
 
 USA_save_india = { # in the case where japan has beaten china and is moving on india we should step up
@@ -358,5 +363,156 @@ USA_protect_against_extremism = { # Reverse strategy
 		type = support
 		id = "USA"
 		value = 100
+	}
+}
+
+USA_naval_role_ratios_historical = {
+	enable = {
+		has_dlc = "Man the Guns"
+		original_tag = USA
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 165 
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 40
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = 15
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 1		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 1		 #1 to 2
+	}
+}
+
+USA_semper_fi = {
+	enable = {
+		original_tag = USA
+		has_war_with = JAP
+	}
+	abort = {
+		JAP = {
+			has_capitulated = yes
+		}
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = marines
+		value = 5
+	}
+	ai_strategy = {
+		type = template_prio
+		id = marines
+		value = 100
+	}
+}
+
+USA_home_land_is_safe = {
+	enable = {
+		original_tag = USA
+		NOT = {
+			OR = {
+				has_civil_war = yes
+				has_war_with = CAN
+				has_war_with = MEX
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	
+	ai_strategy = {
+		type = garrison
+		value = -60
+	}
+}
+
+USA_democracy_on_JAP = {
+	enable = {
+		original_tag = USA
+		has_war_with = JAP
+	}
+	abort = {
+		JAP = {
+			has_capitulated = yes
+		}
+	}
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 105 # perl harbor
+	}
+}
+
+USA_help_waters_around_GER = {
+	enable = {
+		original_tag = USA
+		is_in_faction_with = ENG
+		NOT = { has_war_with = JAP }
+		has_war_with = GER
+		ENG = { has_war_with = GER }
+	}
+	abort = {
+		GER = {
+			has_capitulated = yes
+		}
+	}
+
+	ai_strategy = {
+		type = strike_force_home_base
+		id = 18 # channel
 	}
 }

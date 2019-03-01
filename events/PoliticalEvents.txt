@@ -5,19 +5,25 @@
 add_namespace = political
 
 # Communism on the Rise
-#country_event = {
-#	id = political.1
-#	title = political.1.t
-#	desc = political.1.d
-#	picture = GFX_report_event_worker_protests
-#	
-#	is_triggered_only = yes
-#
-#	trigger = {
-#		NOT = { has_government = communism }
-#	}
-#	
-#	# Seek government support
+country_event = {
+	id = political.1
+	title = political.1.t
+	desc = political.1.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		NOT = { has_government = communism }
+		communism > 0.6
+		check_has_focus_tree_to_switch_to_communism = yes
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# Seek government support
 #	option = {
 #		name = political.1.a
 #		trigger = {
@@ -33,8 +39,8 @@ add_namespace = political
 #		clr_country_flag = communism_popular_movement
 #		set_country_flag = communism_political_movement
 #	}
-#
-#	# Seek popular support
+
+	# Seek popular support
 #	option = {
 #		name = political.1.b
 #		custom_effect_tooltip = political.1.b.tt
@@ -42,7 +48,26 @@ add_namespace = political
 #		clr_country_flag = communism_government_support
 #		set_country_flag = communism_popular_movement
 #	}
-#}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
 
 # Marxist Sympathies in Government
 #country_event = {
@@ -141,6 +166,12 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			not = { tag = USA }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -184,6 +215,12 @@ country_event = {
 					is_puppet = no
 				}
 			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			not = { tag = USA }
 		}
 	}
 
@@ -286,27 +323,33 @@ country_event = {
 #}
 
 # Fascism on the Rise
-#country_event = {
-#	id = political.7
-#	title = political.7.t
-#	desc = political.7.d
-#	picture = GFX_report_event_fascist_gathering
-#	
-#	is_triggered_only = yes
-#
-#	trigger = {
-#		NOT = { has_government = fascism }
-#	}
-#	
-#	# Seek government support
+country_event = {
+	id = political.7
+	title = political.7.t
+	desc = political.7.d
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+		NOT = { has_government = fascism }
+		fascism > 0.6
+		check_has_focus_tree_to_switch_to_fascism = yes
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# Seek government support
 #	option = {
 #		name = political.7.a
 #		custom_effect_tooltip = political.7.a.tt
 #		clr_country_flag = fascism_popular_movement
 #		set_country_flag = fascism_political_movement
 #	}
-#
-#	# Seek popular support
+
+	# Seek popular support
 #	option = {
 #		name = political.7.b
 #		custom_effect_tooltip = political.7.b.tt
@@ -314,7 +357,26 @@ country_event = {
 #		clr_country_flag = fascism_government_support
 #		set_country_flag = fascism_popular_movement
 #	}
-#}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
 
 # Fascist Sympathies in the Military
 #country_event = {
@@ -513,6 +575,12 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			not = { tag = USA }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -578,8 +646,8 @@ country_event = {
 #	trigger = {
 #		NOT = { has_government = democratic }
 #	}
-#
-#	# Seek government support
+
+	# Seek government support
 #	option = {
 #		name = political.13.a
 #		custom_effect_tooltip = political.13.a.tt
@@ -587,8 +655,8 @@ country_event = {
 #		clr_country_flag = democracy_opposition_formed
 #		set_country_flag = democracy_political_movement
 #	}
-#
-#	# Seek popular support
+
+	# Seek popular support
 #	option = {
 #		name = political.13.b
 #		custom_effect_tooltip = political.13.b.tt
@@ -599,37 +667,50 @@ country_event = {
 #}
 
 # [Ruling Party] Debates Democracy
-#country_event = {
-#	id = political.14
-#	title = political.14.t
-#	desc = political.14.d
-#	picture = GFX_report_event_journalists_speech
-#	
-#	trigger = {
-#		has_idea_with_trait = democratic_reformer
-#		NOT = { has_government = democratic }
-#		NOT = { has_country_flag = democracy_government_support }
-#	}
-#	
-#	mean_time_to_happen = {
-#		days = 400
-#		modifier = {
-#			factor = 0.5
-#			has_country_flag = democracy_political_movement
-#		}
-#		modifier = {
-#			factor = 0.5
-#			democratic > 0.5
-#		}
-#	}
-#	
+country_event = {
+	id = political.14
+	title = political.14.t
+	desc = political.14.d
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		NOT = { has_government = democratic }
+		democratic > 0.6
+		check_has_focus_tree_to_switch_to_democratic = yes
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
 #	option = {
 #		name = political.14.a
 #		custom_effect_tooltip = political.14.a.tt
 #		clr_country_flag = democracy_political_movement
 #		set_country_flag = democracy_government_support
 #	}
-#}
+
+	# We need a referendum
+	option = {
+		name = political.14.c
+		add_political_power = -100
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+
+	# Not right now
+	option = {
+		name = political.14.e
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
 
 # Democratic Opposition Forming
 country_event = {
@@ -1003,6 +1084,10 @@ country_event = {
 				tag = CHI
 			}			
 		}
+		not = {
+			original_tag = USA
+			has_dlc = "Man the Guns"
+		}
 		has_civil_war = no
 		check_has_focus_tree_to_switch_to_communism = yes
 	}
@@ -1250,6 +1335,7 @@ country_event = {
 			original_tag = ROOT
 			has_government = ROOT
 		}
+		NOT = { has_country_flag = ENG_communist_civil_war }
 	}
 
 	mean_time_to_happen = {

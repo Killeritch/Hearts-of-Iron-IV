@@ -7,6 +7,7 @@ state={
 	state_category = town
 
 	history={
+		add_core_of = BRM
 		owner = RAJ
 		buildings = {
 			infrastructure = 3

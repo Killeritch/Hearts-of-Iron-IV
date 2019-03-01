@@ -10,6 +10,10 @@ PRC_alternate_plan_1 = {
 				has_focus_tree = china_communist_focus
 			}
 		}
+		has_game_rule = {
+			rule = PRC_ai_behavior
+			option = DEFAULT
+		}
 		JAP = {
 			has_government = communism
 		}
@@ -69,7 +73,14 @@ PRC_alternate_plan_2 = {
 				has_focus_tree = china_communist_focus
 			}
 		}
-		has_completed_focus = PRC_social_democracy
+		OR = {
+			has_completed_focus = PRC_social_democracy
+			has_country_flag = PRC_AI_RANDOM_ALTERNATE_1
+			has_game_rule = {
+				rule = PRC_ai_behavior
+				option = ALTERNATE
+			}
+		}
 	}
 	abort = {
 		always = no
@@ -129,7 +140,10 @@ PRC_alternate_plan_3 = {
 				has_focus_tree = china_communist_focus
 			}
 		}
-		has_completed_focus = PRC_marxist_orthodoxy
+		OR = {
+			has_completed_focus = PRC_marxist_orthodoxy
+			has_country_flag = PRC_AI_RANDOM_ALTERNATE_2
+		}
 	}
 	abort = {
 		always = no

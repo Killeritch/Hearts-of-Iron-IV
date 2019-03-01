@@ -657,7 +657,7 @@ ideas = {
 			equipment_bonus = {
 				heavy_cruiser = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
 					armor_value = 0.2
-					attack = 0.1
+					lg_attack = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -678,17 +678,16 @@ ideas = {
 
 			}
 			
-			equipment_bonus = {
-				heavy_cruiser = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
+			equipment_bonus = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
+				ship_hull_cruiser = {
 					armor_value = 0.2
-					attack = 0.1
+					hg_attack = 0.1
 					build_cost_ic = -0.1
 					instant = yes
 				}
 			
-				destroyer = { #If you change this - Change the custom tooltip too: ROM_coastal_defense_ships_tech_tt
+				ship_hull_light = {
 					torpedo_attack = 0.2
-					fire_range = -0.2
 					instant = yes
 				}
 			}
@@ -699,10 +698,17 @@ ideas = {
 
 		ROM_iuliu_maniu = {
 
-			picture = generic_democratic_europe
+			picture = generic_democratic_reformer_western_european_2d
 
 			allowed = {
 				original_tag = ROM
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { democratic_reformer }
@@ -710,7 +716,7 @@ ideas = {
 
 		ROM_gheorghe_gheorghiu_dej = {
 
-			picture = generic_communist_europe
+			picture = generic_communist_revolutionary_western_european_2d
 
 			available = {
 				if = {
@@ -718,6 +724,10 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					has_completed_focus = ROM_appoint_soviet_friendly_government
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 
@@ -778,7 +788,7 @@ ideas = {
 
 		ROM_mihail_sturdza = {
 
-			picture = generic_fascist_demagogue_eastern_european_2d
+			picture = generic_fascist_demagogue_western_european_2d
 
 			available = {
 				if = {
@@ -786,6 +796,10 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					has_completed_focus = ROM_appoint_german_friendly_government
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}			
 
@@ -1159,24 +1173,15 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				destroyer = {
-					attack = 0.1
+				ship_hull_light = {
+					lg_attack = 0.1
 					naval_range = -0.5
 					build_cost_ic = -0.20
 				}
-				light_cruiser = {
-					attack = 0.1
+				ship_hull_cruiser = {
+					lg_attack = 0.1
 					naval_range = -0.5
 					build_cost_ic = -0.20
-				}
-				heavy_cruiser = {					
-					shore_bombardment = 0.1
-				}
-				battle_cruiser = {					
-					shore_bombardment = 0.1
-				}
-				battleship = { 					
-					shore_bombardment = 0.1
 				}
 			}
 			
@@ -1205,18 +1210,13 @@ ideas = {
 			}
 			
 			equipment_bonus = {
-				heavy_cruiser = {
-					attack = 0.2
+				ship_hull_cruiser = {
+					hg_attack = 0.2
 					naval_range = -0.5
 					armor_value = 0.2
 				}
-				battle_cruiser = {
-					attack = 0.2
-					naval_range = -0.5
-					armor_value = 0.2
-				}
-				battleship = {
-					attack = 0.2
+				ship_hull_heavy = {
+					hg_attack = 0.2
 					naval_range = -0.5
 					armor_value = 0.2
 				}

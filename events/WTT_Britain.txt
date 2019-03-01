@@ -5,7 +5,7 @@ country_event = {
 	id = wtt_britain.24
 	title = wtt_britain.24.t
 	desc = wtt_britain.24.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
 	
@@ -15,6 +15,10 @@ country_event = {
 			factor = 80
 			modifier = {
 				has_government = fascism
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = yes
 				factor = 0
 			}
 		}
@@ -35,7 +39,7 @@ country_event = {
 	id = wtt_britain.25
 	title = wtt_britain.25.t
 	desc = wtt_britain.25.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
 	
@@ -82,7 +86,7 @@ country_event = {
 	id = wtt_britain.26
 	title = wtt_britain.26.t
 	desc = wtt_britain.26.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 	
@@ -97,7 +101,7 @@ country_event = {
 	id = wtt_britain.27
 	title = wtt_britain.27.t
 	desc = wtt_britain.27.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 	
@@ -218,7 +222,7 @@ country_event = {
 	id = wtt_britain.28
 	title = wtt_britain.28.t
 	desc = wtt_britain.28.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	
@@ -233,7 +237,7 @@ country_event = {
 	id = wtt_britain.29
 	title = wtt_britain.29.t
 	desc = wtt_britain.29.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
 	
@@ -248,7 +252,7 @@ country_event = {
 	id = wtt_britain.30
 	title = wtt_britain.30.t
 	desc = wtt_britain.30.d
-	picture = GFX_report_event_indian_soldiers #todo
+	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
 	
@@ -348,6 +352,8 @@ country_event = {
 	}
 
 	mean_time_to_happen = { days = 2 }
+
+	fire_only_once = yes
 	
 	option = {
 		name = wtt_britain_lease_azores.4.a

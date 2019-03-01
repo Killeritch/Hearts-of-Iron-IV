@@ -91,7 +91,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 30
+			factor = 15
 						
 			modifier = {
 				factor = 10
@@ -133,7 +133,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 			
 			modifier = {
 				factor = 10
@@ -164,7 +164,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 						
 			modifier = {
 				factor = 10
@@ -195,7 +195,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 			
 			modifier = {
 				factor = 10
@@ -345,6 +345,7 @@ technologies = {
 		
 		categories = {
 			industry
+			concentrated_industry_category
 		}
 		
 		ai_research_weights = {
@@ -383,6 +384,7 @@ technologies = {
 		
 		categories = {
 			industry
+			concentrated_industry_category
 		}
 		
 		ai_research_weights = {
@@ -410,7 +412,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 			
 			modifier = {
 				factor = 10
@@ -420,6 +422,7 @@ technologies = {
 		
 		categories = {
 			industry
+			concentrated_industry_category
 		}
 		
 		ai_research_weights = {
@@ -447,7 +450,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 						
 			modifier = {
 				factor = 10
@@ -457,6 +460,7 @@ technologies = {
 		
 		categories = {
 			industry
+			concentrated_industry_category
 		}
 		
 		ai_research_weights = {
@@ -494,6 +498,7 @@ technologies = {
 		
 		categories = {
 			industry
+			concentrated_industry_category
 		}
 		
 		ai_research_weights = {
@@ -568,6 +573,7 @@ technologies = {
 		
 		categories = {
 			industry
+			dispersed_industry_category
 		}
 		
 		ai_research_weights = {
@@ -608,6 +614,7 @@ technologies = {
 		
 		categories = {
 			industry
+			dispersed_industry_category
 		}
 		
 		ai_research_weights = {
@@ -638,7 +645,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 						
 			modifier = {
 				factor = 10
@@ -648,6 +655,7 @@ technologies = {
 		
 		categories = {
 			industry
+			dispersed_industry_category
 		}
 		
 		ai_research_weights = {
@@ -678,7 +686,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 						
 			modifier = {
 				factor = 10
@@ -688,6 +696,7 @@ technologies = {
 		
 		categories = {
 			industry
+			dispersed_industry_category
 		}
 		
 		ai_research_weights = {
@@ -714,7 +723,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 15
 			
 			
 			modifier = {
@@ -725,11 +734,367 @@ technologies = {
 		
 		categories = {
 			industry
+			dispersed_industry_category
 		}
 		
 		ai_research_weights = {
 			defensive = -1.0
 		}
+	}
+
+	fuel_silos = {
+
+		enable_building = {
+			building = fuel_silo
+			level = 3
+		}
+				
+		path = {
+			leads_to_tech = synth_oil_experiments 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fuel_refining 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				oil > 10
+			}
+			modifier = {
+				factor = 3
+				oil > 20
+			}	
+			modifier = {
+				factor = 4
+				oil > 30
+			}	
+			
+			modifier = {
+				factor = 2
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 3
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 4
+				num_of_military_factories > 30
+			}	
+			modifier = {
+				factor = 4
+				num_of_military_factories > 40
+			}	
+			modifier = {
+				factor = 4
+				num_of_military_factories > 50
+			}	
+
+			modifier = {
+				factor = 2
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 3
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 4
+				num_of_naval_factories > 30
+			}	
+			modifier = {
+				factor = 4
+				num_of_naval_factories > 40
+			}
+			modifier = {
+				factor = 4
+				num_of_naval_factories > 50
+			}
+			
+			modifier = {
+				factor = 0.2
+				date < "1937.1.1"
+			}
+			modifier = {
+				factor = 0.4
+				date < "1938.1.1"
+			}
+		}
+	}
+
+	fuel_refining = {
+
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+					
+		path = {
+			leads_to_tech = fuel_refining2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				tag = USA
+				factor = 0.5
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 10
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}
+		}
+		
+	}
+
+	fuel_refining2 = {
+		
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = fuel_refining3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		start_year = 1937
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				tag = USA
+				factor = 0.5
+			}	
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 20
+			}	
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}			
+		}
+		
+	}
+
+	fuel_refining3 = {
+		
+		fuel_gain_factor = 0.2
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = fuel_refining4 
+			research_cost_coeff = 1
+		}
+		research_cost = 3
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				tag = USA
+				factor = 0.5
+			}	
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}				
+		}		
+	}
+
+	fuel_refining4 = {
+		
+		fuel_gain_factor = 0.20
+		fuel_gain_factor_from_states = 0.1
+
+		path = {
+			leads_to_tech = fuel_refining5
+			research_cost_coeff = 1
+		}
+		research_cost = 3
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				tag = USA
+				factor = 0.5
+			}	
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 30
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 30
+			}				
+		}		
+	}
+
+	fuel_refining5 = {
+		
+		fuel_gain_factor = 0.20
+		fuel_gain_factor_from_states = 0.1
+
+		research_cost = 3
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				tag = USA
+				factor = 0.5
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0.25
+			}
+			modifier = {
+				factor = 1.5
+				num_of_military_factories > 40
+			}	
+
+			modifier = {
+				factor = 1.5
+				num_of_naval_factories > 40
+			}				
+		}		
 	}
 	
 	synth_oil_experiments = {
@@ -752,7 +1117,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = 2 }
 		}
 		
 		categories = {
@@ -761,7 +1126,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = JAP
+				}
+				has_war = yes
+				factor = 5
+			}
 			modifier = {
 				factor = 0.5
 				oil > 10
@@ -783,13 +1157,7 @@ technologies = {
 	
 	oil_processing = {
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
+		fuel_gain_factor_from_states = 0.5
 
 		start_year = 1937
 
@@ -811,7 +1179,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = JAP
+				}
+				has_war = yes
+				factor = 25
+			}
 			modifier = {
 				factor = 0.5
 				oil > 10
@@ -835,13 +1212,7 @@ technologies = {
 	
 	improved_oil_processing = {
 		
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
+		fuel_gain_factor_from_states = 0.5
 
 		path = {
 			leads_to_tech = advanced_oil_processing
@@ -862,7 +1233,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = JAP
+				}
+				has_war = yes
+				factor = 25
+			}
 			modifier = {
 				factor = 0.5
 				oil > 10
@@ -874,7 +1254,12 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				oil > 30
-			}			
+			}	
+			modifier = {
+				original_tag = GER			
+				has_war = yes
+				factor = 3
+			}		
 		}
 		
 		ai_research_weights = {
@@ -886,13 +1271,7 @@ technologies = {
 	
 	advanced_oil_processing = {
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
+		fuel_gain_factor_from_states = 0.5
 
 		path = {
 			leads_to_tech = modern_oil_processing
@@ -913,7 +1292,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+					tag = JAP
+				}
+				has_war = yes
+				factor = 25
+			}
 			modifier = {
 				factor = 0.5
 				rubber > 10
@@ -937,13 +1325,7 @@ technologies = {
 
 	modern_oil_processing = {
 
-		on_research_complete = {
-			modify_building_resources = {
-				building = synthetic_refinery
-				resource = oil
-				amount = 1
-			}
-		}
+		fuel_gain_factor_from_states = 0.5
 		
 		research_cost = 1.5
 		start_year = 1943
@@ -1011,7 +1393,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+				}
+				has_war = yes
+				factor = 15
+			}
 			modifier = {
 				factor = 0.5
 				rubber > 10
@@ -1062,7 +1452,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+				}
+				has_war = yes
+				factor = 15
+			}
 			modifier = {
 				factor = 0.5
 				rubber > 10
@@ -1113,7 +1511,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = ITA
+				}
+				has_war = yes
+				factor = 15
+			}
 			modifier = {
 				factor = 0.5
 				rubber > 10
@@ -1394,7 +1800,7 @@ technologies = {
 			
 			modifier = {
 				factor = 0.5
-				NOT = { has_war = yes }
+				has_war = no
 			}
 			
 			modifier = {

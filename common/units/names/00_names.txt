@@ -1389,6 +1389,64 @@ CUB = {
 }
 
 CZE = {
+	submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = {
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+		}
+	}
+	destroyer = {
+		prefix = ""
+		generic = { 
+			"Destroyer"
+		}
+		unique = {
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+		}
+	}
+	light_cruiser = {
+		prefix = ""
+		generic = { "Light Cruiser" }
+		unique = {
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+		}
+	}
+	heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+		}
+	}
+	battle_cruiser = {
+		prefix = ""
+		generic = { "Battlecruiser" }
+		unique = {
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+		}
+	}
+	battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+		}
+	}
+	carrier = {
+		prefix = ""
+		generic = { "Carrier" }
+		unique = {
+			"Praha" "Brno" "Ostrava" "Plzeň" "Liberec" "Olomouc" "Ústí nad Labem" "Hradec Králové" "České Budějovice" "Pardubice" "Havířov"
+			"Zlín" "Kladno" "Most" "Karviná" "Frýdek-Místek" "Opava" "Karlovy Vary" "Teplice" "Děčín" "Jihlava" "Chomutov" "Přerov" "Mladá Boleslav"
+		}
+	}
 	air_wing_names_template = AIR_WING_NAME_CZE_FALLBACK
 
 	#Air wings can only be named through archetype
@@ -1525,7 +1583,7 @@ DEN = {
 		prefix = "HDMS"
 		generic = { "Tung Cruiseren" }
 		unique = {
-			"Niels Juel" "Peder Skram" "Vitus Bering" "Sælen" "Hvalrossen" "Isbjørn" "Flynderen" "Mågen" "Ørnen" "Falken" "Ulken" 
+			"Niels Iuel" "Peder Skram" "Vitus Bering" "Sælen" "Hvalrossen" "Isbjørn" "Flynderen" "Mågen" "Ørnen" "Falken" "Ulken" 
 			"Olfert Fischer" "Fyen" "Hekla"
 		}
 	}
@@ -2749,8 +2807,22 @@ MEX = {
 		prefix = "ARM"
 		generic = { "Submarino" }
 		unique = {
-			"Ponciano Arriaga" "Mariano Matamoros" "Felipe Xicotencatl" "Ignacio Altamirano" "Ignacio de la Llave" "Juan Aldama" "Leandro Valle" 
-			"SebastiAn Lerdo de Tejada" "Juarez" "Netzahualcóyotl" "Manuel Azueta" "Bravo" "Galeana" "Allende" "Abasolo" "Victoria" "Mina" "Huracan" "Tormenta" 
+			#Mexico's longest rivers		
+			"Río Usumacinta" "Río Bravo" "Río Colorado" "Río Grijalva" "Río Nazas" "Río Aguanaval" "Río Culiacán" "Río Balsas" "Río Lerma" "Río Fuerte" "Río Pánuco" "Río Conchos" "Río Soto La Marina" "Río Yaqui" "Río San Fernando" "Río Mayo" "Río Tecolutla" "Río Jamapa" "Río Papaloapan" "Río Sinaloa" "Río Verde" "Río Concepción" "Río Coatzacoalcos" "Río San Lorenzo" "Río Sonoyta" "Río San Pedro Mezquital" "Agua Prieta"
+			#Geographic features that have had MEX ships named after them.
+			"Punta Morro" "Punta Mastun" "Cabo Corrientes" "Cabo Corzo" "Cabo Catoche" "Islas Coronado" "Isla Lobos" "Isla Guadalupe" "Isla Cozumel" 
+			#Weather (some have had MEX ships, some are added)
+			"Huracán" "Tormenta" "Ciclón" "Tempestad" "Tifón" "Relámpago" "Trueno" "Viento"
+			#MEX States
+			"Guanajuato" "Querétaro" "San Luis Potosí" "Baja California" "Chihuahua" "Coahuila" "Chiapas" "Tamaulipas" "Yucatán" "Tabasco" "Campeche" "Puebla" "Zacatecas" "Sonora" "Durango" "Oaxaca" "Jalisco" "Nuevo León" "Michoacán" "Sinaloa" "Nayarit" "Colima" "Aguascalientes" "Tlaxcala"
+			#MEX Cities
+			"Veracruz" "Tampico" "Mazatlán" "Acapulco" "Progreso" "Tehuantepec" "Pánuco" "Manzanillo" "Guadalajara" "Mérida" "Monterrey" "Tijuana" "Ecatepec" "Zapopan" "Culiacán" "Naucalpan" "Hermosillo" "Saltillo" "Mexicali" "Tlalnepantla de Baz" "Cancún" "Chimalhuacán" "Torreón" "Reynosa" "Tlaquepaque" "Toluca" "San Francisco Atizapán" "Cuautitlán Izcalli" "Apodaca" "Heroica Matamoros" "San Nicolás de los Garza" "Xalapa" "Tonalá" "Irapuato" "Nuevo Laredo" "Xico" "Villahermosa" "Celaya" "Cuernavaca" "Tepic" "Ixtapaluca"
+			#Revolutionary leaders
+			"Martín Javier Mina" "Pancho Villa" "Mariano Abasolo" "Ignacio Allende" "Juan Aldama" "Mariano Matamoros" "Pedro Sainz de Baranda" "Hermenegildo Galeana" "Juan Álvarez" "Miguel Ramos Arizpe" "Matías de Córdova" "José María Izazaga" "Ignacio López Rayón" "Vicente Guerrero" "José María Morelos" "Miguel Hidalgo" 
+			#Notable sailors
+			"Ángel Ortiz Monasterío" "José María de la Vega González" "Felipe Berríozábal" "David Porter" 
+			#Notable civilians
+			"Ignacio  Altamirano" "Ponciano Arriaga" "Guillermo Prieto" "Manuel Doblado" "Melchor Ocampo" "Francisco Zarco" "Ignacio Vallarta" "Andrés Quintana Roo" "Juan Bautista Morales" "Manuel Crescencio Rejón" "Antonio de la Fuente" "León Guzmán" "Ignacio Ramírez" "Ignacio Mariscal" "José María Marta" "Félix Romero" "José María Velasco" 
 		}
 	}
 	destroyer = {
@@ -2759,43 +2831,108 @@ MEX = {
 			"Destructor"
 		}
 		unique = {
-			"Ponciano Arriaga" "Mariano Matamoros" "Felipe Xicotencatl" "Ignacio Altamirano" "Ignacio de la Llave" "Juan Aldama" "Leandro Valle" 
-			"SebastiAn Lerdo de Tejada" "Juarez" "Netzahualcóyotl" "Manuel Azueta" "Bravo" "Galeana" "Allende" "Abasolo" "Victoria" "Mina" "Huracan" "Tormenta" 
+			#MEX States
+			"Guanajuato" "Querétaro" "San Luis Potosí" "Baja California" "Chihuahua" "Coahuila" "Chiapas" "Tamaulipas" "Yucatán" "Tabasco" "Campeche" "Puebla" "Zacatecas" "Sonora" "Durango" "Oaxaca" "Jalisco" "Nuevo León" "Michoacán" "Sinaloa" "Nayarit" "Colima" "Aguascalientes" "Tlaxcala"
+			#MEX Cities
+			"Veracruz" "Tampico" "Mazatlán" "Acapulco" "Progreso" "Tehuantepec" "Pánuco" "Manzanillo" "Guadalajara" "Mérida" "Monterrey" "Tijuana" "Ecatepec" "Zapopan" "Culiacán" "Naucalpan" "Hermosillo" "Saltillo" "Mexicali" "Tlalnepantla de Baz" "Cancún" "Chimalhuacán" "Torreón" "Reynosa" "Tlaquepaque" "Toluca" "San Francisco Atizapán" "Cuautitlán Izcalli" "Apodaca" "Heroica Matamoros" "San Nicolás de los Garza" "Xalapa" "Tonalá" "Irapuato" "Nuevo Laredo" "Xico" "Villahermosa" "Celaya" "Cuernavaca" "Tepic" "Ixtapaluca"
+			#Weather (some have had MEX ships, some are added)
+			"Huracán" "Tormenta" "Ciclón" "Tempestad" "Tifón" "Relámpago" "Trueno" "Viento"
+			#Revolutionary leaders
+			"Martín Javier Mina" "Pancho Villa" "Mariano Abasolo" "Ignacio Allende" "Juan Aldama" "Mariano Matamoros" "Pedro Sainz de Baranda" "Hermenegildo Galeana" "Juan Álvarez" "Miguel Ramos Arizpe" "Matías de Córdova" "José María Izazaga" "Ignacio López Rayón" "Vicente Guerrero" "José María Morelos" "Miguel Hidalgo"
+			#Notable sailors
+			"Ángel Ortiz Monasterío" "José María de la Vega González" "Felipe Berríozábal" "David Porter" 
+			#Notable civilians
+			"Ignacio  Altamirano" "Ponciano Arriaga" "Guillermo Prieto" "Manuel Doblado" "Melchor Ocampo" "Francisco Zarco" "Ignacio Vallarta" "Andrés Quintana Roo" "Juan Bautista Morales" "Manuel Crescencio Rejón" "Antonio de la Fuente" "León Guzmán" "Ignacio Ramírez" "Ignacio Mariscal" "José María Marta" "Félix Romero" "José María Velasco" 
 		}
 	}
 	light_cruiser = {
 		prefix = "ARM"
 		generic = { "Crucero Ligero" }
 		unique = {
-			"Guadalajara" "Pancho Villa" "Rio Lobo" "Merida" "Monterrey" "Rio Grande" "Tijuana" "Rio del Norte" "Chiapas" "Chuela" 
+			#Notable sailors
+			"Ángel Ortiz Monasterio" "José María de la Vega González" "Felipe Berríozábal" "David Porter" 
+			#Notable civilians
+			"Ignacio  Altamirano" "Ponciano Arriaga" "Guillermo Prieto" "Manuel Doblado" "Melchor Ocampo" "Francisco Zarco" "Ignacio Vallarta" "Andrés Quintana Roo" "Juan Bautista Morales" "Manuel Crescencio Rejón" "Antonio de la Fuente" "León Guzmán" "Ignacio Ramírez" "Ignacio Mariscal" "José María Marta" "Félix Romero" "José María Velasco"
+			#Military leaders not elsewhere covered
+			"Sebastián José Holzinger" "Blas Godínez Brito"
+			#Generals who fought the US in the 1800s
+			"Leandro Valle" "Ignacio de la Llave" "Felipe Xicoténcatl" "Santos Degollado"
+			#Fighters at Veracruz
+			"José Azueta" "Virgilio Uribe" "Manuel Azueta"
+			#MEX States
+			"Guanajuato" "Querétaro" "San Luis Potosí" "Baja California" "Chihuahua" "Coahuila" "Chiapas" "Tamaulipas" "Yucatán" "Tabasco" "Campeche" "Puebla" "Zacatecas" "Sonora" "Durango" "Oaxaca" "Jalisco" "Nuevo León" "Michoacán" "Sinaloa" "Nayarit" "Colima" "Aguascalientes" "Tlaxcala"
+			#MEX Cities
+			"Veracruz" "Tampico" "Mazatlán" "Acapulco" "Progreso" "Tehuantepec" "Pánuco" "Manzanillo" "Guadalajara" "Mérida" "Monterrey" "Tijuana" "Ecatepec" "Zapopan" "Culiacán" "Naucalpan" "Hermosillo" "Saltillo" "Mexicali" "Tlalnepantla de Baz" "Cancún" "Chimalhuacán" "Torreón" "Reynosa" "Tlaquepaque" "Toluca" "San Francisco Atizapán" "Cuautitlán Izcalli" "Apodaca" "Heroica Matamoros" "San Nicolás de los Garza" "Xalapa" "Tonalá" "Irapuato" "Nuevo Laredo" "Xico" "Villahermosa" "Celaya" "Cuernavaca" "Tepic" "Ixtapaluca"
 		}
 	}
 	heavy_cruiser = {
 		prefix = "ARM"
 		generic = { "Crucero Pesado" }
 		unique = {
-			"Guadalajara" "Pancho Villa" "Rio Lobo" "Merida" "Monterrey" "Rio Grande" "Tijuana" "Rio del Norte" "Chiapas" "Chuela" 
+			#Military leaders not elsewhere covered
+			"Sebastián José Holzinger" "Blas Godínez Brito"
+			#Generals who fought the US in the 1800s
+			"Leandro Valle" "Ignacio de la Llave" "Felipe Xicoténcatl" "Santos Degollado"
+			#Fighters at Veracruz
+			"José Azueta" "Virgilio Uribe" "Manuel Azueta"
+			#Notable sailors
+			"Ángel Ortiz Monasterio" "José María de la Vega González" "Felipe Berríozábal" "David Porter" 
+			#Notable civilians
+			"Ignacio  Altamirano" "Ponciano Arriaga" "Guillermo Prieto" "Manuel Doblado" "Melchor Ocampo" "Francisco Zarco" "Ignacio Vallarta" "Andrés Quintana Roo" "Juan Bautista Morales" "Manuel Crescencio Rejón" "Antonio de la Fuente" "León Guzmán" "Ignacio Ramírez" "Ignacio Mariscal" "José María Marta" "Félix Romero" "José María Velasco"
+			#MEX States
+			"Guanajuato" "Querétaro" "San Luis Potosí" "Baja California" "Chihuahua" "Coahuila" "Chiapas" "Tamaulipas" "Yucatán" "Tabasco" "Campeche" "Puebla" "Zacatecas" "Sonora" "Durango" "Oaxaca" "Jalisco" "Nuevo León" "Michoacán" "Sinaloa" "Nayarit" "Colima" "Aguascalientes" "Tlaxcala"
+			#MEX Cities
+			"Veracruz" "Tampico" "Mazatlán" "Acapulco" "Progreso" "Tehuantepec" "Pánuco" "Manzanillo" "Guadalajara" "Mérida" "Monterrey" "Tijuana" "Ecatepec" "Zapopan" "Culiacán" "Naucalpan" "Hermosillo" "Saltillo" "Mexicali" "Tlalnepantla de Baz" "Cancún" "Chimalhuacán" "Torreón" "Reynosa" "Tlaquepaque" "Toluca" "San Francisco Atizapán" "Cuautitlán Izcalli" "Apodaca" "Heroica Matamoros" "San Nicolás de los Garza" "Xalapa" "Tonalá" "Irapuato" "Nuevo Laredo" "Xico" "Villahermosa" "Celaya" "Cuernavaca" "Tepic" "Ixtapaluca"
 		}
 	}
 	battle_cruiser = {
 		prefix = "ARM"
 		generic = { "Crucero de Batalla" }
 		unique = {
-			"Juarez" "Ciudad de Mexico" "Montezuma" 
+			#Aztec deities
+			"Quetzalcoatl" "Huitzilopochtli" "Tlaloc" "Tonatiuh" "Tezcatlipoca" "Chalchiuhtlicue" "Centeotl" "Xipe Totec" "Mayahuel" "Tlaltechutli" "Atlahua" "Cipactonal" "Oxomoco" "Patecatl" "Ixtlilton" "Ehecatotontli" "Mictlanpachecatl" "Cihuatecayotl" "Tlalocayotl" "Huitztlampaehecatl" "Mictlantecuhtli" "Xiuhtecuhtli" "Mixcoatl" "Ometeotl" "Tonacatecuhtli" "Xolotl" "Tlahuizcalpantecuhtli" "Opochtli" 
+			#Archaeological sites
+			"Uxmal" "Mitla" "Petén" "Anáhuac" 
+			#Notable Presidents
+			"Nicolás Bravo" "Benito Juárez" "Guadalupe Victoria" "Sebastián Lerdo de Tejada" "Valentín Farías" 
+			#Revolutionary leaders
+			"Martín Javier Mina" "Pancho Villa" "Mariano Abasolo" "Ignacio Allende" "Juan Aldama" "Mariano Matamoros" "Pedro Sainz de Baranda" "Hermenegildo Galeana" "Juan Álvarez" "Miguel Ramos Arizpe" "Matías de Córdova" "José María Izazaga" "Ignacio López Rayón" "Vicente Guerrero" "José María Morelos" "Miguel Hidalgo"
+			#Historic MEX ship names
+			"Independencia" "Libertad" "Democrata" "México" 
 		}
 	}
 	battleship = {
 		prefix = "ARM"
 		generic = { "Acorazado" }
 		unique = {
-			"Juarez" "Ciudad de Mexico" "Montezuma" 
+ 			#Historic MEX ship names
+			"Independencia" "Libertad" "Democrata" "México"
+			#Notable Presidents
+			"Nicolás Bravo" "Benito Juárez" "Guadalupe Victoria" "Sebastián Lerdo de Tejada" "Valentín Farías"
+			#Revolutionary leaders
+			"Martín Javier Mina" "Pancho Villa" "Mariano Abasolo" "Ignacio Allende" "Juan Aldama" "Mariano Matamoros" "Pedro Sainz de Baranda" "Hermenegildo Galeana" "Juan Álvarez" "Miguel Ramos Arizpe" "Matías de Córdova" "José María Izazaga" "Ignacio López Rayón" "Vicente Guerrero" "José María Morelos" "Miguel Hidalgo"
+			#Archaeological sites
+			"Uxmal" "Mitla" "Petén" "Anáhuac"
+			#Aztec deities
+			"Quetzalcoatl" "Huitzilopochtli" "Tlaloc" "Tonatiuh" "Tezcatlipoca" "Chalchiuhtlicue" "Centeotl" "Xipe Totec" "Mayahuel" "Tlaltechutli" "Atlahua" "Cipactonal" "Oxomoco" "Patecatl" "Ixtlilton" "Ehecatotontli" "Mictlanpachecatl" "Cihuatecayotl" "Tlalocayotl" "Huitztlampaehecatl" "Mictlantecuhtli" "Xiuhtecuhtli" "Mixcoatl" "Ometeotl" "Tonacatecuhtli" "Xolotl" "Tlahuizcalpantecuhtli" "Opochtli" 
 		}
 	}
 	carrier = {
 		prefix = "ARM"
 		generic = { "Portaaviones" }
 		unique = {
-			"Republica de Mexico" "Xochichapal" "Cauhtemoc" "Allende" "Abasolo" "Victoria" "Mina" "Bravo" "Galeana" 
+			#Key MEX naval aviation pioneer
+			"Carlos Castillo Bretón" 
+			#Revolutionary leaders
+			"Martín Javier Mina" "Pancho Villa" "Mariano Abasolo" "Ignacio Allende" "Juan Aldama" "Mariano Matamoros" "Pedro Sainz de Baranda" "Hermenegildo Galeana" "Juan Álvarez" "Miguel Ramos Arizpe" "Matías de Córdova" "José María Izazaga" "Ignacio López Rayón" "Vicente Guerrero" "José María Morelos" "Miguel Hidalgo"
+			#Notable Presidents
+			"Nicolás Bravo" "Benito Juárez" "Guadalupe Victoria" "Sebastián Lerdo de Tejada" "Valentín Farías"
+ 			#Historic MEX ship names
+			"Independencia" "Libertad" "Democrata" "México"
+			#Archaeological sites
+			"Uxmal" "Mitla" "Petén" "Anáhuac"
+			#Aztec deities
+			"Quetzalcoatl" "Huitzilopochtli" "Tlaloc" "Tonatiuh" "Tezcatlipoca" "Chalchiuhtlicue" "Centeotl" "Xipe Totec" "Mayahuel" "Tlaltechutli" "Atlahua" "Cipactonal" "Oxomoco" "Patecatl" "Ixtlilton" "Ehecatotontli" "Mictlanpachecatl" "Cihuatecayotl" "Tlalocayotl" "Huitztlampaehecatl" "Mictlantecuhtli" "Xiuhtecuhtli" "Mixcoatl" "Ometeotl" "Tonacatecuhtli" "Xolotl" "Tlahuizcalpantecuhtli" "Opochtli" 
 		}
 	}
 }

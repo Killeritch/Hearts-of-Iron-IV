@@ -82,6 +82,14 @@ country_event = {
 					limit = { POL = { owns_state = 89 controls_state = 89 } }
 					transfer_state = 89
 				}
+				if = {
+					limit = { POL = { owns_state = 97 controls_state = 97 } }
+					transfer_state = 97
+				}
+				if = {
+					limit = { POL = { owns_state = 784 controls_state = 784 } }
+					transfer_state = 784
+				}
 			}
 		}
 		SOV = {country_event = { id = poland.3} }
@@ -95,7 +103,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = POL
-					generator = { 96 95 94 93 91 89 }
+					generator = { 96 95 94 93 91 89 97 784 }
 				}
 			}
 		}
@@ -168,6 +176,24 @@ country_event = {
 			}
 			transfer_state = 89
 		}
+		if = {
+			limit = { 
+				POL = { 
+					owns_state = 97
+					controls_state = 97 
+				}
+			}
+			transfer_state = 97
+		}
+		if = {
+			limit = { 
+				POL = { 
+					owns_state = 784
+					controls_state = 784 
+				}
+			}
+			transfer_state = 784
+		}
 		hidden_effect = {
 			news_event = { id = news.194 }
 		}
@@ -188,7 +214,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state_focus
 			target = POL
-			generator = { 96 95 94 93 91 89 }
+			generator = { 96 95 94 93 91 89 784 }
 		}
 	}
 }
@@ -238,6 +264,10 @@ country_event = {
 					limit = { POL = { owns_state = 89 controls_state = 89 } }
 					transfer_state = 89
 				}
+				if = {
+					limit = { POL = { owns_state = 784 controls_state = 784 } }
+					transfer_state = 784
+				}
 			}
 		}
 		SOV = { country_event = { id = poland.6 } }
@@ -251,7 +281,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = POL
-					generator = { 96 95 94 93 91 89 }
+					generator = { 96 95 94 93 91 89 784 }
 				}
 			}
 		}
@@ -302,6 +332,10 @@ country_event = {
 		if = {
 			limit = { POL = { owns_state = 89 } }
 			transfer_state = 89
+		}
+		if = {
+			limit = { POL = { owns_state = 784 } }
+			transfer_state = 784
 		}
 		hidden_effect = {
 			news_event = { id = news.194 }

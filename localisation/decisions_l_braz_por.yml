@@ -10,3 +10,4 @@
  TAKE_DECISION_HEADER:0 "§HTomar decisão§!\n\n"
  DECISION_COST_DESC:0 "Há um custo de £pol_power $VAL|H0$ para se tomar a decisão"
  DECISION_COST_NOT_ENOUGH:0 "Há um custo de £pol_power $VAL|HR0$ para se tomar a decisão"
+ ON_MAP_DECISION_NAME_DEFAULT:0 "Encontre decisões no mapa."

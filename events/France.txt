@@ -79,12 +79,6 @@ country_event = {
 		29 = {
 			add_building_construction = {
 				type = bunker
-				province = 3447
-				level = 2
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = bunker
 				province = 11606
 				level = 2
 				instant_build = yes
@@ -98,6 +92,14 @@ country_event = {
 			add_building_construction = {
 				type = bunker
 				province = 575
+				level = 2
+				instant_build = yes
+			}
+		}
+		785 = {
+			add_building_construction = {
+				type = bunker
+				province = 3447
 				level = 2
 				instant_build = yes
 			}
@@ -194,6 +196,7 @@ country_event = {
 			any_state = {
 				is_on_continent = europe
 				NOT = { state = 158 }
+				NOT = { state = 114 }
 				NOT = { state = 50 }
 				NOT = { state = 42 }
 				is_controlled_by = ROOT
@@ -206,6 +209,25 @@ country_event = {
 				}
 			}
 		}		
+
+		#Don't fire if any states in France are controlled by a different human player
+		NOT = {
+			any_country = {
+				is_ai = no
+				NOT = { tag = GER }
+				NOT = { is_in_faction_with = GER }
+				has_war_with = ROOT
+				any_state = {
+					is_on_continent = europe
+					NOT = { state = 1 }
+					NOT = { state = 735 }
+					NOT = { state = 21 }
+					NOT = { state = 31 }
+					is_owned_by = ROOT
+					is_controlled_by = PREV
+				}
+			}
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -239,7 +261,7 @@ country_event = {
 		ai_chance = {
 			factor = 15
 			modifier = {
-				factor = 0.5
+				factor = 0
 				is_historical_focus_on = yes
 			}
 		}
@@ -392,6 +414,10 @@ country_event = {
 		if = {
 			limit = { 29 = { owner = { original_tag = FRA } } }
 			set_state_controller = 29
+		}
+		if = {
+			limit = { 785 = { owner = { original_tag = FRA } } }
+			set_state_controller = 785
 		}
 		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
@@ -683,6 +709,10 @@ country_event = {
 		if = {
 			limit = { 29 = { owner = { original_tag = FRA } } }
 			set_state_controller = 29
+		}
+		if = {
+			limit = { 785 = { owner = { original_tag = FRA } } }
+			set_state_controller = 785
 		}
 		if = {
 			limit = { 15 = { owner = { original_tag = FRA } } }
@@ -984,8 +1014,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		TAG = FRA
-		16 = { controller = { NOT = { TAG = FRA } } }
+		original_tag = FRA
+		16 = { controller = { NOT = { original_tag = FRA } } }
+		has_capitulated = yes
 		#16 = { is_owned_by = FRA }
 	}
 	
@@ -1259,11 +1290,12 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				ITA = {
 					OR = {
 						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
 						is_in_faction_with = GER
+						exists = no
 					}
 				}
 			}

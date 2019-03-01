@@ -593,6 +593,22 @@ arrowType = {
 }
 
 arrowType = {
+	name = "fleet_area_of_operation"
+	technique = "MapArrowNoHead"
+	texture_mask = "gfx/maparrows/fleet_area_of_operation_mask.dds"
+	texture_pattern = "gfx/maparrows/fleet_area_of_operation.dds"
+	body_uv_scale = 1
+	mask_inner = { 0.0 1.0 0.0 }
+	mask_outer = { 1.0 0.0 0.0 }
+	body_width = { 1 1 }								# In no arorrowhead shaders this should be symmetric
+	texture_loop = 3									# The higher the nr the wider it stretches U in the texture
+	text_size = 1
+	text_offset = 0
+	global_scale_min_size = 0.2
+	global_scale_max_points = 40 # Line will reach it's normal size after X points
+}
+
+arrowType = {
 	name = "root"
 	technique = "MapArrowNoHead"
 	texture_mask = "gfx/maparrows/stripe_mask.dds"

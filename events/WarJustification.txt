@@ -829,6 +829,12 @@ country_event = {
 
 	trigger = {
 		has_war = no
+		NOT = {
+			AND = {
+				original_tag = ENG
+				has_completed_focus = ENG_enforce_the_naval_treaties
+			}
+		}
 	}
 	
 	option = {

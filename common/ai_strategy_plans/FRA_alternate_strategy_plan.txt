@@ -5,6 +5,10 @@ FRA_alternate_plan_1 = {
 	enable = {
 		original_tag = FRA
 		GER = { has_completed_focus = GER_oppose_hitler }
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 		OR = {
@@ -81,6 +85,10 @@ FRA_alternate_plan_2 = {
 	enable = {
 		original_tag = FRA
 		GER = { has_completed_focus = GER_focus_on_the_true_enemy }
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 	}
@@ -152,6 +160,10 @@ FRA_alternate_plan_3 = {
 	enable = {
 		original_tag = FRA
 		GER = { has_completed_focus = GER_expatriate_the_communists }
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 	}
@@ -223,6 +235,10 @@ FRA_alternate_plan_4 = {
 	enable = {
 		original_tag = FRA
 		GER = { has_completed_focus = GER_reestablish_free_elections }
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 	}
@@ -244,6 +260,212 @@ FRA_alternate_plan_4 = {
         FRA_jet_effort = 100
         FRA_extra_research_slot_2 = 100                                                             
     }   
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_little_entente = {
+	name = "France alternate plan: France attempts to form the little entente"
+	desc = "Behavior for France if is set to form little entente"
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			AND = {
+				ENG = { has_completed_focus = ENG_a_change_in_course }
+				NOT = { GER = { has_completed_focus = GER_oppose_hitler } }
+			}
+			has_country_flag = FRA_AI_DEMOCRATIC_ALTERNATE
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = DEMOCRATIC_ALTERNATE
+			}
+		}
+	}
+	abort = {
+		OR = {
+			CZE = { exists = no }
+			CZE = { is_subject = yes }
+		}
+	}
+
+	ai_national_focuses = {
+		FRA_initiate_government_reform
+		FRA_support_status_quo
+		FRA_little_entente
+		FRA_strengthen_government_support
+		FRA_metropolitan_france
+		#1937
+		FRA_industrial_expansion
+		FRA_algerie_france
+		FRA_colonial_industry
+		FRA_military_factories
+		FRA_extra_research_slot
+		#1938
+		FRA_defensive_strategems
+		FRA_colonial_military_factories
+		FRA_defensive_focus
+		FRA_invite_yugoslavia
+		FRA_invite_romania
+		#1939
+		FRA_fortification_focus
+		FRA_alpine_forts
+		FRA_infantry_focus
+		FRA_artillery_focus
+		FRA_heavy_armor_focus
+		#1940
+		FRA_army_reform
+		FRA_nuclear_effort
+		FRA_extra_research_slot_2
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_fascist = {
+	name = "France alternate plan: France is going fascist"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_country_flag = FRA_AI_FASCIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_initiate_government_reform
+		FRA_metropolitan_france
+		FRA_industrial_expansion
+		FRA_military_factories
+		FRA_extra_research_slot
+		#1937
+		FRA_revise_versailles
+		FRA_support_the_right
+		FRA_scw_intervention_nationalists
+		FRA_algerie_france
+		FRA_colonial_industry
+		#1938
+		FRA_aggressive_focus
+		FRA_colonial_military_factories
+		FRA_jet_effort
+		FRA_extra_research_slot_2
+		FRA_right_wing_rhetoric
+		#1939
+		FRA_army_of_aggression
+		FRA_join_germany
+		FRA_motorized_focus
+		FRA_mechanized_focus
+		FRA_light_medium_armor
+		#1940
+		FRA_army_reform
+		FRA_navy_focus
+		FRA_capital_ship_focus
+		FRA_fighter_focus
+		FRA_cas_focus
+	}			
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+FRA_alternate_plan_communist = {
+	name = "France alternate plan: France is going communist"
+	desc = ""
+
+	enable = {
+		original_tag = FRA
+		OR = {
+			has_country_flag = FRA_AI_COMMUNIST
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = COMMUNIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FRA_initiate_government_reform
+		FRA_metropolitan_france
+		FRA_industrial_expansion
+		FRA_military_factories
+		FRA_extra_research_slot
+		#1937
+		FRA_revise_versailles
+		FRA_support_the_left
+		FRA_scw_intervention_republicans
+		FRA_algerie_france
+		FRA_colonial_industry
+		#1938
+		FRA_aggressive_focus
+		FRA_colonial_military_factories
+		FRA_jet_effort
+		FRA_extra_research_slot_2
+		FRA_leftist_rhetoric
+		#1939
+		FRA_national_mobilization
+		FRA_join_comintern
+		FRA_motorized_focus
+		FRA_mechanized_focus
+		FRA_light_medium_armor
+		#1940
+		FRA_army_reform
+		FRA_navy_focus
+		FRA_capital_ship_focus
+		FRA_fighter_focus
+		FRA_cas_focus
+	}			
 	research = {
 
 	}

@@ -7,6 +7,8 @@ set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
 	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
 }
 set_country_flag = monroe_doctrine
 
@@ -50,9 +52,7 @@ set_country_flag = monroe_doctrine
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		oil_processing = 1
-		improved_oil_processing = 1
+		fuel_refining2 = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1

@@ -2,17 +2,6 @@ guiTypes = {
 	@dlc_entry_height = 35
 
 	containerWindowType = {
-		name = "blockClickThrough"
-		position = { x=0 y=0 }
-		size = { width = 1000 height = 600 }
-
-		background = {
-			name = "Background"
-			spriteType = "GFX_transparent_black"
-		}
-	}
-
-	containerWindowType = {
 		name = "legal_browser_window"
 		position = { x=-320 y=-275 }
 		size = { width=640 height=540 }
@@ -27,22 +16,25 @@ guiTypes = {
 		buttonType = {
 			name = "back"
 			quadTextureSprite = "GFX_browser_back"
-			position = { x = 20 y = 11 }
+			position = { x = -142 y = -52 }
 			pdx_tooltip = "BROWSER_BACK"
+			orientation = lower_right
 		}
 		
 		buttonType = {
 			name = "forward"
 			quadTextureSprite = "GFX_browser_forward"
-			position = { x = 60 y = 11 }
+			position = { x = -102 y = -52 }
 			pdx_tooltip = "BROWSER_FORWARD"
+			orientation = lower_right
 		}
 		
 		buttonType = {
 			name = "reload"
 			quadTextureSprite = "GFX_browser_refresh"
-			position = { x = 100 y = 11 }
+			position = { x = -62 y = -52 }
 			pdx_tooltip = "BROWSER_RELOAD"
+			orientation = lower_right
 		}
 		
 		buttonType = {
@@ -774,6 +766,17 @@ guiTypes = {
 				buttonText = "PDXL_UNGRACEFUL_EXIT_SKIP"
 				buttonfont = "hoi_18mbs"
 				orientation = lower_left
+			}
+		}
+
+		containerWindowType = {
+			name = "block_click_through"
+			position = { x=0 y=0 }
+			size = { width = 1000 height = 600 }
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_transparent_black"
 			}
 		}
 	}

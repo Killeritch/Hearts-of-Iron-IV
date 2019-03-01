@@ -88,9 +88,7 @@ CHI_army_reform = {
 			}
 		}
 		complete_effect = {
-			army_experience = -100
-			custom_effect_tooltip = 90_days_tt
-						
+			army_experience = -100						
 		}		
 	}
 
@@ -6324,6 +6322,12 @@ political_actions = {
 			NOT = {
 				has_completed_focus = CHI_opposition
 			}
+			OR = {
+				is_subject = no
+				OVERLORD = {
+					is_in_faction_with = event_target:WTT_current_china_leader
+				}
+			}
 		}
 		visible = {
 			is_literally_china = yes
@@ -6439,9 +6443,6 @@ CHI_xian_incident = {
 					is_in_faction_with = PRC
 				}
 				NOT = {
-					has_war_with = JAP
-				}
-				NOT = {
 					has_war_with = PRC
 				}
 				NOT = {
@@ -6452,9 +6453,6 @@ CHI_xian_incident = {
 				}
 			}
 			PRC = {
-				NOT = {
-					has_war_with = JAP
-				}
 				NOT = {
 					has_war_with = CHI
 				}
@@ -6476,13 +6474,10 @@ CHI_xian_incident = {
 				NOT = {
 					is_in_faction_with = PRC
 				}
-				NOT = {
-					has_war_with = JAP
-				}
 			}
 			PRC = {
 				NOT = {
-					has_war_with = JAP
+					has_war_with = PRC
 				}
 			}
 			is_literally_china = yes
@@ -6505,7 +6500,7 @@ CHI_xian_incident = {
 			modifier = {
 				NOT = { 	
 					JAP = {
-						has_added_tension_amount > 0
+						has_completed_focus = JAP_greater_east_asian_co_prosperity_sphere
 					}
 				}
 				factor = 0
@@ -6572,7 +6567,7 @@ prestigious_projects = {
 		}
 		icon = generic_naval
 		available = {
-			has_navy_size = { archetype = carrier size > 0 }
+			has_navy_size = { unit = carrier size > 0 }
 		}
 
 		days_mission_timeout = 720

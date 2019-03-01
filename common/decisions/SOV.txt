@@ -65,9 +65,14 @@ SOV_industry_relocation = {
 					}
 					AND = {
 						owns_state = 222
-						NOT = { controls_state = 224 }
+						NOT = { controls_state = 222 }
 					}
 				}
+			}
+
+			modifier = {
+				factor = 0
+				SOV_save_pp_for_manpower_trouble = yes
 			}
 		}
 
@@ -190,6 +195,10 @@ SOV_industry_relocation = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		visible = {
@@ -309,6 +318,10 @@ SOV_industry_relocation = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 
 		visible = {
@@ -390,7 +403,7 @@ SOV_industry_relocation = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
 			modifier = {
 				factor = 200 # oh shit they are getting close!
 				OR = {
@@ -419,6 +432,10 @@ SOV_industry_relocation = {
 						NOT = { controls_state = 146 }
 					}
 				}
+			}
+			modifier = {
+				factor = 0
+				SOV_save_pp_for_manpower_trouble = yes
 			}
 		}
 
@@ -458,7 +475,7 @@ SOV_great_patriotic_war = {
 				is_major = yes
 			}
 			has_civil_war = no
-			surrender_progress > 0.2
+			surrender_progress > 0.15
 		}
 
 		cost = 50
@@ -475,6 +492,7 @@ SOV_great_patriotic_war = {
 
 		modifier = {
 			army_core_defence_factor = 0.25
+			mobilization_speed = 0.15
 		}
 
 		ai_will_do = {
@@ -519,6 +537,11 @@ SOV_great_patriotic_war = {
 
 		ai_will_do = {
 			factor = 1
+
+			modifier = {
+				factor = 0
+				SOV_save_pp_for_manpower_trouble = yes
+			}
 		}
 	}
 	SOV_scorched_earth_baltics = {

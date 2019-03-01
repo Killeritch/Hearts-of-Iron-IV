@@ -268,26 +268,6 @@ units = {
 	#	start_experience_factor = 0.4
 	#	start_equipment_factor = 0.5
 	#}
-
-
-	##### NAVAL UNITS #####
-	navy = {					
-		name = "Rannikkolaivue"				
-		base = 11105 
-		location =  11105 # Helsinki
-		ship = { name = "Ilmarinen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FIN } } }				
-		ship = { name = "Väinämöinen" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = FIN } } }				
-	}					
-	navy = {					
-		name = "Sukellusvenelaivue"				
-		base = 11105 
-		location =  11105 # Helsinki
-		ship = { name = "Vetehinen" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-		ship = { name = "Vesihiisi" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-		ship = { name = "Iku-Turso" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-		ship = { name = "Vesikko" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FIN } } }
-	}					
-
 }
 
 air_wings = {

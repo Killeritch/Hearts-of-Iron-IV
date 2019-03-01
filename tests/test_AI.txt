@@ -17,36 +17,55 @@ tests = {
 
 	england_has_fallen = {
          success = {
-             date > "1936.1.1"
-             date < "1995.1.1"
-             ENG = {  
-				OR = { 
-					has_capitulated = yes 
-					exists = no
-				}
-			}
+             date > "1945.1.1"  
          }
 
          fail = {
-             date > "1945.1.1"
+             date < "1945.1.1"
+             ENG = {  
+                OR = { 
+                    has_capitulated = yes 
+                    is_subject = yes
+                    exists = no
+                }
+            }
          }
     }
 	
 	china_deafeated_by_japan = {
          success = {
              date > "1936.1.1"
-             date < "1945.1.1"
+             date < "1943.6.6"
              CHI = {  
 				OR = { 
 					has_capitulated = yes 
 					exists = no
+                    is_subject_of = JAP
 				}
 			}
          }
 
          fail = {
-             date > "1945.1.1"
+             date > "1943.6.6"
          }
+    }
+
+    china_deafeated_by_japan_too_easily = {
+        success = {
+            date > "1940.1.1"
+        }
+
+         fail = {
+             date > "1936.1.1"
+             date < "1940.1.1"
+             CHI = {  
+                OR = { 
+                    has_capitulated = yes 
+                    exists = no
+                    is_subject_of = JAP
+                }
+            }
+        }
     }
 	
 	sov_design_garrison = {
@@ -62,18 +81,18 @@ tests = {
          }
     }
 	
-	sov_fields_garrison = {
-
-         success = {
-             date > "1939.1.1"
-             date < "1945.1.1"
-             SOV = { ai_has_role_division = garrison }
-         }
-
-         fail = {
-             date > "1941.1.1"
-         }
-    }
+	#sov_fields_garrison = {
+#
+   #      success = {
+   #          date > "1939.1.1"
+   #          date < "1945.1.1"
+   #          SOV = { ai_has_role_division = garrison }
+   #      }
+#
+   #      fail = {
+   #          date > "1941.1.1"
+   #      }
+   # }
 	
 	italy_defeats_ethiopia = {
          success = {
@@ -167,7 +186,7 @@ tests = {
              date < "1955.1.1"
              USA = { 
 				has_equipment = {
-					infantry_equipment > 0
+					medium_tank_equipment > 0
 				}
 			}
          }
@@ -210,7 +229,7 @@ tests = {
          success = {
              date > "1936.1.1"
              date < "1943.1.1"
-             ROM = {  
+             HUN = {  
                 is_in_faction_with = GER
             }
          }
@@ -236,5 +255,116 @@ tests = {
                 NOT = { is_in_faction_with = JAP }
             }            
          }
+    }
+
+    nationalist_spain_wins = {
+        success = {
+            has_global_flag = scw_over
+            any_country = {
+                original_tag = SPR
+                has_government = fascism
+            }
+        }
+
+        fail = {
+            has_global_flag = scw_over
+            any_country = {
+                original_tag = SPR
+                NOT = { has_government = fascism }
+            }
+        }
+    }
+
+    #USA_has_carrier_doctrines = {
+    #    success = {
+    #        date > "1936.1.1"
+    #        USA = {
+    #            has_tech = carrier_task_forces
+    #        }
+    #    }
+    #    fail = {
+    #        date > "1945.6.6"
+    #    }
+    #}
+    #JAP_has_carrier_doctrines = {
+    #    success = {
+    #        date > "1936.1.1"
+    #        JAP = {
+    #            has_tech = carrier_task_forces
+    #        }
+    #    }
+    #    fail = {
+    #        date > "1945.6.6"
+    #    }
+    #}
+    #JAP_invaded_PHI = {
+    #    success = {
+    #        JAP = {
+    #            has_war_with = "PHI"
+    #        }
+    #        "PHI" = {
+    #            any_owned_state = {
+    #                is_controlled_by = JAP
+    #            }
+    #        }
+    #    }
+    #    fail = {
+    #        date > "1945.6.6"
+    #    }
+    #}
+    JAP_invaded_DEI = {
+        success = {
+            JAP = {
+                has_war_with = "INS"
+            }
+            "INS" = {
+                any_owned_state = {
+                    is_controlled_by = JAP
+                }
+            }
+        }
+        fail = {
+            date > "1943.6.6"
+        }
+    }
+    JAP_casualties_are_ok = {
+        success = {
+            date > "1940.1.1"
+            JAP = {
+                casualties < 1500000
+            }
+        }
+        fail = {
+            date < "1940.1.2"
+            JAP = {
+                casualties > 1500000
+            }
+        }
+    }
+    FRA_vichy_not_communist = {
+        success = {
+            date > "1948.1.1"
+        }
+        fail = {
+            date < "1948.1.2"
+            any_country = {
+                original_tag = FRA
+                is_subject_of = GER
+                has_government = communism
+            }
+        }
+    }
+    FRA_vichy_communist_support_above_50 = {
+        success = {
+            date > "1948.1.1"
+        }
+        fail = {
+            date < "1948.1.2"
+            any_country = {
+                original_tag = FRA
+                is_subject_of = GER
+                communism > 0.5
+            }
+        }
     }
 }

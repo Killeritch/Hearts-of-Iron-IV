@@ -8,11 +8,15 @@ state={
 
 	history={
 		owner = ENG
+		add_core_of = MLD
 		buildings = {
 			infrastructure = 3
 			4967 = {
 				naval_base = 1
 			}
+		}
+		victory_points = {
+			4967 1
 		}
 	}
 

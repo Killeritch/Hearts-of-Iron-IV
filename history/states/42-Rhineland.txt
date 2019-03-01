@@ -12,7 +12,10 @@ state={
 
 	history={
 		owner = GER
-		victory_points = { 11435 10 }
+		victory_points = { 11435 1 }
+		#victory_points = { 3423 3 }
+		#victory_points = { 9575 3 }
+		victory_points = { 11531 5 }
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3

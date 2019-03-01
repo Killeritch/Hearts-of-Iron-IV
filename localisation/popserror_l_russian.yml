@@ -4,7 +4,7 @@
  POPS_dynamodb-failure:0 "Подключение не выполнено"
  POPS_ua:0 "Невозможно"
  POPS_not-authorized:0 "Указанные электронный адрес и пароль не совпадают"
- # These should ""never"" happen, we should have validated before we sent the data
+ # These should "never" happen, we should have validated before we sent the data
  POPS_bad-password-length:0 "Слишком короткий пароль"
  POPS_missing-required-account-details-keys:0 "Отсутствует обязательная информация"
  POPS_invalid-country-code:0 "Неверный код страны"

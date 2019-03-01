@@ -378,7 +378,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = MAN_trade_delegation
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}
@@ -740,7 +740,7 @@ focus_tree = {
 				limit = { has_tech = excavation1 }
 				add_tech_bonus = {
 					name = MAN_develop_aluminum_sources
-					bonus = 0.5
+					bonus = 1.0
 					uses = 1
 					category = excavation_tech
 				}
@@ -1035,7 +1035,7 @@ focus_tree = {
 			remove_ideas = MAN_kwantung_veto
 			add_tech_bonus = {
 				name = MAN_alliance_with_the_kwantung_army
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -1835,12 +1835,8 @@ focus_tree = {
 
 		will_lead_to_war_with = JAP
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
-			set_autonomy = { target = ROOT autonomy_state = autonomy_free }			
+			OVERLORD = { set_autonomy = { target = ROOT autonomy_state = autonomy_free } }			
 			if = {
 				limit = {
 					is_in_faction_with = JAP
@@ -2163,6 +2159,7 @@ focus_tree = {
 			every_country = {
 				limit = {
 					is_chinese_warlord = yes
+					not = { tag = event_target:WTT_current_china_leader }
 				}
 				country_event = { id = wtt_manchukou.1 }
 			}

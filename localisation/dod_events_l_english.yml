@@ -693,7 +693,7 @@
  DOD_yugoslavia.36.desc:0 "After pressing them time and time again to declare for one side, the government of [YUG.GetLeader] still clings to the idea that Yugoslavia can sit out this conflict on the side lines. Now they must face the consequences of their cowardice."
  DOD_yugoslavia.36.a:0 "If they are not with us, they are against us!"
  DOD_yugoslavia.36.b:0 "They are, and will forever remain, irrelevant."
- DOD_yugoslavia.40.desc:0 "Yugoslavia forms the lynchpin of our new Balkan strategy. They have so far remained non-commital, trading with Germany but stopping well short of joining the Axis. We should remind them that we would not tolerate trading with the enemy in case war breaks out."
+ DOD_yugoslavia.40.desc:0 "Yugoslavia forms the lynchpin of our new Balkan strategy. They have so far remained non-committal, trading with Germany but stopping well short of joining the Axis. We should remind them that we would not tolerate trading with the enemy in case war breaks out."
  DOD_yugoslavia.40.a:0 "Drop them a line."
  DOD_yugoslavia.40.b:0 "We can't interfere in the affairs of another nation."
  DOD_yugoslavia.41.t:0 "British pressure"

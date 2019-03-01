@@ -301,6 +301,12 @@ country_event = {
 		name = DOD_hungary.10.b
 		ai_chance = {
 			factor = 50
+			modifier = {
+				HUN = {
+					is_ai = yes
+				}
+				factor = 0
+			}
 		}
 		HUN = { country_event = { id = DOD_hungary.12 hours = 6 } }
 	}
@@ -311,6 +317,12 @@ country_event = {
 			modifier = {
 				is_in_faction = yes
 				factor = 2 #we're good thanks
+			}
+			modifier = {
+				HUN = {
+					is_ai = yes
+				}
+				factor = 0
 			}
 		}
 		HUN = { country_event = { id = DOD_hungary.13 hours = 6 } }
@@ -401,19 +413,18 @@ country_event = {
 	desc = DOD_hungary.20.desc
 	picture = GFX_report_event_generic_parliament
 	
-	trigger = {
-		tag = SWE
-		NOT = { has_government = communism }
-		HUN = {
-			has_war = yes
-			has_government = democratic
-			has_idea = HUN_dynastic_ties
-			NOT = { has_war_with = SWE }
-		}
-	}
+	#trigger = {
+	#	tag = SWE
+	#	NOT = { has_government = communism }
+	#	HUN = {
+	#		has_war = yes
+	#		has_government = democratic
+	#		has_idea = HUN_dynastic_ties
+	#		NOT = { has_war_with = SWE }
+	#	}
+	#}
 
-	mean_time_to_happen = { days = 7 }
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = { #stay out
 		name = DOD_hungary.20.a
@@ -561,20 +572,17 @@ country_event = {
 	desc = DOD_hungary.24.desc
 	picture = GFX_report_event_generic_panzer_attack
 	
-	trigger = {
-		tag = HUN
-		has_idea = HUN_dynastic_ties
-		NOT = { has_government = communism }
-		SWE = {
-			has_war = yes
-			NOT = { has_government = communism } 
-			NOT = { has_war_with = HUN }
-		}
-	}
-
-	fire_only_once = yes
-
-	mean_time_to_happen = { days = 7 }
+	#trigger = {
+	#	tag = HUN
+	#	has_idea = HUN_dynastic_ties
+	#	NOT = { has_government = communism }
+	#	SWE = {
+	#		has_war = yes
+	#		NOT = { has_government = communism } 
+	#		NOT = { has_war_with = HUN }
+	#	}
+	#}
+	is_triggered_only = yes
 
 	option = { #stay out
 		name = DOD_hungary.24.a
@@ -1281,7 +1289,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
-				is_historical_focus_on = yes
+				ROM_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 			modifier = {
@@ -1394,7 +1402,7 @@ country_event = {
 				factor = 2
 			}
 			modifier = {
-				is_historical_focus_on = yes
+				HUN_is_on_historical_plan_trigger = yes
 				factor = 0
 			}
 		}
@@ -1443,7 +1451,7 @@ country_event = {
 				factor = 0.5
 			}
 			modifier = { 
-				is_historical_focus_on = yes 
+				ROM_is_on_historical_plan_trigger = yes 
 				factor = 0
 			}
 			modifier = {
@@ -1467,7 +1475,7 @@ country_event = {
 				factor = 10 #NO DEALS WITH THE HUNGARIAN SCUM
 			}
 			modifier = { 
-				is_historical_focus_on = yes 
+				ROM_is_on_historical_plan_trigger = yes 
 				factor = 0
 			}
 			modifier = { 
@@ -1554,7 +1562,7 @@ country_event = {
 				factor = 2
 			}
 			modifier = { 
-				is_historical_focus_on = yes 
+				HUN_is_on_historical_plan_trigger = yes 
 				factor = 0
 			}
 		}
@@ -1573,7 +1581,7 @@ country_event = {
 		ai_chance = {
 			factor = 35
 			modifier = { 
-				is_historical_focus_on = yes 
+				HUN_is_on_historical_plan_trigger = yes 
 				factor = 0
 			}
 			modifier = { 
@@ -2850,7 +2858,11 @@ country_event = {
 	picture = GFX_report_event_generic_rally2
 	
 	is_triggered_only = yes
-
+	immediate = {
+		hidden_effect = {
+			news_event = { id = news.303 }
+		}
+	}
 	option = {# fold
 		name = DOD_hungary.80.a
 		ai_chance = {
@@ -4832,12 +4844,26 @@ country_event = {
 			set_global_flag = HUN_FRA_engaged
 			ROM = { country_event = { id = DOD_hungary.141 days = 4 } }
 			YUG = { country_event = { id = DOD_hungary.141 days = 4 } }
-			CZE = { country_event = { id = DOD_hungary.141 days = 4 } }
+			if = {
+				limit = {
+					CZE = {
+						is_subject = no
+					}
+				}
+				CZE = { country_event = { id = DOD_hungary.141 days = 4 } }
+			}
 		}
 		if = { 
 			limit = { tag = ROM }
 			YUG = { country_event = { id = DOD_hungary.141 days = 4 } }
-			CZE = { country_event = { id = DOD_hungary.141 days = 4 } }
+			if = {
+				limit = {
+					CZE = {
+						is_subject = no
+					}
+				}
+				CZE = { country_event = { id = DOD_hungary.141 days = 4 } }
+			}
 		}
 		HUN = {
 			country_event = { id = DOD_hungary.142 days = 3 }

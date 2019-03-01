@@ -14,22 +14,22 @@
 units = {
 	division = {
 		name = "1. SS-Sturmbrigade"
-		location = 692  # Munich
+		location = 11638
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "2. SS-Sturmbrigade"
-		location = 692  # Munich
+		location = 9666
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "3. SS-Sturmbrigade"
-		location = 692  # Munich
+		location = 708  # Augsburg
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "4. SS-Sturmbrigade"
-		location = 692  # Munich
+		location = 6540
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
@@ -49,87 +49,87 @@ units = {
 	}
 	division = {
 		name = "8. SS-Sturmbrigade"
-		location = 11544  # Nuremberg
+		location = 11529
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "9. SS-Sturmbrigade"
-		location = 11544  # Nuremberg
+		location = 9557
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "10. SS-Sturmbrigade"
-		location = 11544  # Nuremberg
+		location = 6594
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "11. SS-Sturmbrigade"
-		location = 11544  # Nuremberg
+		location = 11417
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "12. SS-Sturmbrigade"
-		location = 11544  # Nuremberg
+		location = 13116
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "13. SS-Sturmbrigade"
-		location = 3535  # Leipzig
+		location = 6521 # Berlin
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "14. SS-Sturmbrigade"
-		location = 3535  # Leipzig
+		location = 3500
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "15. SS-Sturmbrigade"
-		location = 3535  # Leipzig
+		location = 3561  # Erfurt
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "16. SS-Sturmbrigade"
-		location = 3535  # Leipzig
+		location = 3561  # Erfurt
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "17. SS-Sturmbrigade"
-		location = 3535  # Leipzig
+		location = 425  # Weimar
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "18. SS-Sturmbrigade"
-		location = 3535  # Leipzig
+		location = 425  # Weimar
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "19. SS-Sturmbrigade"
-		location = 6521  # Berlin
+		location = 6487
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "20. SS-Sturmbrigade"
-		location = 6521  # Berlin
+		location = 3522  # Magdeburg
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "21. SS-Sturmbrigade"
-		location = 6521  # Berlin
+		location = 11359
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "22. SS-Sturmbrigade"
-		location = 6521  # Berlin
+		location = 11219
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "23. SS-Sturmbrigade"
-		location = 6521  # Berlin
+		location = 9294
 		division_template = "SS-Sturmbrigade"
 	}
 	division = {
 		name = "24. SS-Sturmbrigade"
-		location = 6521  # Berlin
+		location = 11305  # Lubeck
 		division_template = "SS-Sturmbrigade"
 	}
 }

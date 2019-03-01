@@ -2,7 +2,7 @@
 state={
 	id=658
 	name="STATE_658"
-	manpower = 220000
+	manpower = 170200
 	resources={
 		oil=5 # was: 6
 	}
@@ -11,6 +11,7 @@ state={
 
 
 	history={
+		add_core_of = UAE
 		owner = ENG
 		victory_points = {
 			7960 1 
@@ -20,14 +21,11 @@ state={
 			7960 = {
 				naval_base = 3
 			}
-			8051 = {
-				naval_base = 2
-			}
 		}
 
 	}
 
 	provinces={
-		2048 7960 8051 8108 10904 
+		2048 7960 8108 10904 
 	}
 }

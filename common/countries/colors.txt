@@ -222,7 +222,7 @@ PRU = {
 	color_ui = rgb { 255 246 255 }
 }
 SAF = {
-	color = rgb { 152 130 191 }
+	color = rgb { 195 107 160 }
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
@@ -299,8 +299,8 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 200  10  10 }
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 255 128 0 }
 }
 
 CRO = {
@@ -470,6 +470,10 @@ KOR = {
 ISR = {
 	color = rgb { 152  130  191 }
 	color_ui = rgb { 152  130  191 }
+}
+CSA = {
+	color = rgb { 145 163 176  }
+	color_ui = rgb { 186 205 219 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

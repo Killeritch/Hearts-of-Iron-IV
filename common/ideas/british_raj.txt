@@ -416,6 +416,10 @@ ideas = {
 					limit = { has_dlc = "Together for Victory" }
 					has_completed_focus = RAJ_indian_national_congress				
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			picture = generic_political_advisor_india_1
@@ -445,6 +449,10 @@ ideas = {
 					limit = { has_dlc = "Together for Victory" }	
 					has_completed_focus = RAJ_all_india_forward_bloc
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 
 			picture = generic_political_advisor_india_2
@@ -473,6 +481,10 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Together for Victory" }	
 					has_completed_focus = RAJ_all_india_forward_bloc
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 

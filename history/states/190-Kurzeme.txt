@@ -7,6 +7,9 @@ state={
 	state_category = rural
 	
 	history={
+		victory_points = {
+			9262 3
+		}
 		owner = LAT
 		buildings = {
 			infrastructure = 5

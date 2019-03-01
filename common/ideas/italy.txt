@@ -101,7 +101,12 @@ ideas = {
 				original_tag = "ITA"
 			}
 			
-
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			
 			traits = { communist_revolutionary }
 
@@ -123,7 +128,12 @@ ideas = {
 				original_tag = "ITA"
 			}
 			
-
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			
 			traits = { democratic_reformer }
 
@@ -145,7 +155,12 @@ ideas = {
 				original_tag = "ITA"
 			}
 			
-
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			
 			traits = { fascist_demagogue }
 

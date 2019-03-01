@@ -181,6 +181,7 @@ country_event = {
 		SOV = { 
 			transfer_state = 78
 			transfer_state = 80
+			transfer_state = 766
 		}
 		hidden_effect = {
 			SOV = {
@@ -2236,7 +2237,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = poland_swap_danzig
 				70 = {
 					OR = {
 						is_controlled_by = SOV
@@ -2252,7 +2252,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = poland_swap_danzig
 				664 = {
 					OR = {
 						is_controlled_by = SOV
@@ -2283,23 +2282,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_global_flag = poland_swap_danzig
-				70 = {
-					OR = {
-						is_controlled_by = SOV
-						any_other_country = {
-							controls_state = 70
-							is_in_faction_with = SOV
-							SOV = { is_faction_leader = yes }
-						}
-					}
-				}
-			}
-			GER = { transfer_state = 70 }
-		}
-		if = {
-			limit = {
-				has_global_flag = poland_swap_danzig
 				762 = {
 					OR = {
 						is_controlled_by = SOV

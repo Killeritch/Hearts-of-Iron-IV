@@ -13,6 +13,12 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+ 	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 10 name = germany.4.t }
+ 		} 		
+ 	}
+
 	option = {
 		name = germany.4.a
 		4 = {
@@ -40,11 +46,12 @@ country_event = {
 		}
 		annex_country = { target = AUS transfer_troops = yes }
 		add_political_power = 75
-		add_named_threat = { threat = 10 name = germany.4.t }
 		set_country_flag = AUS_annexed
 		add_war_support = 0.1
 		add_stability = 0.05
-		
+		USA = {
+			set_country_flag = { flag = USA_anschluss_window days = 60 value = 1 }
+		}
 		custom_effect_tooltip = anschluss_mefo_bills_tt
 		hidden_effect = { # Having it appear twice might be confusing
 			GER_mefo_bills_level_down = yes
@@ -216,6 +223,7 @@ country_event = {
 		add_state_claim = 96
 		add_state_claim = 97
 		add_state_claim = 80
+		add_state_claim = 784
 		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
 		GER = {
 			country_event = { days = 1 id = germany.12 }
@@ -272,6 +280,9 @@ country_event = {
 		}
 		diplomatic_relation = { country = SOV relation = non_aggression_pact }
 		add_opinion_modifier = { target = SOV modifier = MR_pact }# pact
+		USA = {
+			set_country_flag = { flag = USA_MR_window days = 60 value = 1 }
+		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.32 }
 		}
@@ -316,6 +327,7 @@ country_event = {
 				owns_state = 91
 				owns_state = 97
 				owns_state = 89
+				owns_state = 784
 			}
 			AND = {
 				POL = { has_capitulated = yes }
@@ -327,6 +339,7 @@ country_event = {
 					controls_state = 91
 					controls_state = 97
 					controls_state = 89
+					controls_state = 784
 				}
 			}
 			OR = {
@@ -343,6 +356,7 @@ country_event = {
 						owns_state = 91
 						owns_state = 97
 						owns_state = 89
+						owns_state = 784
 						AND = {
 							POL = { has_capitulated = yes }
 							OR = {
@@ -353,6 +367,7 @@ country_event = {
 								controls_state = 91
 								controls_state = 97
 								controls_state = 89
+								controls_state = 784
 							}
 						}		
 					}
@@ -485,6 +500,21 @@ country_event = {
 			}
 			SOV = { transfer_state = 89 }
 		}
+		if = {
+			limit = {
+				784 = {
+					OR = {
+						is_controlled_by = GER
+						any_other_country = {
+							controls_state = 784
+							is_in_faction_with = GER
+							GER = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			SOV = { transfer_state = 784 }
+		}
 		SOV = { country_event = germany.15 }
 	}
 	option = {
@@ -520,6 +550,7 @@ country_event = {
 			add_state_claim = 91
 			add_state_claim = 97
 			add_state_claim = 89
+			add_state_claim = 784
 			effect_tooltip = {
 				create_wargoal = {
 					type = annex_everything
@@ -984,6 +1015,13 @@ country_event = {
 		text = germany.40.d_2
 		trigger = { has_war_with = GER }
 	}
+	desc = {
+		text = germany.40.d_3
+		trigger = {
+			NOT = { has_war_with = GER }
+			tag = HOL
+		}
+	}
 	picture = GFX_report_event_german_politician_speech
 	
 	is_triggered_only = yes
@@ -1002,17 +1040,70 @@ country_event = {
 				NOT = { is_in_faction_with = GER }
 				factor = 0
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = DEMOCRATIC_HISTORICAL
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = DEMOCRATIC_ALTERNATE
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = FASCIST
+					}
+				}
+			}
 		}
-		trigger = { 
+		trigger = {
 			NOT = { has_war_with = GER } 
 			is_puppet = no # can't do anything if puppet
 		}
-		FRA = { country_event = germany.41 }
-		CZE = {
-			add_opinion_modifier = { target = ENG modifier = western_betrayal }
+		if = {
+			limit = {
+				has_completed_focus = ENG_no_further_appeasement
+			}
+			add_political_power = -200
 		}
 		if = {
 			limit = {
+				tag = HOL
+			}
+			ENG = { country_event = germany.40 }
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			FRA = { country_event = germany.41 }
+		}
+		CZE = {
+			add_opinion_modifier = { target = ROOT modifier = western_betrayal }
+		}
+		if = {
+			limit = {
+				tag = HOL
+				CZE = { is_guaranteed_by = HOL }
+			}
+			HOL = {
+				diplomatic_relation = {
+   					country = CZE
+   					relation = guarantee
+   					active = no
+  				}
+  				add_ai_strategy = {
+					type = ignore
+					id = "CZE"
+					value = 100
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = ENG
 				CZE = { is_guaranteed_by = ENG }
 			}
 			ENG = {
@@ -1028,6 +1119,22 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				tag = HOL
+				CZE = { is_in_faction_with = HOL }
+				HOL = { is_faction_leader = yes }
+			}
+			CZE = { remove_from_faction = yes }
+		}
+		if = {
+			limit = {
+				tag = ENG
+				CZE = { is_in_faction_with = ENG }
+				ENG = { is_faction_leader = yes }
+			}
+			CZE = { remove_from_faction = yes }
+		}
 	}
 	option = { # Support the Czechs
 		name = germany.40.b	
@@ -1039,12 +1146,25 @@ country_event = {
 			}
 			modifier = {
 				factor = 0
-				is_historical_focus_on = yes
+				ENG_is_on_historical_plan_trigger = yes
 			}				
 			modifier = {
 				factor = 3
 				has_government = communism
 				CZE = { has_government = communism }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = NEUTRALITY
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = COMMUNIST
+					}
+				}
 			}
 		}
 		if = {
@@ -1061,7 +1181,12 @@ country_event = {
 			}
 			GER = { remove_from_faction = ENG }
 		}
-		add_political_power = -200
+		if = {
+			limit = {
+				NOT = { has_completed_focus = ENG_no_further_appeasement }
+			}
+			add_political_power = -200
+		}
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
 		effect_tooltip = {
 			GER = {
@@ -1076,15 +1201,33 @@ country_event = {
 			limit = { CZE = { is_in_faction = no } }
 			add_to_faction = CZE
 		}
-		CZE = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ENG"
-				value = 200
+		if = {
+			limit = {
+				tag = HOL
+			}
+			CZE = {
+				add_ai_strategy = {
+					type = alliance
+					id = "HOL"
+					value = 200
+				}
 			}
 		}
 		if = {
-			limit = { 
+			limit = {
+				tag = HOL
+			}
+			CZE = {
+				add_ai_strategy = {
+					type = alliance
+					id = "ENG"
+					value = 200
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { tag = HOL }
 				FRA = { 
 					NOT = { has_war_with = CZE } 
 				} 
@@ -1092,7 +1235,7 @@ country_event = {
 			FRA = { country_event = germany.42 }
 		}
 		CZE = {
-			add_opinion_modifier = { target = ENG modifier = offered_support }
+			add_opinion_modifier = { target = ROOT modifier = offered_support }
 		}
 	}
 }
@@ -1668,6 +1811,9 @@ country_event = {
 		set_country_flag = sudetenland_acquired
 		add_war_support = 0.1
 		add_stability = 0.05
+		USA = {
+			set_country_flag = { flag = USA_munich_window days = 60 value = 1 }
+		}
 		if = {
 			limit = {
 				88 = { is_owned_by = POL }
@@ -1684,6 +1830,7 @@ country_event = {
 					country_exists = YUG
 					YUG = { has_war = no }
 					ENG = { NOT = { has_war_with = YUG } }
+					ENG = { has_government = democratic }
 				}
 				ENG = {
 					country_event = {
@@ -2020,6 +2167,9 @@ country_event = {
 		}
 		if = {
 			limit = { country_exists = CZE }
+			SLO = {
+				inherit_technology = CZE
+			}
 			annex_country = { target = CZE }
 			add_war_support = 0.1
 		}
@@ -2035,19 +2185,6 @@ country_event = {
 				country_exists = POL
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
-		}
-
-		if = {
-			limit = {
-				72 = {
-					OR = {
-						is_owned_by = CZE
-						is_owned_by = GER
-					}
-				}
-				NOT = { country_exists = POL }
-			}
-			SLO = { transfer_state = 72 } # Give Slovakia Zaolzie
 		}
 
 		if = {
@@ -2100,6 +2237,7 @@ country_event = {
 						is_owned_by = GER
 					}
 				}
+				country_exists = POL
 			}
 			POL = { transfer_state = 72 } # Give Poland Zaolzie
 		}
@@ -2430,6 +2568,19 @@ country_event = {
 				has_global_flag = GER_has_started_war
 				factor = 0
 			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = DEMOCRATIC_ALTERNATE
+					}
+					has_game_rule = {
+						rule = ENG_ai_behavior 
+						option = FASCIST
+					}
+				}
+			}
 		}
 		FRA = { 
 			country_event = { hours = 6 id = germany.63 }
@@ -2437,6 +2588,9 @@ country_event = {
 	}
 	option = { # Support France
 		name = germany.61.b
+		trigger = {
+			NOT = { has_completed_focus = ENG_a_change_in_course }
+		}
 		ai_chance = { 
 			factor = 10
 			modifier = {
@@ -2445,7 +2599,14 @@ country_event = {
 					tag = GER
 					ratio > 0.7
 				}
-			} 
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = ENG_ai_behavior 
+					option = NEUTRALITY
+				}
+			}
 		}
 		add_political_power = -150
 		add_stability = -0.2
@@ -2495,6 +2656,9 @@ country_event = {
 	
 	option = {
 		name = germany.62.a
+		trigger = {
+			NOT = { has_completed_focus = ENG_a_change_in_course }
+		}
 		hidden_effect = {
 			news_event = { hours = 6 id = news.25 }
 		}
@@ -2503,6 +2667,17 @@ country_event = {
 			add_war_support = 0.1
 		}
 	}
+
+	option = {
+		name = germany.62.b
+		trigger = {
+			has_completed_focus = ENG_a_change_in_course
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = news.25 }
+		}
+	}
+
 }
 
 # France (Britain Refuses Support)
@@ -3096,12 +3271,12 @@ country_event = {
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = med_armor_bonus
-			ahead_reduction = 1
+			ahead_reduction = 2
 			category = cat_medium_armor
 		}
 		add_tech_bonus = {
 			name = armor_bonus
-			bonus = 0.5
+			bonus = 1.0
 			uses = 1
 			category = armor
 		}
@@ -3133,12 +3308,12 @@ country_event = {
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = GER_soviet_treaty
-			ahead_reduction = 1
+			ahead_reduction = 2
 			technology = basic_medium_tank
 		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
-			bonus = 0.5
+			bonus = 1.0
 			uses = 2
 			category = armor
 		}
@@ -3178,7 +3353,7 @@ country_event = {
 		add_ideas = GER_air_innovations_2_idea
 		add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = radar_tech
 			}
@@ -5548,7 +5723,27 @@ country_event = {
 	option = {
 		name = germany.122.a
 		ai_chance = {
-			factor = 100
+			factor = 50
+			modifier = {
+				factor = 0.8
+				strength_ratio = { tag = GER ratio < 0.5 }
+			}
+			modifier = {
+				factor = 0.8
+				has_opinion = { target = GER value > 99 }
+			}
+			modifier = {
+				factor = 0.8
+				strength_ratio = { tag = GER ratio < 0.3 }
+			}
+			modifier = {
+				factor = 0.8
+				strength_ratio = { tag = GER ratio < 0.2 }
+			}
+			modifier = {
+				factor = 0.5
+				strength_ratio = { tag = GER ratio < 0.1 }
+			}
 		}
 		if = {
 			limit = {
@@ -5579,7 +5774,42 @@ country_event = {
 	option = {
 		name = germany.122.b
 		ai_chance = {
-			factor = 0
+			factor = 50
+			modifier = {
+				factor = 0
+				FRA = { has_completed_focus = FRA_little_entente }
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					has_guaranteed = CZE
+				}
+			}
+			modifier = {
+				factor = 0
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = CZE
+				}
+			}
+			modifier = {
+				factor = 0.8
+				any_other_country = {
+					is_major = no
+					has_guaranteed = CZE
+				}
+			}
+			modifier = {
+				factor = 0.8
+				is_in_faction = yes
+				NOT = {
+					any_other_country = {
+						is_major = yes
+						is_in_faction_with = CZE
+					}
+				}
+			}
 		}
 		effect_tooltip = {
 			GER = {
@@ -5822,6 +6052,7 @@ country_event = {
 			base = 0
 		}
 		add_stability = -0.05 #because fuck you
+							  #language
 	}
 
 }

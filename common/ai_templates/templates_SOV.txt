@@ -15,9 +15,7 @@ armored_SOV = {
 
 		modifier = {
 			factor = 7
-			OR = {
-				has_tech = basic_medium_tank
-			}
+			has_tech = basic_medium_tank
 		}
 		
 		modifier = {
@@ -61,6 +59,7 @@ armored_SOV = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -72,6 +71,12 @@ armored_SOV = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -136,6 +141,7 @@ armored_SOV = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -147,6 +153,12 @@ armored_SOV = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 
@@ -205,8 +217,8 @@ armored_SOV = {
 			factor = 2
 
 			modifier = {
-				factor = 3
-				has_tech = basic_medium_tank
+				factor = 10
+				has_tech = improved_medium_tank
 				NOT = {
 					has_tech = main_battle_tank
 				}
@@ -234,6 +246,7 @@ armored_SOV = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -245,6 +258,12 @@ armored_SOV = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -261,8 +280,9 @@ armored_SOV = {
 			}
 			
 			regiments = {
-				medium_armor = 7
-				motorized = 3
+				medium_armor = 4
+				motorized = 4
+				mot_artillery_brigade = 1
 			}
 		}
 
@@ -274,7 +294,9 @@ armored_SOV = {
 			infantry
 
 			motorized_rocket_brigade 
-
+			mot_artillery_brigade
+			mot_anti_tank_brigade
+			mot_anti_air_brigade
 			engineer
 			recon
 			signal_company
@@ -329,6 +351,7 @@ armored_SOV = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -340,6 +363,12 @@ armored_SOV = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 
@@ -434,6 +463,7 @@ infantry_SOV = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -445,6 +475,12 @@ infantry_SOV = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -454,8 +490,8 @@ infantry_SOV = {
 			
 			support = {
 				engineer = 1
-				recon = 1
-				field_hospital = 1
+				#recon = 1
+				#field_hospital = 1
 				anti_tank = 1
 			}
 			
@@ -540,6 +576,7 @@ mountaineers_SOV = {
 			0 #-- suppression_factor
 			0 #-- experience_loss_factor
 			0 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0 #-- air_attack
 			#-- Common Values
@@ -550,7 +587,13 @@ mountaineers_SOV = {
 			0 #-- ap_attack
 			0 #-- reliability
 			0 #-- reliability_factor
-			0 #-- weight
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			-0.1 #-- build_cost_ic
 		}
 
@@ -637,6 +680,7 @@ marines_SOV = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -648,6 +692,12 @@ marines_SOV = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-0.2 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			-0.1 #-- build_cost_ic
 		}
 
@@ -728,6 +778,7 @@ paratroopers_SOV = {
 			0.01 #-- suppression_factor
 			0.05 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.01 #-- air_attack
 			#-- Common Values
@@ -739,6 +790,12 @@ paratroopers_SOV = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-1.0 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			-0.1 #-- build_cost_ic
 		}
 
@@ -830,6 +887,7 @@ garrison_SOV = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -841,6 +899,12 @@ garrison_SOV = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -935,6 +999,7 @@ anti_armor_SOV = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -946,6 +1011,12 @@ anti_armor_SOV = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -1027,6 +1098,7 @@ anti_armor_SOV = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -1038,6 +1110,12 @@ anti_armor_SOV = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -1113,6 +1191,7 @@ anti_armor_SOV = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -1124,6 +1203,12 @@ anti_armor_SOV = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 

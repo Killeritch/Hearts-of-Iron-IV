@@ -1758,10 +1758,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = extensive_conscription
 		}
@@ -1793,10 +1789,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -1838,10 +1830,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			#allow nazi leader
@@ -1909,7 +1897,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CZE_czech_fascism
+			add_timed_idea = { idea = CZE_czech_fascism days = 1095 }
 		}
 	}
 
@@ -2023,13 +2011,14 @@ focus_tree = {
 				limit = {
 					has_idea = CZE_divided_nation
 				}
-				swap_ideas = { remove_idea = CZE_divided_nation add_idea = CZE_czech_fascism_idea  }	
+				remove_ideas = CZE_divided_nation
+				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			}
 			if = {
 				limit = {
 					NOT = { has_idea = CZE_divided_nation }
 				}
-				add_ideas = CZE_czech_fascism_idea	
+				add_timed_idea = { idea = CZE_czech_fascism_idea days = 1095 }
 			}
 			country_event = { days = 6 random = 120 id = czech.14 }			
 		}
@@ -2508,7 +2497,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -2585,7 +2574,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 3
 				category = electronics
 				category = jet_technology
@@ -2628,8 +2617,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = nuclear
 			}
@@ -2656,16 +2645,12 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			is_in_faction_with = FRA
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
@@ -2696,18 +2681,17 @@ focus_tree = {
 		}
 
 		bypass = {
-			YUG = {
-				is_in_faction = yes
+			OR = {
+				YUG = {
+					is_in_faction = yes
+				}
+				is_in_faction_with = FRA
 			}
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			YUG = { country_event = { hours = 1 id = czech.25 } }
@@ -2731,24 +2715,22 @@ focus_tree = {
 		available = {
 			ROM = { is_in_faction = no }
 			ROM = { exists = yes }
-			ROM = { is_subject = no }
-			
+			ROM = { is_subject = no }			
 			CZE = { is_faction_leader = yes }
 		}
 
 		bypass = {
-			ROM = {
-				is_in_faction = yes
+			OR = {
+				ROM = {
+					is_in_faction = yes
+				}
+				is_in_faction_with = FRA
 			}
 		}	
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			ROM = { country_event = { hours = 1 id = czech.28 } }
@@ -2783,16 +2765,13 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			is_in_faction = yes
+			is_faction_leader = no
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_to_tech_sharing_group = little_entente_research_group
@@ -2828,7 +2807,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			is_in_faction = yes
 		}
 
 		bypass = {
@@ -2839,17 +2818,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			#events for faction members. add 10% planning cap bonus
 			add_ideas = CZE_planning_bonus
-			every_country = {
+			every_other_country = {
 				limit = {
-					is_in_faction_with = THIS
-					NOT = { tag = THIS }
+					is_in_faction_with = ROOT
 				}
 				country_event = { id = czech.31 }
 			}
@@ -2881,16 +2855,12 @@ focus_tree = {
 
 		bypass = {
 			HUN = { exists = no }
-			HUN = { is_subject_of = CZE}
+			HUN = { is_subject_of = CZE }
 		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -2929,10 +2899,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -3090,8 +3056,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cze_mountain_bonus
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -3131,8 +3097,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_inf_and_artillery_advancement
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = infantry_weapons
 			}
@@ -3172,7 +3138,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_support_bonus #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				#category = hospital_tech
 				#category = logistics_tech
@@ -3185,7 +3151,7 @@ focus_tree = {
 			}
 		add_tech_bonus = {
 			name = CZE_support_bonus #@#
-			bonus = 0.5
+			bonus = 1.0
 			uses = 1
 			technology = support_weapons2
 			technology = support_weapons3
@@ -3226,8 +3192,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_inf_and_artillery_advancement_2 #@#
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = artillery
 			}
@@ -3268,7 +3234,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -3308,7 +3274,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 0.75
+				bonus = 3.0
 				technology = motorised_infantry
 			}
 		}
@@ -3346,7 +3312,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
@@ -3386,7 +3352,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_mechanization #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -3426,7 +3392,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
@@ -3467,7 +3433,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -3588,7 +3554,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_import_foreign_fighters #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
@@ -3630,7 +3596,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_light_fighter_focus #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 			}
@@ -3671,7 +3637,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_heavy_fighter_focus #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_heavy_fighter
 			}
@@ -3748,7 +3714,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 3
 				category = air_doctrine
 			}
@@ -3788,7 +3754,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_import_foreign_bombers #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cas_bomber
 				category = tactical_bomber
@@ -3830,7 +3796,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_cas_focus #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cas_bomber
 			}
@@ -3871,7 +3837,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CZE_tac_focus #@#
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 			}
@@ -4054,7 +4020,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = bb_tech
 			}
@@ -4093,7 +4059,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = dd_tech
 			}
@@ -4132,7 +4098,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cl_tech
 				category = ca_tech
@@ -4175,7 +4141,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_trade_interdiction
 			}
@@ -4217,7 +4183,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = naval_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_fleet_in_being
 			}

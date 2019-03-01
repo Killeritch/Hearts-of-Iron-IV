@@ -452,8 +452,9 @@ country_event = {
 			add_state_claim = 382 # Colorado
 			add_state_claim = 376 # New Mexico
 		}
-		
-		news_event = { id = news.249 hours = 6 }
+		hidden_effect = {
+			news_event = { id = news.249 hours = 6 }
+		}
 	}
 }
 

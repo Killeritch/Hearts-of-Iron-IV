@@ -74,3 +74,4 @@
  UNIT_ASSIGN_TO_ORDER_HINT_ARMY_GROUP:0 "§GCtrl + cliique§! para designar essa ordem para os exércitos selecionados."
  UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GClique com o botão direito§! para deletar apenas frontes de grupos de exércitos sem deletar frontes de exércitos."
  ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Selecione um grupo de exército completo e pressione §GCtrl + clique§! para designar essa ordem para todas unidades sem ordens."
+ ORDER_PROV_TOOLTIP_DEFENSIVE_LINE_ARMY_GROUP:0 " - §GClique§! para formar a  §YLinha Defensiva§! em toda a froneteira.\n - §GShift + Clique§! para formar a §YLinha Defensiva§! em toda a fronteira sem linhas de sub-exércitos.\n - §GClique com o botão direito§! e arraste a §YLinha Defensiva§! pela fronteira.\n - §GShift + Clique com o botão direito§! e arraste a §YLinha Defensiva§! ao longo da fronteira sem linhas de sub-exércitos. "

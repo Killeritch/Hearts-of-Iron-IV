@@ -352,7 +352,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_ideas = GER_preparing_ITA_coup
+		add_timed_idea = { idea = GER_preparing_ITA_coup days = 1095 }
 		GER = {
 			country_event = { id = wtt_germany.9 days = 1 random = 2 }
 		}
@@ -550,6 +550,7 @@ country_event = {
 		add_state_core = 762
 		86 = { set_state_name = "Posen" }
 		set_province_name = { id = 6558 name = "Posen" }
+		762 = { set_state_name = "Kattowitz" }
 		add_ideas = anti_soviet_pact
 		POL = { 
 			add_ideas = anti_soviet_pact
@@ -941,9 +942,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = GER
+		original_tag = GER
 		has_government = neutrality
-		has_completed_focus = GER_revive_the_kaiserreich
 		date > 1939.1.1
 		has_country_leader = { ruling_only = yes name = "Wilhelm II" }
 	}
@@ -981,7 +981,6 @@ country_event = {
 	trigger = {
 		tag = GER
 		has_government = neutrality
-		NOT = { has_completed_focus = GER_revive_the_kaiserreich }
 		date > 1940.1.1
 		has_country_leader = { ruling_only = yes name = "August von Mackensen" }
 	}
@@ -1219,6 +1218,7 @@ country_event = {
 		name = germany.61.b
 		trigger = {
 			NOT = { GER = { has_country_flag = germany_war_return_kaiser } }
+			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		ai_chance = { 
 			factor = 10
@@ -1273,6 +1273,7 @@ country_event = {
 		name = germany.61.c
 		trigger = {
 			GER = { has_country_flag = germany_war_return_kaiser }
+			NOT = { has_completed_focus = ENG_a_change_in_course }
 		}
 		ai_chance = { 
 			factor = 10
@@ -1336,10 +1337,16 @@ country_event = {
 	
 	option = {
 		name = germany.62.a
+		trigger = { NOT = { has_completed_focus = ENG_a_change_in_course } }
 		add_opinion_modifier = { target = GER modifier = protest_action }
 		GER = {
 			add_war_support = 0.1
 		}
+	}
+
+	option = {
+		name = germany.62.b
+		trigger = { has_completed_focus = ENG_a_change_in_course }
 	}
 }
 
@@ -2172,7 +2179,10 @@ country_event = {
 						}
 					}
 				}
-				199 = {}
+				1 = {
+					set_global_flag = MTG_flag_955
+				}
+				198 = {}
 			}
 		}
 	}
@@ -2242,7 +2252,7 @@ country_event = {
 				name = "Walter Model"
 				picture = "Portrait_Germany_Walter_Model.dds"
 				traits = { defensive_doctrine brilliant_strategist trait_cautious }
-				skill = 2
+				skill = 3
 				id = 10
 				attack_skill = 2
 				defense_skill = 4
@@ -2287,7 +2297,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = dietrich_survived
+#				has_country_flag = dietrich_survived
 			}
 			create_corps_commander = {
 				name = "Sepp Dietrich"
@@ -2295,9 +2305,9 @@ country_event = {
 				traits = { armor_officer brilliant_strategist trait_reckless }
 				skill = 4
 				id = 24
-				attack_skill = 2
+				attack_skill = 3
 				defense_skill = 3
-				planning_skill = 4
+				planning_skill = 5
 				logistics_skill = 4
 			}
 			clr_country_flag = dietrich_survived
@@ -2356,14 +2366,18 @@ country_event = {
 	trigger = {
 		original_tag = GER
 		OR = {
-			has_government = democratic 
+			has_government = democratic
 			has_government = neutrality
 		}
 		is_in_faction_with = AUS
+		AUS = {
+			is_major = no
+		}
 		OR = {
 			AUS = { has_government = democratic }
 			AUS = { has_government = neutrality }
 		}
+		NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
 	}
 
 	mean_time_to_happen = { days = 60 }

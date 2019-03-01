@@ -66,7 +66,7 @@ focus_tree = {
 	focus = {
 		id = NZL_transfer_the_new_zealand_division
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 15
+		x = 16
 		y = 0
 
 		cost = 10
@@ -86,10 +86,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = NZL_transfer_ships_tt
@@ -134,15 +130,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = NZL_form_the_rnzn
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = naval_doctrine
 			}
@@ -249,10 +241,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			every_owned_state = {
 				limit = {
@@ -322,15 +310,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_destroyer_effort
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -364,15 +348,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_submarine_effort
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}
@@ -405,15 +385,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_light_cruiser_effort
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = cl_tech
 			}
@@ -453,8 +429,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_capital_ship_effort
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = bb_tech
 				category = cv_tech
@@ -470,7 +446,7 @@ focus_tree = {
 	focus = {
 		id = NZL_expand_the_nzpaf
 		icon = GFX_goal_generic_air_doctrine
-		x = 20
+		x = 21
 		y = 0
 
 		cost = 10
@@ -561,7 +537,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = NZL_form_the_rnzaf
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -585,7 +561,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = NZL_form_the_rnzaf
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -626,7 +602,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_fighter_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 			}
@@ -667,7 +643,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_bomber_focus
-				bonus = 0.50
+				bonus = 1.00
 				uses = 1
 				category = cat_strategic_bomber
 				category = tactical_bomber
@@ -708,7 +684,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_defend_our_islands
-				bonus = 0.50
+				bonus = 1.00
 				uses = 2
 				category = naval_air
 			}
@@ -749,7 +725,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_modern_fighters
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = early_fighter
 				technology = fighter1
@@ -794,7 +770,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_heavy_bombers
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_strategic_bomber
 			}
@@ -809,7 +785,7 @@ focus_tree = {
 	focus = {
 		id = NZL_national_roads_board
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 24
+		x = 25
 		y = 0
 
 		cost = 10
@@ -1306,7 +1282,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_project_seal
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = nuclear
 			}
@@ -1392,7 +1368,7 @@ focus_tree = {
 	focus = {
 		id = NZL_army_reforms
 		icon = GFX_goal_generic_army_doctrines
-		x = 29
+		x = 30
 		y = 0
 
 		cost = 10
@@ -1421,7 +1397,7 @@ focus_tree = {
 			army_experience = 25
 			add_tech_bonus = {
 				name = NZL_army_reforms
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -1465,7 +1441,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_charlton_automatic_rifle
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1506,7 +1482,7 @@ focus_tree = {
 			add_ideas = NZL_bob_semple_tank
 			add_tech_bonus = {
 				name = NZL_bob_semple_tank
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = basic_light_tank
 			}
@@ -1611,7 +1587,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_schofield_tank
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_light_armor
 			}
@@ -1651,7 +1627,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_long_range_patrol
-				bonus = 0.50
+				bonus = 1.00
 				uses = 2
 				category = marine_tech
 			}
@@ -1691,7 +1667,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_artillery_focus
-				bonus = 0.50
+				bonus = 1.00
 				uses = 1
 				category = artillery
 			}
@@ -1776,8 +1752,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = NZL_big_bob_tank
-				ahead_reduction = 1
-				bonus = 0.5
+				ahead_reduction = 2
+				bonus = 1.0
 				uses = 1
 				technology = super_heavy_tank
 			}
@@ -1791,7 +1767,7 @@ focus_tree = {
 	focus = {
 		id = NZL_the_first_labor_government
 		icon = GFX_goal_generic_improve_relations
-		x = 3
+		x = 4
 		y = 0
 
 		cost = 10
@@ -2203,7 +2179,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2360,7 +2336,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2401,6 +2377,7 @@ focus_tree = {
 			is_subject = no
 			has_government = communism
 			NOT = { has_war_together_with = ENG }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2411,17 +2388,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			ENG = { remove_from_faction = ROOT }
 			add_political_power = 100
-			
-			set_autonomy = {
-				target = NZL
-				autonomy_state = autonomy_free
+			OVERLORD = {
+				set_autonomy = {
+					target = NZL
+					autonomy_state = autonomy_free
+				}
 			}
 
 			swap_ideas = {
@@ -2452,6 +2426,7 @@ focus_tree = {
 				has_capitulated = no
 				is_subject = no
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2489,6 +2464,7 @@ focus_tree = {
 			has_government = communism
 			is_subject = no
 			is_in_faction_with = SOV
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2531,7 +2507,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2574,6 +2550,7 @@ focus_tree = {
 			JAP = { has_government = ROOT }
 			is_subject = no
 			has_government = fascism			
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2610,6 +2587,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2656,6 +2634,7 @@ focus_tree = {
 		available = {
 			has_government = fascism
 			is_in_faction_with = JAP
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2703,6 +2682,7 @@ focus_tree = {
 					is_in_faction_with = ROOT
 				}
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {
@@ -2748,6 +2728,7 @@ focus_tree = {
 					is_in_faction_with = ROOT
 				}
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
 		bypass = {

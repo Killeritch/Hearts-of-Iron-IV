@@ -20,6 +20,9 @@ technologies = {
 			leads_to_tech = interwar_antiair 
 			research_cost_coeff = 1
 		}
+		enable_equipment_modules = { 
+			ship_anti_air_1
+		}
 		
 		research_cost = 1.5
 		
@@ -58,6 +61,9 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		
@@ -158,6 +164,9 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		mot_artillery_brigade = {
+			soft_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = artillery3
@@ -208,6 +217,9 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		
@@ -301,6 +313,9 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
 		
@@ -404,6 +419,9 @@ technologies = {
 		rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
+		mot_rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
 		}
@@ -442,6 +460,9 @@ technologies = {
 			soft_attack = 0.15
 		}
 		rocket_artillery_brigade = {
+			soft_attack = 0.15
+		}
+		mot_rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
 		motorized_rocket_brigade = {
@@ -521,6 +542,10 @@ technologies = {
 			anti_air_equipment_1
 		}
 
+		enable_equipment_modules = { 
+			ship_anti_air_2
+		}
+
 		enable_building = {
 			building = anti_air
 			level = 5
@@ -585,6 +610,9 @@ technologies = {
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
+		mot_anti_air_brigade = {
+			air_attack = 0.1
+		}
 
 		industry_air_damage_factor = -0.08
 		
@@ -604,6 +632,19 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
 		}
 		
 		categories = {
@@ -619,12 +660,9 @@ technologies = {
 
 		static_anti_air_damage_factor = 0.1
 
-		#anti_air = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
+		enable_equipment_modules = { 
+			ship_anti_air_3
+		}
 		
 		path = {
 			leads_to_tech = antiair3
@@ -641,7 +679,20 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
 		}
 		
 		categories = {
@@ -655,6 +706,9 @@ technologies = {
 			air_attack = 0.1
 		}
 		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
 		
@@ -676,6 +730,19 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
 		}
 		
 		categories = {
@@ -689,6 +756,9 @@ technologies = {
 			air_attack = 0.1
 		}
 		anti_air_brigade = {
+			air_attack = 0.1
+		}
+		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
 
@@ -710,6 +780,19 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
 		}
 		
 		categories = {
@@ -725,12 +808,9 @@ technologies = {
 
 		static_anti_air_damage_factor = 0.1
 		
-		#anti_air = {
-		#	air_attack = 0.1
-		#}
-		#anti_air_brigade = {
-		#	air_attack = 0.1
-		#}
+		enable_equipment_modules = { 
+			ship_anti_air_4
+		}
 		
 		research_cost = 1
 
@@ -743,6 +823,19 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+				}
+				OR = {
+					has_war_with = JAP
+					has_war_with = USA
+					has_war_with = ENG
+				}
+				factor = 5
+			}
 		}
 		
 		categories = {
@@ -787,6 +880,16 @@ technologies = {
 				}
 			}
 			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
+			modifier = {
 				factor = 2
 				date > "1937.1.1"
 			}
@@ -829,6 +932,10 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.2
 		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
 		
 		path = {
 			leads_to_tech = antitank2
@@ -856,6 +963,16 @@ technologies = {
 						}
 					}
 				}
+			}
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
 			}
 			modifier = {
 				factor = 2
@@ -910,12 +1027,25 @@ technologies = {
 				factor = 2
 				date > "1939.1.9"
 			}
-			
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
 			modifier = {
 				factor = 2
 				date > "1940.1.1"
 			}
-			
+			modifier = {
+				tag = USA
+				has_War = no
+				factor = 0.5 #this tank nonsense will never catch on
+			}
 			modifier = {
 				factor = 5
 				date > "1940.1.6"
@@ -949,6 +1079,10 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
 		
 		path = {
 			leads_to_tech = antitank4
@@ -971,7 +1105,16 @@ technologies = {
 				factor = 2
 				date > "1941.1.6"
 			}
-			
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
 			modifier = {
 				factor = 2
 				date > "1942.1.1"
@@ -1010,6 +1153,10 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
 	
 		path = {
 			leads_to_tech = antitank5
@@ -1032,7 +1179,16 @@ technologies = {
 				factor = 2
 				date > "1942.1.6"
 			}
-			
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
 			modifier = {
 				factor = 5
 				date > "1943.1.1"
@@ -1087,7 +1243,16 @@ technologies = {
 				factor = 2
 				date > "1942.1.9"
 			}
-			
+			modifier = {
+				tag = JAP
+				not = {
+					OR = {
+						has_War_with = SOV
+						has_war_with = USA
+					}
+				}
+				factor = 0.5
+			}
 			modifier = {
 				factor = 2
 				date > "1943.1.1"

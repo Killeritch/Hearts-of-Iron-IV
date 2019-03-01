@@ -17,6 +17,9 @@ country_event = {
 		name = italy.1.a
 		annex_country = { target = ALB }
 		add_named_threat = { threat = 2 name = ITA_albania_war_goal }
+		USA = {
+			set_country_flag = { flag = USA_albania_window days = 60 value = 1 }
+		}
 		hidden_effect = {
 			country_event = { days = 1 id = news.22 }
 		}
@@ -188,12 +191,12 @@ country_event = {
 		}
 		# REVISIT Balance research bonus, also in event below
 		add_tech_bonus = {
-			bonus = 0.5
+			bonus = 1.0
 			uses = 1
 			technology = tech_mountaineers2
 		}
 		add_tech_bonus = {
-			bonus = 0.5
+			bonus = 1.0
 			uses = 2
 			category = naval_doctrine
 		}
@@ -223,13 +226,13 @@ country_event = {
 		# REVISIT Balance research bonus
 		add_tech_bonus = {
 			name = synth_bonus
-			bonus = 0.5
+			bonus = 1.0
 			uses = 1
 			category = synth_resources
 		}
 		add_tech_bonus = {
 			name = armor_bonus
-			bonus = 0.5
+			bonus = 1.0
 			uses = 2
 			category = armor
 		}

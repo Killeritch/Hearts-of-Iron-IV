@@ -98,7 +98,7 @@ guiTypes = {
 		iconType = {
 			name = "select_model"
 			position = { x=35 y=107 }	
-			quadTextureSprite = "GFX_3d_view_placeholder_3"
+			quadTextureSprite = "GFX_3d_view_placeholder"
 		}		
 		
 		containerWindowType = {
@@ -488,29 +488,26 @@ guiTypes = {
 			size = { width = 220 height = 30 }
 			
 
+			containerWindowType = {
+				name = "division_name_bg"
+				size = { width = 220 height = 30 }
 
+				
+				background = {
+					name = "name_bg"
+					quadTextureSprite = "GFX_generic_background"
+					position = { x = 15 y = 0 }
+					alwaystransparent = yes
+				}
 
-
-		containerWindowType = {
-			name = "division_name_bg"
-			size = { width = 220 height = 30 }
-
-			
-			background = {
-				name = "name_bg"
-				quadTextureSprite = "GFX_generic_background"
-				position = { x = 15 y = 0 }
-				alwaystransparent = yes
 			}
 
-		}
-
-		iconType = {
-			name = "division_nametag_icon"
-			spriteType = "GFX_division_nametag_icon"
-			position = { x = 20 y = 2 }
-#			position = { x = 174 y = 135 }
-		}
+			iconType = {
+				name = "division_nametag_icon"
+				spriteType = "GFX_division_nametag_icon"
+				position = { x = 20 y = 2 }
+	#			position = { x = 174 y = 135 }
+			}
 
 			instantTextboxType = {
 				name = "name"
@@ -1109,13 +1106,13 @@ guiTypes = {
 		iconType = {
 			name = "special_forces_icon"
 			spriteType = "GFX_special_forces_icon"
-			position = { x = 176 y = 5 }
+			position = { x = 216 y = 5 }
 		}
 		
 		iconType = {
 			name = "can_paradrop_icon"
 			spriteType = "GFX_can_paradrop_icon_small"
-			position = { x = 216 y = 5 }
+			position = { x = 216 y = 30 }
 			frame = 2
 		}
 	}
@@ -1144,7 +1141,7 @@ guiTypes = {
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
-			text = "Maus"
+			text = "DESIGNER_CREATE_NEW_DIVISION"
 			maxWidth = 138
 			maxHeight = 40
 			fixedsize = yes
@@ -1244,6 +1241,47 @@ guiTypes = {
 		iconType = {
 			name ="terrain_mod_defense_strip"
 			spriteType = "GFX_terrain_mod_defense_strip"
+			position = { x=56 y=42 }
+			frame = 1
+		}		
+
+	}
+	
+	containerWindowType = {
+		name = "designer_adjuster_entry_with_modifier"	
+		size = { width = 50 height = 50 }
+		clipping = no
+
+		iconType = {
+			name ="terrain_mod_bg"
+			spriteType = "GFX_adjuster_unknown_bg"
+			position = { x=18 y=11 }
+		}
+
+		iconType = {
+			name ="terrain_mod_frame"
+			spriteType = "GFX_terrain_mod_frame"
+			position = { x=7 y=5 }
+		}
+
+
+		iconType = {
+			name ="terrain_mod_attack_defense_strip"
+			spriteType = "GFX_terrain_mod_attack_defense_strip"
+			position = { x=34 y=42 }
+			frame = 1
+		}
+		
+		iconType = {
+			name ="terrain_mod_movement_strip"
+			spriteType = "GFX_terrain_mod_movement_strip"
+			position = { x=11 y=42 }
+			frame = 1
+		}
+
+		iconType = {
+			name ="terrain_mod_other_strip"
+			spriteType = "GFX_terrain_mod_other_strip"
 			position = { x=56 y=42 }
 			frame = 1
 		}		

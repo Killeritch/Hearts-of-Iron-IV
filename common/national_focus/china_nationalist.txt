@@ -770,6 +770,7 @@ focus_tree = {
 		}
 
 		available = {
+			is_subject = no
 			is_in_faction = no
 		}
 
@@ -1796,7 +1797,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CHI_unified_industrial_planning
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = industry
 			}

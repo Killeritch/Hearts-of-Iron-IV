@@ -4,11 +4,28 @@ FRA_historical_plan = {
 
 	enable = {
 		original_tag = FRA
-		is_historical_focus_on = yes
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FRA_ai_behavior
+					option = DEFAULT
+				}	
+			}
+			has_game_rule = {
+				rule = FRA_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+			has_country_flag = FRA_AI_DEMOCRATIC_HISTORICAL
+		}
 	}
 	abort = {
 		GER = {
 			has_completed_focus = GER_oppose_hitler
+		}
+		has_game_rule = {
+			rule = FRA_ai_behavior
+			option = DEFAULT
 		}
 	}
 

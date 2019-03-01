@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = ENG
-		victory_points = { 11253 5 }
+		victory_points = { 271 5 }
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1

@@ -561,7 +561,12 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		GER = { transfer_state = 69 }
+		GER = {
+			add_state_core = 69
+			transfer_state = 69
+			add_state_core = 74
+			transfer_state = 74
+		}
 		CZE = {
 			country_event = { id = czech.23 hours = 6 }
 		}

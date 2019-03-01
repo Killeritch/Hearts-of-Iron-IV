@@ -15,7 +15,7 @@
 	}
 }
 division_template = {
-	name = "KNIL Koloniale Garnizoen"		
+	name = "KNIL Koloniaal Garnizoen"		
 	# Note: originally formed in 1939
 	division_names_group = INS_GAR_01
 
@@ -37,7 +37,7 @@ units = {
 			name_order = 3
 		}
 		location = 10237 #Balikapan/Borneo
-		division_template = "KNIL Koloniale Garnizoen"		
+		division_template = "KNIL Koloniaal Garnizoen"		
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.3
 	}
@@ -48,7 +48,7 @@ units = {
 			name_order = 1
 		}
 		location = 12268 #Palembang/Sumatra
-		division_template = "KNIL Koloniale Garnizoen"		
+		division_template = "KNIL Koloniaal Garnizoen"		
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.3
 	}
@@ -58,7 +58,7 @@ units = {
 			name_order = 2
 		}
 		location = 4652 #Medan/Palembang
-		division_template = "KNIL Koloniale Garnizoen"		
+		division_template = "KNIL Koloniaal Garnizoen"		
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.3
 	}
@@ -68,7 +68,7 @@ units = {
 			name_order = 4
 		}
 		location = 10263 #Celebes
-		division_template = "KNIL Koloniale Garnizoen"		
+		division_template = "KNIL Koloniaal Garnizoen"		
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.3
 	}

@@ -2084,9 +2084,6 @@ operations = {
 		modifier = {
 			army_core_attack_factor = 0.25
 		}
-		complete_effect = {
-			#WTT_TODO_CD: Script mission to take enemy state
-		}
 	}	
 }
 
@@ -2136,6 +2133,16 @@ PRC_provoke_japan = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_war_with = event_target:WTT_current_china_leader
+				factor = 0 # let's just not make things worse for ourselves
+			}
+			modifier = {
+				JAP = {
+					has_war_with = event_target:WTT_current_china_leader
+				}
+				factor = 0 # mission accomplished
+			}
 		}
 		fixed_random_seed = no
 		days_re_enable = 90

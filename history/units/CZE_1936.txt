@@ -72,6 +72,17 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+	division = { # "1. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11542  # Prague
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
+	}
 	division = { # "4. divize"
 		division_name = {
 			is_name_ordered = yes
@@ -117,6 +128,17 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+	division = { # "2. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3569 # Brno
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
+	}
 	division = { # "15. divize"
 		division_name = {
 			is_name_ordered = yes
@@ -139,7 +161,28 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-
+	division = { # "3. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692  # Bratislava
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
+	}
+	division = { # "4. fast"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692  # Bratislava
+		division_template = "Rychlá divize"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.01
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
+	}
 	### I Armáda ###
 	division = { # "18. divize"
 		division_name = {
@@ -369,6 +412,15 @@ instant_effect = {
 			creator = "CZE"
 		}
 		requested_factories = 1
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "CZE"
+		}
+		requested_factories = 2
 		progress = 0.48
 		efficiency = 100
 	}

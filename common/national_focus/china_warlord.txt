@@ -774,11 +774,11 @@ focus_tree = {
 					target = ROOT
 					modifier = CHI_cooperation_with_the_communists_positive
 				}
-				#add_ai_strategy = {
-				#	type = send_volunteers_desire #TODO_WTT_CD lend lease desire
-				#	id = "ROOT"
-				#	value = 100
-				#}
+				add_ai_strategy = {
+					type = support
+					id = "ROOT"
+					value = 100
+				}
 			}
 			PRC = {
 				add_opinion_modifier = {
@@ -870,7 +870,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = CHI_ideological_education
+			add_timed_idea = { idea = CHI_ideological_education days = 1095 }
 		}
 	}
 
@@ -1146,12 +1146,12 @@ focus_tree = {
 					}
 				}
 				OVERLORD = {
+					set_autonomy = { target = ROOT autonomy_state = autonomy_free }
 					create_wargoal = {
 						target = ROOT
 						type = puppet_wargoal_focus
 					}
 				}
-				set_autonomy = { target = ROOT autonomy_state = autonomy_free }
 			}
 			if = {
 				limit = { is_faction_leader = yes }
@@ -1425,8 +1425,8 @@ focus_tree = {
 					gfx = GFX_portrait_li_zongren
 					traits = { infantry_officer } # Many warlord battles as a junior commander
 					skill = 3
-					attack_skill = 4
-					defense_skill = 3
+					attack_skill = 2
+					defense_skill = 4
 					planning_skill = 2
 					logistics_skill = 2					
 				}
@@ -1438,7 +1438,7 @@ focus_tree = {
 					gfx = GFX_portrait_yun_long_yun				
 					traits = { war_hero } # Fought in the Xinhai Revolution, showed personal bravery fighting Japan
 					skill = 3
-					attack_skill = 4
+					attack_skill = 3
 					defense_skill = 3
 					planning_skill = 2
 					logistics_skill = 2
@@ -1449,9 +1449,9 @@ focus_tree = {
 				create_field_marshal = {
 					name = "Yan Xishan"
 					gfx = GFX_portrait_yan_xishan
-					traits = { career_officer } # Educated at officer schools in China and Japan
+					traits = { career_officer infantry_officer } # Educated at officer schools in China and Japan
 					skill = 3
-					attack_skill = 4
+					attack_skill = 3
 					defense_skill = 3
 					planning_skill = 2
 					logistics_skill = 2
@@ -1464,7 +1464,7 @@ focus_tree = {
 					gfx = GFX_portrait_xsm_ma_bufang
 					traits = { cavalry_officer } # Raised 30,000 Muslim Cavalrymen
 					skill = 3
-					attack_skill = 4
+					attack_skill = 3
 					defense_skill = 3
 					planning_skill = 2
 					logistics_skill = 2
@@ -1477,7 +1477,7 @@ focus_tree = {
 					gfx = GFX_portrait_sheng_shicai
 					traits = { politically_connected } # Studied political economy, played Stalin and Chiang against one another
 					skill = 3
-					attack_skill = 4
+					attack_skill = 3
 					defense_skill = 3
 					planning_skill = 2
 					logistics_skill = 2
@@ -1915,7 +1915,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CHI_local_arms_development
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1955,7 +1955,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CHI_heavy_weapons_development
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = artillery
 			}

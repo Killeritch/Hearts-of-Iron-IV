@@ -11,8 +11,26 @@ add_ideas = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
 	early_fighter = 1
-	early_submarine = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+	}
 }
 
 set_convoys = 5
@@ -33,6 +51,13 @@ set_convoys = 5
 	complete_national_focus = production_effort
 	
 	oob = "EST_1939"
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+			set_naval_oob = "EST_1939_naval_mtg"
+		else = {
+			set_naval_oob = "EST_1939_naval_legacy"
+		}
+	}
 	set_technology = {
 		tech_recon = 1
 		tech_support = 1		
@@ -41,11 +66,8 @@ set_convoys = 5
 		early_bomber = 1
 		CAS1 = 1
 		naval_bomber1 = 1
-		gw_artillery = 1
 		interwar_artillery = 1
-		interwar_antiair = 1
 		support_weapons = 1
-		basic_submarine = 1
 
 		#doctrines
 		air_superiority = 1
@@ -67,12 +89,25 @@ set_convoys = 5
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
+		fuel_silos = 1
 		oil_processing = 1
 		improved_oil_processing = 1
 		construction1 = 1
 		construction2 = 1
 		dispersed_industry = 1
 		dispersed_industry2 = 1
+	}
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+			basic_submarine = 1
+		}
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_technology = {
+			basic_ship_hull_submarine = 1
+		}
 	}
 }
 
@@ -140,5 +175,30 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 		#
+	}
+}
+
+
+### VARIANTS ###
+# 1939 Start #
+1939.1.1 = {
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Submarines #
+		create_equipment_variant = {
+			name = "Kalev Class"				
+			type = ship_hull_submarine_2
+			name_group = EST_SS_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
 	}
 }

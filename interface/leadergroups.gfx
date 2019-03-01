@@ -99,7 +99,12 @@ spriteTypes = {
 		name = "GFX_leader_group_frame_unselected"
 		textureFile = "gfx//interface//unitcontrol//leader_group_frame_unselected.dds"
 	}
-	
+
+	spriteType = {
+		name = "GFX_navy_leader_portrait_frame_highlight"
+		textureFile = "gfx/interface/unitcontrol/navy_leader_portrait_frame_highlight.dds"
+	}
+
 #	frameAnimatedSpriteType = {
 #		name = "GFX_leader_group_frame_selected"
 #		texturefile = "gfx/interface/unitcontrol/leader_group_frame.dds"
@@ -172,6 +177,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/unitcontrol/leader_army_group_frame.dds"
 		alwaystransparent = yes
 		noOfFrames = 3
+	}
+
+	spriteType = {
+		name = "GFX_navy_group_frame"
+		texturefile = "gfx/interface/unitcontrol/bottom_fleet_bar_frame.dds"
+		alwaystransparent = yes
+		noOfFrames = 2
+	}
+
+		spriteType = {
+		name = "GFX_floating_arrows"
+		texturefile = "gfx/interface/unitcontrol/arrows.dds"
+		alwaystransparent = yes
+		noOfFrames = 2
 	}
 
 

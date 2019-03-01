@@ -62,19 +62,26 @@ spriteTypes = {
 		
 	spriteType = {
 		name = "GFX_theatre_dropdown_bottom"
-		texturefile = "gfx//interface//theatre_dropdown_bottom.dds"
-		noOfFrames = 2
+		texturefile = "gfx//interface//theater//theatre_dropdown_bottom.dds"
+		noOfFrames = 3
 	}
 	
 	spriteType = {
+		name = "GFX_theatre_naval_control_panel"
+		texturefile = "gfx//interface//theater//theatre_naval_control_panel.dds"
+		noOfFrames = 3
+	}
+
+	
+	spriteType = {
 		name = "GFX_theatre_dropdown_middle"
-		texturefile = "gfx//interface//theatre_dropdown_middle.dds"
-		noOfFrames = 2
+		texturefile = "gfx//interface//theater//theatre_dropdown_middle.dds"
+		noOfFrames = 3
 	}
 
 	spriteType = {
 		name = "GFX_selected_theatre_frame"
-		texturefile = "gfx//interface//selected_theatre_frame.dds"
+		texturefile = "gfx//interface//theater//selected_theatre_frame.dds"
 	}
 
 	spriteType = {
@@ -84,8 +91,8 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_assign_group_button"
-		texturefile = "gfx//interface//assign_group_button.dds"
-		noOfFrames = 2		
+		texturefile = "gfx//interface//theater//assign_group_button.dds"
+		noOfFrames = 3		
 	}
 
 	spriteType = {
@@ -115,6 +122,18 @@ spriteTypes = {
 		name = "GFX_theatre_army_group_shield"
 		texturefile = "gfx/army_icons/army_group_icons.dds"
 		noOfFrames = 6
+	}
+
+	spriteType = {
+		name = "GFX_theatre_task_force_shield_selected"
+		texturefile = "gfx/army_icons/navy_selected_icons.dds"
+		noOfFrames = 29
+	}
+
+	spriteType = {
+		name = "GFX_theatre_task_force_shield"
+		texturefile = "gfx/army_icons/navy_icons.dds"
+		noOfFrames = 29
 	}
 
 	spriteType = {
@@ -161,7 +180,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_alerts"
 		texturefile = "gfx/interface/alerts/theater_alerts_strip.dds"
-		noOfFrames = 10
+		noOfFrames = 11
 	}
 	
 	spriteType = {
@@ -176,6 +195,24 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		noOfFrames = 3
 	}
+
+	spriteType = {
+		name = "GFX_naval_access_rule"
+		texturefile = "gfx/interface/strategicnavy/naval_access_rule.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_naval_access_rule_highlight"
+		texturefile = "gfx/interface/strategicnavy/naval_access_rule_highlight.dds"
+	}
+
+	spriteType = {
+		name = "GFX_header_naval_terrain"
+		texturefile = "gfx/interface/header_naval_terrain.dds"
+	}
+	
 	
 	spriteType = {
 		name = "GFX_orders_group_item_bg"
@@ -187,21 +224,26 @@ spriteTypes = {
 		name = "GFX_orders_group_item_training"
 		texturefile = "gfx/interface/orders_group_item_training.dds"	
 	}
-	
+
 	spriteType = {
 		name = "GFX_theater_group_bg"
-		texturefile = "gfx/interface/theater_group_bg.dds"
-		noOfFrames = 2
+		texturefile = "gfx/interface/theater/theater_group_bg.dds"
+		noOfFrames = 4
 	}
-	
+
+	spriteType = {
+		name = "GFX_fleet_theatre_priority_strip"
+		textureFile = "gfx//interface//fleet_theatre_prio_strip.dds"
+		noOfFrames = 2		
+	}
 	spriteType = {
 		name = "GFX_theater_group_assign_btn"
-		texturefile = "gfx/interface/theater_group_assign_btn.dds"
+		texturefile = "gfx/interface/theater/theater_group_assign_btn.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_theater_group_settings_btn"
-		texturefile = "gfx/interface/theater_group_settings_btn.dds"
+		texturefile = "gfx/interface/theater/theater_group_settings_btn.dds"
 	}
 
 	textspriteType = {

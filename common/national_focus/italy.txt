@@ -829,7 +829,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -853,7 +853,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = arty_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = artillery
 			}
@@ -879,7 +879,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = tech_recon
 				technology = tech_recon2
@@ -887,7 +887,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -913,14 +913,14 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = special_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = paratroopers
 				technology = paratroopers2
 			}
 			add_tech_bonus = {
 				name = special_bonus
-				ahead_reduction = 1
+				ahead_reduction = 2
 				uses = 1
 				technology = tech_mountaineers2
 			}
@@ -945,7 +945,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = armor
 			}
@@ -1046,7 +1046,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = naval_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1072,18 +1072,13 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = jet_fighter1
-				technology = jet_fighter2
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = air_doctrine
 			}
@@ -1107,12 +1102,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = cv_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
-				technology = early_carrier
-				technology = basic_carrier
-				technology = improved_carrier
-				technology = advanced_carrier
+				category = cv_tech
 			}
 		}
 	}
@@ -1135,22 +1127,17 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = bb_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
-				technology = basic_battleship
-				technology = improved_battleship
-				technology = advanced_battleship
-				technology = heavy_battleship
-				technology = heavy_battleship2
+				category = bb_tech
+				category = bc_tech
 			}
 			add_tech_bonus = {
 				name = cr_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
+				category = cl_tech
+				category = ca_tech
 			}
 		}
 	}
@@ -1174,14 +1161,14 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_bomber_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = tactical_bomber2
 				technology = tactical_bomber3
 			}
 			add_tech_bonus = {
 				name = ITA_bomber_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = CAS2
 				technology = CAS3
@@ -1210,7 +1197,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = naval_air_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = naval_bomber1
 				technology = naval_bomber2
@@ -1238,13 +1225,13 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = ITA_atlantic_fleet
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cv_tech
 			}
 			add_tech_bonus = {
 				name = ITA_atlantic_fleet
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = bb_tech
 			}
@@ -1268,14 +1255,14 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = marines
 				technology = marines2
 			}
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = transport
 				technology = landing_craft
@@ -1302,18 +1289,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
-				technology = jet_fighter1
-				technology = jet_fighter2
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = air_doctrine
 			}
@@ -1338,7 +1320,7 @@ focus_tree = {
 		# Caproni Campini N.1
 			add_tech_bonus = {
 				name = ITA_jet_engine_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = jet_engines
 				technology = jet_fighter1
@@ -1361,15 +1343,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = advanced_destroyer
+				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = con_def_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = convoy_sailing
 				technology = convoy_sailing_ti
@@ -1395,15 +1375,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_escort_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = advanced_destroyer
+				category = dd_tech
 			}
 			add_tech_bonus = {
 				name = ITA_escort_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				technology = convoy_escorts
 				technology = convoy_escorts_bs
@@ -1430,15 +1408,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
+				category = ss_tech
 			}
 			add_tech_bonus = {
 				name = sub_op_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				technology = submarine_operations
 				technology = undersea_blockade
@@ -1453,6 +1429,9 @@ focus_tree = {
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = ITA_submarine_effort }
 		prerequisite = { focus = ITA_german_millitary_cooperation }
+		available = {
+			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+		}
 		x = -1
 		y = 3
 		relative_position_id = ITA_submarine_effort
@@ -1467,13 +1446,13 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = ITA_sea_wolves
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = ss_tech
 			}
 			add_tech_bonus = {
 				name = ITA_sea_wolves
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = submarine_doctrine
 			}
@@ -1525,6 +1504,9 @@ focus_tree = {
 			add_state_claim = 102
 			add_state_claim = 103
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
+			USA = {
+				set_country_flag = { flag = USA_yugoslavia_window days = 60 value = 1 }
+			}
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
 				if = {
@@ -1782,6 +1764,7 @@ focus_tree = {
 					}
 				}
 			}
+			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 		x = -1
 		y = 1
@@ -1830,6 +1813,7 @@ focus_tree = {
 
 		available = {
 			NOT = { has_war_with = GER }
+			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 		
 		x = -3
@@ -1848,20 +1832,21 @@ focus_tree = {
 
 	focus = {
 		id = ITA_italy_first
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_generic_italy_first
 		prerequisite = { focus = ITA_bulgaria_friend }
 		mutually_exclusive = { focus = ITA_pact_of_steel }
 		available = {
-			is_puppet = no
+			is_subject = no
 			NOT = { has_war_with = BUL }
 			NOT = { is_in_faction_with = GER }
+			NOT = { is_in_faction_with = ENG }
 			OR = {
 				owns_state = 44
 				owns_state = 102
 			}
 			BUL = {
 				is_in_faction = no
-				is_puppet = no
+				is_subject = no
 			}
 		}
 		bypass = {
@@ -2021,6 +2006,9 @@ focus_tree = {
 		id = ITA_german_rd_treaty
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ITA_pact_of_steel }
+		available = {
+			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+		}
 		cancel = { has_war_with = GER }
 		x = -1
 		y = 1
@@ -2041,14 +2029,14 @@ focus_tree = {
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = synth_bonus
-					bonus = 0.5
+					bonus = 1.0
 					uses = 1
 					category = synth_resources
 				}
 				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
-					bonus = 0.5
+					bonus = 1.0
 					uses = 2
 					category = armor
 				}
@@ -2061,6 +2049,9 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		text = secret_weapons
 		prerequisite = { focus = ITA_german_millitary_cooperation }
+		available = {
+			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
+		}
 		x = 1
 		y = 1
 		relative_position_id = ITA_german_millitary_cooperation
@@ -2074,7 +2065,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = electronics
 				category = rocketry
@@ -2130,7 +2121,7 @@ focus_tree = {
 				}
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				add_ideas = fascist_influence 
-				country_event = { id = generic.1 }           
+				country_event = { id = generic.2 }           
 			}
 		}
 	}
@@ -2169,7 +2160,7 @@ focus_tree = {
 					limit = { ROOT = { has_government = communism } }
 					add_ideas = communist_influence
 				}
-				country_event = { id = generic.1 }
+				country_event = { id = generic.2 }
 			}
 		}
 	}
@@ -2413,7 +2404,10 @@ focus_tree = {
 	focus = {
 		id = ITA_anti_uk_war_goals
 		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = ITA_italy_first }		
+		prerequisite = { focus = ITA_italy_first }	
+		available = {
+			NOT = { is_in_faction_with = ENG }
+		}	
 		bypass = {
 			OR = {
 				has_war_with = ENG

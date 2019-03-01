@@ -84,3 +84,5 @@
  CONSTRUCTION_FACTORIES_PROJECTS_DESC:0 "Proyectos de construcción especiales de otros recursos."
  CONSTRUCTION_MAP_ICON_ENTRY:0 "£backhoe_icon_small   $VAL$/$MAX$"
  CONSTRUCTION_MAP_ICON_ENTRY_WITH_TEMP:0 "£backhoe_icon_small   $VAL$+$ADD|H$/$MAX$"
+ REFITTING_SPEED_MODIFIERS:1 "Velocidad de reacondicionamiento modificada en:"
+ REFITTING_COST_MODIFIERS:1 "Coste de reacondicionamiento modificado en:"

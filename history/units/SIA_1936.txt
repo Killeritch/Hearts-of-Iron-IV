@@ -68,14 +68,6 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-
-	######## NAVAL OOB ########
-	navy = {				
-		name = "Royal Siamese Navy"			
-		base = 7408
-		location = 7408 # Bangkok
-		ship = { name = "HTMS Phra Ruang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SIA } } }
-	}				
 }
 
 air_wings = {

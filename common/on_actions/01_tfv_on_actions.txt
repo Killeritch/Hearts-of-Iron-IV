@@ -277,6 +277,43 @@ on_actions = {
 				}
 				CZE = { set_cosmetic_tag = CZE_ONLY } #cosmetic tag for CZE if Slovakia exists
 			}
+			if = {
+				limit = {
+					tag = CAN
+					NOT = {
+						FROM = {
+							tag = ENG
+						}
+					}
+				}
+				CAN = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					tag = CAN
+					FROM = {
+						tag = ENG
+					}
+					NOT = { has_dlc = "Together for Victory" }
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_ALY # I don't know why the distinction is important but it's like this in the history file for Canada
+				}
+			}
+			if = {
+				limit = {
+					tag = CAN
+					FROM = {
+						tag = ENG
+					}
+					has_dlc = "Together for Victory"
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_UK
+				}
+			}
 		}
 	}
 
@@ -340,6 +377,43 @@ on_actions = {
 				}
 				CZE = { set_cosmetic_tag = CZE_ONLY } #cosmetic tag for CZE if Slovakia exists
 			}
+			if = {
+				limit = {
+					tag = CAN
+					NOT = {
+						FROM = {
+							tag = ENG
+						}
+					}
+				}
+				CAN = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					tag = CAN
+					FROM = {
+						tag = ENG
+					}
+					NOT = { has_dlc = "Together for Victory" }
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_ALY # I don't know why the distinction is important but it's like this in the history file for Canada
+				}
+			}
+			if = {
+				limit = {
+					tag = CAN
+					FROM = {
+						tag = ENG
+					}
+					has_dlc = "Together for Victory"
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_UK
+				}
+			}
 		}
 	}
 
@@ -354,6 +428,43 @@ on_actions = {
 					}
 				}
 				CZE = { set_cosmetic_tag = CZE_ONLY } #cosmetic tag for CZE if Slovakia exists
+			}
+			if = {
+				limit = {
+					tag = CAN
+					NOT = {
+						FROM = {
+							tag = ENG
+						}
+					}
+				}
+				CAN = {
+					drop_cosmetic_tag = yes
+				}
+			}
+			if = {
+				limit = {
+					tag = CAN
+					FROM = {
+						tag = ENG
+					}
+					NOT = { has_dlc = "Together for Victory" }
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_ALY # I don't know why the distinction is important but it's like this in the history file for Canada
+				}
+			}
+			if = {
+				limit = {
+					tag = CAN
+					FROM = {
+						tag = ENG
+					}
+					has_dlc = "Together for Victory"
+				}
+				CAN = {
+					set_cosmetic_tag = CAN_UK
+				}
 			}
 		}
 	}

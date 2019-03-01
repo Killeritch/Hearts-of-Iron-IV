@@ -5,12 +5,16 @@ state={
 	state_category = city
 
 	history={
+		victory_points = {
+			6626 1 
+		}
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = YUG
+		add_core_of = SLV
 		buildings = {
 			infrastructure = 2
-			11735 = {
+			6626 = {
 				naval_base = 5
 
 			}

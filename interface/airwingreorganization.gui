@@ -477,6 +477,49 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
+
+		dropDownBoxType = {
+			name = "manpower_dropdown"
+			position = { x = 555 y = 355 }
+			size = { width = 60 height = 40 }
+			
+
+			expandButton = {
+				name = "expand_button"	
+				position = { x = -10 y = 14 }
+				quadTextureSprite ="GFX_flag_small2"
+				buttonFont = "Main_14_black"
+				clicksound = click_default
+			}
+
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=-260 y= -355 }	
+				show_position = { x = 60 y = -355 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 500
+				size = { width=200 height=420 }	
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 7 bottom = 7 right = 6 }
+				#clipping = no
+				
+				background = {
+					name = "Background"		
+					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+					position = { x = 0 y = 0 }
+				}
+				
+				gridBoxType = {
+					name = "countries_grid"
+					position = { x = 8 y = 0 }
+					size = { width = 199 height = 100%% }
+					slotsize = { width = 256 height = 70 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+			}
+		}
 		
 		buttonType = {
 			name = "confirm_btn"
@@ -489,6 +532,38 @@ guiTypes = {
 			clicksound = click_default
 			text = "BUTTON_OK"
 		}
+	}
+
+	containerWindowType = {
+		name = "airwing_manpower_item"
+		size = { width = 270 height = 66  }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_mini_tooltip"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x= 13 y = 24 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "manpower_text"
+			position = { x = 65 y = 25 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Maus"
+			maxWidth = 160
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+		}		
 	}
 	
 	containerWindowType = {

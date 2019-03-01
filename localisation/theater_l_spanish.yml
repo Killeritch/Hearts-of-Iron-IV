@@ -74,3 +74,4 @@
  UNIT_ASSIGN_TO_ORDER_HINT_ARMY_GROUP:0 "§GCtrl + clic§! para asignar los ejércitos seleccionados a esta orden."
  UNIT_DELETE_SINGLE_ORDER_HINT:0 "\nHaz §Gclic con el botón derecho§! para eliminar solo el frente del grupo del ejército, sin eliminar los frentes del ejército."
  ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Selecciona un grupo completo del ejército y usa §GCtrl + clic§! para asignar a esta orden a todas las unidades sin órdenes de ejército."
+ ORDER_PROV_TOOLTIP_DEFENSIVE_LINE_ARMY_GROUP:0 " - §GHaz clic§! para crear la §Ylínea defensiva§! en toda la frontera.\n - §GMayúsculas + clic§! para crear la §Ylínea defensiva§! en toda la frontera sin subejércitos.\n - §GHaz clic derecho§! y arrastra para dibujar la §Ylínea defensiva§! a lo largo de esta frontera.\n - §GMayúsculas + clic derecho§! y arrastra para dibujar la §Ylínea defensiva§! a lo largo de esta frontera sin subejércitos. "

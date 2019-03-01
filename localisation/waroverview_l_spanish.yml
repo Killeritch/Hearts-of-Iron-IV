@@ -57,3 +57,4 @@
  WAR_OVERVIEW_CALL_COUNTRY_LIST:0 "Esto enviará un mensaje a los siguientes países: $COUNTRIES$"
  WAR_OVERVIEW_CALL_ALL_FACTION_DISABLED:0 "§RNo hay ninguna nación disponible para llamar a la guerra en la facción§!"
  WAR_OVERVIEW_ALLY_ALREADY_CALLED:0 "§REste aliado ya ha sido llamado y estamos esperando su respuesta§!"
+ SURRENDER_GIE_LEGITIMACY:0 "Si capitulan, se convertirán en un §Hgobierno en el exilio§!. Su §Hlegitimidad§! será de $LEGITIMACY|0Y$."

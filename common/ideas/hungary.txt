@@ -82,6 +82,16 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
+
+			available = {
+				OR = {
+					has_government = democratic
+					AND = {
+						has_government = neutrality
+						NOT = { has_completed_focus = HUN_responsible_government }
+					}
+				}
+			}
 			
 			modifier = {
 				democratic_drift = 0.02
@@ -93,6 +103,16 @@ ideas = {
 
 			allowed_civil_war = {
 				has_government = fascism
+			}
+
+			available = {
+				OR = {
+					has_government = fascism
+					AND = {
+						has_government = neutrality
+						NOT = { has_completed_focus = HUN_renounce_the_treaty_of_trianon }
+					}
+				}
 			}
 			
 			modifier = {
@@ -106,6 +126,10 @@ ideas = {
 			picture = HUN_hungarian_monarchy_democratic
 
 			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			available = {
 				has_government = democratic
 			}
 			
@@ -122,6 +146,10 @@ ideas = {
 			picture = HUN_hungarian_monarchy_habsburg
 
 			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			available = {
 				has_government = neutrality
 			}
 			
@@ -341,6 +369,13 @@ ideas = {
 				has_dlc = "Death or Dishonor"
 			}
 			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
 			traits = { staunch_monarchist }
 		}
 
@@ -368,10 +403,17 @@ ideas = {
 
 		HUN_laszlo_rajk = {
 
-			picture = generic_communist_europe
+			picture = generic_communist_revolutionary_western_european_2d
 			
 			allowed = {
 				original_tag = HUN
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { communist_revolutionary }
@@ -379,10 +421,17 @@ ideas = {
 
 		HUN_jozsef_szell = {
 
-			picture = generic_democratic_europe
+			picture = generic_democratic_reformer_western_european_2d
 			
 			allowed = {
 				original_tag = HUN
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { democratic_reformer }
@@ -390,10 +439,17 @@ ideas = {
 
 		HUN_gyula_gombos_de_jakfa = {
 
-			picture = generic_fascist_europe
+			picture = generic_fascist_demagogue_western_european_2d
 			
 			allowed = {
 				original_tag = HUN
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { fascist_demagogue }

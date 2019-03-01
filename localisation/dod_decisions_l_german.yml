@@ -1,0 +1,5 @@
+﻿l_german:
+ HUN_call_in_sweden:0 "Schweden um Unterstützung bitten"
+ HUN_call_in_hungary:0 "Ungarn um Unterstützung bitten"
+ YUG_buy_planes:0 "Flugzeuge kaufen"
+ HUN_closer_ties_to_CZE:0 "Enge Beziehungen zu [CZE.GetNameDef]"

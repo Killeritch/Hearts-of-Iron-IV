@@ -19,10 +19,16 @@ state={
 			7630 = {
 				naval_base = 4
 			}
+			4611 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = PAN
 		victory_points = {
 			7630 5 
+		}
+		victory_points = {
+			4611 1
 		}
 
 	}

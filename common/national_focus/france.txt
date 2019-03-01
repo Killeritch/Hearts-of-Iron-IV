@@ -896,7 +896,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_nuclear_effort
-				bonus = 0.5
+				bonus = 1.0
 				category = nuclear
 				category = rocketry
 			}
@@ -925,7 +925,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = FRA_jet_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 4
 				category = jet_technology
 			}
@@ -1026,6 +1026,7 @@ focus_tree = {
 		available = {
 			18 = { is_controlled_by = FRA }
 			29 = { is_controlled_by = FRA }
+			785 = { is_controlled_by = FRA }
 		}
 		completion_reward = {
 			ROOT = { country_event = { id = france.2 } }
@@ -1072,7 +1073,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_artillery_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = artillery
 			}
@@ -1093,7 +1094,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_heavy_armor
 			}
@@ -1146,7 +1147,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -1167,7 +1168,7 @@ focus_tree = {
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_light_armor
 				category = cat_medium_armor
@@ -1196,7 +1197,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = FRA_army_reform
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -1267,7 +1268,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_revise_versailles
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -1298,7 +1299,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = {	FRA_support_the_left_focus }
+			add_timed_idea = { idea = FRA_support_the_left_focus days = 1095 }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.178 }
 			}
@@ -1882,7 +1883,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_ideas = FRA_support_the_right_focus
+			add_timed_idea = { idea = FRA_support_the_right_focus days = 1095 }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.179 }
 			}
@@ -2058,6 +2059,9 @@ focus_tree = {
 			remove_ideas = FRA_protected_by_the_maginot_line
 			remove_ideas = FRA_disjointed_government
 			add_ideas = FRA_army_of_aggression_focus
+			USA = {
+				set_country_flag = { flag = USA_army_of_aggression_window days = 60 value = 1 }
+			}
 			if = {
 				limit = {
 					ENG = { 
@@ -2482,7 +2486,7 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_improved_screen_ships
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = dd_tech
 				category = cl_tech
@@ -2505,7 +2509,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_capital_ship_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = bb_tech
 				category = bc_tech
@@ -2528,7 +2532,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_carrier_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cv_tech
 			}
@@ -2554,7 +2558,7 @@ focus_tree = {
 			navy_experience = 25
 			add_tech_bonus = {
 				name = FRA_naval_doctrine
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = naval_doctrine
 			}
@@ -2578,7 +2582,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_cas_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cas_bomber
 			}
@@ -2683,7 +2687,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_fighter_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = light_fighter
 			}
@@ -2704,7 +2708,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_heavy_fighter_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_heavy_fighter
 			}
@@ -2726,7 +2730,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_bomber_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 			}
@@ -2752,7 +2756,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = FRA_air_doctrine
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = air_doctrine
 			}
@@ -2773,7 +2777,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_heavy_bomber_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_strategic_bomber
 			}
@@ -2794,7 +2798,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_naval_bomber_focus
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = naval_bomber
 			}

@@ -121,6 +121,13 @@ political_advisor = {
 			original_tag = POL
 		}
 		
+		available = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }	
+				NOT = { has_autonomy_state = autonomy_supervised_state }
+			}
+		}
+		
 		traits = { fascist_demagogue }
 
 		ai_will_do = {
@@ -136,6 +143,13 @@ political_advisor = {
 			original_tag = POL
 		}
 		
+		available = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }	
+				NOT = { has_autonomy_state = autonomy_supervised_state }
+			}
+		}
+		
 		traits = { communist_revolutionary }
 
 		ai_will_do = {
@@ -149,6 +163,13 @@ political_advisor = {
 
 		allowed = {
 			original_tag = POL
+		}
+		
+		available = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }	
+				NOT = { has_autonomy_state = autonomy_supervised_state }
+			}
 		}
 		
 		traits = { democratic_reformer }

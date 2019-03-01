@@ -21,7 +21,7 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -41,10 +41,12 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		
+		fuel_consumption = 10
 	}
 
 	super_heavy_tank_equipment_1 = {
@@ -80,7 +82,7 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -97,10 +99,11 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		fuel_consumption = 5
 	}
 
 	super_heavy_tank_artillery_equipment_1 = {
@@ -139,7 +142,7 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -156,10 +159,11 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		fuel_consumption = 5
 	}
 
 	super_heavy_tank_destroyer_equipment_1 = {
@@ -198,7 +202,7 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 3.5
+		maximum_speed = 4
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -215,10 +219,11 @@ equipments = {
 		
 		build_cost_ic = 100
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 3
 			chromium = 4
 		}
+		fuel_consumption = 2.5
 	}
 
 	super_heavy_tank_aa_equipment_1 = {

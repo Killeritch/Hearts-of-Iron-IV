@@ -14,6 +14,7 @@ friend_in_need = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -29,6 +30,7 @@ time_is_on_our_side = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -44,6 +46,7 @@ canada_first = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = CAN
 	}
 	
@@ -61,6 +64,7 @@ we_will_build_it_in_a_day = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -79,6 +83,7 @@ transport_tycoon = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -97,6 +102,7 @@ destroyer_of_worlds = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -112,6 +118,7 @@ wunderwaffen = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -126,6 +133,7 @@ united_netherlands = {
 	
 	possible = {
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		is_ironman = yes
 		difficulty > 1
 		has_start_date < 1936.01.02
@@ -153,6 +161,7 @@ vive_la_france = {
 	id = 21
 	possible = {
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		is_ironman = yes
 		difficulty > 1
 		has_start_date < 1936.01.02
@@ -179,6 +188,7 @@ master_of_war = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -253,6 +263,7 @@ mine_is_bigger_than_yours = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -268,7 +279,8 @@ no_country_for_old_men = {
 		is_ironman = yes
 		difficulty > 1
 		has_start_date < 1936.01.02
-	
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -285,6 +297,7 @@ poland_can_into_space = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = POL
 	}
 	
@@ -301,6 +314,7 @@ true_blitzkrieg = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = GER
 	}
 	
@@ -329,6 +343,7 @@ northern_light = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		OR = {
 			tag = DEN
 			tag = NOR
@@ -365,6 +380,7 @@ nobody_expects = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SPR
 	}
 	
@@ -383,6 +399,7 @@ the_bell_tolls_for_us = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SPR
 	}
 	
@@ -399,6 +416,7 @@ the_revolution_triumphant = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SOV
 	}
 	
@@ -414,6 +432,7 @@ once_more_mate = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = AST
 	}
 	
@@ -429,6 +448,7 @@ forge_of_victory = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = BEL
 	}
 	
@@ -448,6 +468,7 @@ sunset_invasion = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = MEX
 	}
 	
@@ -470,6 +491,7 @@ duce_nukedem = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = ITA
 	}
 
@@ -487,6 +509,7 @@ operation_sealion = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = GER
 	}
 	
@@ -517,6 +540,7 @@ one_empire = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = ENG
 	}
 	
@@ -544,6 +568,7 @@ party_like_its_1520 = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = DEN
 	}
 	
@@ -560,6 +585,8 @@ med_plutonium = {
 		is_ironman = yes
 		difficulty > 1
 		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SWE
 	}
 	
@@ -578,6 +605,7 @@ montezumas_revenge = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = MEX
 	}
 
@@ -599,6 +627,7 @@ big_entente = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = FRA
 	}
 	
@@ -630,6 +659,7 @@ new_world_order = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -648,6 +678,7 @@ vojtek_commander = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -675,6 +706,7 @@ brains = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = CAN
 	}
 	
@@ -691,6 +723,7 @@ district_9 = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SAF
 	}
 	
@@ -709,6 +742,7 @@ our_words_are_backed = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = RAJ
 	}
 	
@@ -726,6 +760,7 @@ crusader_kings = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SAF
 	}
 	
@@ -743,6 +778,7 @@ crusader_kings_2 = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SAF
 	}
 	
@@ -772,6 +808,7 @@ rule_britannia = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		OR = {
 			tag = SAF
 			tag = NZL
@@ -809,6 +846,7 @@ cut_the_strings = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		is_puppet = yes
 	}
 	
@@ -825,6 +863,7 @@ its_1812_all_over_again = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = CAN
 	}
 	
@@ -841,6 +880,7 @@ the_weapons_of_the_third_emu_war = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = AST
 	}
 	
@@ -857,6 +897,7 @@ i_am_the_tong_master = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SAF
 	}
 	
@@ -874,6 +915,7 @@ the_empire_strikes_back = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = ENG
 	}
 	
@@ -897,6 +939,7 @@ the_puppetmaster = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -912,6 +955,7 @@ freegypt = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -934,6 +978,7 @@ miklos_horthy_and_the_habsburg_prince = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = HUN
 	}
 	
@@ -970,13 +1015,14 @@ better_than_the_szent_istvan = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = HUN
 	}
 	
 	happened = {
 		has_unit_leader = 556
 		has_navy_size = {
-			archetype = battleship
+			unit = battleship
 			size > 0
 		}
 	}
@@ -990,6 +1036,7 @@ death_or_dishonor_or_cake = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = ROM
 	}
 	
@@ -1037,6 +1084,7 @@ neither_death_nor_dishonor = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = ROM
 	}
 	
@@ -1058,6 +1106,7 @@ the_munich_disagreement = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = CZE
 	}
 	
@@ -1075,6 +1124,7 @@ czechmate = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = CZE
 	}
 	
@@ -1093,6 +1143,7 @@ huge_oslavia = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = YUG
 	}
 	
@@ -1151,6 +1202,7 @@ the_balkan_powder_keg = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = YUG
 	}
 	
@@ -1167,6 +1219,7 @@ en_svensk_tiger = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 		tag = SWE
 	}
 	
@@ -1198,6 +1251,7 @@ lethal_straight = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1229,6 +1283,7 @@ awake_and_angry = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1242,6 +1297,9 @@ awake_and_angry = {
 						NOT = { is_core_of = CHI }
 						NOT = { is_core_of = MAN }
 					}
+					NOT = { state = 728 }
+					NOT = { state = 729 }
+					NOT = { state = 326 }
 				}
 			}
 		}
@@ -1257,6 +1315,7 @@ romance_of_the_three_kingdoms = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1274,6 +1333,7 @@ sun_tzu_reborn = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1293,6 +1353,7 @@ the_people_have_stood_up = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1342,6 +1403,7 @@ made_in_china = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1358,6 +1420,7 @@ tojo_shot_first = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1375,6 +1438,7 @@ sunrise_invasion = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1400,6 +1464,7 @@ the_dragon_swallowed_the_sun = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1416,6 +1481,7 @@ hail_to_the_qing = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1432,6 +1498,7 @@ the_good_the_bad_and_the_weird = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1459,6 +1526,7 @@ battlecry = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1471,6 +1539,9 @@ battlecry = {
 						NOT = { is_core_of = PRC }
 						NOT = { is_core_of = JAP }
 					}
+					NOT = { state = 728 }
+					NOT = { state = 729 }
+					NOT = { state = 326 }
 					is_owned_by = ROOT
 				}
 			}
@@ -1493,6 +1564,7 @@ panda_monium = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1551,6 +1623,7 @@ make_a_man_out_of_you = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1567,6 +1640,7 @@ monarchy_is_back_in_fashion = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1584,6 +1658,7 @@ our_other_place_in_the_sun = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1607,6 +1682,7 @@ australia_hungary = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1631,6 +1707,7 @@ my_ships_dont_lie = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1638,8 +1715,8 @@ my_ships_dont_lie = {
 			tooltip = has_taken_decision_to_form_gran_columbia
 			has_global_flag = form_gran_colombia_flag
 		}
-		has_navy_size = { archetype = battleship size > 9 }
-		has_navy_size = { archetype = carrier size > 9 }
+		has_navy_size = { unit = battleship size > 9 }
+		has_navy_size = { unit = carrier size > 9 }
 	}
 }
 
@@ -1652,6 +1729,7 @@ i_swear_im_not_a_byzantophile = {
 		difficulty > 1
 		has_start_date < 1936.01.02
 		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
 	}
 	
 	happened = {
@@ -1659,3 +1737,448 @@ i_swear_im_not_a_byzantophile = {
 	}
 }
 
+#   #  ##  #  #     ### #  # ###      ##  #  # #  #  ## 
+## ## #  # ## #      #  #  # #       #    #  # ## # #   
+# # # #### # ##      #  #### ##      # ## #  # # ##  #  
+#   # #  # #  #      #  #  # #       #  # #  # #  #   # 
+#   # #  # #  #      #  #  # ###      ##   ##  #  # ##  
+
+team_america = {
+	id = 73
+	
+	possible = {
+		tag = USA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_country_flag = achievement_team_america
+	}
+}
+
+history_repeated_itself = {
+	id = 74
+	
+	possible = {
+		tag = USA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_global_flag = USA_civil_war_fired
+		CSA = { exists = no }
+	}
+}
+
+georgia_on_my_mind = {
+	id = 75
+	
+	possible = {
+		tag = USA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		owns_state = 365
+		has_full_control_of_state = 365
+		owns_state = 231
+		has_full_control_of_state = 231
+		owns_state = 720
+		has_full_control_of_state = 720
+	}
+}
+
+to_arms_in_dixie = {
+	id = 76
+	
+	possible = {
+		tag = USA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_global_flag = USA_civil_war_fired_democrats
+	}
+}
+
+arsenal_of_democracy = {
+	id = 77
+	
+	possible = {
+		tag = USA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_government = democratic
+		num_of_military_factories > 300
+	}
+}
+
+underpaid_undersexed_and_under_eisenhower = {
+	id = 78
+	
+	possible = {
+		tag = USA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date > 1939.08.13
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		is_in_faction_with = ENG
+		is_faction_leader = yes
+		received_expeditionary_forces = {
+			sender = ENG
+			value > 50
+		}
+	}
+}
+
+last_for_a_thousand_years = {
+	id = 79
+	
+	possible = {
+		tag = ENG
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_completed_focus = ENG_imperial_federation
+	}
+}
+
+britzkrieg = {
+	id = 80
+	
+	possible = {
+		tag = ENG
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_completed_focus = ENG_the_kings_party
+		is_in_faction_with = GER
+		OR = {
+			FRA = { has_capitulated = yes }
+			FRA = { exists = no }
+		}
+		has_full_control_of_state = 16
+	}
+}
+
+nothing_wrong_with_our_bloody_ships = {
+	id = 81
+	
+	possible = {
+		tag = ENG
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_navy_size = {
+			unit = battle_cruiser
+			size > 8
+		}
+	}
+}
+
+william_wallis = {
+	id = 82
+	
+	possible = {
+		tag = ENG
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_completed_focus = ENG_the_kings_party
+		SCO = {
+			is_subject_of = ENG
+		}
+		USA = {
+			is_subject_of = ENG
+		}
+		has_country_flag = created_american_monarchy
+	}
+}
+
+crush_the_dream = {
+	id = 83
+	
+	possible = {
+		tag = ENG
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_government = communism
+		has_completed_focus = ENG_crush_the_dream
+		USA = {
+			is_subject_of = ENG
+		}
+	}
+}
+
+treading_the_narrow_path = {
+	id = 84
+	
+	possible = {
+		tag = HOL
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		NOT = { has_completed_focus = HOL_cave_to_the_germans }
+		has_completed_focus = HOL_the_zuiderzee_works
+		NOT = { has_country_flag = HOL_lost_starting_state }
+		date > 1945.01.01
+
+	}
+}
+
+putting_the_raid_on_the_medway_to_shame = {
+	id = 85
+	
+	possible = {
+		tag = HOL
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		ENG = {
+			has_navy_size = {
+				type = capital_ship
+				size < 1
+			}
+		}
+	}
+}
+
+bevrijding = {
+	id = 86
+	
+	possible = {
+		tag = HOL
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_government = democratic
+		has_completed_focus = HOL_liberation
+	}
+}
+
+mi_casa_es_tu_casa = {
+	id = 87
+	
+	possible = {
+		tag = MEX
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		any_country = {
+			is_exiled_in = MEX
+		}
+	}
+}
+
+the_new_home_of_the_revolution = {
+	id = 88
+	
+	possible = {
+		tag = MEX
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_country_leader = {
+ 			name = "Leon Trotsky"
+ 		}
+		SOV = { is_subject_of = MEX }
+	}
+}
+
+assuming_direct_control = {
+	id = 89
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+		NOT = {
+			OR = {
+				tag = USA
+				tag = ENG
+				tag = GER
+				tag = ITA
+				tag = FRA
+				tag = SOV
+				tag = JAP
+				tag = CHI
+			}
+		}
+	}
+	
+	happened = {
+		OR = {
+			is_in_faction_with = ENG
+			is_in_faction_with = GER
+			is_in_faction_with = SOV
+		}
+		is_faction_leader = yes
+	}
+}
+
+vive_la_jeune_ecole = {
+	id = 90
+	
+	possible = {
+		tag = FRA
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		date < 1945.1.1
+		has_navy_size = {
+			unit = destroyer
+			size > 149
+		}
+		has_tech = modern_ship_torpedo_launcher
+	}
+}
+
+30_minutes_of_hel = {
+	id = 91
+	
+	possible = {
+		tag = POL
+		is_ironman = yes
+		difficulty > 1
+		has_start_date > 1939.08.13
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		GER = {
+			casualties_inflicted_by = {
+				opponent = POL
+				thousands > 1800
+			}
+		}
+	}
+}
+
+pride_and_extreme_prejudice = {
+	id = 92
+	
+	possible = {
+		NOT = { tag = ENG }
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		has_country_flag = achievements_pride_and_extreme_prejudice
+	}
+}
+
+do_you_mined = {
+	id = 93
+	
+	possible = {
+		is_ironman = yes
+		difficulty > 1
+		has_start_date < 1936.01.02
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	
+	happened = {
+		any_country = {
+			has_war_with = ROOT
+			custom_trigger_tooltip = {
+				tooltip = do_you_mined_tt
+				ROOT = {
+					has_mined = {
+						target = PREV
+						value > 999
+					}
+				}
+			}
+		}
+	}
+}

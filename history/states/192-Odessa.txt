@@ -13,7 +13,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 5
-			industrial_complex = 2
+			industrial_complex = 1
 			air_base = 6
 			11670 ={
 				naval_base = 3
@@ -24,7 +24,7 @@ state={
 		add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 3
+				industrial_complex = 2
 			}
 		}
 	}

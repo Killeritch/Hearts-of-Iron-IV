@@ -3,6 +3,6 @@ archive = "dlc/dlc012_allied_radio_music_pack/dlc012.zip"
 steam_id = "460558"
 affects_checksum = no
 affects_compatability = no
-checksum = "de610f25977cf0a64dd9a3629ff3ca5f"
+checksum = "18e1161a26669c2bc8281af2cca122aa"
 third_party_content = no
 category= "music"

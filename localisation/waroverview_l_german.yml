@@ -60,3 +60,4 @@
  WAR_OVERVIEW_CALL_COUNTRY_LIST:0 "Damit wird eine Botschaft an die folgenden Länder geschickt: $COUNTRIES$"
  WAR_OVERVIEW_CALL_ALL_FACTION_DISABLED:0 "§REs stehen im Bündnis keine Nationen zur Verfügung, die in den Krieg gerufen werden könnten§!"
  WAR_OVERVIEW_ALLY_ALREADY_CALLED:0 "§RDieser Verbündete wurde bereits gerufen, wir warten auf seine Antwort§!"
+ SURRENDER_GIE_LEGITIMACY:0 "Wenn sie kapitulieren, werden sie zu einer §HExilregierung§!. Ihre §HLegitimität§! beträgt dann $LEGITIMACY|0Y$."

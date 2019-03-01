@@ -89,3 +89,5 @@
  CONSTRUCTION_FACTORIES_PROJECTS_DESC:0 "Specjalne projekty budowlane z innych źródeł."
  CONSTRUCTION_MAP_ICON_ENTRY:0 "£backhoe_icon_small   $VAL$/$MAX$"
  CONSTRUCTION_MAP_ICON_ENTRY_WITH_TEMP:0 "£backhoe_icon_small   $VAL$+$ADD|H$/$MAX$"
+ REFITTING_SPEED_MODIFIERS:1 "Modyfikatory tempa przebudowy:"
+ REFITTING_COST_MODIFIERS:1 "Koszt przebudowy zmodyfikowany o:"

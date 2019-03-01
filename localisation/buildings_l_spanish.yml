@@ -80,3 +80,6 @@
  RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HCobertura de las regiones:§!"
  RADAR_ONMAP_TOOLTIP_COVERAGE_ENTRY:0 "\n  $PERC|%$ en $REGION$"
  RADAR_ONMAP_TOOLTIP_SUPPRESS:0 "\nMantén §GCtrl§! para §Rocultar§! esta información."
+ fuel_silo:0 "Depósito de combustible"
+ fuel_silo_plural:0 "Depósitos de combustible"
+ fuel_silo_desc:0 "Este edificio otorga más espacio a tu nación para almacenar §Hcombustible§!."

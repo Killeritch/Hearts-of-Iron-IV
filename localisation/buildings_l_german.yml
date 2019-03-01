@@ -80,3 +80,6 @@
  RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HRegionsabdeckung:§!"
  RADAR_ONMAP_TOOLTIP_COVERAGE_ENTRY:0 "\n  $PERC|%$ in $REGION$"
  RADAR_ONMAP_TOOLTIP_SUPPRESS:0 "\n§GStrg§! halten, um diesen Tooltip zu §Runterdrücken§!."
+ fuel_silo:0 "Treibstoffsilo"
+ fuel_silo_plural:0 "Treibstoffsilos"
+ fuel_silo_desc:0 "Dieses Gebäude bietet Ihrer Nation mehr Platz, um §HTreibstoff§! zu lagern."

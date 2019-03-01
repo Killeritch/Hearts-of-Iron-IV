@@ -60,3 +60,4 @@
  WAR_OVERVIEW_CALL_COUNTRY_LIST:0 "W ten sposób wyślesz wiadomość do następujących państw: $COUNTRIES$"
  WAR_OVERVIEW_CALL_ALL_FACTION_DISABLED:0 "§RFrakcja nie ma żadnych krajów, które można wezwać do wojny§!"
  WAR_OVERVIEW_ALLY_ALREADY_CALLED:0 "§RTen sojusznik już został wezwany, czekamy na jego odpowiedź§!"
+ SURRENDER_GIE_LEGITIMACY:0 "Jeżeli skapitulują, staną się §Hrządem na uchodźstwie§!. Ich §Hpoparcie§! będzie wynosiło $LEGITIMACY|0Y$."

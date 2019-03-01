@@ -4,13 +4,18 @@ MAN_default_plan = {
 
 	enable = {
 		original_tag = MAN
-		
+		OR = {
+			has_country_flag = MAN_AI_RANDOM_INDEPENDENCE
+			is_subject = no
+			has_game_rule = {
+				rule = MAN_ai_behavior
+				option = INDEPENDENCE
+			}
+		}
 	}
 	abort = {
-		OR = {
-			has_completed_focus = MAN_assertiveness
-			has_completed_focus = MAN_obedience
-		}
+		has_completed_focus = MAN_assertiveness
+		
 	}
 
 	ai_national_focuses = {
@@ -19,10 +24,12 @@ MAN_default_plan = {
 		MAN_trade_delegation
 		MAN_army_modernization
 		MAN_expand_the_textile_industry
+		MAN_law_university
+		MAN_assertiveness
 	}
 
 	focus_factors = {
-		
+		MAN_obedience = 0
 	}
 
 	research = {
@@ -64,6 +71,10 @@ MAN_alternate_plan_assertive = {
 		MAN_bolster_nationalism
 		MAN_local_arms_procurement
 		MAN_purge_the_general_affairs_council
+		CHI_mission_to_germany
+		CHI_purchase_tanks
+		CHI_chinese_panzers
+		CHI_tank_plant
 	}
 
 	focus_factors = {
@@ -76,7 +87,16 @@ MAN_alternate_plan_assertive = {
 		armor = 0.0
 		air_equipment = 0.0
 	}
-
+	ai_strategy = {
+		type = antagonize
+		id = JAP
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = GER
+		value = 100
+	}
 	ideas = {
 
 	}
@@ -99,6 +119,9 @@ MAN_alternate_plan_independent = {
 	enable = {
 		original_tag = MAN
 		has_completed_focus = MAN_independence_war
+		not = {
+			has_war_with = JAP
+		}
 		is_subject = no # actually won
 	}
 	abort = {
@@ -110,7 +133,7 @@ MAN_alternate_plan_independent = {
 	}
 
 	focus_factors = {
-		CHI_mission_to_germany = 5
+		
 		MAN_imperial_divinity = 5
 		MAN_imperial_university = 10
 		MAN_reform_the_civil_service = 5
@@ -151,64 +174,4 @@ MAN_alternate_plan_independent = {
 
 }
 
-MAN_alternate_plan_obedient = {
-	name = "Manchukuo plan for Independence"
-	desc = "Behavior for Manchukuo when they have decided to be obedient"
 
-	enable = {
-		original_tag = MAN
-		has_completed_focus = MAN_obedience
-		is_subject_of = JAP
-	}
-	abort = {
-		always = no
-	}
-
-	ai_national_focuses = {
-		CHI_collaboration_with_the_japanese
-		MAN_first_five_year_plan
-		MAN_mukden_arsenal
-		MAN_invite_japanese_investors
-		MAN_expand_the_railways
-		MAN_alliance_with_the_kwantung_army
-	}
-
-	focus_factors = {
-		
-	}
-
-	research = {
-		infantry_weapons = 15.0
-		artillery = 15.0
-		air_equipment = 5.0
-	}
-
-	ideas = {
-
-	}
-	ai_strategy = {
-		type = befriend 
-		id = "JAP"			
-		value = 500
-	}
-	ai_strategy = {
-		type = conquer 
-		id = "CHI"			
-		value = 200
-	}
-	ai_strategy = {
-		type = conquer 
-		id = "PRC"			
-		value = 200
-	}
-
-	# Keep small, as it is used as a factor for some things (such as research needs)
-	# Recommended around 1.0. Useful for relation between plans
-	weight = {
-		factor = 1.0
-		modifier = {
-			factor = 1.0
-		}
-	}
-
-}

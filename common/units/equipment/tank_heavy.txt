@@ -41,11 +41,12 @@ equipments = {
 		
 		build_cost_ic = 25 
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 3
 			chromium = 3
 		}
 		
+		fuel_consumption = 4.4
 	}
 
 	# 1934
@@ -83,7 +84,7 @@ equipments = {
 		
 		build_cost_ic = 27 
 		resources = {
-			oil = 1
+#			oil = 1
 			steel = 3
 			chromium = 3
 		}
@@ -114,7 +115,7 @@ equipments = {
 		
 		build_cost_ic = 30
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 4
 			chromium = 3
 		}
@@ -161,11 +162,11 @@ equipments = {
 		
 		build_cost_ic = 25
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 3
 			chromium = 3
 		}
-		
+		fuel_consumption = 2.2
 	}
 
 	heavy_tank_artillery_equipment_1 = {
@@ -207,7 +208,7 @@ equipments = {
 		
 		build_cost_ic = 27
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 4
 			chromium = 3
 		}
@@ -240,7 +241,7 @@ equipments = {
 		
 		build_cost_ic = 30
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 5
 			chromium = 3
 		}
@@ -287,10 +288,11 @@ equipments = {
 		
 		build_cost_ic = 25
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 3
 			chromium = 3
 		}
+		fuel_consumption = 2.2
 	}
 
 	heavy_tank_destroyer_equipment_1 = {
@@ -334,7 +336,7 @@ equipments = {
 		
 		build_cost_ic = 27
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 4
 			chromium = 3
 		}
@@ -369,7 +371,7 @@ equipments = {
 		
 		build_cost_ic = 30
 		resources = {
-			oil = 2
+			#oil = 2
 			steel = 4
 			chromium = 4
 		}
@@ -416,11 +418,11 @@ equipments = {
 		
 		build_cost_ic = 25
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 3
 			chromium = 3
 		}
-		
+		fuel_consumption = 1.1
 	}
 
 	heavy_tank_aa_equipment_1 = {
@@ -464,7 +466,7 @@ equipments = {
 		
 		build_cost_ic = 27
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 3
 			chromium = 3
 		}
@@ -501,7 +503,7 @@ equipments = {
 		
 		build_cost_ic = 30
 		resources = {
-			oil = 1
+			#oil = 1
 			steel = 4
 			chromium = 3
 		}

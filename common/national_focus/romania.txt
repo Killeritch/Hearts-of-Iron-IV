@@ -86,9 +86,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_preserve_greater_romania
@@ -125,9 +122,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_popularity = { ideology = communism popularity = 0.1 }
@@ -162,9 +156,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_a_deal_with_the_devil_2
@@ -204,9 +195,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			SOV = { country_event = DOD_romania.30 }
@@ -239,9 +227,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_romanian_volunteer_brigades
@@ -289,9 +274,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			SOV = { country_event = generic.2 }
@@ -324,9 +306,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_popularity = { ideology = fascism popularity = 0.05 }
@@ -365,9 +344,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = ROM_invite_german_advisors_tt
@@ -412,9 +388,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_relation_modifier = {
@@ -468,9 +441,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			GER = {
@@ -510,9 +480,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -571,9 +538,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -615,9 +579,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.05 }
@@ -656,9 +617,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
@@ -722,7 +680,8 @@ focus_tree = {
 			NOT = { has_war_with = FRA }
 			ENG = { is_subject = no }
 			if = {
-				limit = { 
+				limit = {
+					NOT = { ENG = { has_government = democratic } }
 					FRA = {
 						NOT = { is_in_faction_with = ENG }
 					}
@@ -743,17 +702,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
 				limit = {
-					FRA = {
-						OR = {
-							NOT = { is_in_faction_with = ENG }
-							is_faction_leader = yes #if France has formed the little entente
+					OR = {
+						NOT = { ENG = { has_government = democratic } }
+						FRA = {
+							OR = {
+								NOT = { is_in_faction_with = ENG }
+								is_faction_leader = yes #if France has formed the little entente
+							}
 						}
 					}
 				}
@@ -798,9 +757,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			
@@ -850,7 +806,10 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = { is_faction_leader = yes }
+			ENG = {
+				is_faction_leader = yes
+				has_government = democratic
+			}
 			is_in_faction = no
 			NOT = { has_war_with = ENG }
 			is_subject = no
@@ -870,9 +829,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			ENG = {
@@ -909,9 +865,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_to_tech_sharing_group = ROM_joint_allied_staff_college_tech_group
@@ -955,14 +908,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_civil_works
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = industry
 			}
@@ -1082,9 +1032,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_agrarian_reform
@@ -1288,9 +1235,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			country_event = DOD_romania.120
@@ -1456,9 +1400,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			46 = {
@@ -1496,10 +1437,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -1530,10 +1467,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_exploit_the_baita_mines
@@ -1568,10 +1501,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_balkans_dominance
@@ -1625,10 +1554,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			BUL = { country_event = DOD_romania.40 }
 		}
@@ -1676,10 +1601,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			HUN = { country_event = DOD_romania.50 }
 		}
@@ -1723,10 +1644,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			create_wargoal = {
@@ -1776,10 +1693,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			#Only split if YUG is not at war
@@ -1831,10 +1744,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			GER = { country_event = DOD_romania.110 }
 		}
@@ -1874,10 +1783,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
@@ -1916,10 +1821,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_political_power = 120
@@ -1972,10 +1873,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			create_country_leader = {
 				name = "Michael I"
@@ -2024,10 +1921,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_fortify_the_borders
@@ -2080,10 +1973,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -2119,10 +2008,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -2163,15 +2048,9 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
-			swap_ideas = {
-				add_idea = ROM_king_carol_ii_handled
-				remove_idea = ROM_king_carol_ii_hedonist
-			}
+			remove_ideas = ROM_king_carol_ii_handled
+			add_timed_idea = { idea = ROM_king_carol_ii_hedonist days = 1095 }
 			remove_country_leader_trait = hedonist
 		}
 	}
@@ -2204,10 +2083,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			
@@ -2246,9 +2121,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_research_slot = 1
@@ -2281,10 +2153,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_flexible_foreign_policy
@@ -2325,10 +2193,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			#Remove ideas or display tooltip warning that it will happen
@@ -2392,10 +2256,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_securitate
 			#Remove ideas or display tooltip warning that it will happen
@@ -2453,10 +2313,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			#Remove ideas or display tooltip warning that it will happen
@@ -2544,10 +2400,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			if = {
 				limit = { has_idea = ROM_the_sentinel_of_the_motherland }
@@ -2613,10 +2465,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			#Removes king carol and makes the most popular party the ruling one
@@ -2707,10 +2555,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			#Remove ideas or display tooltip warning that it will happen
 			if = {
@@ -2773,10 +2617,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_constitutional_guarantees
 			#Remove ideas or display tooltip warning that it will happen
@@ -2833,10 +2673,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			if = {
@@ -2975,10 +2811,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_acquire_licenses
 		}
@@ -3011,14 +2843,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_air_defense
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_operational_integrity
 			}
@@ -3052,14 +2880,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_ground_support
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = battlefield_support_tree
 			}
@@ -3092,14 +2916,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_medium_bombers
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 			}
@@ -3182,10 +3002,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			country_event = DOD_romania.150
 		}
@@ -3217,10 +3033,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			add_ideas = ROM_local_development
@@ -3254,14 +3066,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_air_superiority
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = strategic_destruction_tree
 			}
@@ -3294,14 +3102,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_cas
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cas_bomber
 			}
@@ -3334,10 +3138,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			#Give generic fighter bonus if fighter_2 already researched
 			if = {
@@ -3346,16 +3146,16 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = ROM_iar_80
-					bonus = 0.5
-					ahead_reduction = 1
+					bonus = 1.0
+					ahead_reduction = 2
 					uses = 1
 					category = light_fighter
 				}
 				else = {
 					add_tech_bonus = {
 						name = ROM_iar_80
-						bonus = 0.5
-						ahead_reduction = 1
+						bonus = 1.0
+						ahead_reduction = 2
 						uses = 1
 						technology = fighter2
 					}
@@ -3391,14 +3191,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_strategic_bomber_force
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_strategic_bomber
 			}
@@ -3431,14 +3227,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_heavy_bombers
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_strategic_bomber
 			}
@@ -3471,14 +3263,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_nuclear_bomb_project
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = nuclear
 			}
@@ -3513,10 +3301,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			army_experience = 25
 		}
@@ -3548,10 +3332,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_army_war_college
 			custom_effect_tooltip = ROM_war_college_tt
@@ -3559,12 +3339,12 @@ focus_tree = {
 				create_corps_commander = { 
 					name = "Barbu Paraianu"
 					gfx = GFX_Portrait_romania_barbu_paraianu
-					traits = {  }
+					traits = { infantry_officer }
 					skill = 2
 					attack_skill = 1
 					defense_skill = 1
 					planning_skill = 3
-					logistics_skill = 1
+					logistics_skill = 2
 				}
 			}
 		}
@@ -3596,14 +3376,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_zb_53
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
@@ -3635,10 +3411,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = ROM_vanatori_de_munte_unit_tt
@@ -3675,7 +3447,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = ROM_vanatori_de_munte
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = mountaineers_tech
 			}
@@ -3708,14 +3480,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = artillery
 			}
@@ -3749,14 +3517,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_anti_tank
 			}
@@ -3790,10 +3554,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = ROM_mountain_artillery_tech_tt
 			hidden_effect = { set_technology = { mountain_gun = 1 } }
@@ -3825,10 +3585,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = ROM_royal_guards_divisions_tt
@@ -3922,10 +3678,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_reserve_divisions
 		}
@@ -3957,10 +3709,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			custom_effect_tooltip = ROM_the_armored_division_tt
@@ -4117,10 +3865,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_acquire_modern_tanks
 		}
@@ -4154,10 +3898,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_leonidas_works
@@ -4190,15 +3930,11 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = cat_heavy_armor
 			}
@@ -4296,10 +4032,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_coastal_defense_navy_designer
@@ -4332,14 +4064,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_ideas = ROM_coastal_defense_ships
 			#custom_effect_tooltip = ROM_coastal_defense_ships_tech_tt
-			#hidden_effect = { set_technology = { coastal_defense_ships = 1 } }
+			if = { 
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = { coastal_defense_ships = 1 } 
+			}
 		}
 	}
 
@@ -4369,14 +4100,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_destroyers
-				bonus = 0.75
+				bonus = 3.0
 				uses = 1
 				category = dd_tech
 			}
@@ -4408,10 +4135,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -4447,14 +4170,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_submarines
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = ss_tech
 			}
@@ -4488,10 +4207,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {			
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_black_sea_dominance_designer
@@ -4524,14 +4239,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_capital_ships
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = ca_tech
 				category = bb_tech
@@ -4566,14 +4277,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_torpedo_bombers
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = naval_bomber
 			}
@@ -4606,14 +4313,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-
-		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_expand_the_marine_regiment
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = tp_tech
 				category = marine_tech

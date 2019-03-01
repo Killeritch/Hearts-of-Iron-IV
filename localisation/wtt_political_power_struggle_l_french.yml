@@ -118,7 +118,7 @@
  WTT_national_leadership_trigger_before_start:0 "[Root.GetLeLaLNPCap] [Root.GetName] [Root.GetAOntNP] plus de §Hpoints de soutien politique§! que [WTT_current_china_leader.GetLeLaLNP] [WTT_current_china_leader.GetName]."
  WTT_national_leadership_join_wars_effect:0 "[Root.GetLeLaLNPCap] [Root.GetName] devr[Root.GetAOntNP] poursuivre toutes les guerres que mèn[WTT_current_china_leader.GetEEntNP] actuellement [WTT_current_china_leader.GetLeLaLNP] §H[WTT_current_china_leader.GetName]§!.\n"
 
- state_majority_country_rules:0 "§H[This.GetStateMajorityCountryName]§! la §Hmajorité§! dans cet État et y recevra [?This.state_political_support_value|+0] §Hpoints de soutien politique§! tant qu'une autre entité n'y bénéficiera pas d'un §Hsoutien local§! plus important.\n\n"
+ state_majority_country_rules:0 "[This.GetStateMajorityCountryName]§! la §Hmajorité§! dans cet État et y recevra [?This.state_political_support_value|+0] §Hpoints de soutien politique§! tant qu'une autre entité n'y bénéficiera pas d'un §Hsoutien local§! plus important.\n\n"
  state_support_breakdown:0 "§HSoutien local§! :\n[This.GetLocalStateSupport_CHI][This.GetLocalStateSupport_PRC][This.GetLocalStateSupport_GXC][This.GetLocalStateSupport_YUN][This.GetLocalStateSupport_SHX][This.GetLocalStateSupport_XSM][This.GetLocalStateSupport_SIK]\n"
  WTT_not_taking_over_national_leadership:0 "[Root.GetIsNationalLeadershipTakeOverInProgress]"
  WTT_taking_over_national_leadership_by:0 "[WTT_current_china_leader.GetLeLaLNPCap] [WTT_current_china_leader.GetName] demand[WTT_current_china_leader.GetEEntNP] à prendre la tête du pays."

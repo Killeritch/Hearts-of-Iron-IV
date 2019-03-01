@@ -165,3 +165,91 @@ technology_sharing_group = {
     }
 
 }
+
+technology_sharing_group = {
+
+	id = socialist_science_pool
+	name = socialist_science_pool_name
+	desc = socialist_science_pool_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = ENG
+        is_in_faction_with = SOV
+        ENG = { has_government = communism }
+        SOV = { has_government = communism }
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = HOL_ger_research
+	name = HOL_ger_research_name
+	desc = HOL_ger_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = GER
+        is_in_faction_with = HOL
+        GER = { has_government = fascism }
+        HOL = { has_government = fascism }
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = HOL_fra_research
+	name = HOL_sov_research_name
+	desc = HOL_sov_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = FRA
+        is_in_faction_with = HOL
+        FRA = { has_government = communism }
+        HOL = { has_government = communism }
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = HOL_sov_research
+	name = HOL_sov_research_name
+	desc = HOL_sov_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = SOV
+        is_in_faction_with = HOL
+        SOV = { has_government = communism }
+        HOL = { has_government = communism }
+    }
+
+}
+
+technology_sharing_group = {
+
+	id = HOL_europe_research
+	name = HOL_europe_research_name
+	desc = HOL_europe_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = HOL
+        HOL = { has_government = democratic }
+    }
+
+}

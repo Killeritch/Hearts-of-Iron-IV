@@ -1,43 +1,4 @@
 
-ai_historical_focus_list_JAP = {
-	ai_national_focuses = {
-		army_primancy_focus
-		navy_primancy_focus
-		naval_expansion_focus
-		advanced_torpedoes_focus
-		shbb_focus
-		naval_innovations_focus
-		spiritual_mobilization_focus
-		warrior_traditions_focus
-		test_the_chinese_focus
-		chinese_war_focus
-		oust_germans_focus
-		industrial_effort_focus
-		industrial_effort_focus2
-		infra_effort_focus
-		test_the_ussr_focus
-		fortress_japan_focus
-		naval_innovations_focus
-		naval_air_innovations_focus
-		convoy_protection_focus
-		naval_base_focus
-		carrier_focus
-		student_movement_focus
-		axis_leanings_focus
-		demand_indochina_focus
-		extra_tech_focus
-		synth_oil_focus
-		southern_expansion_focus
-		strike_usa_focus
-		siamese_puppet_focus
-		jap_improved_sprit_focus
-		subvert_india_focus
-		secret_weapon_focus
-		divine_wind_focus
-		imperial_glory_focus
-	}
-}
-
 ai_focus_defense_JAP = {
 	research = {
 		defensive = 5.0	

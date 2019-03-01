@@ -61,7 +61,13 @@ country_event = {
 					}
 				}
 			}
-			else = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = SS_mechanised_division_early
+						has_country_flag = SS_mechanised_division_late
+					}
+				}
 				custom_effect_tooltip = GER_division_wiking_mot_tt
 				hidden_effect = {		
 					random_owned_controlled_state = {
@@ -75,7 +81,8 @@ country_event = {
 				}
 			}
 		}
-		else = {
+		if = {
+			limit = { not = { has_country_flag = SS_recruitment_NOR } }
 			set_country_flag = SS_recruitment_DEN
 			add_manpower = 5000
 			custom_effect_tooltip = SS_recruitment_NOR_tt
@@ -217,7 +224,13 @@ country_event = {
 					}
 				}
 			}
-			else = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = SS_mechanised_division_early
+						has_country_flag = SS_mechanised_division_late
+					}
+				}
 				custom_effect_tooltip = GER_division_wiking_mot_tt
 				hidden_effect = {		
 					random_owned_controlled_state = {
@@ -231,7 +244,8 @@ country_event = {
 				}
 			}
 		}
-		else = {
+		if = {
+			limit = { not = { has_country_flag = SS_recruitment_DEN } }
 			set_country_flag = SS_recruitment_NOR
 			add_manpower = 5000
 			custom_effect_tooltip = SS_recruitment_DEN_tt

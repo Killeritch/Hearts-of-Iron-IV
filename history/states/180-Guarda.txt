@@ -9,7 +9,10 @@ state={
 	history={
 		owner = POR
 		victory_points = {
-			9817 10 
+			9817 10
+		}
+		victory_points = {
+			11673 5
 		}
 		buildings = {
 			infrastructure = 6

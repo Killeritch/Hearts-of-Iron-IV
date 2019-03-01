@@ -73,6 +73,8 @@
  RESOURCE_TRADE_LINE_PLURAL:0 "$PARTNER|Y$: $FACTORIES|R$ фабрик(и) за $NUM|G$ ед. ресурса $RESOURCE|Y$"
  CONSTRUCTION_FACTORIES_TRADE_DESC:0 "Мы можем обменять использование наших фабрик другими государствами на стратегические ресурсы. Для торговли по морю потребуются корабли сопровождения."
  CONVERSION_SPEED_MODIFIERS:0 "На скорость конверсии влияет:"
+ REFITTING_SPEED_MODIFIERS:0 "На скорость перевооружения влияет:"
+ REFITTING_COST_MODIFIERS:0 "На стоимость перевооружения влияет:"
  INFRASTRUCTURE_COST_EFFECT:0 "Инфраструктура региона: x$VAL|2H$"
  INFRA_VAL:0 "£infrastructure_texticon $VAL|0%+=$"
  CONSTRUCTION_MAP_ICON_ENTRY:0 "£backhoe_icon_small   $VAL$/$MAX$"

@@ -4,7 +4,7 @@ guiTypes = {
 		name = "nationalfocusview"
 		position = { x=-3 y=78 }
 		size = { width = 100%% height = 100%% }
-	
+						
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_plain_bg2"
@@ -48,6 +48,7 @@ guiTypes = {
 				clipping = no
 
 			}
+
 			gridboxtype = {
 					name = "grid"
 					position = { x = 50 y = 50 }

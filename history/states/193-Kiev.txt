@@ -7,6 +7,9 @@ state={
 	state_category = city
 
 	history={
+		victory_points = {
+			3568 3
+		}
 		owner = SOV
 		buildings = {
 			infrastructure = 5

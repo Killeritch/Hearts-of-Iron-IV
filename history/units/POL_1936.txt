@@ -18,7 +18,7 @@
 	}
 }
 division_template = {
-	name = "Dywizja Górskiej"
+	name = "Dywizja Piechoty Górskiej"
 	division_names_group = POL_MNT_01
 
 	regiments = {
@@ -224,7 +224,7 @@ units = {
 			name_order = 21
 		}
 		location = 506
-		division_template = "Dywizja Górskiej"
+		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
@@ -519,28 +519,10 @@ units = {
 			name_order = 22
 		}
 		location = 11479
-		division_template = "Dywizja Górskiej"
+		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
-	}
-
-	
-	######## NAVAL OOB ########
-	navy = {
-		name = "Polska Flota Niszczycieli"
-		base = 362 
-		location = 362 # Danzig
-		ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }	
-		ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }		
-	}	
-	navy = {
-		name = "Dywizjon Okretów Podwodnych"
-		base = 362 
-		location = 362 # Danzig
-		ship = { name = "ORP Rys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Zbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
 	}
 }
 

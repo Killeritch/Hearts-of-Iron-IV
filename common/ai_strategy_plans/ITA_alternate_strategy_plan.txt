@@ -5,6 +5,10 @@ ITA_alternate_plan_1 = {
 	enable = {
 		original_tag = ITA
 		GER = { has_completed_focus = GER_oppose_hitler }
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 		OR = {
@@ -82,6 +86,10 @@ ITA_alternate_plan_2 = {
 	enable = {
 		original_tag = ITA
 		GER = { has_completed_focus = GER_assassinate_mussolini }
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 	}
@@ -153,6 +161,10 @@ ITA_alternate_plan_3 = {
 	enable = {
 		original_tag = ITA
 		GER = { has_completed_focus = GER_reestablish_free_elections }
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = DEFAULT
+		}
 	}
 	abort = {
 		OR = {
@@ -227,6 +239,10 @@ ITA_alternate_plan_4 = {
 
 	enable = {
 		original_tag = ITA
+		has_game_rule = {
+			rule = ITA_ai_behavior
+			option = DEFAULT
+		}
 		OR = {
 			AND = {
 				GER = { has_completed_focus = GER_reestablish_free_elections }
@@ -282,6 +298,82 @@ ITA_alternate_plan_4 = {
  													#March 10 1943
  													#May 20 1943	
  													#July 30 1943			
+	}				
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+
+ITA_alternate_plan_fascist = {
+	name = "Italy alternate plan 5: Italy teams up with Spain"
+	desc = ""
+
+	enable = {
+		original_tag = ITA
+		OR = {
+			has_game_rule = {
+				rule = ITA_ai_behavior
+				option = FASCIST_ALTERNATE
+			}
+
+		}
+		
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		ITA_ethiopian_war_logistics
+		ITA_industrial_effort
+		ITA_industrial_effort_2	
+		ITA_extra_tech_slot
+		ITA_victoryinETH
+		#1937
+		ITA_support_nationalist_spain
+		ITA_army_primacy
+		ITA_mare_nostrum
+		ITA_spanish_italian_faction
+		ITA_italian_highways
+		#1938
+		ITA_prospect_for_oil
+		ITA_slovenia_dalmatia_claims
+		ITA_libyan_refineries
+		ITA_capital_ships
+		ITA_modernized_artillery
+		#1939
+		ITA_bulgaria_friend
+		ITA_albania_war_goal
+		ITA_air_innovation
+		ITA_portugal_friend
+		ITA_modernized_army
+		#1940
+		ITA_libyan_infrastructure
+		ITA_bomber_effort
+		ITA_pact_of_steel
+		ITA_light_ship_effort
+		ITA_claims_on_france
+		#1941
+		ITA_german_rd_treaty
+		ITA_german_millitary_cooperation
+		ITA_air_innovation_2
+		ITA_greece_war_goal
+		ITA_special_forces
+		#1942
+		ITA_armored_effort
 	}				
 	research = {
 

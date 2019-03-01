@@ -421,8 +421,9 @@ ideas = {
 			picture = generic_intel_bonus
 
 			modifier = {
-					heat_attrition_factor = -0.5
-					}
+				heat_attrition_factor = -0.5
+				acclimatization_hot_climate_gain_factor = 0.1
+			}
 		}
 		SAF_king_edward = {
 			allowed = {
@@ -549,6 +550,10 @@ ideas = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_support_the_policy_of_appeasement
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			picture = generic_democratic_reformer_western_european_2d
@@ -577,6 +582,10 @@ ideas = {
 			if = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_empower_the_workers
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 
@@ -607,6 +616,10 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Together for Victory"}
 					has_completed_focus = SAF_support_the_afrikaner_broederbond
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 

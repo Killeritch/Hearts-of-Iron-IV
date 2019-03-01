@@ -121,6 +121,8 @@
  OOS_57:0 "Number of Naval Leaders"
  OOS_58:0 "Number of convoys used"
  OOS_59:0 "Number of free convoys"
+ OOS_60:0 "Army Strength and Organization"
+ OOS_61:0 "Country Fuel Stockpiles"
  MULTIPLAYER_PLAYERS:0 "$NUM$"
  MULTIPLAYER_MESSAGES:0 "$NUM$"
  MATCHMAKING_FRIEND_STATUS_PLAYING_THIS:0 "§GAlready Playing§!"

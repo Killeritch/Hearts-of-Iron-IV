@@ -228,6 +228,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_navy_overview_ship_entry_highlight"
+		textureFile = "gfx//interface//production//navy_overview_ship_entry_highlight.dds"
+	}
+
+	spriteType = {
 		name = "GFX_armyoverview_naval_leader_frame"
 		textureFile = "gfx//interface//armyoverview_naval_leader_frame.dds"
 	}

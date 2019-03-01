@@ -111,7 +111,7 @@ guiTypes = {
 				name = "item_grid"
 				position = { x = 5 y = 5 }
 				size = { width = 252 height = 206 }
-				slotsize = { width = 42 height = 46 }
+				slotsize = { width = 42 height = 44 }
 				max_slots_horizontal = 6
 				format = "UPPER_LEFT"
 			}	
@@ -269,7 +269,7 @@ guiTypes = {
 					quadTextureSprite = "GFX_scroll_up"
 					position = { x=0 y =0}	
 				}
-				
+
 				guiButtonType = {
 					parent = "listboxSliderButton"
 					name = "downButton"
@@ -278,5 +278,21 @@ guiTypes = {
 				}
 			}
 		}
+
+		checkBoxType = {
+			name = "fleet_color_checkbox"
+			position = { x = 20 y = 400 }
+			quadTextureSprite ="GFX_generic_checkbox"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_checkbox
+		}
+
+		instantTextboxType = {
+			name = "fleet_color_label"
+			position = { x=60 y=404 }
+			font = "hoi_18mbs"
+			text = "USE_FLEET_COLOR"
+		}
+
 	}
 }

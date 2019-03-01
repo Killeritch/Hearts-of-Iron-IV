@@ -21,7 +21,7 @@ state={
 				naval_base = 3
 				coastal_bunker = 1
 			}
-			6176 = {
+			53 = {
 				naval_base = 1
 				coastal_bunker = 1
 			}
@@ -31,7 +31,13 @@ state={
 			}
 		}
 		victory_points = {
-			122 1 
+			9296 1
+		}
+		victory_points = {
+			53 1
+		}
+		victory_points = {
+			122 3
 		}
 		add_core_of = NOR
 	}

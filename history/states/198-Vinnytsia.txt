@@ -7,6 +7,9 @@ state={
 	state_category = large_town
 
 	history={
+		victory_points = {
+			476 3
+		}
 		owner = SOV
 		buildings = {
 			infrastructure = 5

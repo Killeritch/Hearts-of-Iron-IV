@@ -169,6 +169,11 @@ country_event = {
 				amount = 250
 			}
 		}
+		add_ai_strategy = {
+			type = support
+			id = FIN
+			value = 100
+		}
 		FIN = {
 			country_event = { id = finland.5 days = 3 }
 		}
@@ -324,6 +329,14 @@ country_event = {
 			}
 			transfer_state = 146
 			transfer_state = 147
+			if = {
+				limit = {
+					722 = {
+						is_claimed_by = SOV
+					}
+				}
+				SOV = { remove_state_claim = 722 }
+			}
 		}
 	}
 
@@ -358,6 +371,46 @@ country_event = {
 		white_peace = FIN
 		transfer_state = 146
 		transfer_state = 147
+		if = {
+			limit = {
+				722 = {
+					is_claimed_by = SOV
+				}
+			}
+			remove_state_claim = 722
+		}
+		FIN = {
+			add_ai_strategy = {
+				type = antagonize
+				id = "SOV"			
+				value = 200
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					is_subject = no
+					not = { is_in_faction_with = SOV}
+				}
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"			
+				value = 200
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = "GER"			
+				value = 200
+			}
+			GER = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FIN"			
+					value = 200
+				}
+			}
+		}
 	}
 
 	#Take it all

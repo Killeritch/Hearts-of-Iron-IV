@@ -42,6 +42,7 @@
  CLICK_TO_OPEN_IN_BROWSER: "Click to open in browser:"
  HAVE_READ_TOS:0 "I have read and agree to the Terms of Use"
  HAVE_READ_PRIVACY_POLICY:0 "I have read and understood the Privacy Policy"
+ ACCOUNT_CREATE_MARKETING_PERMISSION:0 "I want to receive news and offers from Hearts of Iron IV and Paradox Interactive"
  TERMS_OF_USE: "Terms of Use"
  PRIVACY_POLICY: "Privacy Policy"
  REQUIRED_FIELD_DESCRIPTION: "§R* §! Required Field"

@@ -18,7 +18,7 @@
 	}
 }
 division_template = {
-	name = "Dywizja Górskiej"			# 21st, 22nd Infantry Divisions
+	name = "Dywizja Piechoty Górskiej"			# 21st, 22nd Infantry Divisions
 	division_names_group = POL_MNT_01
 
 	regiments = {
@@ -37,7 +37,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Brygada Górskiej"			# Mixed units of regular and KOP mountain troops
+	name = "Brygada Piechoty Górskiej"			# Mixed units of regular and KOP mountain troops
 	division_names_group = POL_MNT_01
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
@@ -86,7 +86,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Ochrony Pogranicza"			# Represents groupings of Korpus Ochrony Pogranicza (KOP) and 
+	name = "Brygada Ochrony Pogranicza"			# Represents groupings of Korpus Brygada Ochrony Pogranicza (KOP) and 
 	division_names_group = POL_GAR_01
 										# Onrona Novrova (ON) units: militia units with minimal equip and experience
 	regiments = {
@@ -172,10 +172,10 @@ units = {
 	division= {	# "Czersk Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 201
+			name_order = 8
 		}
 		location = 334
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.2
 	}
@@ -242,10 +242,10 @@ units = {
 	division= {	# "Poznan Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 202
+			name_order = 9
 		}
 		location = 6558
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -383,13 +383,13 @@ units = {
 			name_order = 21
 		}
 		location = 9551
-		division_template = "Dywizja Górskiej"
+		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "1 Brygada Piechoty Górskiej"
 		location = 9551
-		division_template = "Brygada Górskiej"
+		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -399,7 +399,7 @@ units = {
 	division= {	
 		name = "2 Brygada Piechoty Górskiej"
 		location = 417
-		division_template = "Brygada Górskiej"
+		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -407,7 +407,7 @@ units = {
 	division= {	
 		name = "3 Brygada Piechoty Górskiej"
 		location = 3410
-		division_template = "Brygada Górskiej"
+		division_template = "Brygada Piechoty Górskiej"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
@@ -415,10 +415,10 @@ units = {
 	division= {	# "Grupa Granicznej Wegry"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 203
+			name_order = 17
 		}
 		location = 466
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -467,10 +467,10 @@ units = {
 	division= {	# "Modlin Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 204
+			name_order = 7
 		}
 		location = 9290
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -656,7 +656,7 @@ units = {
 			name_order = 22
 		}
 		location = 562
-		division_template = "Dywizja Górskiej"
+		division_template = "Dywizja Piechoty Górskiej"
 		start_experience_factor = 0.3
 	}
 	division= {	# "38 Dywizja Piechoty Rezerwy"		# Reserve Division (low experience, poor equipment)
@@ -708,10 +708,10 @@ units = {
 	division= {	# "Stryj Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 205
+			name_order = 16
 		}
 		location = 438
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -720,10 +720,10 @@ units = {
 	division= {	# "Czortkow Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 206
+			name_order = 11
 		}
 		location = 6435
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -732,10 +732,10 @@ units = {
 	division= {	# "Luniniec Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 207
+			name_order = 15
 		}
 		location = 9304
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -744,37 +744,16 @@ units = {
 	division= {	# "Wilejka Grupa KOP"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 208
+			name_order = 13
 		}
 		location = 3320
-		division_template = "Ochrony Pogranicza"
+		division_template = "Brygada Ochrony Pogranicza"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
 
-	
-	######## NAVAL OOB ########
-	navy = {
-		name = "Polska Flota Niszczycieli"		# CO: Unrug
-		base = 362 
-		location = 362 # Danzig
-		ship = { name = "ORP Grom" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }	
-		ship = { name = "ORP Blyskawica" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = POL } } }	
-		ship = { name = "ORP Burza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }	
-		ship = { name = "ORP Wicher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = POL } } }		
-	}	
-	navy = {
-		name = "Dywizjon Okretów Podwodnych"	# CO: Mohuczy
-		base = 362 
-		location = 362 # Danzig
-		ship = { name = "ORP Orzel" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Sep" definition = submarine equipment = { submarine_2 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Rys" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Wilk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }					
-		ship = { name = "ORP Zbik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = POL } } }			
-	}
 }
 
 ##### Wojska Lotnicze i Obrony Powietrzne (CO: Zajec) #####

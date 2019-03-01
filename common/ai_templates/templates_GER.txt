@@ -57,6 +57,7 @@ armored_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -68,6 +69,12 @@ armored_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -131,6 +138,7 @@ armored_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -142,6 +150,12 @@ armored_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 
@@ -233,6 +247,7 @@ armored_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -244,6 +259,12 @@ armored_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 
@@ -272,7 +293,8 @@ armored_GER = {
 			motorized
 			mechanized
 			#medium_sp_artillery_brigade
-
+			mot_artillery_brigade
+			mot_anti_air_brigade
 			motorized_rocket_brigade 
 
 			engineer
@@ -333,6 +355,7 @@ armored_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -344,6 +367,12 @@ armored_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -361,9 +390,9 @@ armored_GER = {
 			}
 			
 			regiments = {
-				medium_armor = 6 #remove sp
+				medium_armor = 3 #remove sp
 				motorized = 4
-				#medium_sp_artillery_brigade = 2
+				medium_sp_artillery_brigade = 2
 			}
 		}
 
@@ -373,7 +402,8 @@ armored_GER = {
 			medium_armor
 			motorized
 			mechanized
-			#medium_sp_artillery_brigade
+			medium_sp_artillery_brigade
+			medium_sp_anti_air_brigade
 			#motorized_rocket_brigade 
 			engineer
 			recon
@@ -421,6 +451,7 @@ armored_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -432,6 +463,12 @@ armored_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 
@@ -545,6 +582,7 @@ garrison_GER = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -556,6 +594,12 @@ garrison_GER = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -634,6 +678,7 @@ infantry_GER = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -645,6 +690,12 @@ infantry_GER = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -654,9 +705,10 @@ infantry_GER = {
 			
 			support = {
 				engineer = 1
-				recon = 1
-				field_hospital = 1
-				anti_tank = 1
+			#	recon = 1
+			#	field_hospital = 1
+			#	anti_tank = 1
+				anti_air = 1
 				artillery = 1
 			}
 			
@@ -669,12 +721,13 @@ infantry_GER = {
 		allowed_types = {
 			infantry		
 			engineer
-			recon
-			field_hospital
-			anti_tank
+			#recon
+			#field_hospital
+			#anti_tank
 			artillery
 			anti_tank_brigade
 			artillery_brigade
+			anti_air
 		}
 	}
 }
@@ -733,6 +786,7 @@ mountaineers_GER = {
 			0 #-- suppression_factor
 			0 #-- experience_loss_factor
 			0 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0 #-- air_attack
 			#-- Common Values
@@ -743,7 +797,13 @@ mountaineers_GER = {
 			0 #-- ap_attack
 			0 #-- reliability
 			0 #-- reliability_factor
-			0 #-- weight
+			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			-0.1 #-- build_cost_ic
 		}
 
@@ -831,6 +891,7 @@ marines_GER = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -842,6 +903,12 @@ marines_GER = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-0.2 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			-0.1 #-- build_cost_ic
 		}
 
@@ -928,6 +995,7 @@ paratroopers_GER = {
 			0.01 #-- suppression_factor
 			0.05 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.01 #-- air_attack
 			#-- Common Values
@@ -939,6 +1007,12 @@ paratroopers_GER = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			-1.0 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			-0.1 #-- build_cost_ic
 		}
 
@@ -1046,6 +1120,7 @@ anti_armor_GER = {
 			0.00 #-- suppression_factor
 			0.00 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.00 #-- air_attack
 			#-- Common Values
@@ -1057,6 +1132,12 @@ anti_armor_GER = {
 			0.00 #-- reliability
 			0.00 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -1132,6 +1213,7 @@ anti_armor_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -1143,6 +1225,12 @@ anti_armor_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 		
@@ -1218,6 +1306,7 @@ anti_armor_GER = {
 			0.00 #-- suppression_factor
 			0.01 #-- experience_loss_factor
 			0.00 #-- equipment_capture_factor
+			0.00 #-- fuel_capacity
 			#-- Air Values
 			0.02 #-- air_attack
 			#-- Common Values
@@ -1229,6 +1318,12 @@ anti_armor_GER = {
 			0.10 #-- reliability
 			0.10 #-- reliability_factor
 			0.00 #-- weight
+			0.00 #-- fuel_consumption
+			0.00 #-- fuel_consumption_factor
+			0.00 #-- strat_attack
+			0.00 #-- carrier_size
+			0.00 #-- acc_hot_gain
+			0.00 #-- acc_cold_gain
 			0.00 #-- build_cost_ic
 		}
 

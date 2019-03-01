@@ -81,6 +81,7 @@ tests = {
 
     germany_avoids_war_with_switzerland = {
         success = {
+            date > 1942.1.1
             GER = {   
 				OR = { 
 					has_capitulated = yes 
@@ -90,6 +91,7 @@ tests = {
         }
 
         fail = {
+            date < 1942.1.1
             GER = { has_war_with = SWI }
         }
     }
@@ -150,6 +152,38 @@ tests = {
 			}
         }
     }
+
+    GER_kicking_in_the_rotten_door = {
+
+        success = {
+            date < "1944.1.1"
+            SOV = {  
+                surrender_progress > 0.15
+            }
+        }
+
+        fail = {
+             date > "1944.1.1"
+        }
+    }
+
+    GER_soviet_has_fallen = {
+
+            success = {
+                date > "1945.1.1"                
+            }
+
+            fail = {
+                 date < "1945.1.1"
+                 SOV = {  
+                    OR = { 
+                        has_capitulated = yes 
+                        exists = no
+                    }
+                }
+            }
+        }
+
 
     germany_develops_nukes = {
          success = {

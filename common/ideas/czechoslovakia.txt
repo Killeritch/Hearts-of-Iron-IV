@@ -62,7 +62,7 @@ ideas = {
 				drift_defence_factor = 0.3
 				war_support_factor = 0.1
 				army_core_defence_factor = 0.1
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 		}
 	
@@ -209,13 +209,10 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				destroyer = {
+				ship_hull_light = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				light_cruiser = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				heavy_cruiser = {
+				ship_hull_cruiser = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -562,6 +559,10 @@ ideas = {
 					limit = { has_dlc = "Death or Dishonor" }
 					has_completed_focus = CZE_democratic_bastion
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { democratic_reformer }
@@ -584,6 +585,10 @@ ideas = {
 					limit = { has_dlc = "Death or Dishonor" }
 					has_completed_focus = CZE_go_left
 				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { communist_revolutionary }
@@ -605,6 +610,10 @@ ideas = {
 				if = {
 					limit = { has_dlc = "Death or Dishonor" }
 					has_completed_focus = CZE_go_right
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
 			

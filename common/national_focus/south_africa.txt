@@ -678,7 +678,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -694,7 +694,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = SAF_abandon_westminster 
+			add_timed_idea = { idea = SAF_abandon_westminster days = 1095 }
 		}
 	}
 
@@ -722,7 +722,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -777,6 +777,7 @@ focus_tree = {
 					}
 				}
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -815,7 +816,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -850,7 +851,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -900,6 +901,7 @@ focus_tree = {
 				compare_autonomy_state > autonomy_reichsprotectorate
 			}
 			controls_state = 541
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1004,6 +1006,7 @@ focus_tree = {
 				}
 			}
 			NOT = { has_war_together_with = ENG }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1023,9 +1026,11 @@ focus_tree = {
 				limit = {
 					is_subject = yes
 				}
-				set_autonomy = {
-					target = SAF
-					autonomy_state = autonomy_free
+				OVERLORD = {
+					set_autonomy = {
+						target = SAF
+						autonomy_state = autonomy_free
+					}
 				}
 			}
 			ENG = { remove_from_faction = ROOT }
@@ -1069,6 +1074,7 @@ focus_tree = {
 					}
 				}
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1149,7 +1155,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1189,7 +1195,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1233,7 +1239,7 @@ focus_tree = {
 		available = {
 			
 			is_in_faction_with = GER
-			
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1272,9 +1278,11 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				NOT  = { ENG = { has_idea = ENG_king_edward } }
 				NOT = { ENG = { has_idea = ENG_king_edward_fascism } }
+				NOT = { ENG = { has_completed_focus = ENG_the_kings_party } }
 				ENG = { has_country_flag = ENG_king_died }
 				tooltip = SAF_a_king_for_our_people_trigger_tt					
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1313,6 +1321,7 @@ focus_tree = {
 			controls_state = 542
 			controls_state = 545
 			controls_state = 546
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1381,7 +1390,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1447,6 +1456,7 @@ focus_tree = {
 					}
 				}
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1482,7 +1492,8 @@ focus_tree = {
 		}
 
 		available = {
-		communism > 0.1
+			communism > 0.1
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1521,7 +1532,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1562,6 +1573,7 @@ focus_tree = {
 				compare_autonomy_progress_ratio > 0.7
 				is_subject = no
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1612,6 +1624,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1659,7 +1672,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1705,6 +1718,7 @@ focus_tree = {
 				ANG = { exists = no }
 				MZB = { exists = no }
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1748,6 +1762,7 @@ focus_tree = {
 
 		available = {
 			COG = { exists = no }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1794,6 +1809,7 @@ focus_tree = {
 				KEN = { exists = no } 
 				ZIM = { exists = no }
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1847,6 +1863,7 @@ focus_tree = {
 			NOT = { has_war_with = SOV }
 			SOV = { is_puppet = no }
 			is_subject = no
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1881,7 +1898,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1916,6 +1933,7 @@ focus_tree = {
 
 		available = {
 			SOV = { exists = yes }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -1934,13 +1952,13 @@ focus_tree = {
 			add_ideas = SAF_soviet_advisers
 			add_tech_bonus = {
 				name = SAF_invite_soviet_advisers
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = cat_mass_assault
 			}
 			add_tech_bonus = {
 				name = SAF_invite_soviet_advisers
-				bonus = 0.25
+				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1965,6 +1983,7 @@ focus_tree = {
 				exists = yes
 				is_puppet = no
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -2008,6 +2027,7 @@ focus_tree = {
 				exists = yes #otherwise Franco-British union might screw things up
 				NOT = { has_government = communism }
 			}
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
 		bypass = {
@@ -2150,7 +2170,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = SAF_expand_the_mining_industry
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = excavation1
 				technology = excavation2
@@ -2194,7 +2214,7 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_heavy_engineering
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}
@@ -2522,7 +2542,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_establish_the_atomics_energy_board
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				category = nuclear
 			}
@@ -2645,7 +2665,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = SAF_special_service_battalion
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -2685,7 +2705,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_improve_the_three_oh_three
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
@@ -2725,7 +2745,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_q_services_corps
-				bonus = 0.5
+				bonus = 1.0
 				uses = 2
 				technology = motorised_infantry
 				technology = tech_logistics_company
@@ -2770,7 +2790,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = SAF__south_african_military_college
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = land_doctrine
 			}
@@ -2810,7 +2830,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_expand_the_south_african_artillery
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = artillery
 			}
@@ -2850,7 +2870,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_sa_engineer_corps
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = support_tech
 			}
@@ -2890,7 +2910,7 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_equipment_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 				category = artillery
@@ -2931,7 +2951,7 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_mechanized_equipment
 			}
@@ -2971,7 +2991,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_south_african_special_forces
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = para_tech
 				category = marine_tech
@@ -3013,7 +3033,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_armor_effort
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = armor
 			}
@@ -3063,7 +3083,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = SAF_commit_to_the_five_year_plan
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -3087,7 +3107,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = SAF_commit_to_the_five_year_plan
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -3128,7 +3148,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_improve_the_hawker_hartbees
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				technology = early_fighter
 				technology = fighter1
@@ -3172,7 +3192,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_replace_the_blenheim
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = tactical_bomber
 				category = cas_bomber
@@ -3215,7 +3235,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = SAF_perfect_the_cab_rank_technique
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_battlefield_support
 			}
@@ -3255,7 +3275,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_desert_air_force
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cas_bomber
 			}
@@ -3295,7 +3315,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_secure_the_cape_sea_route
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = naval_bomber
 			}
@@ -3336,7 +3356,7 @@ focus_tree = {
 			air_experience = 35
 			add_tech_bonus = {
 				name = SAF_retain_experienced_pilots
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -3409,7 +3429,7 @@ focus_tree = {
 			}			
 			add_tech_bonus = {
 				name = SAF_seaward_defence_force
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = naval_doctrine
 			}
@@ -3450,7 +3470,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_protect_the_trade
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = convoy_defense_tree
 			}
@@ -3495,7 +3515,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_disrupt_the_trade
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = cat_trade_interdiction
 			}
@@ -3621,8 +3641,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_anti_submarine_tactics
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = dd_tech
 			}
@@ -3666,8 +3686,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_submarine_warfare
-				bonus = 0.5
-				ahead_reduction = 1
+				bonus = 1.0
+				ahead_reduction = 2
 				uses = 1
 				category = ss_tech
 			}
@@ -3708,13 +3728,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_prepare_overseas_offensive
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = convoy_defense_tree
 			}
 			add_tech_bonus = {
 				name = SAF_prepare_overseas_offensive
-				bonus = 0.5
+				bonus = 1.0
 				uses = 1
 				category = marine_tech
 				category = tp_tech

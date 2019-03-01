@@ -599,7 +599,7 @@ country_event = {
 			base = 1
 		}
 		effect_tooltip = {
-			USA = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
+			FROM = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
 		}
 	}
 }
@@ -620,7 +620,7 @@ country_event = {
 		}
 		create_wargoal = {
 			type = annex_everything
-			target = USA
+			target = FROM
 		}
 	}
 }
@@ -640,7 +640,7 @@ country_event = {
 			base = 1
 		}
 		effect_tooltip = {
-			USA = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
+			FROM = { set_autonomy = { target = PHI autonomy_state = autonomy_free } }
 		}
 		hidden_effect = {
 			news_event = { id = wtt_news.26 hours = 6 }
@@ -1260,9 +1260,6 @@ country_event = {
 	# We accept their surrender.
 	option = {
 		name = wtt_japan.126.a
-		ai_chance = {
-			factor = 1
-		}
 		effect_tooltip = {
 			if = {
 				limit = {
@@ -1286,94 +1283,162 @@ country_event = {
 				}
 			}
 			if = {
-			limit = {
-				event_target:WTT_current_china_leader = { #Chinese United Front
-					is_faction_leader = yes
-				}
-			}
-			every_country = {
 				limit = {
-					is_literally_china = yes
-					has_war_with = ROOT
-					is_in_faction_with = event_target:WTT_current_china_leader
+					event_target:WTT_current_china_leader = { #Chinese United Front
+						is_faction_leader = yes
+					}
 				}
-				every_state = {
+				every_country = {
 					limit = {
-						is_controlled_by = PREV
-						OR = {
-							is_owned_by = JAP
-							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
-							}
-							AND = {
-								is_owned_by = MAN
-								MAN = { is_subject_of = JAP }
-							}
-						}
-						NOT = {
-							state = 525
-							state = 527
-						}
+						is_literally_china = yes
+						has_war_with = ROOT
+						is_in_faction_with = event_target:WTT_current_china_leader
 					}
-					every_country = {
+					every_state = {
 						limit = {
-							is_literally_china = yes
-							controls_state = PREV
+							is_controlled_by = PREV
+							OR = {
+								is_owned_by = JAP
+								AND = {
+									is_owned_by = MEN
+									MEN = { is_subject_of = JAP }
+								}
+								AND = {
+									is_owned_by = MAN
+									MAN = { is_subject_of = JAP }
+								}
+							}
+							NOT = {
+								state = 525
+								state = 527
+							}
 						}
-						transfer_state = PREV
+						every_country = {
+							limit = {
+								is_literally_china = yes
+								controls_state = PREV
+							}
+							transfer_state = PREV
+						}
 					}
+					white_peace = ROOT
 				}
-				white_peace = ROOT
 			}
-		}
-		else = {
-			every_country = {
-				limit = {
-					is_literally_china = yes
-					has_war_with = ROOT
-				}
-				every_state = {
+			else = {
+				every_country = {
 					limit = {
-						is_controlled_by = PREV
-						OR = {
-							is_owned_by = JAP
-							AND = {
-								is_owned_by = MEN
-								MEN = { is_subject_of = JAP }
-							}
-							AND = {
-								is_owned_by = MAN
-								MAN = { is_subject_of = JAP }
-							}
-						}
+						is_literally_china = yes
+						has_war_with = ROOT
 					}
-					every_country = {
+					every_state = {
 						limit = {
-							is_literally_china = yes
-							controls_state = PREV
+							is_controlled_by = PREV
+							OR = {
+								is_owned_by = JAP
+								AND = {
+									is_owned_by = MEN
+									MEN = { is_subject_of = JAP }
+								}
+								AND = {
+									is_owned_by = MAN
+									MAN = { is_subject_of = JAP }
+								}
+							}
 						}
-						transfer_state = PREV
+						every_country = {
+							limit = {
+								is_literally_china = yes
+								controls_state = PREV
+							}
+							transfer_state = PREV
+						}
 					}
+					white_peace = ROOT
 				}
-				white_peace = ROOT
 			}
-		}
 		}
 		FROM = {
 			country_event = { id = wtt_japan.127 }
 		}
 		set_country_flag = achievement_JAP_sue_for_peace_CHI_completed
+		
+		ai_chance = {
+			factor = 90
+		}
 	}
 
 	# No surrender! We want total victory!
 	option = {
 		name = wtt_japan.126.b
-		ai_chance = {
-			factor = 0
-		}
 		FROM = {
 			country_event = { id = wtt_japan.128 }
+		}
+		
+		ai_chance = { # If Japan has lots of major enemies, the AI will not make a separate peace
+			factor = 10
+			modifier = {
+				add = 50
+				USA = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ENG = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 30
+				SOV = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				FRA = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				GER = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				HOL = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				ITA = {
+					has_war_with = JAP
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
 		}
 	}
 }
@@ -1670,12 +1735,12 @@ country_event = {
 		add_tech_bonus = {
 			name = sov_jap_border_conflict_won
 			category = land_doctrine
-			bonus = 0.5
+			bonus = 1.0
 		}
 		add_tech_bonus = {
 			name = sov_jap_border_conflict_won
 			category = armor
-			bonus = 0.5
+			bonus = 1.0
 		}
 	}
 	option = {
@@ -1710,7 +1775,7 @@ country_event = {
 		add_tech_bonus = {
 			name = sov_jap_border_conflict_won
 			category = land_doctrine
-			bonus = 0.5
+			bonus = 1.0
 		}
 	}
 }

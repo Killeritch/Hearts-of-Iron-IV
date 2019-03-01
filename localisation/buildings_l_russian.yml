@@ -81,3 +81,6 @@
  RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HПокрытие в этом регионе: §!"
  RADAR_ONMAP_TOOLTIP_COVERAGE_ENTRY:0 "\n  $PERC|%$ в регионе $REGION$"
  RADAR_ONMAP_TOOLTIP_SUPPRESS:0 "\nУдерживайте §GCtrl§!, чтобы §Rпропустить§! эту подсказку."
+ fuel_silo:0 "Топливное хранилище"
+ fuel_silo_plural:0 "Топливные хранилища"
+ fuel_silo_desc:0 "Это здание расширяет возможности вашего государства по хранению §Hгорючего§!."

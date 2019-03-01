@@ -11,6 +11,15 @@ state=
 	}
 	
 	history={
+		victory_points = {
+			3585 3
+		}
+		#victory_points = {
+		#	11432 1
+		#}
+		victory_points = {
+			11401 3
+		}
 		owner = CZE
 		buildings = {
 			infrastructure = 8

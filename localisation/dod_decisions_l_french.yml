@@ -1,0 +1,5 @@
+﻿l_french:
+ HUN_call_in_sweden:0 "Demander le soutien [SWE.GetDuDelaDelNP] [SWE.GetName]"
+ HUN_call_in_hungary:0 "Demander le soutien [HUN.GetDuDelaDelNP] [HUN.GetName]"
+ YUG_buy_planes:0 "Acheter des avions"
+ HUN_closer_ties_to_CZE:0 "Se rapprocher [CZE.GetDuDelaDelNP] [CZE.GetName]"

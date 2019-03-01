@@ -391,6 +391,10 @@ ideas = {
 			modifier = {
 				neutrality_drift = 0.1
 				democratic_drift = -0.02
+				drift_defence_factor = 0.1
+				join_faction_tension = -0.2
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.2
 			}
 		}
 
@@ -550,10 +554,7 @@ ideas = {
 			picture = generic_navy_bonus
 
 			equipment_bonus = {
-				battleship = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				battle_cruiser = {
+				ship_hull_heavy = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -850,10 +851,25 @@ ideas = {
 			modifier = {
 				production_speed_coastal_bunker_factor = 0.2
 				production_speed_bunker_factor = 0.2
-				production_speed_infrastructure_factor = -0.2
-				production_speed_air_base_factor = -0.2
+			}
+		}
+		GER_dismantle_czechoslovakian_forts = {
+			allowed = {
+				always = no
 			}
 
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_wall_line
+
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_bunker_factor = 0.2
+			}
 		}
 		GER_jaegernotprogramm = {
 			allowed = {
@@ -950,7 +966,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.2
 			}
 		}
@@ -979,7 +996,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.35
 			}
 		}
@@ -1008,7 +1026,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.5
 			}
 		}
@@ -1037,7 +1056,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.65
 			}
 		}
@@ -1066,7 +1086,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.8
 			}
 		}
@@ -1095,7 +1116,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 0.95
 			}
 		}
@@ -1124,7 +1146,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.1
 			}
 		}
@@ -1153,7 +1176,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.25
 			}
 		}
@@ -1182,7 +1206,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.4
 			}
 		}
@@ -1211,7 +1236,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.55
 			}
 		}
@@ -1240,7 +1266,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.7
 			}
 		}
@@ -1269,7 +1296,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 1.85
 			}
 		}
@@ -1298,7 +1326,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2
 			}
 		}
@@ -1327,7 +1356,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.15
 			}
 		}
@@ -1356,7 +1386,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.3
 			}
 		}
@@ -1385,7 +1416,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.45
 			}
 		}
@@ -1414,7 +1446,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.6
 			}
 		}
@@ -1443,7 +1476,8 @@ ideas = {
 				production_speed_air_base_factor = 0.25
 				production_speed_anti_air_building_factor = 0.25
 				production_speed_radar_station_factor = 0.25
-				production_speed_synthetic_refinery_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
 				political_power_cost = 2.75
 			}
 		}
@@ -1477,6 +1511,79 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				civilian_factory_use = 5
+			}
+		}
+
+		GER_air_safety_regulations = {
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				jet_strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = 0.05
+				}
 			}
 		}
 	}
@@ -1535,7 +1642,7 @@ ideas = {
 			traits = { war_industrialist }
 
 			ai_will_do = {
-				factor = 3
+				factor = 1
 			}
 		}
 
@@ -1544,6 +1651,13 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { communist_revolutionary }
@@ -1564,6 +1678,17 @@ ideas = {
 			
 			allowed = {
 				original_tag = GER
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+				if = {
+					limit = { has_dlc = "Waking the Tiger" }
+					has_completed_focus = GER_reestablish_free_elections
+				}
 			}
 			
 			traits = { democratic_reformer }
@@ -1588,6 +1713,10 @@ ideas = {
 
 			available = {
 				has_government = fascism
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 			traits = { fascist_demagogue propaganda_expert}
@@ -1599,7 +1728,7 @@ ideas = {
 			}
 			
 			ai_will_do = {
-				factor = 0
+				factor = 24
 			}
 		}
 		
@@ -1653,6 +1782,10 @@ ideas = {
 					has_government = fascism
 					has_country_flag = GER_reinstated_nazi_leadership
 				}
+			}
+
+			ai_will_do = {
+				factor = 30
 			}
 			
 			traits = { silent_workhorse }
@@ -1708,6 +1841,10 @@ ideas = {
 			}
 			
 			traits = { heavy_tank_manufacturer }
+
+			ai_will_do = {
+				factor = 10
+			}
 
 		}
 		
@@ -1927,6 +2064,9 @@ ideas = {
 				industry = 0.10
 				
 			}
+			ai_will_do = {
+				factor = 2
+			}
 			
 			traits = { industrial_concern }
 		}
@@ -1980,7 +2120,7 @@ ideas = {
 			traits = { infantry_equipment_manufacturer }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -2301,7 +2441,7 @@ ideas = {
 			traits = { army_infantry_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 		
@@ -2318,7 +2458,7 @@ ideas = {
 			traits = { army_armored_3 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 8
 			}
 		}
 		

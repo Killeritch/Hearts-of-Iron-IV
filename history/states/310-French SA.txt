@@ -3,14 +3,12 @@ state={
 	id=310
 	name="STATE_310"
 	manpower = 47341
-	resources={
-		aluminium=9 # was: 12
-	}
 
 	state_category = pastoral
 
 	history={
 		owner = FRA
+		add_core_of = CAY
 		buildings = {
 			infrastructure = 2
 			12885 = {

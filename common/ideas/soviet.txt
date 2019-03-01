@@ -127,7 +127,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -763,6 +763,10 @@ ideas = {
 			{
 				NOT = { has_country_flag = purged_khrushchev }
 				NOT = { has_country_flag = counter_purge }
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 
@@ -787,7 +791,12 @@ ideas = {
 				original_tag = "SOV"
 			}
 			
-
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
 			
 			traits = { democratic_reformer }
 
@@ -811,6 +820,10 @@ ideas = {
 			available = 
 			{
 				NOT = { has_country_flag = counter_purge }
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
 
@@ -953,7 +966,7 @@ ideas = {
 			traits = { navy_chief_naval_aviation_1 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -975,7 +988,7 @@ ideas = {
 			traits = { navy_chief_commerce_raiding_1 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -997,7 +1010,7 @@ ideas = {
 			traits = { navy_chief_reform_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -1018,7 +1031,7 @@ ideas = {
 			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}	
 	}
@@ -1298,7 +1311,7 @@ ideas = {
 			traits = { navy_submarine_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -1329,7 +1342,7 @@ ideas = {
 			traits = { navy_capital_ship_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}
 		
@@ -1359,7 +1372,7 @@ ideas = {
 			traits = { navy_amphibious_assault_2 }
 			
 			ai_will_do = {
-				factor = 1
+				factor = 0.2
 			}
 		}	
 	}
