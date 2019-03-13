@@ -41,3 +41,5 @@
  ABILITY_MAKESHIFT_BRIDGES_DESC:1 "Der Bau von provisorischen Brücken verringert die Flussüberquerung-Mali im Gefecht."
  ABILITY_EXTRA_SUPLIES_DESC:1 "Die Truppen erhalten zusätzlichen Nachschub."
  ABILITY_REQUISITION_WINTER_GEAR_DESC:1 "Winterausrüstung verleiht einen Bonus auf die Akklimatisierung in kaltem Wetter."
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§RDiese Fähigkeit ist bereits auf Ebene der Heeresgruppe aktiv.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§RDiese Fähigkeit ist bereits für alle untergeordneten Gruppen aktiv.§!"

@@ -693,8 +693,6 @@
  USA_cv_nav_bomber_equipment_1_short:0 "TBD «Девастэйтор»"
  USA_cv_nav_bomber_equipment_2:0 "Грумман TBF-1C «Эвенджер»"
  USA_cv_nav_bomber_equipment_2_short:0 "TBF-1C «Эвенджер»"
- #USA_cv_nav_bomber_equipment_3:0 "Consolidated TBY Sea Wolf"
- #USA_cv_nav_bomber_equipment_3_short:0 "TBY Sea Wolf"
  USA_CAS_equipment_1:0 "Нортроп A-17"
  USA_CAS_equipment_1_short:0 "A-17"
  USA_cv_CAS_equipment_2:0 "Дуглас SBD-2 «Донтлесс»"
@@ -977,9 +975,6 @@
  ITA_transport_plane_equipment_1:0 "Капрони Ca.133"
  FRA_transport_plane_equipment_1:0 "MB.220"
  SWE_transport_plane_equipment_1:0 "Trp2"
- 
- ###Planes###
- # Australia
  AST_fighter_equipment_1:0 "CAC CA-12 «Бумеранг»"
  AST_fighter_equipment_1_short:0 "CAC «Бумеранг»"
  AST_fighter_equipment_2:0 "CAC «Мустанг»"
@@ -992,80 +987,58 @@
  AST_CAS_equipment_2_short:0 "CAC «Вумера»"
  AST_CAS_equipment_3:0 "Бристоль «Бофайтер» Мк. 21"
  AST_CAS_equipment_3_short:0 "«Бофайтер» Мк. 21"
- 
  AST_jet_fighter_equipment_2:0 "CAC «Сэйбр»"
  AST_jet_fighter_equipment_2_short:0 "CAC «Сэйбр»"
- 
- #Argentinia
- 
  ARG_heavy_fighter_equipment_3:0 "I.Ae 30 «Нянку» P1"
  ARG_heavy_fighter_equipment_3_short:0 "«Нянку» P1"
- 
  ARG_fighter_equipment_0:0 "FMA D.21"
  ARG_fighter_equipment_0_short:0 "D.21"
  ARG_fighter_equipment_2:0 "FMA «Хоук» 75O"
  ARG_fighter_equipment_2_short:0 "«Хоук» 75O"
- 
  ARG_CAS_equipment_2:0 "I.Ae 22 DL"
  ARG_CAS_equipment_2_short:0 "I.Ae 22 DL"
  ARG_CAS_equipment_3:0 "I.Ae 30 «Нянку» P2"
  ARG_CAS_equipment_3_short:0 "«Нянку» P2"
- 
  ARG_tac_bomber_equipment_0:0 "FMA AeMB.1"
  ARG_tac_bomber_equipment_0_short:0 "FMA AeMB.1"
  ARG_tac_bomber_equipment_1:0 "FMA AeMB.2"
  ARG_tac_bomber_equipment_1_short:0 "FMA AeMB.2"
  ARG_tac_bomber_equipment_3:0 "I.Ae 24 «Калькин»"
  ARG_tac_bomber_equipment_3_short:0 "«Калькин»"
- 
  ARG_jet_fighter_equipment_1:0 "FMA I.Ae. 27 «Пульки I»"
  ARG_jet_fighter_equipment_1_short:0 "«Пульки I»"
  ARG_jet_fighter_equipment_2:0 "FMA I.Ae. 27 «Пульки II»"
  ARG_jet_fighter_equipment_2_short:0 "«Пульки II»"
- 
- #Belgium
- 
  BEL_fighter_equipment_0:0 "Авьон-Фэйри «Файрфлай»"
  BEL_fighter_equipment_0_short:0 "«Файрфлай»"
  BEL_fighter_equipment_1:0 "Авьон-Фэйри «Фантом»"
  BEL_fighter_equipment_1_short:0 "«Фантом»"
  BEL_fighter_equipment_2:0 "Ренар R.36"
  BEL_fighter_equipment_2_short:0 "R.36"
- 
  BEL_CAS_equipment_1:0 "Авьон-Фэйри «Баттл»"
  BEL_CAS_equipment_1_short:0 "«Баттл»"
  BEL_CAS_equipment_2:0 "SABCA S.47"
  BEL_CAS_equipment_2_short:0 "S.47"
- 
  BEL_tac_bomber_equipment_1:0 "LACAB GR.8"
  BEL_tac_bomber_equipment_1_short:0 "GR.8"
  BEL_tac_bomber_equipment_2:0 "Ренар-PZL 37"
  BEL_tac_bomber_equipment_2_short:0 "R-PZL 37"
- 
  BEL_jet_fighter_equipment_2:0 "SABCA «Хантер»"
  BEL_jet_fighter_equipment_2_short:0 "«Хантер»"
- 
- #Bulgarian
- 
  BUL_CAS_equipment_1:0 "DAR 10"
  BUL_CAS_equipment_1_short:0 "DAR 10"
  BUL_CAS_equipment_2:0 "KB-11 «Фазан»"
  BUL_CAS_equipment_2_short:0 "KB-11"
- # canadian
- 
  CAN_jet_fighter_equipment_1:0 "Де Хэвилленд «Вампир»"
  CAN_jet_fighter_equipment_1_short:0 "«Вампир»"
  CAN_jet_fighter_equipment_2:0 "CL 100 «Кэнак»"
  CAN_jet_fighter_equipment_2_short:0 "CL 100 «Кэнак»"
- 
- #Czech 
  CZE_CAS_equipment_1:0 "Аэро A.101"
  CZE_CAS_equipment_1_short:0 "Аэро A.101"
  CZE_CAS_equipment_2:0 "Летов S-528"
  CZE_CAS_equipment_2_short:0 "S-528"
  CZE_CAS_equipment_3:0 "Летов S-615"
  CZE_CAS_equipment_3_short:0 "S-615"
- 
  CZE_fighter_equipment_0:0 "Авиа B-34.1"
  CZE_fighter_equipment_0_short:0 "Авиа B-34.1"
  CZE_fighter_equipment_1:0 "Авиа B-534.1"
@@ -1074,14 +1047,12 @@
  CZE_fighter_equipment_2_short:0 "Авиа B-135"
  CZE_fighter_equipment_3:0 "Авиа S-199"
  CZE_fighter_equipment_3_short:0 "Авиа S-199"
- 
  CZE_heavy_fighter_equipment_1:0 "Авиа B-734.2"
  CZE_heavy_fighter_equipment_1_short:0 "Авиа B-734.2"
  CZE_heavy_fighter_equipment_2:0 "Авиа B-137"
  CZE_heavy_fighter_equipment_2_short:0 "Авиа B-137"
  CZE_heavy_fighter_equipment_3:0 "Перехватчик Аэро A.300"
  CZE_heavy_fighter_equipment_3_short:0 "Перехватчик A.300"
- 
  CZE_tac_bomber_equipment_0:0 "Аэро A.100"
  CZE_tac_bomber_equipment_0_short:0 "Аэро A.100"
  CZE_tac_bomber_equipment_1:0 "Аэро A.304"
@@ -1090,32 +1061,26 @@
  CZE_tac_bomber_equipment_2_short:0 "Летов Š-50"
  CZE_tac_bomber_equipment_3:0 "Аэро A.300"
  CZE_tac_bomber_equipment_3_short:0 "Аэро A.300"
- 
  CZE_strat_bomber_equipment_1:0 "Аэро Водоходы C.301"
  CZE_strat_bomber_equipment_1_short:0 "Аэро C.301"
  CZE_strat_bomber_equipment_2:0 "Аэро Водоходы C.508"
  CZE_strat_bomber_equipment_2_short:0 "Аэро C.508"
  CZE_strat_bomber_equipment_3:0 "Аэро Водоходы A.711"
  CZE_strat_bomber_equipment_3_short:0 "Аэро A.711"
- 
  CZE_nav_bomber_equipment_1:0 "Летов S-502"
  CZE_nav_bomber_equipment_1_short:0 "Летов S-502"
  CZE_nav_bomber_equipment_2:0 "Летов S-655"
  CZE_nav_bomber_equipment_2_short:0 "Летов S-655"
  CZE_nav_bomber_equipment_3:0 "Авиа A-298"
  CZE_nav_bomber_equipment_3_short:0 "Авиа A-298"
- 
  CZE_jet_fighter_equipment_1:0 "Авиа S-92"
  CZE_jet_fighter_equipment_1_short:0 "S-92"
- 
- #Romania
  ROM_CAS_equipment_1:0 "IAR 37"
  ROM_CAS_equipment_1_short:0 "IAR 37"
  ROM_CAS_equipment_2:0 "IAR 81"
  ROM_CAS_equipment_2_short:0 "IAR 81"
  ROM_CAS_equipment_3:0 "IAR 471"
  ROM_CAS_equipment_3_short:0 "IAR 471"
- 
  ROM_fighter_equipment_0:0 "IAR 12"
  ROM_fighter_equipment_0_short:0 "IAR 12"
  ROM_fighter_equipment_1:0 "IAR 14"
@@ -1124,14 +1089,12 @@
  ROM_fighter_equipment_2_short:0 "IAR 80"
  ROM_fighter_equipment_3:0 "IAR 109G"
  ROM_fighter_equipment_3_short:0 "IAR 109G"
- 
  ROM_heavy_fighter_equipment_1:0 "IAR 214"
  ROM_heavy_fighter_equipment_1_short:0 "IAR 214"
  ROM_heavy_fighter_equipment_2:0 "IAR 380"
  ROM_heavy_fighter_equipment_2_short:0 "IAR 380"
  ROM_heavy_fighter_equipment_3:0 "IAR 410"
  ROM_heavy_fighter_equipment_3_short:0 "IAR 410"
- 
  ROM_tac_bomber_equipment_0:0 "IAR 25"
  ROM_tac_bomber_equipment_0_short:0 "IAR 25"
  ROM_tac_bomber_equipment_1:0 "IAR 137"
@@ -1140,7 +1103,6 @@
  ROM_tac_bomber_equipment_2_short:0 "IAR 633"
  ROM_tac_bomber_equipment_3:0 "IAR 779"
  ROM_tac_bomber_equipment_3_short:0 "IAR 779"
- 
  ROM_strat_bomber_equipment_0:0 "IAR 528"
  ROM_strat_bomber_equipment_0_short:0 "IAR 528"
  ROM_strat_bomber_equipment_1:0 "IAR 679"
@@ -1149,43 +1111,52 @@
  ROM_strat_bomber_equipment_2_short:0 "IAR 765"
  ROM_strat_bomber_equipment_3:0 "IAR 979"
  ROM_strat_bomber_equipment_3_short:0 "IAR 979"
- 
  ROM_nav_bomber_equipment_1:0 "IAR 55"
  ROM_nav_bomber_equipment_1_short:0 "IAR 55"
  ROM_nav_bomber_equipment_2:0 "IAR 114"
  ROM_nav_bomber_equipment_2_short:0 "IAR 114"
  ROM_nav_bomber_equipment_3:0 "IAR 117"
  ROM_nav_bomber_equipment_3_short:0 "IAR 117"
- 
- #Holland 
- # herr fokker wins the race, with a single Koolhoven interloper
- 
  HOL_heavy_fighter_equipment_1:0 "Фоккер G.1 «Меркури»"
  HOL_heavy_fighter_equipment_1_short:0 "Фоккер G.1M"
  HOL_heavy_fighter_equipment_2:0 "Фоккер G.1 «Васп»"
  HOL_heavy_fighter_equipment_2_short:0 "Фоккер G.1W"
- 
+ HOL_heavy_fighter_equipment_3:0 "Fokker G.XXIII"
+ HOL_heavy_fighter_equipment_3_short:0 "Fokker G.XXIII"
  HOL_fighter_equipment_0:0 "Фоккер D.XVII"
  HOL_fighter_equipment_0_short:0 "Фоккер D.XVII"
  HOL_fighter_equipment_1:0 "Фоккер D.XXI"
  HOL_fighter_equipment_1_short:0 "Фоккер D.XXI"
  HOL_fighter_equipment_2:0 "Кольховен F.K.58"
  HOL_fighter_equipment_2_short:0 "F.K. 58"
- 
+ HOL_fighter_equipment_3:0 "Fokker D.XXX"
+ HOL_fighter_equipment_3_short:0 "Fokker D.XXX"
+ HOL_CAS_equipment_1:0 "Aviolanda A-12"
+ HOL_CAS_equipment_1_short:0 "A-12"
+ HOL_CAS_equipment_2:0 "Aviolanda A-17"
+ HOL_CAS_equipment_2_short:0 "A-17"
+ HOL_CAS_equipment_3:0 "Aviolanda A-21"
+ HOL_CAS_equipment_3_short:0 "A-21"
+ HOL_strat_bomber_equipment_1:0 "Pander F"
+ HOL_strat_bomber_equipment_1_short:0 "Pander F"
+ HOL_strat_bomber_equipment_2:0 "Pander M"
+ HOL_strat_bomber_equipment_2_short:0 "Pander M"
+ HOL_strat_bomber_equipment_3:0 "Pander U"
+ HOL_strat_bomber_equipment_3_short:0 "Pander U"
  HOL_nav_bomber_equipment_1:0 "Фоккер T.IVa"
  HOL_nav_bomber_equipment_1_short:0 "Фоккер T.IVa"
  HOL_nav_bomber_equipment_2:0 "Фоккер T.VIII"
  HOL_nav_bomber_equipment_2_short:0 "Фоккер T.VIII"
- 
+ HOL_nav_bomber_equipment_3:0 "Koolhoven F.K.65"
+ HOL_nav_bomber_equipment_3_short:0 "Koolhoven F.K.65"
  HOL_tac_bomber_equipment_0:0 "Фоккер C.V D/E"
  HOL_tac_bomber_equipment_0_short:0 "Фоккер C.V D/E"
  HOL_tac_bomber_equipment_1:0 "Фоккер T.V"
  HOL_tac_bomber_equipment_1_short:0 "Фоккер T.V"
  HOL_tac_bomber_equipment_2:0 "Фоккер T.IX"
  HOL_tac_bomber_equipment_2_short:0 "Фоккер T.IX"
- 
- #Finland
- 
+ HOL_tac_bomber_equipment_3:0 "Koolhoven F.K.71"
+ HOL_tac_bomber_equipment_3_short:0 "Koolhoven F.K.71"
  FIN_fighter_equipment_0:0 "Глостер «Кукко»"
  FIN_fighter_equipment_0_short:0 "«Кукко»"
  FIN_fighter_equipment_1:0 "VL «Мюрскю»"
@@ -1194,42 +1165,30 @@
  FIN_fighter_equipment_2_short:0 "VL «Хуму»"
  FIN_fighter_equipment_3:0 "VL «Пёрремюрскю»"
  FIN_fighter_equipment_3_short:0 "VL «Пёрремюрскю»"
- 
  FIN_nav_bomber_equipment_1:0 "VL «Котка»"
  FIN_nav_bomber_equipment_1_short:0 "VL «Котка»"
- 
  FIN_CAS_equipment_1:0 "Фоккер-VL C.X"
  FIN_CAS_equipment_1_short:0 "Фоккер-VL C.X"
- 
  FIN_tac_bomber_equipment_1:0 "Бристоль-VL «Бленхейм»"
  FIN_tac_bomber_equipment_1_short:0 "«Бленхейм»"
- 
- #Norway
- 
  NOR_fighter_equipment_0:0 "F.F. 7 «Хаук»"
  NOR_fighter_equipment_0_short:0 "«Хаук»"
- 
  NOR_nav_bomber_equipment_1:0 "M.F. 11"
  NOR_nav_bomber_equipment_1_short:0 "M.F. 11"
- 
  NOR_tac_bomber_equipment_0:0 "Кьеллер-Фоккер C.V"
  NOR_tac_bomber_equipment_0_short:0 "К.-Ф. C.V"
- 
- #Hungary
  HUN_heavy_fighter_equipment_1:0 "RMI-3 X/V"
  HUN_heavy_fighter_equipment_1_short:0 "RMI-3 X/V"
  HUN_heavy_fighter_equipment_2:0 "DRR 210C"
  HUN_heavy_fighter_equipment_2_short:0 "DRR 210C"
  HUN_heavy_fighter_equipment_3:0 "RMI-8 X/V"
  HUN_heavy_fighter_equipment_3_short:0 "RMI-8 X/V"
- 
  HUN_CAS_equipment_1:0 "Вайсс WM-16 «Будапешт»"
  HUN_CAS_equipment_1_short:0 "WM-16"
  HUN_CAS_equipment_2:0 "Вайсс WM-21 «Шолиом»"
  HUN_CAS_equipment_2_short:0 "WM-21"
  HUN_CAS_equipment_3:0 "RMI-3 Z/G"
  HUN_CAS_equipment_3_short:0 "RMI-3 Z/G"
- 
  HUN_fighter_equipment_0:0 "AVIS III"
  HUN_fighter_equipment_0_short:0 "AVIS III"
  HUN_fighter_equipment_1:0 "Вайсс WM-23 «Эзуштнил»"
@@ -1238,21 +1197,18 @@
  HUN_fighter_equipment_2_short:0 "«Хийя»"
  HUN_fighter_equipment_3:0 "MÁVAG «Хийя» II"
  HUN_fighter_equipment_3_short:0 "«Хийя» II"
- 
  HUN_strat_bomber_equipment_1:0 "RMI-5 X/G"
  HUN_strat_bomber_equipment_1_short:0 "RMI-5"
  HUN_strat_bomber_equipment_2:0 "RMI-12 Z/G"
  HUN_strat_bomber_equipment_2_short:0 "RMI-12"
  HUN_strat_bomber_equipment_3:0 "RMI-15 X/U"
  HUN_strat_bomber_equipment_3_short:0 "RMI-15"
- 
  HUN_nav_bomber_equipment_1:0 "RMI-1 X/G"
  HUN_nav_bomber_equipment_1_short:0 "RMI-1"
  HUN_nav_bomber_equipment_2:0 "MÁVAG «Шаш»"
  HUN_nav_bomber_equipment_2_short:0 "Шаш"
  HUN_nav_bomber_equipment_3:0 "MÁVAG «Холлё»"
  HUN_nav_bomber_equipment_3_short:0 "Холлё"
- 
  HUN_tac_bomber_equipment_0:0 "WM-35"
  HUN_tac_bomber_equipment_0_short:0 "WM-35"
  HUN_tac_bomber_equipment_1:0 "WM-37"
@@ -1261,47 +1217,34 @@
  HUN_tac_bomber_equipment_2_short:0 "RMI-13"
  HUN_tac_bomber_equipment_3:0 "RMI-16 Z/H"
  HUN_tac_bomber_equipment_3_short:0 "RMI-16"
- #British Raj
- 
  RAJ_fighter_equipment_0:0 "Хоукер «Харт»"
  RAJ_fighter_equipment_0_short:0 "«Харт»"
- 
  RAJ_fighter_equipment_1:0 "Хоукер «Демон»"
  RAJ_fighter_equipment_1_short:0 "«Демон»"
- 
  RAJ_cv_fighter_equipment_0:0 "Хоукер «Оспри»"
  RAJ_cv_fighter_equipment_0_short:0 "«Оспри»"
- #Spain
  SPR_fighter_equipment_2:0 "Испано-Авиасьон HA-1112"
  SPR_fighter_equipment_2_short:0 "HA-1112"
- 
- #Sweden 
- 
  SWE_CAS_equipment_1:0 "SAAB Нортроп A-17 8A-1"
  SWE_CAS_equipment_1_short:0 "SAAB A-17 8A-1"
  SWE_CAS_equipment_2:0 "SAAB B17"
  SWE_CAS_equipment_2_short:0 "SAAB B17"
  SWE_CAS_equipment_3:0 "SAAB B18B"
  SWE_CAS_equipment_3_short:0 "SAAB B18B"
- 
  SWE_cv_CAS_equipment_1:0 "ASJA Хоукер «Оспри»"
  SWE_cv_CAS_equipment_1_short:0 "ASJA «Оспри»"
- 
  SWE_tac_bomber_equipment_0:0 "CVM Фоккер C.V S/J-3"
  SWE_tac_bomber_equipment_0_short:0 "CVM S/J-3"
  SWE_tac_bomber_equipment_1:0 "SAAB Ju-86K"
  SWE_tac_bomber_equipment_1_short:0 "Ju-86K"
  SWE_tac_bomber_equipment_2:0 "SAAB B18A"
  SWE_tac_bomber_equipment_2_short:0 "SAAB B18A"
- 
  SWE_nav_bomber_equipment_1:0 "Saab T18"
  SWE_nav_bomber_equipment_1_short:0 "Saab T18"
- 
  SWE_jet_fighter_equipment_1:0 "SAAB 21R"
  SWE_jet_fighter_equipment_1_short:0 "SAAB 21R"
  SWE_jet_fighter_equipment_2:0 "SAAB 32 «Лансен»"
  SWE_jet_fighter_equipment_2_short:0 "SAAB 32"
- 
  SWE_fighter_equipment_0:0 "ASJA SA-14 «Яктфалькен»"
  SWE_fighter_equipment_0_short:0 "ASJA SA-14"
  SWE_fighter_equipment_1:0 "Северски P-35 J9"
@@ -1310,17 +1253,10 @@
  SWE_fighter_equipment_2_short:0 "Re. 2000 J12"
  SWE_fighter_equipment_3:0 "SAAB J21"
  SWE_fighter_equipment_3_short:0 "SAAB J21"
- 
- #switzerland
- 
  SWI_fighter_equipment_0:0 "Девуатин D.27"
  SWI_fighter_equipment_0_short:0 "D.27"
- 
  SWI_tac_bomber_equipment_0:0 "K+W Тун Фоккер C.V.-E"
  SWI_tac_bomber_equipment_0_short:0 "K+W C.V.-E"
- 
- # Turkish planes, all fictional, licence, or fictional licence builds
- 
  TUR_fighter_equipment_0:0 "TamTAS «Хок»"
  TUR_fighter_equipment_0_short:0 "TamTAS «Хок»"
  TUR_fighter_equipment_1:0 "TamTAS «Харрикейн»"
@@ -1329,7 +1265,6 @@
  TUR_fighter_equipment_2_short:0 "THK Fw 190"
  TUR_fighter_equipment_3:0 "THK P47"
  TUR_fighter_equipment_3_short:0 "THK P47"
- 
  TUR_tac_bomber_equipment_0:0 "TamTAS Ju A-20"
  TUR_tac_bomber_equipment_0_short:0 "A-20"
  TUR_tac_bomber_equipment_1:0 "TamTAS «Бленхейм»"
@@ -1338,8 +1273,6 @@
  TUR_tac_bomber_equipment_2_short:0 "THK «Балтимор»"
  TUR_tac_bomber_equipment_3:0 "THK «Инвейдер»"
  TUR_tac_bomber_equipment_3_short:0 "THK «Инвейдер»"
- 
- #chinese planes
  CHI_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  CHI_fighter_equipment_0_short:0 "Тип 3"
  CHI_fighter_equipment_1:0 "CAMCO «Хоук»"
@@ -1348,21 +1281,18 @@
  CHI_fighter_equipment_2_short:0 "X-P0"
  CHI_fighter_equipment_3:0 "CAMCO P12"
  CHI_fighter_equipment_3_short:0 "P12"
- 
  CHI_CAS_equipment_1:0 "CAMCO Вулти V-11"
  CHI_CAS_equipment_1_short:0 "Вулти V-11"
  CHI_CAS_equipment_2:0 "CAMCO Тип 12"
  CHI_CAS_equipment_2_short:0 "Тип 12"
  CHI_CAS_equipment_3:0 "CAMCO Тип 24"
  CHI_CAS_equipment_3_short:0 "Тип 24"
- 
  CHI_nav_bomber_equipment_1:0 "CAMCO N-323"
  CHI_nav_bomber_equipment_1_short:0 "N-323"
  CHI_nav_bomber_equipment_2:0 "CAMCO N-650"
  CHI_nav_bomber_equipment_2_short:0 "N-650"
  CHI_nav_bomber_equipment_3:0 "CAMCO N-854"
  CHI_nav_bomber_equipment_3_short:0 "N-854"
- 
  CHI_tac_bomber_equipment_0:0 "CAMCO Тип 16"
  CHI_tac_bomber_equipment_0_short:0 "Тип 16"
  CHI_tac_bomber_equipment_1:0 "CAMCO Тип 36"
@@ -1371,21 +1301,18 @@
  CHI_tac_bomber_equipment_2_short:0 "Тип 40"
  CHI_tac_bomber_equipment_3:0 "CAMCO Тип 44"
  CHI_tac_bomber_equipment_3_short:0 "Тип 44"
- 
  CHI_strat_bomber_equipment_1:0 "CAMCO Тип 236"
  CHI_strat_bomber_equipment_1_short:0 "Тип 236"
  CHI_strat_bomber_equipment_2:0 "CAMCO Тип 240"
  CHI_strat_bomber_equipment_2_short:0 "Тип 240"
  CHI_strat_bomber_equipment_3:0 "CAMCO Тип 444"
  CHI_strat_bomber_equipment_3_short:0 "Тип 444"
- 
  CHI_heavy_fighter_equipment_1:0 "CAMCO P-60"
  CHI_heavy_fighter_equipment_1_short:0 "P-60"
  CHI_heavy_fighter_equipment_2:0 "CAMCO PF-77"
  CHI_heavy_fighter_equipment_2_short:0 "PF-77"
  CHI_heavy_fighter_equipment_3:0 "CAMCO PF-98"
  CHI_heavy_fighter_equipment_3_short:0 "PF-98"
- 
  SHX_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  SHX_fighter_equipment_0_short:0 "Тип 3"
  SHX_fighter_equipment_1:0 "CAMCO «Хоук»"
@@ -1426,7 +1353,6 @@
  SHX_heavy_fighter_equipment_2_short:0 "PF-77"
  SHX_heavy_fighter_equipment_3:0 "CAMCO PF-98"
  SHX_heavy_fighter_equipment_3_short:0 "PF-98"
- 
  GXC_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  GXC_fighter_equipment_0_short:0 "Тип 3"
  GXC_fighter_equipment_1:0 "CAMCO «Хоук»"
@@ -1467,7 +1393,6 @@
  GXC_heavy_fighter_equipment_2_short:0 "PF-77"
  GXC_heavy_fighter_equipment_3:0 "CAMCO PF-98"
  GXC_heavy_fighter_equipment_3_short:0 "PF-98"
- 
  XSM_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  XSM_fighter_equipment_0_short:0 "Тип 3"
  XSM_fighter_equipment_1:0 "CAMCO «Хоук»"
@@ -1508,7 +1433,6 @@
  XSM_heavy_fighter_equipment_2_short:0 "PF-77"
  XSM_heavy_fighter_equipment_3:0 "CAMCO PF-98"
  XSM_heavy_fighter_equipment_3_short:0 "PF-98"
- 
  YUN_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  YUN_fighter_equipment_0_short:0 "Тип 3"
  YUN_fighter_equipment_1:0 "CAMCO «Хоук»"
@@ -1549,7 +1473,6 @@
  YUN_heavy_fighter_equipment_2_short:0 "PF-77"
  YUN_heavy_fighter_equipment_3:0 "CAMCO PF-98"
  YUN_heavy_fighter_equipment_3_short:0 "PF-98"
- 
  SIK_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  SIK_fighter_equipment_0_short:0 "Тип 3"
  SIK_fighter_equipment_1:0 "CAMCO «Хоук»"
@@ -1590,7 +1513,6 @@
  SIK_heavy_fighter_equipment_2_short:0 "PF-77"
  SIK_heavy_fighter_equipment_3:0 "CAMCO PF-98"
  SIK_heavy_fighter_equipment_3_short:0 "PF-98"
- 
  PRC_fighter_equipment_0:0 "Лючжоу Кванси Тип 3"
  PRC_fighter_equipment_0_short:0 "Тип 3"
  PRC_fighter_equipment_1:0 "J-1"
@@ -1631,8 +1553,6 @@
  PRC_heavy_fighter_equipment_2_short:0 "JH-2"
  PRC_heavy_fighter_equipment_3:0 "JH-3"
  PRC_heavy_fighter_equipment_3_short:0 "JH-3"
- 
- #yugoslavian planes
  YUG_fighter_equipment_0:0 "Авиа-Икарус BH-33"
  YUG_fighter_equipment_0_short:0 "BH-33"
  YUG_fighter_equipment_1:0 "Икарус IK-2"
@@ -1641,21 +1561,18 @@
  YUG_fighter_equipment_2_short:0 "IK-3"
  YUG_fighter_equipment_3:0 "Икарус S-49"
  YUG_fighter_equipment_3_short:0 "S-49"
- 
  YUG_heavy_fighter_equipment_1:0 "Рогожарски IK-5"
  YUG_heavy_fighter_equipment_1_short:0 "IK-5"
  YUG_heavy_fighter_equipment_2:0 "Рогожарски R-313"
  YUG_heavy_fighter_equipment_2_short:0 "R-313"
  YUG_heavy_fighter_equipment_3:0 "Ненадович-Митрович"
  YUG_heavy_fighter_equipment_3_short:0 "NEMI"
- 
  YUG_CAS_equipment_1:0 "Рогожарски R-100"
  YUG_CAS_equipment_1_short:0 "R-100"
  YUG_CAS_equipment_2:0 "Икарус «Оркан»"
  YUG_CAS_equipment_2_short:0 "Икарус «Оркан»"
  YUG_CAS_equipment_3:0 "Икарус «Тайфун»"
  YUG_CAS_equipment_3_short:0 "Икарус «Тайфун»"
- 
  YUG_tac_bomber_equipment_0:0 "Zmaj A-5"
  YUG_tac_bomber_equipment_0_short:0 "A-5"
  YUG_tac_bomber_equipment_1:0 "Zmaj C-17"
@@ -1664,7 +1581,6 @@
  YUG_tac_bomber_equipment_2_short:0 "G-2"
  YUG_tac_bomber_equipment_3:0 "Змай R-1"
  YUG_tac_bomber_equipment_3_short:0 "R-1"
- 
  YUG_strat_bomber_equipment_0:0 "Рогожарски R-401"
  YUG_strat_bomber_equipment_0_short:0 "R-401"
  YUG_strat_bomber_equipment_1:0 "Змай Q-12"
@@ -1673,14 +1589,12 @@
  YUG_strat_bomber_equipment_2_short:0 "R-522"
  YUG_strat_bomber_equipment_3:0 "Змай T-155"
  YUG_strat_bomber_equipment_3_short:0 "T-155"
- 
  YUG_nav_bomber_equipment_1:0 "Рогожарски SIM-XIV-H"
  YUG_nav_bomber_equipment_1_short:0 "SIM-XIV-H"
  YUG_nav_bomber_equipment_2:0 "Рогожарски SIM-XIX-V"
  YUG_nav_bomber_equipment_2_short:0 "SIM-XIX-V"
  YUG_nav_bomber_equipment_3:0 "Икарус IK-19"
  YUG_nav_bomber_equipment_3_short:0 "IK-19"
- 
  MEX_fighter_equipment_0:0 "TNCA 3-E-130 «Тололоче»"
  MEX_fighter_equipment_0_short:0 "«Тололоче»"
  MEX_cv_fighter_equipment_0:0 "TNCA 3-E-130 «Тололоче» (п.)"
@@ -1697,14 +1611,12 @@
  MEX_fighter_equipment_3_short:0 "«Уицилопочтли»"
  MEX_cv_fighter_equipment_3:0 "Палубный истребитель TNCA «Уицилопочтли»"
  MEX_cv_fighter_equipment_3_short:0 "«Уицилопочтли» (п.)"
- 
  MEX_heavy_fighter_equipment_1:0 "Тяжелый истребитель TNCA «Селия»"
  MEX_heavy_fighter_equipment_1_short:0 "«Селия» (истр.)"
  MEX_heavy_fighter_equipment_2:0 "Тяжелый истребитель «Ласкураин-Салинас»"
  MEX_heavy_fighter_equipment_2_short:0 "«Салинас» (истр.)"
  MEX_heavy_fighter_equipment_3:0 "Тяжелый истребитель «Аура»"
  MEX_heavy_fighter_equipment_3_short:0 "«Аура» (истр.)"
- 
  MEX_CAS_equipment_1:0 "Spartan «Зевс» 8W"
  MEX_CAS_equipment_1_short:0 "«Зевс»"
  MEX_cv_CAS_equipment_1:0 "Spartan «Зевс» 8W (п.)"
@@ -1717,7 +1629,6 @@
  MEX_CAS_equipment_3_short:0 "«Тонатиу»"
  MEX_cv_CAS_equipment_3:0 "Палубный бомбардировщик TNCA «Тонатиу»"
  MEX_cv_CAS_equipment_3_short:0 "«Тонатиу» (п.)"
- 
  MEX_tac_bomber_equipment_0:0 "TNCA O-E-1 «Азкарате»"
  MEX_tac_bomber_equipment_0_short:0 "«Азкарате»"
  MEX_tac_bomber_equipment_1:0 "Средний бомбардировщик TNCA «Селия»"
@@ -1726,14 +1637,12 @@
  MEX_tac_bomber_equipment_2_short:0 "«Салинас» (бомб.)"
  MEX_tac_bomber_equipment_3:0 "Средний бомбардировщик «Аура»"
  MEX_tac_bomber_equipment_3_short:0 "«Аура» (бомб.)"
- 
  MEX_strat_bomber_equipment_1:0 "Тяжелый бомбардировщик TNCA «Селия»"
  MEX_strat_bomber_equipment_1_short:0 "«Селия» (тяж. бомб.)"
  MEX_strat_bomber_equipment_2:0 "Тяжелый бомбардировщик «Ласкураин-Салинас»"
  MEX_strat_bomber_equipment_2_short:0 "«Салинас» (тяж. бомб.)"
  MEX_strat_bomber_equipment_3:0 "Тяжелый бомбардировщик «Аура»"
  MEX_strat_bomber_equipment_3_short:0 "«Аура» (тяж. бомб.)"
- 
  MEX_nav_bomber_equipment_1:0 "Mariscraft MA-260"
  MEX_nav_bomber_equipment_1_short:0 "MA-260"
  MEX_cv_nav_bomber_equipment_1:0 "Mariscraft MA-260 (п.)"

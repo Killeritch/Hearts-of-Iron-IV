@@ -24,11 +24,17 @@
 #
 #       #for effects/triggers/variables, from is the sender and this is receiver
 #
+#		# runs when the action is sent
+#		on_sent_effect = {
+#		}
+#
 #		# runs when the action is properly sent and accepted
 #		complete_effect = {
 #		}
 #
-#
+#		# runs when the action is properly sent and rejected
+#		reject_effect = {
+#		}
 #
 #		# SEND POPUP CUSTOMIZATION
 #		# use diplomatic_action as context in scripted gui

@@ -262,4 +262,3 @@
  PRODUCTION_SUB_UNIT_FILTER:0 "Показывать только $SUBUNIT|H$ ($COUNT|H$ совп.)"
  PRODUCTION_EQUIPMENT_ROLE_NO_FILTER:0 "Показывать все роли"
  PRODUCTION_EQUIPMENT_ROLE_FILTER:0 "Показывать только снаряжение с ролью $ROLE|H$"
- 

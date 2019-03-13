@@ -2280,3 +2280,5 @@
  USA_great_depression_cooldown:0 "Nowe prawo jest jeszcze pisane."
  USA_great_depression_cooldown_tt:0 "Po przegłosowaniu tego prawo minie §Y230 dni§!, zanim ustawodawstwo Nowego Ładu powstanie i będzie gotowe do zatwierdzenia.\n\n"
  USA_limited_intervention_tt:0 "\n\nWprowadzenie tego prawa §Rznacznie utrudni§! mobilizację twojej gospodarki.\n\n"
+ GER_integrate_war_economies_tt3:0 "§R[HUN.GetName] musi zatwierdzić umowę, aby bonusy zaczęły obowiązywać.§!"
+ GER_integrate_war_economies_tt4:0 "§R[ROM.GetName] musi zatwierdzić umowę, aby bonusy zaczęły obowiązywać.§!"

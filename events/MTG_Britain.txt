@@ -40,6 +40,15 @@ country_event = {
 	# Accept - Morganatic marriage
 	option = {
 		name = mtg_britain.1.b
+		trigger = {
+			NOT = {
+				OR = {
+					has_completed_focus = ENG_organize_the_blackshirts
+					has_completed_focus = ENG_concessions_to_the_trade_unions
+					has_completed_focus = ENG_steady_as_she_goes
+				}
+			}
+		}
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -89,6 +98,7 @@ country_event = {
 			country_event = { id = mtg_britain.6 days = 15 random = 10 }
 		}
 		set_country_flag = ENG_abdication_crisis_morganatic_marriage
+		set_country_flag = edward_viii_refused_to_abdicate_flag
 		hidden_effect = {
 			CAN = { country_event = { id = mtg_britain.15 } }
 			SAF = { country_event = { id = mtg_britain.15 } }
@@ -101,6 +111,15 @@ country_event = {
 	# Accept - Normal marriage
 	option = {
 		name = mtg_britain.1.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_completed_focus = ENG_organize_the_blackshirts
+					has_completed_focus = ENG_concessions_to_the_trade_unions
+					has_completed_focus = ENG_steady_as_she_goes
+				}
+			}
+		}
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -151,6 +170,7 @@ country_event = {
 			country_event = { id = mtg_britain.6 days = 15 random = 10 }
 		}
 		set_country_flag = ENG_abdication_crisis_normal_marriage
+		set_country_flag = edward_viii_refused_to_abdicate_flag
 		hidden_effect = {
 			CAN = { country_event = { id = mtg_britain.15 } }
 			SAF = { country_event = { id = mtg_britain.15 } }
@@ -890,6 +910,42 @@ country_event = {
 		}
 		custom_effect_tooltip = mtg_britain.15_tt_2
 		set_country_flag = ENG_abdication_crisis_dominion_will_stay
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			custom_effect_tooltip = ENG_staying_loyal_tt
+			if = {
+				limit = {
+					tag = CAN
+				}
+				CAN_enforce_loyalty = yes
+			}
+			if = {
+				limit = {
+					tag = SAF
+				}
+				SAF_enforce_loyalty = yes
+			}
+			if = {
+				limit = {
+					tag = RAJ
+				}
+				RAJ_enforce_loyalty = yes
+			}
+			if = {
+				limit = {
+					tag = AST
+				}
+				AST_enforce_loyalty = yes
+			}
+			if = {
+				limit = {
+					tag = NZL
+				}
+				NZL_enforce_loyalty = yes
+			}
+		}
 	}
 }
 
@@ -1706,6 +1762,90 @@ country_event = {
 					}
 				}
 			}
+			event_target:democratic_uk_civil_war = {
+				if = {
+					limit = {
+						has_full_control_of_state = 126
+					}
+					set_capital = 126
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 132
+					}
+					set_capital = 132
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 128
+					}
+					set_capital = 128
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 127
+					}
+					set_capital = 127
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 132
+					}
+					set_capital = 132
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 130
+					}
+					set_capital = 130
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 121
+					}
+					set_capital = 121
+				}
+				else_if = {
+					limit = {
+						has_full_control_of_state = 133
+					}
+					set_capital = 133
+				}
+				else = {
+					random_owned_state = {
+						limit = {
+							is_on_continent = europe
+						}
+						event_target:democratic_uk_civil_war = { set_capital = PREV }
+					}
+				}
+			}
+			event_target:democratic_uk_civil_war = {
+				division_template = {
+					name = "Loyalist Brigade"
+					priority = 1
+					division_names_group = ENG_DEM_01
+					is_locked = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+				every_owned_state = {
+					limit = {
+						is_on_continent = europe
+					}
+					create_unit = {
+						division = "division_template = \"Loyalist Brigade\" start_experience_factor = 0 start_equipment_factor = 1"
+						owner = PREV
+					}
+					create_unit = {
+						division = "division_template = \"Loyalist Brigade\" start_experience_factor = 0 start_equipment_factor = 1"
+						owner = PREV
+					}
+				}
+			}
 		}
 	}
 	
@@ -1717,6 +1857,30 @@ country_event = {
 			RAJ = { retire_country_leader = yes }
 		}
 		hidden_effect = { news_event = { id = mtg_news.41 days = 1 } }
+		division_template = {
+			name = "Blackshirt Brigade"
+			priority = 1
+			division_names_group = ENG_FAS_01
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_on_continent = europe
+			}
+			create_unit = {
+				division = "division_template = \"Blackshirt Brigade\" start_experience_factor = 0 start_equipment_factor = 1"
+				owner = ROOT
+			}
+			create_unit = {
+				division = "division_template = \"Blackshirt Brigade\" start_experience_factor = 0 start_equipment_factor = 1"
+				owner = ROOT
+			}
+		}
 	}
 }
 
@@ -1732,6 +1896,7 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_britain.34.a
+		add_ideas = ENG_george_vi
 		hidden_effect = {
 			RAJ = {
 				leave_faction = yes
@@ -1743,18 +1908,23 @@ country_event = {
 				retire_country_leader = yes
 			}
 			CAN = {
-				set_faction_name = "ENG_commonwealth_of_nations"
-				every_other_country = {
+				if = {
 					limit = {
-						NOT = { tag = SAF }
-						NOT = { tag = AST }
-						NOT = { tag = NZL }
+						has_completed_focus = CAN_strengthen_the_commonwealth_ties
 					}
-					CAN = {
-						add_ai_strategy = {
-							type = alliance
-							id = PREV
-							value = -200
+					set_faction_name = "ENG_commonwealth_of_nations"
+					every_other_country = {
+						limit = {
+							NOT = { tag = SAF }
+							NOT = { tag = AST }
+							NOT = { tag = NZL }
+						}
+						CAN = {
+							add_ai_strategy = {
+								type = alliance
+								id = PREV
+								value = -200
+							}
 						}
 					}
 				}
@@ -1762,6 +1932,7 @@ country_event = {
 		}
 		custom_effect_tooltip = mtg_britain.34_tt
 		hidden_effect = { news_event = { id = mtg_news.42 days = 1 } }
+		delete_unit_template_and_units = { division_template = "Blackshirt Brigade" }
 	}
 }
 
@@ -2015,6 +2186,7 @@ country_event = {
 			factor = 75
 		}
 		add_timed_idea = { idea = ENG_confiscated_royal_wealth days = 365 }
+		remove_ideas = ENG_george_vi
 		CAN = {
 			country_event = { id = mtg_britain.44 }
 			effect_tooltip = {
@@ -2031,6 +2203,7 @@ country_event = {
 		}
 		add_timed_idea = { idea = ENG_confiscated_royal_wealth days = 365 }
 		add_stability = -0.1
+		remove_ideas = ENG_george_vi
 		hidden_effect = { news_event = { id = mtg_news.35 days = 1 } }
 	}
 }
@@ -3407,6 +3580,7 @@ country_event = {
 				retire_country_leader = yes
 				set_cosmetic_tag = ENG_communist_civil_war
 				set_country_flag = ENG_communist_civil_war
+				civil_war_anti_exploiter_punitive_action = yes
 			}
 			add_popularity = {
 				ideology = communism
@@ -4170,6 +4344,7 @@ country_event = {
 		has_dlc = "Man the Guns"
 		NOT = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
 		NOT = { has_country_flag = britain_enforced_our_loyalty }
+		NOT = { has_country_flag = ENG_already_left_faction_flag }
 	}
 	
 	fire_only_once = no
@@ -4227,7 +4402,8 @@ country_event = {
 			retire_country_leader = yes
 		}
 		remove_from_tech_sharing_group = commonwealth_research
-		ENG = { country_event = { id = mtg_britain.67 hours = 6 } }
+		set_country_flag = ENG_already_left_faction_flag
+		ENG = { country_event = { id = mtg_britain.67 } }
 	}
 }
 
@@ -4381,6 +4557,7 @@ country_event = {
 		FROM = { country_event = { id = mtg_britain.71 hours = 6 } }
 		remove_decision = ENG_propaganda_campaigns_in_canada
 		set_country_flag = ENG_secure_the_dominions_backed_down_against_USA
+		CAN = { remove_ideas = ENG_dominion_communist_propaganda }
 	}
 }
 
@@ -5468,6 +5645,12 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_imperial_defense_flag
+		}
+	}
 	
 	# Ask them if they want to agree to commit
 	option = {
@@ -5499,6 +5682,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 
 	# Exert diplomatic pressure
@@ -5533,6 +5717,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 	# Exert extensive diplomatic pressure
 	option = {
@@ -5566,6 +5751,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.84 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 }
 
@@ -5690,18 +5876,7 @@ country_event = {
 			var = ENG_imperial_conference_defense_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_defense_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -5736,18 +5911,7 @@ country_event = {
 			var = ENG_imperial_conference_defense_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_defense_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -5759,6 +5923,12 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_imperial_trade_flag
+		}
+	}
 	
 	# Ask them if they want to agree to commit
 	option = {
@@ -5790,6 +5960,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 
 	# Exert diplomatic pressure
@@ -5824,6 +5995,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 	# Exert extensive diplomatic pressure
 	option = {
@@ -5857,6 +6029,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.88 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 }
 
@@ -5959,18 +6132,7 @@ country_event = {
 			var = ENG_imperial_conference_trade_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_trade_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -6005,18 +6167,7 @@ country_event = {
 			var = ENG_imperial_conference_trade_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_trade_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -6028,6 +6179,12 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_imperial_economy_flag
+		}
+	}
 	
 	# Ask them if they want to agree to commit
 	option = {
@@ -6059,6 +6216,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 
 	# Exert diplomatic pressure
@@ -6093,6 +6251,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 	# Exert extensive diplomatic pressure
 	option = {
@@ -6126,6 +6285,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.92 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 }
 
@@ -6250,18 +6410,7 @@ country_event = {
 			var = ENG_imperial_conference_economy_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_economy_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -6296,18 +6445,7 @@ country_event = {
 			var = ENG_imperial_conference_economy_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_economy_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -6319,6 +6457,12 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_imperial_appeasement_flag
+		}
+	}
 	
 	# Ask them if they want to agree to commit
 	option = {
@@ -6350,6 +6494,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 
 	# Exert diplomatic pressure
@@ -6384,6 +6529,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 	# Exert extensive diplomatic pressure
 	option = {
@@ -6417,6 +6563,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.96 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 }
 
@@ -6521,18 +6668,7 @@ country_event = {
 			var = ENG_imperial_conference_appeasement_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_appeasement_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -6567,18 +6703,7 @@ country_event = {
 			var = ENG_imperial_conference_appeasement_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_appeasement_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
 
@@ -6590,6 +6715,12 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ENG_imperial_federation_flag
+		}
+	}
 	
 	# Ask them if they want to agree to Federate
 	option = {
@@ -6621,6 +6752,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.100 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 
 	# Exert diplomatic pressure
@@ -6655,6 +6787,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.100 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 	# Exert extensive diplomatic pressure
 	option = {
@@ -6688,6 +6821,7 @@ country_event = {
 			}
 			country_event = { id = mtg_britain.100 hours = 48 random = 24 }
 		}
+		ENG_imperial_conference_set_subject_counter = yes
 	}
 }
 
@@ -6820,70 +6954,20 @@ country_event = {
 			var = ENG_imperial_conference_federation_answers
 			value = 1
 		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 		if = {
 			limit = {
-				OR = {
-					AND = {
-						RAJ = { is_subject_of = ENG }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 5
-							compare = greater_than_or_equals
+				check_variable = { var = ENG_imperial_conference_federation_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+				NOT = {
+					any_country = {
+						OR = {
+							tag = CAN
+							tag = SAF
+							tag = RAJ
+							tag = AST
+							tag = NZL
 						}
-					}
-					AND = {
-						NOT = { RAJ = { is_subject_of = ENG } }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 4
-							compare = greater_than_or_equals
-						}
-					}
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
-		if = {
-			limit = {
-				OR = {
-					AND = {
-						RAJ = {
-							is_subject_of = ENG
-							has_country_flag = ENG_accepted_federation
-						}
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 5
-							compare = greater_than_or_equals
-						}
-					}
-					AND = {
-						NOT = { RAJ = { is_subject_of = ENG } }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 4
-							compare = equals
-						}
-					}
-				}
-				AND = {
-					CAN = {
-						is_subject_of = ENG
-						has_country_flag = ENG_accepted_federation
-					}
-					SAF = {
-						is_subject_of = ENG
-						has_country_flag = ENG_accepted_federation
-					}
-					AST = {
-						is_subject_of = ENG
-						has_country_flag = ENG_accepted_federation
-					}
-					NZL = {
-						is_subject_of = ENG
-						has_country_flag = ENG_accepted_federation
+						has_country_flag = ENG_rejected_federation
 					}
 				}
 			}
@@ -6895,29 +6979,16 @@ country_event = {
 					is_subject_of = ENG
 					has_country_flag = ENG_rejected_federation
 				}
-				check_variable = {
-					var = ENG_imperial_conference_federation_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
+				check_variable = { var = ENG_imperial_conference_federation_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
 				NOT = {
-					OR = {
-						CAN = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
+					any_country = {
+						OR = {
+							tag = CAN
+							tag = SAF
+							tag = AST
+							tag = NZL
 						}
-						SAF = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
-						}
-						AST = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
-						}
-						NZL = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
-						}
+						has_country_flag = ENG_rejected_federation
 					}
 				}
 			}
@@ -6925,41 +6996,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					AND = {
-						RAJ = { is_subject_of = ENG }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 5
-							compare = greater_than_or_equals
-						}
+				check_variable = { var = ENG_imperial_conference_federation_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+				any_country = {
+					OR = {
+						tag = CAN
+						tag = SAF
+						tag = AST
+						tag = NZL
 					}
-					AND = {
-						NOT = { RAJ = { is_subject_of = ENG } }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 4
-							compare = equals
-						}
-					}
-				}
-				OR = {
-					CAN = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
-					SAF = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
-					AST = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
-					NZL = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
+					has_country_flag = ENG_rejected_federation
 				}
 			}
 			country_event = { id = mtg_britain.105 hours = 6 }
@@ -6998,47 +7043,23 @@ country_event = {
 			var = ENG_imperial_conference_federation_answers
 			value = 1
 		}
-		if = {
-			limit = {
-				check_variable = {
-					var = ENG_imperial_conference_federation_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
-			}
-			clr_country_flag = ENG_imperial_conference_discussion_in_progress
-			clr_country_flag = ENG_diplomatic_pressure_flag
-			clr_country_flag = ENG_extensive_diplomatic_pressure_flag
-		}
+		ENG_imperial_conference_clear_in_progress_flags = yes
 		if = {
 			limit = {
 				RAJ = {
 					is_subject_of = ENG
 					has_country_flag = ENG_rejected_federation
 				}
-				check_variable = {
-					var = ENG_imperial_conference_federation_answers
-					value = 5
-					compare = greater_than_or_equals
-				}
+				check_variable = { var = ENG_imperial_conference_federation_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
 				NOT = {
-					OR = {
-						CAN = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
+					any_country = {
+						OR = {
+							tag = CAN
+							tag = SAF
+							tag = AST
+							tag = NZL
 						}
-						SAF = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
-						}
-						AST = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
-						}
-						NZL = {
-							is_subject_of = ENG
-							has_country_flag = ENG_rejected_federation
-						}
+						has_country_flag = ENG_rejected_federation
 					}
 				}
 			}
@@ -7046,41 +7067,15 @@ country_event = {
 		}
 		if = {
 			limit = {
-				OR = {
-					AND = {
-						RAJ = { is_subject_of = ENG }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 5
-							compare = greater_than_or_equals
-						}
+				check_variable = { var = ENG_imperial_conference_federation_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+				any_country = {
+					OR = {
+						tag = CAN
+						tag = SAF
+						tag = AST
+						tag = NZL
 					}
-					AND = {
-						NOT = { RAJ = { is_subject_of = ENG } }
-						check_variable = {
-							var = ENG_imperial_conference_federation_answers
-							value = 4
-							compare = equals
-						}
-					}
-				}
-				OR = {
-					CAN = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
-					SAF = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
-					AST = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
-					NZL = {
-						is_subject_of = ENG
-						has_country_flag = ENG_rejected_federation
-					}
+					has_country_flag = ENG_rejected_federation
 				}
 			}
 			country_event = { id = mtg_britain.105 hours = 6 }
@@ -7100,36 +7095,80 @@ country_event = {
 	# Ok
 	option = {
 		name = mtg_britain.103.a
-		every_country = {
+		if = {
 			limit = {
 				OR = {
+					has_dlc = "Together for Victory"
 					AND = {
-						is_subject_of = ENG
-						tag = CAN
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = RAJ
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = MAL
+						has_dlc = "Death or Dishonor"
+						has_government = fascism
 					}
 				}
 			}
-			add_ideas = ENG_federal_integration
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = MAL
+						}
+					}
+				}
+				add_ideas = ENG_federal_integration
+			}
+		}
+		else = {
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = MAL
+						}
+					}
+				}
+				add_ideas = ENG_federal_integration_tfv
+			}
 		}
 		set_country_flag = ENG_dominions_accepted_federation
 	}
@@ -7147,32 +7186,72 @@ country_event = {
 	# Go through with it anyway - give India independence
 	option = {
 		name = mtg_britain.104.a
-		every_country = {
+		if = {
 			limit = {
 				OR = {
+					has_dlc = "Together for Victory"
 					AND = {
-						is_subject_of = ENG
-						tag = CAN
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = SAF
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = AST
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = NZL
-					}
-					AND = {
-						is_subject_of = ENG
-						tag = MAL
+						has_dlc = "Death or Dishonor"
+						has_government = fascism
 					}
 				}
 			}
-			add_ideas = ENG_federal_integration
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = MAL
+						}
+					}
+				}
+				add_ideas = ENG_federal_integration
+			}
+		}
+		else = {
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = MAL
+						}
+					}
+				}
+				add_ideas = ENG_federal_integration_tfv
+			}
 		}
 		set_country_flag = ENG_dominions_accepted_federation
 		set_autonomy = {
@@ -7443,7 +7522,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		original_tag = GER
+		original_tag = ENG
 		has_government = neutrality
 		date > 1941.1.1
 		has_country_leader = { ruling_only = yes name = "George VI" }

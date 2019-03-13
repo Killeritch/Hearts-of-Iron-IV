@@ -111,7 +111,7 @@
  OOS_47:0 "Groupes d'ordres"
  OOS_48:0 "Armées au combat"
  OOS_49:0 "Priorités atteintes"
- OOS_50:0 "Couverture des missions navales"
+ OOS_50:1 "Réserves de carburant du pays"
  OOS_51:0 "Régions des missions navales"
  OOS_52:0 "Puissance de commandement"
  OOS_53:0 "Puissance de commandement fixée"
@@ -122,7 +122,6 @@
  OOS_58:0 "Nombre de convois utilisés"
  OOS_59:0 "Nombre de convois non utilisés"
  OOS_60:0 "Puissance et organisation de l'armée"
- OOS_61:0 "Réserves de carburant du pays"
  MULTIPLAYER_PLAYERS:0 "$NUM$"
  MULTIPLAYER_MESSAGES:0 "$NUM$"
  MATCHMAKING_FRIEND_STATUS_PLAYING_THIS:0 "§GJoue déjà§!"
@@ -151,3 +150,4 @@
 ###  TO BE ERASED  ###
 ######################
 # PLR_CONNECT:0 "§G§Y$NAME$§! a rejoint la partie.§!"
+ OOS_61:0 "Statut de la technologie"

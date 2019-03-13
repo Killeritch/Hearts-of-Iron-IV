@@ -103,10 +103,10 @@
  SHIP_IS_PRIDE_OF_FLEET_DESC:0 "§HГордость ВМФ§! получает различные бонусы, но §Hподдержка войны§! в государстве ослабнет, если это судно потопят."
  NAVY_CONTAINS_PRIDE_OF_FLEET:0 "В этом флоте находится §Hгордость ВМФ§! §H($NAME$)§!"
  NAVY_CONTAINS_PRIDE_OF_FLEET_WITHOUT_NAME:0 "В этом флоте находится §Hгордость ВМФ§!"
- 
+ FLEET_HAS_FUEL_INEFFICIENT_SHIP_FOR_MISSION:0 "£mapicon_unit_invalid_orders  Этот парк содержит целевые группы, работающие с неоптимальной топливной эффективностью"
+ TASK_FORCE_HAS_FUEL_INEFFICIENT_SHIP_FOR_MISSION:0 "£mapicon_unit_invalid_orders  Следующие классы кораблей не экономичны для миссии $MISSION|H$"
  SPECIFIC_NAVY_CONTAINS_PRIDE_OF_FLEET:0 "Во флоте $NAVY_NAME|H$ находится §Hгордость ВМФ§! §H($NAME$)§!"
  DISBAND_PRIDE_OF_THE_FLEET_COST:0 "Расформировав §Hгордость ВМФ§! §H($NAME$)§!, вы потеряете $COST|R$ £pol_power "
- 
  SET_SHIP_PRIDE_OF_FLEET:0 "§HОбъявить§! корабль $NAME|H$ §Hгордостью ВМФ§!"
  REPLACE_SHIP_PRIDE_OF_FLEET:0 "§RПереназначить§! корабль $NAME|H$ новой §Hгордостью ВМФ§!"
  SET_SHIP_PRIDE_OF_FLEET_DESC:0 "Вы получите эти бонусы:\n$BONUS$\n\n"
@@ -114,20 +114,15 @@
  SET_SHIP_PRIDE_OF_FLEET_DESC_2_WITH_EXISTING:0 "Вы потратите $COST|R$ £pol_power на замену текущей §Hгордости ВМФ§! §H($OLD_NAME$)§!."
  UNSET_SHIP_PRIDE_OF_FLEET:0 "§RОтменить назначение§! корабля $NAME|H$ §Hгордостью ВМФ§!."
  UNSET_SHIP_PRIDE_OF_FLEET_DESC:0 "Вы §Rлишитесь§! этих бонусов:\n$BONUS$\n\nОтмена назначения обойдется вам в $COST|R$ £pol_power."
- 
  PRIDE_OF_THE_FLEET_COUNTRY_BONUS:0 "\n§HБонус государства:§!\n$BONUS$"
  PRIDE_OF_THE_FLEET_SHIP_BONUS:0 "\n§HБонус корабля:§!\n$BONUS$"
  PRIDE_OF_THE_FLEET_TEMP_BONUS:0 "\n§RШтраф за потопление (в течение $NUM$ дн.):§!\n$BONUS$"
- 
  SET_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HВыбрать гордость ВМФ§!"
  SET_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Вы уверены, что хотите §Hобъявить§! корабль $NAME|H$ §Hгордостью ВМФ§!?\n\nЧтобы переназначить или заменить §Hгордость ВМФ§!, вам придется потратить $COST|R$ £pol_power. Вы получите эти бонусы:\n$BONUS$\n\n"
- 
  REPLACE_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HЗаменить гордость ВМФ§!"
  REPLACE_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Вы уверены, что хотите §Hобъявить§! корабль $NAME|H$ §Hгордостью ВМФ§! и §Rзаменить§! $OLD_NAME|H$?\n\nВы потратите $COST|R$ £pol_power на замену §Hгордости ВМФ§!. Вы получите эти бонусы:\n$BONUS$\n\n"
- 
  UNSET_SHIP_PRIDE_OF_FLEET_POPUP:0 "§HОтменить назначение гордостью ВМФ§!"
  UNSET_SHIP_PRIDE_OF_FLEET_POPUP_DESC:0 "Вы уверены, что хотите §Rотменить§! назначение корабля $NAME|H$ §Hгордостью ВМФ§!?\n\nВы потратите $COST|R$ £pol_power на отмену и §Rлишитесь§! этих бонусов:\n$BONUS$"
- 
  NOT_ENOUGH_PP_TO_UNASSIGN:0 "\n\n§RНедостаточно политической власти§!"
  NOT_ENOUGH_PP_TO_DISBAND_POTF:0 "\n\n§RНедостаточно политической власти, чтобы отменить назначение §!§Hгордостью ВМФ§!"
  SELECT_HOME_BASE:0 "Указать порт приписки для выбранных флотов"
@@ -492,3 +487,8 @@
  damaged_secondaries:0 "Вспомогательные орудия повреждены"
  CONFIRM_DISBAND_FLEET_TITLE:0 "Расформировать флот"
  CONFIRM_DISBAND_FLEET_DESC:0 "Вы действительно хотите §YРАСФОРМИРОВАТЬ§! флот $NAME|H$?\n\nВсе оперативные соединения будут отправлены в резерв."
+ NAVAL_SUB_UNIT_DEF_SELECTION_WINDOW_TITLE:0 "Выберите класс корабля"
+ TASK_FORCE_FLEET_INFORMATION_HEADER:0 "§HИнформация о флоте§!\nМаксимальная скорость: $SPEED|H$\nМаксимальный диапазон: $RANGE|H$"
+ TASK_FORCE_FLEET_INFORMATION_SLOWEST_SHIPS:0 "\n§HСамые медленные корабли§!"
+ TASK_FORCE_FLEET_INFORMATION_SHORTEST_RANGES:0 "\n§HКратчайшие диапазоны§!"
+ TASK_FORCE_FLEET_INFORMATION_DELAYED:0 "Чтобы узнать больше об отдельных деталях корабля, выберите целевую группу, затем нажмите на портрет корабля."

@@ -689,7 +689,7 @@
  DOD_yugoslavia.34.b:0 "The Tiger cares not for the opinions of mice."
  DOD_yugoslavia.35.desc:0 "In a recent meeting at the Berghof, [GER.GetLeader] and [YUG.GetLeader] discussed the situation in Europe, and our role in it. [GER.GetLeader] insists that Yugoslavia can not avoid taking a side in the life-or-death struggle looming in the distance. Nor could Germany tolerate an unaligned country at her borders. \n\nIt would almost be preferable, he ended, if Yugoslavia choose to side with the Allies, just so everyone knew where they stood."
  DOD_yugoslavia.35.a:0 "Time is running out."
- DOD_yugoslavia.36.t:0 "The fate of Yugsolavia"
+ DOD_yugoslavia.36.t:0 "The fate of Yugoslavia"
  DOD_yugoslavia.36.desc:0 "After pressing them time and time again to declare for one side, the government of [YUG.GetLeader] still clings to the idea that Yugoslavia can sit out this conflict on the side lines. Now they must face the consequences of their cowardice."
  DOD_yugoslavia.36.a:0 "If they are not with us, they are against us!"
  DOD_yugoslavia.36.b:0 "They are, and will forever remain, irrelevant."

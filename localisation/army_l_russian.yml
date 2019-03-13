@@ -151,3 +151,4 @@
  ARMY_ON_BORDER_WAR_TOOLTIP:0 "Армия участвует в пограничном конфликте"
  BATTALIONS_COUNT:0 "Батальоны: $NUM$"
  MORE_THAN_NINE:0 "9+"
+ SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Используйте £ctrl + £b, чтобы переключить стратегическое перераспределение для порядков перемещения выбранных армий."

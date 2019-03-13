@@ -939,3 +939,5 @@
 # MODIFIER_PRODUCTION_SPEED_NUCLEAR_REACTOR_FACTOR_DESC:0 "Modifie la vitesse de construction d'un réacteur nucléaire."
 # MODIFIER_RESEARCH_SPEED_FACTOR_DESC:0 "Réduit le délai nécessaire à l'étude d'une nouvelle technologie."
 # MODIFIER_DECLARE_WAR_TENSION_LIMIT:0 "Limite de tension pour déclarer la guerre"
+ MODIFIER_ARMOR:0 "Armure"
+ MODIFIER_BREAKTHROUGH:0 "Percée"

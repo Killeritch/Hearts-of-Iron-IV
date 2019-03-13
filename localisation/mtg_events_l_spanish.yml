@@ -1477,3 +1477,7 @@
  mtg_britain.113.t:0 "[From.GetName] se Reincorpora al Imperio."
  mtg_britain.113.d:0 "Después de haber ganado la guerra civil y reunificado su patria, los líderes de [From.GetNameDef] piden ahora reincorporarse al Imperio, deseando nuestra orientación y protección para lo que pueda venir."
  mtg_britain.113.a:0 "Les damos la bienvenida de vuelta al redil."
+ mtg_news.3.f:0 "La neutralidad debe estar respaldada por la fuerza."
+ edward_viii_refused_to_abdicate_flag:0 "Eduardo VIII se negó a abdicar"
+ ENG_staying_loyal_tt:0 "§R¡Nos encerraremos en la rama leal de nuestro árbol de enfoque! §!"
+ mtg_news.55.b:0 "Ellos pagaron el precio final."

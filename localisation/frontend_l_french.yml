@@ -208,3 +208,4 @@
 # FE_DIFFICULTY_MODIFIER_TOOLTIP:0 "\n\nJoueur :\n$PLAYERMOD$\n\nIA :\n$AIMOD$"
 # ALLOW_HOTJOIN:0 "Autoriser les joueurs à utiliser la fonction Hotjoin"
 # ALLOW_COOP:0 "Autoriser les joueurs à utiliser le même pays"
+ ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RImpossible d'obtenir le plus grand nombre de réalisations.§!"

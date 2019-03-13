@@ -156,3 +156,4 @@
  NAVY_THEATER_DETACHED_TASK_FORCES_ENTRY:0 "La fuerza especial $TASK_FORCE_NAME|H$ tiene:"
  ARMY_NAVIES_MISSION_NO_REGIONS:0 "§RÁrea estratégica no accesible seleccionada§!"
  ARMY_NAVIES_MISSION_IDLE:0 "§RSin misiones definidas§!"
+ SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Use £ctrl + £b para alternar la redistribución estratégica para mover órdenes de ejércitos seleccionados."

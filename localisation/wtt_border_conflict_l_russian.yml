@@ -21,12 +21,6 @@
  at_least_one_division_in_state:0 "По меньшей мере §H1§! дивизия в регионе"
  in_45_days:0 "Через 45 дней:\n"
  border_incident_active:0 "Между регионами нет активного пограничного конфликта"
- 
- ### #   # ### #  # ###  ## 
- #   #   # #   ## #  #  #   
- ##   # #  ##  # ##  #   #  
- #    # #  #   #  #  #    # 
- ###   #   ### #  #  #  ##  
  wtt_border_conflict_won_attacker.1.t:0 "[their_state.GetName]. Победа"
  wtt_border_conflict_won_attacker.1.desc:0 "В результате столкновения на границе между регионами [our_state.GetName] и [their_state.GetName] мы одержали решительную победу над лидером [their_country.GetLeader]. [their_country.GetAdjective] войска отступили, чтобы перегруппироваться, а наши войска заняли спорную территорию."
  wtt_border_conflict_won_attacker.1.a:0 "Мы показали им нашу силу!"

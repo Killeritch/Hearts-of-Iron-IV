@@ -120,6 +120,19 @@ focus_tree = {
 			add_stability = -0.05
 			custom_effect_tooltip = available_political_advisor
 		    show_ideas_tooltip = earl_browder
+		    if = {
+		    	limit = {
+		    		is_ai = yes
+		    		OR = {
+						has_country_flag = USA_AI_RANDOM_COMMUNIST
+						has_game_rule = {
+							rule = USA_ai_behavior
+							option = COMMUNIST
+						}
+					}
+		    	}
+		    	add_ideas = earl_browder
+		    }
 		}
 	}
 	focus = {
@@ -378,7 +391,12 @@ focus_tree = {
 
 		available = {
 			congress_high_support_trigger = yes
-			has_idea_with_trait = communist_revolutionary
+			OR = {
+				has_idea_with_trait = communist_revolutionary
+				has_government = communism
+			}
+			not = { has_completed_focus = USA_limited_intervention }
+			not = { has_completed_focus = USA_neutrality_act }
 		}
 		
 		bypass = {
@@ -468,6 +486,10 @@ focus_tree = {
 		}
 
 		available = {
+			OR = {
+				has_idea_with_trait = communist_revolutionary
+				has_government = communism
+			}
 			congress_high_support_trigger = yes
 		}
 		
@@ -481,7 +503,24 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_accumulated_wealth_tax_act
-			USA_congress_small_opposition = yes
+			if = {
+				limit = {
+					communism > 0.3
+					not = { has_government = communism }
+				}
+				USA_congress_medium_opposition = yes
+			}
+			else_if = {
+				limit = {
+					communism < 0.3
+					not = { has_government = communism }
+				}
+				USA_congress_large_opposition = yes
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+			}
 			USA_great_depression_level_down = yes
 		}
 	}
@@ -531,6 +570,10 @@ focus_tree = {
 
 		available = {
 			congress_high_support_trigger = yes
+			OR = {
+				has_idea_with_trait = communist_revolutionary
+				has_government = communism
+			}
 		}
 		
 		bypass = {
@@ -543,7 +586,24 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = USA_worker_management_act
-			USA_congress_small_opposition = yes
+			if = {
+				limit = {
+					communism > 0.3
+					not = { has_government = communism }
+				}
+				USA_congress_medium_opposition = yes
+			}
+			else_if = {
+				limit = {
+					communism < 0.3
+					not = { has_government = communism }
+				}
+				USA_congress_large_opposition = yes
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+			}
 			USA_great_depression_level_down = yes
 		}
 	}
@@ -604,7 +664,20 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			USA_congress_small_opposition = yes
+			if = {
+				limit = {
+					communism > 0.3
+					not = { has_government = communism }
+				}
+				USA_congress_medium_opposition = yes
+			}
+			else_if = {
+				limit = {
+					communism < 0.3
+					not = { has_government = communism }
+				}
+				USA_congress_large_opposition = yes
+			}
 			USA_great_depression_level_down = yes
 			unlock_decision_tooltip = { decision = USA_communal_domain show_effect_tooltip = yes }
 
@@ -1353,55 +1426,48 @@ focus_tree = {
 		available = {
 			congress_high_support_trigger = yes 
 			has_government = democratic
+			NOT = { has_idea_with_trait = fascist_demagogue }
+			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
 		bypass = {
 			
 		}
 
 		completion_reward = {
-			every_other_country = {
-				limit = {
-					is_major = yes
-					has_government = ROOT
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = support
-						id = PREV
-						value = 200
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						is_major = yes
+						has_government = ROOT
 					}
-					add_ai_strategy = {
-						type = alliance
-						id = PREV
-						value = 200
+					ROOT = {
+						add_ai_strategy = {
+							type = support
+							id = PREV
+							value = 200
+						}
+						add_ai_strategy = {
+							type = alliance
+							id = PREV
+							value = 200
+						}
 					}
 				}
 			}
 			add_ideas = USA_limited_intervention
-			if = {
-				limit = {
-					OR = {
-						has_idea = undisturbed_isolation
-						has_idea = isolation
-					}
-				}
-				add_ideas = civilian_economy
-			}
-			else = {
-				add_political_power = 150 #refund if already at civilian economy
-			}
 			USA_congress_medium_opposition = yes
 			if = {
 				limit = {
 					has_war_support < 0.4
+					has_war_support > 0.2
 				}
 				add_stability = -0.1
 			}
-			if = {
+			else_if = {
 				limit = {
 					has_war_support < 0.2
 				}
-				add_stability = -0.1
+				add_stability = -0.2
 			}
 			custom_effect_tooltip = USA_limited_intervention_tt
 			hidden_effect = {
@@ -1473,19 +1539,22 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = USA_intervention_mandate
-			every_other_country = {
-				limit = {
-					is_major = yes
-					capital_scope = {
-						is_on_continent = europe
+			custom_effect_tooltip = USA_intervention_mandate_tt
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						is_major = yes
+						capital_scope = {
+							is_on_continent = europe
+						}
+						not = { has_government = ROOT }
 					}
-					not = { has_government = ROOT }
-				}
-				ROOT = {
-					add_ai_strategy = {
-						type = contain
-						id = PREV
-						value = 200
+					ROOT = {
+						add_ai_strategy = {
+							type = contain
+							id = PREV
+							value = 200
+						}
 					}
 				}
 			}
@@ -1543,6 +1612,7 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = USA_intervention_mandate
+			custom_effect_tooltip = USA_intervention_mandate_tt
 		}
 	}
 	focus = {
@@ -1665,6 +1735,8 @@ focus_tree = {
 		available = {
 			congress_low_support_trigger = yes
 			democratic > 0.95
+			NOT = { has_idea_with_trait = fascist_demagogue }
+			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
 		
 		bypass = {
@@ -2591,6 +2663,19 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 		    show_ideas_tooltip = charles_coughlin
 		    add_popularity = { ideology = fascism popularity = 0.05 }
+		     if = {
+		    	limit = {
+		    		is_ai = yes
+		    		OR = {
+						has_country_flag = USA_AI_RANDOM_FASCIST
+						has_game_rule = {
+							rule = USA_ai_behavior
+							option = FASCIST
+						}
+					}
+		    	}
+		    	add_ideas = charles_coughlin
+		    }
 		}
 	}
 	focus = {
@@ -2909,6 +2994,7 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = USA_foreign_support
+			custom_effect_tooltip = USA_foreign_support_tt
 		}
 	}
 	focus = {
@@ -3024,6 +3110,7 @@ focus_tree = {
 			OR = {
 				has_civil_war = yes
 				has_government = fascism
+				has_government = neutrality
 			}
 		}
 		
@@ -3037,6 +3124,7 @@ focus_tree = {
 
 		completion_reward = {
 			unlock_decision_category_tooltip = USA_honor_the_confederacy
+			custom_effect_tooltip = USA_honor_the_confederacy_tt
 		}
 	}
 
@@ -3787,7 +3875,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_crimson show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_crimson show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -3856,7 +3944,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_gray show_effect_tooltip = yes } 
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_gray show_effect_tooltip = yes show_modifiers = yes } 
 		}
 	}
 	focus = {
@@ -3988,7 +4076,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_gold show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_gold show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4018,7 +4106,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4042,7 +4130,7 @@ focus_tree = {
 			GER = {
 				add_opinion_modifier = { target = USA modifier = war_plan_black }
 			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4119,7 +4207,7 @@ focus_tree = {
 			SOV = {
 				add_opinion_modifier = { target = USA modifier = war_plan_white }
 			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_white show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_white show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4148,7 +4236,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_guns_for_the_anti_bolshevist_war show_effect_tooltip = yes }
+			custom_effect_tooltip = mtg_usa_anti_bolshevist_aid_tt 
 		}
 	}
 	focus = {
@@ -4172,7 +4260,7 @@ focus_tree = {
 			ENG = {
 				add_opinion_modifier = { target = USA modifier = war_plan_red }
 			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_red show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_red show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4201,7 +4289,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_ruby show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_ruby show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4230,7 +4318,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_scarlet_garnet show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_scarlet_garnet show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4294,7 +4382,7 @@ focus_tree = {
 			JAP = {
 				add_opinion_modifier = { target = USA modifier = war_plan_orange }
 			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {
@@ -4323,7 +4411,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_yellow show_effect_tooltip = yes }
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_yellow show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 	focus = {

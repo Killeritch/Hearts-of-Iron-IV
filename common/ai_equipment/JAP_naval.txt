@@ -301,6 +301,14 @@ JAP_escorts = {
 	
 	priority = {
 		factor = 200
+		modifier = {
+			anti_submarine_strategy_required_trigger = yes
+			factor = 10
+		}
+		modifier = {
+			convoy_threat > 0.5
+			factor = 20
+		}
 	}
 	
 	escort_default = {
@@ -341,10 +349,14 @@ JAP_escorts = {
 	escort_default_upgrade = {
 	
 		priority = {
-			factor = 15
+			factor = 150
 			modifier = {
-				factor = 200
+				factor = 20
 				has_war = yes
+			}
+			modifier = {
+				convoy_threat > 0.5
+				factor = 20
 			}
 		}
 		role_icon_index = 2

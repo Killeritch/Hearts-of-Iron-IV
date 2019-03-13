@@ -2286,3 +2286,5 @@
 # USA_extra_tech_team_desc:0 "TODO: May want to reuse generic?"
 # FRA_defensive_focus_tooltip:0 "Maxime Weygand disponible pour prendre la tête des forces armées"
 # FRA_aggressive_focus_tooltip:0 "Maurice Gamelin disponible pour prendre la tête des forces armées"
+ GER_integrate_war_economies_tt3:0 "§R[HUN.GetName] doit approuver l'accord pour que les bonus prennent effet.§!"
+ GER_integrate_war_economies_tt4:0 "§R[ROM.GetName] doit approuver l'accord pour que les bonus prennent effet.§!"

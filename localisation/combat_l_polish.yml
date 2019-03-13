@@ -340,3 +340,5 @@
  CAPITAL_BOX_TOOLTIP:0 "§YTrzon sił§! to główna siła ognia floty, składają się na nią głównie pancerniki i ciężkie krążowniki. Uniemożliwiają one także wrogim okrętom liniowym ostrzeliwanie sojuszniczych §Ylotniskowców§!."
  CARRIER_BOX_TOOLTIP:0 "§YGrupa lotniskowca§! to główna siła uderzeniowa dalekiego zasięgu floty. Lotniskowce, chronione przez §Ygrupę eskorty§! i §Ytrzon sił§!, mogą nie niepokojone atakować wroga. Jeżeli w bitwie bierze udział jakiś §Ykonwój§!, pojawi się on też w tym obszarze."
  SUBMARINE_BOX_TOOLTIP:0 "§YWilcze stado okrętów podwodnych§! będzie próbowało pozostać w ukryciu i zniszczyć torpedami uciekające jednostki. Jeśli wróg nie posiada okrętów do zwalczania okrętów podwodnych, wymkną się one niewykryte."
+ NAVAL_COMBAT_TOOLTIP_ATTACKER_WITH_CONVOYS:0 "Atakujący: siły $COUNT|Y$ i konwoje $CONVOY_COUNT|Y$ ($COUNTRIES$)"
+ NAVAL_COMBAT_TOOLTIP_DEFENDER_WITH_CONVOYS:0 "Obrońca: siły $COUNT|Y$ i konwoje $CONVOY_COUNT|Y$ ($COUNTRIES$)"

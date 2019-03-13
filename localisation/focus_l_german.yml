@@ -2280,3 +2280,5 @@
  USA_great_depression_cooldown:0 "Neuer Gesetzesentwurf"
  USA_great_depression_cooldown_tt:0 "Nach Verabschiedung dieses Gesetzes dauert es §Y230 Tage§!, bis weitere ""New Deal""-Gesetze entworfen und bereit zur Verabschiedung sind.\n\n"
  USA_limited_intervention_tt:0 "\n\nDie Verabschiedung dieses Gesetzes macht es §Rdeutlich schwerer§!, Ihre Wirtschaft zu mobilisieren.\n\n"
+ GER_integrate_war_economies_tt3:0 "§R[HUN.GetName] muss der Vereinbarung zustimmen, damit die Boni wirksam werden .§!"
+ GER_integrate_war_economies_tt4:0 "§R[ROM.GetName] muss der Vereinbarung zustimmen, damit die Boni wirksam werden .§!"

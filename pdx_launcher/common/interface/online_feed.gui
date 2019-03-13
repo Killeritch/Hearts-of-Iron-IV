@@ -25,14 +25,14 @@ guiTypes =
 			name = "online_feed_image"
 			quadTextureSprite = "online_feed_image"
 			position = { x=10 y=50 }
-			size = { x=520 y=174 }
+			size = { x=525 y=295 }
 			Orientation = "UPPER_LEFT"
 			buttonText = " "
 		}			
 				
 		instantTextBoxType={
 			name = "online_feed_body"
-			position = { x=10 y=230 }
+			position = { x=10 y=345 }
 			text = ""
 			font = "newsfeed_body"
 			maxWidth = 520

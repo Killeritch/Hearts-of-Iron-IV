@@ -950,7 +950,8 @@ guiTypes = {
 			name ="equipment_icon"
 			spriteType = "GFX_equipment_item"
 			position = { x= 75 y = 55 }			
-			centerposition = yes			
+			centerposition = yes	
+			scale = 0.7
 		}
 		
 		instantTextBoxType = {

@@ -599,4 +599,7 @@
  USA_join_the_unions:0 "Dołącz do związków"
  USA_freedom_for_Papua:0 "Wolność dla Papui"
  USA_indonesian_liberation:0 "Wyzwolenie Indonezji"
- USA_decolonization:0 "Dekolonizacja"
+ USA_decolonisation:0 "Dekolonizacja"
+ mtg_usa_anti_bolshevist_aid_tt:0 "Odblokowuje Decyzja: §Broń do wojny antybolszewickiej§!\nPo wybraniu decyzji:\nWyślij §Y1000§! §Urządzenia transportowe§! do krajów będących w stanie wojny z §związek Radziecki§!. Stare idą pierwsze."
+ USA_readmit_state_tt:0 "Państwo rozpocznie proces, aby stać się rdzeniem."
+ USA_raise_silver_legions:0 "Podnieście Srebrne Legiony"

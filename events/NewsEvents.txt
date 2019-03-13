@@ -12296,7 +12296,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.317.c
+		name = news.317.g
 		trigger = { 
 			OR = {
 				TAG = GER

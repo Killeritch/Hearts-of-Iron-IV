@@ -556,3 +556,7 @@
  TRIGGER_HAS_NOT_WEATHER:0 "Погода не $WEATHER|H$"
  TRIGGER_HAS_ANY_WEATHER:0 "Погода любая из:"
  TRIGGER_HAS_NONE_OF_WEATHER:0 "Погода не одно из:"
+ TRIGGER_NAVAL_CONVOY_DANGER_LESS_THAN:0 "Угроза конвоя меньше чем $VALUE|H0%$"
+ TRIGGER_NAVAL_CONVOY_DANGER_MORE_THAN:0 "Конвой Угроза более чем $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_LESS_THAN:0 "Минная угроза меньше чем $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_MORE_THAN:0 "Моя угроза больше, чем $VALUE|H0%$"

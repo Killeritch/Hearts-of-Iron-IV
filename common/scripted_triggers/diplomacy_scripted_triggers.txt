@@ -130,7 +130,12 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = PAL } }
 			NOT = { FROM = { tag = ISR } }
 			NOT = { FROM = { tag = JOR } }
-			NOT = { FROM = { tag = EGY } }
+			NOT = {
+				AND = {
+					FROM = { tag = EGY }
+					is_ironman = no
+				}
+			}
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
 			NOT = { FROM = { tag = UAE } }

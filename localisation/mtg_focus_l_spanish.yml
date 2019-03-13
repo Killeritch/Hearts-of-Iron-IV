@@ -786,3 +786,7 @@
  HOL_expand_the_amsterdam_petroleum_harbor:0 "Expandir el puerto de petróleo de Ámsterdam"
  HOL_expand_the_amsterdam_petroleum_harbor_desc:0 "Para aumentar el tamaño de nuestra armada, hay que aumentar en igual medida el tamaño de nuestros almacenes de combustibles para no quedarnos con barcos que no podamos usar. El puerto de petróleo de Ámsterdam ya es un centro de importación de combustible. Deberíamos aumentar más su capacidad de almacenamiento."
  fascists_uprising_tt:0 "Los elementos fascistas en la población comenzarán los preparativos para un levantamiento."
+ ENG_decolonized:0 "[ENG.GetName] Descolonizada"
+ USA_intervention_mandate_tt:0 "§YLos mandatos de intervención§! Permítanos solicitar al Congreso que autorice la acción militar contra otro país."
+ USA_honor_the_confederacy_tt:0 "Estas decisiones nos permiten reconstruir la confianza de la gente en el gobierno en caso de una guerra civil al reconectarnos con el pasado."
+ USA_foreign_support_tt:0 "Estas decisiones nos permiten acercarnos a los principales países para presionar para obtener apoyo material."

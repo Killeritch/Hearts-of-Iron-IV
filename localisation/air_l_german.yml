@@ -353,3 +353,4 @@
  AIRWING_MISSION_TRAINING:1 "Pilotenübungen"
  ADD_MINES_EFFECT:0 "Legen Sie $NUM|H$ Minen in $REGION|H$"
  REMOVE_MINES_EFFECT:0 "Räumen Sie $NUM|H$ Minen in $REGION|H$"
+ AIRWING_RECENTLY_ASSIGNED_WARNING:0 "§RSie werden nur dann wieder effizienter, wenn Ihre Flugzeuge einer aktiven Mission zugewiesen werden.§!"

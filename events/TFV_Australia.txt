@@ -807,6 +807,46 @@ country_event = {
 	}
 }
 
+#coronation visit edward viii
+country_event = {
+	id = tfv_australia.92
+	title = tfv_australia.92.t	
+	desc = tfv_australia.92.desc	#
+	picture = GFX_report_event_royal_visit
+	
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.92.a
+		add_stability = 0.025
+		add_popularity = { ideology = neutrality popularity = 0.075 }
+	}
+
+	option = {
+		ai_chance = {
+			base = 34
+		}
+		name = tfv_australia.92.b
+		add_manpower = 3000
+		add_war_support = 0.075
+		add_popularity = { ideology = neutrality popularity = 0.025 }
+		add_stability = -0.05
+	}
+
+	option = {
+		ai_chance = {
+			base = 33
+		}
+		name = tfv_australia.92.c
+		add_political_power = 50
+		add_popularity = { ideology = neutrality popularity = 0.05 }
+		add_stability = -0.025
+	}
+}
+
 # Indonesian Nationalists Alert 
 country_event = {
 	id = tfv_australia.95

@@ -949,3 +949,5 @@
  modifier_experience_gain_submarine_training_factor:1 "Erlangte Erfahrung für U-Boote durch Übung"
  modifier_experience_gain_submarine_combat_factor:1 "Erlangte Erfahrung für U-Boote durch Gefechte"
  MODIFIER_SUB_RETREAT_SPEED:0 "U-Boot-Geschwindigkeit beim Rückzug"
+ MODIFIER_ARMOR:0 "Rüstung"
+ MODIFIER_BREAKTHROUGH:0 "Durchbruch"

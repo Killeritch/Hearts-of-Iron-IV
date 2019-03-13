@@ -199,3 +199,4 @@
  CUSTOM_GAME_SETTINGS_GROUP_DEFAULT_TOOLTIP:0 "§HOpciones por defecto§!\nTodas las reglas están establecidas con sus opciones por defecto."
  CUSTOM_GAME_SETTINGS_REVERT_TOOLTIP:0 "Restablece las reglas personalizadas a sus opciones por defecto."
  CUSTOM_GAME_SETTINGS_BACK:0 "Atrás"
+ ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RNo se puede obtener la mayoría de los logros.§!"

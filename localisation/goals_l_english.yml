@@ -67,7 +67,7 @@
  south_pacific_mandate_SUCCEEDED_DESC:0 "Our engineers have fortified our islands in the South Pacific Mandate. Any attackers will find our forces difficult to dislodge."
  demand_indochina_focus:0 "Demand French Indochina"
  demand_indochina_focus_desc:0 "After its defeat in Europe, France's hold over its overseas colonies is tenuous at best. Pressure the new French government into granting Japan full access to its bases in Indochina. This region will be useful as a springboard for future campaigns."
- demand_indochina_focus_tt:0 "At war with France or France does not own Indochina. \nIs in faction with France."
+ demand_indochina_focus_tt:1 "France owns Indochina."
  demand_indochina_focus_short_desc:0 "§LPressure the new French government into giving up Indochina.§!"
  demand_french_indochina_SUCCEEDED:0 "The Demands Are Sent"
  demand_french_indochina_SUCCEEDED_DESC:0 "Our forces are positioned along the borders of French Indochina, making it clear that there will be serious consequences should our proposal be rejected."

@@ -950,3 +950,5 @@
  modifier_experience_gain_submarine_training_factor:1 "Wzrost doświadczenia okrętu podwodnego podczas ćwiczeń"
  modifier_experience_gain_submarine_combat_factor:1 "Wzrost doświadczenia bojowego okrętu podwodnego"
  MODIFIER_SUB_RETREAT_SPEED:0 "Prędkość okrętu podwodnego w odwrocie"
+ MODIFIER_ARMOR:0 "Zbroja"
+ MODIFIER_BREAKTHROUGH:0 "Przełom"

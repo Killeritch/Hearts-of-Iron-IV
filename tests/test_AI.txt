@@ -367,4 +367,15 @@ tests = {
             }
         }
     }
+    GER_leave_sweden_alone_exclamation_mark = {
+        success = {
+            date > "1948.1.1"
+        }
+        fail = {
+            date < "1948.1.2"
+            GER = {
+                has_war_with = SWE
+            }
+        }
+    }
 }

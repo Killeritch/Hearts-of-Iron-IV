@@ -1479,3 +1479,7 @@
  mtg_britain.113.t:0 "[From.GetLeLaLNPCap] [From.GetName] a Rejoint l'Empire"
  mtg_britain.113.d:0 "Ayant gagné la guerre civile et réunifié leur terre natale, les dirigeants [From.GetLeLaLNPCap] [From.GetNameDef] ont demandé à rejoindre l'Empire, pour que nous les guidions et que nous les protégions."
  mtg_britain.113.a:0 "Nous leur souhaitons un bon retour parmi nous."
+ mtg_news.3.f:0 "La neutralité doit être soutenue par la force."
+ edward_viii_refused_to_abdicate_flag:0 "Edward VIII a refusé d'abdiquer"
+ ENG_staying_loyal_tt:0 "§RNous serons enfermés dans la branche loyaliste de notre arbre de focalisation!§!"
+ mtg_news.55.b:0 "Ils ont payé le prix ultime."

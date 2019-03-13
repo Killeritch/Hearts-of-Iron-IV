@@ -61,3 +61,4 @@
  WAR_OVERVIEW_CALL_ALL_FACTION_DISABLED:0 "§RNão há nações disponíveis para serem chamadas na facção§!"
  WAR_OVERVIEW_ALLY_ALREADY_CALLED:0 "§REsse aliado já foi convocado e estamos esperando sua resposta§!"
  SURRENDER_GIE_LEGITIMACY:0 "Se eles se renderem, eles se tornarão um §Hgoverno em exílio§!. Sua §Hlegitimidade§! será $LEGITIMACY|0Y$."
+ CAN_SURRENDER_SUBJECT:0 "Eles estão atualmente lutando com seu soberano e só se renderão quando este soberano capitular.\nOverlord: $OVERLORD|Y$"

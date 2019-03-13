@@ -3911,6 +3911,48 @@ focus_tree = {
 						exiled_revolutionary
 					}
 				}
+				add_ai_strategy = {
+					type = antagonize
+					id = SOV
+					value = 200
+				}
+				add_ai_strategy = {
+					type = alliance
+					id = SOV
+					value = -200
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = SOV
+					value = -200
+				}
+				add_ai_strategy = {
+					type = protect
+					id = SOV
+					value = -200
+				}
+				SOV = {
+					add_ai_strategy = {
+						type = antagonize
+						id = ROOT
+						value = 200
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = ROOT
+						value = -200
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = ROOT
+						value = -200
+					}
+					add_ai_strategy = {
+						type = protect
+						id = ROOT
+						value = -200
+					}
+				}
 			}
 			
 			if = {

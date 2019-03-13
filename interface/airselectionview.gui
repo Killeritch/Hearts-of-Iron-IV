@@ -640,7 +640,7 @@ guiTypes = {
 			position = {x=0 y=0}	
 			spriteType = "GFX_strategicair_mission_btn_bg"
 			clicksound = "air_mission_select"
-			shortcut = "k"
+			shortcut = "ctrl+b"
 		}		
 		iconType = {
 			name = "icon"
@@ -706,7 +706,7 @@ guiTypes = {
 			position = {x=0 y=0}	
 			spriteType = "GFX_strategicair_mission_btn_bg"
 			clicksound = "select_aircraft"
-			# shortcut = "j"
+			shortcut = "k"
 		}		
 		iconType = {
 			name = "icon"

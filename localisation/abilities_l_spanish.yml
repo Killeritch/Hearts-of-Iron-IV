@@ -41,3 +41,5 @@
  ABILITY_MAKESHIFT_BRIDGES_DESC:1 "Construir puentes provisionales reducirá las penalizaciones al cruzar ríos en combate."
  ABILITY_EXTRA_SUPLIES_DESC:1 "Suministros adicionales para las tropas."
  ABILITY_REQUISITION_WINTER_GEAR_DESC:1 "El equipo invernal otorga una bonificación a la aclimatación al frío."
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§REsta Habilidad ya está activa a nivel de Grupo de Ejércitos.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§REsta habilidad ya está activa para todos los grupos de niños.§!"

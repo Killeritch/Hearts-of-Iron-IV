@@ -1,9 +1,9 @@
 ﻿l_russian:
  autonomy_dominion:0 "Доминион"
- autonomy_supervised_state:0 "Подконтрольный регион"
+ autonomy_supervised_state:0 "Подконтрольное государство"
  autonomy_colony:0 "Колония"
  autonomy_puppet:0 "Марионетка"
- autonomy_integrated_puppet:0 "Присоединенная марионетка"
+ autonomy_integrated_puppet:0 "Интегрированная марионетка"
  autonomy_annex:0 "Аннексированная территория"
  autonomy_free:0 "Свободное государство"
  autonomy_reichskommissariat:0 "Комиссариат"
@@ -61,4 +61,3 @@
  CONSTRUCTION_MASTER_BUILDING_CANT_REDUCE:0 "§RНам запрещено понижать уровень или отменять строительство этого здания.§!"
  CONSTRUCTION_INFO_MASTER:0 "Строительство ведется на территории государства $WHO|H$. Если мы не используем все фабрики, они могут помочь, задействовав свои."
  CONSTRUCTION_INFO_SUBJECT:0 "Государство $WHO|H$ возводит это здание для нас. Если они не используют все фабрики, мы можем помочь, задействовав свои."
- 

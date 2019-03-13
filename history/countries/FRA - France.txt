@@ -236,17 +236,6 @@ add_ideas = {
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
-	name = "Charles de Gaulle"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
 	name = "Édouard Daladier"
 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
 	picture = "Portrait_France_Edouard_Daladier.dds"
@@ -338,6 +327,7 @@ create_corps_commander = {
 	name = "Charles De Gaulle"
 	picture = "Portrait_France_Charles_De_Gaulle.dds"
 	traits = {  armor_officer harsh_leader media_personality }
+	id = 101
 	skill = 4
 	attack_skill = 4
 	defense_skill = 4

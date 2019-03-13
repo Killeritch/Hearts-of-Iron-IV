@@ -1138,3 +1138,14 @@ JAP_USA_we_love_islands = {
 		value = 80
 	}
 }
+
+JAP_we_will_mostly_fight_on_subjects = {
+	enable = {
+		tag = JAP
+	}
+	
+	ai_strategy = {
+		type = produce_unit_for_subject_supply_chunks
+		value = 50
+	}
+}

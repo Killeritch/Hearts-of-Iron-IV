@@ -27,7 +27,9 @@ ENG_destroyers = {
 		priority = {
 			factor = 1
 		}
-
+		enable = {
+			not = { has_tech = basic_ship_hull_light }
+		}
 		role_icon_index = 2
 		
 		target_variant = {
@@ -100,7 +102,7 @@ ENG_destroyers = {
 	destroyer_2 = {
 	
 		priority = {
-			factor = 50
+			factor = 70
 			modifier = {
 				factor = 10
 				has_war = yes
@@ -140,9 +142,9 @@ ENG_destroyers = {
 	destroyer_2_upgrade = {
 	
 		priority = {
-			factor = 50
+			factor = 70
 			modifier = {
-				factor = 10
+				factor = 20
 				has_war = yes
 			}
 		}
@@ -180,7 +182,11 @@ ENG_destroyers = {
 	destroyer_3 = {
 	
 		priority = {
-			factor = 50
+			factor = 100
+			modifier = {
+				factor = 20
+				has_war = yes
+			}
 		}
 
 		role_icon_index = 2
@@ -216,7 +222,7 @@ ENG_destroyers = {
 	destroyer_3_upgrade = {
 	
 		priority = {
-			factor = 50
+			factor = 100
 			modifier = {
 				factor = 10
 				has_war = yes
@@ -259,7 +265,11 @@ ENG_destroyers = {
 	destroyer_4 = {
 	
 		priority = {
-			factor = 100
+			factor = 150
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
 		}
 		enable = {
 			has_tech = dp_secondary_battery
@@ -293,6 +303,116 @@ ENG_destroyers = {
 			ship_fire_control_system
 			ship_radar
 			ship_sonar
+		}
+	}
+}
+
+ENG_escorts = {
+	category = naval
+	
+	blocked_for = {
+	}
+	
+	available_for = {
+		ENG
+	}
+	
+	roles = {
+		naval_escort
+	}
+	
+	priority = {
+		factor = 1000
+		modifier = {
+			factor = 10
+			anti_submarine_strategy_required_trigger = yes
+		}
+		modifier = {
+			convoy_threat > 0.5 #churchill panic attack
+			factor = 200
+		}
+	}
+	
+	escort_default = {
+	
+		priority = {
+			factor = 100
+			modifier = {
+				factor = 20
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+
+		role_icon_index = 2
+		
+		target_variant = {
+			match_value = 1000.0
+			
+			type = ship_hull_light_1
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = empty
+				mid_1_custom_slot = empty
+				rear_1_custom_slot = {
+					any_of = { ship_depth_charge }
+					upgrade > current
+				}
+			}
+		}
+		
+		allowed_modules = {
+			ship_depth_charge
+			ship_anti_air
+			ship_light_battery
+			ship_sonar
+			ship_fire_control_system
+			ship_radar
+		}
+	}
+	escort_upgrade = {
+	
+		priority = {
+			factor = 120
+			modifier = {
+				factor = 20
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+		enable = {
+			AND = {
+				has_tech = improved_depth_charges
+				has_tech = decimetric_radar
+			}
+		}
+		role_icon_index = 2
+		
+		target_variant = {
+			match_value = 2000.0
+			
+			type = ship_hull_light_1
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot = ship_radar
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = empty
+				mid_1_custom_slot = ship_depth_charge
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+		
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_sonar
+			ship_fire_control_system
+			ship_radar
 		}
 	}
 }
@@ -745,13 +865,13 @@ ENG_naval_cruiser_heavy = {
 	}
 	
 	priority = {
-		factor = 1
+		factor = 10
 	}
 
 	capital_cruiser_early = {
 	
 		priority = {
-			factor = 1
+			factor = 10
 			modifier = {
 				factor = 1
 			}
@@ -824,7 +944,7 @@ ENG_naval_cruiser_heavy = {
 	capital_cruiser_basic = {
 	
 		priority = {
-			factor = 1
+			factor = 10
 			modifier = {
 				factor = 1
 			}
@@ -1863,7 +1983,7 @@ naval_mine_sweeper = {
 	mine_sweeper_light_early = { # base variant
 	
 		priority = {
-			factor = 10
+			factor = 100
 			modifier = {
 				factor = 1
 			}
@@ -1873,7 +1993,7 @@ naval_mine_sweeper = {
 		target_variant = {
 			match_value = 1000.0
 			
-			type = ship_hull_light
+			type = ship_hull_light_1
 			modules = {
 				rear_1_custom_slot = ship_mine_sweeper_1
 				fixed_ship_battery_slot = ship_light_battery_1
@@ -1899,7 +2019,7 @@ naval_mine_sweeper = {
 	mine_sweeper_light_late = { #improved variant for late war
 	
 		priority = {
-			factor = 100
+			factor = 120
 			modifier = {
 				factor = 1
 			}
@@ -1972,7 +2092,7 @@ naval_mine_layer = {
 	mine_layer_light = {
 	
 		priority = {
-			factor = 2
+			factor = 20
 			modifier = {
 				factor = 10
 			}
@@ -2011,7 +2131,7 @@ naval_mine_layer = {
 	submarine_mine_layer = {
 	
 		priority = {
-			factor = 20
+			factor = 2
 			modifier = {
 				factor = 10
 				has_war = yes
@@ -2046,7 +2166,7 @@ naval_mine_layer = {
 	mine_layer_cruiser = {
 	
 		priority = {
-			factor = 2
+			factor = 10
 			modifier = {
 				factor = 10
 				num_of_naval_factories > 19 
@@ -2057,7 +2177,7 @@ naval_mine_layer = {
 		target_variant = {
 			match_value = 3000.0
 			
-			type = ship_hull_cruiser
+			type = ship_hull_cruiser_1
 			modules = {
 				front_1_custom_slot = ship_anti_air
 				rear_1_custom_slot = ship_mine_layer_1 

@@ -3181,3 +3181,4 @@
  usa.401.t:0 "[From.GetNameDefCap] acepta el acuerdo de destructores para las bases"
  usa.401.desc:0 "El primer ministro británico [From.GetLeader] ha declarado que acepta las condiciones del acuerdo de destructores para las bases. Un grupo de oficiales navales [From.GetAdjective] ha llegado para inspeccionar los destructores y supervisar el traslado.\n\nEstá claro que todavía queda trabajo por delante, puesto que varios oficiales [From.GetAdjective] parecían algo preocupados por la gran cantidad y el grosor del guano y el óxido de los barcos en cuestión."
  usa.401.a:0 "Los que piden no pueden exigir."
+ news.317.g:0 "Esto ensucia con nuestros planes ..."

@@ -893,3 +893,5 @@
  modifier_experience_gain_submarine_training_factor:1 "Experiencia de entrenamiento de submarino ganada"
  modifier_experience_gain_submarine_combat_factor:1 "Experiencia de combate de submarino ganada"
  MODIFIER_SUB_RETREAT_SPEED:0 "Velocidad de submarino en retirada"
+ MODIFIER_ARMOR:0 "Armadura"
+ MODIFIER_BREAKTHROUGH:0 "Penetración"

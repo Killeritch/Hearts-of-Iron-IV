@@ -88,6 +88,7 @@
  CANNOT_OPEN_TASK_FORCE_COMPOSITION_EDITOR_FOR_DETACHED_TASK_FORCES:0 "§RCannot edit the composition of a detached task force§!"
  TASK_FORCE_COMPOSITION_EDITOR_DESC:0 "Allows you to set targets for the number of ships of each class you want to maintain in the task force.\nRequires §YAutomatic reinforcement§! to be enabled."
  TASK_FORCE_COMPOSITION_EDITOR_TITLE:0 "Task force composition editor"
+ NAVAL_SUB_UNIT_DEF_SELECTION_WINDOW_TITLE:0 "Select a ship class"
  TASK_FORCE_COMPOSITION_NEW_TEMPLATE_NAME:0 "New template"
  TASK_FORCE_COMPOSITION_FROM_SELECTED:0 "Set the template from the current composition of the task force"
  SAVE_TASK_FORCE_COMPOSITION_TEMPLATE:0 "Save the composition as $NAME$"
@@ -103,7 +104,8 @@
  SHIP_IS_PRIDE_OF_FLEET_DESC:0 "§HPride of the Fleet§! receives various bonuses but its country will suffer §HWar Support§! if it is sunk."
  NAVY_CONTAINS_PRIDE_OF_FLEET:0 "This navy contains §HPride of the Fleet§! §H($NAME$)§!"
  NAVY_CONTAINS_PRIDE_OF_FLEET_WITHOUT_NAME:0 "This navy contains §HPride of the Fleet§!"
-
+ FLEET_HAS_FUEL_INEFFICIENT_SHIP_FOR_MISSION:0 "£mapicon_unit_invalid_orders  This fleet contains task forces operating at sub-optimal fuel efficiency"
+ TASK_FORCE_HAS_FUEL_INEFFICIENT_SHIP_FOR_MISSION:0 "£mapicon_unit_invalid_orders  The following ship classes are not fuel efficient for the mission $MISSION|H$"
  SPECIFIC_NAVY_CONTAINS_PRIDE_OF_FLEET:0 "$NAVY_NAME|H$ contains §HPride of the Fleet§! §H($NAME$)§!"
  DISBAND_PRIDE_OF_THE_FLEET_COST:1 "Disbanding your §HPride of the Fleet§! §H($NAME$)§! will cost $COST|R$ £pol_power "
  
@@ -173,6 +175,10 @@
  TASK_FORCE_ACTIVITY_DESC_SPOTTING_ENEMY_TRANSFER:0 "£spotting  $PROGRESS|H0$§H%§! Locating a $FLAG$ §Hnaval transfer§! in $REGION|H$"
  TASK_FORCE_ACTIVITY_DESC_SPOTTING_ENEMY_CONVOY:0 "£spotting  $PROGRESS|H0$§H%§! Locating a $FLAG$ §Hconvoy§! in $REGION|H$"
  TASK_FORCE_ACTIVITY_DESC_STRIKE_FORCE_INTERCEPTING:0 "£going_to_combat  Intercepting $TARGET|H$"
+ TASK_FORCE_FLEET_INFORMATION_HEADER:0 "§HFleet Information§!\nMaximum Speed: $SPEED|H$\nMaximum Range: $RANGE|H$\n"
+ TASK_FORCE_FLEET_INFORMATION_SLOWEST_SHIPS:0 "\n§HSlowest Ships§!\n"
+ TASK_FORCE_FLEET_INFORMATION_SHORTEST_RANGES:0 "\n§HShortest Ranges§!\n"
+ TASK_FORCE_FLEET_INFORMATION_DELAYED:0 "To learn more about individual ship details, select a task force, then click on the ship details portrait."
  OTHER_SHIPS:0 "Other Ships"
  ALL_SHIPS:0 "All Ships"
  ALL_SAME_TYPE_SHIPS:0 "All $TYPE$s"

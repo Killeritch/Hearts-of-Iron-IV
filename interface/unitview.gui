@@ -730,6 +730,14 @@ guiTypes = {
 				shortcut = "b"
 			}
 
+			buttonType = { #invisible
+				name = "redeployment_toggle_button"
+				position = {x=-560 y=7}
+				spriteType = "GFX_tiled_window_transparent"
+				clicksound = click_default
+				shortcut = "ctrl+b"
+			}
+			
 			buttonType = {
 				name = "btn_consolidate_selection"
 				position = {x=191 y=7}

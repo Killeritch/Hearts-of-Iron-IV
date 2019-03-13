@@ -903,8 +903,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
-				technology = basic_battleship
-				technology = heavy_battleship
+				category = bb_tech
 			}
 		}
 	}
@@ -2757,6 +2756,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
+				uses = 2
 				category = land_doctrine
 			}
 			if = { limit = { has_idea = officers_purged } remove_ideas = officers_purged }
@@ -2799,6 +2799,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = nuclear_bonus
 				bonus = 1.0
+				uses = 1
 				category = nuclear
 			}
 		}

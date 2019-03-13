@@ -3192,3 +3192,4 @@
  usa.401.t:0 "[From.GetNameDefCap] aceita o acordo de contratorpedeiros em troca de bases"
  usa.401.desc:0 "O Primeiro Ministro Britânico [From.GetLeader] sinalizou sua aceitação dos termos do acordo de contratorpedeiros em troca de bases. Um grupo de oficiais navais [From.GetAdjective] chegou para inspecionar os contratorpedeiros e supervisionar a transferência.\n\n Ainda há evidentemente trabalho a fazer, pois vários oficiais [From.GetAdjective] parecem um pouco preocupados com a grande quantidade e espessura de guano e ferrugem nos navios a serem transferidos."
  usa.401.a:0 "Cavalo dado não se olha os dentes."
+ news.317.g:0 "Isso estraga nossos planos ..."

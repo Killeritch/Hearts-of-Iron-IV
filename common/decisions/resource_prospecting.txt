@@ -1553,6 +1553,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		complete_effect = {
@@ -1603,6 +1607,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1684,6 +1692,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1765,6 +1777,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1846,6 +1862,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -1927,6 +1947,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2008,6 +2032,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2089,6 +2117,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2171,6 +2203,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2252,6 +2288,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2335,6 +2375,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {
@@ -2418,6 +2462,10 @@ prospect_for_resources = {
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power < 200
+				factor = 0
+			}
 		}
 
 		remove_effect = {

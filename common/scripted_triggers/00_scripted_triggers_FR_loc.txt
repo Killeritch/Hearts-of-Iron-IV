@@ -595,7 +595,7 @@ frloc_tags_sg_fem_cons_la_de_en_03a = {
 			has_government = neutrality
 			OR = {
 				tag = BLR tag = BOL tag = BOS tag = BUL tag = CAY tag = CHI tag = ENG tag = EQG tag = FIN tag = GDL tag = GNA tag = GRE tag = IVO tag = KYR tag = LAT tag = LIT tag = MAC tag = MOL tag = MRT tag = POL tag = PRC tag = SER tag = SLV tag = SOV tag = SWI tag = TMS tag = TUN tag = TUR tag = TZN tag = VOL tag = YUG #n
-				original_tag = BLR original_tag = BOL original_tag = BOS original_tag = BUL original_tag = CAY original_tag = CHI original_tag = ENG original_tag = EQG original_tag = FIN original_tag = GDM original_tag = GNA original_tag = GRE original_tag = IVO original_tag = KYR original_tag = LAT original_tag = LIT original_tag = MAC original_tag = MOL original_tag = MRT original_tag = POL original_tag = PRC original_tag = SER original_tag = SLV original_tag = SOV original_tag = SWI original_tag = TMS original_tag = TUN original_tag = TUR original_tag = TZN original_tag = VOL original_tag = YUG #n
+				original_tag = BLR original_tag = BOL original_tag = BOS original_tag = BUL original_tag = CAY original_tag = CHI original_tag = ENG original_tag = EQG original_tag = FIN original_tag = GNA original_tag = GRE original_tag = IVO original_tag = KYR original_tag = LAT original_tag = LIT original_tag = MAC original_tag = MOL original_tag = MRT original_tag = POL original_tag = PRC original_tag = SER original_tag = SLV original_tag = SOV original_tag = SWI original_tag = TMS original_tag = TUN original_tag = TUR original_tag = TZN original_tag = VOL original_tag = YUG #n
 			}
 		}
 	}

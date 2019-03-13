@@ -353,3 +353,4 @@
  AIRWING_MISSION_TRAINING:1 "Ćwiczenia pilotów"
  ADD_MINES_EFFECT:0 "Rozmieść miny ($NUM|H$, $REGION|H$)"
  REMOVE_MINES_EFFECT:0 "Usuń miny ($NUM|H$, $REGION|H$)"
+ AIRWING_RECENTLY_ASSIGNED_WARNING:0 "§ROdzyskasz efektywność tylko wtedy, gdy twoje śmigłowce są przypisane do aktywnej misji.§!"

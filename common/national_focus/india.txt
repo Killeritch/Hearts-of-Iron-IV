@@ -127,7 +127,10 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
+			OR = {
+				is_subject = yes
+				has_global_flag = ENG_decolonized
+			}
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -169,7 +172,10 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
+			OR = {
+				is_subject = yes
+				has_global_flag = ENG_decolonized
+			}
 		}
 
 		bypass = {
@@ -1124,11 +1130,17 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
+			OR = {
+				is_subject = yes
+				has_global_flag = ENG_decolonized
+			}
 		}
 
 		bypass = {
-
+			OR = {
+				has_idea = RAJ_marginalized_muslim_community
+				has_idea = RAJ_marginalized_muslim_community_angry
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1166,11 +1178,14 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
+			OR = {
+				is_subject = yes
+				has_global_flag = ENG_decolonized
+			}
 		}
 
 		bypass = {
-
+			has_idea = RAJ_marginalized_muslim_community_happy
 		}
 
 		cancel_if_invalid = yes
@@ -1243,7 +1258,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject = yes
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 		}
 
 		bypass = {
@@ -1285,7 +1306,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 			OR = {
 				has_war_with = GER
 				ENG = { has_war_with = GER }
@@ -1377,7 +1404,13 @@ focus_tree = {
 		}
 
 		available = {
-			is_subject_of = ENG
+			OR = {
+				is_subject_of = ENG
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 		}
 
 		bypass = {
@@ -2883,6 +2916,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			navy_experience = 5
 			random_owned_controlled_state = {
 				prioritize = { 429 }
 				limit = {
@@ -2964,6 +2998,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			navy_experience = 5
 			random_owned_controlled_state = {
 				prioritize = { 426 }
 				limit = {
@@ -3024,6 +3059,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			navy_experience = 10
 			add_tech_bonus = {
 				name = RAJ_royal_indian_navy
 				bonus = 1.0
@@ -3501,9 +3537,17 @@ focus_tree = {
 		}
 
 		available = {
-			compare_autonomy_progress_ratio > 0.4
-			compare_autonomy_state > autonomy_puppet
-			is_subject_of = ENG
+			OR = {
+				AND = {
+					compare_autonomy_progress_ratio > 0.4
+					compare_autonomy_state > autonomy_puppet
+					is_subject_of = ENG
+				}
+				AND = {
+					has_global_flag = ENG_decolonized
+					is_in_faction_with = ENG
+				}
+			}
 		}
 
 		bypass = {

@@ -670,7 +670,15 @@ GER_reichskommissariats = {
 				set_state_controller = 784
 				GER = {
 					puppet = PREV
-					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+					}
 				}
 				
 				set_cosmetic_tag = BLR_reichskommissariat
@@ -684,7 +692,26 @@ GER_reichskommissariats = {
 					}
 				}
 				hidden_effect = {
+					every_state = {
+						limit = {
+							OR = {
+								state = 11
+								state = 189
+								state = 12
+								state = 190
+								state = 13
+								state = 191
+								state = 784
+								state = 97
+							}
+							is_owned_by = GER
+						}
+						BLR = {
+							transfer_state = PREV
+						}
+					}
 					11 = { add_core_of = PREV }
+					97 = { add_core_of = PREV }
 					189 = { add_core_of = PREV }
 					12 = { add_core_of = PREV }
 					190 = { add_core_of = PREV }
@@ -769,7 +796,7 @@ GER_reichskommissariats = {
 				create_country_leader = {
 					name = "Erich Koch"
 					desc = "POLITICS_HINRICH_LOHSE_DESC"
-					picture = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds"
+					picture = "gfx/leaders/Europe/portrait_europe_generic_6.dds"
 					expire = "1965.1.1"
 					ideology = nazism
 					traits = {
@@ -1064,7 +1091,7 @@ GER_military_buildup = {
 		}
 
 		cost = 50
-
+		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
@@ -1086,7 +1113,9 @@ GER_military_buildup = {
 		}
 
 		complete_effect = {
-			add_timed_idea = { idea = GER_jaegernotprogramm days = 180 }
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_timed_idea = { idea = GER_jaegernotprogramm days = 90 }
 		}
 	}
 }

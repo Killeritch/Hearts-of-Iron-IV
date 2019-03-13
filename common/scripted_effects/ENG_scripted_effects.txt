@@ -132,6 +132,128 @@ ENG_imperial_conference_economy_level_up = {
 	}
 }
 
+# Set amount of subjects in variable
+ENG_imperial_conference_set_subject_counter = {
+	set_variable = {
+		var = ENG_imperial_conference_number_of_subjects
+		value = 0
+	}
+	if = {
+		limit = {
+			CAN = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			SAF = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			RAJ = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			AST = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			NZL = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		add_to_variable = {
+			var = ENG_imperial_conference_number_of_subjects
+			value = 1
+		}
+	}
+}
+
+# Clear Imperial Conference flags
+ENG_imperial_conference_clear_in_progress_flags = {
+	if = {
+		limit = {
+			has_country_flag = ENG_imperial_defense_flag
+			check_variable = { var = ENG_imperial_conference_defense_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+		}
+		clr_country_flag = ENG_imperial_conference_discussion_in_progress
+		clr_country_flag = ENG_diplomatic_pressure_flag
+		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
+		clr_country_flag = ENG_imperial_defense_flag
+	}
+	if = {
+		limit = {
+			has_country_flag = ENG_imperial_trade_flag
+			check_variable = { var = ENG_imperial_conference_trade_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+		}
+		clr_country_flag = ENG_imperial_conference_discussion_in_progress
+		clr_country_flag = ENG_diplomatic_pressure_flag
+		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
+		clr_country_flag = ENG_imperial_trade_flag
+	}
+	if = {
+		limit = {
+			has_country_flag = ENG_imperial_economy_flag
+			check_variable = { var = ENG_imperial_conference_economy_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+		}
+		clr_country_flag = ENG_imperial_conference_discussion_in_progress
+		clr_country_flag = ENG_diplomatic_pressure_flag
+		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
+		clr_country_flag = ENG_imperial_economy_flag
+	}
+	if = {
+		limit = {
+			has_country_flag = ENG_imperial_appeasement_flag
+			check_variable = { var = ENG_imperial_conference_appeasement_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+		}
+		clr_country_flag = ENG_imperial_conference_discussion_in_progress
+		clr_country_flag = ENG_diplomatic_pressure_flag
+		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
+		clr_country_flag = ENG_imperial_appeasement_flag
+	}
+	if = {
+		limit = {
+			has_country_flag = ENG_imperial_federation_flag
+			check_variable = { var = ENG_imperial_conference_federation_answers value = ENG_imperial_conference_number_of_subjects compare = equals }
+		}
+		clr_country_flag = ENG_imperial_conference_discussion_in_progress
+		clr_country_flag = ENG_diplomatic_pressure_flag
+		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
+		clr_country_flag = ENG_imperial_federation_flag
+	}
+}
+
 # Increase Trade Union Support costs
 ENG_request_trade_union_support_cost_level_up = {
 	if = {

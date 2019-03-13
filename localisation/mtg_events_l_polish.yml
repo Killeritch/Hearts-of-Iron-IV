@@ -1477,3 +1477,7 @@
  mtg_britain.113.t:0 "[From.GetName] ponownie dołącza do Imperium"
  mtg_britain.113.d:0 "Po zwyciężeniu wojny domowej i zjednoczeniu ojczyzny, przywódcy [From.GetNameDef] zażądali o ponowne dołączenie do Imperium. Pragną naszej porady i ochrony przed tym, co może nadejść."
  mtg_britain.113.a:0 "Witamy z powrotem."
+ mtg_news.3.f:0 "Neutralność musi być poparta siłą."
+ edward_viii_refused_to_abdicate_flag:0 "Edward VIII odmówił abdykacji"
+ ENG_staying_loyal_tt:0 "§RZostaniemy zamknięci w lojalistycznej gałęzi naszego drzewa skupienia!§!"
+ mtg_news.55.b:0 "Zapłacili najwyższą cenę."

@@ -2275,3 +2275,5 @@
  USA_great_depression_cooldown:0 "La nueva legislación sigue elaborándose"
  USA_great_depression_cooldown_tt:0 "Una vez aprobada la ley, pasarán §Y230 días§! hasta que se elabore el borrador de la legislación del New Deal y esté listo para su firma.\n\n"
  USA_limited_intervention_tt:0 "\n\nLa aprobación de la ley §Rdificultará§! la movilización de la economía.\n\n"
+ GER_integrate_war_economies_tt3:0 "§R[HUN.GetName] debe aprobar el acuerdo para que las bonificaciones surtan efecto.§!"
+ GER_integrate_war_economies_tt4:0 "§R[ROM.GetName] debe aprobar el acuerdo para que las bonificaciones surtan efecto.§!"

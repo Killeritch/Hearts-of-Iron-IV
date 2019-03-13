@@ -230,6 +230,9 @@ country_event = {
 
 	option = {
 		name = mtg_usa_civil_war_fascists.13.a
+		event_target:usa_ng_mobilized = {
+			custom_effect_tooltip = citizen_militia_tt
+		}
 		hidden_effect = {
 			country_event = {
 				id = mtg_usa_civil_war_fascists.3
@@ -1394,12 +1397,33 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			USA_set_president_effect = yes
+			set_temp_variable = { fascism_support = party_popularity@fascism }
+			set_temp_variable = { neutrality_support = 100 }
+			subtract_from_temp_variable = { neutrality_support = fascism_support }
 			start_civil_war = {
 				ruling_party = neutrality
 				ideology = democratic
 				size = 0.7
 				capital = 357
 				states = { 357 685 }
+			}
+			hidden_effect = {
+				set_political_party = {
+					ideology = fascism
+					popularity = 0
+				}
+				set_political_party = {
+					ideology = democratic
+					popularity = 0
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = neutrality_support
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = fascism_support
+				}
 			}
 			country_event = { id = mtg_usa_civil_war_democrats.40 days = 20 }
 			set_global_flag = USA_civil_war_fired_democrats
@@ -1414,6 +1438,13 @@ country_event = {
 				set_cosmetic_tag = USA_REBEL
 				hidden_effect = {
 					retire_country_leader = yes
+					civil_war_anti_exploiter_punitive_action = yes
+				}
+				every_unit_leader = {
+					limit = {
+						has_id = 57
+					}
+					set_nationality = USA
 				}
 			}
 			every_other_country = {
@@ -1506,6 +1537,18 @@ country_event = {
 		
 		hidden_effect = {
 			news_event = { id = mtg_news.2 days = 3 }
+			random_other_country = {
+				limit = {
+					original_tag = USA
+					has_government = democratic
+				}
+				every_unit_leader = {
+					limit = {
+						has_id = 57
+					}
+					set_nationality = USA
+				}
+			}
 		}
 	}
 }

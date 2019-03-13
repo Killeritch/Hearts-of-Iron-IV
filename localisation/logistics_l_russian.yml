@@ -8,7 +8,7 @@
  LOGISTICS_STATUS_LABEL:0 "Статус"
  LOGISTICS_STATUS_DESC:0 "Ежедневный спрос, обеспечиваемый производством"
  LOGISTICS_STATUS_SORT_BY:0 "Щелкните, чтобы отсортировать по статусу"
- LOGISTICS_IN_STOCK_LABEL:0 "Склады"
+ LOGISTICS_IN_STOCK_LABEL:0 "Запасы"
  LOGISTICS_IN_STOCK_SORT_BY:0 "Щелкните, чтобы отсортировать по количеству на складах"
  LOGISTICS_IN_STOCK_DESC:0 "Общий избыток/дефицит техники"
  LOGISTICS_NEEDS_LABEL:0 "Спрос"

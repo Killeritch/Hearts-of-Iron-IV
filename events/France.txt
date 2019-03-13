@@ -521,7 +521,16 @@ country_event = {
 					set_state_controller = 25
 					set_state_controller = 20
 					set_state_controller = 33
-
+					create_country_leader = {
+						name = "Charles de Gaulle"
+						desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+						picture = "Portrait_France_Charles_De_Gaulle.dds"
+						expire = "1965.1.1"
+						ideology = conservatism
+						traits = {
+							
+						}
+					}
 					#tunisia
 					if = {
 						limit = {
@@ -615,7 +624,7 @@ country_event = {
 				ideology = fascism
 				size = 0.9
 				capital = 26
-				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 }
+				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 }
 				states_filter = {
 					owner = { original_tag = FRA }
 					OR = {		
@@ -663,6 +672,12 @@ country_event = {
 						popularity = 2
 					}
 				}
+			}
+			every_unit_leader = {
+				limit = {
+					has_id = 101
+				}
+				set_nationality = FRA
 			}
 			# FRA Player Switches to Vichy
 			if = {
@@ -1558,9 +1573,9 @@ country_event = {
 	id = france.29
 	title = france.29.t
 	desc = france.29.d
-	picture = GFX_report_event_sign_treaty2
+	picture = GFX_report_event_generic_sign_treaty2
 
-	is_triggered_only	= yes
+	is_triggered_only = yes
 
 	option = {
 		name = france.29.a

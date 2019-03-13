@@ -786,3 +786,7 @@
  HOL_expand_the_amsterdam_petroleum_harbor:0 "Den Petroleumhafen von Amsterdam ausbauen"
  HOL_expand_the_amsterdam_petroleum_harbor_desc:0 "Eine Vergrößerung unserer Marine erfordert auch eine entsprechende Vergrößerung unserer Treibstoffvorräte, sonst sitzen wir auf Schiffen, die wir nicht einsetzen können. Der Petroleumhafen von Amsterdam ist bereits ein Knotenpunkt für den Import von Treibstoff. Wir werden seine Kapazität noch weiter erhöhen."
  fascists_uprising_tt:0 "Die faschistischen Elemente der Bevölkerung werden mit den Vorbereitungen für einen Aufstand beginnen."
+ ENG_decolonized:0 "[ENG.GetName] Dekolonisiert"
+ USA_intervention_mandate_tt:0 "§YInterventionsmandate§! Erlauben Sie uns, den Kongress aufzufordern, eine Militäraktion gegen ein anderes Land zu genehmigen."
+ USA_honor_the_confederacy_tt:0 "Diese Entscheidungen ermöglichen es uns, das Vertrauen der Bevölkerung in die Regierung im Falle eines Bürgerkriegs wieder herzustellen, indem wir uns wieder mit der Vergangenheit verbinden."
+ USA_foreign_support_tt:0 "Diese Entscheidungen ermöglichen es uns, wichtige Länder zu kontaktieren, um sich für materielle Unterstützung einzusetzen."

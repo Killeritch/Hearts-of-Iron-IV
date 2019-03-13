@@ -37,10 +37,8 @@ foreign_influence = {
 			}
 		}
 
-		targeted_modifier = {
-			tag = FROM
-			democratic_drift = 0.1
-			stability_factor = 0.1
+		complete_effect = {
+			FROM = { add_timed_idea = { idea = nation_building days = 120 } }
 		}
 
 		modifier = {
@@ -101,12 +99,11 @@ foreign_influence = {
 			}
 		}
 
-		targeted_modifier = {
-			tag = FROM
-			communism_drift = 0.1
-			research_speed_factor = 0.05
+		complete_effect = {
+			FROM = {
+				add_timed_idea = { idea = socialist_education days = 120 }
+			}
 		}
-
 		modifier = {
 			political_power_cost = 0.5
 		}
@@ -165,10 +162,10 @@ foreign_influence = {
 			}
 		}
 
-		targeted_modifier = {
-			tag = FROM
-			fascism_drift = 0.1
-			experience_gain_army = 0.1
+		complete_effect = {
+			FROM = {
+				add_timed_idea = { idea = paramilitary_training days = 120 }
+			}
 		}
 
 		modifier = {
@@ -211,10 +208,10 @@ foreign_influence = {
 			}
 		}
 
-		targeted_modifier = {
-			tag = FROM
-			neutrality_drift = 0.1
-			mobilization_speed = 0.15
+		complete_effect = {
+			FROM = {
+				add_timed_idea = { idea = military_parade days = 120 }
+			}
 		}
 
 		modifier = {

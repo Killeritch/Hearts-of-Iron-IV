@@ -341,3 +341,5 @@
  CAPITAL_BOX_TOOLTIP:0 "Die §YSchlachtlinie§! stellt die primäre direkte Feuerkraft der Flotte zur Verfügung, meist in Form von Schlachtschiffen und Schweren Kreuzern. Außerdem verhindert sie, dass feindliche Großkampfschiffe auf verbündete §YFlugzeugträger§! feuern."
  CARRIER_BOX_TOOLTIP:0 "Die §Flugzeugträgergrupper§! stellt die primäre Distanzangriffskraft der Flotte zur Verfügung. Sie wird sowohl durch die §YGeleitgruppe§! als auch durch die §YSchlachtlinie§! vor dem Feind beschützt, um ungestört Angriffe unternehmen zu können. Sollte sich ein §YKonvoi§! in der Schlacht befinden, erscheint er auch in diesem Bereich."
  SUBMARINE_BOX_TOOLTIP:0 "Das §YU-Boot-Wolfsrudel§! versucht, fliehende Schiffe mit Torpedos zu versenken, ohne dabei entdeckt zu werden. Wenn der Feind nicht über genügend spezielle U-Boot-Abwehr-Schiffe verfügt, können die U-Boote unbemerkt entkommen."
+ NAVAL_COMBAT_TOOLTIP_ATTACKER_WITH_CONVOYS:0 "Angreifer: $COUNT|Y$ Einsatzkräfte und $CONVOY_COUNT|Y$ Konvois ($COUNTRIES$)"
+ NAVAL_COMBAT_TOOLTIP_DEFENDER_WITH_CONVOYS:0 "Verteidiger: $COUNT|Y$ Einsatzkräfte und $CONVOY_COUNT|Y$ Konvois ($COUNTRIES$)"

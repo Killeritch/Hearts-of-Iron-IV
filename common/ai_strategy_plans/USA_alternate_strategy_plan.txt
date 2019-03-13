@@ -364,14 +364,19 @@ USA_fascist = {
 	desc = "Plan for the US to go fascist"
 
 	enable = {
-		original_tag = USA
 		has_dlc = "Man the Guns"
 		OR = {
-			has_country_flag = USA_AI_RANDOM_FASCIST
-			has_game_rule = {
-				rule = USA_ai_behavior
-				option = FASCIST
+			AND = {
+				original_tag = USA
+				OR = {
+					has_country_flag = USA_AI_RANDOM_FASCIST
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = FASCIST
+					}
+				}
 			}
+			tag = CSA
 		}
 	}
 	abort = {

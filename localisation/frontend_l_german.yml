@@ -144,7 +144,7 @@
  FE_COOP_LABEL_DESC:0 "Ermöglicht es, dass mehrere Spieler 1 Nation kontrollieren."
  PAUSE_ON_POPUPS_DESC:0 "Pausieren bei Pop-Up-Benachrichtigungen. Wirkt sich nicht auf Ereignisse aus."
  ACHIEVEMENTS_CHEATS:0 "Keine Cheats oder modifiziertes Spiel/Speichern"
- ACHIEVEMENTS_DIFFICULTY:0 "Normale oder höhere Geschwindigkeit"
+ ACHIEVEMENTS_DIFFICULTY:0 "Normaler oder höherer Schwierigkeitsgrad"
  ACHIEVEMENTS_OK:0 "§HKann Erfolge sammeln!§!"
  ACHIEVEMENTS_NOT_OK:0 "§RKann aktuell keine Erfolge sammeln§!"
  SM_GAMMA_TOOLTIP:2 "Im Vollbildmodus aktiviert"
@@ -202,3 +202,4 @@
  CUSTOM_GAME_SETTINGS_GROUP_DEFAULT_TOOLTIP:0 "§HStandardoptionen§!\nAlle Regeln in dieser Gruppe entsprechen den Standardoptionen."
  CUSTOM_GAME_SETTINGS_REVERT_TOOLTIP:0 "Alle angepassten Regeln auf die Standardoptionen zurücksetzen."
  CUSTOM_GAME_SETTINGS_BACK:0 "Zurück"
+ ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RKann nicht die meisten Erfolge erzielen.§!"

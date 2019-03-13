@@ -1500,8 +1500,8 @@ country_event = {
 			} 
 			20 = { 
 				modifier = {
-					congress_high_support_trigger = yes
-					factor = 2
+					check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
+					factor = 3
 				}
 				modifier = {
 					has_idea_with_trait = fascist_demagogue
@@ -1526,8 +1526,8 @@ country_event = {
 			} 
 			15 = { 
 				modifier = {
-					congress_high_support_trigger = yes
-					factor = 2
+					check_variable = { var = senators_support value = quorum_high compare = greater_than_or_equals }
+					factor = 3
 				}
 				modifier = {
 					has_idea_with_trait = fascist_demagogue
@@ -1573,19 +1573,23 @@ country_event = {
 		random_list = {
 			35 = { 
 				modifier = {
-					not = { congress_medium_support_trigger = yes }
-					factor = 1.25
+					check_variable = { representatives_support < 218 }
+					factor = 1.5
 				}
 				modifier = {
-					not = { congress_low_support_trigger = yes }
-					factor = 2
+					check_variable = { representatives_support < 180 }
+					factor = 3
 				}
 				country_event = { id = usa.41 days = 15 random = 6 } #small support
 			} 
 			25 = {
 				modifier = {
-					congress_high_support_trigger = yes
+					check_variable = { representatives_support > 260 }
 					factor = 2
+				}
+				modifier = {
+					check_variable = { representatives_support < 180 }
+					factor = 0.5
 				}
 				modifier = {
 					has_idea_with_trait = fascist_demagogue
@@ -1599,19 +1603,31 @@ country_event = {
 			} 
 			25 = { 
 				modifier = {
-					not = { congress_medium_support_trigger = yes }
-					factor = 1.25
+					check_variable = { representatives_support < 180 }
+					factor = 1.5
 				}
 				modifier = {
-					not = { congress_low_support_trigger = yes }
-					factor = 2
+					check_variable = { representatives_support < 100 }
+					factor = 10
 				}
 				country_event = { id = usa.45 days = 25 random = 10 } #medium support
 			} 
 			15 = { 
 				modifier = {
-					congress_high_support_trigger = yes
+					check_variable = { representatives_support > 260 }
 					factor = 2
+				}
+				modifier = {
+					check_variable = { representatives_support > 400 }
+					factor = 10
+				}
+				modifier = {
+					check_variable = { representatives_support < 180 }
+					factor = 0.5
+				}
+				modifier = {
+					check_variable = { representatives_support < 100 }
+					factor = 0
 				}
 				modifier = {
 					has_idea_with_trait = fascist_demagogue

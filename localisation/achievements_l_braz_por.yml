@@ -17,3 +17,4 @@
  HOL_lost_starting_state:0 "A Holanda perdeu um de seus estados iniciais."
  achievements_pride_and_extreme_prejudice:1 "Afundou o Orgulho da Frota Britânica"
  do_you_mined_tt:1 "Mais de §Y999§! de nossas minas foram colocadas no litoral."
+ assuming_direct_control_achievement_flag:0 "Liderança de facção assumida de §Y[ENG.GetName]§!, §Y[GER.GetName]§!, ou §Y[SOV.GetName]§!."

@@ -349,3 +349,4 @@
  AIR_MORE_GROUND_CREWS_NOT_ENOUGH:0 "§RPuissance de commandement insuffisante.§!"
  ADD_MINES_EFFECT:0 "Ajoute $NUM|H$ mines à $REGION|H$."
  REMOVE_MINES_EFFECT:0 "Nettoie $NUM|H$ mines en $REGION|H$."
+ AIRWING_RECENTLY_ASSIGNED_WARNING:0 "§RVous ne retrouverez votre efficacité que lorsque vos ailes seront affectées à une mission active.§!"

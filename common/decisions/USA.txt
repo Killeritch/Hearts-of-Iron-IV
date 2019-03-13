@@ -72,6 +72,72 @@ war_measures = {
 			add_ideas = USA_homeland_defense
 		}
 	}
+	USA_raise_silver_legions = {
+		icon = generic_prepare_civil_war
+		
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			has_completed_focus = USA_ally_with_the_silver_shirts
+		}
+		visible = {
+			has_civil_war = yes
+		}
+		cost = 10
+		days_re_enable = 30
+
+		complete_effect = {
+			if = {
+				limit = {
+					not = { has_template = "Silver Legion" }
+				}
+				division_template = {
+					name = "Silver Legion"
+					priority = 0
+					division_names_group = USA_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+
+				create_unit = {
+					division = "name = \"4. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"5. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7"  
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"6. Silver Legion\" division_template = \"Silver Legion\" start_experience_factor = 0.7" 
+					owner = ROOT
+				}
+			}
+		}
+	}
+
 	USA_raise_the_free_corps = {
 		icon = generic_prepare_civil_war
 		available = {
@@ -923,75 +989,6 @@ foreign_support = {
 			}
 		}
 	}
-	USA_guns_for_the_anti_bolshevist_war = {
-
-		icon = generic_prepare_civil_war
-
-		allowed = {
-			original_tag = USA
-		}
-
-		available = {
-			OR = {
-				not = { has_government = communism }
-				has_war_with = SOV #commie on commie violence
-			}
-			has_equipment = { infantry_equipment > 999 }
-			has_completed_focus = USA_anti_bolshevist_aid
-			FROM = {
-				has_war_with = SOV
-				not = {
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				not = { has_war_with = ROOT }
-				has_war_with = SOV
-			}
-		}
-
-		visible = {
-			has_completed_focus = USA_anti_bolshevist_aid
-			FROM = {
-				has_war_with = SOV
-			}
-		}
-
-		cost = 25
-		ai_will_do = {
-			factor = 25
-			modifier = {
-				surrender_progress > 0
-			}
-			modifier = {
-				factor = 0.5
-				has_war_support < 0.6
-			}
-
-			modifier = {
-				factor = 2
-				has_war_with = SOV
-			}
-		}
-
-		fire_only_once = no	
-
-		days_re_enable = 180
-
-		complete_effect = {
-			ROOT = {
-				send_equipment = {
-					target = FROM
-					type = infantry_equipment
-					amount = 1000
-					old_prioritised = yes
-				}
-			}
-		}
-	}
 }
 USA_foreign_support = {
 	USA_invite_donations_FROM = {
@@ -1145,6 +1142,7 @@ USA_foreign_support = {
 		}
 	}
 }
+
 USA_honor_the_confederacy = {
 	USA_celebrate_montgomery_convention_day = {
 		icon = generic_nationalism
@@ -1317,7 +1315,7 @@ USA_honor_the_confederacy = {
 			set_politics = { ruling_party = fascism }
 		}
 	}
-	
+
 }
 economy_decisions = {
 	USA_communal_domain = {
@@ -1358,6 +1356,75 @@ economy_decisions = {
 }
 
 foreign_politics = {
+	USA_guns_for_the_anti_bolshevist_war = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			OR = {
+				not = { has_government = communism }
+				has_war_with = SOV #commie on commie violence
+			}
+			has_equipment = { infantry_equipment > 999 }
+			has_completed_focus = USA_anti_bolshevist_aid
+			FROM = {
+				has_war_with = SOV
+				not = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				not = { has_war_with = ROOT }
+				has_war_with = SOV
+			}
+		}
+
+		visible = {
+			has_completed_focus = USA_anti_bolshevist_aid
+			FROM = {
+				has_war_with = SOV
+			}
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				surrender_progress > 0
+			}
+			modifier = {
+				factor = 0.5
+				has_war_support < 0.6
+			}
+
+			modifier = {
+				factor = 2
+				has_war_with = SOV
+			}
+		}
+
+		fire_only_once = no	
+
+		days_re_enable = 180
+
+		complete_effect = {
+			ROOT = {
+				send_equipment = {
+					target = FROM
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+			}
+		}
+	}
 	USA_form_defensive_alliance_north_american_dominion = {
 
 		icon = generic

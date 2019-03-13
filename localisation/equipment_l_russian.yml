@@ -75,7 +75,6 @@
  UNIT_GENERIC_NAME_ITA:0 "$NR$ $NAME$"
  UNIT_GENERIC_NAME_JAP:0 "$NR$ $NAME$"
  UNIT_GENERIC_NAME_SOV:0 "$NR$ $NAME$"
- 
  GER_EQUIPMENT_VERSION_1:0 "A"
  GER_EQUIPMENT_VERSION_2:0 "B"
  GER_EQUIPMENT_VERSION_3:0 "C"
@@ -92,7 +91,6 @@
  GER_EQUIPMENT_VERSION_14:0 "N"
  GER_EQUIPMENT_VERSION_15:0 "O"
  GER_EQUIPMENT_VERSION_16:0 "P"
- 
  JAP_EQUIPMENT_VERSION_1:0 "Мод. A"
  JAP_EQUIPMENT_VERSION_2:0 "Мод. B"
  JAP_EQUIPMENT_VERSION_3:0 "Мод. C"
@@ -109,7 +107,6 @@
  JAP_EQUIPMENT_VERSION_14:0 "Мод. N"
  JAP_EQUIPMENT_VERSION_15:0 "Мод. O"
  JAP_EQUIPMENT_VERSION_16:0 "Мод. P"
- 
  ROM_EQUIPMENT_VERSION_1:0 "A"
  ROM_EQUIPMENT_VERSION_2:0 "B"
  ROM_EQUIPMENT_VERSION_3:0 "C"
@@ -126,7 +123,6 @@
  ROM_EQUIPMENT_VERSION_14:0 "N"
  ROM_EQUIPMENT_VERSION_15:0 "O"
  ROM_EQUIPMENT_VERSION_16:0 "P"
- 
  CHI_EQUIPMENT_VERSION_1:0 "A"
  CHI_EQUIPMENT_VERSION_2:0 "B"
  CHI_EQUIPMENT_VERSION_3:0 "C"
@@ -143,7 +139,6 @@
  CHI_EQUIPMENT_VERSION_14:0 "N"
  CHI_EQUIPMENT_VERSION_15:0 "O"
  CHI_EQUIPMENT_VERSION_16:0 "P"
- 
  SOV_EQUIPMENT_VERSION_1:0 "А"
  SOV_EQUIPMENT_VERSION_2:0 "А-1"
  SOV_EQUIPMENT_VERSION_3:0 "А-2"
@@ -160,7 +155,6 @@
  SOV_EQUIPMENT_VERSION_14:0 "Г-1"
  SOV_EQUIPMENT_VERSION_15:0 "Г-2"
  SOV_EQUIPMENT_VERSION_16:0 "ГМ"
- 
  USA_EQUIPMENT_VERSION_1:0 "A1"
  USA_EQUIPMENT_VERSION_2:0 "A2"
  USA_EQUIPMENT_VERSION_3:0 "A3"
@@ -174,7 +168,6 @@
  USA_EQUIPMENT_VERSION_11:0 "A9A2"
  USA_EQUIPMENT_VERSION_12:0 "A9A3"
  USA_EQUIPMENT_VERSION_13:0 "A9A4"
- 
  ENG_EQUIPMENT_VERSION_1:0 "Mk. I"
  ENG_EQUIPMENT_VERSION_2:0 "Mk. II"
  ENG_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -188,7 +181,6 @@
  ENG_EQUIPMENT_VERSION_11:0 "Mk. XI"
  ENG_EQUIPMENT_VERSION_12:0 "Mk. XII"
  ENG_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
  CAN_EQUIPMENT_VERSION_1:0 "Mk. I"
  CAN_EQUIPMENT_VERSION_2:0 "Mk. II"
  CAN_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -202,7 +194,6 @@
  CAN_EQUIPMENT_VERSION_11:0 "Mk. XI"
  CAN_EQUIPMENT_VERSION_12:0 "Mk. XII"
  CAN_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
  AST_EQUIPMENT_VERSION_1:0 "Mk. I"
  AST_EQUIPMENT_VERSION_2:0 "Mk. II"
  AST_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -216,7 +207,6 @@
  AST_EQUIPMENT_VERSION_11:0 "Mk. XI"
  AST_EQUIPMENT_VERSION_12:0 "Mk. XII"
  AST_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
  NZL_EQUIPMENT_VERSION_1:0 "Mk. I"
  NZL_EQUIPMENT_VERSION_2:0 "Mk. II"
  NZL_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -230,7 +220,6 @@
  NZL_EQUIPMENT_VERSION_11:0 "Mk. XI"
  NZL_EQUIPMENT_VERSION_12:0 "Mk. XII"
  NZL_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
  SAF_EQUIPMENT_VERSION_1:0 "Mk. I"
  SAF_EQUIPMENT_VERSION_3:0 "Mk. III"
  SAF_EQUIPMENT_VERSION_2:0 "Mk. II"
@@ -244,7 +233,6 @@
  SAF_EQUIPMENT_VERSION_11:0 "Mk. XI"
  SAF_EQUIPMENT_VERSION_12:0 "Mk. XII"
  SAF_EQUIPMENT_VERSION_13:0 "Mk. XIII"
- 
  RAJ_EQUIPMENT_VERSION_1:0 "Mk. I"
  RAJ_EQUIPMENT_VERSION_2:0 "Mk. II"
  RAJ_EQUIPMENT_VERSION_3:0 "Mk. III"
@@ -258,7 +246,6 @@
  RAJ_EQUIPMENT_VERSION_11:0 "Mk. XI"
  RAJ_EQUIPMENT_VERSION_13:0 "Mk. XIII"
  RAJ_EQUIPMENT_VERSION_12:0 "Mk. XII"
- 
  FRA_EQUIPMENT_VERSION_1:0 "série A"
  FRA_EQUIPMENT_VERSION_2:0 "série B"
  FRA_EQUIPMENT_VERSION_3:0 "série C"
@@ -272,7 +259,6 @@
  FRA_EQUIPMENT_VERSION_11:0 "série K"
  FRA_EQUIPMENT_VERSION_12:0 "série L"
  FRA_EQUIPMENT_VERSION_13:0 "série M"
- 
  ITA_EQUIPMENT_VERSION_1:0 "I serie"
  ITA_EQUIPMENT_VERSION_2:0 "II serie"
  ITA_EQUIPMENT_VERSION_3:0 "III serie"
@@ -286,7 +272,6 @@
  ITA_EQUIPMENT_VERSION_11:0 "XI serie"
  ITA_EQUIPMENT_VERSION_12:0 "XII serie"
  ITA_EQUIPMENT_VERSION_13:0 "XIII serie"
- 
  SWE_EQUIPMENT_VERSION_1:0 "S I"
  SWE_EQUIPMENT_VERSION_2:0 "S II"
  SWE_EQUIPMENT_VERSION_3:0 "S III"
@@ -300,7 +285,6 @@
  SWE_EQUIPMENT_VERSION_11:0 "S XI"
  SWE_EQUIPMENT_VERSION_12:0 "S XII"
  SWE_EQUIPMENT_VERSION_13:0 "S XIII"
- 
  HOL_EQUIPMENT_VERSION_1:0 "№1"
  HOL_EQUIPMENT_VERSION_2:0 "№2"
  HOL_EQUIPMENT_VERSION_3:0 "№3"
@@ -317,12 +301,8 @@
  HOL_EQUIPMENT_VERSION_14:0 "№14"
  HOL_EQUIPMENT_VERSION_15:0 "№15"
  HOL_EQUIPMENT_VERSION_16:0 "№16"
- 
- #tanks
- 
  ARG_medium_tank_equipment_2:0 "DL-43 «Науэль»"
  ARG_medium_tank_equipment_2_short:0 "«Науэль»"
- 
  AST_gw_tank_equipment:0 "Mark V"
  AST_gw_tank_equipment_short:0 "Mark V"
  AST_light_tank_equipment_1:0 "Виккерс «Медиум» Мк. II"
@@ -405,7 +385,6 @@
  AST_modern_tank_aa_equipment_1_short:0 "«Центурион Марксман»"
  AST_super_heavy_tank_destroyer_equipment_1:0 "«Айрон Дюк»"
  AST_super_heavy_tank_destroyer_equipment_1_short:0 "«Айрон Дюк»"
- 
  BEL_light_tank_destroyer_equipment_1:0 "47-мм орудие F.R.C."
  BEL_light_tank_destroyer_equipment_1_short:0 "47-мм F.R.C"
  BEL_light_tank_artillery_equipment_1:0 "76-мм орудие F.R.C."
@@ -418,7 +397,6 @@
  BEL_medium_tank_destroyer_equipment_1_short:0 "T13 B3"
  BEL_medium_tank_equipment_1:0 "ACG-1"
  BEL_medium_tank_equipment_1_short:0 "ACG-1"
- 
  CAN_medium_tank_equipment_1:0 "Локальный «Крусейдер»"
  CAN_medium_tank_equipment_1_short:0 "«Крусейдер»-Л"
  CAN_medium_tank_artillery_equipment_2:0 "«Секстон»"
@@ -501,7 +479,6 @@
  CAN_modern_tank_aa_equipment_1_short:0 "«Центурион Марксман»"
  CAN_super_heavy_tank_destroyer_equipment_1:0 "«Айрон Дюк»"
  CAN_super_heavy_tank_destroyer_equipment_1_short:0 "«Айрон Дюк»"
- 
  CHI_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  CHI_light_tank_equipment_1_short:0 "Тип 34"
  CHI_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -590,7 +567,6 @@
  CHI_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  CHI_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  CHI_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  PRC_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  PRC_light_tank_equipment_1_short:0 "Тип 34"
  PRC_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -679,7 +655,6 @@
  PRC_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  PRC_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  PRC_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  SHX_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  SHX_light_tank_equipment_1_short:0 "Тип 34"
  SHX_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -768,7 +743,6 @@
  SHX_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  SHX_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  SHX_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  GXC_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  GXC_light_tank_equipment_1_short:0 "Тип 34"
  GXC_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -857,7 +831,6 @@
  GXC_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  GXC_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  GXC_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  XSM_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  XSM_light_tank_equipment_1_short:0 "Тип 34"
  XSM_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -946,7 +919,6 @@
  XSM_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  XSM_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  XSM_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  YUN_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  YUN_light_tank_equipment_1_short:0 "Тип 34"
  YUN_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -1035,7 +1007,6 @@
  YUN_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  YUN_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  YUN_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  SIK_light_tank_equipment_1:0 "Тип 34 «Сяо»"
  SIK_light_tank_equipment_1_short:0 "Тип 34"
  SIK_light_tank_aa_equipment_1:0 "PGZ 34"
@@ -1124,7 +1095,6 @@
  SIK_super_heavy_tank_artillery_equipment_1_short:0 "PLZ 44"
  SIK_super_heavy_tank_destroyer_equipment_1:0 "PTZ 44"
  SIK_super_heavy_tank_destroyer_equipment_1_short:0 "PTZ 44"
- 
  CZE_gw_tank_equipment:0 "Танкетка vz. 33"
  CZE_gw_tank_equipment_short:0 "T/vz. 33"
  CZE_light_tank_equipment_1:0 "LT vz. 34"
@@ -1155,7 +1125,6 @@
  CZE_super_heavy_tank_equipment_1_short:0 "СТТ/vz. 44"
  CZE_modern_tank_equipment_1:0 "«Шкода» Т 50"
  CZE_modern_tank_equipment_1_short:0 "«Шкода» Т 50"
- 
  ENG_light_tank_artillery_equipment_1:0 "«Бёрч»"
  ENG_light_tank_artillery_equipment_1_short:0 "«Бёрч»"
  ENG_light_tank_artillery_equipment_2:0 "«Прист»"
@@ -1214,7 +1183,6 @@
  ENG_modern_tank_aa_equipment_1_short:0 "«Центурион Марксман»"
  ENG_super_heavy_tank_destroyer_equipment_1:0 "«Айрон Дюк»"
  ENG_super_heavy_tank_destroyer_equipment_1_short:0 "«Айрон Дюк»"
- 
  SAF_gw_tank_equipment:0 "Mark V"
  SAF_gw_tank_equipment_short:0 "Mark V"
  SAF_light_tank_equipment_1:0 "Виккерс «Медиум» Мк. II"
@@ -1297,7 +1265,6 @@
  SAF_modern_tank_aa_equipment_1_short:0 "«Центурион Марксман»"
  SAF_super_heavy_tank_destroyer_equipment_1:0 "«Айрон Дюк»"
  SAF_super_heavy_tank_destroyer_equipment_1_short:0 "«Айрон Дюк»"
- 
  NZL_gw_tank_equipment:0 "Mark V"
  NZL_gw_tank_equipment_short:0 "Mark V"
  NZL_light_tank_equipment_1:0 "Танк Боба Семпла"
@@ -1381,7 +1348,6 @@
  NZL_modern_tank_aa_equipment_1_short:0 "«Центурион Марксман»"
  NZL_super_heavy_tank_destroyer_equipment_1:0 "«Айрон Дюк»"
  NZL_super_heavy_tank_destroyer_equipment_1_short:0 "«Айрон Дюк»"
- 
  RAJ_gw_tank_equipment:0 "Mark V"
  RAJ_gw_tank_equipment_short:0 "Mark V"
  RAJ_light_tank_equipment_1:0 "Виккерс II"
@@ -1464,7 +1430,6 @@
  RAJ_modern_tank_aa_equipment_1_short:0 "«Центурион Марксман»"
  RAJ_super_heavy_tank_destroyer_equipment_1:0 "«Айрон Дюк»"
  RAJ_super_heavy_tank_destroyer_equipment_1_short:0 "«Айрон Дюк»"
- 
  FRA_heavy_tank_artillery_equipment_1:0 "194-мм орудие GPF"
  FRA_heavy_tank_artillery_equipment_1_short:0 "194-мм орудие"
  FRA_light_tank_destroyer_equipment_2:0 "AMR 35 ZT3"
@@ -1479,10 +1444,8 @@
  FRA_medium_tank_artillery_equipment_1_short:0 "ARL V39"
  FRA_medium_tank_artillery_equipment_2:0 "AMX 13 105 AM"
  FRA_medium_tank_artillery_equipment_2_short:0 "105 AM"
- 
  GER_heavy_tank_artillery_equipment_2:0 "«Штурмтигр»"
  GER_heavy_tank_artillery_equipment_2_short:0 "«Штурмтигр»"
- 
  MEX_light_tank_equipment_1:0 "VB-1 «Эскутия»"
  MEX_light_tank_equipment_2:0 "VB-2 «Мелгар»"
  MEX_light_tank_equipment_3:0 "VB-3 «Маркес»"
@@ -1501,7 +1464,6 @@
  MEX_heavy_tank_equipment_1_short:0 "VBA-1"
  MEX_heavy_tank_equipment_2_short:0 "VBA-3"
  MEX_heavy_tank_equipment_3_short:0 "VBA-7"
- 
  HOL_light_tank_equipment_1:0 "Pantservoertuig 1"
  HOL_light_tank_equipment_1_short:0 "PVT-1"
  HOL_light_tank_equipment_2:0 "Pantservoertuig 2"
@@ -1546,7 +1508,6 @@
  HOL_medium_tank_artillery_equipment_2_short:0 "PTH-4"
  HOL_medium_tank_artillery_equipment_3:0 "Pantserhouwitser 5"
  HOL_medium_tank_artillery_equipment_3_short:0 "PTH-6"
- 
  HUN_light_tank_equipment_1:0 "Штраусслер V-3/V4"
  HUN_light_tank_equipment_1_short:0 "V3/V4"
  HUN_light_tank_equipment_2:0 "38M «Толди»"
@@ -1581,7 +1542,6 @@
  HUN_super_heavy_tank_equipment_1_short:0 "43M «Чак»"
  HUN_modern_tank_equipment_1:0 "46M «Арпад»"
  HUN_modern_tank_equipment_1_short:0 "46M «Арпад»"
- 
  ITA_light_tank_destroyer_equipment_1:0 "L3 «Контрокарро»"
  ITA_light_tank_destroyer_equipment_1_short:0 "L3 СС"
  ITA_light_tank_destroyer_equipment_2:0 "Земовенте 47/32"
@@ -1598,7 +1558,6 @@
  ITA_medium_tank_artillery_equipment_3_short:0 "Земовенте M42L 105/25"
  ITA_heavy_tank_artillery_equipment_2:0 "Земовенте 149/40"
  ITA_heavy_tank_artillery_equipment_2_short:0 "Земовенте 149/40"
- 
  JAP_gw_tank_equipment:0 "«Ко-Гата Сенша»"
  JAP_gw_tank_equipment_short:0 "Ко Гата"
  JAP_medium_tank_destroyer_equipment_1:0 "Тип 1 «Хо-ни I»"
@@ -1631,7 +1590,6 @@
  JAP_heavy_tank_destroyer_equipment_1_short:0 "«Ка-то»"
  JAP_heavy_tank_destroyer_equipment_2:0 "Тип 5 «Хо-ри»"
  JAP_heavy_tank_destroyer_equipment_2_short:0 "«Хо-ри»"
- 
  MAN_gw_tank_equipment:0 "«Ко-Гата Сенша»"
  MAN_gw_tank_equipment_short:0 "«Ко-Гата»"
  MAN_medium_tank_destroyer_equipment_1:0 "Тип 1 «Хо-ни I»"
@@ -1684,7 +1642,6 @@
  MAN_heavy_tank_equipment_3_short:0 "O-I"
  MAN_super_heavy_tank_equipment_1:0 "Тип 2604"
  MAN_super_heavy_tank_equipment_1_short:0 "Тип 2604"
- 
  NOR_gw_tank_equipment:0 "Strv. FT-17"
  NOR_gw_tank_equipment_short:0 "Strv. FT-17"
  NOR_light_tank_equipment_1:0 "Strv. m/34"
@@ -1707,7 +1664,6 @@
  NOR_heavy_tank_equipment_3_short:0 "Stv. m/43"
  NOR_super_heavy_tank_equipment_1:0 "Tstv. m/44 «Исбьёрн»"
  NOR_super_heavy_tank_equipment_1_short:0 "Tstv. m/44"
- 
  ROM_gw_tank_equipment:0 "Рено FT-17"
  ROM_gw_tank_equipment_short:0 "FT-17"
  ROM_light_tank_equipment_1:0 "R-1"
@@ -1746,8 +1702,6 @@
  ROM_heavy_tank_aa_equipment_3_short:0 "37-мм «Маршал» TA"
  ROM_super_heavy_tank_equipment_1:0 "«Фельдмаршал»"
  ROM_super_heavy_tank_equipment_1_short:0 "«Фельдмаршал»"
- 
- 
  SPR_gw_tank_equipment:0 "«Трубия» А4"
  SPR_gw_tank_equipment_short:0 "«Трубия» А4"
  SPR_light_tank_equipment_1:0 "«Трубия наваль»"
@@ -1756,7 +1710,6 @@
  SPR_light_tank_equipment_2_short:0 "«Вердеха 1»"
  SPR_light_tank_equipment_3:0 "«Вердеха 2»"
  SPR_light_tank_equipment_3_short:0 "«Вердеха 2»"
- 
  SPA_gw_tank_equipment:0 "«Трубия» А4"
  SPA_gw_tank_equipment_short:0 "«Трубия» А4"
  SPA_light_tank_equipment_1:0 "«Трубия наваль»"
@@ -1765,7 +1718,6 @@
  SPA_light_tank_equipment_2_short:0 "«Вердеха 1»"
  SPA_light_tank_equipment_3:0 "«Вердеха 2»"
  SPA_light_tank_equipment_3_short:0 "«Вердеха 2»"
- 
  SWE_light_tank_equipment_1:0 "Strv m/31"
  SWE_light_tank_equipment_1_short:0 "Strv m/31"
  SWE_light_tank_destroyer_equipment_2:0 "Pvkv IVA"
@@ -1808,7 +1760,6 @@
  SWE_heavy_tank_equipment_3_short:0 "Tstrv m/43"
  SWE_super_heavy_tank_equipment_1:0 "Tstrv m/44 «Густав II Адольф» "
  SWE_super_heavy_tank_equipment_1_short:0 "Tstrv m/44"
- 
  USA_light_tank_destroyer_equipment_1:0 "САУ M6 «Фарго»"
  USA_light_tank_destroyer_equipment_1_short:0 "M6 «Фарго»"
  USA_light_tank_destroyer_equipment_2:0 "Противотанковая САУ T56"
@@ -1839,7 +1790,6 @@
  USA_heavy_tank_artillery_equipment_3_short:0 "T92"
  USA_modern_tank_aa_equipment_1:0 "M42 «Дастер»"
  USA_modern_tank_aa_equipment_1_short:0 "Дастер"
- 
  YUG_gw_tank_equipment:0 "Рено FT-17"
  YUG_gw_tank_equipment_short:0 "FT-17"
  YUG_light_tank_equipment_1:0 "Проект легкого танка М1934"
@@ -1864,8 +1814,6 @@
  YUG_super_heavy_tank_equipment_1_short:0 "Кралевич Марко"
  YUG_modern_tank_equipment_1:0 "Проект «Игман»"
  YUG_modern_tank_equipment_1_short:0 "Игман"
- 
- 
  gw_tank_equipment:0 "Танк Первой мировой"
  gw_tank_equipment_short:0 "Танк Первой мировой"
  gw_tank_equipment_desc:0 "Танки периода Первой мировой войны разрабатывались одновременно и независимо друг от друга Великобританией и Францией, чтобы переломить ход окопной войны. Само слово «танк» («цистерна») было принято британцами в самом начале разработки с целью скрыть ее истинное назначение. Ранние танки были медлительны, вооружены пулеметами и пушками малого калибра, а их броня могла защитить только от стрелкового вооружения."
@@ -1948,17 +1896,12 @@
  GER_light_tank_artillery_equipment_3:0 "Waffentrager Leopard"
  GER_light_tank_artillery_equipment_3_short:0 "WT Leopard"
  GER_light_tank_artillery_equipment_3_desc:0 "Waffentrager Leopard - проект самоходной артиллерийской установки на шасси экспериментального легкого танка VK1602 «Леопард»."
- 
  SOV_light_tank_artillery_equipment_1:0 "СУ-76-26"
  SOV_light_tank_artillery_equipment_1_short:0 "СУ-76-26"
- #SOV_light_tank_artillery_equipment_1_desc
  SOV_light_tank_artillery_equipment_2:0 "СУ-76-7"
  SOV_light_tank_artillery_equipment_2_short:0 "СУ-76-7"
- #SOV_light_tank_artillery_equipment_2_desc
  SOV_light_tank_artillery_equipment_3:0 "СУ-76"
  SOV_light_tank_artillery_equipment_3_short:0 "СУ-76"
- #SOV_light_tank_artillery_equipment_3_desc
- 
  ENG_light_tank_equipment_3:0 "«Валентайн»"
  ENG_light_tank_equipment_3_short:0 "«Валентайн»"
  USA_light_tank_equipment_3:0 "«Чаффи»"
@@ -1994,13 +1937,10 @@
  GER_light_tank_destroyer_equipment_3_desc:0 "JagdLeopard - гипотетическая модификация экспериментального легкого танка VK1602 «Леопард»."
  SOV_light_tank_destroyer_equipment_1:0 "СУ-37"
  SOV_light_tank_destroyer_equipment_1_short:0 "СУ-37"
- #SOV_light_tank_destroyer_equipment_1_desc
  SOV_light_tank_destroyer_equipment_2:0 "СУ-45"
  SOV_light_tank_destroyer_equipment_2_short:0 "СУ-45"
- #SOV_light_tank_destroyer_equipment_2_desc
  SOV_light_tank_destroyer_equipment_3:0 "ЗИС-30"
  SOV_light_tank_destroyer_equipment_3_short:0 "ЗИС-30"
- #SOV_light_tank_destroyer_equipment_3_desc
  light_tank_aa_equipment:0 "Легкая ЗСУ"
  light_tank_aa_equipment_desc:0 "Легкие зенитные орудия предназначены преимущественно для борьбы с авиацией противника, хотя скорострельные пушки способны поражать и наземные цели. Эта модель создана на шасси легкого танка."
  light_tank_aa_equipment_1:0 "Легкая ЗСУ I"
@@ -2023,13 +1963,10 @@
  GER_light_tank_aa_equipment_3_desc:0 "Зенитная пушка, установленная на шасси танка VK1602."
  SOV_light_tank_aa_equipment_1:0 "ЗСУ-12.7"
  SOV_light_tank_aa_equipment_1_short:0 "ЗСУ-12.7"
- #SOV_light_tank_aa_equipment_1_desc
  SOV_light_tank_aa_equipment_2:0 "ЗСУ-12.7-2"
  SOV_light_tank_aa_equipment_2_short:0 "ЗСУ-12.7-2"
- #SOV_light_tank_aa_equipment_2_desc
  SOV_light_tank_aa_equipment_3:0 "ЗСУ-37"
  SOV_light_tank_aa_equipment_3_short:0 "ЗСУ-37"
- #SOV_light_tank_aa_equipment_3_desc
  medium_tank_equipment:0 "Средний танк"
  medium_tank_equipment_desc:0 "Средние танки умеренно мобильны и при этом универсальны: они способны выполнять роль разведки, поддержки и даже танков прорыва."
  medium_tank_equipment_1:0 "Средний танк I"
@@ -2113,13 +2050,10 @@
  GER_medium_tank_artillery_equipment_3_desc:0 "Проект САУ, предложенный фирмой «Крупп» в 1944-м. Базировался на шасси «Пантеры» и обладал 128-мм гаубицей. В реальности дальше проекта разработка не пошла."
  SOV_medium_tank_artillery_equipment_1:0 "СУ-76-32"
  SOV_medium_tank_artillery_equipment_1_short:0 "СУ-76-32"
- #SOV_medium_tank_artillery_equipment_1_desc
  SOV_medium_tank_artillery_equipment_2:0 "СУ-122"
  SOV_medium_tank_artillery_equipment_2_short:0 "СУ-122"
- #SOV_medium_tank_artillery_equipment_2_desc
  SOV_medium_tank_artillery_equipment_3:0 "СУ-152-44"
  SOV_medium_tank_artillery_equipment_3_short:0 "СУ-152-44"
- #SOV_medium_tank_artillery_equipment_3_desc
  medium_tank_destroyer_equipment:0 "Средняя ПТ-установка"
  medium_tank_destroyer_equipment_short:0 "Средняя ПТ"
  medium_tank_destroyer_equipment_desc:0 "Самоходные противотанковые установки представляют собой танки с крупнокалиберными орудиями, закрепленными в корпусе, а не в башне. Средние ПТ-установки используют шасси средних танков, благодаря чему достаточно мобильны и несут внушительное вооружение."
@@ -2143,13 +2077,10 @@
  GER_medium_tank_destroyer_equipment_3_desc:0 "«Ягдпантера» («охотящаяся пантера») - противотанковая самоходная установка, созданная Германией во время Второй мировой войны на шасси танка «Пантера». Она стала поступать в войска в конце войны (1944 год) и участвовала в боевых действиях на Восточном и Западном фронтах. «Ягдпантера» объединила мощную пушку PaK 43 калибра 88 мм от «Королевского тигра» и превосходную броню и подвеску, которыми славилась «Пантера». Общее незавидное состояние Германии в конце войны привело к небольшому количеству произведенных образцов, нехватке запасных частей и низкому уровню подготовки экипажей."
  SOV_medium_tank_destroyer_equipment_1:0 "СУ-85-32"
  SOV_medium_tank_destroyer_equipment_1_short:0 "СУ-85-32"
- #SOV_medium_tank_destroyer_equipment_1_desc
  SOV_medium_tank_destroyer_equipment_2:0 "СУ-85"
  SOV_medium_tank_destroyer_equipment_2_short:0 "СУ-85"
- #SOV_medium_tank_destroyer_equipment_2_desc
  SOV_medium_tank_destroyer_equipment_3:0 "СУ-100"
  SOV_medium_tank_destroyer_equipment_3_short:0 "СУ-100"
- #SOV_medium_tank_destroyer_equipment_3_desc
  medium_tank_aa_equipment:0 "Средняя ЗСУ"
  medium_tank_aa_equipment_desc:0 "Самоходная зенитная установка на шасси среднего танка."
  medium_tank_aa_equipment_1:0 "Средняя ЗСУ I"
@@ -2172,13 +2103,10 @@
  GER_medium_tank_aa_equipment_3_desc:0 "Flakpanzer «Коэлиан» - зенитная самоходная установка, разработанная концерном «Рейнметал» во время Второй мировой войны. Она была вооружена спаренными пушками FlaK 43 калибра 37 мм, смонтированными в полностью закрытой вращающейся башне на корпусе среднего танка «Пантера». До конца войны в Европе ее производство так и не началось."
  SOV_medium_tank_aa_equipment_1:0 "ЗСУ-37-32"
  SOV_medium_tank_aa_equipment_1_short:0 "ЗСУ-37-32"
- #SOV_medium_tank_aa_equipment_1_desc
  SOV_medium_tank_aa_equipment_2:0 "ЗСУ-37-34"
  SOV_medium_tank_aa_equipment_2_short:0 "ЗСУ-37-34"
- #SOV_medium_tank_aa_equipment_2_desc
  SOV_medium_tank_aa_equipment_3:0 "ЗСУ-57-44"
  SOV_medium_tank_aa_equipment_3_short:0 "ЗСУ-57-44"
- #SOV_medium_tank_aa_equipment_3_desc
  heavy_tank_equipment:0 "Тяжелый танк"
  heavy_tank_equipment_desc:0 "Тяжелые танки - огромные бронированные монстры, предназначенные для уничтожения танков и укреплений противника."
  heavy_tank_equipment_1:0 "Тяжелый танк I"
@@ -2251,13 +2179,10 @@
  GER_heavy_tank_artillery_equipment_3_desc:0 "Разработанная на шасси «Королевского тигра» САУ, вооруженная пушкой K.72 L/50 калибром 170 мм."
  SOV_heavy_tank_artillery_equipment_1:0 "СУ-14"
  SOV_heavy_tank_artillery_equipment_1_short:0 "СУ-14"
- #SOV_heavy_tank_artillery_equipment_1_desc
  SOV_heavy_tank_artillery_equipment_2:0 "КВ-2"
  SOV_heavy_tank_artillery_equipment_2_short:0 "КВ-2"
- #SOV_heavy_tank_artillery_equipment_2_desc
  SOV_heavy_tank_artillery_equipment_3:0 "ИСУ-152"
  SOV_heavy_tank_artillery_equipment_3_short:0 "ИСУ-152"
- #SOV_heavy_tank_artillery_equipment_3_desc
  heavy_tank_destroyer_equipment:0 "Тяжелая ПТ-установка"
  heavy_tank_destroyer_equipment_short:0 "Тяжелая ПТ"
  heavy_tank_destroyer_equipment_desc:0 "Тяжелый танк без башни, несущий крупнокалиберное орудие, закрепленное в корпусе."
@@ -2281,13 +2206,10 @@
  GER_heavy_tank_destroyer_equipment_3_desc:0 "«Ягдтигр» стал самым тяжелым танком, применявшимся на полях Второй мировой войны. Он был вооружен 128-мм пушкой PaK 44 L/55 и защищен толстейшей лобовой броней."
  SOV_heavy_tank_destroyer_equipment_1:0 "СМК"
  SOV_heavy_tank_destroyer_equipment_1_short:0 "СМК"
- #SOV_heavy_tank_destroyer_equipment_1_desc
  SOV_heavy_tank_destroyer_equipment_2:0 "СУ-152"
  SOV_heavy_tank_destroyer_equipment_2_short:0 "СУ-152"
- #SOV_heavy_tank_destroyer_equipment_2_desc
  SOV_heavy_tank_destroyer_equipment_3:0 "ИСУ-122"
  SOV_heavy_tank_destroyer_equipment_3_short:0 "ИСУ-122"
- #SOV_heavy_tank_destroyer_equipment_3_desc
  heavy_tank_aa_equipment:0 "Тяжелая ЗСУ"
  heavy_tank_aa_equipment_desc:0 "Мощное зенитное вооружение на тяжелом шасси."
  heavy_tank_aa_equipment_1:0 "Тяжелая ЗСУ I"
@@ -2301,13 +2223,10 @@
  heavy_tank_aa_equipment_3_desc:0 "Мощное зенитное вооружение на тяжелом шасси."
  SOV_heavy_tank_aa_equipment_1:0 "ЗСУ-12.7-4"
  SOV_heavy_tank_aa_equipment_1_short:0 "ЗСУ-12.7-4"
- #SOV_heavy_tank_aa_equipment_1_desc
  SOV_heavy_tank_aa_equipment_2:0 "ЗСУ-37-2"
  SOV_heavy_tank_aa_equipment_2_short:0 "ЗСУ-37-2"
- #SOV_heavy_tank_aa_equipment_2_desc
  SOV_heavy_tank_aa_equipment_3:0 "ИСУ-57-2"
  SOV_heavy_tank_aa_equipment_3_short:0 "ИСУ-57-2"
- #SOV_heavy_tank_aa_equipment_3_desc
  super_heavy_tank_equipment:0 "Сверхтяжелый танк"
  super_heavy_tank_equipment_desc:0 "Сверхтяжелые танки - эволюция концепции тяжелого танка. Они крупнее, тяжелее, с более мощным вооружением, но при этом медленнее, испытывают проблемы на мягком грунте и способы пересекать лишь наиболее прочные мосты."
  super_heavy_tank_equipment_1:0 "Сверхтяжелый танк"
@@ -2338,7 +2257,6 @@
  GER_super_heavy_tank_artillery_equipment_1_desc:0 "Самоходное 210-мм артиллерийское орудие, установленное на шасси сверхтяжелого танка и не уступавшее ряду пушек на железнодорожных платформах."
  SOV_super_heavy_tank_artillery_equipment_1:0 "ИСУ-203"
  SOV_super_heavy_tank_artillery_equipment_1_short:0 "ИСУ-203"
- #SOV_super_heavy_tank_artillery_equipment_1_desc
  super_heavy_tank_destroyer_equipment:0 "Сверхтяжелая ПТ-установка"
  super_heavy_tank_destroyer_equipment_short:0 "Сверхтяж. ПТ-установка"
  super_heavy_tank_destroyer_equipment_desc:0 "Шасси сверхтяжелого танка с крупнокалиберным орудием, закрепленным в корпусе вместо башни."
@@ -2350,7 +2268,6 @@
  GER_super_heavy_tank_destroyer_equipment_1_desc:0 "Шасси танка «Маус» со 150-мм пушкой в неподвижной надстройке."
  SOV_super_heavy_tank_destroyer_equipment_1:0 "ИСУ-130"
  SOV_super_heavy_tank_destroyer_equipment_1_short:0 "ИСУ-130"
- #SOV_super_heavy_tank_destroyer_equipment_1_desc
  super_heavy_tank_aa_equipment:0 "Сверхтяжелая ЗСУ"
  super_heavy_tank_aa_equipment_desc:0 "Сверхтяжелое шасси с зенитным вооружением."
  super_heavy_tank_aa_equipment_1:0 "Сверхтяжелая ЗСУ"
@@ -2361,7 +2278,6 @@
  GER_super_heavy_tank_aa_equipment_1_desc:0 "Два 88-мм зенитных орудия, установленных на шасси танка «Маус»."
  SOV_super_heavy_tank_aa_equipment_1:0 "ИСУ-57-4"
  SOV_super_heavy_tank_aa_equipment_1_short:0 "ИСУ-57-4"
- #SOV_super_heavy_tank_aa_equipment_1_desc
  modern_tank_equipment:0 "Основной танк"
  modern_tank_equipment_desc:0 "Современные танки достаточно универсальны, чтобы выполнять большинство боевых ролей, будь то разведка, огневая поддержка или лобовая атака."
  modern_tank_equipment_1:0 "Основной танк"
@@ -2389,7 +2305,6 @@
  modern_tank_artillery_equipment_1_desc:0 "Современные самоходные артиллерийские установки могут напоминать танки с виду, но обладают минимальным бронированием и не способны участвовать в бою. Экипажи при этом защищены от осколков и стрелкового оружия."
  SOV_modern_tank_artillery_equipment_1:0 "СУ-152-54"
  SOV_modern_tank_artillery_equipment_1_short:0 "СУ-152-54"
- #SOV_modern_tank_artillery_equipment_1_desc
  modern_tank_destroyer_equipment:0 "Современная ПТ-установка"
  modern_tank_destroyer_equipment_desc:0 "Современные противотанковые САУ выросли из легких и средних ПТ-САУ и предпочитают тяжелой броне мобильность и низкий силуэт."
  modern_tank_destroyer_equipment_1:0 "Современная ПТ-установка"
@@ -2400,7 +2315,6 @@
  GER_modern_tank_destroyer_equipment_1_desc:0 "Являясь модернизированной версией JadgPanzer IV, E-25 была быстрее и лучше бронирована."
  SOV_modern_tank_destroyer_equipment_1:0 "СУ-122-54"
  SOV_modern_tank_destroyer_equipment_1_short:0 "СУ-122-54"
- #SOV_modern_tank_destroyer_equipment_1_desc
  modern_tank_aa_equipment:0 "Современная ЗСУ"
  modern_tank_aa_equipment_desc:0 "Современное зенитное вооружение, будь то ракеты или скорострельные пушки, представляет смертельную опасность для авиации."
  modern_tank_aa_equipment_1:0 "Современная ЗСУ"
@@ -2408,7 +2322,6 @@
  modern_tank_aa_equipment_1_desc:0 "Современное зенитное вооружение, будь то ракеты или скорострельные пушки, представляет смертельную опасность для авиации."
  SOV_modern_tank_aa_equipment_1:0 "ЗСУ-57-2"
  SOV_modern_tank_aa_equipment_1_short:0 "ЗСУ-57-2"
- #SOV_modern_tank_aa_equipment_1_desc
  GER_motorized_equipment_1:0 "Опель «Блиц»"
  SWE_motorized_equipment_1:0 "Скания-Вабис"
  FRA_motorized_equipment_1:0 "Ситроен U23"
@@ -2449,446 +2362,360 @@
  GER_mechanized_equipment_3_desc:0 "Модернизированная версия Sd.Kfz. 251, оборудованная инфракрасным прожектором."
  SWE_mechanized_equipment_3:0 "Terrängbil m/42 KP"
  SWE_mechanized_equipment_3_short:0 "m/42 KP"
- 
  USA_mechanized_equipment_1:0 "Бронеавтомобиль М2"
  USA_mechanized_equipment_1_short:0 "М2"
  USA_mechanized_equipment_2:0 "Бронеавтомобиль М3"
  USA_mechanized_equipment_2_short:0 "M3"
  USA_mechanized_equipment_3:0 "Бронеавтомобиль М5"
  USA_mechanized_equipment_3_short:0 "M5"
- 
  JAP_mechanized_equipment_1:0 "Тип 1 «Хо-ки»"
  JAP_mechanized_equipment_1_short:0 "Тип 1 «Хо-ки»"
  JAP_mechanized_equipment_2:0 "Тип 1 «Хо-ха»"
  JAP_mechanized_equipment_2_short:0 "Тип 1 «Хо-ха»"
  JAP_mechanized_equipment_3:0 "Тип 4 «Ка-цу»"
  JAP_mechanized_equipment_3_short:0 "Тип 4 «Ка-цу»"
- 
  FRA_mechanized_equipment_1:0 "Ситроен P107"
  FRA_mechanized_equipment_1_short:0 "Ситроен P107"
  FRA_mechanized_equipment_2:0 "Сомуа MCG"
  FRA_mechanized_equipment_2_short:0 "Сомуа MCG"
  FRA_mechanized_equipment_3:0 "AMX-VCI"
  FRA_mechanized_equipment_3_short:0 "AMX-VCI"
- 
  NOR_mechanized_equipment_1:0 "Stpv. I"
  NOR_mechanized_equipment_1_short:0 "Stpv. I"
  NOR_mechanized_equipment_2:0 "Stpv. II"
  NOR_mechanized_equipment_2_short:0 "Stpv. II"
  NOR_mechanized_equipment_3:0 "Stpv. III"
  NOR_mechanized_equipment_3_short:0 "Stpv. III"
- 
  POL_mechanized_equipment_1:0 "C4P"
  POL_mechanized_equipment_1_short:0 "C4P"
  POL_mechanized_equipment_2:0 "C2P"
  POL_mechanized_equipment_2_short:0 "C2P"
  POL_mechanized_equipment_3:0 "C7P"
  POL_mechanized_equipment_3_short:0 "C7P"
- 
  SOV_mechanized_equipment_1:0 "БТР-41"
  SOV_mechanized_equipment_1_short:0 "БТР-41"
  SOV_mechanized_equipment_2:0 "БТР-43"
  SOV_mechanized_equipment_2_short:0 "БТР-43"
  SOV_mechanized_equipment_3:0 "БТР-152"
  SOV_mechanized_equipment_3_short:0 "БТР-152"
- 
  CAN_mechanized_equipment_1:0 "«Стюарт Кенгуру»"
  CAN_mechanized_equipment_1_short:0 "«Стюарт Кенгуру»"
  CAN_mechanized_equipment_2:0 "«Рэм Кенгуру»"
  CAN_mechanized_equipment_2_short:0 "«Рэм Кенгуру»"
  CAN_mechanized_equipment_3:0 "«Черчилль Кенгуру»"
  CAN_mechanized_equipment_3_short:0 "«Черчилль Кенгуру»"
- 
  ENG_mechanized_equipment_1:0 "«Брэн кэрриэр»"
  ENG_mechanized_equipment_1_short:0 "«Брэн кэрриэр»"
  ENG_mechanized_equipment_2:0 "«Юниверсал кэрриэр»"
  ENG_mechanized_equipment_2_short:0 "«Юниверсал кэрриэр»"
  ENG_mechanized_equipment_3:0 "«Черчилль Кенгуру»"
  ENG_mechanized_equipment_3_short:0 "«Черчилль Кенгуру»"
- 
  RAJ_mechanized_equipment_1:0 "«Брэн кэрриэр»"
  RAJ_mechanized_equipment_1_short:0 "«Брэн кэрриэр»"
  RAJ_mechanized_equipment_2:0 "«Юниверсал кэрриэр»"
  RAJ_mechanized_equipment_2_short:0 "«Юниверсал кэрриэр»"
  RAJ_mechanized_equipment_3:0 "«Виндзор кэрриэр»"
  RAJ_mechanized_equipment_3_short:0 "«Виндзор кэрриэр»"
- 
  AST_mechanized_equipment_1:0 "Локальный «Брэн кэрриэр»"
  AST_mechanized_equipment_1_short:0 "«Брэн кэрриэр»-Л"
  AST_mechanized_equipment_2:0 "Локальный «Юниверсал кэрриэр»"
  AST_mechanized_equipment_2_short:0 "«Юниверсал кэрриэр»-Л"
  AST_mechanized_equipment_3:0 "Локальный «Виндзор кэрриэр»"
  AST_mechanized_equipment_3_short:0 "«Виндзор кэрриер»-Л"
- 
  SAF_mechanized_equipment_1:0 "Локальный «Брэн кэрриэр»"
  SAF_mechanized_equipment_1_short:0 "«Брэн кэрриэр»-Л"
  SAF_mechanized_equipment_2:0 "Локальный «Юниверсал кэрриэр»"
  SAF_mechanized_equipment_2_short:0 "«Юниверсал кэрриэр»-Л"
  SAF_mechanized_equipment_3:0 "Локальный «Виндзор кэрриэр»"
  SAF_mechanized_equipment_3_short:0 "«Виндзор кэрриер»-Л"
- 
  NZL_mechanized_equipment_1:0 "Локальный «Брэн кэрриэр»"
  NZL_mechanized_equipment_1_short:0 "«Брэн кэрриэр»-Л"
  NZL_mechanized_equipment_2:0 "Локальный «Юниверсал кэрриэр»"
  NZL_mechanized_equipment_2_short:0 "«Юниверсал кэрриэр»-Л"
  NZL_mechanized_equipment_3:0 "Локальный «Виндзор кэрриэр»"
  NZL_mechanized_equipment_3_short:0 "«Виндзор кэрриер»-Л"
- 
  ITA_mechanized_equipment_1:0 "Фиат 2800"
  ITA_mechanized_equipment_1_short:0 "Фиат 2800"
  ITA_mechanized_equipment_2:0 "Фиат 727"
  ITA_mechanized_equipment_2_short:0 "Фиат 727"
  ITA_mechanized_equipment_3:0 "Бреда 61"
  ITA_mechanized_equipment_3_short:0 "Бреда 61"
- 
  HOL_mechanized_equipment_1:0 "DAF Pantrado 1"
  HOL_mechanized_equipment_1_short:0 "DAF Pantrado 1"
  HOL_mechanized_equipment_2:0 "DAF Pantrado 2"
  HOL_mechanized_equipment_2_short:0 "DAF Pantrado 2"
  HOL_mechanized_equipment_3:0 "DAF Pantrado 3"
  HOL_mechanized_equipment_3_short:0 "DAF Pantrado 3"
- 
  anti_air_equipment:0 "Буксируемое орудие ПВО"
  anti_air_equipment_short:0 "ПВО"
  anti_air_equipment_desc:0 "Зенитные орудия предназначены для борьбы с авиацией противника, хотя скорострельные пушки неплохо справляются и с наземными целями."
  anti_tank_equipment:0 "Буксируемое орудие ПТО"
  anti_tank_equipment_short:0 "ПТО"
  anti_tank_equipment_desc:0 "Артиллерия, специализирующаяся на уничтожении бронированных целей. Обычно использует для этого бронебойные снаряды."
- 
- #anti-tank
  FRA_anti_tank_equipment_1:0 "25-мм пушка"
  FRA_anti_tank_equipment_1_short:0 "25-мм пушка"
  FRA_anti_tank_equipment_2:0 "47-мм SA 37"
  FRA_anti_tank_equipment_3:0 "76-мм пушка мод. 1943"
  FRA_anti_tank_equipment_3_short:0 "76-мм орудие обр. 1943"
- 
  CZE_anti_tank_equipment_1:0 "37-мм пушка vz. 34"
  CZE_anti_tank_equipment_1_short:0 "37-мм пушка vz. 34"
  CZE_anti_tank_equipment_2:0 "47-мм пушка vz. 38"
  CZE_anti_tank_equipment_3:0 "75-мм пушка vz. 43"
- 
  ENG_anti_tank_equipment_1:0 "2-фунт. пушка"
  ENG_anti_tank_equipment_1_short:0 "2-фунт. пушка"
  ENG_anti_tank_equipment_2:0 "6-фунт. пушка"
  ENG_anti_tank_equipment_3:0 "17-фунт. пушка"
- 
  RAJ_anti_tank_equipment_1:0 "2-фунт. пушка"
  RAJ_anti_tank_equipment_1_short:0 "2-фунт. пушка"
  RAJ_anti_tank_equipment_2:0 "6-фунт. пушка"
  RAJ_anti_tank_equipment_3:0 "17-фунт. пушка"
- 
  CAN_anti_tank_equipment_1:0 "2-фунт. пушка"
  CAN_anti_tank_equipment_1_short:0 "2-фунт. пушка"
  CAN_anti_tank_equipment_2:0 "6-фунт. пушка"
  CAN_anti_tank_equipment_3:0 "17-фунт. пушка"
- 
  AST_anti_tank_equipment_1:0 "2-фунт. пушка"
  AST_anti_tank_equipment_1_short:0 "2-фунт. пушка"
  AST_anti_tank_equipment_2:0 "6-фунт. пушка"
  AST_anti_tank_equipment_3:0 "17-фунт. пушка"
- 
  NZL_anti_tank_equipment_1:0 "2-фунт. пушка"
  NZL_anti_tank_equipment_1_short:0 "2-фунт. пушка"
  NZL_anti_tank_equipment_2:0 "6-фунт. пушка"
  NZL_anti_tank_equipment_3:0 "17-фунт. пушка"
- 
  SAF_anti_tank_equipment_1:0 "2-фунт. пушка"
  SAF_anti_tank_equipment_1_short:0 "2-фунт. пушка"
  SAF_anti_tank_equipment_2:0 "6-фунт. пушка"
  SAF_anti_tank_equipment_3:0 "17-фунт. пушка"
- 
  GER_anti_tank_equipment_1:0 "37-мм пушка PaK 36"
  GER_anti_tank_equipment_1_short:0 "37-мм PaK 36"
  GER_anti_tank_equipment_2:0 "75-мм пушка PaK 40"
  GER_anti_tank_equipment_3:0 "128-мм пушка PaK 44"
- 
  USA_anti_tank_equipment_1:0 "37-мм пушка M3"
  USA_anti_tank_equipment_1_short:0 "37-мм пушка M3"
  USA_anti_tank_equipment_2:0 "57-мм пушка M1"
  USA_anti_tank_equipment_3:0 "76-мм пушка M5"
- 
  JAP_anti_tank_equipment_1:0 "37-мм пушка Тип 94"
  JAP_anti_tank_equipment_1_short:0 "Тип 94"
  JAP_anti_tank_equipment_2:0 "47-мм пушка Тип 1"
  JAP_anti_tank_equipment_3:0 "75-мм пушка Тип 4"
- 
  HUN_anti_tank_equipment_1:0 "47-мм пушка 36M"
  HUN_anti_tank_equipment_1_short:0 "36M"
  HUN_anti_tank_equipment_2:0 "50-мм пушка 38M"
  HUN_anti_tank_equipment_3:0 "75-мм пушка 43M"
- 
  SOV_anti_tank_equipment_1:0 "37-мм пушка 1-К обр. 1930"
  SOV_anti_tank_equipment_1_short:0 "1-К"
  SOV_anti_tank_equipment_2:0 "45-мм пушка М-42 обр. 1942 года"
  SOV_anti_tank_equipment_3:0 "76,2-мм пушка ЗиС-3"
- 
  ITA_anti_tank_equipment_1:0 "Золотурн S-18/1000"
  ITA_anti_tank_equipment_1_short:0 "Золотурн S-18/1000"
  ITA_anti_tank_equipment_2:0 "47-мм пушка 47/32"
  ITA_anti_tank_equipment_3:0 "75-мм пушка 75/46"
- 
  POL_anti_tank_equipment_1:0 "37-мм пушка wz. 36"
  POL_anti_tank_equipment_1_short:0 "37-мм wz. 36"
  POL_anti_tank_equipment_2:0 "47-мм пушка wz. 39"
  POL_anti_tank_equipment_3:0 "76-мм пушка wz. 43"
- 
  DEN_anti_tank_equipment_1:0 "37-мм пушка m1937"
  DEN_anti_tank_equipment_1_short:0 "37-мм m1937"
  DEN_anti_tank_equipment_2:0 "47-мм пушка m1940"
  DEN_anti_tank_equipment_3:0 "75-мм пушка m1943"
- 
  SWE_anti_tank_equipment_1:0 "37-мм пушка «Бофорс»"
  SWE_anti_tank_equipment_1_short:0 "37-мм «Бофорс»"
  SWE_anti_tank_equipment_2:0 "57-мм пушка m/43"
  SWE_anti_tank_equipment_2_short:0 "57-мм m/43"
  SWE_anti_tank_equipment_3:0 "75-мм пушка m/43"
  SWE_anti_tank_equipment_3_short:0 "75-мм m/43"
- 
  NOR_anti_tank_equipment_1:0 "37-мм пушка «Бофорс»"
  NOR_anti_tank_equipment_1_short:0 "37-мм «Бофорс»"
  NOR_anti_tank_equipment_2:0 "47-мм пушка"
  NOR_anti_tank_equipment_3:0 "76-мм пушка"
- 
  FIN_anti_tank_equipment_1:0 "37-мм пушка PstK/36"
  FIN_anti_tank_equipment_1_short:0 " 37-мм PstK/36"
- 
  AUS_anti_tank_equipment_2:0 "47-мм пушка «Бёлер» М35"
- 
  BEL_anti_tank_equipment_1:0 "47-мм пушка мод. 1931"
  BEL_anti_tank_equipment_1_short:0 "47-мм пушка мод. 1931"
- 
  ROM_anti_tank_equipment_1:0 "47-мм пушка «Шнайдер-Конкордия» мод. 1936"
  ROM_anti_tank_equipment_1_short:0 "47-мм «Шнайдер» М36"
  ROM_anti_tank_equipment_2:0 "75-мм пушка «Шнайдер» 97/38"
  ROM_anti_tank_equipment_3:0 "75-мм пушка «Решица» мод. 1943"
- 
  CHI_anti_tank_equipment_1:0 "37-мм пушка Тип 14"
  CHI_anti_tank_equipment_1_short:0 "37-мм Тип 14"
  CHI_anti_tank_equipment_2:0 "37-мм пушка Тип 30"
  CHI_anti_tank_equipment_3:0 "75-мм пушка Тип 43"
- 
  anti_air_equipment_1:0 "Буксируемое орудие ПВО"
  anti_air_equipment_1_short:0 "ПВО"
  anti_air_equipment_1_desc:0 "Зенитные орудия предназначены для борьбы с авиацией противника, хотя скорострельные пушки неплохо справляются и с наземными целями."
- 
- #anti-air
  FRA_anti_air_equipment_1:0 "25-мм зенитка «Гочкис»"
  FRA_anti_air_equipment_1_short:0 "25-мм «Гочкис»"
  FRA_anti_air_equipment_2:0 "37-мм зенитка «Шнайдер»"
  FRA_anti_air_equipment_3:0 "75-мм зенитка мод. 1940"
- 
  GER_anti_air_equipment_1:0 "20-мм зенитка FlaK 30"
  GER_anti_air_equipment_1_short:0 "20-мм FlaK 30"
  GER_anti_air_equipment_2:0 "20-мм зенитка «Флакфирлинг» 38"
  GER_anti_air_equipment_3:0 "88-мм зенитка FlaK 41"
- 
  JAP_anti_air_equipment_1:0 "20-мм зенитка Тип 98"
  JAP_anti_air_equipment_1_short:0 "20-мм Тип 98"
  JAP_anti_air_equipment_2:0 "20-мм зенитка Тип 2"
  JAP_anti_air_equipment_3:0 "80-мм зенитка Тип 3"
- 
  ENG_anti_air_equipment_1:0 "3-дюйм. зенитка"
  ENG_anti_air_equipment_1_short:0 "3-дюйм. зенитка"
  ENG_anti_air_equipment_2:0 "40-мм зенитка «Бофорс»"
  ENG_anti_air_equipment_3:0 "3,7-дюйм. зенитка"
- 
  RAJ_anti_air_equipment_1:0 "3-дюйм. зенитка"
  RAJ_anti_air_equipment_1_short:0 "3-дюйм. зенитка"
  RAJ_anti_air_equipment_2:0 "40-мм зенитка «Бофорс»"
  RAJ_anti_air_equipment_3:0 "3,7-дюйм. зенитка"
- 
  CAN_anti_air_equipment_1:0 "3-дюйм. зенитка"
  CAN_anti_air_equipment_1_short:0 "3-дюйм. зенитка"
  CAN_anti_air_equipment_2:0 "40-мм зенитка «Бофорс»"
  CAN_anti_air_equipment_3:0 "3,7-дюйм. зенитка"
- 
  AST_anti_air_equipment_1:0 "3-дюйм. зенитка"
  AST_anti_air_equipment_1_short:0 "3-дюйм. зенитка"
  AST_anti_air_equipment_2:0 "40-мм зенитка «Бофорс»"
  AST_anti_air_equipment_3:0 "3,7-дюйм. зенитка"
- 
  NZL_anti_air_equipment_1:0 "3-дюйм. зенитка"
  NZL_anti_air_equipment_1_short:0 "3-дюйм. зенитка"
  NZL_anti_air_equipment_2:0 "40-мм зенитка «Бофорс»"
  NZL_anti_air_equipment_3:0 "3,7-дюйм. зенитка"
- 
  SAF_anti_air_equipment_1:0 "3-дюйм. зенитка"
  SAF_anti_air_equipment_1_short:0 "3-дюйм. зенитка"
  SAF_anti_air_equipment_2:0 "40-мм зенитка «Бофорс»"
  SAF_anti_air_equipment_3:0 "3,7-дюйм. зенитка"
- 
  ITA_anti_air_equipment_1:0 "«Бреда» мод. 35"
  ITA_anti_air_equipment_1_short:0 "«Бреда» мод. 35"
  ITA_anti_air_equipment_2:0 "Зенитка «Бреда» 37/54"
  ITA_anti_air_equipment_3:0 "Зенитка 90/53"
- 
  USA_anti_air_equipment_1:0 "37-мм зенитка M1"
  USA_anti_air_equipment_1_short:0 "37-мм M1"
  USA_anti_air_equipment_2:0 "40-мм зенитка M1"
  USA_anti_air_equipment_3:0 "90-мм зенитка M3"
- 
  SOV_anti_air_equipment_1:0 "37-мм зенитка обр. 1939"
  SOV_anti_air_equipment_1_short:0 "37-мм зенитка обр. 1939"
  SOV_anti_air_equipment_2:0 "25-мм зенитка обр. 1940"
  SOV_anti_air_equipment_3:0 "100-мм зенитка КС-19"
- 
  POL_anti_air_equipment_1:0 "40-мм зенитка «Бофорс» wz. 36"
  POL_anti_air_equipment_1_short:0 "40-мм wz. 36"
  POL_anti_air_equipment_2:0 "75-мм зенитка wz. 36"
- 
  SWE_anti_air_equipment_1:0 "20-мм зенитка m/40"
  SWE_anti_air_equipment_1_short:0 "20-мм m/40"
  SWE_anti_air_equipment_2:0 "40-мм зенитка m/36"
  SWE_anti_air_equipment_3:0 "80-мм зенитка m/30"
- 
  CZE_anti_air_equipment_1:0 "ZB vz. 60"
  CZE_anti_air_equipment_1_short:0 "ZB vz. 60"
  CZE_anti_air_equipment_2:0 "75-мм зенитка vz. 37"
  CZE_anti_air_equipment_3:0 "90-мм зенитка vz. 12/20"
- 
  DEN_anti_air_equipment_1:0 "20-мм зенитка Мадсен M/38"
  DEN_anti_air_equipment_1_short:0 "20-мм M/38"
- 
  ROM_anti_air_equipment_1:0 "37-мм зенитка мод. 1939"
  ROM_anti_air_equipment_1_short:0 "37-мм зенитка Астра Райнметалл"
  ROM_anti_air_equipment_2:0 "75-мм зенитка Виккерс-Решица М1936"
  ROM_anti_air_equipment_3:0 "90-мм зенитка Шкода 12/30"
- 
  FIN_anti_air_equipment_1:0 "7,62-мм пулемет ITKK 31 VKT"
  FIN_anti_air_equipment_1_short:0 "31 VKT"
- 
  NOR_anti_air_equipment_1:0 "Пулемет Кольт m/29"
  NOR_anti_air_equipment_2:0 "40-мм зенитка m/36"
  NOR_anti_air_equipment_3:0 "75-мм зенитка m/32"
- 
  anti_tank_equipment_1:0 "Буксируемое орудие ПТО"
  anti_tank_equipment_1_short:0 "ПТО"
  anti_tank_equipment_1_desc:0 "Артиллерия, специализирующаяся на уничтожении бронированных целей. Обычно использует для этого бронебойные снаряды."
  artillery_equipment:0 "Буксируемая артиллерия"
  artillery_equipment_short:0 "Артиллерия"
  artillery_equipment_desc:0 "Крупнокалиберные орудия - пушки и гаубицы, - способные доставлять снаряды на расстояние, значительно превышающее дальность стрелкового оружия."
- 
- #artillery
  FRA_artillery_equipment_1:0 "75-мм пушка мод. 1897"
  FRA_artillery_equipment_1_short:0 "75-мм пушка мод. 1897"
  FRA_artillery_equipment_2:0 "105-мм пушка L мод. 1936"
  FRA_artillery_equipment_3:0 "155-мм пушка GPF"
- 
  CZE_artillery_equipment_1:0 "80-мм пушка vz. 30"
  CZE_artillery_equipment_1_short:0 "80-мм пушка vz. 30"
  CZE_artillery_equipment_2:0 "105-мм тяжелая пушка vz. 35"
  CZE_artillery_equipment_3:0 "150-мм тяжелая гаубица vz. 37"
- 
  GER_artillery_equipment_1:0 "105-мм легкая гаубица LeFH 18"
  GER_artillery_equipment_1_short:0 "105-мм LeFH 18"
  GER_artillery_equipment_2:0 "150-мм sFH 18"
  GER_artillery_equipment_3:0 "150-мм пушка 18"
- 
  ENG_artillery_equipment_1:0 "18-фунт. пушка"
  ENG_artillery_equipment_1_short:0 "18-фунт. пушка"
  ENG_artillery_equipment_2:0 "25-фунт. пушка"
  ENG_artillery_equipment_3:0 "5,5-дюйм. средняя пушка"
- 
  RAJ_artillery_equipment_1:0 "18-фунт. пушка"
  RAJ_artillery_equipment_1_short:0 "18-фунт. пушка"
  RAJ_artillery_equipment_2:0 "25-фунт. пушка"
  RAJ_artillery_equipment_3:0 "5,5-дюйм. средняя пушка"
- 
  CAN_artillery_equipment_1:0 "18-фунт. пушка"
  CAN_artillery_equipment_1_short:0 "18-фунт. пушка"
  CAN_artillery_equipment_2:0 "25-фунт. пушка"
  CAN_artillery_equipment_3:0 "5,5-дюйм. средняя пушка"
- 
  AST_artillery_equipment_1:0 "18-фунт. пушка"
  AST_artillery_equipment_1_short:0 "18-фунт. пушка"
  AST_artillery_equipment_2:0 "25-фунт. пушка"
  AST_artillery_equipment_3:0 "5,5-дюйм. средняя пушка"
- 
  NZL_artillery_equipment_1:0 "18-фунт. пушка"
  NZL_artillery_equipment_1_short:0 "18-фунт. пушка"
  NZL_artillery_equipment_2:0 "25-фунт. пушка"
  NZL_artillery_equipment_3:0 "5,5-дюйм. средняя пушка"
- 
  SAF_artillery_equipment_1:0 "18-фунт. пушка"
  SAF_artillery_equipment_1_short:0 "18-фунт. пушка"
  SAF_artillery_equipment_2:0 "25-фунт. пушка"
  SAF_artillery_equipment_3:0 "5,5-дюйм. средняя пушка"
- 
  USA_artillery_equipment_1:0 "75-мм пушка M1897"
  USA_artillery_equipment_1_short:0 "75-мм пушка M1897"
  USA_artillery_equipment_2:0 "105-мм пушка M101A1"
  USA_artillery_equipment_3:0 "155-мм M114"
- 
  SOV_artillery_equipment_1:0 "76-мм пушка обр. 1936"
  SOV_artillery_equipment_1_short:0 "76-мм пушка обр. 1936"
  SOV_artillery_equipment_2:0 "107-мм пушка обр. 1940"
  SOV_artillery_equipment_3:0 "152-мм пушка обр. 1943"
- 
  ITA_artillery_equipment_1:0 "75-мм пушка 75/27 мод. 06"
  ITA_artillery_equipment_1_short:0 "75-мм пушка 75/27"
  ITA_artillery_equipment_2:0 "149-мм пушка 149/40 мод. 35"
  ITA_artillery_equipment_2_short:0 "149-мм пушка 149/40 мод. 35"
  ITA_artillery_equipment_3:0 "210-мм гаубица 210/22 мод. 35"
- 
  JAP_artillery_equipment_1:0 "75-мм пушка Тип 95"
  JAP_artillery_equipment_1_short:0 "75-мм пушка Тип 95"
  JAP_artillery_equipment_2:0 "100-мм пушка Тип 91"
  JAP_artillery_equipment_3:0 "150-мм пушка Тип 96"
- 
  NOR_artillery_equipment_1:0 "75-мм пушка «Конгсберг» M.27"
  NOR_artillery_equipment_1_short:0 "75-мм пушка M.27"
  NOR_artillery_equipment_2:0 "120-мм гаубица m09"
  NOR_artillery_equipment_3:0 "120-мм гаубица m09"
- 
  POL_artillery_equipment_1:0 "75-мм пушка wz. 31 St."
  POL_artillery_equipment_1_short:0 "75-мм пушка wz. 31"
  POL_artillery_equipment_2:0 "100-мм гаубица wz. 38 St."
  POL_artillery_equipment_3:0 "155-мм пушка wz. 40"
- 
  SWE_artillery_equipment_1:0 "105-мм пушка m/34"
  SWE_artillery_equipment_1_short:0 "105-мм пушка m/34"
  SWE_artillery_equipment_2:0 "105-мм гаубица m/40"
  SWE_artillery_equipment_3:0 "120-мм гаубица m/14"
- 
  AUS_artillery_equipment_1:0 "75-мм пушка M. 15"
  AUS_artillery_equipment_1_short:0 "7,5-мм пушка M. 15"
  AUS_artillery_equipment_2:0 "150-мм тяжелая гаубица M. 15"
  AUS_artillery_equipment_2_short:0 "150-мм тяжелая гаубица М.15"
  AUS_artillery_equipment_3:0 "150-мм пушка M. 15/16"
- 
  HOL_artillery_equipment_1:0 "75-мм пушка Сидериус мод. 02/04"
  HOL_artillery_equipment_1_short:0 "75-мм пушка мод. 02/04"
  HOL_artillery_equipment_2:0 "105-мм пушка m/27"
  HOL_artillery_equipment_3:0 "120-мм пушка"
- 
  BEL_artillery_equipment_1:0 "75-мм пушка TR"
  BEL_artillery_equipment_1_short:0 "75-мм пушка"
  BEL_artillery_equipment_2:0 "75-мм пушка GP III"
  BEL_artillery_equipment_3:0 "120-мм пушка L мод. 1931"
- 
  ROM_artillery_equipment_1:0 "105-мм пушка Шнайдер М1913"
  ROM_artillery_equipment_1_short:0 "105-мм пушка Шнайдер 13"
  ROM_artillery_equipment_2:0 "150-мм пушка Шкода M1934"
  ROM_artillery_equipment_2_short:0 "150-мм пушка M1934"
  ROM_artillery_equipment_3:0 "155-мм пушка Шнайдер М1917"
  ROM_artillery_equipment_3_short:0 "155-мм пушка M1917"
- 
  CHI_artillery_equipment_1:0 "75-мм пушка Тип 10 «Гань»"
  CHI_artillery_equipment_1_short:0 "75-мм пушка Тип 10"
  CHI_artillery_equipment_2:0 "105-мм пушка Тип 16 «Цзинь»"
  CHI_artillery_equipment_3:0 "150-мм пушка Тип 14/19"
- 
  HUN_artillery_equipment_1:0 "80-мм пушка мод. 1905"
  HUN_artillery_equipment_1_short:0 "80-мм пушка мод. 1905"
  HUN_artillery_equipment_2:0 "150-мм гаубица 35M"
  HUN_artillery_equipment_2_short:0 "150-мм 35М"
  HUN_artillery_equipment_3:0 "210-мм тяжелая гаубица 40M"
  HUN_artillery_equipment_3_short:0 "210-мм 40М"
- 
  rocket_artillery_equipment:0 "Буксируемая реактивная артиллерия"
  rocket_artillery_equipment_short:0 "Ракеты"
  rocket_artillery_equipment_desc:0 "Реактивная артиллерия менее точна и скорострельна, чем традиционные орудия, однако недостатки окупаются эффектом от одновременного попадания нескольких ракет в цель."
- 
  GER_rocket_artillery_equipment_1:0 "280/320-мм «Небельверфер 41»"
  GER_rocket_artillery_equipment_1_short:0 "«Небельверфер 41»"
  GER_rocket_artillery_equipment_2:0 "120-мм «Небельверфер 41»"
@@ -2927,7 +2754,6 @@
  RAJ_rocket_artillery_equipment_1_short:0 "RP-3 HE/GP"
  RAJ_rocket_artillery_equipment_2:0 "Ракета RP-3 HE/SAP"
  RAJ_rocket_artillery_equipment_2_short:0 "RP-3 HE/SAP"
- 
  artillery_equipment_1:0 "Буксируемая артиллерия"
  artillery_equipment_1_short:0 "Артиллерия"
  artillery_equipment_1_desc:0 "Крупнокалиберные орудия - пушки и гаубицы, - способные доставлять снаряды на расстояние, значительно превышающее дальность стрелкового оружия."
@@ -2949,9 +2775,6 @@
  infantry_equipment_3:0 "Пехотное снаряжение III"
  infantry_equipment_3_short:0 "Оружие III"
  infantry_equipment_3_desc:0 "Индивидуальное и коллективное стрелковое оружие, а также прочие элементы экипировки пехотинца. Включает штурмовые винтовки и противотанковые гранатометы."
- 
- # small arms
- 
  GER_infantry_equipment_0:0 "Маузер 98"
  GER_infantry_equipment_0_short:0 "Маузер 98"
  GER_infantry_equipment_1:0 "Карабин 98k"
@@ -2966,7 +2789,6 @@
  GER_support_weapons2:0 "MG34 и 50-мм миномет обр. 1936"
  GER_support_weapons3:0 "MG42 и 80-мм миномет обр. 1934"
  GER_support_weapons4:0 "MG45 и 120-мм миномет обр. 1942"
- 
  SOV_infantry_equipment_0:0 "Винтовка Мосина обр. 1891/30"
  SOV_infantry_equipment_0_short:0 "Винтовка Мосина"
  SOV_infantry_equipment_1:0 "СВТ-38/40"
@@ -2981,7 +2803,6 @@
  SOV_support_weapons2:0 "ДП и 50-мм миномет обр. 1938"
  SOV_support_weapons3:0 "ДС-39 и 82-мм миномет обр. 1941"
  SOV_support_weapons4:0 "СГ-43 и 120-мм миномет обр. 1943"
- 
  ENG_infantry_equipment_0:0 "Ли-Энфилд No.1 Mk III"
  ENG_infantry_equipment_0_short:0 "Ли-Энфилд No.1 Mk III"
  ENG_infantry_equipment_1:0 "Ли-Энфилд No.4 Mk I"
@@ -2996,7 +2817,6 @@
  ENG_support_weapons2:0 "Пулемёт Льюиса и 2-дюйм. миномет SBML"
  ENG_support_weapons3:0 "Пулемет BREN Mk. I & 3-дюйм. миномет ML"
  ENG_support_weapons4:0 "Пулемет BREN Mk. III & 4.2-дюйм. миномет ML"
- 
  USA_infantry_equipment_0:0 "Спрингфилд M1903"
  USA_infantry_equipment_0_short:0 "Спрингфилд M1903"
  USA_infantry_equipment_1:0 "М1 «Гаранд»"
@@ -3011,7 +2831,6 @@
  USA_support_weapons2:0 "Пулемет Браунинг М1917 и 60-мм миномет М2"
  USA_support_weapons3:0 "Пулемет Браунинг М1919 и миномет М1"
  USA_support_weapons4:0 "Пулемет Джонсона М1941 и 4,2-дюйм. миномет М2"
- 
  ITA_infantry_equipment_0:0 "Каркано М91"
  ITA_infantry_equipment_0_short:0 "Каркано М91"
  ITA_infantry_equipment_1:0 "Каркано М38"
@@ -3020,7 +2839,6 @@
  ITA_infantry_equipment_2_short:0 "Беретта М1938"
  ITA_infantry_equipment_3:0 "FNAB-43"
  ITA_infantry_equipment_3_short:0 "FNAB-43"
- 
  FRA_infantry_equipment_0:0 "Винтовка Лебеля обр. 1886"
  FRA_infantry_equipment_0_short:0 "Винтовка Лебеля обр. 1886"
  FRA_infantry_equipment_1:0 "MAS-36"
@@ -3033,7 +2851,6 @@
  FRA_support_weapons2:0 "Пулемет Гочкис M1914 и миномет «Брандт» обр. 1935"
  FRA_support_weapons3:0 "Пулемет 24/29 и миномет «Брандт» обр. 27/31"
  FRA_support_weapons4:0 "Пулемет Гочкис M1922 и миномет «Брандт» обр. 1942"
- 
  JAP_infantry_equipment_0:0 "Арисака обр. 1905"
  JAP_infantry_equipment_0_short:0 "Арисака обр. 1905"
  JAP_infantry_equipment_1:0 "Арисака обр. 1939"
@@ -3048,7 +2865,6 @@
  JAP_support_weapons2:0 "Ручной пулемет Тип 11 и миномет Тип 10"
  JAP_support_weapons3:0 "Ручной пулемет Тип 99 и миномет Тип 94"
  JAP_support_weapons4:0 "Тяжелый пулемет Тип 1 и 120-мм миномет Тип 2"
- 
  MAN_infantry_equipment_0:0 "Арисака обр. 1905"
  MAN_infantry_equipment_0_short:0 "Арисака обр. 1905"
  MAN_infantry_equipment_1:0 "Винтовка Ляо Тип 13"
@@ -3063,7 +2879,6 @@
  MAN_support_weapons2:0 "Ручной пулемет Тип 11 и миномет Тип 10"
  MAN_support_weapons3:0 "Ручной пулемет Тип 99 и миномет Тип 94"
  MAN_support_weapons4:0 "Тяжелый пулемет Тип 1 и 120-мм миномет Тип 2"
- 
  CZE_infantry_equipment_0:0 "Винтовка Vz. 24"
  CZE_infantry_equipment_0_short:0 "vz.24"
  CZE_infantry_equipment_1:0 "Винтовка ZH-29"
@@ -3072,7 +2887,6 @@
  CZE_infantry_equipment_2_short:0 "ZK-383"
  CZE_infantry_equipment_3:0 "Sa23 vz.48"
  CZE_infantry_equipment_3_short:0 "Sa23 vz.48"
- 
  POL_infantry_equipment_0:0 "Карабин wz.98a"
  POL_infantry_equipment_0_short:0 "Маузер wz.98a"
  POL_infantry_equipment_1:0 "Карабин wz.38M"
@@ -3087,7 +2901,6 @@
  POL_support_weapons2:0 "Ручной пулемет «Браунинг» wz.1928 и гранатомет wz. 36"
  POL_support_weapons3:0 "Пулемет wz.32 и миномет wz. 31"
  POL_support_weapons4:0 "Тяжелый пулемет wz. 38 FK и миномет wz. 40 ST"
- 
  ROM_infantry_equipment_0:0 "Манлихер обр. 1893"
  ROM_infantry_equipment_0_short:0 "Манлихер обр. 1893"
  ROM_infantry_equipment_1:0 "Винтовка vz.24"
@@ -3096,7 +2909,6 @@
  ROM_infantry_equipment_2_short:0 "«Орита» M1941"
  ROM_infantry_equipment_3:0 "Карабин «Орита»"
  ROM_infantry_equipment_3_short:0 "Карабин «Орита»"
- 
  HOL_infantry_equipment_0:0 "Манлихер обр. 1895"
  HOL_infantry_equipment_0_short:0 "Манлихер обр. 1895"
  HOL_infantry_equipment_1:0 "Джонсон M1941"
@@ -3105,7 +2917,6 @@
  HOL_infantry_equipment_2_short:0 "Бергманн MP28"
  HOL_infantry_equipment_3:0 "Джонсон M1944"
  HOL_infantry_equipment_3_short:0 "Джонсон M1944"
- 
  SWE_infantry_equipment_0:0 "Маузер m/38"
  SWE_infantry_equipment_0_short:0 "Маузер m/38"
  SWE_infantry_equipment_1:0 "Винтовка Ag m/42"
@@ -3114,7 +2925,6 @@
  SWE_infantry_equipment_2_short:0 "Пистолет-пулемет m/37-39"
  SWE_infantry_equipment_3:0 "Пистолет-пулемет m/45"
  SWE_infantry_equipment_3_short:0 "ПП m/45"
- 
  CAN_infantry_equipment_0:0 "Винтовка Росса"
  CAN_infantry_equipment_0_short:0 "Винтовка Росса"
  CAN_infantry_equipment_1:0 "Ли-Энфилд No.4 Mk I"
@@ -3129,7 +2939,6 @@
  CAN_support_weapons2:0 "Пулемёт Льюиса и 2-дюйм. миномет SBML"
  CAN_support_weapons3:0 "Пулемет BREN Mk. I & 3-дюйм. миномет ML"
  CAN_support_weapons4:0 "Пулемет BREN Mk. III & 4.2-дюйм. миномет ML"
- 
  AST_infantry_equipment_0:0 "Ли-Энфилд No.1 Mk III"
  AST_infantry_equipment_0_short:0 "Ли-Энфилд No.1 Mk III"
  AST_infantry_equipment_1:0 "Ли-Энфилд No.6 Mk I"
@@ -3144,7 +2953,6 @@
  AST_support_weapons2:0 "Пулемёт Льюиса и 2-дюйм. миномет SBML"
  AST_support_weapons3:0 "Пулемет BREN Mk. I & 3-дюйм. миномет ML"
  AST_support_weapons4:0 "Пулемет BREN Mk. III & 4.2-дюйм. миномет ML"
- 
  AUS_infantry_equipment_0:0 "Винтовка Штейр M95/30"
  AUS_infantry_equipment_0_short:0 "Винтовка Штейр M95/30"
  AUS_infantry_equipment_1:0 "Карабин Штейр M95/30"
@@ -3153,7 +2961,6 @@
  AUS_infantry_equipment_2_short:0 "Штейр MP34"
  AUS_infantry_equipment_3:0 "Штейр MG30"
  AUS_infantry_equipment_3_short:0 "Штейр MG30"
- 
  FIN_infantry_equipment_0:0 "M/27 «Пюстюкорва»"
  FIN_infantry_equipment_0_short:0 "M/27 «Пюстюкорва»"
  FIN_infantry_equipment_1:0 "M/39 «Укко-Пекка»"
@@ -3162,7 +2969,6 @@
  FIN_infantry_equipment_2_short:0 "Суоми М31"
  FIN_infantry_equipment_3:0 "Пистолет-пулемет m/44"
  FIN_infantry_equipment_3_short:0 "ПП m/44"
- 
  HUN_infantry_equipment_0:0 "FEG M95/31"
  HUN_infantry_equipment_0_short:0 "FEG M95/31"
  HUN_infantry_equipment_1:0 "FEG 35M"
@@ -3171,7 +2977,6 @@
  HUN_infantry_equipment_2_short:0 "Кирали 39M"
  HUN_infantry_equipment_3:0 "Кирали 43M"
  HUN_infantry_equipment_3_short:0 "Кирали 43M"
- 
  SWI_infantry_equipment_0:0 "Шмидт-Рубин M1911"
  SWI_infantry_equipment_0_short:0 "Шмидт-Рубин M1911"
  SWI_infantry_equipment_1:0 "Карабин K31"
@@ -3180,7 +2985,6 @@
  SWI_infantry_equipment_2_short:0 "Испано-Сюиза MP43/44"
  SWI_infantry_equipment_3:0 "SIG MP46"
  SWI_infantry_equipment_3_short:0 "SIG MP46"
- 
  SPR_infantry_equipment_0:0 "Маузер M93"
  SPR_infantry_equipment_0_short:0 "Маузер M93"
  SPR_infantry_equipment_1:0 "Карабин «Дестроер»"
@@ -3189,7 +2993,6 @@
  SPR_infantry_equipment_2_short:0 "Лабора-Фонбернат М38"
  SPR_infantry_equipment_3:0 "Корунья EMP"
  SPR_infantry_equipment_3_short:0 "Корунья EMP"
- 
  BEL_infantry_equipment_0:0 "Маузер M89"
  BEL_infantry_equipment_0_short:0 "Маузер M89"
  BEL_infantry_equipment_1:0 "Маузер M35"
@@ -3198,7 +3001,6 @@
  BEL_infantry_equipment_2_short:0 "MP35"
  BEL_infantry_equipment_3:0 "FN М30 Тип D"
  BEL_infantry_equipment_3_short:0 "FN М30 Тип D"
- 
  BUL_infantry_equipment_0:0 "Манлихер обр. 1895"
  BUL_infantry_equipment_0_short:0 "Манлихер обр. 1895"
  BUL_infantry_equipment_1:0 "Карабин Штейр M95/30"
@@ -3207,7 +3009,6 @@
  BUL_infantry_equipment_2_short:0 "ZK-383"
  BUL_infantry_equipment_3:0 "Шмайссер MP41"
  BUL_infantry_equipment_3_short:0 "Шмайссер MP41"
- 
  SAF_infantry_equipment_0:0 "Ли-Энфилд No.1 Mk III"
  SAF_infantry_equipment_0_short:0 "Ли-Энфилд No.1 Mk III"
  SAF_infantry_equipment_1:0 "Ли-Энфилд No.4 Mk I"
@@ -3222,7 +3023,6 @@
  SAF_support_weapons2:0 "Пулемёт Льюиса и 2-дюйм. миномет SBML"
  SAF_support_weapons3:0 "Пулемет BREN Mk. I & 3-дюйм. миномет ML"
  SAF_support_weapons4:0 "Пулемет BREN Mk. III & 4.2-дюйм. миномет ML"
- 
  RAJ_infantry_equipment_0:0 "Ли-Энфилд No.1 Mk III"
  RAJ_infantry_equipment_0_short:0 "Ли-Энфилд No.1 Mk III"
  RAJ_infantry_equipment_1:0 "Ли-Энфилд No.4 Mk I"
@@ -3237,7 +3037,6 @@
  RAJ_support_weapons2:0 "Пулемёт Льюиса и 2-дюйм. миномет SBML"
  RAJ_support_weapons3:0 "Пулемет BREN Mk. I & 3-дюйм. миномет ML"
  RAJ_support_weapons4:0 "Пулемет BREN Mk. III & 4.2-дюйм. миномет ML"
- 
  YUG_infantry_equipment_0:0 "Манлихер M95M"
  YUG_infantry_equipment_0_short:0 "Манлихер M95M"
  YUG_infantry_equipment_1:0 "Маузер М24"
@@ -3246,7 +3045,6 @@
  YUG_infantry_equipment_2_short:0 "EMP-35"
  YUG_infantry_equipment_3:0 "Ручной пулемет vz.26"
  YUG_infantry_equipment_3_short:0 "Ручной пулемет vz.26"
- 
  SLO_infantry_equipment_0:0 "Винтовка Vz. 24"
  SLO_infantry_equipment_0_short:0 "vz.24"
  SLO_infantry_equipment_1:0 "ZH-29"
@@ -3255,7 +3053,6 @@
  SLO_infantry_equipment_2_short:0 "ZK-383"
  SLO_infantry_equipment_3:0 "Sa23 vz.48"
  SLO_infantry_equipment_3_short:0 "Sa23 vz.48"
- 
  NZL_infantry_equipment_0:0 "Ли-Энфилд No.1 Mk III"
  NZL_infantry_equipment_0_short:0 "Ли-Энфилд No.1 Mk III"
  NZL_infantry_equipment_1:0 "Ли-Энфилд No.4 Mk I"
@@ -3270,7 +3067,6 @@
  NZL_support_weapons2:0 "Пулемёт Льюиса и 2-дюйм. миномет SBML"
  NZL_support_weapons3:0 "Пулемет BREN Mk. I & 3-дюйм. миномет ML"
  NZL_support_weapons4:0 "Пулемет BREN Mk. III & 4.2-дюйм. миномет ML"
- 
  CHI_infantry_equipment_0:0 "Винтовка Тип 88"
  CHI_infantry_equipment_0_short:0 "Винтовка Тип 88"
  CHI_infantry_equipment_1:0 "Винтовка Тип 24"
@@ -3279,7 +3075,6 @@
  CHI_infantry_equipment_2_short:0 "Циньдао MP18"
  CHI_infantry_equipment_3:0 "Ручной пулемет vz.26"
  CHI_infantry_equipment_3_short:0 "Ручной пулемет vz.26"
- 
  PRC_infantry_equipment_0:0 "Винтовка Тип 88"
  PRC_infantry_equipment_0_short:0 "Винтовка Тип 88"
  PRC_infantry_equipment_1:0 "Винтовка Тип 24"
@@ -3288,7 +3083,6 @@
  PRC_infantry_equipment_2_short:0 "Циньдао MP18"
  PRC_infantry_equipment_3:0 "ППШ-41"
  PRC_infantry_equipment_3_short:0 "ППШ-41"
- 
  YUN_infantry_equipment_0:0 "Винтовка Тип 88"
  YUN_infantry_equipment_0_short:0 "Винтовка Тип 88"
  YUN_infantry_equipment_1:0 "Винтовка Тип 24"
@@ -3297,7 +3091,6 @@
  YUN_infantry_equipment_2_short:0 "Циньдао MP18"
  YUN_infantry_equipment_3:0 "Ручной пулемет vz.26"
  YUN_infantry_equipment_3_short:0 "Ручной пулемет vz.26"
- 
  GXC_infantry_equipment_0:0 "Винтовка Тип 88"
  GXC_infantry_equipment_0_short:0 "Винтовка Тип 88"
  GXC_infantry_equipment_1:0 "Винтовка «Генерал Лю»"
@@ -3306,7 +3099,6 @@
  GXC_infantry_equipment_2_short:0 "Циньдао MP18"
  GXC_infantry_equipment_3:0 "Марлин М42"
  GXC_infantry_equipment_3_short:0 "Марлин М42"
- 
  SHX_infantry_equipment_0:0 "Винтовка Тип 88"
  SHX_infantry_equipment_0_short:0 "Винтовка Тип 88"
  SHX_infantry_equipment_1:0 "Винтовка Тип 24"
@@ -3315,7 +3107,6 @@
  SHX_infantry_equipment_2_short:0 "Циньдао MP18"
  SHX_infantry_equipment_3:0 "Ручной пулемет vz.26"
  SHX_infantry_equipment_3_short:0 "Ручной пулемет vz.26"
- 
  XSM_infantry_equipment_0:0 "Винтовка Тип 88"
  XSM_infantry_equipment_0_short:0 "Винтовка Тип 88"
  XSM_infantry_equipment_1:0 "Винтовка Тип 24"
@@ -3324,7 +3115,6 @@
  XSM_infantry_equipment_2_short:0 "Циньдао MP18"
  XSM_infantry_equipment_3:0 "Ручной пулемет vz.26"
  XSM_infantry_equipment_3_short:0 "Ручной пулемет vz.26"
- 
  MON_infantry_equipment_0:0 "Винтовка Мосина обр. 1891/30"
  MON_infantry_equipment_0_short:0 "Винтовка Мосина"
  MON_infantry_equipment_1:0 "СВТ-38/40"
@@ -3333,7 +3123,6 @@
  MON_infantry_equipment_2_short:0 "ППД-40"
  MON_infantry_equipment_3:0 "ППШ-41"
  MON_infantry_equipment_3_short:0 "ППШ-41"
- 
  TAN_infantry_equipment_0:0 "Винтовка Мосина обр. 1891/30"
  TAN_infantry_equipment_0_short:0 "Винтовка Мосина"
  TAN_infantry_equipment_1:0 "СВТ-38/40"
@@ -3342,7 +3131,6 @@
  TAN_infantry_equipment_2_short:0 "ППД-40"
  TAN_infantry_equipment_3:0 "ППШ-41"
  TAN_infantry_equipment_3_short:0 "ППШ-41"
- 
  MEX_infantry_equipment_0:0 "Мондрагон M94"
  MEX_infantry_equipment_0_short:0 "Мондрагон M94"
  MEX_infantry_equipment_1:0 "Мондрагон M08"
@@ -3353,7 +3141,6 @@
  MEX_infantry_equipment_3_short:0 "Мендоса RM2"
  MEX_gw_tank_equipment:0 "TNCA «Салинас»"
  MEX_gw_tank_equipment_short:0 "«Салинас»"
- 
  GRE_infantry_equipment_0:0 "Манлихер M03"
  GRE_infantry_equipment_0_short:0 "Манлихер M03"
  GRE_infantry_equipment_1:0 "Манлихер M95/24"
@@ -3362,7 +3149,6 @@
  GRE_infantry_equipment_2_short:0 "Гочкис M26"
  GRE_infantry_equipment_3:0 "Пистолет-пулемет EPK"
  GRE_infantry_equipment_3_short:0 "ПП EPK"
- 
  TUR_infantry_equipment_0:0 "Маузер 93"
  TUR_infantry_equipment_0_short:0 "Маузер 93"
  TUR_infantry_equipment_1:0 "Кырыккале М38"
@@ -3371,7 +3157,6 @@
  TUR_infantry_equipment_2_short:0 "Стен MkII"
  TUR_infantry_equipment_3:0 "Ручной пулемет vz.26"
  TUR_infantry_equipment_3_short:0 "Ручной пулемет vz.26"
- 
  PER_infantry_equipment_0:0 "Маузер 98"
  PER_infantry_equipment_0_short:0 "Маузер 98"
  PER_infantry_equipment_1:0 "Винтовка vz. 24"
@@ -3380,7 +3165,6 @@
  PER_infantry_equipment_2_short:0 "Ручной пулемет vz.30"
  PER_infantry_equipment_3:0 "ППШ-41"
  PER_infantry_equipment_3_short:0 "ППШ-41"
- 
  POR_infantry_equipment_0:0 "Винтовка m/04"
  POR_infantry_equipment_0_short:0 "Винтовка m/04"
  POR_infantry_equipment_1:0 "Винтовка m/04/39"
@@ -3389,7 +3173,6 @@
  POR_infantry_equipment_2_short:0 "Бергманн MP28"
  POR_infantry_equipment_3:0 "FBP m/948"
  POR_infantry_equipment_3_short:0 "FBP m/948"
- 
  ARG_infantry_equipment_0:0 "Маузер M91"
  ARG_infantry_equipment_0_short:0 "Маузер M91"
  ARG_infantry_equipment_1:0 "Маузер M09"
@@ -3398,9 +3181,6 @@
  ARG_infantry_equipment_2_short:0 "HAFDASA C-4"
  ARG_infantry_equipment_3:0 "M-43 «Алькон»"
  ARG_infantry_equipment_3_short:0 "M-43 «Алькон»"
- 
- 
- 
  tank_armor_upgrade:0 "Броня"
  tank_armor_upgrade_desc:0 "Броня, которую не может пробить противник, - полезное преимущество для того, кто готов смириться с потерей скорости."
  tank_gun_upgrade:0 "Главное орудие"

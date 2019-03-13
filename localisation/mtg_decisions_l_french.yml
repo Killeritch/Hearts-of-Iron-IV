@@ -590,4 +590,7 @@
  USA_join_the_unions:0 "Rejoignez les syndicats"
  USA_freedom_for_Papua:0 "Liberté pour la Papouasie"
  USA_indonesian_liberation:0 "Libération indonésienne"
- USA_decolonization:0 "Décolonisation"
+ USA_decolonisation:0 "Décolonisation"
+ mtg_usa_anti_bolshevist_aid_tt:0 "Déverrouillage de la décision: §YDes armes pour la guerre anti-bolchéviste§!\nQuand la décision est choisie:\nEnvoyer §Y1000§! de §Yéquipement d'infanterie§! aux pays en guerre avec le §YUnion soviétique§!. Les anciens vont en premier."
+ USA_readmit_state_tt:0 "L'État commencera le processus pour devenir un noyau."
+ USA_raise_silver_legions:0 "Soulever les légions d'argent"

@@ -1293,7 +1293,6 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = JAP_greater_east_asian_co_prosperity_sphere }
 		prerequisite = { focus = JAP_sign_tripartite_pact }
-		prerequisite = { focus = JAP_liaison_conference }
 		x = 0
 		y = 2
 		relative_position_id = JAP_liaison_conference
@@ -5109,11 +5108,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_supremacy_of_the_battlefleet
-				bonus = 1.0
-				uses = 1
-				category = shbb_tech	
+			if = {
+				limit = {
+					not = { has_dlc = "Man the Guns" }
+				}
+				add_tech_bonus = {
+					name = JAP_supremacy_of_the_battlefleet
+					bonus = 1.0
+					uses = 1
+					category = shbb_tech	
+				}
+			}
+			else = {
+				navy_experience = 50
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -5384,7 +5391,13 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			OR = {
+				has_tech = ship_hull_super_heavy
+				AND = {
+					has_tech = heavy_battleship
+					has_tech = heavy_battleship2
+				}
+			}
 		}
 
 		cancel_if_invalid = yes

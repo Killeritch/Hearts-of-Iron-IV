@@ -202,3 +202,4 @@
  CUSTOM_GAME_SETTINGS_GROUP_DEFAULT_TOOLTIP:0 "§HOpcje domyślne§!\nKażda zasada w tej grupie jest ustawiona na opcję domyślną."
  CUSTOM_GAME_SETTINGS_REVERT_TOOLTIP:0 "Przywróć domyślne ustawienia wszystkich zmodyfikowanych zasad."
  CUSTOM_GAME_SETTINGS_BACK:0 "Wstecz"
+ ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RNie można uzyskać większości osiągnięć.§!"

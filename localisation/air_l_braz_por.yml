@@ -353,3 +353,4 @@
  AIRWING_MISSION_TRAINING:1 "Exercícios de piloto"
  ADD_MINES_EFFECT:0 "Coloque $NUM|H$ minas em $REGION|H$"
  REMOVE_MINES_EFFECT:0 "Elimine $NUM|H$ minas de $REGION|H$"
+ AIRWING_RECENTLY_ASSIGNED_WARNING:0 "§RVocê só vai recuperar a eficiência enquanto as suas asas estiverem atribuídas a uma missão ativa.§!"

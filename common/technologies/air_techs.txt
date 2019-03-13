@@ -228,12 +228,12 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				original_tag = ger
+				original_tag = GER
 			}
 			
 			modifier = {
 				factor = -3
-				original_tag = sov
+				original_tag = SOV
 			}
 
 			modifier = {

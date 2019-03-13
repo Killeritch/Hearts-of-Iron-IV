@@ -29,6 +29,8 @@ country_event = {
 				transfer_state = 546
 				transfer_state = 547
 				transfer_state = 548
+				transfer_state = 771
+				transfer_state = 770
 			}
 		}
 		hidden_effect = {
@@ -54,9 +56,13 @@ country_event = {
 	option = {
 		name = tfv_south_africa.1.c # ENG compromises
 		trigger = {
-		KEN = { exists = no }
-		ZIM = { exists = no }
-
+			KEN = { exists = no }
+			ZIM = { exists = no }
+			BOT = { exists = no }
+			ZAM = { exists = no }
+			MLW = { exists = no }
+			TZN = { exists = no }
+			UGA = { exists = no }
 		}
 		
 		ai_chance = {
@@ -92,40 +98,114 @@ country_event = {
 	
 	option = {
 		name = tfv_south_africa.2.a
-
 		if = {
 			limit = { 
-				ZIM = { exists = no }	
-					}
+				ZIM = { exists = no }
+			}
 			transfer_state = 545
 		}
-
 		if = {
 			limit = { 
-				ZIM = { exists = yes }	
-					}
+				ZIM = {
+					exists = yes
+					is_subject_of = ENG
+				}
+			}
 			puppet = ZIM
 		}
-
 		if = {
 			limit = { 
-				KEN = { exists = no } 
-					}
-			transfer_state = 546
-			transfer_state = 547
-			transfer_state = 548
+				BOT = { exists = no }
+			}
+			transfer_state = 542
 		}
-
 		if = {
 			limit = { 
-				KEN = { exists = yes } 
+				BOT = {
+					exists = yes
+					is_subject_of = ENG
+				}
+			}
+			puppet = BOT
+		}
+		if = {
+			limit = { 
+				ZAM = { exists = no }
+			}
+			transfer_state = 771
+		}
+		if = {
+			limit = { 
+				ZAM = {
+					exists = yes
+					is_subject_of = ENG
+				}
+			}
+			puppet = ZAM
+		}
+		if = {
+			limit = { 
+				MLW = { exists = no }
+			}
+			transfer_state = 770
+		}
+		if = {
+			limit = { 
+				MLW = {
+					exists = yes
+					is_subject_of = ENG
+				}
+			}
+			puppet = MLW
+		}
+		if = {
+			limit = { 
+				TZN = { exists = no }
+			}
+			transfer_state = 546
+		}
+		if = {
+			limit = { 
+				TZN = {
+					exists = yes
+					is_subject_of = ENG
+				}
+			}
+			puppet = TZN
+		}
+		if = {
+			limit = { 
+				KEN = { exists = no }
+			}
+			transfer_state = 547
+		}
+		if = {
+			limit = { 
+				KEN = {
+					exists = yes
+					is_subject_of = ENG
+				}
 			}
 			puppet = KEN
 		}
-		transfer_state = 542
+		if = {
+			limit = { 
+				UGA = { exists = no }
+			}
+			transfer_state = 548
+		}
+		if = {
+			limit = { 
+				UGA = {
+					exists = yes
+					is_subject_of = ENG
+				}
+			}
+			puppet = UGA
+		}
 		hidden_effect = {
 			news_event = { id = news.260 hours = 6 }
-					}
+		}
 	}
 		
 	
@@ -154,34 +234,69 @@ country_event = {
 	
 	option = {
 		name = tfv_south_africa.4.a
-
 		if = {
-		limit = { 
-			ZIM = { exists = no }	
+			limit = { 
+				BOT = { exists = no }	
 			}
-
-			ZIM = { transfer_state = 545 }
-
+			release = BOT
 			ENG = {
-			puppet = ZIM 
-				}
+				puppet = BOT
 			}
-
+		}
 		if = {
-		limit = { 
-			KEN = { exists = no } 
-				}
-			KEN = {
-				transfer_state = 546
-				transfer_state = 547
-				transfer_state = 548
-				}
-			
+			limit = { 
+				ZIM = { exists = no }	
+			}
+			release = ZIM
+			ENG = {
+				puppet = ZIM
+			}
+		}
+		if = {
+			limit = { 
+				ZAM = { exists = no }	
+			}
+			release = ZAM
+			ENG = {
+				puppet = ZAM
+			}
+		}
+		if = {
+			limit = { 
+				MLW = { exists = no }	
+			}
+			release = MLW
+			ENG = {
+				puppet = MLW
+			}
+		}
+		if = {
+			limit = { 
+				TZN = { exists = no }	
+			}
+			release = TZN
+			ENG = {
+				puppet = TZN
+			}
+		}
+		if = {
+			limit = { 
+				KEN = { exists = no } 
+			}
+			release = KEN			
 			ENG = { 
 				puppet = KEN 
-				}
 			}
-
+		}
+		if = {
+			limit = { 
+				UGA = { exists = no }	
+			}
+			release = UGA
+			ENG = {
+				puppet = UGA
+			}
+		}
 		SAF = { transfer_state = 542 }
 		hidden_effect = {
 			news_event = { id = news.261 hours = 6 }

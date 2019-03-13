@@ -866,12 +866,12 @@ focus_tree = {
 	focus = {
 		id = HOL_colonial_shipbuilding
 		available = {
-			has_full_control_of_state = 335
-			has_full_control_of_state = 672
-			has_full_control_of_state = 334
-			has_full_control_of_state = 673
-			has_full_control_of_state = 667
-			has_full_control_of_state = 309
+			controls_state = 335
+			controls_state = 672
+			controls_state = 334
+			controls_state = 673
+			controls_state = 667
+			controls_state = 309
 		}
 		prerequisite = { focus = HOL_a_western_capital }
 		prerequisite = { focus = HOL_the_foundations_of_defense }
@@ -2431,6 +2431,9 @@ focus_tree = {
 
 	focus = {
 		id = HOL_light_tanks_for_the_colonies
+		allow_branch = {
+			always = yes
+		}
 		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }
 		icon = GFX_goal_generic_army_tanks
 		x = -1
@@ -2500,6 +2503,9 @@ focus_tree = {
 			}
 			has_war = no
 		}
+		allow_branch = {
+			always = yes
+		}
 		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }
 		icon = GFX_goal_generic_intelligence_exchange
 		x = 1
@@ -2524,6 +2530,9 @@ focus_tree = {
 
 	focus = {
 		id = HOL_anti_tank_guns_for_the_continent
+		allow_branch = {
+			always = yes
+		}
 		prerequisite = { focus = HOL_modernize_our_infantry_equipment focus = HOL_production_under_license }
 		icon = GFX_goal_generic_army_artillery2
 		x = 3
@@ -2618,6 +2627,18 @@ focus_tree = {
 				any_other_country = {
 					is_subject_of = ROOT
 					has_full_control_of_state = 335
+				}
+			}
+		}
+		bypass = {
+			335 = {
+				OWNER = { 
+					NOT = {
+						OR = {
+							TAG = ROOT 
+							is_subject_of = ROOT 
+						}
+					} 
 				}
 			}
 		}
@@ -3527,7 +3548,6 @@ focus_tree = {
 		id = HOL_strength_over_blood
 		available = {
 			has_government = fascism
-			NOT = { is_in_faction_with = GER }
 		}
 		prerequisite = { focus = HOL_volk_en_vaderland }
 		icon = GFX_focus_generic_support_the_left_right
@@ -4216,6 +4236,95 @@ focus_tree = {
 			add_timed_idea = { idea = HOL_legacy_of_the_de_zeven_provincien_mutiny days = 1095 }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = HOL_saul_de_groot
+			hidden_effect = {
+				if = {
+					limit = {
+						ENG = {
+							NOT = { has_government = communism }
+						}
+					}
+					ENG = {
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 200
+						}
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							NOT = { has_government = communism }
+						}
+					}
+					USA = {
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 200
+						}
+					}
+				}
+				if = {
+					limit = {
+						FRA = {
+							NOT = { has_government = communism }
+						}
+					}
+					FRA = {
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 200
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -4254,6 +4363,29 @@ focus_tree = {
 						738 = { is_fully_controlled_by = INS }
 						669 = { is_fully_controlled_by = INS }
 					}
+				}
+			}
+		}
+		bypass = {
+			NOT = {
+				OR = {
+					672 = { is_owned_by = HOL }
+					335 = { is_owned_by = HOL }
+					334 = { is_owned_by = HOL }
+					667 = { is_owned_by = HOL }
+					673 = { is_owned_by = HOL }
+					668 = { is_owned_by = HOL }
+					738 = { is_owned_by = HOL }
+					669 = { is_owned_by = HOL }
+					695 = { is_owned_by = HOL }
+					309 = { is_owned_by = HOL }
+				}
+			}
+			NOT = {
+				OR = {
+					CRC = { is_subject_of = HOL }
+					SUR = { is_subject_of = HOL }
+					INS = { is_subject_of = HOL }
 				}
 			}
 		}
@@ -4552,6 +4684,35 @@ focus_tree = {
 		completion_reward = {
 			FRA = { country_event = { id = generic.2 hours = 6 } }
 			remove_ideas = HOL_aloof_neutrality
+			hidden_effect = {
+				if = {
+					limit = {
+						SOV = { has_government = communism }
+					}
+					SOV = {
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 200
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -4678,6 +4839,59 @@ focus_tree = {
 			add_war_support = 0.1
 			add_ideas = HOL_bastion_of_true_communism
 			remove_ideas = HOL_aloof_neutrality
+			hidden_effect = {
+				SOV = {
+					add_ai_strategy = {
+						type = alliance
+						id = ROOT
+						value = -200
+					}
+					add_ai_strategy = {
+						type = befriend
+						id = ROOT
+						value = -200
+					}
+					add_ai_strategy = {
+						type = protect
+						id = ROOT
+						value = -200
+					}
+					add_ai_strategy = {
+						type = antagonize
+						id = ROOT
+						value = 200
+					}
+				}
+				if = {
+					limit = {
+						FRA = {
+							has_government = communism
+						}
+					}
+					FRA = {
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = antagonize
+							id = ROOT
+							value = 200
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -5390,6 +5604,32 @@ focus_tree = {
 			add_timed_idea = { idea = HOL_unity_through_democracy days = 1095 }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = HOL_willem_schermerhorn
+			hidden_effect = {
+				if = {
+					limit = {
+						ENG = {
+							has_government = democratic
+						}
+					}
+					ENG = {
+						add_ai_strategy = {
+							type = alliance
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = befriend
+							id = ROOT
+							value = -200
+						}
+						add_ai_strategy = {
+							type = protect
+							id = ROOT
+							value = -200
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -5569,6 +5809,7 @@ focus_tree = {
 		id = HOL_american_west_indies_protectorate
 		available = {
 			has_war = yes
+			NOT = { has_war_with = USA }
 		}
 		prerequisite = { focus = HOL_ship_a_day_sinking_quotas }
 		prerequisite = { focus = HOL_allied_technological_developments }

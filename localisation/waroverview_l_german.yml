@@ -61,3 +61,4 @@
  WAR_OVERVIEW_CALL_ALL_FACTION_DISABLED:0 "§REs stehen im Bündnis keine Nationen zur Verfügung, die in den Krieg gerufen werden könnten§!"
  WAR_OVERVIEW_ALLY_ALREADY_CALLED:0 "§RDieser Verbündete wurde bereits gerufen, wir warten auf seine Antwort§!"
  SURRENDER_GIE_LEGITIMACY:0 "Wenn sie kapitulieren, werden sie zu einer §HExilregierung§!. Ihre §HLegitimität§! beträgt dann $LEGITIMACY|0Y$."
+ CAN_SURRENDER_SUBJECT:0 "Sie kämpfen derzeit mit ihrem Overlord und werden erst kapitulieren, wenn dieser Overlord kapituliert hat.\nOverlord: $OVERLORD|Y$"

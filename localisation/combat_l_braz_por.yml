@@ -341,3 +341,5 @@
  CAPITAL_BOX_TOOLTIP:0 "A §Ylinha de batalha§! fornece o poder de fogo direto principal da frota, geralmente na forma de navios de batalha e cruzadores pesados. Eles também impedem capitanias inimigas de dispararem contra §Ycarregadores§! aliados."
  CARRIER_BOX_TOOLTIP:0 "O §grupo de carregadores§! fornece o poder de fogo de longo alcance principal para a frota.  Protegidos do inimigos pelo §Ygrupo de proteção§! e pela §Ylinha de batalha§!, os carregadores conseguem atacar os inimigos sem interferências. Se um §Ycomboio§! fizer parte da batalha, ele também aparecerá nesta área."
  SUBMARINE_BOX_TOOLTIP:0 "A §Ymatilha submarina§! tentará eliminar navios em fuga com seus torpedos enquanto permanece oculta. A falta de embarcações antissubmarino dedicadas entre o inimigo permite que submarinos passem despercebidos."
+ NAVAL_COMBAT_TOOLTIP_ATTACKER_WITH_CONVOYS:0 "Invasores: forças-tarefa de $COUNT|Y$ e comboios de $CONVOY_COUNT|Y$ ($COUNTRIES$)"
+ NAVAL_COMBAT_TOOLTIP_DEFENDER_WITH_CONVOYS:0 "Defensora: forças-tarefa de $COUNT|Y$ e comboios de $CONVOY_COUNT|Y$ ($COUNTRIES$)"

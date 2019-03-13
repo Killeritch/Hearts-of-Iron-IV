@@ -874,7 +874,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_Portrait_MEX_Jesus_Degollado_Guizar"
+		name = "GFX_portrait_mex_jesus_degollado_guizar"
 		texturefile = "gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
 	}
 	

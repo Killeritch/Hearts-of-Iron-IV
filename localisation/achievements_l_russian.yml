@@ -17,3 +17,4 @@
  HOL_lost_starting_state:0 "Нидерланды утратили один из своих первоначальных регионов."
  achievements_pride_and_extreme_prejudice:0 "Затопить гордость британского ВМФ"
  do_you_mined_tt:0 "На побережье поставлено свыше §Y999§! наших мин."
+ assuming_direct_control_achievement_flag:0 "Предполагаемое лидерство фракции от §Y[ENG.GetName]§!, §Y[GER.GetName]§!, или §Y[SOV.GetName]§!."

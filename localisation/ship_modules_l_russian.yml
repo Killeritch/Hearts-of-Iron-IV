@@ -1,5 +1,4 @@
 ﻿l_russian:
- ### EQUIPMENT MODULE CATEGORIES ###
  EQ_MOD_CAT_ship_light_battery_TITLE:0 "Скорострельные орудия"
  EQ_MOD_CAT_ship_sub_snorkel_TITLE:0 "Шноркель"
  EQ_MOD_CAT_ship_torpedo_TITLE:0 "Торпедные аппараты"
@@ -29,7 +28,6 @@
  EQ_MOD_CAT_ship_deck_space_TITLE:0 "Ангары"
  EQ_MOD_CAT_ship_extra_fuel_tank_TITLE:0 "Топливная цистерна"
  EQ_MOD_CAT_ship_mine_layer_TITLE:0 "Оборудование для постановки мин"
- ### EQUIPMENT MODULE SLOTS ###
  EQ_MOD_SLOT_fixed_ship_battery_slot_TITLE:0 "Батарея"
  EQ_MOD_SLOT_fixed_ship_secondaries_slot_TITLE:0 "Вспомогательные орудия"
  EQ_MOD_SLOT_fixed_ship_anti_air_slot_TITLE:0 "ПВО"
@@ -47,7 +45,6 @@
  EQ_MOD_SLOT_mid_3_custom_slot_TITLE:0 "Центр. 3 модиф."
  EQ_MOD_SLOT_rear_1_custom_slot_TITLE:0 "Корм. 1 модиф."
  EQ_MOD_SLOT_rear_2_custom_slot_TITLE:0 "Корм. 2 модиф."
- ### EQUIPMENT MODULES ###
  ship_light_battery_1:0 "85-мм скорострельное орудие"
  ship_light_battery_1_short:0 "Легкая батарея I"
  ship_light_battery_1_desc:0 "Малокалиберное орудие, используемое на эсминцах и малых судах."
@@ -302,7 +299,6 @@
  ship_armor_carrier_deck_short:0 "Бронирование летной палубы"
  ship_armor_carrier_deck_desc:0 "Тяжелые бронелисты защищают ангары от налетов бомбардировщиков, но при этом уменьшают их рабочий объем."
  SHIP_DESIGNER_MODULE_SELECTION:0 "Выбор модуля"
- ### Nation Specific Modules
  ENG_ship_light_battery_1:0 "4-дюйм. QF Mk V"
  ENG_ship_light_battery_2:0 "4,7-дюйм. QF Mk IX"
  ENG_ship_light_battery_3:0 "4,7-дюйм. QF Mk XI"
@@ -376,7 +372,6 @@
  ENG_carrier_ship_engine_2:0 "Парсонс 102 000 л.с."
  ENG_carrier_ship_engine_3:0 "Парсонс 148 000 л.с."
  ENG_carrier_ship_engine_4:0 "Парсонс 200 000 л.с."
- 
  FRA_ship_light_battery_1:0 "130-мм/40 мод. 1919"
  FRA_ship_light_battery_2:0 "138,6-мм/40 мод. 1927"
  FRA_ship_light_battery_3:0 "138,6-мм/50 мод. 1934"
@@ -443,7 +438,6 @@
  FRA_ship_armor_cruiser_2:0 "60-мм пояс/30-мм палуба"
  FRA_ship_armor_cruiser_3:0 "110-мм пояс/80-мм палуба"
  FRA_ship_armor_cruiser_4:0 "140-мм пояс/85-мм палуба"
- 
  ITA_ship_light_battery_1:0 "S-A 102 мм/45"
  ITA_ship_light_battery_2:0 "OTO 120 мм/50"
  ITA_ship_light_battery_3:0 "Ансальдо 120 мм/50"
@@ -502,7 +496,6 @@
  ITA_carrier_ship_engine_2:0 "Беллуццо 120 000 л.с."
  ITA_carrier_ship_engine_3:0 "Беллуццо 151 000 л.с."
  ITA_carrier_ship_engine_4:0 "Беллуццо 200 000 л.с."
- 
  USA_ship_light_battery_1:0 "4-дюйм./50 Mk 9"
  USA_ship_light_battery_2:0 "5-дюйм./38 Mk 12, Mk 21 (башн.)"
  USA_ship_light_battery_3:0 "5-дюйм./38 Mk 12, Mk 30 (башн.)"
@@ -573,7 +566,6 @@
  USA_carrier_ship_engine_2:0 "Вестингауз 120 000 л.с."
  USA_carrier_ship_engine_3:0 "Вестингауз 150 000 л.с."
  USA_carrier_ship_engine_4:0 "Вестингауз 212 000 л.с."
- 
  JAP_ship_light_battery_1:0 "12-см/45 тип 11-го года"
  JAP_ship_light_battery_2:0 "12-см/45 тип 3-го года"
  JAP_ship_light_battery_3:0 "10-см/65 тип 98"
@@ -648,7 +640,6 @@
  JAP_ship_armor_cruiser_3:0 "127-мм пояс/60-мм палуба"
  JAP_ship_armor_cruiser_4:0 "145-мм пояс/65-мм палуба"
  JAP_ship_armor_carrier_deck:0 "79-мм полетная палуба"
- 
  ENG_ship_armor_bb_1:0 "13-дюйм. пояс/3-дюйм. палуба"
  ENG_ship_armor_bc_1:0 "6-дюйм. пояс/2,5-дюйм. палуба"
  ENG_ship_armor_bb_2:0 "14,5-дюйм. пояс/5,5-дюйм. палуба"
@@ -666,7 +657,6 @@
  ITA_ship_armor_bc_2:0 "305-мм пояс/100-мм палуба"
  ITA_ship_armor_bb_3:0 "295-мм пояс/162-мм палуба"
  ITA_ship_armor_bc_3:0 "330-мм пояс/130-мм палуба"
- #ITA_ship_armor_cruiser_2:0 "24mm Belt/20mm Deck" "
  ITA_ship_armor_cruiser_1:0 "70-мм пояс/50-мм палуба"
  ITA_ship_armor_cruiser_2:0 "100-мм пояс/50-мм палуба"
  ITA_ship_armor_cruiser_3:0 "150-мм пояс/70-мм палуба"
@@ -681,7 +671,6 @@
  USA_ship_armor_cruiser_3:0 "5-дюйм. пояс/2,25-дюйм. палуба"
  USA_ship_armor_cruiser_4:0 "6-дюйм. пояс/3,75-дюйм. палуба"
  USA_ship_armor_carrier_deck:0 "3,5-дюйм. полетная палуба"
- 
  GER_ship_light_battery_1:0 "10,5-см/45 SK C/32"
  GER_ship_light_battery_2:0 "12,7-см/45 SK C/34"
  GER_ship_light_battery_3:0 "12,7-см/45 SK C/41"
@@ -751,7 +740,6 @@
  GER_ship_armor_cruiser_2:0 "80-мм пояс/60-мм палуба"
  GER_ship_armor_cruiser_3:0 "100-мм пояс/88-мм палуба"
  GER_ship_armor_cruiser_4:0 "150-мм пояс/90-мм палуба"
- 
  SOV_ship_light_battery_1:0 "102-мм орудие Обуховского завода"
  SOV_ship_light_battery_2:0 "130-мм орудие Б-13 обр. 1935 г."
  SOV_ship_light_battery_3:0 "130-мм орудие Б-13 (дист.)"
@@ -822,7 +810,6 @@
  SOV_ship_armor_cruiser_3:0 "70-мм пояс/50-мм палуба"
  SOV_ship_armor_cruiser_4:0 "100-мм пояс/50-мм палуба"
  SOV_ship_armor_carrier_deck:0 "50-мм полетная палуба"
- 
  ARG_ship_light_battery_1:0 "120-мм/45 Виккерс Mk E"
  ARG_ship_light_battery_2:0 "120-мм/45 QF Mk IX"
  ARG_ship_heavy_battery_1:0 "30,5-см/50 Бетлехем"
@@ -850,7 +837,6 @@
  ARG_heavy_ship_engine_1:0 "Кёртис 39 500 л.с."
  ARG_ship_armor_bb_1:0 "280-мм пояс/76-мм палуба"
  ARG_ship_armor_cruiser_1:0 "70-мм пояс/25-мм палуба"
- 
  BRA_ship_light_battery_1:0 "102-мм/40 QF Mk. IV"
  BRA_ship_light_battery_2:0 "127-мм/38 Mk 12"
  BRA_ship_light_battery_3:0 "127-мм/38 Mk 12 (дист.)"
@@ -874,7 +860,6 @@
  BRA_heavy_ship_engine_1:0 "Виккерс 30 000 л.с."
  BRA_ship_armor_bb_1:0 "229-мм пояс/51-мм палуба"
  BRA_ship_armor_cruiser_1:0 "31-мм пояс/19-мм палуба"
- 
  CHI_ship_light_battery_1:0 "100-мм/44 Шнайдер-Кане M1898"
  CHI_ship_light_medium_battery_1:0 "14,9-см/37 SK L/40 C/97"
  CHI_ship_light_medium_battery_2:0 "14-см/50 тип 3-го года"
@@ -885,7 +870,6 @@
  CHI_ship_secondaries_1:0 "120-мм/45 Армстронг тип Y"
  CHI_ship_torpedo_1:0 "2-труб. 356-мм ТА"
  CHI_ship_armor_cruiser_1:0 "76-мм пояс/25-мм палуба"
- 
  CHL_ship_light_battery_1:0 "120-мм/45 QF Виккерс E"
  CHL_ship_heavy_battery_1:0 "35,6-см/45 Армстронг тип A"
  CHL_ship_heavy_battery_2:0 "35,6-см/50 орудие"
@@ -910,7 +894,6 @@
  CHL_sub_ship_engine_4:0 "Двигатель 5 000 л.с."
  CHL_heavy_ship_engine_1:0 "Браун-Кёртис 37 000 л.с."
  CHL_ship_armor_bb_1:0 "229-мм пояс/37-мм палуба"
- 
  DEN_ship_heavy_battery_1:0 "24-см/42 K/43 M1906"
  DEN_ship_light_medium_battery_1:0 "14,9-см/45 PK L/45"
  DEN_ship_secondaries_1:0 "150-мм/49 L/50 M.06"
@@ -919,13 +902,11 @@
  DEN_ship_anti_air_2:0 "20-мм/60 RK Мадсен M41"
  DEN_sub_ship_engine_1:0 "Бурмейстер и Вайн 900 л.с."
  DEN_sub_ship_engine_2:0 "Бурмейстер и Вайн 1 200 л.с."
- 
  EST_ship_torpedo_sub_1:0 "4-труб. 533-мм ТА"
  EST_ship_torpedo_sub_2:0 "6-труб. 533-мм ТА"
  EST_ship_torpedo_sub_3:0 "6-труб. 533-мм ТА (поршн.)"
  EST_ship_torpedo_sub_4:0 "6-труб. 533-мм ТА (автом.)"
  EST_sub_ship_engine_1:0 "Виккерс 1 000 л.с."
- 
  FIN_ship_light_battery_1:0 "102-мм пушка Обуховского завода"
  FIN_ship_heavy_battery_1:0 "25,4-см/45 Бофорс"
  FIN_ship_secondaries_1:0 "105-мм/50 Бофорс M1932"
@@ -937,7 +918,6 @@
  FIN_ship_anti_air_2:0 "25-мм установка ПВО"
  FIN_sub_ship_engine_1:0 "Атлас 1 160 л.с."
  FIN_ship_armor_cruiser_1:0 "55-мм пояс/20-мм палуба"
- 
  GRE_ship_light_battery_1:0 "102-мм/50 Армстронг тип Р"
  GRE_ship_light_battery_2:0 "128-мм/42 SK C/34"
  GRE_ship_light_medium_battery_1:0 "15,2-см/45 Армстронг тип NN"
@@ -962,7 +942,6 @@
  GRE_sub_ship_engine_1:0 "Зульцер 1 420 л.с."
  GRE_ship_armor_cruiser_1:0 "51-мм пояс/25-мм палуба"
  GRE_ship_armor_cruiser_2:0 "100-мм пояс/50-мм палуба"
- 
  HOL_ship_light_battery_1:0 "120-мм/50 Вест.-Фий. тип 5"
  HOL_ship_light_battery_2:0 "120-мм/50 Вест.-Фий. тип 8"
  HOL_ship_light_battery_3:0 "120-мм/50 Вест.-Фий. тип 10"
@@ -999,13 +978,11 @@
  HOL_ship_armor_bc_1:0 "225-мм пояс/100-мм палуба"
  HOL_ship_armor_bc_2:0 "305-мм пояс/110-мм палуба"
  HOL_ship_armor_cruiser_1:0 "50-мм пояс/30-мм палуба"
- 
  LAT_ship_torpedo_sub_1:0 "6-труб. 450-мм ТА"
  LAT_ship_torpedo_sub_2:0 "4-труб. 533-мм ТА"
  LAT_ship_torpedo_sub_3:0 "6-труб. 533-мм ТА"
  LAT_ship_torpedo_sub_4:0 "6-труб. 533-мм ТА (автом.)"
  LAT_sub_ship_engine_1:0 "Зульцер 1 300 л.с."
- 
  NOR_ship_light_battery_1:0 "76-мм/40 Армстронг-EOC"
  NOR_ship_light_battery_2:0 "120-мм/44 Бофорс"
  NOR_ship_medium_battery_1:0 "20,9-см/44 EOC 1899"
@@ -1022,7 +999,6 @@
  NOR_ship_torpedo_sub_2:0 "4-труб. 450-мм ТА"
  NOR_light_ship_engine_1:0 "Делаваль 30 000 л.с."
  NOR_sub_ship_engine_1:0 "Зульцер 900 л.с."
- 
  POL_ship_light_battery_1:0 "130-мм/40 мод. 1924"
  POL_ship_light_battery_2:0 "120-мм/50 Бофорс M34/36"
  POL_ship_torpedo_1:0 "3-труб. 533-мм ТА"
@@ -1044,7 +1020,6 @@
  POL_sub_ship_engine_2:0 "Зульцер 4 740 л.с."
  POL_sub_ship_engine_3:0 "Зульцер 5 400 л.с."
  POL_sub_ship_engine_4:0 "Двигатель 6 500 л.с."
- 
  POR_ship_light_battery_1:0 "100-мм/41 Армстронг тип N"
  POR_ship_light_battery_2:0 "120-мм/50 Виккерс G"
  POR_ship_torpedo_1:0 "2-труб. 450-мм ТА"
@@ -1062,7 +1037,6 @@
  POR_sub_ship_engine_1:0 "Виккерс 2 300 л.с."
  POR_sub_ship_engine_2:0 "Двигатель 2 800 л.с."
  POR_sub_ship_engine_3:0 "Двигатель 3 500 л.с."
- 
  PRU_ship_light_battery_1:0 "102-мм пушка Обуховского завода"
  PRU_ship_light_medium_battery_1:0 "15,2-см/50 Виккерс J"
  PRU_ship_light_medium_battery_2:0 "15,5-см/50 орудие"
@@ -1078,7 +1052,6 @@
  PRU_light_ship_engine_1:0 "Браун-Бовери 32 700 л.с."
  PRU_sub_ship_engine_1:0 "NELSECO 800 л.с."
  PRU_ship_armor_cruiser_1:0 "38-мм пояс/38-мм палуба"
- 
  ROM_ship_light_battery_1:0 "120-мм/45 SCA M1918-19"
  ROM_ship_light_battery_2:0 "120-мм/50 Бофорс Mk 4"
  ROM_ship_torpedo_1:0 "2-труб. 450-мм ТА"
@@ -1094,7 +1067,6 @@
  ROM_light_ship_engine_3:0 "Двигатель 57 000 л.с."
  ROM_light_ship_engine_4:0 "Двигатель 60 000 л.с."
  ROM_sub_ship_engine_1:0 "Зульцер 800 л.с."
- 
  SIA_ship_light_battery_1:0 "102-мм/40 QF Mk IV"
  SIA_ship_medium_battery_2:0 "20-см/50 тип 3-го года №2"
  SIA_ship_medium_battery_3:0 "20,3-см/50 орудие (дист.)"
@@ -1110,7 +1082,6 @@
  SIA_ship_torpedo_sub_4:0 "6-труб. 533-мм ТА (автом.)"
  SIA_light_ship_engine_1:0 "Браун-Кёртис 27 000 л.с."
  SIA_ship_armor_cruiser_1:0 "63-мм пояс/38-мм палуба"
- 
  SPR_ship_light_battery_1:0 "102-мм/45 Виккерс Mk L"
  SPR_ship_light_battery_2:0 "120-мм/45 Виккерс Mk F"
  SPR_ship_heavy_battery_1:0 "15,2-см/50 Виккерс H"
@@ -1147,7 +1118,6 @@
  SPR_ship_armor_bb_1:0 "230-мм пояс/40-мм палуба"
  SPR_ship_armor_cruiser_1:0 "50-мм пояс/38-мм палуба"
  SPR_ship_armor_cruiser_2:0 "102-мм пояс/37-мм палуба"
- 
  SWE_ship_light_battery_1:0 "12-см/45 Бофорс M24"
  SWE_ship_light_battery_2:0 "12-см/45 Бофорс M24C"
  SWE_ship_light_battery_3:0 "12-см/50 Бофорс M36"
@@ -1195,7 +1165,6 @@
  SWE_ship_armor_bb_1:0 "200-мм пояс/45-мм палуба"
  SWE_ship_armor_cruiser_1:0 "24-мм пояс/25-мм палуба"
  SWE_ship_armor_cruiser_2:0 "70-мм пояс/30-мм палуба"
- 
  TUR_ship_light_battery_1:0 "105-мм/37 SK L/40 C/97"
  TUR_ship_light_battery_2:0 "120-мм/50 Ансальдо 1926"
  TUR_ship_heavy_battery_1:0 "28-см/50 SK L/50"
@@ -1221,11 +1190,9 @@
  TUR_heavy_ship_engine_1:0 "Парсонс 52 000 л.с."
  TUR_ship_armor_bc_1:0 "270-мм пояс/50-мм палуба"
  TUR_ship_armor_cruiser_1:0 "70-мм пояс/38-мм палуба"
- 
  URG_ship_light_battery_1:0 "120-мм/45 Крупп"
  URG_ship_light_battery_2:0 "120-мм/50 орудие"
  URG_ship_torpedo_1:0 "2-труб. 450-мм ТА"
- 
  YUG_ship_light_battery_1:0 "120-мм/46 Шкода"
  YUG_ship_light_battery_2:0 "120-мм/56 Шкода"
  YUG_ship_secondaries_1:0 "83-мм/52 Шкода"

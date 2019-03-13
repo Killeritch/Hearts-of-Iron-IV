@@ -106,4 +106,15 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+	}
+}	
+
+create_country_leader = {
+	name = "Habib Bourguiba"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = centrism
+	traits = {
+		#
+	}
 }

@@ -1,8 +1,8 @@
 ﻿l_russian:
  DECISIONVIEW_TITLE:0 "События и решения"
  DECISIONSVIEW_EVENT_HEADER:0 "События"
- POPUP_NEWS:0 "Всплывающие новости"
- POPUP_EVENTS:0 "Всплывающие события"
+ POPUP_NEWS:0 "Новости"
+ POPUP_EVENTS:0 "События"
  CATEGORY_COLLAPSE_DESC:0 "§GЩелкните§!, чтобы свернуть"
  CATEGORY_EXPAND_DESC:0 "§GЩелкните§!, чтобы развернуть"
  DECISION_KEEP_NOTIFIED:0 "§HОповещения§!\n\n§GЩелкните§!, чтобы §Rне получать оповещения§! о том, когда можно принять решение.\n"

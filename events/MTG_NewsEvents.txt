@@ -134,8 +134,9 @@ news_event = {
 		name = mtg_news.3.d
 		trigger = { 
 			NOT = { original_tag = USA }
+			NOT = { original_tag = BEL }
 			NOT = { has_idea = HOL_aloof_neutrality }
-			Or = {
+			OR = {
 				has_government = democratic
 				has_government = neutrality
 			}
@@ -145,6 +146,12 @@ news_event = {
 		name = mtg_news.3.e
 		trigger = { 
 			has_idea = HOL_aloof_neutrality
+		}
+	}
+	option = {
+		name = mtg_news.3.f
+		trigger = { 
+			original_tag = BEL
 		}
 	}
 }

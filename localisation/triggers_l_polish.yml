@@ -563,3 +563,7 @@
  TRIGGER_HAS_NOT_WEATHER:0 "Pogoda to nie: $WEATHER|H$"
  TRIGGER_HAS_ANY_WEATHER:0 "Dowolna pogoda z:"
  TRIGGER_HAS_NONE_OF_WEATHER:0 "Pogoda to nie:"
+ TRIGGER_NAVAL_CONVOY_DANGER_LESS_THAN:0 "Konwój Zagrożenie mniejsze niż $VALUE|H0%$"
+ TRIGGER_NAVAL_CONVOY_DANGER_MORE_THAN:0 "Zagrożenie konwojem więcej niż $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_LESS_THAN:0 "Moje zagrożenie mniejsze niż $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_MORE_THAN:0 "Moje zagrożenie więcej niż $VALUE|H0%$"

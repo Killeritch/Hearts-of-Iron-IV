@@ -764,3 +764,7 @@
  ENG_fortify_the_empire:0 "Fortification de l'Empire"
  mtg_usa_civil_war_warning_tt:0 "§RCela va rapprocher le pays d'une guerre civile.§!\n"
  fascists_uprising_tt:0 "Les éléments fascistes de la population commenceront les préparatifs d'un soulèvement."
+ ENG_decolonized:0 "[ENG.GetName] Décolonisée"
+ USA_intervention_mandate_tt:0 "§YMandats d'intervention§! Permettez-nous de demander au Congrès d’autoriser une action militaire contre un autre pays."
+ USA_honor_the_confederacy_tt:0 "Ces décisions nous permettent de rétablir la confiance des citoyens dans le gouvernement en cas de guerre civile en renouant avec le passé."
+ USA_foreign_support_tt:0 "Ces décisions nous permettent de contacter les principaux pays pour faire pression pour obtenir un soutien matériel."

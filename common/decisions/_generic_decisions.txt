@@ -1395,7 +1395,10 @@ war_measures = {
         cost = 100
         days_remove = -1
         remove_trigger = {
-            has_war = no
+        	OR = {
+            	has_war = no
+            	not = { has_idea = tot_economic_mobilisation }
+            }
         }
         modifier = {
             conscription = 0.03

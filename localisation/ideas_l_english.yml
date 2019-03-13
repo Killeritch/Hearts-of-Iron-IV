@@ -1660,7 +1660,7 @@
  LUX_nicolas_de_dixmude:0 "Nicolas de Dixmude"
  LUX_florent_destriveaux:0 "Florent Destriveaux"
  ALB_generic_fascist_demagogue:0 "Mustafa Merlika-Kruja"
- ALB_generic_democratic_reformer:0 "Enver Hoxha"
+ ALB_generic_democratic_reformer:0 "Xhafer Bej Ypi"
  ALB_generic_communist_revolutionary:0 "Mehmet Shehu"
  ALB_midhat_frasheri:0 "Midhat Frashëri"
  ALB_jocelyn_percy:0 "Jocelyn Percy"
@@ -2584,4 +2584,8 @@
  MTG_naval_treaty_adherent_reduced:0 "Escalator Clause Invoked"
  MTG_naval_treaty_adherent_reduced_desc:0 "After some signatories of the Washington Naval Treaty have abandoned the London Naval Treaty, we have invoked the Escalator Clause, reducing the restrictions for the size and armament of our capital ships."
  GER_air_safety_regulations:0 "Air Safety Regulations"
-
+ GER_hans_oster:0 "Hans Oster"
+ GER_alfred_hugenberg:0 "Alfred Hugenberg"
+ GER_carl_friedrich_goerdeler:0 "Carl Friedrich Goerdeler"
+ GER_julius_leber:0 "Julius Leber"
+ GER_theodor_heuss:0 "Theodor Heuss"

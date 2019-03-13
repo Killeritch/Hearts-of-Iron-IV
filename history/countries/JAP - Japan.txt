@@ -85,6 +85,7 @@ if = {
 		basic_secondary_battery = 1
 		basic_depth_charges = 1
 		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
 	}
 	set_naval_oob = "JAP_1936_naval"
 }
@@ -229,7 +230,6 @@ create_import = {
 			improved_ship_hull_cruiser = 1
 			improved_ship_hull_carrier = 1
 			ship_hull_super_heavy = 1
-			cruiser_submarines = 1
 		}
 		set_naval_oob = "JAP_1939_naval"
 	}

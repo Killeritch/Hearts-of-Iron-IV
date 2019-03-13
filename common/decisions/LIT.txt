@@ -16,11 +16,14 @@ political_actions = {
 			original_tag = LIT
 			has_full_control_of_state = 784
 		}
-
+		fire_only_once = yes
 		complete_effect = {
+			add_stability = 0.1
 			set_capital = 784
-			784 = { set_state_name = "Vilnius" }
 			set_province_name = { id = 3320 name = "Vilnius" }
+			hidden_effect = { 
+				784 = { set_state_name = "Vilnius" }
+			}
 		}
 	}
 }

@@ -558,3 +558,7 @@
  TRIGGER_HAS_NOT_WEATHER:0 "El clima no es $WEATHER|H$"
  TRIGGER_HAS_ANY_WEATHER:0 "El clima es cualquiera de:"
  TRIGGER_HAS_NONE_OF_WEATHER:0 "El clima no es ninguno de:"
+ TRIGGER_NAVAL_CONVOY_DANGER_LESS_THAN:0 "Amenaza de convoy menos de $VALUE|H0%$"
+ TRIGGER_NAVAL_CONVOY_DANGER_MORE_THAN:0 "Amenaza de convoy mas de $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_LESS_THAN:0 "Mina amenaza menos de $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_MORE_THAN:0 "Mina amenaza más que $VALUE|H0%$"

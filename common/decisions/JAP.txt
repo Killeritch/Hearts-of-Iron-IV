@@ -847,10 +847,10 @@ JAP_southern_expansion = {
 
 		available = {
 			16 = { NOT = { is_controlled_by = FRA } }
+			NOT = { has_war_with = FRA }
+			NOT = { is_in_faction_with = FRA }
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
-				NOT = { has_war_with = FRA }
-				NOT = { is_in_faction_with = FRA }
 				OR = {
 					286 = { is_fully_controlled_by = FRA }
 					670 = { is_fully_controlled_by = FRA }
@@ -1341,6 +1341,8 @@ operations = {
 				has_war_with = FRA
 			}
 		}
+
+		is_good = no
 	
 		fire_only_once = yes
 	

@@ -91,6 +91,73 @@ on_actions = {
 				set_country_flag = { flag = won_british_civil_war value = 1 days = 365 }
 				country_event = { id = mtg_britain.34 }
 			}
+			#End of British Fascist Civil War - Democrats won
+			if = {
+				limit = {
+					original_tag = ENG
+					has_government = democratic
+					FROM = {
+						has_government = fascism
+						has_completed_focus = ENG_organize_the_blackshirts
+					}
+				}
+				delete_unit_template_and_units = { division_template = "Loyalist Brigade" }
+				load_focus_tree = { tree = british_focus keep_completed = no }
+				unlock_national_focus = ENG_steady_as_she_goes
+				unlock_national_focus = limited_rearmament_focus
+				unlock_national_focus = shadow_scheme_focus
+				unlock_national_focus = uk_industrial_focus
+				unlock_national_focus = royal_ordnance_factories
+				if = {
+					limit = {
+						amount_research_slots > 4
+					}
+					unlock_national_focus = uk_extra_tech_slot
+				}
+			}
+			# Give back ENG focus tree to Communist ENG if they win a civil war.
+			if = {
+				limit = {
+					original_tag = ENG
+					has_government = communism
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = ENG
+						has_government = communism
+					}
+				}
+				load_focus_tree = { tree = british_focus keep_completed = yes }
+			}
+			# Give back MEX focus tree to rebel MEX if they win a civil war.
+			if = {
+				limit = {
+					original_tag = MEX
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = MEX
+					}
+				}
+				load_focus_tree = { tree = mexico_focus_tree keep_completed = yes }
+			}
+			# Give back USA focus tree to CSA if they win a civil war.
+			if = {
+				limit = {
+					original_tag = USA
+					has_government = democratic
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = USA
+						OR = {
+							has_government = neutrality
+							has_government = fascism
+						}
+					}
+				}
+				load_focus_tree = { tree = usa_focus keep_completed = no }
+				unlock_national_focus = USA_continue_the_new_deal
+				unlock_national_focus = USA_neutrality_act
+				set_country_flag = democratic_usa_won_civil_war
+			}
 			#End of British Communist Civil War
 			if = {
 				limit = {
@@ -115,6 +182,8 @@ on_actions = {
 				}
 				ENG = { country_event = { id = mtg_britain.113 hours = 6 } }
 			}
+			# Cleaning up anti-exploiter divisions
+			delete_unit_template_and_units = { division_template = "Anti-Exploit Punitive Brigade" }
 		}
 	}
 
@@ -617,6 +686,18 @@ on_actions = {
 					transfer_state = 729
 					transfer_state = 326
 				}
+				JAP = {
+					set_autonomy = { target = MAN autonomy_state = autonomy_free }
+					set_autonomy = { target = MEN autonomy_state = autonomy_free }
+					release = KOR
+				}
+				MAN = {
+					transfer_state = 745
+				}
+				CHI = {
+					transfer_state = 609
+					transfer_state = 524
+				}
 			}
 			# Game Rules - Fragmentation
 			if = {
@@ -753,6 +834,18 @@ on_actions = {
 				}
 				remove_ideas = HOL_german_defectors_2
 			}
+			# USA 'civil war' ends
+			if = {
+				limit = {
+					tag = CSA
+					FROM = { original_tag = USA }
+				}
+				load_focus_tree = { tree = usa_focus keep_completed = no }
+				unlock_national_focus = USA_reestablish_the_gold_standard
+				complete_national_focus = USA_america_first
+				unlock_national_focus = USA_ally_with_the_silver_shirts
+				unlock_national_focus = USA_invite_foreign_support
+			}
 		}
 	}
 
@@ -777,6 +870,14 @@ on_actions = {
 				}
 				country_event = { id = mtg_netherlands.73 }
 			}
+			if = {
+				limit = {
+					FROM.FROM = { is_core_of = HOL }
+				}
+				FROM = {
+					set_country_flag = HOL_lost_starting_state
+				}
+			}
 		}
 	}
 
@@ -791,19 +892,11 @@ on_actions = {
 				}
 				set_country_flag = achievement_team_america
 			}
-			if = {
-				limit = {
-					FROM.FROM = { is_core_of = HOL }
-				}
-				FROM = {
-					set_country_flag = HOL_lost_starting_state
-				}
-			}
 		}
 	}
 
 	# FROM is the sinker, ROOT is the owner of the ship being sunk
-	on_sunk_pride = {
+	on_pride_of_the_fleet_sunk = {
 		effect = {
 			if = {
 				limit = {
@@ -828,6 +921,36 @@ on_actions = {
 						generator = { 7 }
 					}
 				}
+			}
+		}
+	}
+
+	# ROOT is the new faction leader FROM is the old faction leader
+	on_assume_faction_leadership = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							tag = ENG
+							tag = SOV
+						}
+					}
+					NOT = {
+						OR = {
+							tag = USA
+							tag = ENG
+							tag = GER
+							tag = ITA
+							tag = FRA
+							tag = SOV
+							tag = JAP
+							tag = CHI
+						}
+					}
+				}
+				set_country_flag = assuming_direct_control_achievement_flag
 			}
 		}
 	}

@@ -14,6 +14,7 @@ ideas = {
 				consumer_goods_factor = 0.50
 				production_speed_industrial_complex_factor = -0.5
 				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -22,12 +23,14 @@ ideas = {
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.75
 				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
 			}
 			
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.5
 					has_war = yes
+					has_completed_focus = USA_limited_intervention
 				}
 			}
 			
@@ -47,6 +50,7 @@ ideas = {
 				consumer_goods_factor = 0.4
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
+				production_speed_dockyard_factor = -0.4
 				conversion_cost_civ_to_mil_factor= 0.4
 				conversion_cost_mil_to_civ_factor = 0.4
 				generate_wargoal_tension = 1.00
@@ -54,11 +58,13 @@ ideas = {
 				send_volunteers_tension = 0.20
 				guarantee_tension = 0.5
 				max_fuel_factor = -0.35
+				fuel_gain_factor = -0.5
 			}
 			allowed_to_remove = {
 				OR = {
 					has_war_support > 0.75
-					has_war = yes					
+					has_war = yes
+					has_completed_focus = USA_limited_intervention					
 				}
 			}
 			
@@ -78,6 +84,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
 				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
 			}
 			
 			default = yes
@@ -123,6 +130,7 @@ ideas = {
 				consumer_goods_factor = 0.3
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = -0.1
+				fuel_gain_factor = -0.25
 			}
 			
 			cancel_if_invalid = no
@@ -171,6 +179,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
 				conversion_cost_mil_to_civ_factor = -0.1
+				fuel_gain_factor = -0.1
 			}
 			
 			cancel_if_invalid = no

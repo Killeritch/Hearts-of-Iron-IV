@@ -162,14 +162,12 @@
  ALERT_RIGHTCLICK_DISMISS_CURRENT_COMBATS:0 "§GЩелкните правой кнопкой, чтобы прекратить текущие бои§!"
  ALERT_LEFTCLICK_TOGGLE_COMBATS:0 "§GЩелкните, чтобы переключиться между боями§!"
  ALERT_NAVAL_COMBAT_INFO:0 "Морские сражения с участием флотов, помеченные как важные: $NUM|H$."
- ALERT_NAVAL_COMBAT_INFO_REGION:0 ".Морские сражения в этом регионе: $NUM|H$."
+ ALERT_NAVAL_COMBAT_INFO_REGION:0 "Морские сражения в этом регионе: $NUM|H$."
  ALERT_PRIORITY:0 "§HПриоритет готовности флота:§! $TYPE$"
  ALERT_PRIORITY_NORMAL:0 "Обычный"
  ALERT_PRIORITY_HIGH:0 "§GВысокий§!"
  ALERT_PRIORITY_DETAILS:0 "Уведомления флотов с высокой степенью боеготовности будут появляться наравне с общими уведомлениями."
- 
  ALERT_RIGHTCLICK_DISMISS_CURRENT_SPOTTERS:0 "§GЩелкните правой кнопкой, чтобы прекратить обнаружения§!"
  ALERT_LEFTCLICK_TOGGLE_SPOTTER:0 "§GЩелкните, чтобы переключиться между обнаружениями§!"
  ALERT_SPOTTER_INFO:0 "Новые обнаружения флотами в регионах, отмеченные как важные: $NUM|H$."
  ALERT_SPOTTER_INFO_REGION:0 "Новые обнаружения в этом регионе: $NUM|H$."
- 

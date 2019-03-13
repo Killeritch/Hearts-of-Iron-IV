@@ -551,6 +551,7 @@ USA_congress = {
 					is_claimed_by = ROOT
 				}
 				set_state_flag = USA_state_admit
+				custom_effect_tooltip = USA_readmit_state_tt
 			}
 		}
 		remove_effect = {

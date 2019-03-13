@@ -67,3 +67,4 @@
 # ALLIES_CALLED:0 "§RNous avons déjà appelé tous nos alliés§!"
 # WARSCORE_CONTROLLED:0 "Contrôle $COUNT|Y$ $MAX|Y$ États ennemis dans cette guerre"
 # WARSCORE_LOSSES:0 "Compte $VALUE|%Y$ des victimes totales du camp. "
+ CAN_SURRENDER_SUBJECT:0 "Ils se battent actuellement avec leur suzerain et ne se rendront que lorsque ce suzerain aura capitulé.\nSuzerain: $OVERLORD|Y$"

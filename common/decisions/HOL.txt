@@ -516,8 +516,14 @@ HOL_war_on_pacifism = {
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_3
-					has_idea = HOL_shell_shocked_spectator_4
+				}				
+				hidden_trigger = {
+					has_idea = HOL_shell_shocked_spectator_4 
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_5
 				}
 			}
@@ -552,8 +558,8 @@ HOL_war_on_pacifism = {
 		complete_effect = {
 			set_country_flag = hol_war_on_pacifism_in_progress
 		}
-
 	}
+
 
 	HOL_establish_pro_war_labor_indoctrination = {
 
@@ -570,8 +576,14 @@ HOL_war_on_pacifism = {
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_3
-					has_idea = HOL_shell_shocked_spectator_4
+				}				
+				hidden_trigger = {
+					has_idea = HOL_shell_shocked_spectator_4 
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_5
 				}
 			}
@@ -625,8 +637,14 @@ HOL_war_on_pacifism = {
 				has_idea = HOL_shell_shocked_spectator_1
 				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_2
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_3
-					has_idea = HOL_shell_shocked_spectator_4
+				}				
+				hidden_trigger = {
+					has_idea = HOL_shell_shocked_spectator_4 
+				}
+				hidden_trigger = {
 					has_idea = HOL_shell_shocked_spectator_5
 				}
 			}

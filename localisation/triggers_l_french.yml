@@ -568,3 +568,7 @@
 # TRIGGER_HAS_NOT_OFFENSIVE_WAR_WITH:0 "En paix avec @$TAG$§Y$COUNTRY$§!"
 # TRIGGER_HAS_IDEOLOGY:0 "Le partie au pouvoir adhère à l'idéologie $IDEOLOGY|H$."
 # TRIGGER_HAS_NOT_IDEOLOGY:0 "Le partie au pouvoir n'adhère pas à l'idéologie $IDEOLOGY|H$."
+ TRIGGER_NAVAL_CONVOY_DANGER_LESS_THAN:0 "Convoi Menace inférieure à $VALUE|H0%$"
+ TRIGGER_NAVAL_CONVOY_DANGER_MORE_THAN:0 "Convoi Menace plus que $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_LESS_THAN:0 "Menace minière inférieure à $VALUE|H0%$"
+ TRIGGER_NAVAL_MINE_DANGER_MORE_THAN:0 "Mine menace plus que $VALUE|H0%$"

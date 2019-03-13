@@ -786,3 +786,7 @@
  HOL_expand_the_amsterdam_petroleum_harbor:0 "Rozbudowa portu naftowego w Amsterdamie"
  HOL_expand_the_amsterdam_petroleum_harbor_desc:0 "Powiększenie naszej marynarki wojennej wymaga porównywalnej rozbudowy naszych magazynów paliwa. W przeciwnym razie zostaniemy z okrętami, których nie możemy używać. Port naftowy w Amsterdamie już jest centrum importu paliwa. Zamierzamy zwiększyć pojemność jego magazynów."
  fascists_uprising_tt:0 "Faszystowskie elementy w populacji rozpoczną przygotowania do powstania."
+ ENG_decolonized:0 "[ENG.GetName] zdekolonizowany"
+ USA_intervention_mandate_tt:0 "§YMandaty interwencyjne§! pozwól nam poprosić Kongres o autoryzowanie akcji wojennej przeciwko innemu krajowi."
+ USA_honor_the_confederacy_tt:0 "Decyzje te pozwalają nam odbudować zaufanie ludzi do rządu w przypadku wojny domowej poprzez ponowne połączenie z przeszłością."
+ USA_foreign_support_tt:0 "Decyzje te pozwalają nam zwracać się do dużych krajów, aby lobbować za pomocą materialną."

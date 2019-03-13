@@ -370,6 +370,16 @@ MTG_naval_treaties = {
 				}
 				factor = 0
 			}
+			modifier = {
+				is_historical_focus_on = yes
+				FROM = {
+					OR = {
+						tag = JAP
+						tag = ITA
+					}
+				}
+				factor = 0
+			}
 		}
 	
 		visible = {

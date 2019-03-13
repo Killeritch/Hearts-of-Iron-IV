@@ -880,3 +880,107 @@ ENG_COL_01 =
 		595 = { "15th King's Arms Rifles" }
 	}
 }
+
+ENG_DEM_01 = 
+{
+	name = "Loyalist Brigade"
+
+	for_countries = { ENG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ENG_INF_01 }
+
+	fallback_name = "%d Loyalist Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Loyalist Brigade" }
+		2 = { "%dnd Loyalist Brigade" }
+		3 = { "%drd Loyalist Brigade" }
+		4 = { "%dth Loyalist Brigade" }
+		5 = { "%dth Loyalist Brigade" }
+		6 = { "%dst Loyalist Brigade" }
+		7 = { "%dnd Loyalist Brigade" }
+		8 = { "%drd Loyalist Brigade" }
+		9 = { "%dth Loyalist Brigade" }
+		10 = { "%dth Loyalist Brigade" }
+		11 = { "%dst Loyalist Brigade" }
+		12 = { "%dnd Loyalist Brigade" }
+		13 = { "%drd Loyalist Brigade" }
+		14 = { "%dth Loyalist Brigade" }
+		15 = { "%dth Loyalist Brigade" }
+		16 = { "%dst Loyalist Brigade" }
+		17 = { "%dnd Loyalist Brigade" }
+		18 = { "%drd Loyalist Brigade" }
+		19 = { "%dth Loyalist Brigade" }
+		20 = { "%dth Loyalist Brigade" }
+		21 = { "%dst Loyalist Brigade" }
+		22 = { "%dnd Loyalist Brigade" }
+		23 = { "%drd Loyalist Brigade" }
+		24 = { "%dth Loyalist Brigade" }
+		25 = { "%dth Loyalist Brigade" }
+		26 = { "%dst Loyalist Brigade" }
+		27 = { "%dnd Loyalist Brigade" }
+		28 = { "%drd Loyalist Brigade" }
+		29 = { "%dth Loyalist Brigade" }
+		30 = { "%dth Loyalist Brigade" }
+	}
+}
+
+ENG_FAS_01 = 
+{
+	name = "Blackshirt Brigade"
+
+	for_countries = { ENG }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { ENG_INF_01 }
+
+	fallback_name = "%d Blackshirt Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Blackshirt Brigade" }
+		2 = { "%dnd Blackshirt Brigade" }
+		3 = { "%drd Blackshirt Brigade" }
+		4 = { "%dth Blackshirt Brigade" }
+		5 = { "%dth Blackshirt Brigade" }
+		6 = { "%dst Blackshirt Brigade" }
+		7 = { "%dnd Blackshirt Brigade" }
+		8 = { "%drd Blackshirt Brigade" }
+		9 = { "%dth Blackshirt Brigade" }
+		10 = { "%dth Blackshirt Brigade" }
+		11 = { "%dst Blackshirt Brigade" }
+		12 = { "%dnd Blackshirt Brigade" }
+		13 = { "%drd Blackshirt Brigade" }
+		14 = { "%dth Blackshirt Brigade" }
+		15 = { "%dth Blackshirt Brigade" }
+		16 = { "%dst Blackshirt Brigade" }
+		17 = { "%dnd Blackshirt Brigade" }
+		18 = { "%drd Blackshirt Brigade" }
+		19 = { "%dth Blackshirt Brigade" }
+		20 = { "%dth Blackshirt Brigade" }
+		21 = { "%dst Blackshirt Brigade" }
+		22 = { "%dnd Blackshirt Brigade" }
+		23 = { "%drd Blackshirt Brigade" }
+		24 = { "%dth Blackshirt Brigade" }
+		25 = { "%dth Blackshirt Brigade" }
+		26 = { "%dst Blackshirt Brigade" }
+		27 = { "%dnd Blackshirt Brigade" }
+		28 = { "%drd Blackshirt Brigade" }
+		29 = { "%dth Blackshirt Brigade" }
+		30 = { "%dth Blackshirt Brigade" }
+	}
+}

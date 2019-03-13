@@ -2286,3 +2286,5 @@
  USA_great_depression_cooldown:0 "Uma nova legislação ainda está sendo escrita"
  USA_great_depression_cooldown_tt:0 "Após a lei ser aprovada, levará §Y230 dias§! até que a legislação de novos acordos seja escrita e esteja pronta para ser assinada.\n\n"
  USA_limited_intervention_tt:0 "\n\nAprovar esta lei §Rdificultará significativamente§! a mobilização de sua economia.\n\n"
+ GER_integrate_war_economies_tt3:0 "§R[HUN.GetName] deve aprovar o acordo para que os bônus entrem em vigor.§!"
+ GER_integrate_war_economies_tt4:0 "§R[ROM.GetName] deve aprovar o acordo para que os bônus entrem em vigor.§!"
