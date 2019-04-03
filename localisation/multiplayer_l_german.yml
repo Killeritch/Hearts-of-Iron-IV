@@ -144,4 +144,4 @@
  OOS_58:0 "Anzahl der verwendeten Konvois"
  OOS_59:0 "Anzahl der freien Konvois"
  OOS_60:0 "Armeestärke und -organisation"
- OOS_61:0 "Technologiestatus"
+ OOS_61:1 "Technologiestatus"

@@ -6,7 +6,6 @@ MEX_category_military_issues = {
 
 	allowed = {
 		has_dlc = "Man the Guns"
-		always = yes
 	}
 }
 
@@ -18,7 +17,6 @@ MEX_category_territorial_integration = {
 
 	allowed = {
 		has_dlc = "Man the Guns"
-		always = yes
 	}
 }
 
@@ -30,7 +28,6 @@ MEX_category_church_power = {
 
 	allowed = {
 		has_dlc = "Man the Guns"
-		always = yes
 	}
 }
 
@@ -42,7 +39,6 @@ MEX_category_hispanic_solidarity = {
 
 	allowed = {
 		has_dlc = "Man the Guns"
-		always = yes
 	}
 }
 

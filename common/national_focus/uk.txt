@@ -1923,6 +1923,7 @@ focus_tree = {
 				exists = yes
 				has_war = no
 				NOT = { is_in_faction_with = ENG }
+				is_subject = no
 			}
 			NOT = { has_government = communism }
 		} #SPA/SPR not in a faction
@@ -1946,7 +1947,7 @@ focus_tree = {
 						original_tag = SPR
 					}
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
 					every_other_country = {
 						limit = { 
@@ -1966,7 +1967,7 @@ focus_tree = {
 						original_tag = SPR
 					}
 					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 					country_event = { id = generic.1 }
 					every_other_country = {
 						limit = { 
@@ -1986,7 +1987,7 @@ focus_tree = {
 						original_tag = SPR
 					}
 					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_ideas = neutrality_influence
+					add_timed_idea = { idea = neutrality_influence days = 1095 }
 					country_event = { id = generic.1 }
 					every_other_country = {
 						limit = { 
@@ -2235,7 +2236,7 @@ focus_tree = {
 				limit = { has_government = democratic }
 				TUR = {
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
@@ -2250,7 +2251,7 @@ focus_tree = {
 				limit = { has_government = fascism }
 				TUR = {
 					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
@@ -2265,7 +2266,7 @@ focus_tree = {
 				limit = { has_government = neutrality }
 				TUR = {
 					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_ideas = neutrality_influence
+					add_timed_idea = { idea = neutrality_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
@@ -2290,6 +2291,7 @@ focus_tree = {
 				exists = yes
 				has_war = no
 				NOT = { is_in_faction_with = ENG }
+				is_subject = no
 			}
 			NOT = { has_government = communism }
 		} 
@@ -2303,7 +2305,7 @@ focus_tree = {
 				limit = { has_government = democratic }
 				GRE = {
 					add_opinion_modifier = { target = ENG modifier = democratic_leanings_good }
-					add_ideas = democratic_influence
+					add_timed_idea = { idea = democratic_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
@@ -2318,7 +2320,7 @@ focus_tree = {
 				limit = { has_government = fascism }
 				GRE = {
 					add_opinion_modifier = { target = ENG modifier = fascism_leanings_good }
-					add_ideas = fascist_influence
+					add_timed_idea = { idea = fascist_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
@@ -2333,7 +2335,7 @@ focus_tree = {
 				limit = { has_government = neutrality }
 				GRE = {
 					add_opinion_modifier = { target = ENG modifier = neutrality_leanings_good }
-					add_ideas = neutrality_influence
+					add_timed_idea = { idea = neutrality_influence days = 1095 }
 					country_event = { id = generic.1 }
 				}
 				every_other_country = {
@@ -2991,10 +2993,12 @@ focus_tree = {
 			if = {
 				limit = {
 					has_full_control_of_state = 299
+					has_full_control_of_state = 720
 				}
 				ARG = {
 					transfer_state = 299
 					299 = { add_core_of = ARG }
+					transfer_state = 720
 					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
 				}
 			}
@@ -3073,33 +3077,6 @@ focus_tree = {
 					puppet = MLT
 				}
 				hidden_effect = {
-					MLT = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 60
-								}
-						
-								fascism = {
-									popularity = 8
-								}
-								
-								communism = {
-									popularity = 15
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 27
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3128,33 +3105,6 @@ focus_tree = {
 					puppet = CYP
 				}
 				hidden_effect = {
-					CYP = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 60
-								}
-						
-								fascism = {
-									popularity = 8
-								}
-								
-								communism = {
-									popularity = 15
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 27
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3247,33 +3197,6 @@ focus_tree = {
 					puppet = SUD
 				}
 				hidden_effect = {
-					SUD = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3307,33 +3230,6 @@ focus_tree = {
 					}
 				}
 				hidden_effect = {
-					SOM = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = {
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3362,33 +3258,6 @@ focus_tree = {
 					puppet = UGA
 				}
 				hidden_effect = {
-					UGA = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 55
-								}
-						
-								fascism = {
-									popularity = 15
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 25
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3417,33 +3286,6 @@ focus_tree = {
 					puppet = KEN
 				}
 				hidden_effect = {
-					KEN = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3472,33 +3314,6 @@ focus_tree = {
 					puppet = TZN
 				}
 				hidden_effect = {
-					TZN = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3527,33 +3342,6 @@ focus_tree = {
 					puppet = ZAM
 				}
 				hidden_effect = {
-					ZAM = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 55
-								}
-						
-								fascism = {
-									popularity = 15
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 25
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3582,33 +3370,6 @@ focus_tree = {
 					puppet = MLW
 				}
 				hidden_effect = {
-					MLW = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3637,33 +3398,6 @@ focus_tree = {
 					puppet = ZIM
 				}
 				hidden_effect = {
-					ZIM = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3692,33 +3426,6 @@ focus_tree = {
 					puppet = BOT
 				}
 				hidden_effect = {
-					BOT = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3747,33 +3454,6 @@ focus_tree = {
 					puppet = NGA
 				}
 				hidden_effect = {
-					NGA = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3802,33 +3482,6 @@ focus_tree = {
 					puppet = GHA
 				}
 				hidden_effect = {
-					GHA = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3857,33 +3510,6 @@ focus_tree = {
 					puppet = SIE
 				}
 				hidden_effect = {
-					SIE = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 55
-								}
-						
-								fascism = {
-									popularity = 15
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 25
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -3912,33 +3538,6 @@ focus_tree = {
 					puppet = GAM
 				}
 				hidden_effect = {
-					GAM = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 55
-								}
-						
-								fascism = {
-									popularity = 15
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 25
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4021,33 +3620,6 @@ focus_tree = {
 					puppet = PAL
 				}
 				hidden_effect = {
-					PAL = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 40
-								}
-						
-								fascism = {
-									popularity = 30
-								}
-								
-								communism = {
-									popularity = 30
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 0
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4077,33 +3649,6 @@ focus_tree = {
 					puppet = ISR
 				}
 				hidden_effect = {
-					ISR = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 80
-								}
-						
-								fascism = {
-									popularity = 0
-								}
-								
-								communism = {
-									popularity = 20
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 0
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4132,33 +3677,6 @@ focus_tree = {
 					puppet = JOR
 				}
 				hidden_effect = {
-					JOR = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4192,33 +3710,6 @@ focus_tree = {
 					puppet = EGY
 				}
 				hidden_effect = {
-					EGY = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 25
-								}
-						
-								fascism = {
-									popularity = 20
-								}
-								
-								communism = {
-									popularity = 5
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 50
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4247,33 +3738,6 @@ focus_tree = {
 					puppet = KUW
 				}
 				hidden_effect = {
-					KUW = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4302,33 +3766,6 @@ focus_tree = {
 					puppet = QAT
 				}
 				hidden_effect = {
-					QAT = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 51
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 47
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4357,33 +3794,6 @@ focus_tree = {
 					puppet = UAE
 				}
 				hidden_effect = {
-					UAE = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 23
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 75
-								}
-							}
-							
-							ruling_party = neutrality
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = no
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4459,33 +3869,6 @@ focus_tree = {
 					puppet = BLZ
 				}
 				hidden_effect = {
-					BLZ = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4515,33 +3898,6 @@ focus_tree = {
 					puppet = BAH
 				}
 				hidden_effect = {
-					BAH = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4570,33 +3926,6 @@ focus_tree = {
 					puppet = JAM
 				}
 				hidden_effect = {
-					JAM = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4625,33 +3954,6 @@ focus_tree = {
 					puppet = TRI
 				}
 				hidden_effect = {
-					TRI = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4681,33 +3983,6 @@ focus_tree = {
 					puppet = BAS
 				}
 				hidden_effect = {
-					BAS = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4736,33 +4011,6 @@ focus_tree = {
 					puppet = GYA
 				}
 				hidden_effect = {
-					GYA = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4862,33 +4110,6 @@ focus_tree = {
 					puppet = SRL
 				}
 				hidden_effect = {
-					SRL = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4917,33 +4138,6 @@ focus_tree = {
 					puppet = MLD
 				}
 				hidden_effect = {
-					MLD = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 75
-								}
-						
-								fascism = {
-									popularity = 1
-								}
-								
-								communism = {
-									popularity = 1
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 23
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -4975,33 +4169,6 @@ focus_tree = {
 					puppet = FIJ
 				}
 				hidden_effect = {
-					FIJ = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 50
-								}
-						
-								fascism = {
-									popularity = 6
-								}
-								
-								communism = {
-									popularity = 6
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 38
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -5034,33 +4201,6 @@ focus_tree = {
 					puppet = BRM
 				}
 				hidden_effect = {
-					BRM = {
-						set_politics = {
-							parties = {
-								democratic = { 
-									popularity = 72
-								}
-						
-								fascism = {
-									popularity = 2
-								}
-								
-								communism = {
-									popularity = 14
-									#banned = no #default is no
-								}
-								
-								neutrality = { 
-									popularity = 12
-								}
-							}
-							
-							ruling_party = democratic
-							last_election = "1936.1.1"
-							election_frequency = 48
-							elections_allowed = yes
-						}
-					}
 					every_other_country = {
 						limit = {
 							has_war_with = ENG
@@ -5134,21 +4274,32 @@ focus_tree = {
 						NOT = { has_country_flag = ENG_remain_as_puppet }
 					}
 					ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_free } }
-					random = {
-						chance = 75
-						leave_faction = yes
-						remove_from_tech_sharing_group = commonwealth_research
-						set_country_flag = ENG_decolonization_left_faction
-						add_ai_strategy = {
-							type = alliance
-							id = "ENG"
-							value = -200
+					if = {
+						limit = {
+							NOT = { surrender_progress > 0.1 }
 						}
-						if = {
-							limit = {
-								original_tag = CAN
+						random = {
+							chance = 75
+							every_enemy_country = {
+								limit = {
+									has_war_with = PREV
+								}
+								white_peace = PREV
 							}
-							drop_cosmetic_tag = yes
+							leave_faction = yes
+							remove_from_tech_sharing_group = commonwealth_research
+							set_country_flag = ENG_decolonization_left_faction
+							add_ai_strategy = {
+								type = alliance
+								id = "ENG"
+								value = -200
+							}
+							if = {
+								limit = {
+									original_tag = CAN
+								}
+								drop_cosmetic_tag = yes
+							}
 						}
 					}
 				}
@@ -5164,15 +4315,26 @@ focus_tree = {
 						NOT = { has_country_flag = ENG_remain_as_puppet }
 					}
 					ROOT = { set_autonomy = { target = PREV autonomy_state = autonomy_free } }
-					random = {
-						chance = 75
-						leave_faction = yes
-						remove_from_tech_sharing_group = commonwealth_research
-						set_country_flag = ENG_decolonization_left_faction
-						add_ai_strategy = {
-							type = alliance
-							id = "ENG"
-							value = -200
+					if = {
+						limit = {
+							NOT = { surrender_progress > 0.1 }
+						}
+						random = {
+							chance = 75
+							every_enemy_country = {
+								limit = {
+									has_war_with = PREV
+								}
+								white_peace = PREV
+							}
+							leave_faction = yes
+							remove_from_tech_sharing_group = commonwealth_research
+							set_country_flag = ENG_decolonization_left_faction
+							add_ai_strategy = {
+								type = alliance
+								id = "ENG"
+								value = -200
+							}
 						}
 					}
 				}
@@ -5213,14 +4375,25 @@ focus_tree = {
 				ROOT = {
 					set_autonomy = { target = PREV autonomy_state = autonomy_free }
 				}
-				random = {
-					chance = 50
-					leave_faction = yes
-					set_country_flag = ENG_decolonization_left_faction
-					add_ai_strategy = {
-						type = alliance
-						id = "ENG"
-						value = -200
+				if = {
+					limit = {
+						NOT = { surrender_progress > 0.1 }
+					}
+					random = {
+						chance = 50
+						every_enemy_country = {
+							limit = {
+								has_war_with = PREV
+							}
+							white_peace = PREV
+						}
+						leave_faction = yes
+						set_country_flag = ENG_decolonization_left_faction
+						add_ai_strategy = {
+							type = alliance
+							id = "ENG"
+							value = -200
+						}
 					}
 				}
 			}
@@ -5247,14 +4420,25 @@ focus_tree = {
 				ROOT = {
 					set_autonomy = { target = PREV autonomy_state = autonomy_free }
 				}
-				random = {
-					chance = 75
-					leave_faction = yes
-					set_country_flag = ENG_decolonization_left_faction
-					add_ai_strategy = {
-						type = alliance
-						id = "ENG"
-						value = -200
+				if = {
+					limit = {
+						NOT = { surrender_progress > 0.1 }
+					}
+					random = {
+						chance = 50
+						every_enemy_country = {
+							limit = {
+								has_war_with = PREV
+							}
+							white_peace = PREV
+						}
+						leave_faction = yes
+						set_country_flag = ENG_decolonization_left_faction
+						add_ai_strategy = {
+							type = alliance
+							id = "ENG"
+							value = -200
+						}
 					}
 				}
 			}
@@ -6100,21 +5284,59 @@ focus_tree = {
 		prerequisite = { focus = uk_colonial_focus }
 		available = {
 			OR = {
-				CAN = { is_in_faction_with = ENG }
-				SAF = { is_in_faction_with = ENG }
-				RAJ = { is_in_faction_with = ENG }
-				AST = { is_in_faction_with = ENG }
-				NZL = { is_in_faction_with = ENG }
+				any_country = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = SAF
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = RAJ
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = AST
+					is_in_faction_with = ROOT
+				}
+				any_country = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
+				}
 			}
 		}
 		bypass = {
+			CAN = {
+				exists = no
+			}
+			SAF = {
+				exists = no
+			}
+			RAJ = {
+				exists = no
+			}
+			AST = {
+				exists = no
+			}
+			NZL = {
+				exists = no
+			}
 			NOT = {
-				AND = {
-					CAN = { is_in_faction_with = ENG }
-					SAF = { is_in_faction_with = ENG }
-					RAJ = { is_in_faction_with = ENG }
-					AST = { is_in_faction_with = ENG }
-					NZL = { is_in_faction_with = ENG }
+				any_state = {
+					OR = {
+						is_core_of = ENG
+						is_core_of = CAN
+						is_core_of = SAF
+						is_core_of = AST
+						is_core_of = NZL
+						is_core_of = RAJ
+					}
+					NOT = { state = 320 }
+					NOT = { state = 321 }
+					OWNER = {
+						NOT = { tag = ENG }
+					}
 				}
 			}
 		}
@@ -6127,35 +5349,40 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			CAN = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			random_country = {
+				limit = {
+					original_tag = CAN
+					is_in_faction_with = ROOT
 				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
-			AST = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			random_country = {
+				limit = {
+					original_tag = AST
+					is_in_faction_with = ROOT
 				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
-			RAJ = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			random_country = {
+				limit = {
+					original_tag = RAJ
+					is_in_faction_with = ROOT
 				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
-			NZL = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			random_country = {
+				limit = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
 				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
-			SAF = {
-				if = {
-					limit = { is_in_faction_with = ENG }
-					add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
+			random_country = {
+				limit = {
+					original_tag = SAF
+					is_in_faction_with = ROOT
 				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
 		}
 	}
@@ -6209,7 +5436,10 @@ focus_tree = {
 		id = uk_india_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = RAJ
+			any_country = {
+				original_tag = RAJ
+				is_in_faction_with = ROOT
+			}
 		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -3
@@ -6235,7 +5465,11 @@ focus_tree = {
 		}
 
 		complete_tooltip = {
-			RAJ = {
+			random_country = {
+				limit = {
+					original_tag = RAJ
+					is_in_faction_with = ROOT
+				}
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_india_focus_2IC }
 					add_extra_state_shared_building_slots = 2
@@ -6391,7 +5625,10 @@ focus_tree = {
 		id = uk_australia_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = AST
+			any_country = {
+				original_tag = AST
+				is_in_faction_with = ROOT
+			}
 		}
 
 		bypass = {
@@ -6430,7 +5667,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			AST = {
+			random_country = {
+				limit = {
+					original_tag = AST
+					is_in_faction_with = ROOT
+				}
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_australia_focus_1IC }
 					add_extra_state_shared_building_slots = 1
@@ -6545,7 +5786,10 @@ focus_tree = {
 		id = uk_new_zealand_focus 
 		prerequisite = { focus = uk_australia_focus }
 		available = {
-			is_in_faction_with = NZL
+			any_country = {
+				original_tag = NZL
+				is_in_faction_with = ROOT
+			}
 		}
 		bypass = {
 			OR = {
@@ -6583,7 +5827,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			NZL = {
+			random_country = {
+				limit = {
+					original_tag = NZL
+					is_in_faction_with = ROOT
+				}
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_new_zealand_focus_1IC }
 					add_extra_state_shared_building_slots = 1
@@ -6698,7 +5946,10 @@ focus_tree = {
 		id = uk_canada_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = CAN
+			any_country = {
+				original_tag = CAN
+				is_in_faction_with = ROOT
+			}
 		}
 		bypass = {
 			OR = {
@@ -6736,7 +5987,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			CAN = {
+			random_country = {
+				limit = {
+					original_tag = CAN
+					is_in_faction_with = ROOT
+				}
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_canada_focus_2IC }
 					add_extra_state_shared_building_slots = 2
@@ -6850,7 +6105,10 @@ focus_tree = {
 		id = uk_south_africa_focus
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
-			is_in_faction_with = SAF
+			any_country = {
+				original_tag = SAF
+				is_in_faction_with = ROOT
+			}
 		}
 		bypass = {
 			OR = {
@@ -6888,7 +6146,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			SAF = {
+			random_country = {
+				limit = {
+					original_tag = SAF
+					is_in_faction_with = ROOT
+				}
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
 				every_state = { limit = { has_state_flag = ENG_uk_south_africa_focus_2IC }
 					add_extra_state_shared_building_slots = 2
@@ -7093,6 +6355,7 @@ focus_tree = {
 						is_core_of = AST
 						is_core_of = NZL
 					}
+					NOT = { state = 331 }
 					OWNER = {
 						NOT = {
 							OR = {
@@ -7971,6 +7234,18 @@ focus_tree = {
 				ruling_only = yes
 			}
 		}
+		bypass = {
+			OR = {
+				has_country_leader =  {
+					name = "Winston Churchill"
+					ruling_only = yes
+				}
+				has_country_leader =  {
+					name = "Lord Edward Halifax"
+					ruling_only = yes
+				}
+			}
+		}
 
 		continue_if_invalid = yes
 
@@ -8362,6 +7637,7 @@ focus_tree = {
 						is_capital = yes
 						is_on_continent = europe
 					}
+					NOT = { is_in_faction_with = ROOT }
 					has_added_tension_amount > 0.1
 					num_of_factories > 50
 				}
@@ -9384,10 +8660,7 @@ focus_tree = {
 			is_subject = no
 			country_exists = GER
 			NOT = { has_war_with = GER }
-			OR = {
-				GER = { has_government = fascism }
-				GER = { has_government = neutrality }
-			}
+			GER = { has_government = fascism }
 			NOT = { has_country_flag = ENG_germany_rejected_isolate_the_italian_threat }
 		}
 		bypass = {
@@ -9410,7 +8683,7 @@ focus_tree = {
 				multiply_temp_variable = {
 					var = alliance_with_germany_var
 					value = -0.5
-				}			
+				}
 			}
 			custom_effect_tooltip = ENG_alliance_with_germany_tt
 			add_stability = alliance_with_germany_var
@@ -9619,7 +8892,10 @@ focus_tree = {
 			NOT = { has_war_with = ITA }
 		}
 		bypass = {
-			ITA = { exists = no }
+			OR = {
+				ITA = { exists = no }
+				ITA = { is_subject = yes }
+			}
 		}
 		icon = GFX_goal_generic_major_alliance
 		x = 0
@@ -9950,7 +9226,10 @@ focus_tree = {
 			OR = {
 				RAJ = {
 					is_in_faction_with = ENG
-					has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+					OR = {
+						has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+						has_country_flag = britain_enforced_our_loyalty
+					}
 				}
 				has_completed_focus = ENG_towards_indian_independence
 			}
@@ -10003,7 +9282,10 @@ focus_tree = {
 				NOT = { country_exists = RAJ }
 				RAJ = {
 					is_in_faction_with = ENG
-					has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+					OR = {
+						has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+						has_country_flag = britain_enforced_our_loyalty
+					}
 				}
 				has_completed_focus = ENG_towards_indian_independence
 			}
@@ -10115,12 +9397,14 @@ focus_tree = {
 		available = {
 			is_subject = no
 			OR = {
-				country_exists = PER
-				country_exists = AFG
-			}
-			OR = {
-				NOT = { is_in_faction_with = PER }
-				NOT = { is_in_faction_with = AFG }
+				AND = {
+					country_exists = PER
+					NOT = { is_in_faction_with = PER }
+				}
+				AND = {
+					country_exists = AFG
+					NOT = { is_in_faction_with = AFG }
+				}
 			}
 		}
 		will_lead_to_war_with = PER
@@ -10138,6 +9422,7 @@ focus_tree = {
 			PER = {
 				if = {
 					limit = {
+						exists = yes
 						NOT = { is_in_faction_with = ENG }
 					}
 					country_event = { id = mtg_britain.79 hours = 6 }
@@ -10146,6 +9431,7 @@ focus_tree = {
 			AFG = {
 				if = {
 					limit = {
+						exists = yes
 						NOT = { is_in_faction_with = ENG }
 					}
 					country_event = { id = mtg_britain.79 hours = 6 }
@@ -10296,13 +9582,33 @@ focus_tree = {
 			OR = {
 				AND = {
 					is_in_faction_with = CAN
-					CAN = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					CAN = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 					is_in_faction_with = SAF
-					SAF = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					SAF = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 					is_in_faction_with = AST
-					AST = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					AST = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 					is_in_faction_with = NZL
-					NZL = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					NZL = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 				}
 				has_completed_focus = ENG_towards_dominion_independence
 			}
@@ -10337,13 +9643,33 @@ focus_tree = {
 				}
 				AND = {
 					is_in_faction_with = CAN
-					CAN = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					CAN = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 					is_in_faction_with = SAF
-					SAF = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					SAF = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 					is_in_faction_with = AST
-					AST = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					AST = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 					is_in_faction_with = NZL
-					NZL = { has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag }
+					NZL = {
+						OR = {
+							has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
+							has_country_flag = britain_enforced_our_loyalty
+						}
+					}
 				}
 				has_completed_focus = ENG_towards_dominion_independence
 			}
@@ -11294,6 +10620,15 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { FRA = { has_government = communism } }
+					NOT = { HOL = { has_government = communism } }
+					NOT = { BEL = { has_government = communism } }
+					NOT = { LUX = { has_government = communism } }
+				}
+				custom_effect_tooltip = ENG_reach_out_across_the_channel_tt
+			}
 			if = {
 				limit = {
 					FRA = {

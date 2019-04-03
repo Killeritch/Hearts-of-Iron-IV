@@ -72,7 +72,7 @@
  NAVAL_BASE_CAPACITY:0 "Kapazität: $USED|1G$/$TOTAL|0G$"
  NAVAL_BASE_CAPACITY_OVER:0 "Kapazität: $USED|1R$/$TOTAL|0R$"
  NAVAL_BASE_CAPACITY_PENALTY:0 "Kapazitätsmalus Reparaturleistung: $PENALTY|%0R$"
- AIR_DEFENSE_IN_STATE:0 "\n§HVerringerung des Bombardierungsschadens insgesamt:§! $TOT|%G$\nFlugabwehr: $AA|-%$\n"
+ AIR_DEFENSE_IN_STATE:1 "\n§HSchadensreduzierung Industriebombardierung:§! $TOT_INDUSTRY|%G$\n§HSchadensreduzierung sonstige Bombardierung:§! $TOT|%G$\nFlugabwehr: $AA|-%$\n"
  INSERT_CONVERSION:0 "§GStrg + Klicken§!, um umzuwandeln und an die Spitze der Warteliste zu setzen."
  INSERT_CONSTRUCTION:0 "§GStrg + Klicken§!, um zu bauen und an die Spitze der Warteliste zu setzen."
  RADAR_ONMAP_TOOLTIP:0 "Level der §HRadarstation§!: $LVL|G$/$TOT|H$\nGehört: $WHO|H$"

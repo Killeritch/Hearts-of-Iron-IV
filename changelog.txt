@@ -1,4 +1,382 @@
 ################################################################
+########            Patch 1.6.2 "Ironclad"              ########
+################################################################
+
+##################################
+# Feature
+##################################
+- Convoy and mine missions will work with islands of regions now. The fleet will be distributed in between disconnected groups of regions and each task force will be only able to do missions within the connected regions to which it is assigned.
+- Added an explanatory event to the naval treaty system that informs countries not at war that they are no longer bound by the Naval Treaty if two other majors are at war.
+- Changed how naval supremacy is being calculated. Now it depends on the size of the ships in the task force, and how effective it is on a region. A fleet that is assigned more regions than it can handle will get lower supremacies. Mission type also affects supremacy of a fleet.
+
+##################################
+# Bugfix
+##################################
+- Fixed AI factor not getting properly taken into acount for ideas when some have a cost of 0pp
+- Moved the IJsselmeer lake province from Holland state to Friesland state, so that losing control of it no longer prevents flooding of the Dutch defense lines.
+- Added bypass to Dutch focus Curtail Colonial Autonomy, and made the national spirits added by it be timed rather than permanent.
+- The Charles II Lifestyle idea now has an effect
+- fixed convoy combat alerts not being visible for defender
+- fixed convoy combats are appearing as regular combats before they are removed
+- All parties must end will now correctly switch out ideas
+- Fixed crash and infinite loop when a localized unit name was missing or did not include the required substitution elements.
+- The political events firing above 60% support of an ideology without having a ruling party of that ideology should no longer fire if you are also above 70% support of that ideology. This should prevent event-spam when only one event should suffice.
+- fixed super heavy ship model is not being selected properly
+- Added bypass so that Italy can no longer be 'stolen' by Britain when the latter takes the Secure the Italian Alliance while Italy is puppeted by someone else.
+- Reserve taskforces now consume fuel while moving.
+- Add the capital ship indicator on a carrier ship icon.
+- Motorized equipment for Netherlands and the new WtT countries should now display their specific 2d art, rather than the generic one.
+- Fixed crash when previewing 3D models via the -editor launch option, by checking whether the game idler exists when initializing shader constants.
+- Don't display tooltip "Armies Cannot move to the enemy territory in strategic redeployment mode" if the target is not enemy territory.
+- Fixed issue where various Pacific provinces weren't assigned a continent, causing the Melanesian Federation (FIJ) to not display any portraits for the country's leaders.
+- Fixed Continental Intervention news event to no longer have overlapping title, to only have one option for the UK, and altered the focus to no longer give a wargoal on countries the UK is in a faction with.
+- Fix canceling docking rights
+- Wilhelminist Netherlands, when creating a German civil war after taking the first German state, will no longer cause the Kaiser to also suffer from 'Pro-Kaiser Defectors'.
+- Cripps' Mission should no longer almost always bypass, resulting in Two-Nation Theory simply adding another Marginalized Muslim Community idea rather than adjusting the existing one.
+- Dutch Develop the South focus now correctly checks the southern states for available building slots, rather than the Holland state.
+- fixed a bug in the US fascist civil war that spawned a number of units for the revolter side
+- Reset DLC when exiting out of a game setup lobby, in case some DLC were temporarily enabled due to a multiplayer host owning them.
+- Adjusted British AI values and French historical strategy plan abort trigger to prevent situations where Britain gets into the fascist civil war unintentionally because they are dragged into the Czechoslovak war (they they shouldn't be caring about that anymore anyway).
+- The Naval Funding focus for the RAJ will now provide a useful bonus for players with MtG
+- fixed a number of issues with starting naval techs for various countries
+- Creating a Pan-North-American State no longer unintentionally awards the William Wallis achievement.
+- Fixed issues with ship XP. Tooltip now works and it has scriptable modifiers. Carriers also get a new bonus to sortie efficiency
+- Wim Schermerhorn portrait (if HOL somehow manages to go Non-Aligned without selecting the The Only Man in the Dutch Government focus) is now displayed correctly.
+- AI Britain will now actually select the "Trade Unions Referendum" to flip to communist.
+- Added localization to the "USA_civil_war_fired_democrats" flag required in the To Arms in Dixie! achievement.
+- Poland should now correctly have sufficient faith in their French allies to be -less- willing to cede Danzig without a fight, rather than -more- willing, when allied with them.
+- "Bypass the Philippines" now gives a bonus to transport techs, making it actually useful for players with MtG
+- AA tech fixed to not add defense to bombing in states without AA
+- Fixed dispersed industry to only gives bombing defense for industry buildings
+- Improved the stacking defense behavior of dispersed industry and AA tech
+- Lend Leasing Convoys always free now
+- Set faction leaders as major nations instantly, preventing a faction from temporarily only having minors and losing wars early
+- Fixed an issue that allowed the US to send Britain destroyers while at war with Britain
+- Getting into the US fascist civil war should no longer remove the associated national spirits
+- Ceylon FOB, Reclaim the Jewel in the Crown, Appeal to Imperial Loyalists, and Bring the Dominions Back into the Fold should now all bypass if all subjects have been prevented from leaving Britain after Britain switched to Fascism, using the decisions granted by the Move to Secure the Dominions focus.
+- Added a bypass for Motion of No Confidence, in case Churchill is already leader.
+- Mexico will no longer load the Mexican focus tree after a civil war, if the player does not have Man the Guns.
+- Fixed Awake and Angry and Battlecry achievements.
+- fixed a number of liberation events that would not fire due to checking for the wrong state ownership
+- South Georgia is now also transferred to Argentina when returning contested territories.
+- Ensured Case Anton properly triggers, and that the Scuttle the Fleet decision actually destroys the fleet. Also eliminated the PP cost for the Scuttle the Fleet decision, so that the AI will always take it unless you prevent them from doing so, as intended.
+- Made sure Ataturk can no longer lead armies from beyond the grave in 1939, and added idea portrait for Mannerheim
+- Made Dominion Development focuses be available when the Dominion in Britain's faction is the civil war faction, and not the original tag.
+- fixed some game data not being cleared when a dynamic tag is reused
+- The Canadian Corridor focus should no longer be available if you already control the states in question
+- Fixed an issue where the US would continue to demand territories in the Americas from countries that had already handed over territory or against which it has war goals
+- Various specific traits have been removed from the 'random pool', ensuring random country leaders cannot spawn with them anymore.
+- Made it possible (and much more likely) for Chamberlain to resign -before- the fall of France. The event can now be triggered by any Low Country or France having any surrender progress.
+- the Canadian communist strategy plan should now be correctly labeled
+- Stopped overzealous propaganda ministers from causing diplomatic crises by riling up the populace against allied nations, all for the purpose of passing war economy legislature just a little bit sooner (and more cheaply).
+- Fixes for Korean communist small flags.
+- Added claims to the correct French states for German Carte Blanche for Alsace and French Colonies focus.
+- US Liberty Ship national spirit should now apply correctly
+- Canadian Degaussing national spirit will now apply correctly
+- Decolonization now peaces out subjects when they leave UK's faction.
+- Adjusted A Change in Course to now have negative ideology drift for democratic support, rather than giving positive drift for the other ideologies, to prevent weird situations where it'd end up resulting in a negative drift for one of the other ideologies.
+- British Raj now has the proper Marginalized Muslim Community spirit applied if Pakistan is liberated via the British Decolonization focus tree, or civil war.
+- France should no longer be able to form a faction with a non-existing Czechoslovakia through the Little Entente Focus. The Focus will still be available, but will just form a new faction. Focuses further down the line will not be affected.
+- fixed some buggy behavior with foreign division templates regarding duplication and deployment
+- AI can now accept a fuel incoming lend lease.
+- Fixed taken states not being colored properly during a peace conference
+- Fixed some decisions on a revolter country disapearing after loading a save
+- Correctly change leader trait icons in army badge when switching between leaders where one has exile leader traits and the other does not.
+- fixed naval mission assignment not working correctly with taskforces on repairs
+- fixed an issue where countries occupying Manchuria would get reports about finding communist sleeper cells while allied with communist china
+- fixed anniversary pack not being loaded
+- review fixes
+- Fixed newly created ships teleporting to the task force set as their deployment target
+- Fixed auto balance task force not working
+- Fix fuel lend lease. It was full of minor bugs.
+- Selecting a decolonized Asia in the game rules will now also grant independence to Malaya.
+- Fixed new Maltese fascist flag not showing up properly.
+- fixed two instances in US events giving incorrect amounts of party popularity
+- fixed ai sending invalid commands with foreign templates
+- Fixed Expose the Belly of the Bear events not being sent out, as well as having incorrect requirement triggers.
+- fixed a way to create invalid paradrop orders and fixed a ctd that is caused by that
+- Converted Battleship and Converted Cruiser Hulls use now the right 3D model as the best match in the Ship Designer.
+- Fixed ships from reserve not reinforcing if the reserve task force has at least one ship repairing
+- locked the Silver Legion special template gained during the Fascist US civil war
+- fixed some localization issues with dynamic modifiers
+- fixed stability & war support values not giving all bonuses in some cases
+- fixed some scripted diplomatic action issued that broke actions that requires acceptance
+- moved lights of Los Angeles to correct province position
+- Abdicating after getting "King's Support Forms" will now correctly remove the beneficial spirit granted by that event.
+- fixed a original_tag problem related to reusing of dynamic tags
+- Now display correct naval supremacy in naval invasion tooltip.
+- fixed a ctd while loading saves
+- De Gaulle will no longer be incorrectly removed as Free France's leader.
+- Added Halifax to the bypass conditions of Motion of No Confidence.
+- Added certain stipulations for Coerce Spain and Coerce Greece focuses.
+- Only one Rebuild the Nation decision will now be available if you switch ideology using a civil war.
+- Alliance with Germany now requires Germany to be fascist only.
+- The number of factories displayed in war overview is now consistent with the number in topbar.
+- Fixed an effect that was deleting a division template without deleting all divisions using that template, specifically volunteers and expeditionary forces, leading to potential memory problems and crashes.
+- Fixed the game generating a definition.csv file that would override the original in case the later was missing some entries
+- Mexico without Man the Guns enabled (and therefore with no ability to nationalize the oil fields) will now have control over its own oil from the start of the game.
+- Fixed airwing name not being loaded from save
+- Fixed DOD unique motorized icons to correctly shop up in the production tab.
+- Fixed reserve fleet getting merged on daily tick if in the same naval base
+- Fixed ship name from history file not being taking into account in some circumstances when adding a production line for it
+- Highlight now fit the size of dockyard grid.
+- Fragmenting Yugoslavia in the game setup rules should no longer result in Yugoslav units permanently being present on the map with no possibility of getting rid of them.
+- Selecting Asia Decolonized game rule will now correctly grant independence to the Philippines.
+- Fixed mods in the userfiles overriding definition.csv getting it renamed and ignored
+- Fixed event option text for "Mexican Entry Into the  " event.
+- Fix troubles with Taskforce composition editor reinforcements that didn't work properly.
+- Fixed task forces being able to refit in the middle of the sea
+- You can now remove ships form a selection with shift+click.
+- Corrected Putting the Raid on the Medway to Shame achievement to no longer be awarded if the UK gets into the Fascist civil war.
+- Corrected art for Netherlands design companies not showing up on produced equipment.
+- Improve equipment distribution according to priority.
+- Fixed negative amount of convoy on modifying a lend lease that has been raided
+- Fixed invalid description for the low convoy escort and convoy raiding efficiency description
+
+
+##################################
+# Balance
+##################################
+- Ships designs can no longer go slower than 1kn
+- Reduced Japanese Torpedo Cruiser Hull sub detection to be more inline with regular cruiser hulls (before adding modules)
+- Allying with the Silver Shirts can now be taken with 10% popularity of fascists, but requires a fascist demagogue in government
+- taking Neutrality Act or Limited Intervention now locks you out of the communist or fascists paths (and vice versa), as was originally intended
+- It is now possible to complete the branch starting with "Adjusted Compensation Act" without being democratic
+- if the countdown to the fascist civil war started from more than 30% fascist support (as opposed to taking both Ally with the Silver Shirts and Voter Registration Act), the countdown is now 280 days (up from 180 days)
+- if the "Recruit the Free Corps" focus is finished when the civil war begins, the Free Corps will now automatically appear (this should also help the AI)
+- Free Corps unit template now 9x INF (up from 5x INF)
+- states that side with the Loyalists in the US fascist civil war will now spawn local volunteers
+- Expand the USMC focus now gives research bonuses to Marines II and Marines III
+- reduced sub and surface detection values for vanilla ships to be more in line with MtG values
+- rebalanced the speed of destroyers, light cruisers, and battleships in vanilla to be more in line with MtG ships
+- changed a number of stat inconsistencies in vanilla ship models
+- the War Powers Act in the US tree now allows the US to form its own faction
+- Reduced the effectiveness of GiE legitimacy gain decisions to one-quarter of what they were.
+- fixed ships are going faster than intended
+- Split ground and naval AA defines, and reverted the ground AA chance to hit back to its original value, so that ground AA is no longer overpowered.
+- increased hit chance of torpedo
+- doubled hit chance of depth charges
+- tripped depth charge damage
+- halved light gun attack of convoys
+- lowered AA attack of convoys by 75%
+- lowered IC cost on radar and sonar for all tech levels
+- added taking sub visibility into account for naval strike
+- reduced the impact of deep ocean on destroyer, light cruisers, and subs
+- a/b/c/d and e/f/g/h British destroyers now start the game with sonar 1
+- reduced snorkel 1 to a 10% visibility reduction and snorkel 2 to a 20% visibility reduction
+- naval mission efficiency will now go even lower if you don't have enough ships/taskforces for the assigned regions
+- Nationalist Spain will not lose the "recovering from the Civil War" national spirit in historical focus mode, thus preventing them from joining the war
+- Atlantic Fleet Designer now adds 10% HP to Carriers
+- Armor upgrade for Carriers now adds 1% HP per level (non-MtG only)
+- research companies research bonus 10% to 15%
+- doctrine ministers research bonus 7% to 10% and 10% to 15%
+- electron mechanical engineering research bonus 2% to 3%
+- mechanical computer research bonus 3% to 4%
+- computing machine research bonus 3% to 5%
+- improved computing machine research bonus 5% to 8%
+- advanced computing machine research bonus 5 to 8%
+- focus: give refuge to scientist research bonus 3% to 5%
+- Japanese Ultimate Battleship Focus now provides a free Super Heavy Battleship template and two ships of that template in various stages of completion for owners of MtG
+- reduced fuel consumption in defensive combat (being in combat while not moving) to 1x
+- fuel flow through supply chunks that has reduced supply flow due to "Control of incoming edge provinces" will now ignore 50% of that penalty
+- Protected against ping-ponging Soviet AI strategy when surrender level Germany is around 10%.
+
+
+##################################
+# UI
+##################################
+- Auto balance task force action now assigns an insignia to the created task forces
+- Added a naval mission indicator on top of the task force insignia in the navy theater and fleet bottom bar
+- Added a number of tooltips and updates to research descriptions explaining the effects and intended uses of various modules to the tech tree
+- Clarified the tooltip for convoy escort
+- enabled small battle reports icon for showing displaying battle reports of a ship
+- Most task forces now get assigned an insignia reflecting their role or composition at game start
+- Canceling a mission or setting the mission to Hold for a task force will now make it return to port as well as cancel its current mission. The old behavior where the task force stays put can now be achieved by using Ctrl+Click on the Hold order button or with the shortcut Ctrl+H
+- Added a shortcut to the ship designer from the ship stat view
+- The ship designer now shows the refit cost from the parent design
+- Splitting a task force copy the insignia settings to the created one
+- Enabled splitting task forces when multiple are selected
+- Timeout added for naval accident reports of training and mine accidents
+- the US Arsenal of Democracy focus should now display the correct rewards after being finished (correct rewards were already issued)
+- fixed a missing word in a tooltip
+- Use the sprite of the dockyard with the wrench in the naval repair window
+- Added the ability to increment or decrement the desired number of ship in the task force composition editor by 5 or 10 based on the modifier keys shift and control being held down
+- Japan demanding overlordship of colonies event should now properly refer to Japan, rather than the recipient's country.
+- Added tooltips to Reach Out Across the Channel and For the Common Good focuses.
+- Fixed incorrect news event picture for the end of the German civil war.
+- fixed round_temp_variable not updating temp vars during tooltips
+- fixed naval repair window not reading correct province names
+- fixed a tooltip problem in construction view
+- fixed clamp_temp_variable not updating temp vars during tooltips
+- Added a yellow glow button to on map mission buttons to use for warning
+- Added mine laying and mine sweeping icons to navy_icons.dds and highlight
+- Fixed overlapping text in Ally the Dominions news events.
+- Show warning on mission icon when a task force seems ill-fitted for the task.
+- Use two decimal places for the modifier legitimacy_daily
+- Changed icons of torpedo unlocks to feel more logical
+- updated speed tooltip in ship designer to be consistent with the new naval combat system
+- fixed a research bonus tooltip with ahead of penalty bonus
+- fixed fuel icon not properly aligned to frames
+- fixed a duplicate event option in a news event
+- Added strike force status to the tooltip shown when hovering hover a spotted or engaged enemy
+- Anti-Communist Crusader trait now correctly displays the right icon
+- Minor text edit to Depillarization focus.
+- fixed text overflow in US war powers act news event
+- fixed a number of typos
+- Fixed Benelux formation news event properly referring to Netherlands' original name, rather than the new Benelux name.
+- It is now possible to select a theater as a deployment target which will put the newly created ships in that theater's reserve fleet
+- Now showing the task force insignia when selecting a task force as deployment target
+- Finnish neutrality party was renamed
+- Task forces created through the Move Ships Window now copy the insignia from the original task force
+- Fixed timed decision showing 999 instead of a progressbar
+- Dive bomber trait in admiral skill tree now correctly identifies bonus as only applying to carrier planes
+- Minor loc fix to Dutch Trade Neutrality news event option text.
+- Added list of required module slots that are empty to the save button tooltip when designing a ship
+- Fixed invalid 'no mission set' warning on a task force with a mission but currently refitting or repairing
+- Typo fix in the Netherlands bookmark description.
+
+
+##################################
+# AI
+##################################
+- ai will now check enemy's neighbors for calculating how many units it should assign to a front
+- ai will now produce ships 1 by 1 and should be able to switch lines when a ship is done
+- ai will trade with its puppets even if they have generated wargoals before
+- AI now correctly check if a new political advisor is available before engaging him.
+- fixed targeted (reverse) ai strategies breaking strategies inside ai plans
+- Ensured AI USA will no longer panic upon entering a war and instantly blow up the Panama canal. Also made rebuilding the Suez and Panama canals drastically cheaper and faster, and updated requirements and AI values for all decisions related to the canals.
+- ai will be aware of disconnected regions while assigning missions and will try not to exceed number of taskforces while creating region islands
+- added AI strategies for Italy and Germany to not ally China if Japan goes Tripartite Pact
+- Improved AI planning and coordination of naval invasions.
+- Use a new system for AI acceptance of incoming lend leas request, based on stockpile and not on production lines.
+- Fix the problem with AI canceling incoming lend lease 24h after acceptance.
+- Made AI much more conservative with PP when it comes to using GiE decisions.
+- Drastically increased chance for AI Churchill to take the various Speech decisions, and thus allow USA to help.
+- Ai Kaiser Germany should no longer side with Romania against Austria-Hungary in the Transylvania event chain
+- ai commits more naval bases to repairs now
+- Britain should now care more about Africa as well as other area prio tweaks
+- ENG will avoid channel if it is at war with GER
+- British AI should now pick ministers better to make use of Stanley Baldwin (a first in British history)
+- British AI should no longer take early mobilization if it has better use of the political power
+- British AI should no longer waste pp on resource prospecting if it has better things to do
+- British AI should no longer offer refuge to German scientist until a certain amount of time has passed
+- Italy alternate fascist plan will now result in Italy First, rather than Pact of Steel
+- Both sides of the Suez Canal are now considered part of Africa for the purpose of AI calculations (still separate for all other purposes)
+- blocked ai from creating naval missions in blocked regions
+- naval_avoid_region >= 600 will disable regions for missions as well now. Germany disables the channel if ENG is still a threat
+- historical Yugoslavian AI will no longer take Greater Yugoslavia
+- added an AI strategy to Hungary to prevent them from joining the axis before it is historical if historical focuses are on
+- ai is now less reluctant/random about upgrading its ship designs
+- fixed a bug preventing the Soviet AI from researching Fighters II
+- the Soviet union will no longer pick the War with Japan focus while fighting with Germany
+- ai will care more about home fronts that have actual enemies if surrender process is >0 and less about other non dangerous fronts
+- ai won't care about guarantees that are guaranteeing an enemy that has offensive war against us or a war that started long ago
+- Improved UK historical focus selection order
+- Japan will now avoid too aggressive early invasions
+- fixed AI keeping old garrison orders that are no longer our & our friends' lands
+- Germany will prioritize Suez less if it hasn't defeated the Soviets
+- Japan now does invasions a little earlier versus China
+- Fixed China(s) not building units
+- Split Scandinavia priorities off from Europe and set UK to wait longer to take back Norway
+- Soviets will now not waste production on silos
+- The AI of major naval powers should now be building more screens
+- The Chinese AI will no longer try to reserve rifles for the showdown with the hated enemy no.1 (Nationalists/Communists) while at war with hated enemy no.2 (Japan)
+- Germany will no longer invite Nationalist Spain to the Axis on historical mode, unless the time is after 1942, they're in a war with UK, and are winning rather heavily.
+
+
+##################################
+# Stability & Performance
+##################################
+- Gracefully handle improper backslash escaped characters in localization without corrupting data that can lead to a crash.
+- Fix a CTD when some game objects were deleted in a thread, instead of being marked for deletion later in the main thread.
+- Protected against a buffer overflow.
+- Detected and skipped a certain type of invalid mipmap data in dds files.
+- Fixed CTD when reordering pinned strategic regions
+- Reset the deployment target of an exile nation's naval production lines when its navy is transferred, so that they do not target the recipient's task forces.
+- Fixed miscellaneous null pointer crashes.
+
+
+##################################
+# Modding
+##################################
+- decisions now can accept an array for target (target_array = "array_name").
+- added neighbors & neighbors_owned country arrays
+- added exiles country array
+- added host country variable
+- decisions now can accept a list of country tags/variables that stores countries as targets (targets = { ENG GER })
+- changed max scripted loc depth to a define and increased to 30
+- moved scripted diplomatic action's initiator to root scope
+- texts of buttons in scripted guis are dynamic and populated by scripted loc now
+- value of global.date variable can be used in scripted localizations using GetDateString/GetDateStringShortMonth/GetDateStringNoHour/GetDateStringNoHourLong methods on it
+- added enable_reverse trigger for reverse strategies that is checked for main country once before checking for targets.
+- added targets = { ENG GER } & target_array = array_name support for reverse ai strategies to limit which countries they will be targetting
+- fixed scaled scripted gui buttons being reverted to no scale if they are assigned to textures
+- in nested if triggers/effects if = { if = {} else = {} } else/else_if part is now attached to second if instead of first
+- scripted diplomatic actions without acceptance now calls execute effect when sent
+- added a temp scope before visible trigger of scripted guis so the temp vars will be shared from visible to all other triggers/scripted locs
+- added is_valid_root trigger for targeted decision. this is checked before checking all targets and if false, will skip that targeted decision completely
+- added game variables fuel_k & max_fuel_k
+- fixed example of scripted diplo actions & fixed some string problems
+- ai will now ignore pp strategies while deciding to send scripted diplo actions
+- fixed some localization issues with scripted diplo actions
+
+
+##################################
+# Database
+##################################
+- Added new flag to Fascist Malta to go with the new name.
+- Added Ataturk and Mannerheim as Turkish and Finnish field marshals.
+- Added new cosmetic tag for Russia if it has lost all its releasable nations, and added two new events to apply/remove this cosmetic tag.
+- MAL and INS now start with the correct techs unlocked for players with MtG
+- removed naval starting techs for ICE
+- Added countdown timer for when the True Communist coup occurs after switching to Communism as Britain, but not having decolonized within the required 2 years. The event starting the civil war is now fired through this mission, rather than as a MTTH. This, in addition to another tooltip added to the referendum decision, should hopefully make it more clear to the player what they can expect.
+- gave a number of ships in most major navies some starting experience
+- Adjusted some ideology drift spirits in the British, German, and Italian focus trees to be timed.
+- Gave Netherlands Marines tech at game start.
+- Removed hard-scripted ideologies for nations released via the UK Decolonization tree. Released nations now will always have the UK's ideology.
+- Hjalmar Schacht now costs only 75pp, to make up for the fact he is more limited in his availability.
+- French Redoubtable Class Submarine no longer considered obsolete
+- The democratic side in the fascist US civil war should no longer be locked to the fascist branch of the focus tree
+- Reduced MTTH value for Chamberlain Resigns event.
+- Added news events informing other nations that the Dominions declare independence based on the British domestic political situation.
+- Renamed Bulgaria Democratic leader and party.
+- added Xian Yuan as a naval theorist to Manchukuo
+- moved British Ark Royal Class to 1936 start, added Ark Royal to starting building queue (laid down September 1935)
+- added a few more namelists for Britain and France based on community contribution
+- added and tweaked a number of ship name lists
+- Added new decision and events allowing for the peaceful unification of the Low Countries, if the Benelux has been formed.
+- New (democratic-only) flag for Benelux Federation
+- Tweaked Chamberlain resigns event to now require Poland to have fallen, and slightly increased the required surrender progress required for Denmark, Norway, the Low Countries, or France.
+- The US now correctly starts with 2 Yorktown Carriers under construction in 1936 (MtG only due to balance concerns)
+- Italy now correctly has two Littoria-Class Battleships under construction in 1936 (MtG only)
+- changed some starting technologies for Italy
+- France now starts with 1 Richelieu Class Battleship under construction in 1936 (Richelieu) and two more under construction in 1939 (Jean Bart and Clemenceau) (MtG only)
+- added HMS Aurora to British starting construction (MtG only)
+- moved Town Class Light Cruiser template to 1936 start, added 5 ships to British starting construction in 1936
+- Added Marines division template to HOL
+- Added portrait for Ataturk
+- added and tweaked a number of division name lists for various countries
+- Commonwealth Ties can now be taken if UK is overlord of Dominion civil war factions, as well (and applies the relationship boost to those countries).
+- Adjusted requirement for Imperial Conference to no longer be impossible if UK accepts Destroyers for Bases offer from USA.
+- removed the claim Romania gets on Bulgaria from the relevant event
+- Reach out to the Ware Group is now available for both democratic and communist governments
+- Removed Atatürk as a starting field marshal and instead added a decision to recruit him if Turkey is in a defensive war, also assigned to him his new field marshal portrait
+- Added foreign language loc and an on_action trigger for Turkish civil wars.
+- Added Admiral Hipper to German starting construction (MtG only)
+- Added two Kirov-Class Cruisers to Soviet starting construction (MtG only)
+- Added USS Vincennes and USS Wichita to US starting production (MtG only)
+- Added two light cruisers to Italian starting construction (MtG only)
+- Central Powers will now invite Bulgaria if they exist, are AI, and are non-aligned.
+- Adjusted Vojvodina state population, and added cores to it in the Hungarian focus tree.
+- Central Powers focus now sends event invites to the various potential nations, giving them a choice rather than automatically adding them to the faction.
+- Removed two duplicate ship templates in the 1939 start
+- Further adjusted cores granted in Hungarian focus tree (for Vojvodina and West Banat).
+- Reclassified existing Kongo-Class ships as Battlecruisers (MtG only)
+- Moved Kuching to its proper location, and added a new Brunei Victory Point to where Kuching used to be located.
+- King's Party is now renamed into Queen's Party under appropriate circumstances.
+
+
+################################################################
 ########            Patch 1.6.1 "Ironclad"              ########
 ################################################################
 

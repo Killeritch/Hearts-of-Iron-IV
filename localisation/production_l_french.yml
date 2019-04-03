@@ -92,6 +92,8 @@
  PRODUCTION_EQUIPMENT_NEED:0 "Requis : $AMOUNT|Y$"
  PRODUCTION_DEPLOY_TO_BASE:0 "Diriger vers le port de $BASE|H$."
  PRODUCTION_DEPLOY_TO_FLEET:1 "Déployer dans l'escadre $FLEET|H$."
+ PRODUCTION_DEPLOY_TO_RESERVE_FLEET_THEATER:1 "Déployer dans la réserve du théâtre $THEATER|H$"
+ PRODUCTION_NAVAL_DEPLOYMENT_THEATER:0 "Déployer dans le théâtre $THEATER|H$, dans la base de $STATE|H$."
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET_INVALID_BASE:0 "La flotte de déploiement $FLEET|H$ n'a pas de base."
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET:1 "Déployer dans l'escadre $FLEET|H$, basée dans l'État de $STATE|H$."
  PRODUCTION_NAVAL_DEPLOYMENT_BASE:0 "Déployer dans la base de l'État de $STATE|H$."

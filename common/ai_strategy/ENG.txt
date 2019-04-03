@@ -21,7 +21,7 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 4
+		value = 7
 	}
 	
 	ai_strategy = {
@@ -121,7 +121,7 @@ ENG_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = screen_ship
-		value = 45
+		value = 55
 	}
 
 	ai_strategy = {
@@ -375,6 +375,13 @@ careful_with_early_invasions = {
 		id = "GER"			
 		value = -500
 	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = -300
+	}
+	
 }
 
 east_prussia_invasion_is_death_trap = {
@@ -497,7 +504,7 @@ ENG_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 200
+		value = 250
 	}
 
 	ai_strategy = {
@@ -595,5 +602,35 @@ ENG_naval_role_ratios_anti_submarines = {
 		type = role_ratio
 		id = naval_cruiser_heavy
 		value = -10
+	}
+}
+
+
+ENG_the_channel_is_dangerous = {
+	enable = {
+		original_tag = ENG
+		has_war_with = GER
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 18 #english channel
+		value = 100
+	}
+}
+
+ENG_lifeline_of_the_empire = {
+	enable = {
+		original_tag = ENG
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 30 # this is extra on top of 50 base
 	}
 }

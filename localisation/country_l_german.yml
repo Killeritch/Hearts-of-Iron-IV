@@ -66,7 +66,7 @@
  STABILITY_DESC:0 "Stabilität spiegelt die Unterstützung des Volkes für die aktuelle Regierung wider. Eine hohe Stabilität erleichtert die Durchsetzung politischer Änderungen und trägt zu einer reibungslosen Volkswirtschaft bei."
  WAR_SUPPORT_DESC:0 "Kriegsunterstützung spiegelt die Bereitschaft des Volkes wider, einen Krieg bis zum Ende durchzuziehen. Die Verabschiedung zahlreicher Gesetze und die Vorbereitung des Landes auf einen Krieg erfordern eine hohe Kriegsunterstützung."
  STABILITY_WAR_FACTOR:0 "Im Krieg: $VALUE|+2%H$"
- STABILITY_POPULARITY_FACTOR:0 "Beliebtheit der Regierungspartei: $VALUE|=+2%H$"
+ STABILITY_POPULARITY_FACTOR:0 "Beliebtheit der Regierungspartei: $VALUE|=+2%$"
  STABILITY_EFFECT_TITLE:0 "\n§HEffekte unserer aktuellen Stabilität:§!\n"
  WAR_SUPPORT_EFFECT_TITLE:0 "\n§HEffekte unserer aktuellen Kriegsunterstützung:§!\n"
  WAR_SUPPORT_AT_OFFENSIVE_WAR:0 "Angriffskrieg: $VALUE|+=2%H$"

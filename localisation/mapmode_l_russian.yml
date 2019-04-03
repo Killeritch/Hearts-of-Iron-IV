@@ -50,6 +50,6 @@
  MAPMODE_CONFIGURE:0 "Настройка любимых режимов карты"
  MAPMODE_ALL:0 "Открывает окно со всеми доступными режимами карты."
  CONFIG_MAPMODE_DEFAULT:0 "Возвращает ячейки режима карты к первоначальному состоянию"
- MAPMODE_ALL_ENTRY_DETAILS:0 "§GЩелкните§!, чтобы выбрать.\n§GПравый щелчок§! — выбрать и закрыть."
+ MAPMODE_ALL_ENTRY_DETAILS:0 "§GЩелкните§!, чтобы выбрать.\n§GПравый щелчок§! - выбрать и закрыть."
  MAPMODE_TOOLTIP_INFRASTRUCTURE:0 "£infrastructure_texticon  Инфраструктура $INF|Y$"
  MAPMODE_TOOLTIP_MANPOWER:0 "£population_texticon  Население $MP|*Y$"

@@ -141,7 +141,7 @@ country_event = {
 		}
 		HUN = { annex_country = { target = AUS transfer_troops = yes } }
 		HUN = { set_country_flag = AUS_annexed_peacefully } # Used to change division name lists for HUN
-		news_event = { id = news.291 days = 1 }
+		hidden_effect = { news_event = { id = news.291 days = 1 } }
 	}
 
 }
@@ -167,7 +167,7 @@ country_event = {
 					type = annex_everything
 					target = AUS
 				}
-		news_event = { id = news.294 days = 1 }
+		hidden_effect = { news_event = { id = news.294 days = 1 } }
 		
 	}
 	option = { #Let it go
@@ -179,7 +179,7 @@ country_event = {
 				factor = 3
 			}
 		}
-		news_event = { id = news.293 days = 1 }
+		hidden_effect = { news_event = { id = news.293 days = 1 } }
 	}
 
 }
@@ -218,7 +218,7 @@ country_event = {
 					type = annex_everything
 					target = AUS
 				}
-		news_event = { id = news.315 days = 1 }
+		hidden_effect = { news_event = { id = news.315 days = 1 } }
 		
 	}
 	option = { #Let it go
@@ -253,7 +253,7 @@ country_event = {
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 		HUN = { country_event = { id = DOD_hungary.4 } }
-		news_event = { id = news.292 days = 1 }
+		hidden_effect = { news_event = { id = news.292 days = 1 } }
 	}
 
 }
@@ -412,17 +412,6 @@ country_event = {
 	title = DOD_hungary.20.t
 	desc = DOD_hungary.20.desc
 	picture = GFX_report_event_generic_parliament
-	
-	#trigger = {
-	#	tag = SWE
-	#	NOT = { has_government = communism }
-	#	HUN = {
-	#		has_war = yes
-	#		has_government = democratic
-	#		has_idea = HUN_dynastic_ties
-	#		NOT = { has_war_with = SWE }
-	#	}
-	#}
 
 	is_triggered_only = yes
 
@@ -572,16 +561,6 @@ country_event = {
 	desc = DOD_hungary.24.desc
 	picture = GFX_report_event_generic_panzer_attack
 	
-	#trigger = {
-	#	tag = HUN
-	#	has_idea = HUN_dynastic_ties
-	#	NOT = { has_government = communism }
-	#	SWE = {
-	#		has_war = yes
-	#		NOT = { has_government = communism } 
-	#		NOT = { has_war_with = HUN }
-	#	}
-	#}
 	is_triggered_only = yes
 
 	option = { #stay out
@@ -2069,6 +2048,12 @@ country_event = {
 				is_in_faction_with = ROM
 				factor = 100
 			}
+			modifier = {
+				tag = GER
+				has_completed_focus = GER_oppose_hitler
+				HUN = { has_completed_focus = HUN_invite_the_habsburg_prince }
+				factor = 0
+			}
 		}
 		add_threat = 1
 		give_guarantee = ROM
@@ -3207,6 +3192,7 @@ country_event = {
 	option = {# great
 		name = DOD_hungary.91.a
 	  	transfer_state = 45
+	  	45 = { add_core_of = HUN }
 	}
 }
 
@@ -3600,6 +3586,7 @@ country_event = {
 			ITA = { transfer_state = 103 }
 		}
 		HUN = { transfer_state = 45 }
+		45 = { add_core_of = HUN }
 	}
 	option = {# defiance
 		name = DOD_hungary.96.b
@@ -3673,6 +3660,7 @@ country_event = {
 					target = YUG
 					generator = { 45 }
 				}
+				45 = { add_core_of = HUN }
 			}
 		}
 		hidden_effect = {

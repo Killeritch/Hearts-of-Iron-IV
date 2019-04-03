@@ -227,6 +227,10 @@ technologies = {
 			ship_depth_charge_1
 		}
 
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+
 		path = {
 			leads_to_tech = improved_depth_charges
 			research_cost_coeff = 1
@@ -268,7 +272,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_depth_charge_2
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
 		path = {
 			leads_to_tech = advanced_depth_charges
 			research_cost_coeff = 1
@@ -310,6 +316,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_depth_charge_3
 		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
 		path = {
 			leads_to_tech = modern_depth_charges
 			research_cost_coeff = 1
@@ -350,6 +359,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_depth_charge_4
 		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
 
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -386,7 +398,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_sonar_1
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
 		path = {
 			leads_to_tech = improved_sonar
 			research_cost_coeff = 1
@@ -424,7 +438,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_sonar_2
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
 		research_cost = 1
 
 		start_year = 1936
@@ -645,7 +661,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_airplane_launcher_2
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = airplane_launcher_advice_tt
+		}
 
 
 		research_cost = 0.75
@@ -682,7 +700,9 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_armor_cruiser_2
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
 
 		
 		path = {
@@ -729,7 +749,9 @@ technologies = {
 			ship_armor_cruiser_3
 		}
 
-
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
 		
 		path = {
 			leads_to_tech = advanced_cruiser_armor_scheme
@@ -774,7 +796,9 @@ technologies = {
 			ship_armor_cruiser_4
 		}
 
-
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
 
 		
 		xp_research_type = navy
@@ -1044,7 +1068,9 @@ technologies = {
 		}
 
 
-		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
 		path = {
 			leads_to_tech = improved_heavy_armor_scheme
 			research_cost_coeff = 1
@@ -1090,7 +1116,10 @@ technologies = {
 			ship_armor_bc_3
 		}
 
-
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		
 		
 		xp_research_type = navy
 		xp_research_cost = 50
@@ -1328,7 +1357,9 @@ early_ship_hull_carrier = {
 			ship_torpedo_1
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder
@@ -1511,6 +1542,10 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
 		enable_equipment_modules = { 
 			ship_torpedo_2
 		}
@@ -1543,6 +1578,10 @@ early_ship_hull_carrier = {
 		path = {
 			leads_to_tech = modern_ship_torpedo_launcher
 			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
 		}
 
 		enable_equipment_modules = { 
@@ -1578,6 +1617,9 @@ early_ship_hull_carrier = {
 			ship_torpedo_4
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
 
 
 		folder = {
@@ -1774,7 +1816,9 @@ early_ship_hull_carrier = {
 			leads_to_tech = improved_submarine_snorkel
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip = snorkel_advice_tt
+		}
 		research_cost = 1
 
 		start_year = 1940
@@ -1813,6 +1857,10 @@ early_ship_hull_carrier = {
 
 		enable_equipment_modules = { 
 			ship_sub_snorkel_2
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = snorkel_advice_tt
 		}
 		path = {
 			leads_to_tech = improved_submarine_snorkel
@@ -1865,6 +1913,11 @@ early_ship_hull_carrier = {
 		path = {
 			leads_to_tech = basic_light_battery
 			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+			custom_effect_tooltip = medium_battery_advice_tt
+			custom_effect_tooltip = heavy_battery_advice_tt
 		}
 
 		path = {
@@ -1919,6 +1972,10 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
 		path = {
 			leads_to_tech = basic_light_shell
 			research_cost_coeff = 1
@@ -1958,6 +2015,10 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
 		enable_equipment_modules = { 
 			ship_light_battery_3
 		}
@@ -1991,6 +2052,9 @@ early_ship_hull_carrier = {
 			ship_light_battery_4
 		}
 		
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
 
 
 		folder = {
@@ -2130,6 +2194,10 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
 		path = {
 			leads_to_tech = basic_medium_shell
 			research_cost_coeff = 1
@@ -2169,7 +2237,9 @@ early_ship_hull_carrier = {
 			leads_to_tech = advanced_medium_battery
 			research_cost_coeff = 1
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
 		enable_equipment_modules = { 
 			ship_medium_battery_3
 			ship_light_medium_battery_3
@@ -2204,7 +2274,9 @@ early_ship_hull_carrier = {
 			ship_medium_battery_4
 			ship_light_medium_battery_4
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
 
 
 		folder = {
@@ -2319,7 +2391,9 @@ early_ship_hull_carrier = {
 			ship_super_heavy_battery_1
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder
@@ -2360,7 +2434,9 @@ early_ship_hull_carrier = {
 			ship_heavy_battery_3
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder
@@ -2396,7 +2472,9 @@ early_ship_hull_carrier = {
 			ship_heavy_battery_4
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder
@@ -2517,7 +2595,9 @@ early_ship_hull_carrier = {
 			ship_secondaries_1
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder
@@ -2554,7 +2634,9 @@ early_ship_hull_carrier = {
 			ship_secondaries_2
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder
@@ -2587,7 +2669,9 @@ early_ship_hull_carrier = {
 			dp_light_battery
 		}
 		
-
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
 
 		folder = {
 			name = mtgnavalfolder

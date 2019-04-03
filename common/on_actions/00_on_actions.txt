@@ -772,7 +772,14 @@ on_actions = {
 						has_government = fascism
 					}
 				}
-				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+				if = {
+					limit = { is_historical_focus_on = no }
+					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+				}
+				if = {
+					limit = { is_historical_focus_on = yes }
+					add_ideas = SPA_recovering_from_civil_war #keep the spirit on historical mode, keeping them out of the war
+				}
 			}
 			#End of SCW
 			if = {
@@ -1268,6 +1275,45 @@ on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
+			if = {
+				limit = {
+					OR = {
+						TAG = ENG
+						TAG = USA
+						TAG = AST
+						TAG = FRA
+						TAG = CAN
+						TAG = NZL
+						TAG = SAF
+					}
+					FROM = { original_tag = GER }
+					FROM.FROM = { state = 16 }
+				}
+				news_event = news.134
+			}
+			if = {
+				limit = {
+					OR = {
+						TAG = ENG
+						TAG = USA
+					}
+					FROM = { original_tag = GER }
+					FROM.FROM = { state = 126 }
+				}
+				news_event = news.137
+			}
+			if = {
+				limit = {
+					OR = {
+						TAG = POL
+						TAG = SOV
+					}
+					NOT = { SOV = { has_war_with = POL } }
+					FROM = { original_tag = GER }
+					FROM.FROM = { state = 10 }
+				}
+				news_event = news.139
+			}
 			if = {
 				limit = {
 					tag = GER

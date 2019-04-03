@@ -72,7 +72,7 @@
  NAVAL_BASE_CAPACITY:0 "Capacidade: $USED|1G$/$TOTAL|0G$"
  NAVAL_BASE_CAPACITY_OVER:0 "Capacidade: $USED|1R$/$TOTAL|0R$"
  NAVAL_BASE_CAPACITY_PENALTY:0 "Penalidade de capacidade de poder de reparo: $PENALTY|%0R$"
- AIR_DEFENSE_IN_STATE:0 "\n§HTotal de redução de dano de bombardeio:§! $TOT|%G$\nAntiaéreo: $AA|-%$\n"
+ AIR_DEFENSE_IN_STATE:1 "\n§HRedução de dano de bombardeio industrial:§! $TOT_INDUSTRY|%G$\n§HOutra redução de dano de bombardeio:§! $TOT|%G$\nAntiaéreo: $AA|-%$\n"
  INSERT_CONVERSION:0 "§GCtrl+clique§! para converter e posicionar no começo da fila."
  INSERT_CONSTRUCTION:0 "§GCtrl+clique§! para construir e posicionar no começo da fila."
  RADAR_ONMAP_TOOLTIP:0 "§HEstação de radar§! nível: $LVL|G$/$TOT|H$\nPertence a: $WHO|H$"

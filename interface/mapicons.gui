@@ -1651,7 +1651,6 @@ guiTypes = {
 		instantTextboxType = {
 			name = "cost_text"
 			position = { x = -34 y = 37 }
-			textureFile = ""
 			font = "hoi_16mbs"
 			borderSize = { x = 0 y = 0 }
 			text = "999"
@@ -1671,8 +1670,8 @@ guiTypes = {
 		iconType = {
 			name ="timer_icon"
 			quadTextureSprite = "GFX_decision_timer_icon_strip"
-			position = { x=-4 y=26 }
-			scale = 0.6
+			position = { x=-10 y=22 }
+			scale = 0.8
 			frame = 2
 		}
 	}

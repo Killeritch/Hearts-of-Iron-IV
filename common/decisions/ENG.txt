@@ -1389,6 +1389,14 @@ ENG_organize_the_blackshirts = {
 				has_stability < 0.8
 			}
 			modifier = {
+				factor = 5
+				has_stability < 0.7
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.6
+			}
+			modifier = {
 				factor = 0
 				fascism > 0.5
 			}
@@ -6139,10 +6147,12 @@ ENG_concessions_to_the_trade_unions = {
 			set_country_flag = { flag = ENG_switched_to_fascism_communism_dominions_timer_flag value = 1 days = 180 }
 			country_event = { id = political.19 }
 			ENG_request_trade_union_support_cost_level_down = yes
+			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
+			activate_mission = ENG_expected_decolonization
 		}
 
 		ai_will_do = {
-			factor = 0
+			factor = 100
 		}
 	}
 
@@ -6399,6 +6409,44 @@ ENG_concessions_to_the_trade_unions = {
 
 		ai_will_do = {
 			factor = 0
+		}
+	}
+
+	ENG_expected_decolonization = { # timer for the player to see how much longer they have to decolonize before they get a civil war
+
+		icon = eng_abdication_crisis
+		
+		available = {
+			has_completed_focus = ENG_decolonization
+		}
+
+		days_mission_timeout = 730
+
+		fire_only_once = yes
+
+		activation = {
+			tag = ENG
+			has_completed_focus = ENG_concessions_to_the_trade_unions
+			NOT = { has_completed_focus = ENG_decolonization }
+			has_government = communism
+			has_country_flag = ENG_switched_to_communism_civil_war_flag
+		}
+
+		visible = {
+			tag = ENG
+			NOT = { has_completed_focus = ENG_decolonization }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		complete_effect = {
+			custom_effect_tooltip = ENG_expected_decolonization_tt
+		}
+
+		timeout_effect = {
+			country_event = { id = mtg_britain.55 }
 		}
 	}
 }
@@ -8121,7 +8169,7 @@ political_actions = {
 		}
 
 		ai_will_do = {
-			factor = 100 #Gotta allow the Americans to help
+			factor = 200 #Gotta allow the Americans to help
 		}
 	}
 
@@ -8171,7 +8219,7 @@ political_actions = {
 		}
 
 		ai_will_do = {
-			factor = 100 #Gotta allow the Americans to help
+			factor = 200 #Gotta allow the Americans to help
 		}
 	}
 
@@ -8219,7 +8267,7 @@ political_actions = {
 		}
 
 		ai_will_do = {
-			factor = 100 #Gotta allow the Americans to help
+			factor = 200 #Gotta allow the Americans to help
 		}
 	}
 
@@ -8646,7 +8694,6 @@ political_actions = {
 		}
 
 		complete_effect = {
-			set_country_flag = created_american_monarchy
 			hidden_effect = {
 				629 = { add_core_of = USA }
 				463 = { add_core_of = USA }

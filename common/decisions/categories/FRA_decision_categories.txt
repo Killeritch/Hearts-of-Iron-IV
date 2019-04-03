@@ -5,6 +5,6 @@
 FRA_vichy_france = {
 	
 	allowed = {
-		original_tag = FRA
+		always = yes
 	}
 }

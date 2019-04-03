@@ -75,7 +75,7 @@
  BUILDING_CURRENT_MAX_LEVEL:0 "Niveau max pour $BUILDING|Y$ : $MAXLEVEL|Y$"
  BUILDING_CURRENT_MAX_LEVEL_SHARED_SLOTS:0 "$BUILDING|Y$ max dans un État : $MAXLEVEL|Y$"
  BUILDING_LEVEL_HEALTH:0 "État structure : $VALUE|%2Y$"
- AIR_DEFENSE_IN_STATE:0 "\n§HTotal de réduction des dégâts causés par le bombardement :§! $TOT|%G$\nAnti-aérien : $AA|-%$\n"
+ AIR_DEFENSE_IN_STATE:1 "\n§HRéduction des dégâts causés à l'industrie par les bombardements :§! $TOT_INDUSTRY|%G$\n§HRéduction des dégâts causés ailleurs par les bombardements :§! $TOT|%G$\nAnti-aérien : $AA|-%$\n"
  RADAR_ONMAP_TOOLTIP:0 "Niveau de §Hstation radar§! : $LVL|G$ sur $TOT|H$\nAppartient à $WHO|H$"
  RADAR_ONMAP_DAMAGED_TOOLTIP:0 "Niveau de §Hstation radar§! : $LVL|R$ sur $TOT|H$\nAppartient à $WHO|H$"
  RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HCouverture de la région§! :"

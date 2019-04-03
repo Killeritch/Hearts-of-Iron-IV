@@ -338,6 +338,7 @@ fascism_on_the_rise = {
 		icon = generic_construction
 
 		visible = {
+			has_government = fascism
 			has_country_flag = won_ideology_civil_war
 		}
 
@@ -837,6 +838,7 @@ democratic_on_the_rise = {
 		icon = generic_construction
 
 		visible = {
+			has_government = democratic
 			has_country_flag = won_ideology_civil_war
 		}
 
@@ -1335,6 +1337,7 @@ communism_on_the_rise = {
 		icon = generic_construction
 
 		visible = {
+			has_government = communism
 			has_country_flag = won_ideology_civil_war
 		}
 
@@ -1505,9 +1508,13 @@ political_actions = {
                 original_tag = FRA
                 original_tag = CAN
             }
+        }
+
+	visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
-        }
+	}
+
         cost = 100
         fire_only_once = yes
         
@@ -1518,7 +1525,7 @@ political_actions = {
         }
 
         modifier = {
-            research_speed_factor = 0.03
+            research_speed_factor = 0.05
             stability_factor = -0.05
         }
 
@@ -1538,6 +1545,12 @@ political_actions = {
 
         ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = ENG
+				has_War = no
+				date < 1937.3.1
+				factor = 0
+			}
 		}
     }
     give_refuge_ita = {
@@ -1551,6 +1564,9 @@ political_actions = {
                 original_tag = FRA
                 original_tag = CAN
             }
+	}
+
+	visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
         }
@@ -1563,7 +1579,7 @@ political_actions = {
         }
 
         modifier = {
-            research_speed_factor = 0.03
+            research_speed_factor = 0.05
             stability_factor = -0.05
         }
 
@@ -1572,6 +1588,12 @@ political_actions = {
         }
         ai_will_do = {
 			factor = 1
+			modifier = {
+				tag = ENG
+				has_War = no
+				date < 1937.3.1
+				factor = 0
+			}
 		}
     }
 

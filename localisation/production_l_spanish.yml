@@ -92,6 +92,8 @@
  PRODUCTION_EQUIPMENT_NEED:0 "Necesita: $AMOUNT|Y$"
  PRODUCTION_DEPLOY_TO_BASE:0 "Desplegar a puerto: $BASE|H$"
  PRODUCTION_DEPLOY_TO_FLEET:1 "Desplegar en fuerza especial: $FLEET|H$"
+ PRODUCTION_DEPLOY_TO_RESERVE_FLEET_THEATER:1 "Desplegar a la Reserva del escenario : $THEATER|H$"
+ PRODUCTION_NAVAL_DEPLOYMENT_THEATER:0 "Desplegar el escenario objetivo  $THEATER|H$ con base en $STATE|H$"
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET_INVALID_BASE:0 "El objetivo de despliegue $FLEET|H$ no tiene base."
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET:1 "Desplegar fuerza especial objetivo $FLEET|H$ con base en $STATE|H$"
  PRODUCTION_NAVAL_DEPLOYMENT_BASE:0 "Base del objetivo de despliegue en $STATE|H$."

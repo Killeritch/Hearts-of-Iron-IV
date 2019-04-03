@@ -64,7 +64,7 @@
  south_pacific_mandate_SUCCEEDED_DESC:0 "Nasi saperzy umocnili wyspy Mandatu Południowego Pacyfiku. Każdy agresor przekona się, że niełatwo wykurzyć wojska japońskie z tych ziem."
  demand_indochina_focus:0 "Zażądaj Indochin Francuskich"
  demand_indochina_focus_desc:0 "Po porażce w Europie Francuzi nie są w stanie utrzymać swoich terytoriów zamorskich. Musimy zmusić ich władze do przekazania infrastruktury Indochin w nasze ręce. Ten region będzie wspaniałą bazą wypadową w przyszłych kampaniach."
- demand_indochina_focus_tt:0 "W stanie wojny z Francją lub Francja nie kontroluje Indochin.\nW tej samej frakcji co Francja."
+ demand_indochina_focus_tt:1 "Francja posiada Indochiny"
  demand_indochina_focus_short_desc:0 "§LZmuś nowy francuski rząd do oddania Indochin.§!"
  demand_french_indochina_SUCCEEDED:0 "Wysłaliśmy żądania"
  demand_french_indochina_SUCCEEDED_DESC:0 "Nasze oddziały stoją na granicy Indochin Francuskich, żeby nikt nie miał wątpliwości, co grozi Francji w przypadku odmowy."

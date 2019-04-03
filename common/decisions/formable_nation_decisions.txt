@@ -638,21 +638,7 @@ form_united_netherlands_category = {
 				original_tag = BEL
 				original_tag = LUX
 			}
-			OR = {
-				has_dlc = "Waking the Tiger"
-				AND = {
-					has_dlc = "Man the Guns"
-					has_completed_focus = HOL_bring_socialism_south
-				}
-				AND = {
-					has_dlc = "Man the Guns"
-					has_completed_focus = HOL_bring_socialism_south
-				}
-				AND = {
-					has_dlc = "Man the Guns"
-					has_completed_focus = HOL_revive_the_buffer_state_proposal
-				}
-			}
+			has_dlc = "Waking the Tiger"
 		}
 
 		available = {
@@ -680,6 +666,7 @@ form_united_netherlands_category = {
 				original_tag = LUX
 			}
 			NOT = { has_global_flag = form_united_netherlands_flag }
+			NOT = { has_global_flag = HOL_benelux_formed }
 		}
 
 		complete_effect = {
@@ -1000,7 +987,7 @@ form_european_union_category = {
 				original_tag = ITA
 				original_tag = GER
 				original_tag = WGR
-				original_tag = ENG
+				#original_tag = ENG
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -1101,15 +1088,7 @@ form_european_union_category = {
 				original_tag = ITA
 				original_tag = GER
 			}
-			OR = {
-				has_government = democratic
-				AND = {
-					original_tag = ENG
-					has_government = fascism
-					has_completed_focus = ENG_organize_the_blackshirts
-					has_country_leader = { ruling_only = yes name = "Oswald Mosley" }
-				}		
-			}
+			has_government = democratic 
 			NOT = { has_global_flag = form_european_union_flag }
 			is_major = yes
 		}
@@ -2780,3 +2759,4 @@ form_greater_german_reich_category = {
 		}
 	}
 }
+

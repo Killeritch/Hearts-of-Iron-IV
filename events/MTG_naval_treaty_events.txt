@@ -299,10 +299,31 @@ country_event = {
 		every_country = {
 			limit = {
 				has_naval_treaty_trigger = yes
+				has_war = no
+			}
+			country_event = MTG_naval_treaty.11
+		}
+		every_country = {
+			limit = {
+				has_naval_treaty_trigger = yes
 			}
 			remove_naval_treaty_effect = yes
 		}
 	}
 	option = { #great
+	}
+}
+
+#notification event that the naval treaty is null and void due to war being declared
+country_event = {
+	id = MTG_naval_treaty.11
+	title = MTG_naval_treaty.11.t
+	desc = MTG_naval_treaty.11.desc
+	picture = GFX_report_event_ast_navy
+	
+	is_triggered_only = yes
+	
+	option = { #great
+		name = MTG_naval_treaty.11.a 
 	}
 }

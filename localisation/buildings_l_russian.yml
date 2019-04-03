@@ -74,7 +74,7 @@
  BUILDING_CURRENT_MAX_LEVEL:0 "Максимальный уровень сооружения $BUILDING|Y$: $MAXLEVEL|Y$"
  BUILDING_CURRENT_MAX_LEVEL_SHARED_SLOTS:0 "$BUILDING|Y$: максимум в регионе $MAXLEVEL|Y$"
  BUILDING_LEVEL_HEALTH:0 "Прочность уровня: $VALUE|%2Y$"
- AIR_DEFENSE_IN_STATE:0 "\n§HОбщее снижение урона от бомбардировок:§! $TOT|%G$\nПВО: $AA|-%$\n"
+ AIR_DEFENSE_IN_STATE:0 "\n§HСнижение урона от бомбардировок производственных мощностей:§! $TOT_INDUSTRY|%G$\n§HСнижение урона от прочих бомбардировок:§! $TOT|%G$\nПВО: $AA|-%$\n"
  RADAR_ONMAP_TOOLTIP:0 "§HРадарная станция§! уровень: $LVL|G$/$TOT|H$\nВладелец: $WHO|H$"
  RADAR_ONMAP_DAMAGED_TOOLTIP:0 "§HРадарная станция§! уровень: $LVL|R$/$TOT|H$\nВладелец: $WHO|H$"
  RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HПокрытие в этом регионе: §!"

@@ -1271,7 +1271,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_speed_factor = 0.07
+				research_speed_factor = 0.10
 			}
 		}
 
@@ -1911,7 +1911,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = neutrality
 			}
 			
 			removal_cost = -1
@@ -1927,7 +1927,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				always = yes
+				has_government = fascism
 			}
 			
 			removal_cost = -1
@@ -2387,7 +2387,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -2402,7 +2402,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -2417,7 +2417,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -2434,7 +2434,7 @@ ideas = {
 		
 		fokker = {
 			
-			picture = generic_air_manufacturer_3
+			picture = fokker
 
 			available = {
 				has_completed_focus = HOL_fokker
@@ -2448,7 +2448,7 @@ ideas = {
 			cost = 75
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -2464,7 +2464,7 @@ ideas = {
 
 		koolhoven = {
 			
-			picture = generic_air_manufacturer_2
+			picture = koolhoven
 
 			
 			allowed = {
@@ -2472,7 +2472,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { medium_aircraft_manufacturer }
@@ -2493,7 +2493,7 @@ ideas = {
 		
 		nsm_amsterdam = {
 			
-			picture = generic_naval_manufacturer_1
+			picture = nsm_amsterdam
 
 			
 			allowed = {
@@ -2502,7 +2502,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			equipment_bonus = {
@@ -2517,7 +2517,7 @@ ideas = {
 
 		wilton_fijenoord = {
 			
-			picture = generic_naval_manufacturer_2
+			picture = wilton_fijenoord
 		
 			
 			allowed = {
@@ -2526,7 +2526,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			equipment_bonus = {
@@ -2547,7 +2547,7 @@ ideas = {
 
 		HOL_daf = {
 			
-			picture = generic_motorized_equipment_manufacturer_3
+			picture = HOL_daf
 
 			available = {
 				has_completed_focus = HOL_daf
@@ -2563,7 +2563,7 @@ ideas = {
 			removal_cost = 10
 			
 			research_bonus = {
-				motorized_equipment = 0.10
+				motorized_equipment = 0.15
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -2571,7 +2571,7 @@ ideas = {
 		
 		artillerie_inrichtingen = {
 			
-			picture = generic_artillery_manufacturer_1
+			picture = artillerie_inrichtingen
 
 			available = {
 				has_completed_focus = HOL_expand_the_artillerieinrichtingen
@@ -2585,7 +2585,7 @@ ideas = {
 			cost = 75
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			equipment_bonus = {
@@ -2600,7 +2600,7 @@ ideas = {
 	
 		hih_siderius = {
 				
-			picture = generic_artillery_manufacturer_2
+			picture = hih_siderius
 		
 			
 			allowed = {
@@ -2609,7 +2609,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = 0.15
 			}
 			
 			equipment_bonus = {
@@ -2638,10 +2638,10 @@ ideas = {
 
 			cost = 75
 
-			picture = generic_industrial_concern_1
+			picture = HOL_royal_dutch_shell
 			
 			research_bonus = {
-				industry = 0.10
+				industry = 0.15
 				
 			}
 			
@@ -2661,10 +2661,10 @@ ideas = {
 
 			cost = 75
 
-			picture = generic_electronics_concern_1
+			picture = HOL_philips
 			
 			research_bonus = {
-				electronics = 0.10
+				electronics = 0.15
 			}
 			
 			traits = { electronics_concern }

@@ -243,7 +243,7 @@
  STAT_COMMON_MAXIMUM_SPEED:0 "Vel. máxima: "
  STAT_COMMON_MAXIMUM_SPEED_DESC:0 "La rapidez con la que esta unidad puede atravesar el terreno en condiciones óptimas."
  STAT_NAVY_MAXIMUM_SPEED:0 "Vel. máxima: "
- STAT_NAVY_MAXIMUM_SPEED_DESC:0 "Un barco más rápido lo tendrá más fácil para deshacerse de sus perseguidores y puede acercarse antes al alcance de fuego óptimo y ponerse en posición más rápido a la hora de concentrar flotas."
+ STAT_NAVY_MAXIMUM_SPEED_DESC:1 "Un barco más rápido lo tiene más fácil a la hora de deshacerse de sus perseguidores al intentar retirarse del combate. También hay menos probabilidades de que lo alcance el fuego enemigo, puede entablar contacto con más facilidad al detectar al enemigo y alejarse más rápido de la batalla."
  STAT_NAVY_RANGE:0 "Alcance máximo: "
  STAT_NAVY_RANGE_DESC:0 "El alcance de un barco indica sus reservas de combustible y alimentos, que condicionan lo lejos que puede viajar desde la base naval aliada más cercana."
  STAT_COMMON_ARMOR:0 "Blindaje: "

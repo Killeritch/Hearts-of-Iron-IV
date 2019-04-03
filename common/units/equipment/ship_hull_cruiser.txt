@@ -373,11 +373,14 @@ equipments = {
 
 		
 		surface_detection = 15
-		sub_detection = 20
+		sub_detection = 5
 		surface_visibility = 15
-		naval_speed = 28
+		naval_speed = 20
 		reliability = 0.8
-
+		resources = {
+			#oil = 1
+			steel = 2
+		}
 	}
 
 	light_cruiser_2 = {
@@ -408,8 +411,8 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 25
-		naval_speed = 30
+		sub_detection = 5
+		naval_speed = 25
 		reliability = 0.85
 
 		naval_range = 3000
@@ -422,10 +425,10 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 2000
+		build_cost_ic = 1650
 		resources = {
 			#oil = 1
-			steel = 1
+			steel = 3
 		}
 		manpower = 800
 	}
@@ -458,9 +461,9 @@ equipments = {
 		armor_value = 7
 
 		
-		surface_detection = 50
-		sub_detection = 50
-		naval_speed = 32
+		surface_detection = 30
+		sub_detection = 10
+		naval_speed = 28
 		reliability = 0.90
 
 		naval_range = 4000
@@ -510,9 +513,9 @@ equipments = {
 		armor_value = 8
 
 		
-		surface_detection = 70
-		sub_detection = 60
-		naval_speed = 34
+		surface_detection = 40
+		sub_detection = 10
+		naval_speed = 30
 		reliability = 0.92
 
 		naval_range = 4500
@@ -528,7 +531,7 @@ equipments = {
 		build_cost_ic = 2000
 		resources = {
 			#oil = 2
-			steel = 2
+			steel = 4
 			chromium = 1
 		}
 		manpower = 1140
@@ -638,7 +641,7 @@ equipments = {
 		build_cost_ic = 2200
 		resources = {
 			#oil = 1
-			steel = 2
+			steel = 3
 		}
 		
 		manpower = 1500
@@ -688,7 +691,7 @@ equipments = {
 		build_cost_ic = 2600
 		resources = {
 			#oil = 1
-			steel = 2
+			steel = 4
 		}		
 		manpower = 1700
 	}
@@ -738,7 +741,7 @@ equipments = {
 		build_cost_ic = 3000
 		resources = {
 			#oil = 2
-			steel = 2
+			steel = 4
 		}		
 		manpower = 1900
 	}
@@ -789,7 +792,7 @@ equipments = {
 		build_cost_ic = 3400
 		resources = {
 			#oil = 2
-			steel = 3
+			steel = 5
 			chromium = 1
 		}		
 		manpower = 2200
@@ -889,9 +892,9 @@ equipments = {
 
 		
 		surface_detection = 40
-		sub_detection = 50
+		sub_detection = 10
 		surface_visibility = 15
-		naval_speed = 32
+		naval_speed = 25
 		reliability = 0.9
 		
 		naval_range = 4000
@@ -981,7 +984,7 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 20
+		sub_detection = 1
 		surface_visibility = 15
 		naval_speed = 25
 		reliability = 0.9

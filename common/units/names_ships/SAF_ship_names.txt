@@ -12,7 +12,9 @@ SAF_DD_HISTORICAL = {
 	fallback_name = "Destroyer %s"					
 
 	unique = {											
-		"Jan van Riebeeck" "Simon van der Stel" "Teviot" "Good Hope" "Natal" "Transvaal" "Swale" "VRyśtaat" "President Pretorius" "President Kruger" "President Steyn" 
+		"Jan van Riebeeck" "Simon van der Stel" "Good Hope" "Natal" "Transvaal" "Teviot" "Vrystaat" "Bloemfontein" "Pietermaritzburg" 
+		"Johannesburg" "Kimberley" "Port Elizabeth" "Mosselbaai" "Walvisbaai" "East London" "Windhoek" "Durban" "Kaapstad" "Pretoria"
+		"President Pretorius" "President Kruger" "President Steyn" 
 	}
 }
 
@@ -30,7 +32,7 @@ SAF_CL_HISTORICAL = {
 	fallback_name = "Light Cruiser %s"
 
 	unique = {
-		"Good Hope" "Natal" "Transvaal" "Orange Free State" "Cape Town" "Johannesburg" "Port Elizabeth" "East London" "Bloemfontein" "Durban" "Pretoria" 
+		"Good Hope" "Natal" "Transvaal" "Orange Free State" "Cape Town" "Johannesburg" "Port Elizabeth" "East London" "Bloemfontein" "Durban" "Pretoria" "Kimberley" "Mosselbaai" "Walvisbaai" "Windhoek" "Kaapstad" 
 	}
 }
 
@@ -47,7 +49,7 @@ SAF_CA_HISTORICAL = {
 	fallback_name = "Heavy Cruiser %s"
 
 	unique = {
-		"Good Hope" "Natal" "Transvaal" "Orange Free State" "Cape Town" "Johannesburg" "Port Elizabeth" "East London" "Bloemfontein" "Durban" "Pretoria" 
+		"Good Hope" "Natal" "Transvaal" "Orange Free State" "Cape Town" "Johannesburg" "Port Elizabeth" "East London" "Bloemfontein" "Durban" "Pretoria" "Kimberley" "Mosselbaai" "Walvisbaai" "Windhoek" "Kaapstad" 
 	}
 }
 
@@ -122,3 +124,34 @@ SAF_SS_HISTORICAL = {
 		"Spear" "Umkhonto" "Assegaai" "Adventurous" "Astrant" 
 	}
 }
+
+
+### THEME: SOUTH AFRICAN PROVINCES ###
+SAF_PROVINCES = {
+	name = NAME_THEME_PROVINCES
+
+	for_countries = { SAF }
+
+	type = ship
+
+	prefix = "HMSAS "							
+	unique = {
+		"Orange Free State" "Good Hope" "Natal" "Transvaal" "Eastern Cape" "Northern Cape" "Western Cape" "North West" "Gauteng" "Limpopo" "Mpumalanga" 
+	}
+}
+
+## THEME: CANADIAN CITIES ###
+SAF_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { SAF }
+
+	type = ship
+
+	prefix = "HMSAS "							
+	unique = {
+		"Cape Town" "Johannesburg" "Pretoria" "Port Elizabeth" "Bloemfontein" "East London" "Durban" "Kimberley" "Mosselbaai" "Walvisbaai" 
+		"Pietermaritzburg" "Windhoek" "Kaapstad" "Pietersburg" "Germiston" "Nelspruit" "Soweto" "Mafikeng" "Bisho" "Klerksdorp"
+	}
+}
+

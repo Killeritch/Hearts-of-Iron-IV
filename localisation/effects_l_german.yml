@@ -59,7 +59,7 @@
  POLITICS_ADD_POLITICAL_POWER:0 "Politische Macht: $VAL|=+0$."
  EFFECT_TECH_BONUS_USES:0 "§Y$USES$x§! "
  EFFECT_SOUND_DESC:0 "$SOUND_NAME$ abspielen."
- EFFECT_ADD_TECH_BONUS_AHEAD_ONLY:1 "$USES$$AHEAD|%0G$ Jahre des Zeit-voraus-Malus verringern für: $LIST|Y$."
+ EFFECT_ADD_TECH_BONUS_AHEAD_ONLY:2 "$USES$$AHEAD|G.1$ Jahre des Zeit-voraus-Malus verringern für: $LIST|Y$."
  EFFECT_ADD_TECH_BONUS_BONUS_ONLY:0 "$USES$$BONUS|%0+$ Forschungsbonus für: $LIST|Y$."
  EFFECT_ADD_TECH_BONUS:1 "Zeit-voraus-Malus um $AHEAD|.1G$ Jahre reduzieren und einen Forschungsbonus von $BONUS|%0+$ verleihen. Gilt für die nächsten $USES|H$ Erforschungen dieser Technologien: $LIST|H$."
  EFFECT_DEMILITARIZED_ZONE:0 "Wird eine entmilitarisierte Zone."

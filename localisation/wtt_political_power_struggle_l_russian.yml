@@ -149,7 +149,7 @@
  wtt_political_organisation.3.desc:0 "Мы получили приятную новость из региона [state.GetName], где некоторое время назад возникло «Общество по изучению идей лидера [Root.GetLeader]». Эта группа сейчас пользуется широкой поддержкой среди населения. При этом [old_majority_country.GetLeader] больше нигде не упоминается."
  wtt_political_organisation.3.a:0 "Они стали приверженцами более прогрессивной теории."
  wtt_political_organisation.4.t:0 "[From.GetNameDefCap] получает большинство в регионе [state.GetName]"
- wtt_political_organisation.4.desc_not_majority:0 "Наши агенты в регионе [state.GetName] доложили, что [old_majority_country.GetNameDef] резко теряет поддержку среди местного населения. [majority_country.GetNameDef], напротив, ее набирает — во всех крупных городах региона прошли массовые демонстрации в знак солидарности, а портреты, на которых изображен [majority_country.GetLeader], можно увидеть в каждой деревне."
+ wtt_political_organisation.4.desc_not_majority:0 "Наши агенты в регионе [state.GetName] доложили, что [old_majority_country.GetNameDef] резко теряет поддержку среди местного населения. [majority_country.GetNameDef], напротив, ее набирает - во всех крупных городах региона прошли массовые демонстрации в знак солидарности, а портреты, на которых изображен [majority_country.GetLeader], можно увидеть в каждой деревне."
  wtt_political_organisation.4.desc_had_majority:0 "Применив все доступные средства, агенты государства [majority_country.GetNameDef], похоже, сумели склонить население региона [state.GetName] на свою сторону. Мы должны удвоить наши усилия в борьбе за доверие граждан."
  wtt_political_organisation.4.a:0 "Это неприемлемо."
  wtt_political_organisation.5.t:0 "Донесение из региона [state.GetName]"

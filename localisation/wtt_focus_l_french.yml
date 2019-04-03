@@ -635,6 +635,7 @@
  JAP_torpedo_cruisers:0 "Torpilleurs"
  JAP_torpedo_cruisers_desc:0 "Nous devrions consacrer toute une classe de bâtiments spécialement dédiés au transport de nos nouvelles torpilles. Ils nous permettront alors de faire des ravages au sein des flottes ennemies."
  cost_reduced_last_stand:1 "Permet d'user de la capacité de commandement §YDernière résistance§! pour un coût très réduit.\n"
+ JAP_yamato_tt:0 "Donne deux super-cuirassés de classe Yamato à la production."
  MAN_pacify_the_countryside:0 "Pacifier les campagnes"
  MAN_pacify_the_countryside_desc:0 "Depuis que nous sommes au pouvoir, les hors-la-loi et rebelles n'ont de cesse de s'opposer à notre autorité dans les régions les plus reculées du pays. Si nous voulons que notre gouvernement soit pris au sérieux, nous devons éradiquer ces terroristes et montrer à la population que nous pouvons imposer notre loi."
  MAN_pacify_the_countryside_effect_tooltip:0 "Garder des troupes dans les États concernés pour neutraliser les brigands infestant les campagnes.\n"

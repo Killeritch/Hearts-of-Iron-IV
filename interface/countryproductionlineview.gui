@@ -56,7 +56,6 @@ guiTypes = {
 				margin = {top =36 bottom = 13}
 				scroll_wheel_factor = 40
 				verticalScrollbar = "right_vertical_slider"
-				vertical_scroll_step = 50
 				smooth_scrolling = yes
 				
 				background = {
@@ -826,10 +825,9 @@ guiTypes = {
 			
 			iconType = {
 				name = "dockyards_used"
-				position = { x=5 y=7 }	
-				spriteType = "GFX_naval_factory_icon"
+				position = { x=3 y=5 }
+				spriteType = "GFX_dockyard_icon_with_wrench"
 				frame = 1
-				scale = 0.9
 				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO"
 			}
 			
@@ -1432,7 +1430,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "production_deployment_window"
 		position = { x=-356 y=78}	
-		show_position = { x=544 y =78 }
+		show_position = { x=540 y =78 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -1446,7 +1444,7 @@ guiTypes = {
 		iconType = {
 			name ="header_bg"
 			spriteType = "GFX_ship_name_title_bg"
-			position = { x = 5 y = 5 }
+			position = { x = 5 y = 7 }
 
 		}
 		
@@ -1463,7 +1461,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "deployments"
-			position = { x=0 y=50 }
+			position = { x=0 y=43 }
 			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
 			smooth_scrolling = yes
@@ -1486,7 +1484,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close"
-			position = { x = -50 y = 5 }
+			position = { x = -43 y = 9 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -2589,6 +2587,11 @@ guiTypes = {
 
 		}	
 
+		positionType = {
+			name = "task_force_insignia_pos"
+			position = { x=221 y=0 }
+		}
+
 		iconType = {
 			name = "deploy_icon"
 			position = { x=223 y=-2 }	
@@ -2900,6 +2903,11 @@ guiTypes = {
 			clicksound = click_default
 		}	
 
+		positionType = {
+			name = "task_force_insignia_pos"
+			position = { x=221 y=0 }
+		}
+
 		iconType = {
 			name = "deploy_icon"
 			position = { x=223 y=-2 }	
@@ -2913,7 +2921,7 @@ guiTypes = {
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
 			text = "This buttontext is a bug and should not appear"
-			maxWidth = 140
+			maxWidth = 90
 			maxHeight = 25
 			fixedsize = yes
 			alwaystransparent = yes
@@ -3144,6 +3152,11 @@ guiTypes = {
 			buttonFont = "hoi_16mbs"
 			clicksound = click_default
 		}
+
+		positionType = {
+			name = "task_force_insignia_pos"
+			position = { x=221 y=0 }
+		}
 		
 		iconType = {
 			name = "deploy_icon"
@@ -3363,6 +3376,11 @@ guiTypes = {
 			quadTextureSprite = "GFX_naval_deploy_button"
 			buttonFont = "hoi_16mbs"
 			clicksound = click_default
+		}
+
+		positionType = {
+			name = "task_force_insignia_pos"
+			position = { x=221 y=0 }
 		}
 
 		iconType = {
@@ -4002,9 +4020,9 @@ guiTypes = {
 			format = center
 		}
 	}
-	
+
 	containerWindowType = {
-		name = "production_deployment_fleet_item"
+		name = "production_deployment_task_force_item"
 		position = { x=0 y=0 }
 		size = { width=335 height=35 }
 		clipping = no
@@ -4013,14 +4031,12 @@ guiTypes = {
 			name = "Background"
 			spriteType ="GFX_deploy_port_fleet_bg"
 		}
-		
-		iconType = {
-			name = "icon"
-			position = { x=3 y=4 }
-			spriteType = "GFX_deploy_port_fleet_icons"
-			frame = 2
+
+		positionType = {
+			name = "task_force_insignia_pos"
+			position = { x=2 y=2 }
 		}
-		
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = 39 y = 9 }
@@ -4031,6 +4047,37 @@ guiTypes = {
 			maxHeight = 25
 			format = center
 		}
+	}
+
+	containerWindowType = {
+		name = "production_deployment_navy_theater_item"
+		position = { x=0 y=0 }
+		size = { width=335 height=35 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			spriteType ="GFX_deploy_port_fleet_bg"
+		}
+
+		iconType = {
+			name = "icon"
+			position = { x=3 y=4 }
+			spriteType = "GFX_deploy_port_fleet_icons"
+			frame = 2
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 39 y = 9 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0}
+			text = "somewhere"
+			maxWidth = 280
+			maxHeight = 25
+			format = center
+		}
+
 	}
 
 	containerWindowType = {

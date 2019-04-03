@@ -41,5 +41,5 @@
  ABILITY_ON_ADD:0 "À l'exécution :"
  ABILITY_ON_HOURLY:0 "Chaque heure :"
  ABILITY_ON_DAILY:0 "Chaque jour :"
- ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§RCette capacité est déjà active au niveau du groupe d'armées.§!"
- ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§RCette capacité est déjà active pour tous les groupes d'enfants.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§RCette capacité est déjà activée au niveau du groupe d'armées.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§RCette capacité est déjà activée pour tous les sous-groupes.§!"

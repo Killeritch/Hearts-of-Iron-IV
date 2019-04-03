@@ -37,7 +37,7 @@ FREN_INF_01 =
 {
 	name = "Infantry Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -52,7 +52,7 @@ FREN_INF_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dème Division d'Infanterie" }
+		1 = { "%dère Division d'Infanterie" }
 		2 = { "%dème Division d'Infanterie" }
 		3 = { "%dème Division d'Infanterie" }
 		4 = { "%dème Division d'Infanterie" }
@@ -79,7 +79,7 @@ FREN_INFB_01 =
 {
 	name = "Infantry Brigade"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -94,7 +94,7 @@ FREN_INFB_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dème Brigade d'Infanterie" }
+		1 = { "%dère Brigade d'Infanterie" }
 		2 = { "%dème Brigade d'Infanterie" }
 		3 = { "%dème Brigade d'Infanterie" }
 		4 = { "%dème Brigade d'Infanterie" }
@@ -121,7 +121,7 @@ FREN_CAV_01 =
 {
 	name = "Cavalry Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -153,7 +153,7 @@ FREN_MOT_01 =
 {
 	name = "Motorized Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -185,7 +185,7 @@ FREN_MEC_01 =
 {
 	name = "Mechanized Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -217,7 +217,7 @@ FREN_ARM_01 =
 {
 	name = "Armored Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -247,13 +247,13 @@ FREN_ARM_01 =
 
 FREN_ARM_02 = 
 {
-	name = "Tank Division"
+	name = "Armored Division (late)"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
-	division_types = { "medium_armor" "heavy_armor" "modern_armor" }
+	division_types = { "medium_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	link_numbering_with = { FREN_ARM_01 }
@@ -277,11 +277,43 @@ FREN_ARM_02 =
 	}
 }
 
+FREN_ARM_03 = 
+{
+	name = "Tank Brigade"
+
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { FREN_INF_01 }
+
+	fallback_name = "%dème Brigade Cuirassée"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dère Brigade Cuirassée" }
+		2 = { "%dème Brigade Cuirassée" }
+		3 = { "%dème Brigade Cuirassée" }
+		4 = { "%dème Brigade Cuirassée" }
+		5 = { "%dème Brigade Cuirassée" }
+		6 = { "%dème Brigade Cuirassée" }
+		7 = { "%dème Brigade Cuirassée" }
+		8 = { "%dème Brigade Cuirassée" }
+		9 = { "%dème Brigade Cuirassée" }
+		10 = { "%dème Brigade Cuirassée" }
+	}
+}
+
 FREN_PAR_01 = 
 {
 	name = "Paratrooper Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -313,7 +345,7 @@ FREN_PAR_02 =
 {
 	name = "Airborne Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -345,7 +377,7 @@ FREN_MAR_01 =
 {
 	name = "Marine Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -377,7 +409,7 @@ FREN_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -392,7 +424,7 @@ FREN_MNT_01 =
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dème Division d'Infanterie Montagne" }
+		1 = { "%dère Division d'Infanterie Montagne" }
 		2 = { "%dème Division d'Infanterie Montagne" }
 		3 = { "%dème Division d'Infanterie Montagne" }
 		4 = { "%dème Division d'Infanterie Montagne" }
@@ -409,7 +441,7 @@ FREN_GAR_01 =
 {
 	name = "Garrison Division"
 
-	for_countries = { HAI COG LAO CAM }					# Includes names for Haiti and French-speaking releasable nations
+	for_countries = { BRD CAM CAR CAY CHA CMR COG DAH GAB GDL GNA HAI IVO LAO MAD MLI NGR RCG RWA SEN TOG VOL } 
 
 	can_use = { always = yes }
 
@@ -418,7 +450,7 @@ FREN_GAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { FREN_INF_01 }
 
-	fallback_name = "%dème Division de Garnison"
+	fallback_name = "%dème Div. d'Inf. de Garnison"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
@@ -436,5 +468,3 @@ FREN_GAR_01 =
 		10 = { "%dème Div. d'Inf. de Garnison" }
 	}
 }
-
-

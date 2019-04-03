@@ -66,7 +66,7 @@
  STABILITY_DESC:0 "La estabilidad representa el apoyo del pueblo al gobierno actual. Una estabilidad alta facilita los cambios políticos y ayuda a que la economía prospere."
  WAR_SUPPORT_DESC:0 "El apoyo bélico indica la disposición del pueblo a librar una guerra hasta el final. Necesitarás un apoyo bélico alto para promulgar muchas de las leyes y preparar a tu nación para la guerra."
  STABILITY_WAR_FACTOR:0 "En guerra: $VALUE|+2%H$"
- STABILITY_POPULARITY_FACTOR:0 "Popularidad del partido gobernante: $VALUE|=+2%H$"
+ STABILITY_POPULARITY_FACTOR:0 "Popularidad del partido gobernante: $VALUE|=+2%$"
  STABILITY_EFFECT_TITLE:0 "\n§HEfectos de nuestra estabilidad actual:§!\n"
  WAR_SUPPORT_EFFECT_TITLE:0 "\n§HEfectos de nuestro apoyo bélico actual:§!\n"
  WAR_SUPPORT_AT_OFFENSIVE_WAR:0 "Guerra ofensiva: $VALUE|+=2%H$"

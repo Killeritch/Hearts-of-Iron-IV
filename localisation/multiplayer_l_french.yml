@@ -150,4 +150,4 @@
 ###  TO BE ERASED  ###
 ######################
 # PLR_CONNECT:0 "§G§Y$NAME$§! a rejoint la partie.§!"
- OOS_61:0 "Statut de la technologie"
+ OOS_61:1 "Technologies"

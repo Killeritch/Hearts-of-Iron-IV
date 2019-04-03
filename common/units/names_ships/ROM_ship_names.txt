@@ -12,8 +12,8 @@ ROM_DD_HISTORICAL = {
 	fallback_name = "Distrugator %d"					
 
 	unique = {											
-		"Marasti" "Marasesti" "Regele Ferdinand" "Regina Maria" "Vice-Amiral Rosca" "Amiral Barbuneanu" "Contraamiral Sebastian" 
-		"Contraamiral Macellariu" "Zborul" "Pescarusul" "Lastunul" 
+		"Marasti" "Marasesti" "Regele Ferdinand" "Regina Maria" "Vifor" "Viscul" 
+		"Vice-Amiral Rosca" "Amiral Barbuneanu" "Contraamiral Sebastian" "Contraamiral Macellariu" "Zborul" "Pescarusul" "Lastunul" 
 	}
 }
 
@@ -30,7 +30,7 @@ ROM_CL_HISTORICAL = {
 	fallback_name = "Crucisator Lumina %d"
 
 	unique = {
-		"Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede" 
+		"Elisabeta" "Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede" 
 	}
 }
 
@@ -47,7 +47,7 @@ ROM_CA_HISTORICAL = {
 	fallback_name = "Crucisator Grea %d"
 
 	unique = {
-		"Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede" 
+		"Elisabeta" "Timosoara" "Arad" "Oradea" "Baia Mare" "Sighetu Marmatiei" "Bistrita" "Reghin" "Pitesti" "Rosiori de Vede" 
 	}
 }
 
@@ -119,3 +119,36 @@ ROM_SS_HISTORICAL = {
 		"Delfinul" "Rechinul" "Marsuinul" "Baracuda" "Narval" "Nautilus" "Somonul" "Peste-Spada" 
 	}
 }
+
+### THEME: ROMANIAN REGIONS ###
+ROM_REGIONS = {
+	name = NAME_THEME_REGIONS
+
+	for_countries = { ROM }
+
+	type = ship
+
+	prefix = "NMS "
+	unique = {
+		"Bucuresti" "Muntenia" "Oltenia" "Banat" "Constanta" "Transilvania" "Moldova" "Dobruja" "Crisana" "Maramures" "Basarabia" "Bukovina" 
+		"Herta" "Budjak" 
+	}
+}
+
+## THEME: ROMANIAN CITIES ###
+ROM_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { ROM }
+
+	type = ship
+
+	prefix = "NMS "
+	unique = {
+		"Bucuresti" "Cluj" "Constanta" "Puebla" "Iasi" "Craiova" "Brasov" "Galati" "Ploiesti" "Oradea" "Arad" "Pitesti" "Brăila" "Sibiu" 
+		"Bacău" "Târgu Mures" "Baia Mare" "Buzău" "Botosani" "Satu Mare" "Râmnicu Vâlcea" "Piatra Neamt" "Piatra Neamt" "Târgu Jiu" "Târgoviste" "Focsani" "Bistrita" 
+		"Tulcea" "Resita" "Slatina" "Călărasi" "Alba Iulia" "Giurgiu" "Deva" "Zalău" "Sfântu Gheorghe" "Vaslui" "Slobozia" "Alexandria" 
+		"Miercurea Ciuc" 
+	}
+}
+

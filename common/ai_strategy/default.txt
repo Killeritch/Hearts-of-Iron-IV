@@ -384,6 +384,7 @@ default_garrison_production = {
 			original_tag = CHI
 			original_tag = FRA
 			original_tag = JAP
+			original_tag = ENG
 		}
 		ai_wants_divisions >  12 #Massively decreasing the amount of garrison and suppression the AI wants
 		is_major = yes
@@ -583,6 +584,12 @@ default_area_priority = {
 		id = europe
 		value = 100
 	}
+
+	ai_strategy = {
+		type = area_priority
+		id = scandinavia
+		value = 100
+	}
 	
 	ai_strategy = {
 		type = area_priority
@@ -607,6 +614,12 @@ default_area_priority = {
 		id = middle_east
 		value = 50
 	}
+
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 50
+	}
 	
 	ai_strategy = {
 		type = area_priority
@@ -623,17 +636,24 @@ default_area_priority = {
 }
 
 default_area_priority_non_africa = {
-	enable = {
-		NOT = { original_tag = GER } 
-		NOT = { original_tag = FRA }
-		NOT = { capital_scope = { is_on_continent = africa } }
-	}
+    enable = {
+        NOT = { original_tag = ITA }
+        NOT = { original_tag = FRA }
+        NOT = { original_tag = ENG }
+        NOT = { is_subject_of = ENG }
+        NOT = { capital_scope = { is_on_continent = africa } }
+    }
 
-	ai_strategy = {
-		type = area_priority
-		id = africa
-		value = -90
-	}
+    ai_strategy = {
+        type = area_priority
+        id = africa
+        value = -90
+    }
+    ai_strategy = {
+        type = area_priority
+        id = suez
+        value = -90
+    }
 }
 
 default_stockpile_management = {

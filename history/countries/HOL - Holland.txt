@@ -24,6 +24,7 @@ set_technology = {
 	early_bomber = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	marines = 1
 }
 
 if = {
@@ -150,6 +151,7 @@ if = {
 		interwar_antitank = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
+		marines = 1
 
 		#doctrines
 		air_superiority = 1

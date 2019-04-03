@@ -985,6 +985,7 @@ leader_traits = {
 		}
 	}
 	anti_communist_crusader = {
+		sprite = 13
 		stability_factor = 0.05
 		communism_drift = -0.1
 
@@ -1472,7 +1473,7 @@ leader_traits = {
 
 	liberal_journalist = {
 		sprite = 13
-		random = yes
+		random = no
 		democratic_drift = 0.05
 		political_power_factor = 0.05
 		
@@ -1483,7 +1484,7 @@ leader_traits = {
 
 	anti_fascist_agent = {
 		sprite = 13
-		random = yes
+		random = no
 		fascism_drift = -0.02
 		stability_factor = 0.1
 		
@@ -1494,7 +1495,7 @@ leader_traits = {
 
 	monarchist_media_mogul = {
 		sprite = 13
-		random = yes
+		random = no
 		neutrality_drift = 0.1
 		
 		ai_will_do = {
@@ -1504,7 +1505,7 @@ leader_traits = {
 
 	connected_citizen = {
 		sprite = 13
-		random = yes
+		random = no
 		political_power_factor = 0.05
 		stability_factor = 0.05
 		
@@ -1863,6 +1864,7 @@ leader_traits = {
 		equipment_bonus = {
 			carrier = {
 				armor_value = 0.5 
+				max_strength = 0.1
 			}
 			capital_ship = {
 				armor_value = 0.1 

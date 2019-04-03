@@ -13,7 +13,7 @@ NZL_DD_HISTORICAL = {
 
 	unique = {											
 		"Arabis" "Arbutus" "Hawea" "Kaniere" "Pukaki" "Rotoiti" "Taupo" "Tutira" "Echuca" "Thrust" "Inverell" "Kiama" "Stawell" 
-		"Otago" "Taranaki" "Waikato" "Blackpool" "Canterbury"
+		"Otago" "Taranaki" "Waikato" "Blackpool" "Canterbury" "Defender" "Taiaroa" "Waitemata" "Poneke" "Amokura" 
 	}
 }
 
@@ -31,8 +31,9 @@ NZL_CL_HISTORICAL = {
 	fallback_name = "Light Cruiser %s"
 
 	unique = {
-		"Leander" "Achilles" "Gambia" "Arabis" "Arbutus" "Monowai" "Cook Islands" "Northland" "Auckland" "Gisborne" "Taranaki" 
-		"Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" "Otago" "Southland" 
+		"Leander" "Achilles" "Gambia" 
+		"Cook Islands" "Northland" "Auckland" "Gisborne" "Hawkes Bay" "Wellington" "Nelson" "Westland" "Marlborough" "Canterbury" "Otago" "Southland" 
+		"Bellona" "Black Prince" "Royalist" "Chatham" "Dunedin" "Diomede" "Philomel" 
 	}
 }
 
@@ -103,7 +104,7 @@ NZL_CV_HISTORICAL = {
 	fallback_name = "Carrier %s"		
 
 	unique = {
-		"Vengeance" "Melbourne" "Sydney" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" 
+		"Vengeance" "New Zealand" "Northland" "Auckland" "Gisborne" "Taranaki" "Hawkes Bay" "Wellington" "Nelson" "Westland" 
 		"Marlborough" "Canterbury" "Otago" "Southland" "Stafford" "Seddon" "Hall-Jones" "Ward" "Massey" 
 	}
 }
@@ -124,5 +125,50 @@ NZL_SS_HISTORICAL = {
 	unique = {
 		"Arabis" "Arbutus" "Hawea" "Kaniere" "Pukaki" "Rotoiti" "Taupo" "Tutira" "Echuca" "Thrust" "Inverell" "Kiama" "Stawell" 
 		"Otago" "Taranaki" "Waikato" "Blackpool" "Canterbury"
+	}
+}
+
+
+### THEME: NEW ZEALAND PROVINCES ###
+NZL_PROVINCES = {
+	name = NAME_THEME_PROVINCES
+
+	for_countries = { NZL }
+
+	type = ship
+
+	prefix = "HMNZS "							
+	unique = {
+		"Auckland" "New Plymouth" "Hawkes Bay" "Wellington" "Nelson" "Marlborough" "Northland" "Westland" "Canterbury" "Otago" "Southland" 
+	}
+}
+
+## THEME: NEW ZEALAND CITIES ###
+NZL_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { NZL }
+
+	type = ship
+
+	prefix = "HMNZS "							
+	unique = {
+		"Auckland" "Wellington" "Christchurch" "Hamilton" "Tauranga" "Napier-Hastings" "Dunedin" "Palmerston North" "Nelson" "Whangarei" "New Plymouth" "Invercargill" "Whanganui" "Gisborne"
+	}
+}
+
+## THEME: TRIBES ###
+NZL_TRIBES = {
+	name = NAME_THEME_TRIBES
+
+	for_countries = { NZL }
+
+	type = ship
+
+	prefix = "HMNZS "							
+	unique = {
+		"Maori" "Aopouri" "Ngapuhi" "Ngarauru" "Ngatipouri" "Ngaitahu" "Ngatiwhatua" "Ngatitai" "Ngatipaoa" "Ngatierangi" "Ngatiwhaka-aue" 
+		"Ngatiraukawa" "Ngatimaniapoto" "Ngatiawa" "Ngatituwharetoa" "Ngatitama" "Ngatiruanui" "Ngatihau" "Ngatiapa" "Ngatitoa" "Ngatikahungunu" 
+		"Ngahitao" "Rarawa" "Rangitane" "Taranaki" "Te Urewera" "Te Whakatohea"  "Whanauapanui" "Waikato" "Uriohau" 
 	}
 }

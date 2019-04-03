@@ -41,5 +41,5 @@
  ABILITY_MAKESHIFT_BRIDGES_DESC:1 "Fazendo pontes alternativas, as penalidades para se cruzar o rio em combate são reduzidas."
  ABILITY_EXTRA_SUPLIES_DESC:1 "Suprimentos extras são adquiridos para as tropas."
  ABILITY_REQUISITION_WINTER_GEAR_DESC:1 "Equipamentos de inverno fornecem um bônus de adaptação climática para climas frios."
- ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§REsta habilidade já está ativa no nível do Grupo do Exército.§!"
- ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§REsta habilidade já está ativa para todos os grupos de crianças.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§REsta habilidade já está ativa no nível Grupo do Exército.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§REsta habilidade já está ativa para todos os grupos inferiores.§!"

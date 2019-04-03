@@ -162,4 +162,4 @@
 # ARMY_CATEGORY_CAS:0 "Nos forces aériennes disposent de $COUNT|H$ avions d'§Yappui aérien rapproché§!."
 # ARMY_CATEGORY_NAVAL_BOMBER:0 "Nos forces aériennes disposent de $COUNT|H$ bombardiers §Ynavals§!."
 # ARMY_CATEGORY_TRANSPORT:0 "Nos forces aériennes disposent de $COUNT|H$ avions de §Ytransport§!."
- SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Utilisez £ctrl + £b pour activer le redéploiement stratégique des ordres de mouvement des armées sélectionnées."
+ SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "£ctrl£ + £b£ pour activer ou non le redéploiement stratégique lors des ordres de mouvements des armées sélectionnées."

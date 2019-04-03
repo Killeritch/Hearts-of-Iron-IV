@@ -1222,7 +1222,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_war_with_japan
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_annex_tannu_tuva }
 		x = 0
 		y = 1
@@ -1885,7 +1885,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_war_with_germany
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_attack_germany
 		prerequisite = { focus = SOV_claim_bessarabia }
 		available = {
 			country_exists = GER
@@ -2229,7 +2229,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_war_with_uk
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_attack_britain
 		prerequisite = { focus = SOV_southern_thrust }
 		prerequisite = { focus = SOV_ultimatum_to_greece }
 		available = {

@@ -214,6 +214,18 @@ add_ideas = {
 	sisu
 }
 
+create_field_marshal = {
+	name = "Carl Gustaf Emil Mannerheim"
+	picture = "portrait_fin_carl_mannerheim.dds"
+	traits = { inflexible_strategist war_hero trait_cautious defensive_doctrine trickster winter_specialist }
+	skill = 5
+	id = 58
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
+}
+
 create_corps_commander = {
 	name = "Erik Heinrichs"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"

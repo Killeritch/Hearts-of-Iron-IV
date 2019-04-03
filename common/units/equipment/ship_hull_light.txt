@@ -135,8 +135,8 @@ equipments = {
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
-			fixed_ship_engine_slot = inherit
 			fixed_ship_torpedo_slot = inherit
+			fixed_ship_engine_slot = inherit
 
 			mid_1_custom_slot = {
 				required = no
@@ -181,8 +181,8 @@ equipments = {
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
-			fixed_ship_engine_slot = inherit
 			fixed_ship_torpedo_slot = inherit
+			fixed_ship_engine_slot = inherit
 
 			front_1_custom_slot = {
 				required = no
@@ -243,8 +243,8 @@ equipments = {
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_fire_control_system_slot = inherit
 			fixed_ship_radar_slot = inherit
-			fixed_ship_engine_slot = inherit
 			fixed_ship_torpedo_slot = inherit
+			fixed_ship_engine_slot = inherit
 			front_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
@@ -318,7 +318,7 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 50
+		sub_detection = 5
 		surface_visibility = 10
 		naval_speed = 25
 		reliability = 0.80
@@ -366,9 +366,9 @@ equipments = {
 
 		
 		surface_detection = 25
-		sub_detection = 60
+		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 30
+		naval_speed = 25
 		reliability = 0.85
 
 		naval_range = 1800
@@ -417,10 +417,10 @@ equipments = {
 		armor_value = 0
 
 		
-		surface_detection = 45
-		sub_detection = 100
+		surface_detection = 40
+		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 38
+		naval_speed = 25
 		reliability = 0.90
 
 		naval_range = 2000
@@ -433,7 +433,7 @@ equipments = {
 			screen_ship
 			anti_air
 		}
-		build_cost_ic = 1080
+		build_cost_ic = 500
 		resources = {
 			#oil = 2
 			steel = 3
@@ -468,10 +468,10 @@ equipments = {
 		armor_value = 0
 
 		
-		surface_detection = 55
-		sub_detection = 140
+		surface_detection = 40
+		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 38
+		naval_speed = 25
 		reliability = 0.92
 
 		naval_range = 2500

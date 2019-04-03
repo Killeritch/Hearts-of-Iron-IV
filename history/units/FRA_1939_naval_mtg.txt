@@ -432,16 +432,25 @@ instant_effect = {
 		progress = 0.4
 		amount = 1
 	}
-	 # BB: Richelieu class (x1) ("Richelieu")
+	 # BB: Richelieu class (x1) ("Jean Bart", "Clemenceau")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_heavy_3
+			type = ship_hull_heavy_2
 			creator = "FRA"
 			version_name = "Richelieu Class"
 		}
-		name = "Richelieu" 
 		requested_factories = 2
-		progress = 0.4
+		progress = 0.8
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "FRA"
+			version_name = "Richelieu Class"
+		}
+		requested_factories = 2
+		progress = 0.3
 		amount = 1
 	}
 

@@ -85,7 +85,7 @@ CHI_nationalist_historical_plan = {
 	}
 
 	ideas = {
-
+		CHI_soong_mei_ling = 10
 	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)

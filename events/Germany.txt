@@ -3851,7 +3851,7 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 0.1
+				factor = 10
 				any_other_country = {
 					is_major = yes
 					is_in_faction_with = POL

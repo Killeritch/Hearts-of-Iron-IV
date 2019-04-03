@@ -64,7 +64,7 @@
  south_pacific_mandate_SUCCEEDED_DESC:0 "Unsere Ingenieure haben unsere Inseln im Südseemandat befestigt. Jeder potenzielle Angreifer wird feststellen, dass unsere Truppen nur schwer zu vertreiben sind."
  demand_indochina_focus:0 "Fordern Sie Französisch-Indochina"
  demand_indochina_focus_desc:0 "Nach seiner Niederlage in Europa ist Frankreichs Einfluss auf seine Kolonien in Übersee stark geschwächt. Bringen Sie die neue französische Regierung dazu, Japan vollen Zugang zu seinen Stützpunkten in Indochina zu gewähren. Diese Region wird als Ausgangspunkt für zukünftige Feldzüge äußerst nützlich sein."
- demand_indochina_focus_tt:0 "Mit Frankreich im Krieg oder Indochina ist nicht in französischem Besitz. \nBefindet sich in einem Bündnis mit Frankreich."
+ demand_indochina_focus_tt:1 "Frankreich besitzt Indochina."
  demand_indochina_focus_short_desc:0 "§LBringen Sie die neue französische Regierung dazu, Indochina abzutreten.§!"
  demand_french_indochina_SUCCEEDED:0 "Die Forderungen sind versandt"
  demand_french_indochina_SUCCEEDED_DESC:0 "Unsere Truppen sind entlang der Grenzen von Französisch-Indochina postiert. Wir haben unmissverständlich klargestellt, dass es schwere Konsequenzen geben wird, wenn unsere Forderungen zurückgewiesen werden."

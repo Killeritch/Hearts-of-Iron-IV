@@ -706,4 +706,9 @@
  ENG_england_communism_ADJ:0 "Anglian"
  ENG_communist_civil_war_communism:1 "True Union of Britain"
  ENG_communist_civil_war_communism_def:1 "the True Union of Britain"
-
+ SOV_russia_communism:0 "Russian Soviet Socialist Republic"
+ SOV_russia_communism_DEF:0 "the Russian Soviet Socialist Republic"
+ SOV_russia_communism_ADJ:0 "Russian"
+ HOL_benelux_unified_democratic:0 "Benelux Federation"
+ HOL_benelux_unified_democratic_DEF:0 "the Benelux Federation"
+ HOL_benelux_unified_democratic_ADJ:0 "Benelux"

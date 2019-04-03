@@ -2049,8 +2049,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			remove_ideas = ROM_king_carol_ii_handled
-			add_timed_idea = { idea = ROM_king_carol_ii_hedonist days = 1095 }
+			swap_ideas = {
+				add_idea = ROM_king_carol_ii_handled
+				remove_idea = ROM_king_carol_ii_hedonist
+			}
 			remove_country_leader_trait = hedonist
 		}
 	}

@@ -66,7 +66,7 @@
  STABILITY_DESC:0 "A estabilidade representa o apoio do povo ao governo atual. Com a estabilidade alta, as mudanças políticas são mais fáceis de serem implementadas e a economia flui com mais facilidade."
  WAR_SUPPORT_DESC:0 "O Suporte de Guerra representa a disposição do povo de levar a guerra até o fim.  Passar leis e preparar sua nação para a guerra reuqer efetivamente um Suporte de Guerra alto."
  STABILITY_WAR_FACTOR:0 "Em guerra: $VALUE|+2%H$"
- STABILITY_POPULARITY_FACTOR:0 "Popularidade do partido dominante: $VALUE|=+2%H$"
+ STABILITY_POPULARITY_FACTOR:0 "Popularidade do partido dominante: $VALUE|=+2%$"
  STABILITY_EFFECT_TITLE:0 "\n§HEfeitos de nossa Estabilidade atual:§!\n"
  WAR_SUPPORT_EFFECT_TITLE:0 "\n§HEfeitos de nosso Suporte de Guerra atual:§!\n"
  WAR_SUPPORT_AT_OFFENSIVE_WAR:0 "Guerra ofensiva: $VALUE|+=2%H$"

@@ -363,17 +363,15 @@ ITA_alternate_plan_fascist = {
 		#1940
 		ITA_libyan_infrastructure
 		ITA_bomber_effort
-		ITA_pact_of_steel
+		ITA_italy_first
 		ITA_light_ship_effort
 		ITA_claims_on_france
 		#1941
-		ITA_german_rd_treaty
-		ITA_german_millitary_cooperation
 		ITA_air_innovation_2
 		ITA_greece_war_goal
 		ITA_special_forces
-		#1942
 		ITA_armored_effort
+		#1942
 	}				
 	research = {
 

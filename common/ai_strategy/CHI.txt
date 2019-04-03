@@ -248,3 +248,16 @@ CHI_some_safer_places_to_build = {
         value = 300
     }
 }
+
+CHI_you_should_be_prepared_for_war = {
+
+	enable = {
+		is_literally_china = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}

@@ -587,7 +587,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			
 			traits = { military_theorist }
@@ -602,7 +602,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				air_doctrine = 0.07
+				air_doctrine = 0.10
 			}
 			
 			traits = { air_warfare_theorist }
@@ -618,7 +618,7 @@ ideas = {
 			picture = generic_political_advisor_arab_1
 			
 			research_bonus = {
-				naval_doctrine = 0.07
+				naval_doctrine = 0.10
 			}
 			
 			traits = { naval_theorist }
@@ -950,7 +950,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 						
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { convoy_escort_naval_manufacturer }
@@ -967,7 +967,7 @@ ideas = {
 			picture = generic_naval_manufacturer_3
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { pacific_fleet_naval_manufacturer }
@@ -983,7 +983,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 			
 			research_bonus = {
-				naval_equipment = 0.10
+				naval_equipment = 0.15
 			}
 			
 			traits = { atlantic_fleet_naval_manufacturer }
@@ -1006,7 +1006,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 			
 			research_bonus = {
-				air_equipment = 0.10
+				air_equipment = 0.15
 			}
 			
 			traits = { light_aircraft_manufacturer }
@@ -1030,7 +1030,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 			
 			research_bonus = {
-				infantry_weapons = 0.10
+				infantry_weapons = 0.15
 			}
 			
 			traits = { infantry_equipment_manufacturer }
@@ -1049,7 +1049,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 			
 			research_bonus = {
-				artillery = 0.10
+				artillery = 0.15
 			}
 			
 			traits = { artillery_manufacturer }

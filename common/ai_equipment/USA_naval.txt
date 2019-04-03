@@ -1233,7 +1233,7 @@ USA_naval_carrier = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
 				fixed_ship_anti_air_slot = ship_anti_air
-				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_engine_slot = carrier_ship_engine_2
 				fixed_ship_secondaries_slot = ship_secondaries
 				front_1_custom_slot = ship_deck_space
 			}

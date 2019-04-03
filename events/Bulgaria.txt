@@ -25,7 +25,6 @@ country_event = {
 			}
 			ROM = {
 				remove_state_core = 77
-				add_state_claim = 77
 			}
 		}
 		hidden_effect = {

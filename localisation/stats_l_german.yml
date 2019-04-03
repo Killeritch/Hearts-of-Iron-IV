@@ -177,7 +177,7 @@
  STAT_COMMON_MAXIMUM_SPEED_VALUE:0 "$VALUE|*H1$ km/h"
  STAT_COMMON_MAXIMUM_SPEED_DIFF:0 " $VALUE|=+1$ km/h"
  STAT_NAVY_MAXIMUM_SPEED:0 "Max. Geschw.: "
- STAT_NAVY_MAXIMUM_SPEED_DESC:0 "Ein schnelleres Schiff kann Verfolger einfacher abschütteln und die optimale Feuerreichweite schneller erreichen. Außerdem kann es schneller die Stellung wechseln, wenn Flotten konzentriert werden."
+ STAT_NAVY_MAXIMUM_SPEED_DESC:1 "Ein schnelleres Schiff kann sich leichter von Verfolgern lösen, wenn es versucht, sich aus dem Kampf zurückzuziehen. Außerdem ist die Wahrscheinlichkeit geringer, dass es von feindlichem Feuer getroffen wird. Es kann Kontakte leichter verfolgen, wenn es den Feind geortet hat, und bewegt sich außerhalb von Gefechten schneller."
  STAT_NAVY_MAXIMUM_SPEED_VALUE:0 "$VALUE|H1$ kn"
  STAT_NAVY_MAXIMUM_SPEED_DIFF:0 " $VALUE|=+1$"
  STAT_NAVY_RANGE:0 "Reichweite: "

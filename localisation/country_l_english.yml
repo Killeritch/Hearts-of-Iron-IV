@@ -6,7 +6,7 @@
  STABILITY_DESC:0 "Stability represents the people's support for the current government. High stability makes political changes easier to push through and helps the economy run smoothly."
  WAR_SUPPORT_DESC:0 "War Support represents the willingness of the people to prosecute a war to the finish. Enacting many Laws and preparing your nation for going to war effectively requires high War Support."
  STABILITY_WAR_FACTOR:0 "At war: $VALUE|+2%H$"
- STABILITY_POPULARITY_FACTOR:0 "Ruling party popularity: $VALUE|=+2%H$"
+ STABILITY_POPULARITY_FACTOR:0 "Ruling party popularity: $VALUE|=+2%$"
  STABILITY_EFFECT_TITLE:0 "\n§HEffects from our current Stability:§!\n"
  WAR_SUPPORT_EFFECT_TITLE:0 "\n§HEffects from our current War Support:§!\n"
  WAR_SUPPORT_AT_OFFENSIVE_WAR:0 "Offensive war: $VALUE|+=2%H$"

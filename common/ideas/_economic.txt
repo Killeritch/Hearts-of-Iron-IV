@@ -143,6 +143,16 @@ ideas = {
 					
 					is_major = yes
 				}
+				modifier = {
+					has_war_support > 0.25
+					factor = 0 #don't even look at it if you could be taking partial mob
+				}
+				modifier = {
+					tag = ENG
+					has_war = no
+					date < 1937.6.1
+					factor = 0
+				}
    			}
 		}
 		

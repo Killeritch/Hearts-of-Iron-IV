@@ -329,6 +329,17 @@ instant_effect = {
 		progress = 0.20
 		amount = 1
 	}
+	# BB: Richelieu	
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_2
+			creator = "FRA" 
+			version_name = "Richelieu Class"
+		}
+		requested_factories = 1
+		progress = 0.10
+		amount = 1
+	}
 	 # CL: La Galissonnière class (x4) ("Jean de Vienne" "Marseillaise" "Gloire" "Montcalm") ("Georges Leygues" launched 24-Mar 1936)
 	add_equipment_production = {
 		equipment = {
@@ -381,7 +392,6 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Redoutable Class"
 		}
-		name = "Le Héros" 
 		requested_factories = 1
 		progress = 0.20
 		amount = 3
@@ -392,7 +402,6 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Redoutable Class"
 		}
-		name = "Le Conquérant" 
 		requested_factories = 1
 		progress = 0.20
 		amount = 2
@@ -403,7 +412,6 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Redoutable Class"
 		}
-		name = "Sfax" 
 		requested_factories = 1
 		progress = 0.25
 		amount = 2
@@ -415,7 +423,6 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Minerve Class"
 		}
-		name = "Iris" 
 		requested_factories = 1
 		progress = 0.20
 		amount = 1
@@ -426,7 +433,7 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Minerve Class"
 		}
-		name = "Minerve" 
+
 		requested_factories = 1
 		progress = 0.20
 		amount = 1
@@ -437,7 +444,7 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Minerve Class"
 		}
-		name = "Vénus" 
+ 
 		requested_factories = 1
 		progress = 0.20
 		amount = 1
@@ -448,7 +455,7 @@ instant_effect = {
 			creator = "FRA" 
 			version_name = "Minerve Class"
 		}
-		name = "Junon" 
+
 		requested_factories = 1
 		progress = 0.10
 		amount = 1

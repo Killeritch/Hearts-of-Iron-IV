@@ -41,5 +41,5 @@
  ABILITY_MAKESHIFT_BRIDGES_DESC:1 "Budowa prowizorycznych mostów zmniejszy kary za forsowanie rzek podczas walki."
  ABILITY_EXTRA_SUPLIES_DESC:1 "Wojska otrzymują dodatkowe zaopatrzenie."
  ABILITY_REQUISITION_WINTER_GEAR_DESC:1 "Wyposażenie zimowe daje premię do aklimatyzacji w chłodzie."
- ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§RTa umiejętność jest już aktywna na poziomie Grupy Armii.§!"
- ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§RTa umiejętność jest już aktywna dla wszystkich grup dzieci.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§RTa zdolność jest już aktywna na poziomie grupy armii.§!"
+ ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§RTa zdolność jest już aktywna dla wszystkich podgrup.§!"

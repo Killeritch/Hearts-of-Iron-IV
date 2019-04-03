@@ -156,4 +156,4 @@
  NAVY_THEATER_DETACHED_TASK_FORCES_ENTRY:0 "Einsatzgruppe $TASK_FORCE_NAME|H$ hat:"
  ARMY_NAVIES_MISSION_NO_REGIONS:0 "§RKein erreichbares strategisches Gebiet ausgewählt§!"
  ARMY_NAVIES_MISSION_IDLE:0 "§RKeine Mission festgelegt§!"
- SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Verwenden Sie £ctrl + £b, um die strategische Umschichtung für Bewegungsbefehle ausgewählter Armeen umzuschalten."
+ SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Mit £ctrl  + £b  aktivieren/deaktivieren Sie die strategische Versetzung, um den gewählten Armeen Bewegungsbefehle zu erteilen."

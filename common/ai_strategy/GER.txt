@@ -1124,6 +1124,12 @@ GER_area_priority = {
 	
 	ai_strategy = {
 		type = area_priority
+		id = scandinavia
+		value = 100
+	}
+
+	ai_strategy = {
+		type = area_priority
 		id = north_america
 		value = 100
 	}
@@ -1144,6 +1150,11 @@ GER_area_priority = {
 		type = area_priority
 		id = middle_east
 		value = 50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = 30
 	}
 	
 	ai_strategy = {
@@ -1189,6 +1200,30 @@ invading_france_is_pointless_because_we_go_through_benelux_soon = {
 		type = invade
 		id = "POL"			
 		value = -500 
+	}
+}
+
+worry_about_barbarossa_before_africa = {
+	enable = {
+		tag = GER
+
+		country_exists = SOV
+		NOT = {	is_in_faction_with = SOV }
+		has_war_with = ENG
+		ENG = { is_ai = yes }
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = -50
+	}
+	ai_strategy = {
+		type = area_priority
+		id = suez
+		value = -50
 	}
 }
 
@@ -1307,7 +1342,7 @@ axis_stay_away_from_the_royal_navy = {
 	ai_strategy = {
 		type = naval_avoid_region
 		id = 18 #english channel
-		value = 500
+		value = 600 # avoid doing missions as well
 	}
 	ai_strategy = {
 		type = naval_avoid_region

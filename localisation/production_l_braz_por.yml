@@ -76,6 +76,8 @@
  PRODUCTION_EQUIPMENT_NEED:0 "Requer: $AMOUNT|Y$"
  PRODUCTION_DEPLOY_TO_BASE:0 "Implantar no porto: $BASE|H$"
  PRODUCTION_DEPLOY_TO_FLEET:1 "Enviar para força tarefa: $FLEET|H$"
+ PRODUCTION_DEPLOY_TO_RESERVE_FLEET_THEATER:1 "Enviar para a reserva do teatro: $THEATER|H$"
+ PRODUCTION_NAVAL_DEPLOYMENT_THEATER:0 "Enviar teatro alvo $THEATER|H$ com base em $STATE|H$."
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET_INVALID_BASE:0 "O alvo de implantação $FLEET|H$ não tem uma base."
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET:1 "Enviar força tarefa alvo $FLEET|H$ com base em $STATE|H$."
  PRODUCTION_NAVAL_DEPLOYMENT_BASE:0 "Base alvo de implantação em $STATE|H$."

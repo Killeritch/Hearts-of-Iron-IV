@@ -729,6 +729,10 @@ focus_tree = {
 			NOT = { has_completed_focus = HOL_oranje_boven }
 			INS = { is_subject_of = HOL }
 		}
+		bypass = {
+			INS = { exists = no }
+			owns_state = 335
+		}
 		prerequisite = { focus = HOL_the_crown_jewel_colony }
 		mutually_exclusive = { focus = HOL_the_zuiderzee_works }
 		icon = GFX_focus_generic_treaty
@@ -740,9 +744,15 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = HOL_curtail_colonial_autonomy_overlord
+			add_timed_idea = {
+				idea = HOL_curtail_colonial_autonomy_overlord
+				days = 545
+			}
 			INS = {
-				add_ideas = HOL_curtail_colonial_autonomy_subject
+				add_timed_idea = {
+					idea = HOL_curtail_colonial_autonomy_subject
+					days = 545
+				}
 				hidden_effect = {
 					country_event = { id = mtg_netherlands.21 hours = 6 }
 				}
@@ -4769,6 +4779,13 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
+					NOT = { is_in_faction_with = SOV }
+					NOT = { is_in_faction_with = FRA }
+				}
+				custom_effect_tooltip = HOL_for_the_common_good_tt
+			}
+			if = {
+				limit = {
 					is_in_faction_with = FRA
 					NOT = { is_in_faction_with = SOV }
 				}
@@ -5380,7 +5397,7 @@ focus_tree = {
 			6 = {
 				if = {
 					limit = {
-						7 = {
+						6 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 1
@@ -5399,7 +5416,7 @@ focus_tree = {
 			34 = {
 				if = {
 					limit = {
-						7 = {
+						34 = {
 							free_building_slots = {
 								building = arms_factory
 								size > 0
@@ -5423,7 +5440,7 @@ focus_tree = {
 			8 = {
 				if = {
 					limit = {
-						7 = {
+						8 = {
 							free_building_slots = {
 								building = industrial_complex
 								size > 0
@@ -6115,6 +6132,7 @@ focus_tree = {
 				}
 				remove_ideas = HOL_weak_government
 			}
+			unlock_decision_tooltip = HOL_propose_benelux_unification
 		}
 	}
 

@@ -76,6 +76,8 @@
  PRODUCTION_EQUIPMENT_NEED:0 "Bedarf: $AMOUNT|Y$"
  PRODUCTION_DEPLOY_TO_BASE:0 "In Hafen stationieren: $BASE|H$"
  PRODUCTION_DEPLOY_TO_FLEET:1 "In Einsatzgruppe einsetzen: $FLEET|H$"
+ PRODUCTION_DEPLOY_TO_RESERVE_FLEET_THEATER:1 "Zur Reserveflotte des Kriegsschauplatzes $THEATHER|H$"
+ PRODUCTION_NAVAL_DEPLOYMENT_THEATER:0 "Zum Kriegsschauplatz $THEATHER|H$ mit Stationierung in $STATE|H$"
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET_INVALID_BASE:0 "Stationierungsziel $FLEET|H$ hat keinen Stützpunkt."
  PRODUCTION_NAVAL_DEPLOYMENT_FLEET:1 "Einsatzgruppe $FLEET|H$ mit Stützpunkt in $STATE|H$ einsetzen."
  PRODUCTION_NAVAL_DEPLOYMENT_BASE:0 "Stationierungsziel-Stützpunkt in $STATE|H$."

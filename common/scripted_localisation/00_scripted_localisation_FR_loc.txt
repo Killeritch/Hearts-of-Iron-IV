@@ -205,16 +205,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = neutrality }
+			OR = { has_government = fascism has_government = democratic }
 		}
-		localization_key = FRLOC_CRC_INHAB_FASCISM_NEUTRALITY
+		localization_key = FRLOC_CRC_INHAB_FASCISM_DEMOCRATIC
 	}
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			has_government = democratic
+			has_government = neutrality
 		}
-		localization_key = FRLOC_CRC_INHAB_DEMOCRATIC
+		localization_key = FRLOC_CRC_INHAB_NEUTRALITY
 	}
 	text = {
 		trigger = {
@@ -489,8 +489,18 @@ defined_text = {
 		localization_key = FRLOC_HAI_INHAB
 	}
 	text = {
-		trigger = { OR = { tag = HOL original_tag = HOL } }
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+		}
 		localization_key = FRLOC_HOL_INHAB
+	}
+	text = {
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+		}
+		localization_key = HOL_benelux_unified_democratic_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -661,16 +671,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			NOT = { has_government = neutrality }
+			NOT = { has_government = fascism }
 		}
-		localization_key = FRLOC_MLT_INHAB_NOT_NEUTRALITY
+		localization_key = FRLOC_MLT_INHAB_NOT_FASCISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			has_government = neutrality
+			has_government = fascism
 		}
-		localization_key = FRLOC_MLT_INHAB_NEUTRALITY
+		localization_key = FRLOC_MLT_INHAB_FASCISM
 	}
 	text = {
 		trigger = { OR = { tag = MLW original_tag = MLW } }
@@ -1006,6 +1016,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = communism }
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
 		}
 		localization_key = FRLOC_SOV_NOT_COMMUNISM_INHAB
 	}
@@ -1013,8 +1024,16 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = communism
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
 		}
 		localization_key = FRLOC_SOV_COMMUNISM_INHAB
+	}
+	text = {
+		trigger = {
+			OR = { tag = SOV original_tag = SOV }
+			has_cosmetic_tag = SOV_russia has_government = communism
+		}
+		localization_key = SOV_russia_communism_INHAB
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -1537,16 +1556,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = neutrality }
+			OR = { has_government = fascism has_government = democratic }
 		}
-		localization_key = FRLOC_CRC_ADJ_M_FASCISM_NEUTRALITY
+		localization_key = FRLOC_CRC_ADJ_M_FASCISM_DEMOCRATIC
 	}
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = democratic }
+			OR = { has_government = neutrality }
 		}
-		localization_key = FRLOC_CRC_ADJ_M_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_M_NEUTRALITY
 	}
 	text = {
 		trigger = {
@@ -1821,8 +1840,18 @@ defined_text = {
 		localization_key = FRLOC_HAI_ADJ_MS
 	}
 	text = {
-		trigger = { OR = { tag = HOL original_tag = HOL } }
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+		}
 		localization_key = FRLOC_HOL_ADJ_M
+	}
+	text = {
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+		}
+		localization_key = HOL_benelux_unified_democratic_ADJ_m_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -2003,16 +2032,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			NOT = { has_government = neutrality }
+			NOT = { has_government = fascism }
 		}
-		localization_key = FRLOC_MLT_ADJ_M_NOT_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_M_NOT_FASCISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			has_government = neutrality
+			has_government = fascism
 		}
-		localization_key = FRLOC_MLT_ADJ_MS_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_MS_FASCISM
 	}
 	text = {
 		trigger = { OR = { tag = MLW original_tag = MLW } }
@@ -2345,6 +2374,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = communism }
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
 		}
 		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_S
 	}
@@ -2352,8 +2382,16 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = communism
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
 		}
 		localization_key = FRLOC_SOV_COMMUNISM_ADJ_S
+	}
+	text = {
+		trigger = {
+			OR = { tag = SOV original_tag = SOV }
+			has_cosmetic_tag = SOV_russia has_government = communism
+		}
+		localization_key = SOV_russia_communism_ADJ_s_frloc
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -2874,16 +2912,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = neutrality }
+			OR = { has_government = fascism has_government = democratic }
 		}
-		localization_key = FRLOC_CRC_ADJ_FS_FASCISM_NEUTRALITY
+		localization_key = FRLOC_CRC_ADJ_FS_FASCISM_DEMOCRATIC
 	}
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = democratic }
+			OR = { has_government = neutrality }
 		}
-		localization_key = FRLOC_CRC_ADJ_FS_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_FS_NEUTRALITY
 	}
 	text = {
 		trigger = {
@@ -3158,8 +3196,18 @@ defined_text = {
 		localization_key = FRLOC_HAI_ADJ_FS
 	}
 	text = {
-		trigger = { OR = { tag = HOL original_tag = HOL } }
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+		}
 		localization_key = FRLOC_HOL_ADJ_FS
+	}
+	text = {
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+		}
+		localization_key = HOL_benelux_unified_democratic_ADJ_fs_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -3340,16 +3388,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			NOT = { has_government = neutrality }
+			NOT = { has_government = fascism }
 		}
-		localization_key = FRLOC_MLT_ADJ_FS_NOT_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_FS_NOT_FASCISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			has_government = neutrality
+			has_government = fascism
 		}
-		localization_key = FRLOC_MLT_ADJ_FS_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_FS_FASCISM
 	}
 	text = {
 		trigger = { OR = { tag = MLW original_tag = MLW } }
@@ -3682,6 +3730,7 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = communism }
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
 		}
 		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_S
 	}
@@ -3689,8 +3738,16 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = communism
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
 		}
 		localization_key = FRLOC_SOV_COMMUNISM_ADJ_S
+	}
+	text = {
+		trigger = {
+			OR = { tag = SOV original_tag = SOV }
+			has_cosmetic_tag = SOV_russia has_government = communism
+		}
+		localization_key = SOV_russia_communism_ADJ_s_frloc
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -4211,16 +4268,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = neutrality }
+			OR = { has_government = fascism has_government = democratic }
 		}
-		localization_key = FRLOC_CRC_ADJ_M_FASCISM_NEUTRALITY
+		localization_key = FRLOC_CRC_ADJ_M_FASCISM_DEMOCRATIC
 	}
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = democratic }
+			OR = { has_government = neutrality }
 		}
-		localization_key = FRLOC_CRC_ADJ_M_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_M_NEUTRALITY
 	}
 	text = {
 		trigger = {
@@ -4495,8 +4552,18 @@ defined_text = {
 		localization_key = FRLOC_HAI_ADJ_MP
 	}
 	text = {
-		trigger = { OR = { tag = HOL original_tag = HOL } }
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+		}
 		localization_key = FRLOC_HOL_ADJ_M
+	}
+	text = {
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+		}
+		localization_key = HOL_benelux_unified_democratic_ADJ_m_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -4677,16 +4744,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			NOT = { has_government = neutrality }
+			NOT = { has_government = fascism }
 		}
-		localization_key = FRLOC_MLT_ADJ_M_NOT_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_M_NOT_FASCISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			has_government = neutrality
+			has_government = fascism
 		}
-		localization_key = FRLOC_MLT_ADJ_MP_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_MP_FASCISM
 	}
 	text = {
 		trigger = { OR = { tag = MLW original_tag = MLW } }
@@ -5019,15 +5086,24 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = communism }
-		}
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
+ 		}
 		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_P
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = communism
-		}
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
+ 		}
 		localization_key = FRLOC_SOV_COMMUNISM_ADJ_P
+	}
+	text = {
+		trigger = {
+			OR = { tag = SOV original_tag = SOV }
+			has_cosmetic_tag = SOV_russia has_government = communism
+		}
+		localization_key = SOV_russia_communism_ADJ_p_frloc
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -5548,16 +5624,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = fascism has_government = neutrality }
+			OR = { has_government = fascism has_government = democratic }
 		}
-		localization_key = FRLOC_CRC_ADJ_FP_FASCISM_NEUTRALITY
+		localization_key = FRLOC_CRC_ADJ_FP_FASCISM_DEMOCRATIC
 	}
 	text = {
 		trigger = {
 			OR = { tag = CRC original_tag = CRC }
-			OR = { has_government = democratic }
+			OR = { has_government = neutrality }
 		}
-		localization_key = FRLOC_CRC_ADJ_FP_DEMOCRATIC
+		localization_key = FRLOC_CRC_ADJ_FP_NEUTRALITY
 	}
 	text = {
 		trigger = {
@@ -5832,8 +5908,18 @@ defined_text = {
 		localization_key = FRLOC_HAI_ADJ_FP
 	}
 	text = {
-		trigger = { OR = { tag = HOL original_tag = HOL } }
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			NOT = { AND = { has_cosmetic_tag = HOL_benelux_unified has_government = democratic } }
+		}
 		localization_key = FRLOC_HOL_ADJ_FP
+	}
+	text = {
+		trigger = {
+			OR = { tag = HOL original_tag = HOL }
+			has_cosmetic_tag = HOL_benelux_unified has_government = democratic
+		}
+		localization_key = HOL_benelux_unified_democratic_ADJ_fp_frloc
 	}
 	text = {
 		trigger = { OR = { tag = HON original_tag = HON } }
@@ -6014,16 +6100,16 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			NOT = { has_government = neutrality }
+			NOT = { has_government = fascism }
 		}
-		localization_key = FRLOC_MLT_ADJ_FP_NOT_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_FP_NOT_FASCISM
 	}
 	text = {
 		trigger = {
 			OR = { tag = MLT original_tag = MLT }
-			has_government = neutrality
+			has_government = fascism
 		}
-		localization_key = FRLOC_MLT_ADJ_FP_NEUTRALITY
+		localization_key = FRLOC_MLT_ADJ_FP_FASCISM
 	}
 	text = {
 		trigger = { OR = { tag = MLW original_tag = MLW } }
@@ -6356,15 +6442,24 @@ defined_text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			NOT = { has_government = communism }
-		}
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
+ 		}
 		localization_key = FRLOC_SOV_NOT_COMMUNISM_ADJ_P
 	}
 	text = {
 		trigger = {
 			OR = { tag = SOV original_tag = SOV }
 			has_government = communism
-		}
+			NOT = { AND = { has_cosmetic_tag = SOV_russia has_government = communism } }
+ 		}
 		localization_key = FRLOC_SOV_COMMUNISM_ADJ_P
+	}
+	text = {
+		trigger = {
+			OR = { tag = SOV original_tag = SOV }
+			has_cosmetic_tag = SOV_russia has_government = communism
+		}
+		localization_key = SOV_russia_communism_ADJ_p_frloc
 	}
 	text = {
 		trigger = { OR = { tag = SPR original_tag = SPR } }
@@ -14077,6 +14172,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			frloc_parties_sg_masc_vow_02a_comm = yes
+		}
+		localization_key = FRLOC_L
+	}
+	text = {
+		trigger = {
 			frloc_parties_sg_fem_cons_03a_comm = yes
 		}
 		localization_key = FRLOC_LA
@@ -14090,6 +14191,12 @@ defined_text = {
 			frloc_parties_sg_masc_cons_01a_comm = yes
 		}
 		localization_key = FRLOC_LE_CAP
+	}
+	text = {
+		trigger = {
+			frloc_parties_sg_masc_vow_02a_comm = yes
+		}
+		localization_key = FRLOC_L_CAP
 	}
 	text = {
 		trigger = {
@@ -14112,6 +14219,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			frloc_parties_sg_masc_vow_02a_comm = yes
+		}
+		localization_key = FRLOC_DEL
+	}
+	text = {
+		trigger = {
 			frloc_parties_sg_fem_cons_03a_comm = yes
 		}
 		localization_key = FRLOC_DELA
@@ -14125,6 +14238,12 @@ defined_text = {
 			frloc_parties_sg_masc_cons_01a_comm = yes
 		}
 		localization_key = FRLOC_DU_CAP
+	}
+	text = {
+		trigger = {
+			frloc_parties_sg_masc_vow_02a_comm = yes
+		}
+		localization_key = FRLOC_DEL_CAP
 	}
 	text = {
 		trigger = {
@@ -14147,6 +14266,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			frloc_parties_sg_masc_vow_02a_comm = yes
+		}
+		localization_key = FRLOC_AL
+	}
+	text = {
+		trigger = {
 			frloc_parties_sg_fem_cons_03a_comm = yes
 		}
 		localization_key = FRLOC_ALA
@@ -14163,6 +14288,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			frloc_parties_sg_masc_vow_02a_comm = yes
+		}
+		localization_key = FRLOC_AL_CAP
+	}
+	text = {
+		trigger = {
 			frloc_parties_sg_fem_cons_03a_comm = yes
 		}
 		localization_key = FRLOC_ALA_CAP
@@ -14176,7 +14307,10 @@ defined_text = {
 	name = GetIlEllePartiComm
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_IL
 	}
@@ -14192,7 +14326,10 @@ defined_text = {
 	name = GetIlEllePartiCommCap
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_IL_CAP
 	}
@@ -14211,7 +14348,10 @@ defined_text = {
 	name = GetLuiElleEuxPartiComm
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_LUI
 	}
@@ -14227,7 +14367,10 @@ defined_text = {
 	name = GetLuiElleEuxPartiCommCap
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_LUI_CAP
 	}
@@ -14248,6 +14391,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14261,6 +14405,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14275,7 +14420,10 @@ defined_text = {
 	name = GetCeCetteCesPartiComm
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_CE
 	}
@@ -14291,7 +14439,10 @@ defined_text = {
 	name = GetCeCetteCesPartiCommCap
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_CE_CAP
 	}
@@ -14310,7 +14461,10 @@ defined_text = {
 	name = GetXEPartiComm
 	text = {
 		trigger = {
-			frloc_parties_sg_masc_cons_01a_comm = yes
+			OR = {
+				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
+			}
 		}
 		localization_key = FRLOC_X
 	}
@@ -14331,6 +14485,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14347,6 +14502,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14360,6 +14516,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14376,6 +14533,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14389,6 +14547,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14405,6 +14564,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14421,6 +14581,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14437,6 +14598,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14453,6 +14615,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14469,6 +14632,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14485,6 +14649,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14498,6 +14663,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14514,6 +14680,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14527,6 +14694,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14543,6 +14711,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}
@@ -14556,6 +14725,7 @@ defined_text = {
 		trigger = {
 			OR = {
 				frloc_parties_sg_masc_cons_01a_comm = yes
+				frloc_parties_sg_masc_vow_02a_comm = yes
 				frloc_parties_sg_fem_cons_03a_comm = yes
 			}
 		}

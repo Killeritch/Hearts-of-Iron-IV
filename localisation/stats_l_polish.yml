@@ -177,7 +177,7 @@
  STAT_COMMON_MAXIMUM_SPEED_VALUE:0 "$VALUE|*H1$ km/h"
  STAT_COMMON_MAXIMUM_SPEED_DIFF:0 "$VALUE|=+1$ km/h"
  STAT_NAVY_MAXIMUM_SPEED:0 "Maks. szybkość:"
- STAT_NAVY_MAXIMUM_SPEED_DESC:0 "Szybsze okręty mogą sprawniej oderwać się od nieprzyjaciela, podpłynąć na optymalny zasięg ataku i zająć pozycję w szyku przy ześrodkowaniu floty."
+ STAT_NAVY_MAXIMUM_SPEED_DESC:1 "Szybszy okręt może łatwiej oderwać się od ścigających go jednostek, gdy wycofuje się z walki. Zmniejsza się też prawdopodobieństwo trafienia go przez ogień wroga, może on łatwiej ścigać wykryte kontakty i przemieszcza się szybciej, gdy nie bierze udziału w bitwie."
  STAT_NAVY_MAXIMUM_SPEED_VALUE:0 "$VALUE|H1$ W"
  STAT_NAVY_MAXIMUM_SPEED_DIFF:0 "$VALUE|=+1$"
  STAT_NAVY_RANGE:0 "Maks. zasięg:"

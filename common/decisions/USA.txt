@@ -97,6 +97,7 @@ war_measures = {
 					name = "Silver Legion"
 					priority = 0
 					division_names_group = USA_INF_01
+					is_locked = yes
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -151,6 +152,8 @@ war_measures = {
 		}
 		visible = {
 			has_completed_focus = USA_recruit_the_free_corps
+			not = { has_country_flag = USA_free_corps_raised }
+			not = { has_government = democratic }
 		}
 		cost = 0
 		fire_only_once = yes
@@ -160,244 +163,250 @@ war_measures = {
 		complete_effect = {
 			division_template = {
 				name = "Free Corps"
-				priority = 1
-				division_names_group = USA_INF_01
-				regiments = {
+					priority = 1
+					division_names_group = USA_INF_01
+					regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
 					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
-					infantry = { x = 0 y = 4 }
+
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
 				}
 			}
 			366 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Florida\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			365 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Georgia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			367 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Alabama\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			370 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Mississippi\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			362 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Virginia\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			363 = {
-				create_unit = {
-					division = "name = \"I/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps North Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			364 = {
-				create_unit = {
-					division = "name = \"I/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps South Carolina\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			371 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Louisiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			375 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Texas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			372 = {
-				create_unit = {
-					division = "name = \"I/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"II/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"III/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-					owner = ROOT
-				}
+					create_unit = {
+						division = "name = \"I/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"II/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"III/Free Corps Arkansas\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+						owner = ROOT
+					}
 			}
 			if = {
-				limit = {
-					has_country_flag = MTG_work_with_the_bund
-				}
-				373 = {
-					create_unit = {
-						division = "name = \"I/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					limit = {
+						has_country_flag = MTG_work_with_the_bund
 					}
-					create_unit = {
-						division = "name = \"II/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					373 = {
+						create_unit = {
+							division = "name = \"I/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"II/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"III/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
 					}
-					create_unit = {
-						division = "name = \"III/Freikorps Missouri\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					394 = {
+						create_unit = {
+							division = "name = \"I/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"II/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"III/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
 					}
-				}
-				394 = {
-					create_unit = {
-						division = "name = \"I/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					395 = {
+						create_unit = {
+							division = "name = \"I/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"II/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"III/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
 					}
-					create_unit = {
-						division = "name = \"II/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					261 = {
+						create_unit = {
+							division = "name = \"I/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"II/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"III/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
 					}
-					create_unit = {
-						division = "name = \"III/Freikorps Wisconsin\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					396 = {
+						create_unit = {
+							division = "name = \"I/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"II/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"III/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
 					}
-				}
-				395 = {
-					create_unit = {
-						division = "name = \"I/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
+					393 = {
+						create_unit = {
+							division = "name = \"I/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"II/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
+						create_unit = {
+							division = "name = \"III/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
+							owner = ROOT
+						}
 					}
-					create_unit = {
-						division = "name = \"II/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Freikorps Illinois\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-				}
-				261 = {
-					create_unit = {
-						division = "name = \"I/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Freikorps Ohio\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-				}
-				396 = {
-					create_unit = {
-						division = "name = \"I/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Freikorps Indiana\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-				}
-				393 = {
-					create_unit = {
-						division = "name = \"I/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"II/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"III/Freikorps Michigan\" division_template = \"Free Corps\" start_experience_factor = 0.7" 
-						owner = ROOT
-					}
-				}
 			}
 		}
 	}
@@ -835,11 +844,6 @@ foreign_support = {
 
 		allowed = {
 			original_tag = USA
-			has_government = democratic
-			OR = {
-				has_completed_focus = USA_limited_intervention
-				has_completed_focus = USA_lend_lease_act
-			}
 		}
 
 		available = {
@@ -860,6 +864,11 @@ foreign_support = {
 		}
 
 		visible = {
+			has_government = democratic
+			OR = {
+				has_completed_focus = USA_limited_intervention
+				has_completed_focus = USA_lend_lease_act
+			}
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_war_with = JAP
@@ -922,7 +931,6 @@ foreign_support = {
 
 		allowed = {
 			original_tag = USA
-			has_government = democratic
 		}
 
 		available = {
@@ -943,6 +951,7 @@ foreign_support = {
 		}
 
 		visible = {
+			has_government = democratic
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_idea = CHI_soong_mei_ling
@@ -2637,6 +2646,17 @@ USA_intervention_mandate = {
 		}
 		visible = {
 			has_completed_focus = USA_reinforce_monroe_doctrine
+			NOT = { has_wargoal_against = FROM }
+			FROM = {
+				NOT = { has_country_flag = USA_monroe_backed_down } #set when US player backs down in reply event
+				any_owned_state = {
+					is_controlled_by = PREV
+					OR = {
+						is_on_continent = north_america
+						is_on_continent = south_america
+					}
+				}
+			} 
 		}
 		target_trigger = {
 			FROM = {
@@ -2655,6 +2675,7 @@ USA_intervention_mandate = {
 					}
 				}
 				any_owned_state = {
+					is_controlled_by = PREV
 					OR = {
 						is_on_continent = north_america
 						is_on_continent = south_america

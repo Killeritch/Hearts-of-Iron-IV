@@ -3,7 +3,7 @@
 ITA_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -34,6 +34,20 @@ ITA_DD_HISTORICAL = {
 		"Leopardo" "Carrista" "Squadrista" "Premuda" "Sebenico" "Lubiana" "Fionda" "Balestra" 
 		# Fictional names start here (1 Mirabello class, 2 Indomito class, 1 Rosolino Pilo class, 2 Giuseppe La Masa class) 
 		"Carlo Alberto Racchia" "Insidioso" "Irrequieto" "Pilade Bronzetti" "Agostino Bertani" "Benedetto Cairoli" 
+		# Torpedo Boat models (32 Spica class, 13 Ariete class, 4 Orsa class, 16 Ciclone class) 
+		"Perseo" "Sirio" "Climene" "Centauro" "Sagittario" "Vega" "Aldebaran" "Andromeda" "Altair" "Antares" "Castore" "Canopo" "Cassiopea" "Cigno" "Libra" "Lira" "Lupo" "Lince" "Airone" "Alcione" 
+		"Aretusa" "Ariel" "Pleiadi" "Polluce" "Pallade" "Clio" "Circe" "Calliope" "Partenope" "Calipso" "Orsa" "Pegaso" "Orione" "Procione" 
+		"Ciclone" "Ardito" "Tifone" "Animoso" "Fortunale" "Groppo" "Ardente" "Uragano" "Monsone" "Ardimentoso" "Aliseo" "Impavido" "Ghibli" "Impetouso" "Indomito" 
+		"Ariete" "Arturo" "Auriga" "Rigel" "Eridano" "Dragone" "Gladio" "Spada" "Daga" "Pugnale" "Lancia" "Alabarda" "Stella Polare" 
+		# Older models (8 Rosolino Pilo class, Audace, 4 Giuseppe Sirtori class, 7 Giuseppe La Masa class, 4 Palestro class, 6 Generale Antonio Cantore class) 
+		"Rosolino Pilo" "Giuseppe Cesare Abba" "Giuseppe Dezza" "Giuseppe Missori" "Antonio Mosto" "Ippolito Nievo" "Fratelli Cairoli" 
+		"Simone Schiaffino" "Audace" "Giuseppe Sirtori" "Giovanni Acerbi" "Vincenzo Giordano Orsini" "Francesco Stocco" "Giuseppe La Masa" "Angelo Bassini" "Enrico Cosenz" "Giacinto Carini" "Nicola Fabrizi" 
+		"Giuseppe La Farina" "Giacomo Medici" "Palestro" "Confienza" "San Martino" "Solferino" "Generale Antonio Cantore" "Generale Antonino Cascino" "Generale Antonio Chinotto" "Generale Carlo Montanari" 
+		"Generale Achille Papa" "Generale Marcello Prestinari" "Spica" "Astore" 
+		# Cancelled/Not completed/Reconstructed (1 Leone class, 2 Soldati Seconda Serie class, Dubrovnik, 2 Sebenico class, 20 Comandanti Medaglia d'Oro class, 2 Ariete class) 
+		"Intrepido" "Leopardo" "Carrista" "Squadrista" "Premuda" "Sebenico" "Lubiana" "Comandante Margottini" "Comandante Baroni" "Comandante Borsini" "Comandante Botti" "Comandante Casana" "Comandante Corsi" 
+		"Comandante De Cristofaro" "Comandante Dell'Anno" "Comandante Esposito" "Comandante Fiorelli" "Comandante Fontana" "Comandante Giannattasio" "Comandante Giobbe" "Comandante Giorgis" 
+		"Comandante Milano" "Comandante Moccagatta" "Comandante Novaro" "Comandante Rodocanacchi" "Comandante Ruta" "Comandante Toscano" "Fionda" "Balestra" 
 	}
 }
 
@@ -41,12 +55,12 @@ ITA_DD_HISTORICAL = {
 ITA_TB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_TB
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
-	prefix = "RN "							
+	prefix = "RN "						
 	fallback_name = "Torpediniera %s"					
 
 	unique = {											
@@ -73,7 +87,7 @@ ITA_TB_HISTORICAL = {
 ITA_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -98,7 +112,7 @@ ITA_CL_HISTORICAL = {
 ITA_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -121,12 +135,12 @@ ITA_CA_HISTORICAL = {
 ITA_MINELAYERS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_MINELAYERS
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 	
-	prefix = "RN "							
+	prefix = "RN "						
 	fallback_name = "Posamine %s"
 
 	unique = {
@@ -139,7 +153,7 @@ ITA_MINELAYERS_HISTORICAL = {
 ITA_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
@@ -148,8 +162,8 @@ ITA_BB_HISTORICAL = {
 	fallback_name = "Corazzata %s"		
 
 	unique = {
-		# Current models (2 Conte Di Cavour class, 2 Caio Duilio class, 3 Littorio class) 
-		"Conte Di Cavour" "Giulio Cesare" "Littorio" "Vittorio Veneto" "Roma" 
+		# Current models (2 Conte di Cavour class, 2 Caio Duilio class, 3 Littorio class) 
+		"Conte di Cavour" "Giulio Cesare" "Littorio" "Vittorio Veneto" "Roma" 
 		# Cancelled/Not completed/Reconstructed (1 Littorio class, 1 Italia class) 
 		"Impero" "Italia" "Caio Duilio" "Andrea Doria" 
 		# Fictional names start here (1 WWI Conte Di Cavour class, 1 WWI Dante Alighieri class) 
@@ -161,7 +175,7 @@ ITA_BB_HISTORICAL = {
 ITA_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
@@ -181,7 +195,7 @@ ITA_BC_HISTORICAL = {
 ITA_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -201,7 +215,7 @@ ITA_CV_HISTORICAL = {
 ITA_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -237,28 +251,28 @@ ITA_SS_HISTORICAL = {
 ITA_REGIONS = {
 	name = NAME_THEME_REGIONS
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 
 	prefix = "RN "							
 	unique = {
-		"Lazio" "Piemonte" "Liguria" "Lombardia" "Trentino" "Venezia" "Friuli" "Emilia Romagna" "Veneto" "Toscana" "Umbria" "Marche" "Abruzzo" "Campania"
+		"Lazio" "Piemonte" "Liguria" "Lombardia" "Trentino" "Friuli" "Emilia Romagna" "Veneto" "Toscana" "Umbria" "Marche" "Abruzzo" "Campania"
 		"Puglia" "Calabria" "Sicilia" "Sardegna" "Valle d'Aosta" "Alto Adige" "Molise" "Basilicata" "Elba" "Egeo" "Etruria" "Libia" 
 	}
 }
 
-## THEME: ITALIAN CITIES ###Ares
+## THEME: ITALIAN CITIES ###
 ITA_CITIES = {
 	name = NAME_THEME_CITIES
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 
 	prefix = "RN "							
 	unique = {
-		"Roma" "Milano" "Torino" "Napoli" "Palermo" "Veneto" "Firenze" "Genova" "Bologna" "Catania" "Padua" "Verona" "Bari" "Trieste" "Taranto" 
+		"Roma" "Milano" "Torino" "Napoli" "Palermo" "Venezia" "Firenze" "Genova" "Bologna" "Catania" "Padua" "Verona" "Bari" "Trieste" "Taranto" 
 		"Brescia" "Trevisio" "Parma" "Prato" "Modena" "Reggio Calabria" "Reggio Emilia" "Perugia" "Ravenna" "Livorno" 
 		"Caligari" "Foggia" "Rimini" "Salerno" "Ferrara" "Sassari" "Latina" "Giugliano" "Monza" "Vicenza" "Bolzano" "San Giorgio" "Como" 
 		"Siracusa" "Bergamo" "Pescara" "Trento" "Forli" "Ancona" "Zara" "Fiume" "Gorizia" "Pola" "Lecce" "Trapani" "Pisa" "Mantua" "Brindisi" 
@@ -271,7 +285,7 @@ ITA_CITIES = {
 ITA_COLONIES = {
 	name = NAME_THEME_COLONIES
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 
@@ -285,7 +299,7 @@ ITA_COLONIES = {
 ITA_MYTHOLOGY = {
 	name = NAME_THEME_MYTHOLOGY
 
-	can_use = { tag = ITA }
+	for_countries = { ITA }
 
 	type = ship
 

@@ -200,6 +200,13 @@ set_stability = 0.55
 		}
 	}
 
+	if = {
+		limit = { 
+			has_unit_leader = 59
+		}
+		remove_unit_leader = 59
+	}
+
 }
 
 # Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)

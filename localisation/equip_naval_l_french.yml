@@ -103,7 +103,7 @@
  ship_hull_cruiser_3_short:1 "Croiseur 1940"
  ship_hull_cruiser_4:1 "Coque de croiseur 1944"
  ship_hull_cruiser_4_short:1 "Croiseur 1944"
- ship_hull_heavy:0 "Vaisseau lourd"
+ ship_hull_heavy:0 "Navire lourd"
  ship_hull_heavy_desc:0 "Symbole ultime de la puissance navale, ces géants des mers, gigantesques et lourdement blindés, imposent toujours le respect en haute mer. Toutefois, certains experts ont commencé à remettre en question leur rôle à l'ère de l'aviation et du sous-marin."
  ship_hull_heavy_1:1 "Coque de cuirassé"
  ship_hull_heavy_1_short:1 "Cuirassé"

@@ -38,7 +38,7 @@
  wtt_border_conflict_canceled_attacker.1.a:0 "Мы ещё вернёмся."
  wtt_border_conflict_canceled_defender.1.t:0 "[their_state.GetName]. Патовая ситуация"
  wtt_border_conflict_canceled_defender.1.desc:0 "Сражение в спорной зоне [our_state.GetName] - [their_state.GetName] зашло в тупик. Каждая из сторон оказалась неспособна занять достаточно большую территорию. Разведка докладывает, что [their_country.GetAdjective] солдаты укрепляют оборону. Похоже, они намерены удержать завоеванную позицию, но, скорее всего, не перейдут в наступление."
- wtt_border_conflict_canceled_defender.1.a:0 "Мы ещё вернёмся."
+ wtt_border_conflict_canceled_defender.1.a:0 "Мы вернемся."
  wtt_border_incident_defender_warning.1.t:0 "[From.GetNameDefCap] угрожает нашим границам"
  wtt_border_incident_defender_warning.1.desc:0 "Вчера вечером на границе между регионами [attacker_state.GetName] и [defender_state.GetName] были замечены [their_country.GetAdjective] солдаты. Ночью в этот район вступили [their_country.GetAdjective] войска, организовавшие оборонительные позиции на нашей территории.\n\nЭто произошло после ряда столкновений, причём войска под командованием лидера [their_country.GetLeader] неоднократно нарушили наши границы.\n\nНа этот раз ясно, что [their_country.GetAdjective] силы намерены здесь остаться. Мы должны как можно скорее выступить им навстречу и сорвать наступление."
  wtt_border_incident_defender_warning.1.a:0 "Мобилизовать все доступные войска!"

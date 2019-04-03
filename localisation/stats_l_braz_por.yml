@@ -177,7 +177,7 @@
  STAT_COMMON_MAXIMUM_SPEED_VALUE:0 "$VALUE|*H1$ km/h"
  STAT_COMMON_MAXIMUM_SPEED_DIFF:0 "$VALUE|=+1$ km/h"
  STAT_NAVY_MAXIMUM_SPEED:0 "Velocidade máxima:"
- STAT_NAVY_MAXIMUM_SPEED_DESC:0 "Um navio mais rápido tem mais facilidade para fugir de perseguidores e pode aproximar-se mais rapidamente para um alcance ideal de disparo, bem como entrar em posição mais rápido quando estiver concentrando frotas."
+ STAT_NAVY_MAXIMUM_SPEED_DESC:1 "Um navio mais rápido tem mais facilidade em escapar de perseguidores ao tentar recuar de um combate. Também é menos provável que sejam atingidos por fogo inimigo, possam perseguir contatos mais facilmente quando encontrarem o inimigo e se movam mais rápido fora de combate."
  STAT_NAVY_MAXIMUM_SPEED_VALUE:0 "$VALUE|H1$ kn"
  STAT_NAVY_MAXIMUM_SPEED_DIFF:0 "$VALUE|=+1$"
  STAT_NAVY_RANGE:0 "Alcance máximo:"

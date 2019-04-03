@@ -567,6 +567,7 @@
  JAP_long_lance_torpedoes_desc:0 "As crueldades da distribuição global de recursos deixou nossa marinha em menor número perante o inimigo. Nós portanto desenvolveremos o torpedo mais avançado do mundo: uma arma poderosa e de longo alcance, propelida por oxigênio comprimido ao invés de ar comprimido, o que permitirá que nossos navios menores de superfície possam atacar embarcações muito mais pesadas."
  JAP_torpedo_cruisers:0 "Cruzadores de torpedo"
  JAP_torpedo_cruisers_desc:0 "Nós dedicaremos uma classe inteira de navios para carregar grandes números de nossos novos torpedos, permitindo que eles causem um estrago às frotas inimigas."
+ JAP_yamato_tt:0 "Dá dois super-navios de guerra de classe Yamato à produção." 
  CHI_secure_internal_politics_desc:1 "Se nosso governo quiser sobreviver nessa confusão que é a política chinesa, não podemos nos distrair com brigas internas. Qualquer oposição interna precisa ser extirpada."
  CHI_cooperation_with_the_nationalists_desc:1 "Os nacionalistas ofereceram a chance de unificar o país e derrotar os japoneses. Nós precisamos grantir que eles não nos vejam como uma ameaça."
  CHI_cooperation_with_the_nationalists_effect_tooltip:0 "[WTT_communist_china.GetNameDef] e os senhores da guerra que se aliaram aos comunistas podem começar §Hconflitos em fronteiras§! conosco em resposta a isso."

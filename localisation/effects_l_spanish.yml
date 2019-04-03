@@ -59,7 +59,7 @@
  POLITICS_ADD_POLITICAL_POWER:0 "Poder político: $VAL|=+0$."
  EFFECT_TECH_BONUS_USES:0 "§Y$USES$x§!"
  EFFECT_SOUND_DESC:0 "Suena $SOUND_NAME$."
- EFFECT_ADD_TECH_BONUS_AHEAD_ONLY:1 "$USES$$AHEAD|%0G$ años de reducción a la penalización por adelanto: $LIST|Y$."
+ EFFECT_ADD_TECH_BONUS_AHEAD_ONLY:2 "$USES$$AHEAD|G.1$ años de reducción a la penalización por adelanto: $LIST|Y$."
  EFFECT_ADD_TECH_BONUS_BONUS_ONLY:0 "$USES$ $BONUS|%0+$ bonificación de investigación para: $LIST|Y$."
  EFFECT_ADD_TECH_BONUS:1 "Reduce la penalización por adelanto en $AHEAD|.1G$ años y otorga una bonificación de investigación de $BONUS|%0+$. Válido para las próximas $USES|H$ investigaciones de estas tecnologías: $LIST|H$."
  EFFECT_DEMILITARIZED_ZONE:0 "Se convierte en una zona desmilitarizada."

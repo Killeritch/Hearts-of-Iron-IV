@@ -67,7 +67,7 @@
  south_pacific_mandate_SUCCEEDED_DESC:0 "Nos ingénieurs ont fortifié les territoires sous tutelle des îles du Pacifique. Nos forces seront difficiles à déloger par d'éventuels assaillants."
  demand_indochina_focus:0 "Réclamer l'Indochine française"
  demand_indochina_focus_desc:0 "Après sa défaite en Europe, le contrôle de la France sur ses colonies est pour le moins ténu. Nous devrions faire pression sur son nouveau gouvernement pour qu'il accorde au Japon le plein accès à ses bases en Indochine. Cela ferait de cette région un tremplin pour lancer nos futures campagnes."
- demand_indochina_focus_tt:0 "En guerre contre la France, ou l'Indochine n'est pas française.\nEst membre de la même faction que la France."
+ demand_indochina_focus_tt:1 "La France possède l'Indochine."
  demand_indochina_focus_short_desc:0 "§LFaites pression sur le nouveau gouvernement français pour qu'il renonce à l'Indochine.§!"
  demand_french_indochina_SUCCEEDED:0 "Exigences affirmées"
  demand_french_indochina_SUCCEEDED_DESC:0 "Nous avons déployé des forces aux frontières de l'Indochine française pour contraindre la France à accepter notre proposition."

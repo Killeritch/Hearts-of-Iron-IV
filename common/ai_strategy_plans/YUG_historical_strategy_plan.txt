@@ -40,7 +40,7 @@ YUG_historical = {
 		YUG_fighter_license 
 		YUG_rare_minerals_exploitation
 		YUG_traditional_values
-		YUG_greater_yugoslavia
+		YUG_concessions_for_macedonians
 		YUG_small_arms 
 		YUG_domestic_artillery_production
 		YUG_expand_the_serbian_shipyards

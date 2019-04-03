@@ -24,7 +24,7 @@ guiTypes =
 		guiButtonType =	{
 			name = "online_feed_image"
 			quadTextureSprite = "online_feed_image"
-			position = { x=10 y=50 }
+			position = { x=10 y=16 }
 			size = { x=525 y=295 }
 			Orientation = "UPPER_LEFT"
 			buttonText = " "

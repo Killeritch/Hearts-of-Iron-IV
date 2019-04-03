@@ -1625,6 +1625,8 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_war_support = 0.1
+			set_rule = { can_create_factions = yes }
+			create_faction = "french_entente_alliance"
 			if = {
 				limit = { 
 					has_dlc = "Death or Dishonor"
@@ -1641,11 +1643,10 @@ focus_tree = {
 						is_subject = no
 						NOT = { has_war_with = FRA }
 						is_in_faction = no
+						exists = yes
 					}
 				}
 				CZE = { country_event = france.17 }
-				set_rule = { can_create_factions = yes }
-				create_faction = "french_entente_alliance"
 				hidden_effect = {
 					news_event = { hours = 6 id = news.177 }
 				}

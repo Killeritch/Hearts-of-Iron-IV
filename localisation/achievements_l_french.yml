@@ -17,4 +17,5 @@
  HOL_lost_starting_state:0 "Les Pays-Bas ont perdu l'un de leurs États de départ."
  achievements_pride_and_extreme_prejudice:1 "L'orgueil de la flotte britannique a été coulé."
  do_you_mined_tt:1 "Nous avons mouillé plus de §Y999§! mines le long de la côte."
- assuming_direct_control_achievement_flag:0 "Assumé le leadership de faction de la §Y[ENG.GetName]§!, §Y[GER.GetName]§!, ou §Y[SOV.GetName]§!."
+ assuming_direct_control_achievement_flag:0 "Nous avons pris la tête de la faction dirigée auparavant par [ENG.GetLeLaLNP] §Y[ENG.GetName]§!, [GER.GetLeLaLNP] §Y[GER.GetName]§! ou [SOV.GetLeLaLNP] §Y[SOV.GetName]§!.\n"
+ USA_civil_war_fired_democrats:0 "La rébellion de Boston a éclaté.\n"

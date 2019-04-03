@@ -232,7 +232,7 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = -3
+				add = -3
 				original_tag = SOV
 			}
 

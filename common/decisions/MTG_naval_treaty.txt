@@ -132,7 +132,7 @@ MTG_naval_treaties = {
 				limit = {
 					has_naval_treaty_trigger = yes
 				}
-				country_event = MTG_naval_treaty.7
+				country_event = { id = MTG_naval_treaty.7 days = 2 }
 			}
 			if = {
 				limit = {

@@ -246,6 +246,7 @@ crush_ethiopia = {
 		tag = ITA
 		country_exists = ETH
 		ITA = { has_war_with = ETH }
+		date < 1941.1.1
 	}
 	abort = {
 		NOT = { ITA = { has_war_with = ETH } }
@@ -256,6 +257,11 @@ crush_ethiopia = {
 		id = africa
 		value = 500
 	}
+	ai_strategy = {
+        type = area_priority
+        id = suez
+        value = 500
+    }
 }
 
 
@@ -444,7 +450,7 @@ ITA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_carrier
-		value = 10
+		value = 0
 	}
 
 	ai_strategy = {
@@ -456,7 +462,7 @@ ITA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
-		value = 120
+		value = 150
 	}
 
 	ai_strategy = {
@@ -468,19 +474,19 @@ ITA_naval_role_ratios_historical = {
 	ai_strategy = {
 		type = role_ratio
 		id = naval_cruiser_heavy
-		value = 50
+		value = -5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_sweeper
-		value = 50
+		value = 20
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = naval_mine_layer
-		value = 70
+		value = 10
 	}
 }
 

@@ -521,16 +521,6 @@ country_event = {
 					set_state_controller = 25
 					set_state_controller = 20
 					set_state_controller = 33
-					create_country_leader = {
-						name = "Charles de Gaulle"
-						desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-						picture = "Portrait_France_Charles_De_Gaulle.dds"
-						expire = "1965.1.1"
-						ideology = conservatism
-						traits = {
-							
-						}
-					}
 					#tunisia
 					if = {
 						limit = {
@@ -1121,7 +1111,16 @@ country_event = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
 		hidden_effect =  {
-			retire_country_leader = yes
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
 		}
 		name = france.20.a
 	}

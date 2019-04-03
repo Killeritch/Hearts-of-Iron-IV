@@ -14,6 +14,7 @@ country_event = {
 	trigger = {
 		NOT = { has_government = communism }
 		communism > 0.6
+		NOT = { communism > 0.7 }
 		check_has_focus_tree_to_switch_to_communism = yes
 	}
 
@@ -332,6 +333,7 @@ country_event = {
 	trigger = {
 		NOT = { has_government = fascism }
 		fascism > 0.6
+		NOT = { fascism > 0.7 }
 		check_has_focus_tree_to_switch_to_fascism = yes
 	}
 
@@ -676,6 +678,7 @@ country_event = {
 	trigger = {
 		NOT = { has_government = democratic }
 		democratic > 0.6
+		NOT = { democratic > 0.7 }
 		check_has_focus_tree_to_switch_to_democratic = yes
 	}
 

@@ -3984,6 +3984,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_hol_prins_bernhard.dds"
 	}
 
+	###FIN
+
+	spriteType = {
+		name = "GFX_idea_carl_mannerheim"
+		texturefile = "gfx/interface/ideas/idea_carl_mannerheim.dds"
+	}
 
 	###Naval treaty 
 

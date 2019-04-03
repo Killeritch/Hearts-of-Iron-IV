@@ -1,4 +1,4 @@
-﻿##### SIAM/THAILAND NAME LISTS #####
+﻿##### POLAND NAME LISTS #####
 ### REGULAR DESTROYER NAMES###
 POL_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
@@ -12,7 +12,9 @@ POL_DD_HISTORICAL = {
 	fallback_name = "Niszczyciel %d"
 
 	unique = {
-		"Garland" "Piorun" "Kujawiak" "Ślązak" "Pomorzanin" "Krakowiak"
+		"Grom" "Błyskawica" "Piorun" "Orkan" "Kujawiak" "Ślązak" "Pomorzanin" "Krakowiak" "Góral" "Mazur" "Kaszub" "Kurp" 
+		"Burza" "Wicher" "Garland" "Ouragan" "Warszawa" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk"
+		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
 	}
 }
 
@@ -29,7 +31,8 @@ POL_CL_HISTORICAL = {
 	fallback_name = "Lekki Krążownik %d"
 
 	unique = {
-		"Dragon" "Conrad" "Bałtyk"
+		"Dragon" "Conrad" "Bałtyk" "Król Wladyslaw IV" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk" "Warszawa"
+		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
 	}
 }
 
@@ -46,7 +49,8 @@ POL_CA_HISTORICAL = {
 	fallback_name = "Ciężki Krążownik %d"
 
 	unique = {
-		"Dragon" "Conrad" "Bałtyk"
+		"Dragon" "Conrad" "Bałtyk" "Król Wladyslaw IV" "Lwów" "Wilno" "Poznan" "Kraków" "Wisla" "Gdynia" "Gdansk" "Warszawa"
+		"Kraków" "Zadwórze" "Plowce" "Odsiecz Wiedenska" "Psków" "Raszyn" "Przemysl" "Chocim" "Kircholm" "Fuengirola"
 	}
 }
 
@@ -62,6 +66,11 @@ POL_BB_HISTORICAL = {
 	
 	prefix = "ORP "
 	fallback_name = "Pancernik %d"
+	
+	unique = {
+		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
+		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+	}
 }
 
 ### BATTLECRUISER NAMES ###
@@ -75,6 +84,11 @@ POL_BC_HISTORICAL = {
 	
 	prefix = "ORP "
 	fallback_name = "Krążownik %d"
+	
+	unique = {
+		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
+		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+	}
 }
 
 ### AIRCRAFT CARRIER NAMES ###
@@ -88,6 +102,11 @@ POL_CV_HISTORICAL = {
 	
 	prefix = "ORP "
 	fallback_name = "Lotniskowiec %d"
+	
+	unique = {
+		"Józef Pilsudski" "Król Wladyslaw IV" "Stefan Batory" "Jan Sobieski" "Kazimierz Wielki" "Boleslaw Chrobry" "Jan Kazimierz" "Stanislaw Koniecpolski" 
+		"Stanislaw Zólkiewski" "Jan Zamoyski" "Stanislaw Lanckoronski" "Stefan Czarniecki" "Jan Karol Chodkiewicz" 
+	}
 }
 
 ### SUBMARINES ###
@@ -101,6 +120,11 @@ POL_SS_HISTORICAL = {
 	
 	prefix = "ORP "
 	fallback_name = "Okręt Podwodny %d"
+	
+	unique = {
+		"Orzeł" "Sęp" "Sokól" "Dzik" "Jastrząb" "Rys" "Wilk" "Zbik" "Kondor" "Bielik" 
+		"Kaszub" "Mazur" "Krakowiak" "Ślązak" "Kujawiak" "Kurp" "Kujawiak" "Kujawiak" "Kujawiak" 
+	}
 }
 
 ### KINGS ###
@@ -117,7 +141,6 @@ POL_THEME_KINGS = {
 	ship_types = { ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Stefan Batory"
@@ -149,7 +172,6 @@ POL_THEME_HISTORICAL_FIGURES = {
 	ship_types = { ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Józef Piłsudzki"
@@ -187,7 +209,6 @@ POL_THEME_WEATHER = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Burza"
@@ -216,7 +237,6 @@ POL_THEME_RIVERS = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Wisła"
@@ -243,7 +263,6 @@ POL_THEME_ANIMALS = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Wilk"
@@ -282,7 +301,6 @@ POL_THEME_REGIONS = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Mazowsze"
@@ -309,7 +327,6 @@ POL_THEME_CITIES = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Mazowsze"
@@ -335,7 +352,6 @@ POL_THEME_BATTLES = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Grunwald"
@@ -361,7 +377,6 @@ POL_THEME_SLAVIC_MYTHOLOGY = {
 	type = ship
 	
 	prefix = "ORP "
-	fallback_name = "Okręt %d"
 
 	unique = {
 		"Strzyga"

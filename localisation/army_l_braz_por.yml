@@ -156,4 +156,4 @@
  NAVY_THEATER_DETACHED_TASK_FORCES_ENTRY:0 "A força-tarefa $TASK_FORCE_NAME|H$ tem:"
  ARMY_NAVIES_MISSION_NO_REGIONS:0 "§RNenhuma área estratégica ao alcance foi selecionada§!"
  ARMY_NAVIES_MISSION_IDLE:0 "§RSem definição para missão§!"
- SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Use £ctrl + £b para alternar a reimplementação estratégica para movimentar pedidos de exércitos selecionados."
+ SWITCH_STRATEGIC_REDEPLOYMENT_MODE_DETAILED_2:0 "Use £ctrl  + £b para alternar a remobilização para ordens de movimento dos exércitos selecionados."

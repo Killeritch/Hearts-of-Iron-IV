@@ -1296,10 +1296,10 @@ awake_and_angry = {
 					AND = {
 						NOT = { is_core_of = CHI }
 						NOT = { is_core_of = MAN }
-						NOT = { state = 728 }
-						NOT = { state = 729 }
-						NOT = { state = 326 }
 					}
+					state = 728
+					state = 729
+					state = 326
 				}
 			}
 		}
@@ -1534,15 +1534,15 @@ battlecry = {
 			tooltip = battlecry_tt
 			all_state = {
 				OR = {
+					is_owned_by = ROOT
 					AND = {
 						NOT = { is_core_of = CHI }
-						NOT = { is_core_of = PRC }
+						NOT = { is_core_of = MAN }
 						NOT = { is_core_of = JAP }
-						NOT = { state = 728 }
-						NOT = { state = 729 }
-						NOT = { state = 326 }
 					}
-					is_owned_by = ROOT
+					state = 728
+					state = 729
+					state = 326
 				}
 			}
 		}
@@ -1979,7 +1979,6 @@ treading_the_narrow_path = {
 		has_completed_focus = HOL_the_zuiderzee_works
 		NOT = { has_country_flag = HOL_lost_starting_state }
 		date > 1945.01.01
-
 	}
 }
 
@@ -1996,10 +1995,16 @@ putting_the_raid_on_the_medway_to_shame = {
 	}
 	
 	happened = {
-		ENG = {
-			has_navy_size = {
-				type = capital_ship
-				size < 1
+		custom_trigger_tooltip = {
+			tooltip = putting_the_raid_on_the_medway_to_shame_tt
+			NOT = {
+				any_country = {
+					original_tag = ENG
+					has_navy_size = {
+						type = capital_ship
+						size > 0
+					}
+				}
 			}
 		}
 	}

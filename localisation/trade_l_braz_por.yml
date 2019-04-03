@@ -136,4 +136,4 @@
  NOT_TRADING_WITH_COUNTRY:0 "Não realizamos comércio com @$TAG$$COUNTRY|H$"
  TRADEVIEW_RES_PRODUCED_NO_RIGHTS:0 " - $NUM|R$/$MAX|H$ $TYPE|H$ disponível em $LOC|H$ ($RIGHTSHOLDER|H$ tem direitos sob estes recursos.)"
  TRADEVIEW_RES_PRODUCED_ORIGIN_CONTROLLED_BY:0 " (Direitos concedidos por $ORIGINCONTROLLER|H$)"
- RESOURCE_DETAILS_FUEL:1 "Temos $TOTAL|H$ unidades de $RESOURCE|H$ para uso.\n\nConsumo ativo de combustível: $ACTIVE_FUEL|H$\nConsumo potencial de combustível: $POTENTIAL_FUEL|H$"
+ RESOURCE_DETAILS_FUEL:2 "Temos $TOTAL|H$ unidades de $RESOURCE|H$ para usar.\n\nConsumo atual: $ACTIVE_FUEL|H$\nConsumo máximo: $POTENTIAL_FUEL|H$"

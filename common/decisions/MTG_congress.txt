@@ -230,7 +230,7 @@ USA_congress = {
 				factor = 0
 			}
 		}
-		modifier = { research_speed_factor = 0.05 }
+		modifier = { research_speed_factor = 0.08 }
 		remove_effect = {
 			USA_congress_medium_opposition = yes
 		}

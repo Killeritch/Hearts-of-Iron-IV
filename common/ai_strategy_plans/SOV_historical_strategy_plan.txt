@@ -66,7 +66,6 @@ SOV_historical_plan = {
 		SOV_smersh
 		SOV_partisan_suppression
 		SOV_annex_tannu_tuva
-		SOV_war_with_japan
 	}
 
 	research = {

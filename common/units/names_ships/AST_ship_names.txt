@@ -23,6 +23,31 @@ AST_DD_HISTORICAL = {
 	}
 }
 
+AST_DE_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DE
+
+	for_countries = { AST }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HMAS "							
+	fallback_name = "Corvette %s"					
+
+	unique = {
+	"Bathurst" "Armidale" "Ararat" "Ballarat" "Benalla" "Bendigo" "Bowen" "Broome" "Bunbury" "Bundaberg" "Burnie"
+	"Cairns" "Castlemaine" "Cessnock" "Colac" "Cootamundra" "Cowra" "Deloraine" "Dubbo" "Echuca" "Fremantle" "Gawler"
+	"Geelong" "Geraldton" "Gladstone" "Glenelg" "Goulburn" "Gympie" "Horsham" "Inverell" "Ipswich" "Junee" "Kalgoorlie"
+	"Kapunda" "Katoomba" "Kiama" "Latrobe" "Launceston" "Lismore" "Lithgow" "Maryborough" "Mildura" "Parkes" "Pirie"
+	"Rockhampton" "Shepparton" "Stawell" "Strahan" "Tamworth" "Toowoomba" "Townsville" "Wagga" "Wallaroo" "Warrnambool"
+	"Whyalla" "Wollongong" 
+	}
+}
+
 
 ### LIGHT CRUISER NAMES###
 AST_CL_HISTORICAL = {
@@ -148,11 +173,74 @@ AST_SS_HISTORICAL = {
 	prefix = "HMAS "							
 	fallback_name = "Submarine %s"
 	
+    unique = {
+        "Oxley" "Otway" "Onslow" "Ovens" "Orion" "Otama" "Attack" "Acute" "Adroit" "Advance" "Archer" "Ardent" "Arrow" "Assail" "Aware" "Bandolier" "Barbette" "Barricade" "Bayonet" "Bombard" "Buccaneer"
+    }
+}
+
+### THEME: AUSTRALIAN PROVINCES ###
+AST_STATES = {
+	name = NAME_THEME_STATES
+
+	for_countries = { AST }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+
+	prefix = "HMAS "							
 	unique = {
-		"Oxley" "Otway" "Onslow" "Ovens" "Orion" "Otama" "Collins" "Farncomb" "Waller" "Dechaineaux" "Sheean" "Rankin" 
+		"New South Wales" "Queensland" "South Australia" "Tasmania" "Victoria" "Western Australia" "Capital Territory" "Jervis Bay" 
+		"Northern Territory" "Ashmore Island" "Cartier Island" "Christmas Island" "Cocos Islands" "Coral Sea" "Heard Island" "McDonald Islands" 
+		"Norfolk Island" 
 	}
 }
 
+## THEME: AUSTRALIAN CITIES ###
+AST_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { AST }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+
+	prefix = "HMAS "							
+	unique = {
+		"Sydney" "Melbourne" "Brisbane" "Perth" "Adelaide" "Canberra" "Hobart" "Darwin" "Gold Coast" "Newcastle" "Sunshine Coast" "Wollongong" 
+		"Geelong" "Townsville" "Cairns" "Toowoomba" "Ballarat" "Bendigo" "Albury" "Mackay" "Rockhampton" "Launceston" "Bunbury" "Bundaberg" 
+		"Coffs Harbour" "Hervey Bay" "Wagga Wagga" 
+	}
+}
+
+## THEME: TRIBES ###
+AST_TRIBES = {
+	name = NAME_THEME_TRIBES
+
+	for_countries = { AST }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+
+	prefix = "HMAS "							
+	unique = {
+		"Alyawarre" "Adnyamathanha" "Anmatjera" "Arunta" "Dieri" "Gunai" "Gurindji" "Guugu Yimithirr" "Jarrakan" "Kalkadoon" "Kaurna" "Kulin" 
+		"Kunibidji" "Luritja" "Maralinga Tjarutja" "Murrinh-Patha" "Murrawarri" "Ngarrindjeri" "Narungga" "Ngunnawal" "Nyungar" "Spinefex" 
+		"Pitjantjatjara" "Tiwi" "Warlpiri" "Warramunga" "Yolngu" "Yorta Yorta" 
+		"Woiwurrung" "Boonwurrung" "Wathaurrung" "Daungwurrung" "Dja Dja Wrung" "Bratowooloong" "Brayakooloong" "Brabawooloong" "Tatungooloong" 
+		"Krowathunkooloong" 
+	}
+}
+
+## THEME: ANIMALS ###
 AST_ANIMALS = {
 	name = NAME_THEME_ANIMALS
 
@@ -165,13 +253,12 @@ AST_ANIMALS = {
 	type = ship
 	
 	prefix = "HMAS "							
-	fallback_name = "Ship %s"
 	
 	unique = {
 		"Koala"
 		"Crocodile"
 		"Shark"
-		"Porcupine"
+		"Echidna"
 		"Albatros"
 		"Hawk"
 		"Dingo"
@@ -185,7 +272,7 @@ AST_ANIMALS = {
 		"Donkey"
 		"Anteater"
 		"Quoll"
-		"Wombat"
+		"Wombat" "Cassowary" "Wedge-tail" "Red Back" "Huntsman" "Taipan"
 	}
 }
 
@@ -211,6 +298,31 @@ AST_DD_COMMUNIST = {
 		"Quiberon" "Quickmatch" "Quadrant" "Quality" "Queenborough" "Tobruk" "Anzac" "Barcoo" "Barwon" "Burdekin" "Diamantina" "Gascoyne" 
 		"Hawkesbury" "Lachlan" "Macquarie" "Murchison" "Condamine" "Shoalhaven" "Culgoa" "Balmaine" "Bogam" "Campaspe" "Murrumbidgee" "Naomi" "Nepean" 
 		"Warburton" "Williamstown" "Wimmera" "Wollondilly" "Stuart" "Vampire" "Vendetta" "Voyager" "Waterhen" 
+	}
+}
+
+AST_DE_COMMUNIST = {
+	name = NAME_THEME_HISTORICAL_DE
+
+	for_countries = { AST }
+
+	can_use = { 
+		has_government = communism
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "RNS "							
+	fallback_name = "Corvette %s"					
+
+	unique = {
+	"Bathurst" "Armidale" "Ararat" "Ballarat" "Benalla" "Bendigo" "Bowen" "Broome" "Bunbury" "Bundaberg" "Burnie"
+	"Cairns" "Castlemaine" "Cessnock" "Colac" "Cootamundra" "Cowra" "Deloraine" "Dubbo" "Echuca" "Fremantle" "Gawler"
+	"Geelong" "Geraldton" "Gladstone" "Glenelg" "Goulburn" "Gympie" "Horsham" "Inverell" "Ipswich" "Junee" "Kalgoorlie"
+	"Kapunda" "Katoomba" "Kiama" "Latrobe" "Launceston" "Lismore" "Lithgow" "Maryborough" "Mildura" "Parkes" "Pirie"
+	"Rockhampton" "Shepparton" "Stawell" "Strahan" "Tamworth" "Toowoomba" "Townsville" "Wagga" "Wallaroo" "Warrnambool"
+	"Whyalla" "Wollongong" 
 	}
 }
 
@@ -339,11 +451,74 @@ AST_SS_COMMUNIST = {
 	prefix = "RNS "							
 	fallback_name = "Submarine %s"
 	
+    unique = {
+        "Oxley" "Otway" "Onslow" "Ovens" "Orion" "Otama" "Attack" "Acute" "Adroit" "Advance" "Archer" "Ardent" "Arrow" "Assail" "Aware" "Bandolier" "Barbette" "Barricade" "Bayonet" "Bombard" "Buccaneer"
+    }
+}
+
+### THEME: AUSTRALIAN PROVINCES ###
+AST_STATES = {
+	name = NAME_THEME_STATES
+
+	for_countries = { AST }
+
+	can_use = { 
+		has_government = communism
+	}
+
+	type = ship
+
+	prefix = "RNS "							
 	unique = {
-		"Oxley" "Otway" "Onslow" "Ovens" "Orion" "Otama" "Collins" "Farncomb" "Waller" "Dechaineaux" "Sheean" "Rankin" 
+		"New South Wales" "Queensland" "South Australia" "Tasmania" "Victoria" "Western Australia" "Capital Territory" "Jervis Bay" 
+		"Northern Territory" "Ashmore Island" "Cartier Island" "Christmas Island" "Cocos Islands" "Coral Sea" "Heard Island" "McDonald Islands" 
+		"Norfolk Island" 
 	}
 }
 
+## THEME: AUSTRALIAN CITIES ###
+AST_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { AST }
+
+	can_use = { 
+		has_government = communism
+	}
+
+	type = ship
+
+	prefix = "RNS "							
+	unique = {
+		"Sydney" "Melbourne" "Brisbane" "Perth" "Adelaide" "Canberra" "Hobart" "Darwin" "Gold Coast" "Newcastle" "Sunshine Coast" "Wollongong" 
+		"Geelong" "Townsville" "Cairns" "Toowoomba" "Ballarat" "Bendigo" "Albury" "Mackay" "Rockhampton" "Launceston" "Bunbury" "Bundaberg" 
+		"Coffs Harbour" "Hervey Bay" "Wagga Wagga" 
+	}
+}
+
+## THEME: TRIBES ###
+AST_TRIBES = {
+	name = NAME_THEME_TRIBES
+
+	for_countries = { AST }
+
+	can_use = { 
+		has_government = communism
+	}
+
+	type = ship
+
+	prefix = "RNS "							
+	unique = {
+		"Alyawarre" "Adnyamathanha" "Anmatjera" "Arunta" "Dieri" "Gunai" "Gurindji" "Guugu Yimithirr" "Jarrakan" "Kalkadoon" "Kaurna" "Kulin" 
+		"Kunibidji" "Luritja" "Maralinga Tjarutja" "Murrinh-Patha" "Murrawarri" "Ngarrindjeri" "Narungga" "Ngunnawal" "Nyungar" "Spinefex" 
+		"Pitjantjatjara" "Tiwi" "Warlpiri" "Warramunga" "Yolngu" "Yorta Yorta" 
+		"Woiwurrung" "Boonwurrung" "Wathaurrung" "Daungwurrung" "Dja Dja Wrung" "Bratowooloong" "Brayakooloong" "Brabawooloong" "Tatungooloong" 
+		"Krowathunkooloong" 
+	}
+}
+
+## THEME: ANIMALS ###
 AST_ANIMALS_COMMUNIST = {
 	name = NAME_THEME_ANIMALS
 
@@ -356,13 +531,11 @@ AST_ANIMALS_COMMUNIST = {
 	type = ship
 	
 	prefix = "RNS "							
-	fallback_name = "Ship %s"
-	
 	unique = {
 		"Koala"
 		"Crocodile"
 		"Shark"
-		"Porcupine"
+		"Echidna"
 		"Albatros"
 		"Hawk"
 		"Dingo"
@@ -376,6 +549,6 @@ AST_ANIMALS_COMMUNIST = {
 		"Donkey"
 		"Anteater"
 		"Quoll"
-		"Wombat"
+		"Wombat" "Cassowary" "Wedge-tail" "Red Back" "Huntsman" "Taipan"
 	}
 }
