@@ -1202,6 +1202,19 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 10
+				modifier = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					factor = 0
+				}
+				modifier = {
+					is_historical_focus_on = yes
+					not = { has_dlc = "Man the Guns" }
+					factor = 0
+				}
 			}
 		}	
 		harry_white = {
@@ -1410,7 +1423,20 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 10
-			}
+				modifier = {
+					is_historical_focus_on = yes
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = DEFAULT
+					}
+					factor = 0
+				}
+				modifier = {
+					is_historical_focus_on = yes
+					not = { has_dlc = "Man the Guns" }
+					factor = 0
+				}
+			}		
 		}
 
 		USA_robert_taft = {

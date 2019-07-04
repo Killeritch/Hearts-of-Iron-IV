@@ -1,0 +1,1156 @@
+template editor_vertical_scrollbar
+{
+	scrollbar = {
+		name = "vertical_scrollbar"
+		size = { 14 14 }
+		wheelstep = 60
+		direction = vertical
+
+		track = {
+			using = editor_scrollbar_track
+		}
+
+		slider = {
+			using = editor_scrollbar_slider
+		}
+
+		dec_button = {
+			editor_scrollbar_button = {
+				upframe = 1
+				downframe = 2
+				overframe = 3
+				disableframe = 4
+			}
+		}
+
+		inc_button = {
+			editor_scrollbar_button = {
+				upframe = 5
+				downframe = 6
+				overframe = 7
+				disableframe = 8
+			}
+		}
+	}
+}
+
+template editor_horizontal_scrollbar
+{
+	scrollbar = {
+		name = "horizontal_scrollbar"
+		size = { 14 14 }
+		direction = horizontal
+
+		track = {
+			using = editor_scrollbar_track
+		}
+
+		slider = {
+			using = editor_scrollbar_slider
+		}
+
+		dec_button = {
+			editor_scrollbar_button = {
+				upframe = 9
+				downframe = 10
+				overframe = 11
+				disableframe = 12
+			}
+		}
+
+		inc_button = {
+			editor_scrollbar_button = {
+				upframe = 13
+				downframe = 14
+				overframe = 15
+				disableframe = 16
+			}
+		}
+	}
+}
+
+template editor_font
+{
+	font = "tools_font"
+	fontsize = 12
+	fontcolor = { 1 1 1 1 }
+}
+
+template editor_toolbar_font
+{
+	using = editor_font
+	fontsize = 10
+}
+
+types ToolsTypes
+{
+	type editor_icon = icon {}
+	
+	type editor_text_dropdown = dropDown {
+		size = { 100% 20 }
+		alwaystransparent = no
+		
+		active_item = {
+			widget = {
+				size = { 100% 20 }
+				
+				button = {
+					size = { 100% 100% }
+					texture = "gfx/editor_gui/editor_dropdown_item.dds"
+					spriteType = CorneredTiled
+					spriteborder = { 1 1 }
+					gfxtype = framedbuttongfx
+					framesize = { 8 8 }
+					upframe = 1
+					downframe = 2
+					overframe = 2
+					disableframe = 1
+					button_trigger = none
+				}
+				
+				editor_textbox = {
+					text = "#BOLD;COLOR:{0.6,0.4,0.4} [CString.GetString] #!"
+					position = { 4 8 }
+					size = { 100% 0 }
+					fontsize = 12
+					elide = right
+				}
+			}
+		}
+		
+		item = {
+			widget = {
+				size = { 100% 20 }
+				
+				button = {
+					size = { 100% 100% }
+					texture = "gfx/editor_gui/editor_dropdown_item.dds"
+					spriteType = CorneredTiled
+					spriteborder = { 1 1 }
+					gfxtype = framedbuttongfx
+					framesize = { 8 8 }
+					upframe = 1
+					downframe = 2
+					overframe = 2
+					disableframe = 1
+					button_trigger = none
+				}
+				
+				editor_textbox = {
+					text = "[CString.GetString]"
+					position = { 4 8 }
+					size = { 100% 0 }
+					#autoresize = yes
+					fontsize = 12
+					elide = right
+				}
+			}
+		}
+		
+		list = {
+			scrollarea = {
+				position = { 2 22 }
+				
+				maximumsize = { 300 210 }
+				autoresizescrollarea = yes
+				alwaystransparent = yes
+				
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				autoresizeviewport = yes
+		
+				background = {
+					margin = { 2 2 }
+					margin_bottom = 6
+					margin_right = 6
+					texture = "gfx/editor_gui/editor_dropdown_list.dds"
+					spriteType = CorneredStretched
+					spriteborder = { 6 6 }
+					spriteborder_right = 8
+					spriteborder_bottom = 8
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+		
+				scrollwidget = {
+					fixedgridbox = {
+						alwaystransparent = no
+						addcolumn = 300
+						addrow = 18
+						setitemsizefromcell = yes
+						layoutpolicy_horizontal = preferred
+						layoutpolicy_vertical = expanding
+					}
+				}
+				
+				scrollbar_vertical = {
+					using = editor_vertical_scrollbar
+				}
+				
+				scrollbar_horizontal = {
+					using = editor_horizontal_scrollbar
+				}
+			}
+		}
+	}
+
+	type editor_checkbutton = container {
+		checkbutton = {
+			gfxtype = checkbuttongfx
+			shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+			texture = "gfx/editor_gui/editor_checkbox.dds"
+			framesize = { 16 16 }
+			parentanchor = vcenter
+			
+			block "checkbutton"
+			{
+			}
+		}
+		
+		editor_textbox = {
+			position = { 20 0 }
+			autoresize = yes
+			align = top
+			
+			block "label"
+			{
+				text = "Label"
+			}
+		}
+	}
+	
+	type editor_button = button {
+		texture = "gfx/editor_gui/editor_button.dds"
+		gfxtype = framedbuttongfx
+		spriteType = CorneredStretched
+		spriteborder = { 4 4 }
+		effectname = "NoHighlight"
+		framesize = { 16 16 }
+		upframe = 1
+		downframe = 2
+		overframe = 3
+		disableframe = 4
+		intersectionmask = yes
+	}
+	
+	type editor_scrollbar_button = editor_button {
+		size = { 14 14 }
+		framesize = { 14 14 }
+		texture = "gfx/editor_gui/editor_scrollbar.dds"
+	}
+	
+	type editor_editbox = editbox {
+		font = "tools_font"
+		align = left
+		fontsize = 13
+		fontcolor = { 1 1 1 1 }
+	}
+	
+	type editor_textinput = editbox {
+		font = "tools_font"
+		align = left|vcenter
+		fontcolor = { 1 1 1 1 }
+		fontsize = 12
+		size = { 252 24 }
+		alwaystransparent = no
+		focuspolicy = all
+		cursorcolor = { 1 1 0.5 1 }
+		selectioncolor = { 0.45 0.45 0.45 0.7 }
+		maxcharacters = 255
+
+		margin = { 6 0 }
+		margin_bottom = 2
+
+		background = {
+			texture = "gfx/editor_gui/editor_field.dds"
+			spriteType = CorneredStretched
+			spriteborder = { 4 4 }
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+		}
+	}
+
+	type editor_textbox = textbox {
+		font = "tools_font"
+		align = left
+		fontsize = 13
+		fontcolor = { 1 1 1 1 }
+	}
+	
+	type editor_vertical_spacer = widget {
+		layoutpolicy_vertical = expanding
+	}
+	
+	type editor_horizontal_spacer = widget {
+		layoutpolicy_horizontal = expanding
+	}
+	
+	type editor_toolbar = hbox {
+		spacing = 2
+		margin = { 5 3 }
+		margin_bottom = 4
+		layoutpolicy_horizontal = preferred
+		
+		block "background"
+		{
+			background = {
+				texture = "gfx/editor_gui/editor_toolbar_background.dds"
+				spriteType = CorneredStretched
+				spriteborder = { 5 5 }
+				margin = { -1 0 }
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+			}
+		}
+		
+		block "left"
+		{
+		}
+		
+		widget = {
+			layoutpolicy_horizontal = preferred
+		}
+		
+		block "middle"
+		{
+		}
+		
+		widget = {
+			layoutpolicy_horizontal = preferred
+		}
+		
+		block "right"
+		{
+		}
+	}
+	
+	type editor_toolbar_layout = editor_toolbar {
+		margin = { 0 0 }
+		margin_bottom = 0
+		
+		blockoverride "background"
+		{
+		}
+	}
+	
+	type editor_frame = vbox {
+		layoutpolicy_horizontal = expanding
+		
+		block "title"
+		{
+			editor_toolbar_layout = {
+				margin_left = 5
+				
+				blockoverride "left"
+				{
+					editor_textbox = {
+						block "label"
+						{
+							text = "Label"
+						}
+						
+						fontcolor = { 0.8 0.8 0.8 1.0 }
+						fontsize = 10
+						autoresize = yes
+						parentanchor = top|left
+						widgetanchor = top|left
+					}
+				}
+			}
+		}
+		
+		hbox = {
+			margin_top = 2
+			margin_bottom = 4
+
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = preferred
+			
+			vbox = {
+				margin = { 5 5 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+				
+				background = {
+					texture = "gfx/editor_gui/editor_frame.dds"
+					spriteType = CorneredStretched
+					spriteborder = { 5 5 }
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+		
+				block "content"
+				{
+				}
+				
+				widget = {
+					layoutpolicy_horizontal = expanding
+				}
+			}
+		}
+	}
+			
+	type editor_scrollarea = scrollarea {
+		scissor = yes
+		layoutpolicy_horizontal = Preferred
+		layoutpolicy_vertical = Preferred
+		scrollbarpolicy_vertical = as_needed
+		scrollbarpolicy_horizontal = as_needed
+		scrollbaralign_vertical = right
+		scrollbaralign_horizontal = bottom
+		autoresizeviewport = yes
+		alwaystransparent = yes
+		
+		block "Properties"
+		{
+		}
+
+		scrollbar_vertical = {
+			using = editor_vertical_scrollbar
+		}
+		
+		scrollbar_horizontal = {
+			using = editor_horizontal_scrollbar
+		}
+		
+		scrollwidget = {
+			block "content"
+			{
+			}
+		}
+	}
+	
+	type editor_window = window {
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		texture = "gfx/editor_gui/editor_window.dds"
+		spriteType = CorneredStretched
+		spriteborder = { 6 6 }
+		spriteborder_top = 30
+		gfxtype = windowgfx
+		alwaystransparent = no
+		resizable = yes
+		scissor = yes
+		size = { 128 64 }
+		movable = yes
+		filter_mouse = none
+		
+		editor_textbox = {
+			position = { 10 4 }
+			size = { 20 20 }
+			autoresize = yes
+			
+			block "title"
+			{
+				text = "#BOLD;COLOR:{1.0,1.0,1.0} Untitled #!"
+			}
+		}
+
+		vbox = {
+			block "vbox_properties"
+			{
+				margin = { 4 4 }
+				alwaystransparent = yes
+				restrictparent_min = yes
+			}
+			
+			widget = {
+				size = { 0 29 }
+				layoutpolicy_horizontal = Fixed
+			}
+
+			block "before_content"
+			{
+			}
+			
+			hbox = {
+				block "hbox_properties"
+				{
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = Preferred
+				}
+
+				widget = {
+					size = { 5 0 }
+					layoutpolicy_horizontal = Fixed
+				}
+
+				block "content_layout"
+				{
+					vbox = {
+						scissor = yes
+						
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = preferred
+					
+						block "content" 
+						{
+						}
+						
+						widget = {
+							layoutpolicy_vertical = preferred
+						}
+					}
+				}
+				
+				widget = {
+					size = { 5 0 }
+					layoutpolicy_horizontal = Fixed
+				}
+			}
+			
+			widget = {
+				size = { 0 5 }
+				layoutpolicy_vertical = Fixed
+			}
+		}
+	}
+
+	type editor_messagebox = editor_window {
+		parentanchor = hcenter|vcenter
+		widgetanchor = hcenter|vcenter
+
+		blockoverride "title"
+		{
+			text = "#BOLD;COLOR:{1.0,1.0,1.0} MessageBox #!"
+		}
+
+		editor_button = {
+			position = { -5 5 }
+			size = { 20 20 }
+			parentanchor = top|right
+			fontcolor = { 1 1 1 1 }
+			text = "x"
+			align = center|nobaseline
+			onclick = "[PdxGuiDestroyWidget(PdxGuiWidget.AccessParent)]"
+		}
+
+		container = {
+			resizeparent = yes
+			visible = yes
+
+			textbox = {
+				autoresize = yes
+				name = "message"
+				align = center
+				margin_left = 10
+				margin_right = 10
+				margin_bottom = 10
+				margin_top = 30
+			}
+		}
+	}
+
+	type editor_toolbar_window = editor_window {
+		blockoverride "vbox_properties"
+		{
+			margin = { 4 0 }
+			alwaystransparent = yes
+			restrictparent_min = yes
+		}
+			
+		blockoverride "before_content"
+		{
+			block "toolbar"
+			{
+			}
+		}
+	}
+	
+	type colorpicker = colorpicker {
+		name = "colorpicker"
+		
+		icon = {
+			name = "colorpicker_button"
+			position = { 1 2 }
+			size = { 18 18 }
+			shaderfile = "gfx/FX/pdxgui_colorpicker.shader"
+			effectname = "PdxGuiColorButton"
+			texture = "gfx/editor_gui/editor_transparent.dds"
+			alwaystransparent = no
+			spriteType = corneredtiled
+		}
+		
+		window = {
+			using = editor_window
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+			name = "colorpicker_window"
+			resizable = no
+			reorder_on_mouse = "presstop"
+			size = { 394 296 }
+	
+			editor_textbox = {
+				position = { 10 4 }
+				size = { 128 20 }
+				text = "Color Picker"
+				name = "label_color_picker"
+			}
+				
+			icon = {
+				position = { 268 32 }
+				size = { 32 256 }
+				shaderfile = "gfx/FX/pdxgui_colorpicker.shader"
+				effectname = "PdxGuiColorSlider"
+				texture = "gfx/editor_gui/editor_transparent.dds"
+				alwaystransparent = no
+				spriteType = corneredtiled
+				name = "color_slider"
+				
+				icon = {
+					position = { 0 40 }
+					alwaystransparent = yes
+					size = { 32 1 }
+					texture = "gfx/editor_gui/editor_pixel.dds"
+					spriteType = corneredtiled
+					spriteborder = { 1 1 }
+					name = "color_slider_picker"
+				}
+			}
+	
+			icon = {
+				position = { 8 32 }
+				size = { 256 256 }
+				shaderfile = "gfx/FX/pdxgui_colorpicker.shader"
+				effectname = "PdxGuiColorArea"
+				texture = "gfx/editor_gui/editor_transparent.dds"
+				alwaystransparent = no
+				spriteType = corneredtiled
+				name = "color_area"
+				
+				icon = {
+					position = { 0 0 }
+					widgetanchor = center|center
+					alwaystransparent = yes
+					size = { 16 16 }
+					texture = "gfx/editor_gui/editor_colorpicker_circle.dds"
+					spriteType = corneredstretched
+					name = "color_area_picker"
+				}
+			}
+	
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 33 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_hue"
+				maxcharacters = 3
+			}
+	
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 56 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_saturation"
+				maxcharacters = 3
+			}
+	
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 80 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_value"
+				maxcharacters = 3
+			}
+	
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 128 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_red"
+				maxcharacters = 3
+			}
+	
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 152 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_green"
+				maxcharacters = 3
+			}
+	
+			editor_checkbutton = {
+				position = { 308 32 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_hue"
+				}
+				
+				blockoverride "label"
+				{
+					text = "H"
+				}
+			}
+	
+			editor_checkbutton = {
+				position = { 308 152 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_green"
+				}
+				
+				blockoverride "label"
+				{
+					text = "G"
+				}
+			}
+	
+			editor_checkbutton = {
+				position = { 308 128 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_red"
+				}
+				
+				blockoverride "label"
+				{
+					text = "R"
+				}
+			}
+	
+			editor_checkbutton = {
+				position = { 308 80 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_value"
+				}
+				
+				blockoverride "label"
+				{
+					text = "V"
+				}
+			}
+	
+			editor_checkbutton = {
+				position = { 308 56 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_saturation"
+				}
+				
+				blockoverride "label"
+				{
+					text = "S"
+				}
+			}
+	
+			editor_checkbutton = {
+				position = { 308 174 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_blue"
+				}
+				
+				blockoverride "label"
+				{
+					text = "B"
+				}
+			}
+	
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 174 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_blue"
+				maxcharacters = 3
+			}
+			
+			editor_checkbutton = {
+				position = { 308 196 }
+				
+				blockoverride "checkbutton"
+				{
+					name = "radio_color_alpha"
+				}
+				
+				blockoverride "label"
+				{
+					text = "A"
+				}
+			}
+			
+			editor_editbox = {
+				using = property_editbox
+				position = { 348 196 }
+				size = { 32 16 }
+				text = ""
+				name = "editbox_color_alpha"
+				maxcharacters = 3
+			}
+			
+			editor_textbox = {
+				position = { 308 268 }
+				size = { 16 16 }
+				text = "##"
+				name = "label_color_hex"
+			}
+			
+			editor_editbox = {
+				using = property_editbox
+				position = { 328 268 }
+				size = { 52 16 }
+				text = ""
+				name = "editbox_color_hex"
+				maxcharacters = 6
+			}
+			
+			icon = {
+				position = { 345 242 }
+				alwaystransparent = no
+				texture = "gfx/editor_gui/editor_picker.dds"
+				spriteType = stretched
+				widgetanchor = center|center
+				name = "color_selector"
+			}
+			
+			editor_button = {
+				position = { 378 15 }
+				widgetanchor = center|center
+				name = "colorpicker_close"
+			}
+		}
+	}
+}
+
+template EditorContextMenuItem
+{
+	container = {
+		filter_mouse = none
+		editor_editbox = {
+			fontsize = 12
+			align = left
+			autoresize = yes
+			margin = { 4 2 }
+			text = "[ContextMenuItem.GetLabel]"
+			block TextColor {}
+		}
+			
+		button = {
+			size = { 100% 100% }
+			texture = "gfx/editor_gui/editor_dropdown_item.dds"
+			spriteType = CorneredTiled
+			spriteborder = { 1 1 }
+			gfxtype = framedbuttongfx
+			framesize = { 8 8 }
+			upframe = 1
+			downframe = 2
+			overframe = 2
+			disableframe = 1
+			button_trigger = none
+		}
+	}
+}
+
+template EditorInvisibleButton
+{
+	button = {
+		texture = "gfx/editor_gui/editor_invisible.dds"
+		alwaystransparent = yes
+	}
+}
+
+types EditorTypes
+{
+	type editor_tree = tree {
+		alwaystransparent = no
+		indent = 18
+		
+		item = {
+			container = {
+				alwaystransparent = no
+				droptarget = yes
+				filter_mouse = none
+
+				tooltipwidget = {
+					using = editor_tooltip
+				}
+				using = editor_tooltip_properties
+
+				
+				button = {
+					size = { 100% 20 }
+					position = { 0 0 }
+					texture = "gfx/editor_gui/editor_tree_item.dds"
+					spriteType = CorneredTiled
+					spriteborder = { 1 1 }
+					gfxtype = framedbuttongfx
+					framesize = { 4 4 }
+					upframe = 1
+					downframe = 2
+					overframe = 2
+					disableframe = 1
+					button_trigger = none
+					filter_mouse = none
+				}
+				
+				block "item_widget"
+				{
+					icon = {
+						name = "item_icon"
+						position = { 2 2 }
+						size = { 16 16 }
+						texture = "gfx/editor_gui/default_icon.dds"
+					}
+					
+					editor_textbox = {
+						font = "tools_font"
+						name = "item_label"
+						position = { 22 -1 }
+						fontsize = 12
+						autoresize = yes
+						align = left
+						alwaystransparent = yes
+					}
+				}
+			}
+		}
+		
+		active_item = {
+			container = {
+				alwaystransparent = no
+				droptarget = yes
+				filter_mouse = none
+
+				tooltipwidget = {
+					using = editor_tooltip
+				}
+				using = editor_tooltip_properties
+
+				button = {
+					size = { 100% 20 }
+					position = { 0 0 }
+					texture = "gfx/editor_gui/editor_tree_item.dds"
+					spriteType = CorneredTiled
+					spriteborder = { 1 1 }
+					gfxtype = framedbuttongfx
+					framesize = { 4 4 }
+					upframe = 3
+					downframe = 4
+					overframe = 4
+					disableframe = 1
+					button_trigger = none
+					filter_mouse = none
+				}
+
+				block "active_item_widget"
+				{
+					icon = {
+						name = "item_icon"
+						position = { 2 2 }
+						size = { 16 16 }
+						texture = "gfx/editor_gui/default_icon.dds"
+					}
+					
+					editor_textbox = {
+						font = "tools_font"
+						name = "item_label"
+						position = { 22 -1 }
+						fontsize = 12
+						align = left
+						autoresize = yes
+						alwaystransparent = yes
+					}
+				}
+			}
+		}
+		
+		expandButton = {
+			checkbutton = {
+				gfxtype = checkbuttongfx
+				shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+				texture = "gfx/editor_gui/editor_tree_expand.dds"
+				framesize = { 16 16 }
+				position = { 0 2 }
+			}
+		}
+	}
+	
+	type dataproperty_selector = button {
+		name = "dataproperty_select_button"
+		size = { 18 18 }
+		position = { 4 1 }
+		texture = "gfx/editor_gui/editor_icon_addproperty.dds"
+		gfxtype = framedbuttongfx
+		framesize = { 16 16 }
+		upframe = 1
+		downframe = 2
+		overframe = 2
+		disableframe = 1
+	}
+	
+	type editor_contextmenu = contextmenu
+	{
+		position = { 1 1 }
+
+		item = {
+			using = EditorContextMenuItem
+		}
+
+		expand_item = {
+			using = EditorContextMenuItem
+			blockoverride TextColor
+			{
+				fontcolor = { 0.4 0.65 1 1 }
+			}
+		}
+
+		list = {
+			scrollarea = {
+				autoresizescrollarea = yes
+				
+				# TODO: Set context by default?
+				#maximumsize = [GuiContext.GetScreenResolution]
+				maximumsize = { 256 512 }
+				
+				background = {
+					margin = { 2 2 }
+					margin_bottom = 6
+					margin_right = 6
+					texture = "gfx/editor_gui/editor_dropdown_list.dds"
+					spriteType = CorneredStretched
+					spriteborder = { 6 6 }
+					spriteborder_right = 8
+					spriteborder_bottom = 8
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+				
+				scrollwidget = {
+					dynamicgridbox = {
+						alwaystransparent = no
+					}
+				}
+
+				scrollbar_vertical = {
+					scrollbar = {
+						wheelstep = 60
+						direction = vertical
+						alwaystransparent = yes
+						
+						track = EditorInvisibleButton
+						slider = EditorInvisibleButton
+						dec_button = EditorInvisibleButton
+						inc_button = EditorInvisibleButton
+					}
+				}
+
+				scrollbar_horizontal = {
+					using = editor_horizontal_scrollbar
+				}
+			}
+		}
+	}
+
+	type editor_toolbar_button = editor_button {
+		using = editor_toolbar_font
+		texture = "gfx/editor_gui/editor_layout_button.png"
+		fontcolor = { 1 1 1 1 }
+		size = { 25 25 }
+		focuspolicy = click
+		tooltipwidget = {
+			using = dockable_tooltip
+		}
+	}
+
+	type editor_toolbar_icon = icon {
+		size = { 18 18 }
+		parentanchor = vcenter|hcenter
+	}
+
+	type editor_toolbar_divider = hbox {
+		margin = { 10 0 }
+		layoutpolicy_vertical = expanding
+		layoutpolicy_horizontal = fixed
+
+		icon = {
+			size = { 2 0 }
+
+			texture = "gfx/editor_gui/editor_white_pixel.png"
+			color = { 0.3 0.3 0.3 1.0 }
+
+			alwaystransparent = no
+
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = fixed
+		}
+	}
+
+	type editor_toolbar_textbox = editor_textbox {
+		using = editor_toolbar_font
+		autoresize = yes
+		#layoutpolicy_vertical = fixed
+	}
+
+	type editor_toolbar_textinput = editor_textinput {
+		using = editor_toolbar_font
+		#autoresize = yes
+		#layoutpolicy_vertical = fixed
+
+		size = { 25 25 }
+	}
+
+	type editor_toolbar_checkbutton = dockable_togglebutton {
+		size = { 25 25 }
+	}
+
+	type editor_selection = icon {
+		texture = "gfx/editor_gui/editor_selection.png"
+		spriteType = CorneredTiled
+		spriteborder = { 3 3 }
+		tile_when_scaled = yes
+	}
+}
+
+#
+# Everything below should be removed! Replaced with types
+#
+
+template editor_button
+{
+	texture = "gfx/editor_gui/editor_button.dds"
+	gfxtype = framedbuttongfx
+	spriteType = CorneredStretched
+	spriteborder = { 4 4 }
+	effectname = "NoHighlight"
+	framesize = { 16 16 }
+	upframe = 1
+	downframe = 2
+	overframe = 3
+	disableframe = 4
+	intersectionmask = yes
+}
+
+template editor_checkbutton
+{
+	gfxtype = checkbuttongfx
+	shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+	texture = "gfx/editor_gui/editor_checkbox.dds"
+	framesize = { 16 16 }
+}
+
+template editor_scrollbar_button
+{
+	using = editor_button
+	size = { 14 14 }
+	framesize = { 14 14 }
+	texture = "gfx/editor_gui/editor_scrollbar.dds"
+}
+
+template editor_window
+{
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+	texture = "gfx/editor_gui/editor_window.dds"
+	spriteType = CorneredStretched
+	spriteborder = { 6 6 }
+	spriteborder_top = 30
+	gfxtype = windowgfx
+	alwaystransparent = no
+	movable = yes
+	filter_mouse = none
+	focuspolicy = click
+}

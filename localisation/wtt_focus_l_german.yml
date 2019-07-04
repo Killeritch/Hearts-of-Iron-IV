@@ -567,7 +567,7 @@
  JAP_long_lance_torpedoes_desc:0 "Die Grausamkeiten der globalen Ressourcenverteilung führen dazu, dass unsere Flotte dem Feind zahlenmäßig unterlegen ist. Wir werden daher den modernsten Torpedo der Welt entwickeln: Eine Langstreckenwaffe von großer Feuerkraft, angetrieben durch Sauerstoff anstatt durch Druckluft. Mit diesem Torpedo sind unsere kleineren Oberflächenschiffe stärker, als man glauben würde."
  JAP_torpedo_cruisers:0 "Torpedokreuzer"
  JAP_torpedo_cruisers_desc:0 "Wir entwickeln eine eigene Schiffsklasse, die gewaltige Mengen unseres neuen Torpedotyps mit sich führt und die feindliche Flotte damit terrorisieren kann."
- JAP_yamato_tt:0 "Gibt zwei Superschlachtschiffe der Yamato-Klasse in die Produktion."
+ JAP_yamato_tt:0 "Fügt der Produktionswarteliste zwei Superschlachtschiffe der Yamato-Klasse hinzu, von denen eines zu 75% und das andere zu 50% fertiggestellt ist."
  CHI_secure_internal_politics_desc:1 "Wenn unsere Regierung in dem verwirrenden Chaos der chinesischen Politik überleben will, dürfen wir uns nicht von internen Querelen ablenken lassen. Jede interne Opposition muss ausgelöscht werden."
  CHI_cooperation_with_the_nationalists_desc:1 "Die Nationalisten bieten uns die beste Chance, das Land zu vereinen und die Japaner zu besiegen. Wir sollten sichergehen, dass sie uns nicht als Bedrohung ansehen."
  CHI_cooperation_with_the_nationalists_effect_tooltip:0 "[WTT_communist_china.GetNameDef] und die Kriegsherren, die sich auf die Seite der Kommunisten geschlagen haben, können als Reaktion §HGrenzkonflikte§! mit uns beginnen."

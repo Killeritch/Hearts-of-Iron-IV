@@ -3028,6 +3028,13 @@
  MTG_naval_treaty_adherent_reduced:0 "Invocation de la clause de non-respect"
  MTG_naval_treaty_adherent_reduced_desc:0 "Après que quelques signataires du traité naval de Washington ont choisi de se retirer de celui de Londres, [Root.GetLeLaLNP] [Root.GetName] [Root.GetAOntNP] invoqué la clause de non-respect, qui [Root.GetLuiLeurNP] permet d'assouplir les restrictions sur la taille et l'armement de [Root.GetSesLeursNP] navires capitaux."
  GER_air_safety_regulations:0 "Réglementations sur la sécurité aérienne"
+ GER_hans_oster:0 "Hans Oster"
+ GER_hans_oster_desc:0 "Hans Paul Oster\n"
+ GER_alfred_hugenberg:0 "Alfred Hugenberg"
+ GER_alfred_hugenberg_desc:0 "Alfred Ernst Christian Alexander Hugenberg\n"
+ GER_carl_friedrich_goerdeler:0 "Carl Friedrich Goerdeler"
+ GER_julius_leber:0 "Julius Leber"
+ GER_theodor_heuss:0 "Theodor Heuss"
 
 
 
@@ -3064,8 +3071,3 @@
 # AFG_abdul_majid_zabuli:0 "Abdul Majid Zabuli"
 # AFG_carlo_garbasso:0 "Carlo Garbasso"
 # AFG_italo_sergente:0 "Italo Sergente"
- GER_hans_oster:0 "Hans Oster"
- GER_alfred_hugenberg:0 "Alfred Hugenberg"
- GER_carl_friedrich_goerdeler:0 "Carl Friedrich Goerdeler"
- GER_julius_leber:0 "Julius Leber"
- GER_theodor_heuss:0 "Theodor Heuss"

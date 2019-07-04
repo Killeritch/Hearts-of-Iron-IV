@@ -99,57 +99,21 @@ set_convoys = 10
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 30
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 15
-		}
-		
-		neutrality = { 
-			popularity = 50
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1931.10.3"
 	election_frequency = 108
 	elections_allowed = no
 }
+set_popularities = {
+	democratic = 30
+	fascism = 15
+	communism = 15
+	neutrality = 40
+}
 
-1939.1.1 = {# probably needs some adjustment before nazi occupation in 1940
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 30
-			}
-
-			fascism = {
-				popularity = 15
-			}
-			
-			communism = {
-				popularity = 15
-			}
-			
-			neutrality = { 
-				popularity = 50
-			}
-		}
-		
-		ruling_party = neutrality
-		last_election = "1931.10.3"
-		election_frequency = 108
-		elections_allowed = no
-	}
+# probably needs some adjustment before nazi occupation in 1940
+1939.1.1 = {
+	#
 }
 
 create_country_leader = {

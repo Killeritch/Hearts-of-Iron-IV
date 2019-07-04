@@ -1,0 +1,53 @@
+template ConsoleBackground
+{
+	texture = "gfx/editor_gui/editor_console.dds"
+	spriteType = CorneredStretched
+	spriteborder = { 4 4 }
+}
+
+container = {
+	name = "console_window"
+	position = { 5 200 }
+
+	scrollarea = {
+		background = {
+			using = ConsoleBackground
+			margin = { 5 5 }
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+		}
+		
+		name = "console_output_scrollarea"
+		position = { 5 5 }
+		size = { 390 510 }
+
+		scrollwidget = {
+			editbox = {
+				name = "console_output"
+				size = { 390 0 }
+				align = left|top
+				fontsize = 13
+				multiline = yes
+			}
+		}
+
+		scrollbar_vertical = {
+			scrollbar = {}
+		}
+
+		scrollbar_horizontal = {
+			scrollbar = {}
+		}
+	}
+
+	editbox = {
+		using = ConsoleBackground
+		name = "console_edit"
+		position = { 0 520 }
+		size = { 400 40 }
+		margin = { 5 0 }
+		alwaystransparent = no
+		focuspolicy = all
+		fontsize = 14
+	}
+}
+

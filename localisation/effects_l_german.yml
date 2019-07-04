@@ -245,3 +245,4 @@
  EFFECT_SET_FUEL_RATIO:0 "Setzt Treibstoffquote auf $VAL|%.0H$."
  EFFECT_END_EXILE:0 "$COUNTRY|H$ wiedereinsetzen"
  EFFECT_INHERIT_TECHNOLOGY:0 "Dieselben Technologien erhalten wie $COUNTRY|H$"
+ EFFECT_SET_POPULARITIES:0 "Parteipopularität verändert sich:"

@@ -1,0 +1,256 @@
+vbox = {
+	name = "outliner"
+
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+
+	editor_toolbar = {
+		spacing = 0
+		margin = { 0 0 }
+		margin_bottom = 0
+
+		blockoverride "left"
+		{
+			gui_editor_button = {
+				size = { 64 18 }
+				texture = "gfx/editor_gui/editor_layout_menu_button.png"
+				text = "Window"
+				onclick = "[GuiEditorOutliner.OpenWindowMenu]"
+				distribute_visual_state = no
+
+				editor_contextmenu = {
+					parentanchor = bottom|left
+					name = "window_contextmenu"
+				}
+			}
+		}
+	}
+
+	editor_toolbar = {
+		spacing = 10
+		
+		blockoverride "left"
+		{
+			editor_checkbutton = {
+				blockoverride "checkbutton"
+				{
+					name = "editor_enable_edit"
+					checked = "[GuiEditor.IsEnableEdit]"
+					shortcut = "editor_toggle"
+				}
+				
+				blockoverride "label"
+				{
+					text = "Edit mode"
+				}
+			}
+
+			editor_checkbutton = {
+				blockoverride "checkbutton"
+				{
+					name = "editor_enable_hierarchy"
+					checked = "[GuiEditor.IsEnableHierarchy]"
+					shortcut = editor_show_lines
+				}
+				
+				blockoverride "label"
+				{
+					text = "Show hierarchy"
+				}
+			}
+			
+			editor_checkbutton = {
+				blockoverride "checkbutton"
+				{
+					name = "editor_enable_autosave"
+					checked = "[GuiEditor.IsEnableAutosave]"
+					shortcut = editor_autosave
+				}
+				
+				blockoverride "label"
+				{
+					text = "Autosave"
+				}
+			}
+			
+			editor_checkbutton = {
+				blockoverride "checkbutton"
+				{
+					name = "editor_enable_outside_parent"
+					checked = "[GuiEditor.IsEnableOutsideParent]"
+					shortcut = editor_show_outside_parent
+				}
+				
+				blockoverride "label"
+				{
+					text = "Outside parent"
+				}
+			}
+
+			editor_checkbutton = {
+				blockoverride "checkbutton"
+				{
+					checked = "[GuiEditorOutliner.IsShowOnlyActiveFile]"
+					onclick = "[GuiEditorOutliner.SetShowOnlyActiveFile(Not(GuiEditorOutliner.IsShowOnlyActiveFile))]"
+				}
+				
+				blockoverride "label"
+				{
+					text = "Show only active file"
+				}
+			}
+		}
+	}
+	
+	editor_toolbar = {
+		blockoverride "left"
+		{
+			gui_editor_button = {
+				name = "editor_save"
+				shortcut = "editor_save"
+				size = { 24 24 }
+				tooltip = "Save"
+				
+				icon = {
+					texture = "gfx/tools/material/save.png"
+					size = { 59.999996% 59.999996% }
+					parentanchor = vcenter|hcenter
+				}
+			}
+
+			gui_editor_button = {
+				name = "editor_save_as"
+				size = { 24 24 }
+				tooltip = "Save As"
+				
+				icon = {
+					texture = "gfx/tools/material/save_as.png"
+					size = { 59.999996% 59.999996% }
+					parentanchor = vcenter|hcenter
+				}
+			}
+			
+			gui_editor_button = {
+				name = "editor_undo"
+				shortcut = "editor_undo"
+				size = { 24 24 }
+				enabled = "[GuiEditor.IsUndoable]"
+				
+				icon = {
+					texture = "gfx/tools/material/undo.png"
+					size = { 59.999996% 59.999996% }
+					parentanchor = vcenter|hcenter
+				}
+			}
+			
+			gui_editor_button = {
+				name = "editor_redo"
+				shortcut = "editor_redo"
+				size = { 24 24 }
+				enabled = "[GuiEditor.IsRedoable]"
+				
+				icon = {
+					texture = "gfx/tools/material/redo.png"
+					size = { 59.999996% 59.999996% }
+					parentanchor = vcenter|hcenter
+				}
+			}
+		}
+		
+		blockoverride "right"
+		{
+			gui_editor_button = {
+				name = "outliner_collapse"
+				shortcut = "editor_collapse"
+				size = { 24 24 }
+				
+				icon = {
+					texture = "gfx/editor_gui/editor_icon_collapse.dds"
+					parentanchor = vcenter|hcenter
+				}
+			}
+		}
+	}
+	
+	editor_toolbar = {
+		margin_left = 10
+		margin_right = 5
+		visible = yes
+		
+		blockoverride "left"
+		{
+			editor_textbox = {
+				text = "Filter: "
+				size = { 40 24 }
+			}
+			
+			editor_textinput = {
+				name = "widget_filter_editbox"
+				layoutpolicy_horizontal = expanding
+			}
+		}
+		
+		blockoverride "right"
+		{
+			gui_editor_button = {
+				name = "editor_search_previous"
+				shortcut = editor_search_previous
+				enabled = [GuiEditorOutliner.HasFilterMatches]
+				size = { 24 24 }
+				text = "<"
+			}
+			
+			gui_editor_button = {
+				name = "editor_search_next"
+				shortcut = editor_search_next
+				enabled = [GuiEditorOutliner.HasFilterMatches]
+				size = { 24 24 }
+				text = ">"
+			}
+		}
+	}
+	
+	editor_toolbar = {
+		margin_left = 10
+		visible = [GuiEditorOutliner.IsDescTreeFiltered]
+		
+		blockoverride "left"
+		{
+			editor_textbox = {
+				text = "Filtered matches: [GuiEditorOutliner.GetFilterCount]"
+				autoresize = yes
+			}
+		}
+	}
+
+	editor_contextmenu = {
+		name = "outlinercontextmenu"
+	}
+	
+	editor_scrollarea = {
+		name = "outlinerscrollarea"
+
+		blockoverride "content"
+		{
+			vbox = {
+				alwaystransparent = no
+
+				hbox = {
+					layoutpolicy_horizontal = expanding
+					
+					editor_tree = {
+						name = "outlinertree"
+					}
+		
+					widget = {
+						layoutpolicy_horizontal = expanding
+					}
+				}
+
+				widget = {
+					layoutpolicy_vertical = expanding
+				}
+			}
+		}
+	}
+}

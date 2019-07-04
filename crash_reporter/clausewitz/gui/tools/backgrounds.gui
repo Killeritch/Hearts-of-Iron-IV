@@ -1,0 +1,39 @@
+# A box background.
+template EditorBoxBackground
+{
+	texture = "gfx/editor_gui/editor_field.dds"
+	spriteType = CorneredStretched
+	spriteborder = { 4 4 }
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+}
+
+# A background that greys out.
+template EditorGreyOutBackground
+{
+	texture = "gfx/editor_gui/editor_white_pixel.png"
+	spriteType = CorneredStretched
+	spriteborder = { 4 4 }
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+	color = { 1 1 1 .05 }
+}
+
+# A background that greys out.
+template EditorWhiteBackground
+{
+	texture = "gfx/editor_gui/editor_white_pixel.png"
+	spriteType = CorneredStretched
+	spriteborder = { 4 4 }
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+}
+
+# A background with a line on the left. Has to be used with proper indentation to
+# ensure that no overlap happens.
+template EditorFoldoutBackground
+{
+	texture = "gfx/editor_gui/editor_left_indented_border.dds"
+	spriteType = CorneredStretched
+	spriteborder = { 12 4 }
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+	# GruvboxLightBlue with 80% opacity
+	color = { 0.51373 0.64706 0.59608 .8 }
+}

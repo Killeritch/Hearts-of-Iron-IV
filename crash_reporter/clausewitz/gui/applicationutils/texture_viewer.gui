@@ -1,0 +1,374 @@
+template TextureViewerContextMenuItem
+{
+	container = {
+		filter_mouse = none
+		editor_textbox = {
+			fontsize = 12
+			align = left
+			autoresize = yes
+			margin = { 4 2 }
+			text = "[ContextMenuItem.GetLabel]"
+			block TextColor {}
+		}
+			
+		button = {
+			size = { 100% 100% }
+			texture = "gfx/editor_gui/editor_dropdown_item.dds"
+			spriteType = CorneredTiled
+			spriteborder = { 1 1 }
+			gfxtype = framedbuttongfx
+			framesize = { 8 8 }
+			upframe = 1
+			downframe = 2
+			overframe = 2
+			disableframe = 1
+			button_trigger = none
+		}
+	}
+}
+
+template TextureViewerInvisibleButton
+{
+	button = {
+		texture = "gfx/editor_gui/editor_invisible.dds"
+		alwaystransparent = yes
+	}
+}
+
+types Types
+{
+	type texture_viewer_contextmenu = contextmenu
+	{
+		position = { 1 1 }
+
+		item = {
+			using = TextureViewerContextMenuItem
+		}
+
+		expand_item = {
+			using = TextureViewerContextMenuItem
+			blockoverride TextColor
+			{
+				fontcolor = { 0.4 0.65 1 1 }
+			}
+		}
+
+		list = {
+			scrollarea = {
+				autoresizescrollarea = yes
+				maximumsize = [GuiContext.GetScreenResolution]
+				
+				background = {
+					margin = { 2 2 }
+					margin_bottom = 6
+					margin_right = 6
+					texture = "gfx/editor_gui/editor_dropdown_list.dds"
+					spriteType = CorneredStretched
+					spriteborder = { 6 6 }
+					spriteborder_right = 8
+					spriteborder_bottom = 8
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+				
+				scrollwidget = {
+					dynamicgridbox = {
+						alwaystransparent = no
+					}
+				}
+
+				scrollbar_vertical = {
+					scrollbar = {
+						wheelstep = 60
+						direction = vertical
+						alwaystransparent = yes
+						
+						track = TextureViewerInvisibleButton
+						slider = TextureViewerInvisibleButton
+						dec_button = TextureViewerInvisibleButton
+						inc_button = TextureViewerInvisibleButton
+					}
+				}
+
+				scrollbar_horizontal = {
+					using = editor_horizontal_scrollbar
+				}
+			}
+		}
+	}
+}
+
+widget = {
+	name = "texture_viewer"
+    size = { 640 480 }
+
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+
+    vbox = {
+	
+        restrictparent_min = yes
+        alwaystransparent = yes
+
+        layoutpolicy_horizontal = expanding
+        layoutpolicy_vertical = expanding
+        
+        spacing = 4
+        
+        hbox = {
+            layoutpolicy_horizontal = Preferred
+
+            widget = {
+                size = { 15 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            editor_editbox = {
+                layoutpolicy_horizontal = Preferred
+                name = "texture"
+                using = property_editbox
+                alwaystransparent = no
+                size = { 0 20 }
+                text = [TextureViewer.GetTextureString]
+            }
+            
+            widget = {
+                size = { 5 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            button = {
+                name = "files"
+                gfxtype = framedbuttongfx
+                spriteType = CorneredStretched		
+                texture = "gfx/editor_gui/editor_tree_expand.dds"
+                framesize = { 16 16 }
+                upframe = 2
+                downframe = 2
+                overframe = 2
+                disableframe = 2
+                onclick = [TextureViewer.ShowFileList]
+            }
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            editor_editbox = {
+                layoutpolicy_horizontal = Preferred
+                name = "zoom"
+                using = property_editbox
+                fontsize = 13
+                alwaystransparent = no
+                size = { 0 20 }
+                maximumsize = { 60 -1 }
+                text = [TextureViewer.GetTextureZoom]
+                align = center
+            }
+            
+            widget = {
+                size = { 5 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            editor_button = {
+                name = "original_size"
+                size = { 40 20 }
+                fontsize = 13
+                text = "100%"
+                fontcolor = { 1 1 1 1 }
+                onclick = [TextureViewer.OriginalSize]
+            }
+            
+            editor_button = {
+                name = "fit"
+                size = { 25 20 }
+                fontsize = 13
+                text = "Fit"
+                fontcolor = { 1 1 1 1 }
+                onclick = [TextureViewer.Fit]
+            }
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+        }
+        
+        hbox = {
+            layoutpolicy_horizontal = Preferred
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetRed]"
+                    onclick = "[TextureViewer.SetRed(Not(TextureViewer.GetRed))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "R"
+                }
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetGreen]"
+                    onclick = "[TextureViewer.SetGreen(Not(TextureViewer.GetGreen))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "G"
+                }
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetBlue]"
+                    onclick = "[TextureViewer.SetBlue(Not(TextureViewer.GetBlue))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "B"
+                }
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetAlpha]"
+                    onclick = "[TextureViewer.SetAlpha(Not(TextureViewer.GetAlpha))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "A"
+                }
+            }
+            
+            widget = {
+                layoutpolicy_horizontal = Growing
+                size = { 0 0 }
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetPointSampling]"
+                    onclick = "[TextureViewer.SetPointSampling(Not(TextureViewer.GetPointSampling))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "Point Sampling"
+                }
+            }
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetToGamma]"
+                    onclick = "[TextureViewer.SetToGamma(Not(TextureViewer.GetToGamma))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "To Gamma"
+                }
+            }
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            editor_checkbutton = {
+                blockoverride "checkbutton"
+                {
+                    checked = "[TextureViewer.GetFlipV]"
+                    onclick = "[TextureViewer.SetFlipV(Not(TextureViewer.GetFlipV))]"
+                }
+                
+                blockoverride "label"
+                {
+                    text = "Flip"
+                }
+            }
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+        }
+        
+        hbox = {
+            layoutpolicy_horizontal = Preferred
+            layoutpolicy_vertical = Preferred
+            
+            widget = {
+                size = { 10 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+            
+            scrollarea = {
+                name = "scrollarea"
+                layoutpolicy_horizontal = Preferred
+                layoutpolicy_vertical = Preferred
+                scrollbarpolicy_vertical = as_needed
+                scrollbarpolicy_horizontal = as_needed
+                scrollbaralign_vertical = right
+                scrollbaralign_horizontal = bottom
+                autoresizeviewport = yes
+
+                viewportwidget = {
+                    widget = {
+                        scissor = yes
+                    }
+                }
+
+                scrollwidget = {
+                    icon = {
+                        name = "texture"
+                        size = [TextureViewer.GetTextureSize]
+                        texture = [TextureViewer.GetTexture]
+                        effect = [TextureViewer.GetEffect]
+                        constantbuffers = [TextureViewer.GetConstantBuffers]
+                        shaderfile = ""
+                    }
+                }
+
+                scrollbar_vertical = {
+                    using = editor_vertical_scrollbar
+                }
+
+                scrollbar_horizontal = {
+                    using = editor_horizontal_scrollbar
+                }
+            }
+            
+            widget = {
+                size = { 5 0 }
+                layoutpolicy_horizontal = Fixed
+            }
+        }
+        
+        widget = {
+            size = { 0 5 }
+            layoutpolicy_horizontal = Fixed
+        }
+    }
+}

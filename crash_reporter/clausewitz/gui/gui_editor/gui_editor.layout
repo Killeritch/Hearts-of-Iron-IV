@@ -1,0 +1,7 @@
+layout = {
+	name = "gui_editor"
+
+	dockable = {
+		id = "GuiEditor.Outliner"
+	}
+}

@@ -369,10 +369,10 @@ tests = {
     }
     GER_leave_sweden_alone_exclamation_mark = {
         success = {
-            date > "1948.1.1"
+            date > "1945.1.1"
         }
         fail = {
-            date < "1948.1.2"
+            date < "1945.1.2"
             GER = {
                 has_war_with = SWE
             }
@@ -381,10 +381,10 @@ tests = {
 
     UK_holds_on_to_suez = {
         success = {
-            date > "1948.1.1"
+            date > "1945.1.1"
         }
         fail = {
-            date < "1948.1.2"
+            date < "1945.1.2"
             446 = {
                 NOT = { is_controlled_by = ENG }
             }

@@ -29,7 +29,7 @@
  STATE_NOT_OCCUPIED:0 "§RIl faut occuper $STATE|H$ pour pouvoir y instaurer une politique d'occupation.§!"
  STATE_CLAIMS:0 "Rev. étrang."
  STATE_NO_RESOURCES:0 "§TIl n'y a pas de ressources en $STATE|H$.§!"
- LOCAL_PROVINCE_MODIFIERS:0 "\n§HEffets de la province locale :§!"
+ LOCAL_PROVINCE_MODIFIERS:0 "\n§HEffets appliqués dans la province :§!"
  UNLOCKED_SLOTS:0 "$NUM|Y$ emplacements déverrouillés sur $MAX|Y$"
  UNLOCKED_SLOTS_DESC:0 "Le nombre d'emplacements déverrouillés est limité par l'infrastructure et la population de l'État"
  UNLOCKED_SLOTS_CAP:0 "Limite de $NUM|Y$ par technologie"

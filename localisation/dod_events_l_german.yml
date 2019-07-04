@@ -722,7 +722,7 @@
  DOD_yugoslavia.10.t:0 "Die Fünfte Kolonne"
  DOD_yugoslavia.10.desc:0 "Als die Nachricht von der Kriegserklärung gegen Deutschland sich im Land verbreitete, wurde schnell klar, dass viele Bürger nicht vorhatten, die Waffen gegen die Invasoren zu ergreifen. Mehrheitlich kroatische Einheiten haben den Befehl verweigert, sich in Grenznähe zu begeben, und haben sogar das Feuer auf andere Einheiten eröffnet, die ihre Befehle befolgten.\n\nOffenbar können wir uns nicht länger auf die Unterstützung der Kroaten verlassen, was die Verteidigung der Grenze zu Deutschland gelinde gesagt schwierig macht."
  DOD_yugoslavia.10.a:0 "Verräter!"
- DOD_yugoslavia.20.t:0 "[YUG.GetAdjective]e Regierung erbittet Verkauf von Flugzeugen"
+ DOD_yugoslavia.20.t:1 "[YUG.GetName] erbittet Verkauf von Flugzeugen"
  DOD_yugoslavia.20.desc:0 "Die [YUG.GetAdjective]e Regierung hat eine strategische Schwäche ihrer Luftwaffe identifiziert und ein Eilprogramm ins Leben gerufen, um sie zu modernisieren und zu erweitern. Es wurden beträchtliche Geldreserven bereitgestellt, um den Kauf zu finanzieren. Eine Kommission reicht durch Europa, um nach neuen Bezugsquellen für Jäger und mittlere Bomber zu suchen.\n\nDa die Zeit drängt, besteht die [YUG.GetAdjective]e Regierung auf die sofortige Lieferung von Flugzeugen direkt vom Hersteller."
  DOD_yugoslavia.20.a:0 "Den Verkauf von Jägern aus unseren Reserven autorisieren."
  DOD_yugoslavia.20.b:0 "Den Verkauf von Bombern aus unseren Reserven autorisieren."

@@ -1,0 +1,197 @@
+types Tweakable
+{
+	type Tweakable = hbox {
+		editor_textbox = {
+			name = "tweakable_title"
+			layoutpolicy_horizontal = preferred
+			fontsize = 13
+			size = { 220 20 }
+			text = "[Tweaker.GetTitle]"
+			tooltip = "[Tweaker.GetTitle]"
+			tooltip_type = "mouse"
+			elide = right
+			margin_right = 10
+		}
+	}
+}
+
+Tweakable = {
+	name = "tweakable_value"
+	
+	editor_editbox = {
+		name = "tweakable_value_eb"
+		using = property_editbox
+		alwaystransparent = no
+		size = { 44 19 }
+		text = "[Tweaker.GetValue]"
+	}
+	
+	widget = { 	size = { 3 0 }	}
+	
+	editor_button = {
+		name = "tweakable_value_button"
+		size = { 33 19 }
+		fontcolor = { 1 1 1 1 }
+		text = "+/-"
+		align = center|nobaseline
+	}
+}
+
+Tweakable = {
+	name = "tweakable_bool"
+	widget = {
+		size = { 20 20 }
+
+		checkbutton = {
+			using = editor_checkbutton
+			name = "tweakable_bool_cb"
+			parentanchor = left|vcenter
+			checked = "[Tweaker.GetBool]"
+		}
+	}
+}
+
+Tweakable = {
+	name = "tweakable_string"
+		
+	editor_editbox = {
+		name = "tweakable_string_eb"
+		using = property_editbox
+		alwaystransparent = no
+		size = { 160 20 }
+		text = "[Tweaker.GetValue]"
+	}
+}
+
+Tweakable = {
+	name = "tweakable_color"
+		
+	editor_editbox = {
+		name = "tweakable_color_eb"
+		using = property_editbox
+		fontsize = 13
+		alwaystransparent = no
+		size = { 60 20 }
+		text = "[Tweaker.GetValue]"
+		#align = center
+	}
+	
+	widget = {
+		size = { 20 20 }
+		colorpicker = {
+			name = "tweakable_color_picker"
+			color = "[Tweaker.GetColor]"
+			position = { -1 -1 } # colorpicker is a bit wierd
+		}
+	}
+}
+
+Tweakable = {
+	name = "tweakable_callback"
+
+	editor_editbox = {
+		name = "tweakable_callback_eb"
+		using = property_editbox
+		alwaystransparent = no
+		size = { 150 20 }
+		text = "[Tweaker.GetValue]"
+	}
+	
+	editor_button = {
+		name = "tweakable_callback_button"
+		size = { 85 20 }
+		text = "[Tweaker.GetGuiName]"
+		align = center|nobaseline
+	}
+}
+
+window = {
+	using = editor_window
+	name = "tweakerwindow"
+	position = { -5 150 }
+	size = { 400 596 }
+	minimumsize = { 250 50 }
+	resizable = yes
+	parentanchor = top|right
+
+	editor_editbox = {
+		using = property_editbox
+		name = "tweak_string"
+		alwaystransparent = no
+		position = { 10 3 }
+		size = { 250 22 }
+	}
+
+	editor_button = {
+		name = "close"
+		position = { -5 5 }
+		size = { 20 20 }
+		fontcolor = { 1 1 1 1 }
+		parentanchor = top|right
+		text = "x"
+		align = center|nobaseline
+	}
+
+	vbox = 
+	{
+		alwaystransparent = yes
+		widget = {
+			size = { 0 30 }
+			layoutpolicy_horizontal = Fixed
+		}
+			
+		hbox = {
+			layoutpolicy_horizontal = Preferred
+			layoutpolicy_vertical = Preferred
+			
+			widget = {
+				size = { 10 0 }
+				layoutpolicy_horizontal = Fixed
+			}
+			
+			scrollarea = {
+				layoutpolicy_horizontal = Preferred
+				layoutpolicy_vertical = Preferred
+				scrollbarpolicy_vertical = as_needed
+				scrollbarpolicy_horizontal = as_needed
+				scrollbaralign_vertical = right
+				scrollbaralign_horizontal = bottom
+				autoresizeviewport = yes
+
+				viewportwidget = {
+					widget = {
+						scissor = yes
+					}
+				}
+
+				scrollwidget = {
+					fixedgridbox = {
+						name = "tweakables"
+						addcolumn = 99%
+						addrow = 20
+						setitemsizefromcell = yes
+					}
+				}
+
+				scrollbar_vertical = {
+					using = editor_vertical_scrollbar
+				}
+
+				scrollbar_horizontal = {
+					using = editor_horizontal_scrollbar
+				}
+			}
+			
+			widget = {
+				size = { 5 0 }
+				layoutpolicy_horizontal = Fixed
+			}
+		}
+		
+		widget = {
+			size = { 0 5 }
+			layoutpolicy_horizontal = Fixed
+		}
+	}
+}
+

@@ -125,7 +125,7 @@
  ship_hull_carrier_2_short:1 "Porte-avions 1940"
  ship_hull_carrier_3:1 "Coque de porte-avions 1944"
  ship_hull_carrier_3_short:1 "Porte-avions 1944"
- ship_hull_submarine:0 "Sous-marins"
+ ship_hull_submarine:0 "Sous-marin"
  ship_hull_submarine_desc:0 "Bien éloignés de leurs prédécesseurs encore sommaires de la Grande Guerre, les navires modernes sont plus performants qu'ils ne l'ont jamais été et peuvent même menacer les navires les plus imposants pour un coût au final réduit."
  ship_hull_submarine_1:1 "Coque de sous-marin"
  ship_hull_submarine_1_short:1 "Sous-marin"

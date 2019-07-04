@@ -3,6 +3,6 @@ archive = "dlc/dlc022_waking_the_tiger/dlc022.zip"
 steam_id = "702350"
 affects_checksum = yes
 affects_compatability = no
-checksum = "c3693b7ad45e5cf712892eeefe953023"
+checksum = "32f8af7b49e1c62ea3fd03b6c1c791fd"
 third_party_content = no
 category = "expansion"

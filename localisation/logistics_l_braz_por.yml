@@ -129,3 +129,4 @@
  FUEL_LOW_PRIORITY_DESC:0 "Prioridade com Pouco Combustível"
  FUEL_MEDIUM_PRIORITY_DESC:0 "Prioridade com Combustível na Metade"
  FUEL_HIGH_PRIORITY_DESC:0 "Prioridade com Muito Combustível"
+ LOGISTICS_FUEL_PERCENTAGE:0 "§H$VALUE|0$%§! da necessidade de combustível abastecida."

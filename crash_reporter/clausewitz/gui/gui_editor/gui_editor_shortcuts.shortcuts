@@ -1,0 +1,20 @@
+shortcutbindings = {
+	gui_editor = ctrl+f8
+	editor_close_window = "q"
+	editor_toggle = "e"
+	editor_save = "ctrl+s"
+	editor_undo = "ctrl+z"
+	editor_redo = "ctrl+y"
+	editor_search_previous = "ctrl+p"
+	editor_search_next = "ctrl+n"
+	editor_filter_widgets = "ctrl+f"
+	editor_filter_properties = "ctrl+shift+f"
+	editor_select_next_sibling = "kp_6"
+	editor_select_previous_sibling = "kp_4"
+	editor_select_parent = "kp_8"
+	editor_select_child = "kp_2"
+	editor_show_lines = "l"
+	editor_show_outside_parent = "o"
+	editor_autosave = "a"
+	editor_show_all_properties = "p"
+}

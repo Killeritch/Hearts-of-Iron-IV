@@ -762,8 +762,8 @@ guiTypes = {
 
 		OverlappingElementsBoxType = {
 			name = "navy_box"
-			position = { x = 10 y = -6 }
-			size = { x = 254 y = 23 }
+			position = { x = 6 y = -6 }
+			size = { x = 270 y = 23 }
 			first_on_top = yes
 			format = left
 			spacing = 8.0
@@ -771,7 +771,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "split_off_btn"
-			position = { x=264 y=-6 }
+			position = { x=268 y=-6 }
 			spriteType = GFX_NV_btn_repair_symbol
 			frame = 2
 		}

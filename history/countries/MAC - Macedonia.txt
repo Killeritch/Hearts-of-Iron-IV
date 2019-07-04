@@ -40,19 +40,5 @@ if = {
 	}
 }
 
-set_politics = {
-
-	parties = {
-		fascism = { 
-			popularity = 33
-		}
-		neutrality = { 
-			popularity = 33
-		}		
-		communism = {
-			popularity = 34
-		}
-	}
+set_popularities = {	fascism = 33	neutrality = 33	communism = 34
 }
-
-

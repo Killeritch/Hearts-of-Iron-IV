@@ -300,7 +300,7 @@ SS_resolve_effects_wehrmacht = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 0 compare = greater_than_or_equals }
-				check_variable = { var = wehrmacht_anger value = 10 compare = less_than }
+				check_variable = { wehrmacht_anger < 10 }
 			}
 		}
 		random_list = {
@@ -312,7 +312,7 @@ SS_resolve_effects_wehrmacht = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 10 compare = greater_than_or_equals }
-				check_variable = { var = wehrmacht_anger value = 20 compare = less_than }
+				check_variable = { wehrmacht_anger < 20 }
 			}
 		}
 		random_list = {
@@ -325,7 +325,7 @@ SS_resolve_effects_wehrmacht = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 20 compare = greater_than_or_equals }
-				check_variable = { var = wehrmacht_anger value = 30 compare = less_than }
+				check_variable = { wehrmacht_anger < 30 }
 			}
 		}
 		random_list = {
@@ -338,7 +338,7 @@ SS_resolve_effects_wehrmacht = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 30 compare = greater_than_or_equals }
-				check_variable = { var = wehrmacht_anger value = 40 compare = less_than }
+				check_variable = { wehrmacht_anger < 40 }
 			}
 		}
 		random_list = {
@@ -351,7 +351,7 @@ SS_resolve_effects_wehrmacht = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 40 compare = greater_than_or_equals }
-				check_variable = { var = wehrmacht_anger value = 50 compare = less_than }
+				check_variable = { wehrmacht_anger < 50 }
 			}
 		}
 		random_list = {
@@ -374,7 +374,7 @@ SS_resolve_effects_wehrmacht = {
 		limit = {
 			AND = {
 				check_variable = { var = wehrmacht_anger value = 50 compare = greater_than_or_equals }
-				check_variable = { var = wehrmacht_anger value = 60 compare = less_than }
+				check_variable = { wehrmacht_anger < 60 }
 			}
 		}
 		random_list = {
@@ -419,7 +419,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 0 compare = greater_than_or_equals }
-				check_variable = { var = SS_anger value = 10 compare = less_than }
+				check_variable = { SS_anger < 10 }
 			}
 		}
 		random_list = {
@@ -431,7 +431,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 10 compare = greater_than_or_equals }
-				check_variable = { var = SS_anger value = 20 compare = less_than }
+				check_variable = { SS_anger < 20 }
 			}
 		}
 		random_list = {
@@ -444,7 +444,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 20 compare = greater_than_or_equals }
-				check_variable = { var = SS_anger value = 30 compare = less_than }
+				check_variable = { SS_anger < 30 }
 			}
 		}
 		random_list = {
@@ -457,7 +457,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 30 compare = greater_than_or_equals }
-				check_variable = { var = SS_anger value = 40 compare = less_than }
+				check_variable = { SS_anger < 40 }
 			}
 		}
 		random_list = {
@@ -470,7 +470,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 40 compare = greater_than_or_equals }
-				check_variable = { var = SS_anger value = 50 compare = less_than }
+				check_variable = { SS_anger < 50 }
 			}
 		}
 		random_list = {
@@ -483,7 +483,7 @@ SS_resolve_effects_ss = {
 		limit = {
 			AND = {
 				check_variable = { var = SS_anger value = 50 compare = greater_than_or_equals }
-				check_variable = { var = SS_anger value = 60 compare = less_than }
+				check_variable = { SS_anger < 60 }
 			}
 		}
 		random_list = {

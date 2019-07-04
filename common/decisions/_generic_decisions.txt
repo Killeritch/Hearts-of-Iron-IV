@@ -15,6 +15,12 @@ political_actions = {
 			NOT = { has_idea = race_for_the_bomb }
 		}
 
+		target_root_trigger = {
+            has_tech = atomic_research
+            NOT = { has_global_flag = first_nuke_dropped }
+            NOT = { has_idea = race_for_the_bomb }
+		}
+
 		#If this trigger matches a country.
 		target_trigger = {
 			#Target is FROM
@@ -166,9 +172,10 @@ economy_decisions = {
 		}
 
 		visible = {
-			any_state = {
-				is_owned_by = FRA
-				is_controlled_by = ROOT
+			FRA = {
+				any_owned_state = {
+					is_controlled_by = ROOT
+				}
 			}
 			NOT = { is_in_faction_with = FRA }
 		}
@@ -271,129 +278,106 @@ propaganda_efforts = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			FROM = {
 				OR = {
+					is_justifying_wargoal_against = ROOT
+					AND = {
+						has_war_with = ROOT
+						is_neighbor_of = ROOT
+					}
 					has_offensive_war = yes
-					is_justifying_wargoal_against = ROOT
 				}
 			}
 		}
 
 		visible = {
-			FROM = { NOT = { has_government = ROOT } }
 			FROM = {
-				NOT = { is_neighbor_of = ROOT }
+				NOT = { is_in_faction_with = ROOT }
 				OR = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-						has_added_tension_amount > 30
-					}
 					is_justifying_wargoal_against = ROOT
-					has_offensive_war_with = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
 				}
 			}
 		}
 
 		target_trigger = {
 			FROM = {
-				NOT = { is_neighbor_of = ROOT }
 				NOT = { is_in_faction_with = ROOT }
 				OR = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-						has_added_tension_amount > 30
-					}
 					is_justifying_wargoal_against = ROOT
-					has_offensive_war_with = ROOT
+					AND = {
+						is_neighbor_of = ROOT
+						OR = {
+							has_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 5
+							}
+						}
+					}
+					AND = {
+						NOT = { is_neighbor_of = ROOT }
+						OR = {
+							has_offensive_war_with = ROOT
+							AND = {
+								NOT = { has_government = ROOT }
+								has_offensive_war = yes
+								has_added_tension_amount > 30
+							}
+						}
+					}
 				}
 			}
-		}
-
-		days_remove = 90
-
-		fire_only_once = yes
-
-		cost = 75
-
-		modifier = {
-			war_support_weekly = 0.01
-		}
-
-		complete_effect = {
-			set_country_flag = war_propaganda_campaign_running
-		}
-		remove_effect = {
-			clr_country_flag = war_propaganda_campaign_running
-		}
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	#Propaganda campaign against a neighbor
-	war_propaganda_against_warmonger_neighbor = {
-
-		icon = generic_prepare_civil_war
-
-		available = {
-			NOT = { has_country_flag = war_propaganda_campaign_running }
-			FROM = {
-				OR = {
-					has_offensive_war = yes 
-					is_justifying_wargoal_against = ROOT
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		visible = {
-			FROM = { NOT = { has_government = ROOT } }
-			FROM = {
-				is_neighbor_of = ROOT
-				OR = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
+			if = {
+				limit = {
+					FROM = {
+						is_neighbor_of = ROOT
 					}
-					is_justifying_wargoal_against = ROOT
-					has_war_with = ROOT
+					set_temp_variable = { war_propaganda_cost = 50 }
 				}
-				has_added_tension_amount > 5
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				is_neighbor_of = ROOT
-				NOT = { is_in_faction_with = ROOT }
-				OR = {
-					AND = {
-						NOT = { has_government = ROOT }
-						has_offensive_war = yes
-					}
-					is_justifying_wargoal_against = ROOT
-					has_war_with = ROOT
-				}
-				has_added_tension_amount > 5
 			}
 		}
 
 		days_remove = 90
 		days_re_enable = 180
 
-		cost = 50
+		fire_only_once = yes
+
+		cost = var:war_propaganda_cost?75
 
 		modifier = {
 			war_support_weekly = 0.01
 		}
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger"
 			set_country_flag = war_propaganda_campaign_running
 		}
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger"
 			clr_country_flag = war_propaganda_campaign_running
 		}
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -926,8 +910,7 @@ operations = {
 					owns_state = 446
 					owns_state = 453
 				}
-				any_country = {
-					has_war_with = ROOT
+				any_enemy_country = {
 					OR = {
 						controls_state = 452
 						controls_state = 447
@@ -1010,9 +993,29 @@ operations = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
+				factor = 0
+				NOT = {
+					any_enemy_country = {
+						OR = {
+							controls_state = 452
+							controls_state = 447
+							controls_state = 456
+							controls_state = 457
+							controls_state = 454
+							controls_state = 455
+							OR = {
+								divisions_in_state = { state = 454 size > 2 }
+								divisions_in_state = { state = 447 size > 2 }
+								divisions_in_state = { state = 457 size > 2 }
+								divisions_in_state = { state = 456 size > 2 }
+							}
+						}
+					}
+				}
+			}
+			modifier = {
 				factor = 0 # Don't blow the canal when you've got troops needing supplies in the Horn of Africa, and no land route has been established there
-				any_country = {
-					is_in_faction_with = ROOT
+				any_allied_country = {
 					NOT = {
 						OR = {
 							has_full_control_of_state = 457
@@ -1032,8 +1035,7 @@ operations = {
 				factor = 200 # Try to cut the enemy off from the mediterranean if you also occupy Gibraltar
 				OR = {
 					has_full_control_of_state = 118
-					any_other_country = {
-						is_in_faction_with = ROOT
+					any_allied_country = {
 						has_full_control_of_state = 118
 					}
 				}
@@ -1197,8 +1199,7 @@ special_projects = {
 				NOT = {
 					OR = {
 						has_full_control_of_state = 118
-						any_other_country = {
-							is_in_faction_with = ROOT
+						any_allied_country = {
 							has_full_control_of_state = 118
 						}
 					}
@@ -1230,8 +1231,7 @@ special_projects = {
 		available = {
 			has_full_control_of_state = 685
 			NOT = {
-				any_country = {
-					has_war_with = ROOT
+				any_enemy_country = {
 					controls_state = 304
 				}
 			}
@@ -1257,8 +1257,7 @@ special_projects = {
 				limit = {
 					has_full_control_of_state = 685
 					NOT = {
-						any_country = {
-							has_war_with = ROOT
+						any_enemy_country = {
 							controls_state = 304
 						}
 					}
@@ -1578,7 +1577,7 @@ foreign_politics = {
 	object_to_attaches = {
 
 		allowed = {
-            always = yes
+            has_dlc = "Waking the Tiger"
         }
 
         cost = 50
@@ -1601,6 +1600,11 @@ foreign_politics = {
         	any_enemy_country = {
 				has_attache_from = FROM
 			}
+		}
+
+		target_root_trigger = {
+			has_war = yes
+			has_capitulated = no
 		}
 
 		target_trigger = {
@@ -1829,28 +1833,72 @@ foreign_support = {
 		}
 
 		available = {
-			any_state = {
-				has_state_flag = CHI_needed_for_burma_road
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
+			OR = {
+				AND = {
+					288 = { #Burma
+						has_state_flag = CHI_needed_for_burma_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
 				}
-			}			
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_needed_for_burma_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_needed_for_burma_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
 		}
 
 		visible = {
 			is_subject = no
+			OR = {
+				AND = {
+					288 = { #Burma
+						has_state_flag = CHI_needed_for_burma_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_needed_for_burma_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_needed_for_burma_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
 			any_country = {
 				check_variable = { CHI_burma_road_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { tag = ROOT }
-			}
-			any_state = {
-				has_state_flag = CHI_needed_for_burma_road
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
-				}
 			}
 		}
 
@@ -1936,32 +1984,92 @@ foreign_support = {
 		}
 
 		available = {
-			any_state = {
-				has_state_flag = CHI_burma_road_closed_state
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
+			OR = {
+				AND = {
+					288 = { #Burma
+						has_state_flag = CHI_burma_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_burma_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_burma_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								is_subject_of = ROOT
+							}
+						}
+					}
 				}
 			}
 		}
 
 		visible = {
 			is_subject = no
-			any_country = {
-				check_variable = { CHI_burma_road_closed_level > 0 }
-				NOT = { has_war_with = ROOT }
-			}
-			any_state = {
-				has_state_flag = CHI_burma_road_closed_state
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = {
+			OR = {
+				AND = {
+					288 = { #Burma
+						has_state_flag = CHI_burma_road_closed_state
 						OR = {
-							is_subject_of = ROOT
-							check_variable = { CHI_burma_road_closed_level > 0 }
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_burma_road_closed_level > 0 }
+								}
+							}
 						}
 					}
 				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_burma_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_burma_road_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_burma_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_burma_road_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+			}
+			any_country = {
+				check_variable = { CHI_burma_road_closed_level > 0 }
+				NOT = { has_war_with = ROOT }
 			}
 		}
 
@@ -2073,28 +2181,72 @@ foreign_support = {
 		}
 
 		available = {
-			any_state = {
-				has_state_flag = CHI_needed_for_ledo_road
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
+			OR = {
+				AND = {
+					432 = { #Assam
+						has_state_flag = CHI_needed_for_ledo_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_needed_for_ledo_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_needed_for_ledo_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
 				}
 			}			
 		}
 
 		visible = {
 			is_subject = no
+			OR = {
+				AND = {
+					432 = { #Assam
+						has_state_flag = CHI_needed_for_ledo_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_needed_for_ledo_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_needed_for_ledo_road
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
 			any_country = {
 				check_variable = { CHI_ledo_road_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { tag = ROOT }
-			}
-			any_state = {
-				has_state_flag = CHI_needed_for_ledo_road
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
-				}
 			}
 		}
 
@@ -2180,17 +2332,89 @@ foreign_support = {
 		}
 
 		available = {
-			any_state = {
-				has_state_flag = CHI_ledo_road_closed_state
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
+			OR = {
+				AND = {
+					432 = { #Assam
+						has_state_flag = CHI_ledo_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_ledo_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_ledo_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								is_subject_of = ROOT
+							}
+						}
+					}
 				}
 			}
 		}
 
 		visible = {
 			is_subject = no
+			OR = {
+				AND = {
+					432 = { #Assam
+						has_state_flag = CHI_ledo_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_ledo_road_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_ledo_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_ledo_road_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					640 = { #Mandalay
+						has_state_flag = CHI_ledo_road_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_ledo_road_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+			}
 			any_country = {
 				check_variable = { CHI_ledo_road_closed_level > 0 }
 				NOT = { has_war_with = ROOT }
@@ -2315,28 +2539,54 @@ foreign_support = {
  		}
 
  		available = {
- 			any_state = {
- 				has_state_flag = CHI_needed_for_the_hump
- 				OR = {
- 					is_controlled_by = ROOT
- 					CONTROLLER = { is_subject_of = ROOT }
- 				}
- 			}			
+			OR = {
+				AND = {
+					434 = { #Arunachal Pradesh
+						has_state_flag = CHI_needed_for_the_hump
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					601 = { #Xikang
+						has_state_flag = CHI_needed_for_the_hump
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
  		}
 
  		visible = {
  			is_subject = no
+			OR = {
+				AND = {
+					434 = { #Arunachal Pradesh
+						has_state_flag = CHI_needed_for_the_hump
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					601 = { #Xikang
+						has_state_flag = CHI_needed_for_the_hump
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
  			any_country = {
  				check_variable = { CHI_the_hump_current_level > 0 }
  				NOT = { is_in_faction_with = ROOT }
  				NOT = { tag = ROOT }
- 			}
- 			any_state = {
- 				has_state_flag = CHI_needed_for_the_hump
- 				OR = {
- 					is_controlled_by = ROOT
- 					CONTROLLER = { is_subject_of = ROOT }
- 				}
  			}
  		}
 
@@ -2422,32 +2672,63 @@ foreign_support = {
  		}
 
  		available = {
- 			any_state = {
- 				has_state_flag = CHI_the_hump_closed_state
- 				OR = {
- 					is_controlled_by = ROOT
- 					CONTROLLER = { is_subject_of = ROOT }
- 				}
- 			}
+			OR = {
+				AND = {
+					434 = { #Arunachal Pradesh
+						has_state_flag = CHI_the_hump_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					601 = { #Xikang
+						has_state_flag = CHI_the_hump_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
  		}
 
  		visible = {
  			is_subject = no
+			OR = {
+				AND = {
+					434 = { #Arunachal Pradesh
+						has_state_flag = CHI_the_hump_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_the_hump_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					601 = { #Xikang
+						has_state_flag = CHI_the_hump_closed_state
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									check_variable = { CHI_the_hump_closed_level > 0 }
+								}
+							}
+						}
+					}
+				}
+			}
  			any_country = {
  				check_variable = { CHI_the_hump_closed_level > 0 }
  				NOT = { has_war_with = ROOT }
- 			}
- 			any_state = {
- 				has_state_flag = CHI_the_hump_closed_state
- 				OR = {
- 					is_controlled_by = ROOT
- 					CONTROLLER = {
- 						OR = {
- 							is_subject_of = ROOT
- 							check_variable = { CHI_the_hump_closed_level > 0 }
- 						}
- 					}
- 				}
  			}
  		}
 
@@ -2559,28 +2840,54 @@ foreign_support = {
 		}
 
 		available = {
-			any_state = {
-				has_state_flag = CHI_needed_for_hanoi_route
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
+			OR = {
+				AND = {
+					671 = { #Tonkin
+						has_state_flag = CHI_needed_for_hanoi_route
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
 				}
-			}			
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_needed_for_hanoi_route
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
 		}
 
 		visible = {
 			is_subject = no
+			OR = {
+				AND = {
+					671 = { #Tonkin
+						has_state_flag = CHI_needed_for_hanoi_route
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					325 = { #Yunnan
+						has_state_flag = CHI_needed_for_hanoi_route
+						OR = {
+							is_controlled_by = ROOT
+							CONTROLLER = { is_subject_of = ROOT }
+						}
+					}
+				}
+			}
 			any_country = {
 				check_variable = { CHI_hanoi_route_current_level > 0 }
 				NOT = { is_in_faction_with = ROOT }
 				NOT = { tag = ROOT }
-			}
-			any_state = {
-				has_state_flag = CHI_needed_for_hanoi_route
-				OR = {
-					is_controlled_by = ROOT
-					CONTROLLER = { is_subject_of = ROOT }
-				}
 			}
 		}
 

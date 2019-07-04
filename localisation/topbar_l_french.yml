@@ -8,7 +8,7 @@
  TOPBAR_PRODUCTION:0 "Production"
  TOPBAR_PRODUCTION_DESC:0 "Produire du matériel pour l'armée de terre, la marine et l'armée de l'air."
  TOPBAR_TECHNOLOGY:0 "Recherche"
- TOPBAR_TECHNOLOGY_DESC:0 "Étudier des £tech_mod technologies pour faire avancer le pays."
+ TOPBAR_TECHNOLOGY_DESC:0 "Étudier des £tech_mod£technologies pour faire avancer le pays."
  TOPBAR_DIPLOMACY:0 "Diplomatie"
  TOPBAR_DIPLOMACY_DESC:0 "Conduire des négociations avec d'autres nations."
  TOPBAR_LOGISTICS:0 "Logistique"

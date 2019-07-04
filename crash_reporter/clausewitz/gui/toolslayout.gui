@@ -1,0 +1,262 @@
+template dockable_tooltip
+{
+	container = {
+		filter_mouse = all
+		alwaystransparent = yes
+		widgetanchor = bottom|left
+		
+		flowcontainer = {
+			direction = horizontal
+
+			background = {
+				texture = "gfx/editor_gui/editor_layout_button.png"
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+				gfxtype = icongfx
+				spriteType = corneredstretched
+				spriteborder = { 2 2 }
+				framesize = { 16 16 }
+				tintcolor = { 1.0 1.0 1.0 1.0 }
+			}
+
+			editor_textbox = {
+				name = "TooltipText"
+				multiline = yes
+				maximumsize = { 640 -1 }
+				margin_top = 4
+				margin_bottom = 4
+				margin_left = 8
+				fontsize = 11
+
+				autoresize = yes
+				align = left|top
+				alwaystransparent = yes
+			}
+
+			editor_textbox = {
+				name = "TooltipTextShortcut"
+				margin_top = 4
+				margin_bottom = 4
+				margin_left = 4
+				margin_right = 8
+				fontsize = 11
+				fontcolor = { 1 0 0 1 }
+				fontweight = BOLD
+
+				autoresize = yes
+				align = left|top
+				alwaystransparent = yes
+			}
+		}
+	}
+}
+
+template dockable_divider
+{
+	minimumsize = { 5 5 }
+	alwaystransparent = no
+
+	texture = "gfx/editor_gui/editor_layout_divider.png"
+	spriteType = CorneredTiled
+	shaderfile = "gfx/FX/pdxgui_default.shader"
+	framesize = { 8 8 }
+	frame = 1
+
+	state = {
+		name = _mouse_enter
+		frame = 2
+	}
+
+	state = {
+		name = moving
+		frame = 2
+	}
+
+	state = {
+		name = _mouse_leave
+		frame = 1
+	}
+}
+
+icon = {
+	name = "hdivider"
+	using = dockable_divider
+}
+
+icon = {
+	name = "vdivider"
+	using = dockable_divider
+}
+
+vbox = {
+	name = "dockable_not_registered"
+	
+	hbox = {
+		editor_textbox = {
+			text = "#BOLD;COLOR:{1.0,1.0,0.0} [NonRegisteredDockable.GetID] #!is not a registered dockable"
+			autoresize = yes
+		}
+	}
+}
+
+template dockable_background
+{
+	background = {
+		texture = "gfx/editor_gui/editor_layout_window.dds"
+		spriteType = CorneredStretched
+		spriteborder = { 5 5 }
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		framesize = { 16 16 }
+	}
+}
+
+types "ToolLayout"
+{
+	type dockable_layout = dockable_container {
+		size = { 100% 100% }
+		initial_size = 100
+	}
+	
+	type dockable_container_node = dockable_container {
+		alwaystransparent = no
+	}
+	
+	type dockable_button = editor_button {
+		texture = "gfx/editor_gui/editor_layout_button.png"
+		size = { 32 32 }
+		using = editor_font
+		tooltipwidget = {
+			using = dockable_tooltip
+		}
+	}
+
+	type dockable_togglebutton = checkbutton {
+		using = editor_font
+
+		gfxtype = checkbuttongfx
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+		texture = "gfx/editor_gui/editor_layout_button.png"
+
+		framesize = { 16 16 }
+		spriteType = CorneredStretched
+		spriteborder = { 4 4 }
+
+		tooltipwidget = {
+			using = dockable_tooltip
+		}
+	}
+
+	type dockable_widget = vbox {
+		layoutpolicy_horizontal = preferred
+		layoutpolicy_vertical = preferred
+		
+		alwaystransparent = no
+		filter_mouse = [Dockable.MouseFilter]
+		focuspolicy = click
+		tabfocusroot = yes
+		
+		using = dockable_background
+				
+		editor_toolbar_layout = {
+			margin_left = 7
+			margin_right = 4
+			spacing = 5
+			alwaystransparent = yes
+			
+			blockoverride "left"
+			{
+				layoutpolicy_horizontal = expanding
+
+				editor_textbox = {
+					name = "title"
+					text = "[Dockable.Title]"
+					elide = right
+					fontsize = 12
+					autoresize = yes
+					layoutpolicy_horizontal = preferred
+					alwaystransparent = yes
+				}
+				
+				widget = {
+					alwaystransparent = yes
+					layoutpolicy_horizontal = expanding
+					size = { 0 5 }
+					
+					background = {
+						texture = "gfx/editor_gui/editor_layout_window_title.dds"
+						spriteType = CorneredTiled
+						shaderfile = "gfx/FX/pdxgui_default.shader"
+					}
+				}
+				
+				widget = {
+					alwaystransparent = yes
+					layoutpolicy_horizontal = fixed
+					size = { 0 22 }
+				}
+			}
+			
+			blockoverride "right"
+			{
+				editor_button = {
+					name = "close"
+					layoutpolicy_horizontal = fixed
+					size = { 16 16 }
+					visible = yes
+					texture = "gfx/editor_gui/editor_layout_window_close.dds"
+					onclick = [Dockable.Close]
+					intersectionmask = no
+				}
+			}
+		}
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			
+			vbox = {
+				name = "content_vbox"
+				
+				margin = { 5 5 }
+
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				
+				background = {
+					texture = "gfx/editor_gui/editor_layout_window_content.png"
+					spriteType = CorneredStretched
+					spriteborder = { 5 5 }
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+			}
+		}
+	}
+	
+	type dockable_spacer = widget {
+		alwaystransparent = yes
+		
+		layoutpolicy_vertical = preferred
+		layoutpolicy_horizontal = preferred
+	}
+
+	type dockable_window = window {
+		movable = yes
+		resizable = yes
+		scissor = yes
+		size = { 960 720 }
+		focuspolicy = all
+	}
+
+	type dockable_progressbar =	progressbar {
+		size = { 25 25 }
+
+		gfxtype = progressbargfx
+		shaderfile = "gfx/FX/pdxgui_progressbar.shader"
+
+		progresstexture = "gfx/editor_gui/editor_progressbar_foreground.png"
+		noprogresstexture = "gfx/editor_gui/editor_progressbar_background.png"
+
+		spriteType = CorneredTiled
+
+		spriteborder = { 4 4 }
+	}
+}

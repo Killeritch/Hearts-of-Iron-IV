@@ -1,0 +1,217 @@
+window = {
+	name = "search"
+
+	using = dockable_background
+
+	position = { 35% 0 }
+	size = { 570 570 }
+	modality = all
+
+	vbox = {
+		scissor = yes
+		size = { 100% 100% }
+		margin = { 4 4 }
+		spacing = 4
+
+		hbox = {
+			layoutpolicy_vertical = preferred
+			layoutpolicy_horizontal = expanding
+
+			margin = { 4 0 }
+
+			editor_editbox = {
+				name = "search"
+				using = property_editbox
+				text = ""
+				ontextchanged = "[ToolsSearch.Search]"
+				alwaystransparent = no
+
+				size = { 0 30 }
+				fontsize = 14
+
+				layoutpolicy_vertical = preferred
+				layoutpolicy_horizontal = expanding
+			}
+		}
+
+		scrollarea = {
+			name = "scrollarea"
+
+			scrollbarpolicy_vertical = always_on
+			scrollbarpolicy_horizontal = always_off
+
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = preferred
+			
+			autoresizeviewport = yes
+			
+			viewportwidget = {
+				widget = {
+					scissor = yes
+				}
+			}
+			
+			scrollwidget = {
+				fixedgridbox = {
+					name = "results"
+
+					datamodel = "[ToolsSearch.Results]"
+					setitemsizefromcell = yes
+					addcolumn = 100%
+					addrow = 46
+					
+					item = {
+						dockable_button = {
+							onclick = [ToolsSearchResult.Callback]
+							layoutpolicy_vertical = expanding
+							layoutpolicy_horizontal = expanding
+
+							vbox = {
+								margin = { 6 6 }
+								spacing = 2
+
+								editor_textbox = {
+									align = left|top
+									text = "#COLOR:{1,1,1} [ToolsSearchResult.Text] #!"
+									fontsize = 12
+									autoresize = yes
+
+									layoutpolicy_vertical = preferred
+									layoutpolicy_horizontal = expanding
+								}
+
+								editor_textbox = {
+									align = left|top
+									text = "#BOLD;COLOR:{0.7,0.7,0.7} [ToolsSearchResult.Description] #!"
+									fontsize = 10
+									autoresize = yes
+
+									layoutpolicy_vertical = expanding
+									layoutpolicy_horizontal = expanding
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			scrollbar_vertical = {
+				using = editor_vertical_scrollbar
+			}
+			
+			scrollbar_horizontal = {
+				using = editor_horizontal_scrollbar
+			}
+		}
+	}
+}
+
+window = {
+	name = "search_compact"
+
+	using = dockable_background
+
+	position = { 35% 0 }
+	size = { 285 300 }
+	modality = all
+
+	vbox = {
+		scissor = yes
+		size = { 100% 100% }
+		margin = { 4 4 }
+		spacing = 4
+
+		hbox = {
+			layoutpolicy_vertical = preferred
+			layoutpolicy_horizontal = expanding
+
+			margin = { 4 0 }
+
+			editor_editbox = {
+				name = "search"
+				using = property_editbox
+				text = ""
+				ontextchanged = "[ToolsSearch.Search]"
+				alwaystransparent = no
+
+				size = { 0 24 }
+				fontsize = 12
+
+				layoutpolicy_vertical = preferred
+				layoutpolicy_horizontal = expanding
+			}
+		}
+
+		scrollarea = {
+			name = "scrollarea"
+
+			scrollbarpolicy_vertical = always_on
+			scrollbarpolicy_horizontal = always_off
+
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = preferred
+			
+			autoresizeviewport = yes
+			
+			viewportwidget = {
+				widget = {
+					scissor = yes
+				}
+			}
+			
+			scrollwidget = {
+				fixedgridbox = {
+					name = "results"
+
+					datamodel = "[ToolsSearch.Results]"
+					setitemsizefromcell = yes
+					addcolumn = 100%
+					addrow = 26
+					
+					item = {
+						dockable_button = {
+							onclick = [ToolsSearchResult.Callback]
+							layoutpolicy_vertical = expanding
+							layoutpolicy_horizontal = expanding
+
+							tooltip = "[ToolsSearchResult.Text]"
+
+							hbox = {
+								margin = { 6 6 }
+								spacing = 2
+
+								editor_textbox = {
+									align = left|top
+									text = "#COLOR:{1,1,1} [ToolsSearchResult.Text] #!"
+									fontsize = 10
+									elide = middle
+
+									layoutpolicy_vertical = preferred
+									layoutpolicy_horizontal = expanding
+								}
+
+								editor_textbox = {
+									align = right|top
+									text = "#BOLD;COLOR:{0.7,0.7,0.7} [ToolsSearchResult.Description] #!"
+									fontsize = 10
+									autoresize = yes
+
+									layoutpolicy_vertical = preferred
+									layoutpolicy_horizontal = shrinking
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			scrollbar_vertical = {
+				using = editor_vertical_scrollbar
+			}
+			
+			scrollbar_horizontal = {
+				using = editor_horizontal_scrollbar
+			}
+		}
+	}
+}

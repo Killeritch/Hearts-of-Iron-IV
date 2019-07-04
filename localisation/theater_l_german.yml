@@ -75,3 +75,4 @@
  UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GRechtsklicken§! Sie, um nur die Armeegruppenfront zu löschen, ohne Armeefronten zu löschen."
  ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Wählen Sie eine volle Armeegruppe und weisen Sie mit §GStrg + Klick§! alle Einheiten ohne Armeebefehle diesem Befehl zu."
  ORDER_PROV_TOOLTIP_DEFENSIVE_LINE_ARMY_GROUP:0 " - §GKlick§!, um die §YVerteidigungslinie§! über die gesamte Grenze zu ziehen.\n - §GUmschalt + Klick§!, um die §YVerteidigungslinie§! ohne Unterarmee-Linien über die gesamte Grenze zu ziehen.\n - §GRechtsklick§! undziehen, um die §YVerteidigungslinie§! entlang dieser Grenze zu ziehen.\n - §GSUmschalt + Rechtsklick§! und ziehen, um die §YVerteidigungslinie§! ohne Unterarmee-Linien entlang dieser Grenze zu ziehen. "
+ EDIT_MODE_CLICK_TO_REORDER:0 "\n§GKlicken§!, um die Reihenfolge der §HArmeen§! entlang der Front zu tauschen"

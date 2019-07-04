@@ -915,7 +915,13 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					FROM.FROM = { is_core_of = HOL }
+					FROM.FROM = {
+						OR = {
+							state = 7
+							state = 35
+							state = 36
+						}
+					}
 				}
 				FROM = {
 					set_country_flag = HOL_lost_starting_state

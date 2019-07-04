@@ -194,7 +194,7 @@ tests = {
     spain_not_in_axis_early = {
         success = {
             has_global_flag = scw_over
-
+            date > "1945.1.1"
             any_country = {
                 original_tag = SPR
                 has_government = fascism
@@ -207,7 +207,7 @@ tests = {
 
         fail = {
             has_global_flag = scw_over
-
+            date < "1945.1.1"
             any_country = {
                 original_tag = SPR
                 has_government = fascism

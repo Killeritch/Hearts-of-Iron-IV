@@ -1,0 +1,75 @@
+template default_scrollbar_button
+{
+	clicksound = ""
+}
+
+types Default 
+{
+	type flowcontainer = flowcontainer {
+	}
+
+	type button = button {
+		gfxtype = buttongfx
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+		texture = "gfx/editor_gui/default_button.dds"
+	}
+	
+	type editbox = editbox {
+		gfxtype = editboxgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		font = "Regular"
+		fontsize = 15
+	}
+
+	type textbox = textbox {
+		gfxtype = textboxgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		font = "Regular"
+		fontsize = 15
+	}
+	
+	type icon = icon {
+		gfxtype = icongfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+	
+	type window = window {
+		gfxtype = windowgfx
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		texture = "gfx/editor_gui/default_window.dds"
+		spriteType = corneredstretched
+		spriteborder = { 19 19 }
+	}
+	
+	type progressbar = progressbar {
+		gfxtype = progressbargfx
+		shaderfile = "gfx/FX/pdxgui_progressbar.shader"
+	}
+	
+	type checkbutton = checkbutton {
+		gfxtype = checkbuttongfx
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+	}
+	
+	type scrollbar = scrollbar {
+		min = 0
+		max = 100
+		step = 1
+		page = 10
+		value = 0
+		alwaystransparent = no
+	
+		slider = {
+			button = {
+				using = default_scrollbar_button
+				texture = "gfx/editor_gui/editor_scrollbar.dds"
+			}
+		}
+	}
+	
+	type scrollarea = scrollarea {
+		scissor = yes
+		scrollbaralign_vertical = right
+		scrollbaralign_horizontal = bottom
+	}
+}

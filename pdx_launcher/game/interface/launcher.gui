@@ -696,20 +696,6 @@ guiTypes = {
 			}
 			
 			buttonType = {
-				name ="clear_user_directory_state"
-				quadTextureSprite ="GFX_tristate_checkbox"	
-				position = { x= 20 y = 200 }
-			}
-			
-			instantTextBoxType = {
-				name = "clear_user_directory_text"
-				position = { x = 52 y = 209 }
-				alwaystransparent = yes
-				text = "PDXL_CLEAR_USER_DIRECTORY"
-				font = "hoi_20bs"
-			}
-			
-			buttonType = {
 				name = "skip"
 				position = { x=25 y = -46 }
 				quadTextureSprite = "GFX_button_148x34"
@@ -719,10 +705,10 @@ guiTypes = {
 			}
 			
 			buttonType = {
-				name = "report"
+				name = "clear"
 				position = { x=-171 y = -46 }
 				quadTextureSprite = "GFX_button_148x34"
-				buttonText = "PDXL_UNGRACEFUL_EXIT_REPORT"
+				buttonText = "PDXL_UNGRACEFUL_EXIT_CLEAR"
 				buttonfont = "hoi_18mbs"
 				orientation = lower_right
 			}

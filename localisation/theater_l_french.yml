@@ -53,6 +53,7 @@
  ORDER_CONNECT_CANT_CONNECT_HERE:0 "§RDéplacez le pointeur de la souris sur l'ordre dont la connexion est autorisée.§!"
  EDIT_MODE_CLICK_TO_EDIT_INVASION:0 "\n§GCliquer§! pour modifier cette §Yinvasion navale§!"
  EDIT_MODE_CLICK_TO_EDIT_PARADROP:0 "\n§GCliquer§! pour modifier cet §Yordre de parachutage§!"
+ EDIT_MODE_CLICK_TO_REORDER:0 "\n§GCliquer§! pour modifier les ordres des §Harmées§! sur la ligne de front."
  UNITS_ASSIGNED_TO_ORDER_HEADER:0 "§HDivisions affectées à cet ordre :§!\n"
  NO_UNITS_ASSIGNED_TO_ORDER:0 "§RAucune unité n'est affectée à cet ordre.§!"
  ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Sélectionner un groupe d'armées au complet puis §GCtrl + clic§! pour assigner toutes les unités n'ayant pas reçu d'ordres à celui-ci."

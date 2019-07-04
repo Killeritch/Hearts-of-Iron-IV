@@ -58,7 +58,7 @@
  PDXL_UNGRACEFUL_EXIT:0 "Sair ungraceful"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "Parece que a aplicação fechou não graciosa, enviando-nos um relatório acidente vai nos ajudar a rastrear o problema.\n\n§YEnviar relatório de falha no fundo?§!"
  PDXL_UNGRACEFUL_EXIT_SKIP:0 "Pular"
- PDXL_UNGRACEFUL_EXIT_REPORT:0 "Relatório"
+ PDXL_UNGRACEFUL_EXIT_CLEAR:0 "Limpar"
  PDXL_CLEAR_USER_DIRECTORY:0 "Limpar o diretório do usuário"
  PDXL_CLEAR_USER_DIRECTORY_DESC:0 "Se você estiver enfrentando falhas há uma chance de que ele é causado por alguns arquivos específicos do usuário que estão corrompidos. Tente limpar essas opções e tente novamente antes de entrar em contato com o suporte."
  PDXL_CLEAR_USER_DIRECTORY_NOT_FILES:0 "§GNão existem ficheiros no directório de utilizador conhecidos que possam causar quaisquer problemas de estabilidade.§!"

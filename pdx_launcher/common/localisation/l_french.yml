@@ -45,7 +45,7 @@
  PDXL_UNGRACEFUL_EXIT:0 "Plantage"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "Il semble que le jeu a planté. Nous envoyer un rapport sur ce plantage nous aiderait à identifier le problème.\n\n§YEnvoyer un rapport de plantage en arrière-plan ?§!"
  PDXL_UNGRACEFUL_EXIT_SKIP:0 "Non"
- PDXL_UNGRACEFUL_EXIT_REPORT:0 "Envoyer"
+ PDXL_UNGRACEFUL_EXIT_CLEAR:0 "Vider"
  PDXL_CLEAR_USER_DIRECTORY:0 "Vider le répertoire utilisateur"
  PDXL_CLEAR_USER_DIRECTORY_DESC:0 "Les plantages peuvent s'expliquer par la corruption de certains fichiers du répertoire utilisateur. Veuillez le nettoyer et relancer l'opération avant de contacter l'assistance."
  PDXL_CLEAR_USER_DIRECTORY_NOT_FILES:0 "§GAucun fichier du répertoire utilisateur n'est connu pour causer de problèmes de stabilité.§!"

@@ -146,6 +146,7 @@
  EFFECT_SET_POLITICS_ELECTIONS:0 "Des élections vont être organisées."
  EFFECT_SET_POLITICS_NO_ELECTIONS:0 "Aucune élection ne sera plus organisée."
  EFFECT_SET_POLITICS_ELECTION_FREQUENCY:0 "Des élections vont être organisées tous les $MONTHS|H$ ans."
+ EFFECT_SET_POPULARITIES:0 "La popularité des partis va être de :"
  EFFECT_ADD_EXTRA_STATE_SHARED_BUILDING_SLOTS:0 "Ajoute $COUNT|G$ emplacements de construction."
  EFFECT_REMOVE_EXTRA_STATE_SHARED_BUILDING_SLOTS:0 "Supprime $COUNT|R$ emplacements de construction."
  EFFECT_ADD_TO_WAR:0 "Permet d'intervenir aux côtés de $COUNTRY1|Y$ contre $COUNTRY2|Y$.\n"

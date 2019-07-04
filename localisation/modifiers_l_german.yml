@@ -953,5 +953,5 @@
  MODIFIER_BREAKTHROUGH:0 "Durchbruch"
  MODIFIER_TECH_AIR_DAMAGE_FACTOR:0 "Schadensreduzierung Flugabwehrbombardierung"
  MODIFIER_TECH_AIR_DAMAGE_FACTOR_DESC:0 "Ein technologischer Vorteil erhöht die Effizienz unserer statischen Flugabwehr."
- carrier_experience_bonus_max:0 "Erfahrung"
- carrier_experience_malus_min:0 "Erfahrung"
+ carrier_experience_bonus_max:1 "Aus Flugzeugträgererfahrung"
+ carrier_experience_malus_min:1 "Aus Flugzeugträgererfahrung"

@@ -655,41 +655,6 @@ SOV_naval_role_ratios_historical = {
 }
 
 
-SOV_beware_japanese_ambush = {
-	enable = {
-		tag = SOV
-		date > 1940.1.1
-		date < 1943.1.1
-		GER = { is_ai = yes }
-		OR = {
-			GER = {
-				OR = {
-					focus_progress = {
-						focus = GER_ussr_war_goal
-						progress > 0.2
-					}
-					is_justifying_wargoal_against = SOV
-				}
-			}
-			has_war_with = GER
-		}
-
-		surrender_progress < 0.07
-	}
-	abort = {
-		OR = {
-			surrender_progress > 0.12
-			date > 1943.1.1
-		}
-	}
-	
-	ai_strategy = {
-		type = prepare_for_war
-		id = "JAP"
-		value = 100
-	}
-}
-
 SOV_dont_upgrade_to_weapons_2_too_early = {
 	enable = {
 		original_tag = SOV

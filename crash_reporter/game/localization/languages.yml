@@ -1,0 +1,28 @@
+﻿l_english:
+ l_english: "English"
+ l_german: "German"
+ l_french: "French"
+ l_spanish: "Spanish"
+ l_russian: "Russian"
+ l_polish: "Polish"
+l_german:
+ l_english: "Englisch"
+ l_german: "Deutsch"
+ l_french: "Französisch"
+ l_spanish: "Spanisch"
+ l_russian: "Russisch"
+ l_polish: "Polnisch"
+l_french:
+ l_english: "Anglais"
+ l_german: "Allemand"
+ l_french: "Français"
+ l_spanish: "Espagnol"
+ l_russian: "Russe"
+ l_polish: "Polonais"
+l_spanish:
+ l_english: "Inglés"
+ l_german: "Alemán"
+ l_french: "Francés"
+ l_spanish: "Español"
+ l_russian: "Ruso"
+ l_polish: "Polaco"

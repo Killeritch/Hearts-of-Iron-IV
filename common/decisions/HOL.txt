@@ -22,14 +22,32 @@ HOL_obtain_foreign_colonial_investments = {
 				ENG = { has_war = no }
 				JAP = { has_war = no }
 			}
-			any_country = {
-				OR = {
-					original_tag = HOL
-					is_subject_of = HOL
+			335 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
 				}
-				has_full_control_of_state = 335
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
+			}
+			672 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			334 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
 			}
 			has_full_control_of_state = 695
 			has_full_control_of_state = 309
@@ -80,14 +98,32 @@ HOL_obtain_foreign_colonial_investments = {
 				ENG = { has_war = no }
 				JAP = { has_war = no }
 			}
-			any_country = {
-				OR = {
-					original_tag = HOL
-					is_subject_of = HOL
+			335 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
 				}
-				has_full_control_of_state = 335
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
+			}
+			672 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			334 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
 			}
 			has_full_control_of_state = 695
 			has_full_control_of_state = 309
@@ -204,14 +240,32 @@ HOL_obtain_foreign_colonial_investments = {
 			}
 			NOT = { has_war_with = USA }
 			NOT = { has_war_with = ENG }
-			any_country = {
-				OR = {
-					original_tag = HOL
-					is_subject_of = HOL
+			335 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
 				}
-				has_full_control_of_state = 335
-				has_full_control_of_state = 672
-				has_full_control_of_state = 334
+			}
+			672 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			334 = {
+				is_fully_controlled_by = controller
+				controller = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
 			}
 		}
 
@@ -222,7 +276,6 @@ HOL_obtain_foreign_colonial_investments = {
 		days_remove = 120
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_obtain_foreign_colonial_investments
 		}
 
@@ -693,29 +746,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -725,32 +762,11 @@ HOL_secret_staff_talks = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
-			FROM = {
-				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
-				}
+			OR = {
+				is_in_faction = no 
+				is_in_faction_with = FROM
 			}
 		}
 
@@ -802,29 +818,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -834,32 +834,11 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
-			FROM = {
-				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
-				}
+			OR = {
+				is_in_faction = no 
+				is_in_faction_with = FROM
 			}
 		}
 
@@ -886,29 +865,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -976,7 +939,6 @@ HOL_secret_staff_talks = {
 		fire_only_once = yes
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
 		}
@@ -1002,29 +964,13 @@ HOL_secret_staff_talks = {
 
 		}
 
+		targets = { GER ENG FRA }
+
 		target_trigger = {
-			FROM = {
+			ROOT = { 
 				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
+					is_in_faction = no 
+					is_in_faction_with = FROM
 				}
 			}
 		}
@@ -1034,32 +980,11 @@ HOL_secret_staff_talks = {
 		fire_only_once = no
 
 		visible = {
-			tag = HOL
 			has_completed_focus = HOL_secret_staff_talks
 			has_war = no
-			FROM = {
-				OR = {
-					AND = {
-						OR = {
-							tag = GER
-							tag = ENG
-							tag = FRA
-						}
-						HOL = { is_in_faction = no }
-					}
-					AND = {
-						tag = GER
-						HOL = { is_in_faction_with = GER }
-					}
-					AND = {
-						tag = ENG
-						HOL = { is_in_faction_with = ENG }
-					}
-					AND = {
-						tag = FRA
-						HOL = { is_in_faction_with = FRA }
-					}
-				}
+			OR = {
+				is_in_faction = no 
+				is_in_faction_with = FROM
 			}
 		}
 
@@ -1095,6 +1020,8 @@ HOL_gateway_to_europe_eng_category = {
 			has_government = democratic
 			GER = { has_government = fascism }
 		}
+
+		targets = { HOL }
 
 		target_trigger = {
 			FROM = {
@@ -1172,10 +1099,6 @@ HOL_gateway_to_europe_eng_category = {
 				factor = 0
 				has_completed_focus = ENG_a_change_in_course
 			}
-		}
-
-		visible = {
-			tag = ENG
 		}
 
 		complete_effect = {
@@ -1301,6 +1224,8 @@ HOL_gateway_to_europe_ger_category = {
 			ENG = { has_government = democratic }
 		}
 
+		targets = { HOL }
+
 		target_trigger = {
 			FROM = {
 				tag = HOL
@@ -1380,10 +1305,6 @@ HOL_gateway_to_europe_ger_category = {
 				factor = 0
 				has_completed_focus = GER_oppose_hitler
 			}
-		}
-
-		visible = {
-			tag = GER
 		}
 
 		complete_effect = {
@@ -1486,6 +1407,8 @@ HOL_gateway_to_europe_hol_category = {
 			}
 		}
 
+		targets = { ENG }
+
 		target_trigger = {
 			FROM = {
 				tag = ENG
@@ -1533,10 +1456,6 @@ HOL_gateway_to_europe_hol_category = {
 				has_country_flag = HOL_gateway_to_europe_ai_timer_flag
 				NOT = { date > 1940.01.01 }
 			}
-		}
-
-		visible = {
-			original_tag = HOL
 		}
 
 		complete_effect = {
@@ -1624,6 +1543,8 @@ HOL_gateway_to_europe_hol_category = {
 			}
 		}
 
+		targets = { GER }
+
 		target_trigger = {
 			FROM = {
 				tag = GER
@@ -1671,10 +1592,6 @@ HOL_gateway_to_europe_hol_category = {
 				has_country_flag = HOL_gateway_to_europe_ai_timer_flag
 				NOT = { date > 1940.01.01 }
 			}
-		}
-
-		visible = {
-			original_tag = HOL
 		}
 
 		complete_effect = {
@@ -2059,7 +1976,7 @@ HOL_bernhard = {
 		icon = generic_army_support
 
 		allowed = {
-			original_tag = HOL
+			always = no 
 		}
 
 		available = {
@@ -2070,14 +1987,12 @@ HOL_bernhard = {
 		fire_only_once = yes
 
 		target_trigger = {
-			FROM = {
-				has_country_flag = HOL_bernhard_row_target
-			}
+			
 		}
 
 		visible = {
-			original_tag = HOL
 			FROM = {
+				exists = yes
 				has_country_flag = HOL_bernhard_row_target
 			}
 		}

@@ -5,7 +5,7 @@ set_research_slots = 3
 # Starting tech
 # clone of Yugoslavia
 set_technology = {
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
@@ -18,19 +18,5 @@ set_technology = {
 	early_submarine = 1
 }
 
-set_politics = {
-
-	parties = {
-		fascism = { 
-			popularity = 33
-		}
-		neutrality = { 
-			popularity = 33
-		}		
-		communism = {
-			popularity = 34
-		}
-	}
+set_popularities = {	fascism = 33	neutrality = 33	communism = 34
 }
-
-

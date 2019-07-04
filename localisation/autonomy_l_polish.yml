@@ -49,7 +49,7 @@
  MONTHLY_LL_FREEDOM_TO_PUPPET:0 "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER:0 "$VALUE|+2$"
  MONTHLY_LL_FREEDOM_VALUE_DESC:0 "Miesięczny wpływ na autonomię w przypadku pełnej dostawy"
- MONTHLY_LL_FREEDOM_DESC:0 "Co miesiąc, po pełnej dostawie $COUNTRY|H$ otrzymuje: £autonomy_texticon $VALUE|H+=2$ "
+ MONTHLY_LL_FREEDOM_DESC:0 "Co miesiąc, po pełnej dostawie $COUNTRY|H$ otrzymuje: £autonomy_texticon $VALUE|+=2$ "
  MASTER_SURRENDER_FREEDOM_EFFECT:0 "Władca skapitulował"
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RWniosek o lend-lease z państwem marionetkowym może dać mu większą autonomię§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RWniosek o lend-lease z władcą może spowodować utratę autonomii§!"

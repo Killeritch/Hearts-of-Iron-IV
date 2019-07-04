@@ -38,13 +38,13 @@ ENG_historical_plan = {
 		uk_extra_tech_slot #February 30 1937
 		uk_empire_focus  #May 10 1937	
 		uk_service_focus  #July 20 1937
-		uk_colonial_focus #September 30 1937
+		uk_colonial_focus #September 30 1937	
 		uk_asia_focus #December 10 1937
-		uk_burma_focus #February 20 1938
+		uk_burma_focus #February 20 1938	
 		air_defense_focus #April 30 1938
 		radar_focus #July 10 1938
 		air_rearmament_focus#September 20 1938
-		ENG_steady_as_she_goes#November 30 1938
+		ENG_steady_as_she_goes #November 30 1938
 		ENG_prepare_for_the_inevitable #February 10 1939
 		ENG_home_defence #April 20 1939
 		ENG_issue_gasmasks#June 30 1939

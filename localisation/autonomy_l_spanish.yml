@@ -49,7 +49,7 @@
  MONTHLY_LL_FREEDOM_TO_PUPPET:0 "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER:0 "$VALUE|+2$"
  MONTHLY_LL_FREEDOM_VALUE_DESC:0 "Impacto mensual sobre autonomía en caso de envío completo"
- MONTHLY_LL_FREEDOM_DESC:0 "$COUNTRY|H$ consigue £autonomy_texticon $VALUE|H+=2$ al mes tras envío completo "
+ MONTHLY_LL_FREEDOM_DESC:0 "$COUNTRY|H$ consigue £autonomy_texticon $VALUE|+=2$ al mes tras envío completo "
  MASTER_SURRENDER_FREEDOM_EFFECT:0 "El amo ha capitulado"
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RSolicitar un envío de suministros del títere puede aportarles más autonomía§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RSolicitar un envío de suministros del amo podría reducir nuestra autonomía§!"

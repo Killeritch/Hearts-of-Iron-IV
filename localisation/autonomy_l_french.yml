@@ -35,7 +35,7 @@
  MONTHLY_LL_FREEDOM_TO_PUPPET:0 "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER:0 "$VALUE|+2$"
  MONTHLY_LL_FREEDOM_VALUE_DESC:0 "Impact mensuel sur l'autonomie en cas de livraison bien effectuée"
- MONTHLY_LL_FREEDOM_DESC:0 "Chaque mois après la livraison totale, $COUNTRY|H$ reçoit $VALUE|H+=2$£autonomy_texticon  "
+ MONTHLY_LL_FREEDOM_DESC:0 "Chaque mois après la livraison totale, $COUNTRY|H$ reçoit $VALUE|+=2$£autonomy_texticon  "
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RDemander un prêt-bail à une dépendance peut lui permettre de gagner en autonomie.§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RDemander un prêt-bail au pays maître peut nous faire perdre en autonomie.§!"
  EXPORT_FREEDOM_EFFECT:0 "Exportations de la dépendance vers le pays maître"

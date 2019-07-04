@@ -1,0 +1,418 @@
+editor_window = {
+	name = "pdx_profiler_window"
+	widgetid = "pdx_profiler_window"
+	filter_mouse = left
+
+	size = { 300 100% }
+	position = { 0 0 }
+
+	blockoverride "title"
+	{
+		text = "#BOLD;COLOR:{1.0,1.0,1.0} Profiler #!"
+	}
+
+	editor_button = {
+		position = { -5 5 }
+		size = { 20 20 }
+		parentanchor = top|right
+		fontcolor = { 1 1 1 1 }
+		text = "x"
+		align = center|nobaseline
+		onclick = "[PdxGuiWidget.AccessParent.Hide]"
+	}
+
+	editor_button = {
+		size = { 20 20 }
+		position = { -30 5 }
+		parentanchor = top|right
+		text = "i"
+		onclick = "[PdxProfilerGuiToggleStats]"
+	}
+
+	blockoverride "before_content"
+	{
+		editor_toolbar = {
+			margin_left = 10
+			margin_right = 5
+			visible = yes
+			
+			blockoverride "left"
+			{
+				spacing = 5
+				editor_button = {
+					name = "prev_frame_button"
+					enabled = no
+
+					icon = {
+						texture = "gfx/editor_gui/prev.dds"
+						parentanchor = vcenter|hcenter
+					}
+
+					tooltipwidget = {
+						using = editor_tooltip
+					}
+					using = editor_tooltip_properties
+					tooltip = "previous frame"
+
+					size = { 18 18 }
+					onclick = "[PdxProfilerSelectPreviousFrame]"
+				}
+
+
+				editor_textbox = {
+					text = "Frame:"
+					align = left|nobaseline
+				}
+
+				editor_textbox = {
+					text = "[PdxProfilerGetCurrentFrame]"
+					size = { 60 20 }
+					align = right|nobaseline
+				}
+
+				editor_button = {
+					name = "next_frame_button"
+					enabled = no
+
+					tooltipwidget = {
+						using = editor_tooltip
+					}
+					using = editor_tooltip_properties
+					tooltip = "next frame"
+
+					icon = {
+						texture = "gfx/editor_gui/next.dds"
+						parentanchor = vcenter|hcenter
+					}
+					size = { 18 18 }
+					onclick = "[PdxProfilerSelectNextFrame]"
+				}
+
+				editor_button = {
+					icon = {
+						name = "pause_button_icon"
+						texture = "gfx/editor_gui/pause.dds"
+						parentanchor = vcenter|hcenter
+
+						tooltipwidget = {
+							using = editor_tooltip
+						}
+						using = editor_tooltip_properties
+						tooltip = "pause profiler"
+					}
+
+					icon = {
+						name = "resume_button_icon"
+						texture = "gfx/editor_gui/play.dds"
+						parentanchor = vcenter|hcenter
+						visible = no
+
+						tooltipwidget = {
+							using = editor_tooltip
+						}
+						using = editor_tooltip_properties
+						tooltip = "resume profiler"
+					}
+
+					name = "toggle_pause_button"
+					size = { 20 20 }
+					onclick = "[PdxProfilerPause]"
+					shortcut = "profiler_toggle_pause"
+				}
+
+
+				editor_button = {
+					size = { 18 18 }
+					visible = "[Not(PdxProfilerGuiGraphLinesEnabled)]"
+					onclick = "[PdxProfilerGuiToggleGraphLines]"
+
+					icon = {
+						texture = "gfx/editor_gui/graph_lines.dds"
+						parentanchor = center
+						widgetanchor = center
+					}
+				}
+
+				editor_button = {
+					size = { 18 18 }
+					visible = "[PdxProfilerGuiGraphLinesEnabled)]"
+					onclick = "[PdxProfilerGuiToggleGraphLines]"
+
+					icon = {
+						texture = "gfx/editor_gui/graph.dds"
+						parentanchor = center
+						widgetanchor = center
+					}
+				}
+
+				editor_textbox = {
+					text = "Frametime:"
+					autoresize = yes
+					align = nobaseline
+				}
+				
+				editor_textbox = {
+					text = "[PdxProfilerGetFrameTimeMs]"
+					autoresize = yes
+					align = nobaseline
+				}
+
+				editor_textbox = {
+					text = " ms, "
+					autoresize = yes
+					align = nobaseline
+				}
+
+				editor_textbox = {
+					text = "[PdxProfilerGetNsPerTick]"
+					autoresize = yes
+					align = nobaseline
+				}
+
+				editor_textbox = {
+					text = " ns/tick"
+					autoresize = yes
+					align = nobaseline
+				}
+			}
+		}
+	}
+
+	blockoverride "content"
+	{
+		icon = {
+			name = "frametime_graph"
+			effectname = "PdxGuiProfileGraph"
+			size = { 512 128 }
+			layoutpolicy_horizontal = expanding
+			alwaystransparent = no
+
+			icon = {
+				visible = "[PdxProfilerGuiGraphLinesEnabled]"
+
+				name = "profiler_60hz_line"
+				texture = "gfx/interface/white.dds"
+				size = { 100% 1 }
+				tintcolor = { 0.41 0.62 0.42 1.0 }
+			}
+
+			icon = {
+				visible = "[PdxProfilerGuiGraphLinesEnabled]"
+
+				name = "profiler_30hz_line"
+				texture = "gfx/interface/white.dds"
+				size = { 100% 1 }
+				tintcolor = { 0.98 0.74 0.18 1.0 }
+			}
+		}
+
+		editor_toolbar = {
+			blockoverride "left"
+			{
+				spacing = 10
+				dropDown = {
+					alwaystransparent = no
+					size = { 120 20 }
+					datamodel = "[PdxGetProfilers]"
+					onselectionchanged = "[PdxProfilerSelectThread]"
+
+					active_item = {
+						widget = {
+							size = { 100% 20 }
+
+							button = {
+								size = { 100% 18 }
+								texture = "gfx/editor_gui/editor_dropdown.dds"
+								spriteType = CorneredStretched
+								gfxtype = framedbuttongfx
+								effectname = "NoHighlight"
+								spriteborder = { 4 4 }
+								spriteborder_right = 24
+								button_trigger = none
+								framesize = { 32 16 }
+								upframe = 1
+								downframe = 2
+								overframe = 3
+								disableframe = 4
+							}
+
+							editor_textbox = {
+								text = "[PdxProfiler.GetName.GetString]"
+								position = { 5 0 }
+								parentanchor = left|vcenter
+								widgetanchor = left|vcenter
+								fontsize = 12
+								align = nobaseline
+							}
+						}
+					}
+
+					item = {
+						widget = {
+							size = { 100% 20 }
+
+							button = {
+								size = { 100% 100% }
+								texture = "gfx/editor_gui/editor_dropdown_item.dds"
+								spriteType = CorneredTiled
+								spriteborder = { 1 1 }
+								gfxtype = framedbuttongfx
+								framesize = { 8 8 }
+								upframe = 1
+								downframe = 2
+								overframe = 2
+								disableframe = 1
+								button_trigger = none
+							}
+
+							editor_textbox = {
+								text = "[PdxProfiler.GetName.GetString]"
+								fontsize = 12
+								position = { 5 0 }
+								parentanchor = left|vcenter
+								widgetanchor = left|vcenter
+							}
+						}
+					}
+
+					list = {
+						scrollarea = {
+							position = { 2 20 }
+							maximumsize =  { 115 -1 }
+							autoresizescrollarea = yes
+							alwaystransparent = yes
+
+							background = {
+								margin = { 2 2 }
+								margin_bottom = 6
+								margin_right = 6
+								texture = "gfx/editor_gui/editor_dropdown_list.dds"
+								spriteType = CorneredStretched
+								spriteborder = { 6 6 }
+								spriteborder_right = 8
+								spriteborder_bottom = 8
+								shaderfile = "gfx/FX/pdxgui_default.shader"
+							}
+
+							scrollwidget = {
+								fixedgridbox = {
+									alwaystransparent = no
+									addcolumn = 115
+									addrow = 18
+								}
+							}
+
+							scrollbar_vertical = {
+								using = editor_vertical_scrollbar
+							}
+
+							scrollbar_horizontal = {
+								using = editor_horizontal_scrollbar
+							}
+						}
+					}
+				}
+
+				editor_textinput = { 
+					onreturnpressed = "[PdxProfilerFilterTimers]"
+					layoutpolicy_horizontal = expanding
+				}
+
+				editor_button = {
+					size = { 20 20 }
+					fontcolor = { 1 1 1 1 }
+					text = "<"
+					onclick = "[PdxProfilerFilterPrev]"
+				}
+
+				editor_button = {
+					size = { 20 20 }
+					fontcolor = { 1 1 1 1 }
+					text = ">"
+					onclick = "[PdxProfilerFilterNext]"
+				}
+			}
+		}
+
+		editor_scrollarea = {
+			name = scrollarea
+
+			layoutpolicy_vertical = expanding
+			blockoverride "content"
+			{
+				editor_tree = {
+					reuse_widgets = yes
+					name = "profiler_tree"
+
+					blockoverride "item_widget"
+					{
+						editor_textbox = {
+							font = "tools_font"
+							fontsize = 12
+							name = "item_label"
+							autoresize = yes
+							align = left|nobaseline
+							alwaystransparent = yes
+						}
+					}
+
+					blockoverride "active_item_widget"
+					{
+						editor_textbox = {
+							font = "tools_font"
+							fontsize = 12
+							name = "item_label"
+							autoresize = yes
+							align = left|nobaseline
+							alwaystransparent = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+editor_window = {
+	name = "pdx_profiler_memory_stats"
+
+	attachto = { 
+		widgetid = "pdx_profiler_window"
+		parentanchor = top|right
+	}
+
+	size = { 150 100 }
+	visible = no
+
+	blockoverride "title"
+	{
+		text = "#BOLD;COLOR:{1.0,1.0,1.0} Memory Usage #!"
+	}
+
+	blockoverride "content"
+	{
+		editor_textbox = {
+			layoutpolicy_horizontal = preferred
+			name = "num_threads"
+			autoresize = yes
+		}
+
+		editor_textbox = {
+			layoutpolicy_horizontal = preferred
+			name = "num_events"
+			autoresize = yes
+		}
+
+		editor_textbox = {
+			layoutpolicy_horizontal = preferred
+			name = "events_size"
+			autoresize = yes
+		}
+
+		editor_textbox = {
+			layoutpolicy_horizontal = preferred
+			name = "timers_size"
+			autoresize = yes
+		}
+	}
+}

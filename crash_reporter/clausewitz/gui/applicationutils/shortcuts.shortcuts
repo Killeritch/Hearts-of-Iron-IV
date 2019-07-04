@@ -1,0 +1,7 @@
+shortcutbindings = {
+	tools_omnisearch = "ctrl+shift+p"
+	
+	curve_editor_undo = "ctrl+z"
+	curve_editor_redo = "ctrl+y"
+	curve_editor_remove = "del"
+}

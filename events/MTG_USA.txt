@@ -1432,23 +1432,9 @@ country_event = {
 					infantry = { x = 1 y = 2 }
 				}
 			}
-			hidden_effect = {
-				set_political_party = {
-					ideology = fascism
-					popularity = 0
-				}
-				set_political_party = {
-					ideology = democratic
-					popularity = 0
-				}
-				add_popularity = {
-					ideology = neutrality
-					popularity = neutrality_support
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = fascism_support
-				}
+			set_popularities = {
+				neutrality = neutrality_support
+				fascism = fascism_support
 			}
 			country_event = { id = mtg_usa_civil_war_democrats.40 days = 20 }
 			set_global_flag = USA_civil_war_fired_democrats

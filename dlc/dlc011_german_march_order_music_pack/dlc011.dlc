@@ -3,6 +3,6 @@ archive = "dlc/dlc011_german_march_order_music_pack/dlc011.zip"
 steam_id = "460557"
 affects_checksum = no
 affects_compatability = no
-checksum = "ff31a57dfba5f5acefe4d2b8a17e6a6d"
+checksum = "aaae135355ab6b7dc424d60faf88b866"
 third_party_content = no
 category= "music"

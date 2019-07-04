@@ -3,6 +3,6 @@ archive = "dlc/dlc020_death_or_dishonor/dlc020.zip"
 steam_id = "584140"
 affects_checksum = yes
 affects_compatability = no
-checksum = "1de129b79975c63de63a5c12abb019df"
+checksum = "b5ede8280a4f47f1af2359a39f658ecb"
 third_party_content = no
 category = "expansion"

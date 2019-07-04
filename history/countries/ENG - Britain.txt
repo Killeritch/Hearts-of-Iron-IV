@@ -22,7 +22,7 @@ set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	motorised_infantry = 1
@@ -322,27 +322,14 @@ create_country_leader = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 97
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 1
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
-
+set_popularities = {	democratic = 97	fascism = 2
+	communism = 1
+}
 
 
 create_faction = Allies

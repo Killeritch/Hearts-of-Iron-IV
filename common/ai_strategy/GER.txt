@@ -1507,17 +1507,18 @@ GER_share_borders_with_ITA_against_SOV = {
 	enable = {
 		tag = GER
 		is_in_faction_with = ITA
-		OR = {
-			has_war_with = SOV
-			focus_progress = {
-				focus = GER_ussr_war_goal
-				progress > 0.01
-			}
-		}
+		going_war_with_SOV = yes
 		
 		GER_should_split_SOV_front_with_ITA = yes
 	}
-
+	abort = {
+		not = {
+			is_in_faction_with = ITA
+			going_war_with_SOV = yes
+			GER_should_continue_split_SOV_front_with_ITA = yes
+		}
+	}
+	
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = dont_defend_ally_borders

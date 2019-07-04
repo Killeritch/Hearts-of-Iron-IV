@@ -317,11 +317,14 @@ USA_garrison_production = {
 USA_protect_against_extremism = { # Reverse strategy
 	reversed = yes
 
-	enable = {
-		NOT = { tag = USA }
+	enable_reverse = {
 		USA = {
 			has_government = democratic
 		}
+	}
+
+	enable = {
+		NOT = { tag = USA }
 		NOT = { has_government = communism }
 		NOT = { has_government = fascism }
 		OR = {
@@ -567,5 +570,42 @@ USA_help_waters_around_GER = {
 	ai_strategy = {
 		type = strike_force_home_base
 		id = 18 # channel
+	}
+}
+
+# TODO: experimental /Dan
+USA_TEST_help_uk_be_winnigest = {
+	enable = {
+		original_tag = USA
+		is_in_faction_with = ENG
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 50
+	}
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ENG
+		value = 50
+	}
+
+	ai_strategy = {
+        type = area_priority
+        id = africa
+        value = 80 # removes most of negatives set elsewhere
+    }
+    ai_strategy = {
+        type = area_priority
+        id = suez
+        value = 130 # brings it 90 above base 
+    }
+
+    ai_strategy = {
+		type = garrison
+		value = -50
 	}
 }

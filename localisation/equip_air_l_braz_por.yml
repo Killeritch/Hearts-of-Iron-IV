@@ -3,7 +3,7 @@
  cv_fighter:0 "Caça"
  jet_fighter:0 "Caça"
  cas:0 "Apoio Aéreo Aproximado (CAS)"
- cv_cas:0 "Apoio Aéreo Aproximado (CAS)"
+ cv_cas:2 "Encerrar suporte aéreo (carregador)"
  nav_bomber:0 "Bombardeiro naval"
  cv_nav_bomber:1 "Bombardeiro Naval (carregador)"
  tac_bomber:0 "Bombardeiro tático"

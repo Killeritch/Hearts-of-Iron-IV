@@ -1,0 +1,138 @@
+types Types
+{
+	type curve_point = icon {
+		texture = "gfx/editor_gui/curve_point_16.dds"
+		position = [CurvePoint.Position]
+		widgetanchor = vcenter|hcenter
+		alwaystransparent = no
+		framesize = { 16 16 }
+		frame = 1
+		
+		state = {
+			name = "_mouse_enter"
+			size = { 18 18 }
+			duration = 0.0
+		}
+		
+		state = {
+			name = "_mouse_leave"
+			size = { 16 16 }
+			duration = 0.0
+		}
+		
+		state = {
+			name = "default"
+			#size = { 8 8 }
+			#color = { 1 1 1 1 }
+			frame = 1
+			duration = 0.0
+		}
+
+		state = {
+			name = "selected"
+			#size = { 16 16 }
+			#color = { 1 0 0 1 }
+			frame = 2
+			duration = 0.0
+		}
+	}
+	
+	type curve_editor = widget {
+		size = { 640 480}
+
+		layoutpolicy_vertical = expanding
+		layoutpolicy_horizontal = expanding
+
+		vbox = {
+			spacing = 4
+
+			hbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = fixed 
+				
+				spacing = 4
+		
+				editor_toolbar_button = {
+					editor_toolbar_icon = {
+						texture = "gfx/tools/material/delete.png"
+					}
+					tooltip = "Delete selected points"
+					onclick = "[CurveEditor.Delete]"
+					shortcut = "curve_editor_remove"
+				}
+		
+				editor_toolbar_divider = {
+					margin = { 4 0 }
+				}
+			
+				editor_toolbar_button = {
+					tooltip = "Undo"
+					editor_toolbar_icon = {
+						texture = "gfx/tools/material/undo.png"
+					}
+					onclick = "[CurveEditor.Undo]"
+					enabled = "[CurveEditor.IsUndoable]"
+					shortcut = "curve_editor_undo"
+				}
+		
+				editor_toolbar_button = {
+					tooltip = "Redo"
+					editor_toolbar_icon = {
+						texture = "gfx/tools/material/redo.png"
+					}
+					onclick = "[CurveEditor.Redo]"
+					enabled = "[CurveEditor.IsRedoable]"
+					shortcut = "curve_editor_redo"
+				}
+				
+				editor_toolbar_divider = {
+					margin = { 4 0 }
+				}
+				
+				editor_toolbar_button = {
+					editor_toolbar_icon = {
+						texture = "gfx/tools/material/settings.png"
+					}
+					tooltip = "Configure"
+					onclick = "[CurveEditor.Configure]"
+				}
+				
+				widget = {
+					layoutpolicy_horizontal = expanding
+				}
+			}
+			
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+				
+			hbox = {
+				layoutpolicy_horizontal = preferred
+				layoutpolicy_vertical = preferred
+				
+				margin = { 4 4 }
+				
+				icon = {
+					name = "workarea"
+					alwaystransparent = no
+					scissor = yes
+					
+					background = {
+						texture = "gfx/editor_gui/editor_white_pixel.png"
+						spriteType = Stretched
+						shaderfile = "gfx/FX/pdxgui_default.shader"
+						color = { 0.2 0.2 0.2 1 }
+					}
+			
+					layoutpolicy_horizontal = preferred
+					layoutpolicy_vertical = preferred
+					
+					editor_selection = {
+						name = "selection"
+						position = { 0 0 }
+						size = { 0 0 }
+					}
+				}
+			}
+		}
+	}
+}

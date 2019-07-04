@@ -1,0 +1,233 @@
+types SkinEditorTypes
+{
+	type skin_editor_section = vbox {
+		spacing = 5
+		oncreate = "[BindFoldOutContext]"
+		layoutpolicy_horizontal = preferred 
+
+		hbox = {
+			layoutpolicy_horizontal = preferred 
+
+			checkbutton = {
+				shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+				texture = "gfx/tools/foldout_button.dds"
+				framesize = { 16 16 }
+				spriteType = CorneredStretched
+				spriteborder = { 4 4 }
+
+				size = { 0 24 }
+				layoutpolicy_horizontal = preferred
+
+				checked = "[PdxGuiFoldOut.IsUnfolded]"
+				onclick = "[PdxGuiFoldOut.Toggle]"
+
+				hbox = {
+					margin_left = 5
+					spacing = 5
+
+					checkbutton = {
+						gfxtype = checkbuttongfx
+						shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+						texture = "gfx/editor_gui/editor_expand_checkbox.dds"
+						framesize = { 16 16 }
+						size = { 8 8 }
+
+						checked = "[PdxGuiFoldOut.IsUnfolded]"
+						onclick = "[PdxGuiFoldOut.Toggle]"
+					}
+
+					block "header_content" {}
+				}
+			}
+		}
+
+		vbox = {
+			spacing = 5
+			layoutpolicy_horizontal = preferred 
+			visible = "[PdxGuiFoldOut.IsUnfolded]"
+
+			block "body_datamodel" {}
+
+			block "body_content_full"
+			{
+				item = {
+					hbox = {
+						layoutpolicy_horizontal = preferred 
+
+						widget = { 
+							size = { 15 0 } 
+						}
+
+						block "body_content" {}
+
+						widget = {
+							layoutpolicy_horizontal = expanding
+						}
+					}
+				}
+			}
+
+		}
+	}
+}
+
+widget = {
+	name = "skin_editor"
+	size = { 300 300 }
+
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+
+	vbox = {
+		hbox = {
+			layoutpolicy_horizontal = Preferred
+			layoutpolicy_vertical = Preferred
+
+			scrollarea = {
+				layoutpolicy_horizontal = Preferred
+				layoutpolicy_vertical = Preferred
+				scrollbarpolicy_vertical = as_needed
+				scrollbarpolicy_horizontal = as_needed
+				scrollbaralign_vertical = right
+				scrollbaralign_horizontal = bottom
+				autoresizeviewport = yes
+
+				viewportwidget = {
+					widget = {
+						scissor = yes
+					}
+				}
+
+				scrollbar_vertical = {
+					using = editor_vertical_scrollbar
+				}
+
+				scrollbar_horizontal = {
+					using = editor_horizontal_scrollbar
+				}
+
+				scrollwidget = {
+					vbox = {
+						vbox = {
+							size = { 0 20 }
+							spacing = 5
+							layoutpolicy_horizontal = preferred 
+
+							datamodel = "[GfxGetSkins]"
+
+							item = {
+								skin_editor_section = {
+									blockoverride "header_content"
+									{
+										editor_textbox = {
+											text = "[GfxSkin.GetName]"
+											autoresize = yes
+											align = nobaseline
+										}
+
+										widget = {
+											layoutpolicy_horizontal = expanding
+										}
+
+										editor_textbox = {
+											text = "[GfxSkin.GetPath]"
+											autoresize = yes
+											align = nobaseline|right
+										}
+
+										editor_button = {
+											text = "Set"
+											enabled = "[Not(GfxSkinIsActive(GfxSkin.GetName))]"
+											size = { 40 0 }
+											layoutpolicy_vertical = expanding
+											align = center|nobaseline
+											onclick = "[GfxSetActiveSkin(GfxSkin.GetName)]"
+											distribute_visual_state = no
+											inherit_visual_state = no
+											fontcolor = { 1.0 1.0 1.0 1.0 }
+										}
+									}
+
+									blockoverride "body_content_full"
+									{
+										hbox = {
+											layoutpolicy_horizontal = preferred 
+											widget = { size = { 15 0 } }
+
+											vbox = { 
+												spacing = 5
+
+												layoutpolicy_horizontal = preferred 
+												skin_editor_section = {
+													blockoverride "header_content"
+													{
+														editor_textbox = {
+															text = "Folders"
+															autoresize = yes
+															align = nobaseline
+														}
+
+														widget = {
+															layoutpolicy_horizontal = expanding
+														}
+													}
+
+													blockoverride "body_datamodel"
+													{
+														datamodel = "[GfxSkin.GetFolders]"
+													}
+
+													blockoverride "body_content"
+													{
+														editor_textbox = {
+															text = "[CString.GetString]"
+															autoresize = yes
+															align = nobaseline
+														}
+													}
+												}
+
+												skin_editor_section = {
+													blockoverride "header_content"
+													{
+														editor_textbox = {
+															text = "Textures"
+															autoresize = yes
+															align = nobaseline
+														}
+
+														widget = {
+															layoutpolicy_horizontal = expanding
+														}
+													}
+
+													blockoverride "body_datamodel"
+													{
+														datamodel = "[GfxSkin.GetTextures]"
+													}
+
+													blockoverride "body_content"
+													{
+														editor_textbox = {
+															text = "[CString.GetString]"
+															autoresize = yes
+															align = nobaseline
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+
+						widget = {
+							layoutpolicy_vertical = expanding
+						}
+					}
+				}
+			}
+		}
+	}
+}

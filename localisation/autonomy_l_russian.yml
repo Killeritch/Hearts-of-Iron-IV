@@ -35,7 +35,7 @@
  MONTHLY_LL_FREEDOM_TO_PUPPET:0 "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER:0 "$VALUE|+2$"
  MONTHLY_LL_FREEDOM_VALUE_DESC:0 "Ежемесячное влияние на автономию в случае полной поставки"
- MONTHLY_LL_FREEDOM_DESC:0 "Ежемесячно после полной поставки государство $COUNTRY|H$ получает £autonomy_texticon $VALUE|H+=2$ "
+ MONTHLY_LL_FREEDOM_DESC:0 "Ежемесячно после полной поставки государство $COUNTRY|H$ получает £autonomy_texticon $VALUE|+=2$ "
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§RЗапрос на ленд-лиз у государства-марионетки может увеличить его автономию§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§RЗапрос на ленд-лиз у метрополии может уменьшить автономию§!"
  EXPORT_FREEDOM_EFFECT:0 "Экспорт субъекта в метрополию"

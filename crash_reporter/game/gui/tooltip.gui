@@ -1,0 +1,51 @@
+template DefaultTooltipText
+{
+	fontsize = 14
+	fontcolor = { 0.4 0.65 1 1 }
+	align = left|nobaseline
+	autoresize = yes
+}
+
+container = {
+	name = "DefaultTooltipWidget"
+	position = { 20 20 }
+	alwaystransparent = no
+	
+	background = {
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		#texture = "gfx/gui/province/tiles_dialog_framed.dds"
+		framesize = { 96 96 }
+		spriteType = corneredtiled
+		spriteborder = { 19 19 }
+		frame = 1
+	}
+
+	flowcontainer = 
+	{
+		direction = vertical
+		
+		editbox = {
+			using = DefaultTooltipText
+			
+			name = "TooltipText"
+			margin = { 15 45 }
+			margin_bottom = 0
+		}
+		
+		editbox = {
+			using = DefaultTooltipText
+			
+			name = "TooltipTextDelayed"
+			margin = { 15 45 }
+			margin_top = 0
+		}
+	}
+
+	button = {
+		name = "inc_autonomy_button"
+		position = { 8 8 }
+		#texture = "gfx/gui/province/inc_autonomy_button.dds"
+		tooltip = "Hej"
+	}
+}
+

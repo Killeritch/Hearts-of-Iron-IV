@@ -1,0 +1,135 @@
+widgetsettings = {
+	name = "gui_editor_layout_right"
+	
+	target = {
+		name = "gui_editor.layout.editorwindow"
+		parentanchor = top|right
+		widgetanchor = top|left
+		position = { -301 51 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.outlinerwindow"
+		parentanchor = top|right
+		widgetanchor = top|left
+		position = { -301 158 }
+		size = { 300 621 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.propertywindow"
+		parentanchor = top|right
+		widgetanchor = top|right
+		position = { -301 51 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.typewindow"
+		parentanchor = bottom|right
+		widgetanchor = top|left
+		position = { -301 -301 }
+		size = { 300 300 }
+	}
+}
+
+widgetsettings = {
+	name = "gui_editor_layout_left"
+	
+	target = {
+		name = "gui_editor.layout.editorwindow"
+		parentanchor = top|left
+		widgetanchor = top|left
+		position = { 0 51 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.outlinerwindow"
+		parentanchor = top|left
+		widgetanchor = top|left
+		position = { 0 158 }
+		size = { 300 621 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.propertywindow"
+		parentanchor = top|left
+		widgetanchor = top|left
+		position = { 300 51 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.typewindow"
+		parentanchor = bottom|left
+		widgetanchor = top|left
+		position = { 0 -301 }
+		size = { 300 300 }
+	}
+}
+
+widgetsettings = {
+	name = "gui_editor_layout_top"
+	
+	target = {
+		name = "gui_editor.layout.editorwindow"
+		parentanchor = top|right
+		widgetanchor = top|right
+		position = { 0 0 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.outlinerwindow"
+		parentanchor = top|right
+		widgetanchor = top|right
+		position = { -300 0 }
+		size = { 400 407 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.propertywindow"
+		parentanchor = top|left
+		widgetanchor = top|left
+		position = { 0 0 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.typewindow"
+		parentanchor = top|right
+		widgetanchor = top|right
+		position = { 0 107 }
+		size = { 300 300 }
+	}
+}
+
+widgetsettings = {
+	name = "gui_editor_layout_bottom"
+	
+	target = {
+		name = "gui_editor.layout.editorwindow"
+		parentanchor = bottom|right
+		widgetanchor = bottom|right
+		position = { 0 0 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.outlinerwindow"
+		parentanchor = bottom|right
+		widgetanchor = bottom|right
+		position = { -300 0 }
+		size = { 400 407 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.propertywindow"
+		parentanchor = bottom|left
+		widgetanchor = bottom|left
+		position = { 0 0 }
+	}
+	
+	target = {
+		name = "gui_editor.layout.typewindow"
+		parentanchor = bottom|right
+		widgetanchor = bottom|right
+		position = { 0 -107 }
+		size = { 300 300 }
+	}
+}

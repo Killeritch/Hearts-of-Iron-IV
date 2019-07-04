@@ -722,7 +722,7 @@
  DOD_yugoslavia.10.t:0 "La quinta columna"
  DOD_yugoslavia.10.desc:0 "A medida que la noticia de la declaración de guerra contra Alemania se extiende por el país, queda claro con rapidez que en el país hay muchas personas que no tienen la intención de levantarse en armas contra los invasores. La mayoría de unidades croatas se han negado a cumplir las órdenes de dirigirse a la frontera y, en varias ocasiones, han llegado incluso a abrir fuego contra otras unidades que sí las cumplían.\n\nParece ser que ya no podemos confiar en los croatas para que nos ayuden, lo cual dificulta cuanto menos la defensa de la frontera con Alemania."
  DOD_yugoslavia.10.a:0 "¡Traidores!"
- DOD_yugoslavia.20.t:0 "El gobierno [YUG.GetAdjective] pide que se le vendan aviones"
+ DOD_yugoslavia.20.t:1 "[YUG.GetName] pide que se le vendan aviones."
  DOD_yugoslavia.20.desc:0 "Tras darse cuenta de sus puntos débiles estratégicos, la Fuerza Aérea [YUG.GetAdjective] ha iniciado un programa de choque para modernizar y ampliar sus dotaciones. Se han apartado reservas monetarias importantes para cubrir la compra. Una comisión está recorriendo Europa en busca de nuevas fuentes de cazas y bombarderos medios.\n\nDado lo urgente de la cuestión, los portavoces [YUG.GetAdjective] han insistido en que se le entregue o transfiera directamente los aviones desde el fabricante."
  DOD_yugoslavia.20.a:0 "Aprobaremos la venta de cazas de nuestras reservas."
  DOD_yugoslavia.20.b:0 "Aprobaremos la venta de bombarderos de nuestras reservas."

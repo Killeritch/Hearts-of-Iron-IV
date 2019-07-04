@@ -954,5 +954,5 @@
  MODIFIER_BREAKTHROUGH:0 "Przełamanie"
  MODIFIER_TECH_AIR_DAMAGE_FACTOR:0 "Redukcja uszkodzeń obrony p-lot. spowodowanych bombardowaniem"
  MODIFIER_TECH_AIR_DAMAGE_FACTOR_DESC:0 "Przewaga technologiczna zwiększa skuteczność naszej stacjonarnej obrony przeciwlotniczej."
- carrier_experience_bonus_max:0 "Doświadczenie"
- carrier_experience_malus_min:0 "Doświadczenie"
+ carrier_experience_bonus_max:1 "Za doświadczenie lotniskowca"
+ carrier_experience_malus_min:1 "Za doświadczenie lotniskowca"

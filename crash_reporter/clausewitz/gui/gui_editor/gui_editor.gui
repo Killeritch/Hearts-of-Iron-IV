@@ -1,0 +1,519 @@
+template editor_tooltip
+{
+	using = dockable_tooltip
+}
+
+template editor_tooltip_properties
+{
+	tooltip_offset = { 25 0 }
+	tooltip_type = mouse
+	tooltip_widgetanchor = top|left
+	tooltip_parentanchor = top|left
+	tooltip_verticalbehavior = slide
+	tooltip_horizontalbehavior = flip
+}
+
+template editor_scrollbar_track
+{
+	editor_scrollbar_button = {
+		upframe = 21
+		downframe = 21
+		overframe = 21
+		disableframe = 21
+		spriteType = Corneredtiled
+	}
+}
+
+template editor_scrollbar_slider
+{
+	editor_scrollbar_button = {
+		upframe = 17
+		downframe = 18
+		overframe = 19
+		disableframe = 20
+	}
+}
+
+template editor_dropdown_enum
+{
+	alwaystransparent = no
+	
+	active_item = {
+		widget = {
+			size = { 260 20 }
+			
+			button = {
+				size = { 100% 18 }
+				texture = "gfx/editor_gui/editor_dropdown.dds"
+				spriteType = CorneredStretched
+				gfxtype = framedbuttongfx
+				effectname = "NoHighlight"
+				spriteborder = { 4 4 }
+				spriteborder_right = 24
+				button_trigger = none
+				framesize = { 32 16 }
+				upframe = 1
+				downframe = 2
+				overframe = 3
+				disableframe = 4
+			}
+			
+			editor_textbox = {
+				text = "[DropdownIntValue.GetLabel]"
+				position = { 10 7 }
+				fontsize = 12
+			}
+		}
+	}
+	
+	item = {
+		widget = {
+			size = { 260 20 }
+			
+			button = {
+				size = { 100% 100% }
+				texture = "gfx/editor_gui/editor_dropdown_item.dds"
+				spriteType = CorneredTiled
+				spriteborder = { 1 1 }
+				gfxtype = framedbuttongfx
+				framesize = { 8 8 }
+				upframe = 1
+				downframe = 2
+				overframe = 2
+				disableframe = 1
+				button_trigger = none
+			}
+			
+			editor_textbox = {
+				text = "[DropdownIntValue.GetLabel]"
+				position = { 10 8 }
+				fontsize = 12
+			}
+		}
+	}
+	
+	list = {
+		scrollarea = {
+			position = { 2 20 }
+			maximumsize = { 256 210 }
+			autoresizescrollarea = yes
+			alwaystransparent = yes
+			
+			background = {
+				margin = { 2 2 }
+				margin_bottom = 6
+				margin_right = 6
+				texture = "gfx/editor_gui/editor_dropdown_list.dds"
+				spriteType = CorneredStretched
+				spriteborder = { 6 6 }
+				spriteborder_right = 8
+				spriteborder_bottom = 8
+				shaderfile = "gfx/FX/pdxgui_default.shader"
+			}
+			
+			scrollwidget = {
+				fixedgridbox = {
+					alwaystransparent = no
+					addcolumn = 256
+					addrow = 18
+				}
+			}
+			
+			scrollbar_vertical = {
+				using = editor_vertical_scrollbar
+			}
+			
+			scrollbar_horizontal = {
+				using = editor_horizontal_scrollbar
+			}
+		}
+	}
+}
+
+template editor_editbox_static
+{
+	focuspolicy = none
+}
+
+template property_editbox
+{
+	name = "editbox"
+	fontsize = 12
+	size = { 252 19 }
+	alwaystransparent = no
+	focuspolicy = all
+	cursorcolor = { 1 1 0.5 1 }
+	selectioncolor = { 0.45 0.45 0.45 0.7 }
+	maxcharacters = 255
+	
+	background = {
+		#margin = { 2 0 }
+		margin_left = 5
+		margin_top = 0
+		texture = "gfx/editor_gui/editor_field.dds"
+		spriteType = CorneredStretched
+		spriteborder = { 4 4 }
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+	}
+}
+
+editor_contextmenu = {
+	name = "dataproperty_contextmenu"
+}
+
+editor_contextmenu = {
+	name = "blockoverride_contextmenu"
+}
+
+editor_contextmenu = {
+	name = "widget_state_contextmenu"
+}
+
+container = {
+	name = "editor_dragdrop_widget"
+
+	editor_icon = {
+		name = "editor_dragdrop_icon"
+		texture = "gfx/editor_gui/editor_dragdrop_icon.dds"
+		size = { 16 16 }
+		position = { 0 8 }
+	}
+}
+
+widget = {
+	name = "dragged_widget"
+	size = { 80 28 }
+	
+	textbox = {
+		fontsize = 10
+		name = "text"
+		size = { 80 28 }
+		text = "Drop to create widget"
+		align = center|nobaseline
+	}
+}
+
+types "GuiEditor"
+{
+	type selection_line = line {
+        gfxtype = linegfx
+        shaderfile = "gfx/FX/pdxgui_default.shader"
+		from = "[SelectionLine.From]"
+		to = "[SelectionLine.To]"
+		color = "[SelectionLine.Color]"
+		position = "[SelectionLine.Position]"
+		size = "[SelectionLine.Size]"
+	}
+
+	type gui_editor_dockable_widget = vbox {
+		layoutpolicy_horizontal = preferred
+		layoutpolicy_vertical = preferred
+		
+		alwaystransparent = no
+		filter_mouse = none
+		focuspolicy = click
+		tabfocusroot = yes
+		
+		background = {
+			texture = "gfx/editor_gui/editor_layout_window.dds"
+			spriteType = CorneredStretched
+			spriteborder = { 5 5 }
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+			framesize = { 16 16 }
+			frame = 1
+		}
+		
+		editor_toolbar_layout = {
+			margin_left = 7
+			margin_right = 4
+			spacing = 5
+			alwaystransparent = yes
+			
+			blockoverride "left"
+			{
+				layoutpolicy_horizontal = expanding
+
+				editor_textbox = {
+					name = "title"
+					text = "[GuiEditorDockable.Title]"
+					elide = right
+					fontsize = 12
+					autoresize = yes
+					layoutpolicy_horizontal = preferred
+					parentanchor = top|left
+					widgetanchor = top|left
+					alwaystransparent = yes
+				}
+				
+				widget = {
+					alwaystransparent = yes
+					layoutpolicy_horizontal = expanding
+					size = { 0 5 }
+					
+					background = {
+						texture = "gfx/editor_gui/editor_layout_window_title.dds"
+						spriteType = CorneredTiled
+						shaderfile = "gfx/FX/pdxgui_default.shader"
+					}
+				}
+				
+				widget = {
+					alwaystransparent = yes
+					layoutpolicy_horizontal = fixed
+					size = { 0 22 }
+				}
+			}
+			
+			blockoverride "right"
+			{
+				editor_button = {
+					name = "close"
+					layoutpolicy_horizontal = fixed
+					size = { 16 16 }
+					visible = yes
+					texture = "gfx/editor_gui/editor_layout_window_close.dds"
+					onclick = [GuiEditorDockable.OnClose]
+					intersectionmask = no
+				}
+			}
+		}
+
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			
+			vbox = {
+				name = "content_vbox"
+				
+				margin = { 5 5 }
+
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+				
+				background = {
+					texture = "gfx/editor_gui/editor_layout_window_content.png"
+					spriteType = CorneredStretched
+					spriteborder = { 5 5 }
+					shaderfile = "gfx/FX/pdxgui_default.shader"
+				}
+			}
+		}
+	}
+}
+
+hbox = {
+	name = "gui_editor"
+	alwaystransparent = yes
+	droptarget = yes
+	tabfocusroot = yes
+	
+	widget = {
+		name = "layout"
+		layoutpolicy_horizontal = Expanding
+		layoutpolicy_vertical = Expanding
+		alwaystransparent = yes
+		
+		widget = {
+			name = "lines"
+			size = { 100% 100% }
+		}
+
+		icon = {
+			texture = "gfx/editor_gui/editor_anchor_parent.dds"
+			position = "[GuiEditor.GetSelectedParentAnchor]"
+			visible = "[GuiEditor.HasWidgetSelectedParent]"
+			widgetanchor = vcenter|hcenter
+		}
+
+		icon = {
+			texture = "gfx/editor_gui/editor_anchor_object.dds"
+			position = "[GuiEditor.GetSelectedAnchor]"
+			visible = "[GuiEditor.HasWidgetSelected]"
+			widgetanchor = vcenter|hcenter
+		}
+
+		editor_window = {
+			name = "typewindow"
+			parentanchor = bottom|right
+			widgetanchor = bottom|right
+			position = { 0 0 }
+			size = { 420 300 }
+			visible = "[GuiEditor.IsEnableEdit]"
+			
+			blockoverride "title"
+			{
+				text = "#BOLD;COLOR:{1.0,1.0,1.0} UI Components #!"
+			}
+			
+			blockoverride "hbox_properties"
+			{
+				layoutpolicy_horizontal = Preferred
+				layoutpolicy_vertical = Preferred
+			}
+			
+			blockoverride "content_layout"
+			{
+				editor_scrollarea = {
+					blockoverride "content"
+					{
+						editor_tree = {
+							name = "typetree"
+						}
+					}
+				}
+			}
+		}
+
+		editor_toolbar_window = {
+			name = "datatypes_window"
+			size = { 420 250 }
+			visible = yes
+			parentanchor = top|right
+			widgetanchor = top|right
+			position = { 0 520 }
+
+			editor_button = {
+				position = { -5 5 }
+				parentanchor = top|right
+
+				tooltip = "Dump to disk"
+				onclick = "[PdxGuiEditorMessageBox(Select_CString(PdxDumpDataTypes, 'data types dumped to disk', 'error dumping data types to disk!'))]"
+
+				tooltipwidget = {
+					using = editor_tooltip
+				}
+
+				size = { 20 20 }
+				
+				icon = {
+					texture = "gfx/tools/material/export.png"
+					size = { 100% 100% }
+					parentanchor = vcenter|hcenter
+				}
+			}
+
+			blockoverride "title"
+			{
+				text = "#BOLD;COLOR:{1.0,1.0,1.0} Registered Data Types #!"
+			}
+			
+			blockoverride "toolbar"
+			{
+				editor_toolbar = {
+					margin_left = 10
+					margin_right = 5
+					visible = yes
+					
+					blockoverride "left"
+					{
+						spacing = 15
+
+						editor_textbox = {
+							text = "Type:"
+							autoresize = yes
+						}
+						
+						editor_textinput = {
+							name = "filter_type"
+							size = { 130 24 }
+						}
+
+						editor_textbox = {
+							text = "Filter:"
+							autoresize = yes
+						}
+						
+						editor_textinput = {
+							name = "filter"
+							size = { 130 24 }
+						}
+					}
+				}
+
+				editor_toolbar = {
+					margin_left = 10
+					margin_right = 5
+					visible = yes
+					
+					blockoverride "left"
+					{
+						spacing = 15
+
+						editor_checkbutton = {
+							blockoverride "checkbutton"
+							{
+								name = "filter_functions"
+								checked = "[GuiEditor.IsEnableFilterFunctions]"
+							}
+							
+							blockoverride "label"
+							{
+								text = "Functions"
+							}
+						}
+
+						editor_checkbutton = {
+							blockoverride "checkbutton"
+							{
+								name = "filter_promotes"
+								checked = "[GuiEditor.IsEnableFilterPromotes]"
+							}
+							
+							blockoverride "label"
+							{
+								default_format = "#bold"
+								text = "Promotes"
+							}
+						}
+
+						editor_checkbutton = {
+							blockoverride "checkbutton"
+							{
+								name = "filter_types"
+								checked = "[GuiEditor.IsEnableFilterTypes]"
+							}
+							
+							blockoverride "label"
+							{
+								text = "Types"
+							}
+						}
+
+						editor_checkbutton = {
+							blockoverride "checkbutton"
+							{
+								name = "filter_orphan_types"
+								checked = "[GuiEditor.IsEnableFilterOrphanTypes]"
+							}
+							
+							blockoverride "label"
+							{
+								text = "Orphan Types"
+							}
+						}
+					}
+				}
+			}
+			
+			blockoverride "hbox_properties"
+			{
+				layoutpolicy_horizontal = Preferred
+				layoutpolicy_vertical = Preferred
+			}
+			
+			blockoverride "content_layout"
+			{
+				editor_scrollarea = {
+					blockoverride "content"
+					{
+						
+						editor_tree = {
+							name = "datatypes_tree"
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

@@ -3,7 +3,7 @@
  cv_fighter:0 "Jäger"
  jet_fighter:0 "Jäger"
  cas:1 "Luftnahunterstützung"
- cv_cas:1 "Luftnahunterstützung"
+ cv_cas:2 "Luftnahunterstützung (Träger)"
  nav_bomber:0 "Marinebomber"
  cv_nav_bomber:1 "Marinebomber (Träger)"
  tac_bomber:0 "Taktischer Bomber"

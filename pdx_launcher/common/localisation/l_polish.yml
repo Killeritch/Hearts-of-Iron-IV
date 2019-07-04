@@ -59,7 +59,7 @@
  PDXL_UNGRACEFUL_EXIT:0 "Błąd aplikacji"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "Wygląda na to, że aplikacja została ukończona z powodu błędu, wysłanie komunikatu o tym problemie pomoże nam w jego zidentyfikowaniu oraz naprawie.\n\n§YCzy chcesz wysłać w tle komunikat o błędzie?§!"
  PDXL_UNGRACEFUL_EXIT_SKIP:0 "Pomiń"
- PDXL_UNGRACEFUL_EXIT_REPORT:0 "Wyślij"
+ PDXL_UNGRACEFUL_EXIT_CLEAR:0 "Opróżnij"
  PDXL_CLEAR_USER_DIRECTORY:0 "Opróżnij folder użytkownika"
  PDXL_CLEAR_USER_DIRECTORY_DESC:0 "Jeśli gra została niespodziewanie zamknięta z powodu braku stabilności, możliwe że jest to spowodowane plikami stworzonymi przez użytkownika. Sugerujemy usunąć te pliki, i spróbować włączyć grę ponownie, zanim skontaktujesz się z producentem w celu pomocy."
  PDXL_CLEAR_USER_DIRECTORY_NOT_FILES:0 "§GNie znaleziono żadnych plików w folderze użytkownika, które mogły by wpłynąć na stabilność gry.§!"

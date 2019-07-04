@@ -722,7 +722,7 @@
  DOD_yugoslavia.10.t:0 "Piąta kolumna"
  DOD_yugoslavia.10.desc:0 "Wieść o wypowiedzeniu Niemcom wojny rozeszła się po całym kraju i szybko okazało się, że wielu obywateli nie ma zamiaru chwycić za broń, żeby walczyć z najeźdźcami. Większość jednostek chorwackich odmówiła przemieszczenia się w stronę granicy, a w kilku przypadkach doszło nawet do ostrzelania oddziałów wykonujących rozkazy.\n\nRaczej nie możemy już liczyć na wsparcie Chorwatów, co poważnie utrudni obronę granicy z Niemcami, delikatnie rzecz ujmując."
  DOD_yugoslavia.10.a:0 "Zdrajcy!"
- DOD_yugoslavia.20.t:0 "Poszukiwania [YUG.GetAdjective] samolotów"
+ DOD_yugoslavia.20.t:1 "[YUG.GetName] zwraca się o sprzedaż samolotów."
  DOD_yugoslavia.20.desc:0 "Zdając sobie sprawę ze strategicznego słabego punktu, jaki stanowi lotnictwo, [YUG.GetAdjective] siły powietrzne wprowadziły błyskawiczny program modernizacji i rozbudowy. Na zakupy przeznaczono znaczne środki pieniężne. Specjalna komisja podróżuje po Europie w poszukiwaniu nowych dostawców myśliwców i średnich bombowców.\n\nZważając na to, jak pilna jest ta sprawa, rząd [YUG.GetAdjective] domaga się natychmiastowych dostaw albo przekazania samolotów bezpośrednio od producenta."
  DOD_yugoslavia.20.a:0 "Zatwierdzić sprzedaż myśliwców z naszych rezerw."
  DOD_yugoslavia.20.b:0 "Zatwierdzić sprzedaż bombowców z naszych rezerw."

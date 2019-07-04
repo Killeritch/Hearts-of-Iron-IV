@@ -1,0 +1,28 @@
+fontfiles = {
+    name = "Lato-Regular"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" }
+        files = { "fonts/Lato-Regular.ttf" }
+    }
+}
+
+
+font = {
+	name = "Debug"
+	
+	fontstyle = {
+		style = regular
+		fontfiles = "Lato-Regular"
+	}
+}
+
+font = {
+	name = "Regular"
+	
+	fontstyle = {
+		style = regular
+		fontfiles = "Lato-Regular"
+	}
+}

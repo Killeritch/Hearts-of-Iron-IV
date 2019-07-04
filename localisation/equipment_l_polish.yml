@@ -3360,3 +3360,5 @@
  HOL_medium_tank_artillery_equipment_2_short:0 "PTH-4"
  HOL_medium_tank_artillery_equipment_3:0 "Pantserhouwitser 5"
  HOL_medium_tank_artillery_equipment_3_short:0 "PTH-6"
+ GER_modern_tank_aa_equipment_1:0 "Kugelblitz"
+ GER_modern_tank_aa_equipment_1_short:0 "Kugelblitz"

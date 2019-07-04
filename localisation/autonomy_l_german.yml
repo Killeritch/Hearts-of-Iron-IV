@@ -49,7 +49,7 @@
  MONTHLY_LL_FREEDOM_TO_PUPPET:0 "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER:0 "$VALUE|+2$"
  MONTHLY_LL_FREEDOM_VALUE_DESC:0 "Monatlicher Effekt auf die Autonomie bei voller Lieferung"
- MONTHLY_LL_FREEDOM_DESC:0 "Nach voller Lieferung erhält $COUNTRY|H$ monatlich £autonomy_texticon $VALUE|H+=2$ "
+ MONTHLY_LL_FREEDOM_DESC:0 "Nach voller Lieferung erhält $COUNTRY|H$ monatlich £autonomy_texticon $VALUE|+=2$ "
  MASTER_SURRENDER_FREEDOM_EFFECT:0 "Herr hat kapituliert"
  MONTHLY_REQUEST_LL_TO_MASTER:0 "§REin Leih-Pacht-Geschäft von der Marionette zu erbitten, kann ihr mehr Autonomie verleihen§!"
  MONTHLY_REQUEST_LL_TO_PUPPET:0 "§REin Leih-Pacht-Geschäft vom Herren zu erbitten, kann einen Verlust von Autonomie bedeuten§!"

@@ -897,5 +897,5 @@
  MODIFIER_BREAKTHROUGH:0 "Incursión"
  MODIFIER_TECH_AIR_DAMAGE_FACTOR:0 "Reducción de daño de bombardeo antiaéreo"
  MODIFIER_TECH_AIR_DAMAGE_FACTOR_DESC:0 "Tener una ventaja tecnológica aumenta la eficacia de nuestras defensas antiaéreas estáticas."
- carrier_experience_bonus_max:0 "Experiencia"
- carrier_experience_malus_min:0 "Experiencia"
+ carrier_experience_bonus_max:1 "Experiencia de portaaviones"
+ carrier_experience_malus_min:1 "Experiencia de portaaviones"

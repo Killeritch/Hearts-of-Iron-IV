@@ -23,6 +23,7 @@
  LOGISTICS_RESOURCES_SORT_BY:0 "Щелкните, чтобы отсортировать по необходимым ресурсам"
  LOGISTICS_RESOURCES_DESC:0 "Какое количество ресурсов необходимо каждому виду техники"
  LOGISTICS_RESOURCE_USAGE:0 "Использует: $RESOURCE|Y$"
+ LOGISTICS_FUEL_PERCENTAGE:0 "§H$VALUE|0$%§! спроса в топливе удовлетворено."
  LOGISTICS_NO_EQUIPMENT_PRODUCTION:0 "$EQUIPMENT|Y$ сейчас не выпускается."
  LOGISTICS_AVERAGE_EFFICIENCY:0 "Средняя £prod_eff §Hэффективность§! наших §Hпроизводственных линий§!, выпускающих технику$EQUIPMENT|H$, составляет $EFFICIENCY|Y%$."
  LOGISTICS_AVERAGE_EFFICIENCY_DELAYED:0 "Повысьте £prod_eff эффективность производства, чтобы увеличить выпуск."

@@ -1,0 +1,272 @@
+types ToolsProperyTypes
+{
+	type gui_editor_button = editor_toolbar_button {
+		tooltipwidget = { using = dockable_tooltip }
+		tooltip_widgetanchor = bottom|left
+	}
+
+	type gui_editor_property = hbox {
+		tooltipwidget = {
+			using = dockable_tooltip
+		}
+		
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+	
+		tooltip = "[GuiEditorProperty.ToolProperty.GetTooltip]"
+		tooltip_widgetanchor = bottom|left
+
+		vbox = {
+			layoutpolicy_vertical = expanding
+
+			hbox = {
+				gui_editor_button = {
+					onclick = "[GuiEditorProperty.RemoveProperty]"
+					size = { 16 16 }
+					texture = "gfx/editor_gui/editor_layout_window_close.dds"
+					intersectionmask = no
+					tooltip = "Remove property"
+					color = { 1 0 0 0.8 }
+				}
+
+				editor_textbox = {
+					text = "[GuiEditorProperty.ToolProperty.GetLabel]"
+					#size = { 160 24 }
+					size = { 160 24 }
+					elide = right
+					margin_left = 4
+					margin_bottom = 6
+					fontcolor = "[GuiEditorProperty.ToolProperty.GetColor]"
+				}
+			}
+
+			widget = { layoutpolicy_vertical = expanding }
+		}
+
+		# TODO: Make this a dynamic widget
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			name = "tools_property"
+		}
+	}
+
+	type gui_editor_property_category = vbox {
+		layoutpolicy_horizontal = preferred
+		layoutpolicy_vertical = preferred
+		
+		checkbutton = {
+			checked = "[ToolPropertyList.IsExpanded]"
+			onclick = "[ToolPropertyList.SetExpanded(Not(ToolPropertyList.IsExpanded))]"
+			texture = "gfx/editor_gui/editor_frame.dds"
+			layoutpolicy_horizontal = preferred
+			
+			size = { 0 24 }
+
+			spriteborder = { 5 5 }
+			spriteType = CorneredStretched
+			framesize = { 16 16 }
+			
+			hbox = {
+				margin_left = 8
+				margin_bottom = 4
+				margin_right = 8
+
+				vbox = {
+					widget = { size = { 0 4 } }
+
+					checkbutton = {
+						gfxtype = checkbuttongfx
+						shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+						texture = "gfx/editor_gui/editor_expand_checkbox.dds"
+						framesize = { 16 16 }
+						size = { 8 8 }
+						checked = "[ToolPropertyList.IsExpanded]"
+						onclick = "[ToolPropertyList.SetExpanded(Not(ToolPropertyList.IsExpanded))]"
+					}
+				}
+
+				editor_textbox = {
+					text = "#BOLD; [ToolPropertyList.GetLabel] #!"
+					fontcolor = "[ToolPropertyList.GetColor]"
+					margin_left = 4
+					autoresize = yes
+				}
+				
+				widget = {
+					layoutpolicy_horizontal = preferred
+				}
+
+				vbox = {
+					widget = { size = { 0 4 } }
+
+					hbox = {
+						spacing = 4
+
+						gui_editor_button = {
+							onclick = "[GuiEditorCategory.AddProperty]"
+							size = { 16 16 }
+							texture = "gfx/editor_gui/editor_icon_addproperty.dds"
+							gfxtype = framedbuttongfx
+							framesize = { 16 16 }
+							intersectionmask = no
+							inherit_visual_state = no
+							tooltip = "Add property"
+						}
+
+						gui_editor_button = {
+							onclick = "[GuiEditorCategory.OpenFile]"
+							size = { 16 16 }
+							texture = "gfx/editor_gui/editor_file.dds"
+							intersectionmask = no
+							tooltip = "Go to file"
+							color = { 1 1 1 0.5 }
+							inherit_visual_state = no
+						}
+
+						gui_editor_button = {
+							onclick = "[GuiEditorCategory.SelectDescription]"
+							size = { 16 16 }
+							texture = "gfx/editor_gui/editor_arrow_right.dds"
+							intersectionmask = no
+							tooltip = "Go to description"
+							color = { 1 1 1 0.5 }
+							inherit_visual_state = no
+						}
+					}
+				}
+			}
+		}
+		
+		vbox = {
+			name = "list"
+			margin_top = 2
+			spacing = 4
+			layoutpolicy_horizontal = preferred
+			layoutpolicy_vertical = preferred
+			visible = "[ToolPropertyList.IsExpanded]"
+		}
+	}
+}
+
+vbox = {
+	name = "properties"
+
+	layoutpolicy_horizontal = expanding
+	layoutpolicy_vertical = expanding
+
+	editor_toolbar = {
+		margin_left = 10
+		margin_right = 2
+
+		blockoverride "left"
+		{
+			editor_textbox = {
+				text = "Filter: "
+				size = { 40 24 }
+			}
+			
+			editor_textinput = {
+				ontextedited = "[GuiEditorProperties.SetPropertyFilter]"
+				layoutpolicy_horizontal = expanding
+			}
+
+			gui_editor_button = {
+				onclick = "[GuiEditorProperties.GuiEditor.SelectPrevious]"
+				enabled = "[GuiEditorProperties.GuiEditor.SelectionHistory.HasPrevious]"
+				size = { 24 24 }
+
+				icon = {
+					texture = "gfx/editor_gui/editor_arrow_left.dds"
+					framesize = { 16 16 }
+					parentanchor = vcenter|hcenter
+				}
+
+				tooltip = "Navigate back"
+			}
+
+			gui_editor_button = {
+				onclick = "[GuiEditorProperties.GuiEditor.SelectNext]"
+				enabled = "[GuiEditorProperties.GuiEditor.SelectionHistory.HasNext]"
+				size = { 24 24 }
+
+				icon = {
+					texture = "gfx/editor_gui/editor_arrow_right.dds"
+					framesize = { 16 16 }
+					parentanchor = vcenter|hcenter
+				}
+
+				tooltip = "Navigate forward"
+			}
+
+			gui_editor_button = {
+				size = { 24 24 }
+				
+				icon = {
+					texture = "gfx/editor_gui/editor_icon_collapse.dds"
+					parentanchor = vcenter|hcenter
+				}
+
+				tooltip = "Collapse/Expand all categories"
+				onclick = "[GuiEditorProperties.CollapseCategories]"
+			}
+		}
+	}
+
+	editor_toolbar = {
+		blockoverride "left"
+		{
+			editor_toolbar_button = {
+				text = "Add..."
+				onclick = "[GuiEditorProperties.Add]"
+				size = { 48 24 }
+
+				editor_contextmenu = {
+					name = "add_property_context_menu"
+					parentanchor = top|right
+				}
+			}
+		}
+
+		blockoverride "right"
+		{
+			editor_checkbutton = {
+				blockoverride "checkbutton"
+				{
+					name = "show_all_properties"
+					shortcut = "editor_show_all_properties"
+					checked = "[GuiEditorProperties.IsShowAll]"
+					onclick = "[GuiEditorProperties.SetShowAll(Not(GuiEditorProperties.IsShowAll))]"
+				}
+				
+				blockoverride "label"
+				{
+					text = "Show all"
+				}
+			}
+		}
+	}
+
+	editor_scrollarea = {
+		blockoverride "Properties"
+		{
+			scrollbarpolicy_vertical = always_on
+		}
+
+		blockoverride "content"
+		{
+			vbox = {
+				alwaystransparent = no
+
+				tools_properties_dialog = {
+					name = "propertylist_categories"
+					margin_right = 18
+					margin_top = 4
+				}
+
+				widget = {
+					layoutpolicy_vertical = expanding
+				}
+			}
+		}
+	}
+}

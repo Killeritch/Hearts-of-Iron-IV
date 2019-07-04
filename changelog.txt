@@ -1,3 +1,267 @@
+﻿################################################################
+########              Patch 1.7.1 "Hydra"               ########
+################################################################
+
+
+##################################
+# Bugfix
+##################################
+- When resyncing, a player's observer status and observed nation are maintained, and hotjoin will honor the observer selection from the lobby.
+- Gave all 1936 ship hulls a tier 2 engine as default.
+
+
+##################################
+# Stability & Performance
+##################################
+- Fixed a rare CTD when going back to main menu from within a game.
+- Fixed a CTD related to carriers in combat.
+- Fixed an out-of-sync caused by volunteer division moving over water when the recipient country barely has enough convoys free for the transfer.
+
+
+##################################
+# Balance
+##################################
+- Lowered scaling of defense stat to 2.5% per level from 5%
+- Reduced org loss when moving from offensive doctrine field marshal trait
+- Increased planning speed bonus from fast planner field marshal trait to 25% from 10%
+- Added breakthrough modifier to aggressive assaulter field marshal trait
+- Reduced attack bonuses in cavalry leader trait from 15% to 10%
+- Reduced infantry defense bonus from infantry leader trait from 15% to 10%
+- Reduced terrain penalty reduction from adaptable trait from 50% to 30%
+- Increased acclimatization to cold factor in winter expert trait from 20% to 40%
+- Reduced attack bonus on rivers from engineer trait from 10% to 5%
+- Reduced defense bonus of panzer expert trait from 15% to 10%
+- Reduced cavalry defense bonus to 10% from 15% and removed attack bonus in cavalry expert trait
+- Reduced attack bonus vs forts to 15% from 20% in fortress buster trait
+- Reduced infantry attack bonus from 15% to 10% in infantry expert trait
+- Reduced entrenchment bonus from 10 to 5 in the ambusher trait
+- Reduced supply consumption marshal trait from 20% to 15%
+- Reduced out of supply factor on commando trait from 50% to 25%
+- Increased dig in speed from guerrilla fighter trait from 25% to 50%
+- Fixed the naval module speed penalties for depth charges, aircraft launcher, and mine sweeper which were 10 times larger than intended.
+- Increased AI weights for UK building convoys
+- Increased starting convoys for USA from 400 to 500
+
+
+
+################################################################
+########               Patch 1.7 "Hydra"                ########
+################################################################
+
+
+##################################
+# Feature & Important
+##################################
+- Game is now 64-bit
+- Frontlines have been reworked to where army fronts link together under army groups and playing army group only has more UI support to reduce clutter.
+
+
+##################################
+# Bugfix
+##################################
+- Withdraw from Contested Territories now is available to be taken if any contested territory is still held by Britain, and takes into account the possibility of having traded Newfoundland to the USA for destroyers.
+- Fixed the En Route penalty for admirals that are unassigned before being re-assigned.
+- disabled an event that merges two countries together with same original tag & ideology if either of them are puppet
+- Admiral combat XP no longer limited if more than 24 ships in fleet
+- execute orders button now executes only move order of ag front (Not attached fronts) for ag groups
+- Fixed task force fulfillment getting out of sync on save load
+- You are no longer able to draw spearheads/offensive lines without a proper frontline.
+- You should no longer be unable to remove ship modules
+- You are no longer able to draw offensive lines from a garrison order.
+- Fixed convoy distribution issues on naval supply paths
+- Initialized ships with zero manpower so that they consume country manpower correctly when production completes.
+- Block exploiting researching of tech if mutually exclusive tech has already been researched.
+- Fixed ship production to correctly set manpower and subtract that from the country manpower pool when a ship is completed.
+- Adjusted the requirements for the Treading the Narrow Path achievement to now only check for control of the Holland, Friesland, and Brabant states (rather than any Dutch core state).
+- Operation Fork and Invade Ireland decisions are no longer repeatable.
+- Italian Spanish-Italian Alliance and Befriend Portugal focuses now require being in a faction and correctly invite Spain and/or Portugal into Italy's faction, rather than try to join theirs.
+- Fixed add/remove core effects adding dynamic tags as cores
+- Fixed an issue where very large fleets of submarines got negative range and couldnt be assigned to missions
+- Properly transfer faction leadership now for players without Man the Guns, when a faction member is removed from the faction
+- Properly transfer faction leadership to the annexing country if they are part of the same faction
+- Fixed an issue where China could not integrate the warlords
+- Tech sharing now unlocked in DoD as well as intended with it using the feature in its focus trees
+- Strategy to have Axis minors avoid factions with Japan had a chance of updating too late.  Nations should now beware of Japan as long as fascism is high enough to give it time to activate.
+
+
+##################################
+# Balance
+##################################
+
+#Convoy Raiding and Sub Balance
+- Submarines now get to fire while retreating
+- Heavily reduced the chance of sub reveal on torpedo firing
+- Added carrier sub detection increase of 25% to escort carriers doctrine research
+- Added carrier sub detection increase of 25% and improved sub detection of destroyers and cruisers by 5% each in integrated convoy defense doctrine research
+- Gave carriers sub detection of 5
+- Reduced sub surface detection in wolf packs doctrine from 15% to 10%
+- Increased sub detection of ship radar 3 from 4 to 5
+- Increased sub detection of ship radar 4 from 8 to 10
+- Increased sub detection of ship sonar 2 from 6.5 to 7
+- Increased the number of regions convoy defense TFs can cover to 5 base
+- We now count convoy presence in each region rather than by individual route for mission escorting efficiency
+- Updated passive sub reveal chance per combat tick to have a generally higher chance of revealing subs
+- Added increasing passive sub detection in combat by a power of a scripted value in order to make large differences in detection and visibility more pronounced
+- Increased hit profile of torpedoes to 145, reducing their accuracy
+- Increased visibility of convoys from 10 to 14
+- Lowered sub hidden escape speed from 0.25 to 0.18
+- Added an increase to sub visibility as part of the positioning penalty in naval combat
+- Lowered depth charges hit chance mult from 1.8 to 1.1
+- Lowered hit profile for depth charges from 120.0 to 100.0
+- Increased hide time on subs from 12 to 16
+- Increased sub base reveal chance from 0.4 to 0.5
+- Increased visibility of t4 sub from 10.0 to 12.0
+- Reduced diceroll chance, based upon spotting stats, to find trade convoys at sea
+
+#Ship Module Balance - A general initiative to remove inconsistencies and give better balance to modules
+- Halved reliability penalties of fire control modules
+- Lessened speed reduction debuffs from ship AA modules
+- Light battery 1 added speed reduction of 1.0%
+- Light battery 2 added speed reduction of 1.0%
+- Light battery 3 added speed reduction of 1.0%
+- Light battery 4 added speed reduction of 1.0%
+- Light battery DP added speed reduction of 2.0%
+- Light-Medium Battery changed speed reduction to 3.0%
+- Light-Medium Battery changed speed reduction to 4.0%
+- Light-Medium Battery changed speed reduction to 4.0%
+- Light-Medium Battery changed speed reduction to 5.0%
+- Medium Battery 1 changed speed reduction to 4.0%
+- Medium Battery 1 changed speed reduction to 6.0%
+- Medium Battery 1 changed speed reduction to 7.0%
+- Medium Battery 1 changed speed reduction to 8.0%
+- Heavy battery 1 added speed reduction of 5.0%
+- Heavy battery 2 changed speed reduction to 8.0% 
+- Heavy battery 3 changed speed reduction to 9.0% 
+- Heavy battery 4 changed speed reduction to 10%
+- Secondaries 1 added speed reduction of 2.0%
+- Secondaries 2 added speed reduction of 2.0%
+- DP Secondaries added speed reduction of 3.0%
+- Added speed reduction to all ship torpedo modules of 1.0%
+- Changed speed reduction of all AA modules to 1.0%
+- Added speed reduction to mine sweepers of 2.0%
+- Added speed reduction to mine layers of 2.0%
+- Increased light ship engine 1 speed by 0.01
+- Increased light ship engine 2, 3 and 4 speed by 0.02
+- Increased heavy ship engine 1 speed to 7
+
+#Less Bloody Naval Combat
+- Lowered naval damage scaling from 1.0 to 0.6
+- Lowered naval org damage scaling from 1.6 to 1.0
+- Lowered base escape speed for all ships from 0.65 to 0.45
+- Increased speed based escape speed from ships to 0.95 from 0.75
+- Removed focus targeting from fleeing ships
+
+#General Naval Balance
+- Carriers, capital ships and subs now get to fire before screen ships at different intervals of the start of battles (carriers get the most) to model their better weapon projection
+- Gave fleet in being doctrine some extra surface detection to destroyers and light cruisers
+- Improved sortie efficiency from floating airfield doctrine research from 10% to 20%
+- Damaged convoys now add up at the end of combat and diceroll if they die to make convoy raiding/air attacks less binary
+- Ship anti air kills now diceroll when calculating kills rather always killing something which works badly with convoys with their numerous, yet low damage.
+- Added a balance factor to make actual unit transfers more resilient to 1-tick naval strikes
+- Tweaked hit chance for ship AA to be more resonable for small damage numbers
+- Reduced detection values for spotting unit transfers to avoid long naval transfers getting extremely slowed down too easily by the enemy.
+
+#Other Balance
+- Increased army fuel cost mult from 0.4 to 0.5
+- Increased air fuel cost mult from 0.32 to 0.35
+- Decreased xp from air to air and air to ground combat
+- Reduced air defence of strat bombers at all tiers
+- Government in exile will now always get few convoys when exile start
+- Manchukuo now correctly gains benefits from buffing Japan in the custom game difficulty settings
+- Fixed exploit letting you gain mission efficiency while training
+
+
+##################################
+# UI
+##################################
+- Text edit boxes fixed to not lose focus at inappropriate moments, including the console window when tag switching.
+- Splitting a task force now replicates the mission
+- Takao Gato should now have the correct portrait with DoD disabled
+- Fixed erroneous localisation in Yugoslav request for airplanes sale event.
+- fixed a decision displaying an empty string for a hidden event
+- We now filter out convoy attacks that do not kill convoys, and nothing else is damaged from becoming naval battle reports
+- Improved feedback in naval mines tooltip
+- fixed issues with tooltips for equipment variants with no parents
+- We now display the correct number of decision possible to take in a tooltip (issue with costs)
+- Cleaned up tooltip of technology bonus
+- Tooltip corrections on production window
+- Fixed various issues in naval tooltips
+- Fixed several texts for ship refitting
+- Naval regions are now correctly deselected when you open the construction view, even from the alert bar.
+- Display IC of armor module for ships in the tooltip
+- Fixed wrong information about design company in tooltip of ship hull
+- We now close transfer ships window when the original task force is deselected.
+- Always hide tech change confirmation box when closing research window.
+- When selecting units that are all grouped under the same army group color it will now also select the AG to make working with divisions easier
+- The button pause in top bar will be correctly updated if the player opens game menu during a peace conference.
+- Made the tooltip on sea zone if a fleet is selected or a taskforce is selected more consistent.
+- Increased amount of selected mapicons that are allowed to be shown expanded to work better with new fronts
+- fixed army groups being left selected when you create a new group when only some units are selected
+- fixed a case where order delete mode is wrongfully being cancelled if your current selection has no orders
+- you can assign new deployments to army groups orders now
+- Fuel returns to UI list for other countries after lend-lease requesting from a country
+
+
+##################################
+# AI
+##################################
+- Netherlands AI will now prioritize taking "Cave with X" focuses, if the target country is a player and has successfully raised their Trade Influence high enough to enable the NL to take it.
+- ai will care more about non-capital areas if its capital is safe
+- Ai invasion scoring now looks at particular invasion point or best score for areas within controller area of target rather than... first province
+- US Ai should no longer pick ideology advisors in historical mode
+- Told AI not to blow up the Suez Canal if there are no enemy troops nearby
+- improved ai GER & ITA strategy against SOV that shares the borders
+- Made AI creates the order groups at the same time it creates the army within to help reduce shuffling of divisions along the frontline
+- Fixed lingering numeric overflow in AI equipment calculation during multiplication of large numbers.
+- fixed ai reordering its army groups when the front flips
+- fixed unit shuffling when units are assigned to a front that only borders a lake
+- Improved AI acceptance of fuel lend lease for GiE.
+- Soviet AI should new try to manage its defense priority strategy better
+- France will now never fight remilitarization of the Rhineland on historical mode
+- Ensured AI will not unintentionally end up in ideological civil wars due to political events fired at high ideology support.
+
+
+##################################
+# Modding
+##################################
+- gfx files are reloadable now (!!!!!!)
+- added some temp variables for peace conf triggers
+- added global.majors & global.countries game variable arrays
+- fixed attack_level & defense_level triggers not working
+- New on_action: assume_faction_leadership
+- Added on_war and on_peace on_actions being called when starting or ending any war relation
+- new effect: set_popularities
+- Portrait pools are now appended for countries instead of replaced
+- is_core_of now always checks original tags
+- Updated the is_exiled_leader_from trigger to allow the same basic scope targets as has_attache_from.
+- In debug mode the detailed side panels of naval battles will show a very rough cost comparison of losses
+- Fixed some scope issues with meta_trigger and for_each_scope trigger/effects
+- Fixed scripted UI AIs being disabled
+
+
+##################################
+# Database
+##################################
+- tweaked Italian name list for ships
+- Fixed an issue where Imperial Germany could not give names to its submarines
+- fixed some inconsistencies in ship naming in the non-MtG 1936 Italy naval OoB
+- enabled Chinese naming lists for ships for all Chinese factions
+- cleaned up some scripts in New Zealand
+
+
+##################################
+# Stability & Performance
+##################################
+- Updated the automatic crash reporter 
+- Improved performance of a number of scripted triggers based on the work of Antoni Baum (Yard1)
+- Stopped triggering the OS at game start about the game not responding to user inputs
+- CTD fix when triyng to puppet a nation that is at war
+- Circular Reference CTD for relative_position_id in national focus fixed
+- You can now scuttle a carrier without crashing the game
+- Fixed crashes with meta_trigger and meta_effect when they were created in multiple threads simultaneously.
+
+
+
 ################################################################
 ########            Patch 1.6.2 "Ironclad"              ########
 ################################################################

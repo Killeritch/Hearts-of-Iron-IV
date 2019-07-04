@@ -54,31 +54,14 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-			banned = yes
-		}
-
-		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
-		}
-
-		neutrality = {
-			popularity = 20
-		}
-	}
-	
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	fascism = 80
+	neutrality = 20
 }
 
 create_country_leader = {
@@ -90,7 +73,4 @@ create_country_leader = {
 	traits = {
 		spirit_of_genghis
 	}
-}
-
-1939.1.1 = {
 }

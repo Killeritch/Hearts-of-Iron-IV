@@ -1,0 +1,167 @@
+## Background colors
+
+template GruvboxDarkGray {
+	color = { 0.57255 0.51373 0.4549 1 }
+}
+
+template GruvboxDarkRed {
+	color = { 0.8 0.14118 0.11373 1 }
+}
+
+template GruvboxDarkGreen {
+	color = { 0.59608 0.59216 0.10196 1 }
+}
+
+template GruvboxDarkYellow {
+	color = { 0.84314 0.6 0.12941 1 }
+}
+
+template GruvboxDarkBlue {
+	color = { 0.27059 0.52157 0.53333 1 }
+}
+
+template GruvboxDarkPurple {
+	color = { 0.69412 0.38431 0.52549 1 }
+}
+
+template GruvboxDarkAqua {
+	color = { 0.40784 0.61569 0.41569 1 }
+}
+
+template GruvboxDarkOrange {
+	color = { 0.83922 0.36471 0.0549 1 }
+}
+
+template GruvboxLightGray {
+	color = { 0.65882 0.6 0.51765 1 }
+}
+
+template GruvboxLightRed {
+	color = { 0.98431 0.28627 0.20392 1 }
+}
+
+template GruvboxLightGreen {
+	color = { 0.72157 0.73333 0.14902 1 }
+}
+
+template GruvboxLightYellow {
+	color = { 0.98039 0.74118 0.18431 1 }
+}
+
+template GruvboxLightBlue {
+	color = { 0.51373 0.64706 0.59608 1 }
+}
+
+template GruvboxLightPurple {
+	color = { 0.82745 0.52549 0.60784 1 }
+}
+
+template GruvboxLightAqua {
+	color = { 0.55686 0.75294 0.48627 1 }
+}
+
+template GruvboxLightOrange {
+	color = { 0.99608 0.50200 0.09803 1 }
+}
+
+template GruvboxForeground {
+	color = { 0.92157 0.85882 0.69803 1 }
+}
+
+template GruvboxBackground0 {
+	color = { 0.156 0.156 0.156 1 }
+}
+
+template GruvboxBackground1 {
+	color = { 0.235 0.219 0.211 1 }
+}
+
+template GruvboxBackground2 {
+	color = { 0.313 0.286 0.270 1 }
+}
+
+template GruvboxBackground3 {
+	color = { 0.4 0.360 0.329 1 }
+}
+
+template GruvboxBackground4 {
+	color = { 0.486 0.435 0.392 1 }
+}
+
+template GruvboxBackground {
+	using = GruvboxBackground0
+}
+
+## Font Colors
+
+template GruvboxDarkGrayFont {
+	fontcolor = { 0.57255 0.51373 0.4549 1 }
+}
+
+template GruvboxDarkRedFont {
+	fontcolor = { 0.8 0.14118 0.11373 1 }
+}
+
+template GruvboxDarkGreenFont {
+	fontcolor = { 0.59608 0.59216 0.10196 1 }
+}
+
+template GruvboxDarkYellowFont {
+	fontcolor = { 0.84314 0.6 0.12941 1 }
+}
+
+template GruvboxDarkBlueFont {
+	fontcolor = { 0.27059 0.52157 0.53333 1 }
+}
+
+template GruvboxDarkPurpleFont {
+	fontcolor = { 0.69412 0.38431 0.52549 1 }
+}
+
+template GruvboxDarkAquaFont {
+	fontcolor = { 0.40784 0.61569 0.41569 1 }
+}
+
+template GruvboxDarkOrangeFont {
+	fontcolor = { 0.83922 0.36471 0.0549 1 }
+}
+
+template GruvboxLightGrayFont {
+	fontcolor = { 0.65882 0.6 0.51765 1 }
+}
+
+template GruvboxLightRedFont {
+	fontcolor = { 0.98431 0.28627 0.20392 1 }
+}
+
+template GruvboxLightGreenFont {
+	fontcolor = { 0.72157 0.73333 0.14902 1 }
+}
+
+template GruvboxLightYellowFont {
+	fontcolor = { 0.98039 0.74118 0.18431 1 }
+}
+
+template GruvboxLightBlueFont {
+	fontcolor = { 0.51373 0.64706 0.59608 1 }
+}
+
+template GruvboxLightPurpleFont {
+	fontcolor = { 0.82745 0.52549 0.60784 1 }
+}
+
+template GruvboxLightAquaFont {
+	fontcolor = { 0.55686 0.75294 0.48627 1 }
+}
+
+template GruvboxLightOrangeFont {
+	fontcolor = { 0.99608 0.50200 0.09803 1 }
+}
+
+template GruvboxForegroundFont {
+	fontcolor = { 0.92157 0.85882 0.69803 1 }
+}
+
+template GruvboxBackgroundFont {
+	fontcolor = { 0.15686 0.15686 0.15686 1 }
+}

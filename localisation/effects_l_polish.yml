@@ -245,3 +245,4 @@
  EFFECT_SET_FUEL_RATIO:0 "Ustaw współczynnik paliwa na $VAL|%.0H$."
  EFFECT_END_EXILE:0 "Przywróć: $COUNTRY|H$"
  EFFECT_INHERIT_TECHNOLOGY:0 "Otrzymasz te same technologie co: $COUNTRY|H$"
+ EFFECT_SET_POPULARITIES:0 "Popularność partii zmieni się:"

@@ -1,0 +1,101 @@
+setting = {
+	name = "quality"
+	gui_name = "SETTING_QUALITY"
+	category = "Graphics"
+	enum_entry = {
+		name = "low"
+		gui_name = "OPTION_LOW"
+	}
+	enum_entry = {
+		name = "medium"
+		gui_name = "OPTION_MEDIUM"
+	}
+	enum_entry = {
+		name = "high"
+		gui_name = "OPTION_HIGH"
+	}
+	setting = {
+		name = "multi_sampling"
+		category = "Graphics"
+		version=0
+		"low" = {
+			value = "DISABLED"
+		}
+		"medium" = {
+			value = "x2"
+		}
+		"high" = {
+			value = "x4"
+		}
+	}
+	setting = {
+		name = "anisotropic_filtering"
+		category = "Graphics"
+		version=0
+		"low" = {
+			value = "DISABLED"
+		}
+		"medium" = {
+			value = "x2"
+		}
+		"high" = {
+			value = "x4"
+		}
+	}
+	setting = {
+		name = "refraction_enabled"
+		category = "Graphics"
+		version=0
+		"low" = {
+			enabled=no
+		}
+		"medium" = {
+			enabled=yes
+		}
+		"high" = {
+			enabled=yes
+		}
+	}
+	setting = {
+		name = "refraction_quality"
+		category = "Graphics"
+		version=0
+		"low" = {
+			value="low"
+		}
+		"medium" = {
+			value="low"
+		}
+		"high" = {
+			value="high"
+		}
+	}
+	setting = {
+        name = "shadowmap_enabled"
+        category = "Graphics"
+		version=1
+        "low" = {
+            enabled=no
+        }
+		"medium" = {
+			enabled=yes
+		}
+        "high" = {
+            enabled=yes
+        }		
+    }
+	setting = {
+		name = "shadowmap_resolution"
+		category = "Graphics"
+		version=1
+		"low" = {
+			value="1024x1024"
+		}
+		"medium" = {
+			value="1024x1024"
+		}
+		"high" = {
+			value="2048x2048"
+		}
+	}
+}

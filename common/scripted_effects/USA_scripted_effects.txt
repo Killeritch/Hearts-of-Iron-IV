@@ -297,7 +297,7 @@ USA_return_majority = { #for communist/fascist
 	round_variable = goal_value_senators
 	if = {
 		limit = {
-			check_variable = { var = senators_support value = goal_value_senators compare = less_than } #shouldn't punish player
+			check_variable = { senators_support < goal_value_senators } #shouldn't punish player
 		}
 		set_variable = { var = senators_support value = goal_value_senators }
 	}
@@ -306,7 +306,7 @@ USA_return_majority = { #for communist/fascist
 	round_variable = goal_value_representatives
 	if = {
 		limit = {
-			check_variable = { var = representatives_support value = goal_value_representatives compare = less_than } #shouldn't punish player
+			check_variable = { representatives_support < goal_value_representatives } #shouldn't punish player
 		}
 		set_variable = { var = representatives_support value = goal_value_representatives }
 	}

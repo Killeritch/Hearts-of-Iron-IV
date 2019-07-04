@@ -168,6 +168,7 @@
  ACHIEVEMENTS_DIFFICULTY:0 "Difficulté normale ou vétéran"
  ACHIEVEMENTS_OK:0 "§HPossibilité d'obtenir des Succès Steam !§!"
  ACHIEVEMENTS_NOT_OK:1 "§RImpossible d'obtenir les succès Steam.§!"
+ ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RImpossible d'obtenir la plupart des succès Steam.§!"
  diff_strong_ai_generic:0 "I.A. plus forte"
  custom_diff_strong_ger:0 "Renforcer l'Allemagne"
  custom_diff_strong_ita:0 "Renforcer l'Italie"
@@ -208,4 +209,3 @@
 # FE_DIFFICULTY_MODIFIER_TOOLTIP:0 "\n\nJoueur :\n$PLAYERMOD$\n\nIA :\n$AIMOD$"
 # ALLOW_HOTJOIN:0 "Autoriser les joueurs à utiliser la fonction Hotjoin"
 # ALLOW_COOP:0 "Autoriser les joueurs à utiliser le même pays"
- ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RImpossible d'obtenir la plupart des succès Steam.§!"

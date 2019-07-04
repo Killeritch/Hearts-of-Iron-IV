@@ -1,6 +1,6 @@
 ﻿l_french:
- MODIFIER_TECH_PREFIX:0 "£tech_mod "
- MODIFIER_POLITICS_PREFIX:0 "£pol_idea "
+ MODIFIER_TECH_PREFIX:0 "£tech_mod£"
+ MODIFIER_POLITICS_PREFIX:0 "£pol_idea£"
  MODIFIER_DECISION_PREFIX:1 "£decision_icon_small£"
  MODIFIER_MISSION_PREFIX:1 "£decision_icon_small£"
  MOD_DAYS:0 "jours"
@@ -176,7 +176,6 @@
  MODIFIER_NAVY_ORG_FACTOR:0 "Organisation en mer"
  MODIFIER_AIR_ORG:0 "Organisation aérienne"
  MODIFIER_AIR_ORG_FACTOR:0 "Organisation aérienne"
- MODIFIER_TRAINING_TIME_AIR_FACTOR:0 "Durée d'entraînement de l'armée de l'air"
  MODIFIER_TRAINING_TIME_AIR:0 "Durée d'entraînement de l'armée de l'air"
  MODIFIER_AIR_TRAINING_XP_FACTOR:1 "Gain d'exp. aérienne par l'entraînement"
  MODIFIER_AIR_MISSION_XP_FACTOR:1 "Gain d'exp. aérienne par les missions"
@@ -340,9 +339,9 @@
  MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_DESC:0 "Productivité maximale pouvant être atteinte en produisant en masse des objets sur une seule ligne de production."
  MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR:0 "Productivité de base "
  MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR_DESC:0 "Productivité au lancement d'une nouvelle ligne de production."
- MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR:0 "£prod_eff_cap Limite de productivité "
- MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR_DESC:0 "La £prod_eff_cap limite de productivité détermine la £prod_eff productivité maximale. Ce plafond peut être élevé grâce aux £tech_mod technologies."
- MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR:0 "Gain de £prod_eff productivité"
+ MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR:0 "£prod_eff_cap£Limite de productivité "
+ MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR_DESC:0 "La £prod_eff_cap£limite de productivité détermine la £prod_eff£productivité maximale. Ce plafond peut être élevé grâce aux £tech_mod£technologies."
+ MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR:0 "Gain de £prod_eff£productivité"
  MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR_DESC:0 "Modifie le gain de productivité obtenu en produisant en masse des objets sur la même ligne de production."
  MODIFIER_AMPHIBIOUS_INVASION:0 "Vitesse d'invasion amphibie"
  MODIFIER_AMPHIBIOUS_INVASION_DESC:0 "Rapidité de débarquement sur le rivage lors des invasions navales."
@@ -876,6 +875,8 @@
  modifier_experience_gain_submarine_combat_factor:1 "Gain d'expérience des sous-marins au combat"
  MODIFIER_ARMOR:0 "Blindage"
  MODIFIER_BREAKTHROUGH:0 "Percée"
+ carrier_experience_bonus_max:1 "Expérience des porte-avions"
+ carrier_experience_malus_min:1 "Expérience des porte-avions"
 
 
 
@@ -943,5 +944,3 @@
 # MODIFIER_PRODUCTION_SPEED_NUCLEAR_REACTOR_FACTOR_DESC:0 "Modifie la vitesse de construction d'un réacteur nucléaire."
 # MODIFIER_RESEARCH_SPEED_FACTOR_DESC:0 "Réduit le délai nécessaire à l'étude d'une nouvelle technologie."
 # MODIFIER_DECLARE_WAR_TENSION_LIMIT:0 "Limite de tension pour déclarer la guerre"
- carrier_experience_bonus_max:0 "Expérience du porte-avion"
- carrier_experience_malus_min:0 "Expérience du porte-avion"

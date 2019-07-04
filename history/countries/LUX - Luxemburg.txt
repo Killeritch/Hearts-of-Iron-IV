@@ -62,44 +62,19 @@ set_stability = 0.8
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 92
-		}
-
-		fascism = {
-			popularity = 3
-		}
-		
-		communism = {
-			popularity = 5
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1934.6.3"
 	election_frequency = 36
 	elections_allowed = yes
 }
+set_popularities = {
+	democratic = 92
+	fascism = 3
+	communism = 5
+}
 
 1939.1.1 = {
 	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 92
-			}
-
-			fascism = {
-				popularity = 3
-			}
-			
-			communism = {
-				popularity = 5
-			}
-		}
-		
 		ruling_party = democratic
 		last_election = "1937.6.6"
 		election_frequency = 36

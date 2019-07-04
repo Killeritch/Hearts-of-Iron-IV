@@ -1,0 +1,401 @@
+types "ToolsSaveDialog" {
+	type tools_save_dialog_table = vbox {
+		minimumsize = { 640 -1 }
+
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = expanding
+
+		vbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+
+				datamodel = "[SaveDialog.Groups]"
+				spacing = 8
+
+				item = {
+					vbox = {
+						margin = { 8 8 }
+
+						background = {
+							margin_bottom = 6
+							margin_right = 6
+							texture = "gfx/editor_gui/editor_dropdown_list.dds"
+							spriteType = CorneredStretched
+							spriteborder = { 6 6 }
+							spriteborder_right = 8
+							spriteborder_bottom = 8
+							shaderfile = "gfx/FX/pdxgui_default.shader"
+						}
+
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = shrinking
+
+						hbox = {
+							visible = "[NotEqualTo_int32(SaveDialog.SavableCount, '(int32)1')]"
+
+							spacing = 4
+
+							minimumsize = { 0 32 }
+							maximumsize = { -1 32 }
+
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = preferred
+
+							button = {
+								size = { 416 28 }
+								onclick = "[SavableGroup.ToggleExpanded]"
+
+								layoutpolicy_horizontal = fixed
+								layoutpolicy_vertical = preferred
+
+								hbox = {
+									spacing = 4
+
+									layoutpolicy_horizontal = preferred
+									layoutpolicy_vertical = preferred
+
+									widget = {
+										size = { 16 32 }
+
+										checkbutton = {
+											parentanchor = hcenter|vcenter
+											gfxtype = checkbuttongfx
+											shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+											texture = "gfx/tools/expand_icon.dds"
+											framesize = { 16 16 }
+											size = { 8 8 }
+											checked = "[SavableGroup.IsExpanded]"
+											onclick = "[SavableGroup.ToggleExpanded]"
+											layoutpolicy_horizontal = preferred
+											layoutpolicy_vertical = preferred
+										}
+									}
+
+									widget = {
+										size = { 20 32 }
+
+										checkbutton = {
+											using = editor_checkbutton
+											parentanchor = left|vcenter
+
+											inherit_visual_state = no
+											checked = "[SavableGroup.IsModified]"
+											onclick = "[SavableGroup.SetModified(Not(SavableGroup.IsModified))]"
+
+											icon = {
+												visible = "[SavableGroup.IsModifiedIndeterminable]"
+												position = { 0 1 }
+												parentanchor = vcenter|hcenter
+												size = { 14 14 }
+												texture = "gfx/editor_gui/editor_icon_removeproperty.dds"
+											}
+
+											tooltip = "Save all"
+											tooltipwidget = {
+												using = editor_tooltip
+											}
+										}
+									}
+
+									editor_textbox = {
+										size = { 300 28 }
+										align = nobaseline
+										text = "[SavableGroup.Title]"
+										elide = right
+										fontweight = bold
+										layoutpolicy_horizontal = fixed
+										layoutpolicy_vertical = preferred
+									}
+
+									widget = {
+										size = { 32 32 }
+										layoutpolicy_horizontal = fixed
+										layoutpolicy_vertical = fixed
+
+										icon = {
+											parentanchor = vcenter|hcenter
+											size = { 24 24 }
+											visible = "[SavableGroup.HasWarning]"
+											texture = "gfx/tools/material/warning_icon.png"
+											using = GruvboxLightYellow
+											tooltip = "One or more items have warnings"
+
+											tooltipwidget = {
+												using = editor_tooltip
+											}
+										}
+									}
+
+									widget = {
+										size = { 32 32 }
+										layoutpolicy_horizontal = fixed
+										layoutpolicy_vertical = fixed
+
+										icon = {
+											parentanchor = vcenter|hcenter
+											size = { 24 24 }
+											visible = "[SavableGroup.HasError]"
+											texture = "gfx/tools/material/error_icon.png"
+											using = GruvboxLightRed
+											tooltip = "One or more items has errors"
+
+											tooltipwidget = {
+												using = editor_tooltip
+											}
+										}
+									}
+								}
+							}
+
+							dockable_button = {
+								size = { 32 32 }
+								icon = {
+									parentanchor = hcenter|vcenter
+									texture = "gfx/editor_gui/editor_icon_revert.dds"
+								}
+								tooltip = "Revert location"
+								onclick = "[SavableGroup.RevertLocation]"
+								enabled = "[SavableGroup.IsRevertible]"
+							}
+
+							dockable_button = {
+								minimumsize = { 224 32 }
+								tooltip = "[SavableGroup.Location]"
+								onclick = "[SaveDialog.FindGroupLocation(PdxGuiWidget.Self, SavableGroup.AccessSelf)]"
+
+								layoutpolicy_vertical = fixed
+								layoutpolicy_horizontal = expanding
+
+								hbox = {
+									margin = { 8 4 }
+
+									spacing = 8
+
+									editor_textbox = {
+										fontsize = 11
+										text = "[SavableGroup.Location]"
+										elide = middle
+										align = hcenter|nobaseline
+
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+									}
+
+									icon = {
+										size = { 1 8 }
+										texture = "gfx/editor_gui/editor_white_pixel.png"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = fixed
+										using = GruvboxBackground2
+									}
+
+									widget = {
+										icon = {
+											parentanchor = vcenter|hcenter
+											size = { 8 8 }
+											texture = "gfx/tools/expand_icon.dds"
+											framesize = { 16 16 }
+											frame = 2
+											using = GruvboxForeground
+										}
+
+										size = { 8 16 }
+
+										layoutpolicy_vertical = fixed
+										layoutpolicy_horizontal = fixed
+									}
+								}
+							}
+						}
+
+						scrollarea = {
+							visible = "[SavableGroup.IsExpanded]"
+
+							layoutpolicy_horizontal = expanding
+							layoutpolicy_vertical = preferred
+							autoresizescrollarea = yes
+							#autoresizeviewport = yes
+							#preferscrollwidgetsize = yes
+
+							scrollbarpolicy_horizontal = always_off
+
+							maximumsize = { -1 128 }
+
+							scrollbar_vertical = {
+								using = editor_vertical_scrollbar
+							}
+
+							scrollbar_horizontal = {
+								using = editor_horizontal_scrollbar
+							}
+
+							scrollbaralign_vertical = right
+
+							viewportwidget = {
+								widget = {
+									size = { 100% 100% }
+								}
+							}
+
+							scrollwidget = {
+								vbox = {
+									margin_top = 4
+
+									datamodel = "[SavableGroup.Savables]"
+
+									layoutpolicy_horizontal = expanding
+									layoutpolicy_vertical = preferred
+
+									spacing = 4
+
+									item = {
+										hbox = {
+											spacing = 4
+
+											minimumsize = { 0 32 }
+											maximumsize = { -1 32 }
+											layoutpolicy_horizontal = expanding
+											layoutpolicy_vertical = preferred
+
+											widget = {
+												visible = "[NotEqualTo_int32(SaveDialog.SavableCount, '(int32)1')]"
+												size = { 16 32 }
+											}
+
+											widget = {
+												size = { 20 32 }
+
+												checkbutton = {
+													parentanchor = left|vcenter
+													using = editor_checkbutton
+													checked = "[Savable.IsModified]"
+													onclick = "[Savable.SetModified(Not(Savable.IsModified))]"
+													tooltip = "Save"
+
+													tooltipwidget = {
+														using = editor_tooltip
+													}
+												}
+											}
+
+											editor_textinput = {
+												#using = property_editbox
+												text = "[Savable.Filename]"
+												size = { 300 28 }
+												oneditingfinished = "[Savable.SetFilename]"
+												enabled = "[Savable.IsFilenameModifiable]"
+											}
+
+											widget = {
+												size = { 32 32 }
+
+												icon = {
+													parentanchor = vcenter|hcenter
+													size = { 24 24 }
+													visible = "[Savable.HasWarning]"
+													texture = "gfx/tools/material/warning_icon.png"
+													using = GruvboxLightYellow
+													tooltip = "[Savable.Warning]"
+
+													tooltipwidget = {
+														using = editor_tooltip
+													}
+												}
+											}
+
+											widget = {
+												size = { 32 32 }
+
+												icon = {
+													parentanchor = vcenter|hcenter
+													size = { 24 24 }
+													visible = "[Savable.HasError]"
+													texture = "gfx/tools/material/error_icon.png"
+													using = GruvboxLightRed
+													tooltip = "[Savable.Error]"
+
+													tooltipwidget = {
+														using = editor_tooltip
+													}
+												}
+											}
+
+											dockable_button = {
+												size = { 32 32 }
+												icon = {
+													parentanchor = hcenter|vcenter
+													texture = "gfx/editor_gui/editor_icon_revert.dds"
+												}
+												tooltip = "Revert location"
+												onclick = "[Savable.RevertLocation]"
+												enabled = "[Savable.IsRevertible]"
+											}
+
+											dockable_button = {
+												minimumsize = { 224 32 }
+												tooltip = "[Savable.LocationTooltip]"
+												onclick = "[SaveDialog.FindLocation(PdxGuiWidget.Self, Savable.AccessSelf)]"
+
+												layoutpolicy_horizontal = expanding
+												layoutpolicy_vertical = preferred
+
+												hbox = {
+													margin = { 8 4 }
+
+													spacing = 8
+
+													editor_textbox = {
+														fontsize = 11
+														text = "[Savable.Location]"
+														elide = middle
+														align = hcenter|nobaseline
+
+														layoutpolicy_vertical = expanding
+														layoutpolicy_horizontal = expanding
+													}
+
+													icon = {
+														size = { 1 8 }
+														texture = "gfx/editor_gui/editor_white_pixel.png"
+														layoutpolicy_vertical = expanding
+														layoutpolicy_horizontal = fixed
+														using = GruvboxBackground2
+													}
+
+													widget = {
+														icon = {
+															parentanchor = vcenter|hcenter
+															size = { 8 8 }
+															texture = "gfx/tools/expand_icon.dds"
+															framesize = { 16 16 }
+															frame = 2
+															using = GruvboxForeground
+														}
+
+														size = { 8 16 }
+
+														layoutpolicy_vertical = fixed
+														layoutpolicy_horizontal = fixed
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			vbox = {
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+			}
+		}
+	}
+}

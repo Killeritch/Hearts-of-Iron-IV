@@ -1,0 +1,222 @@
+types ToolsProperyTypes
+{
+	type tools_property = flowcontainer {
+		tooltipwidget = {
+			using = dockable_tooltip
+		}
+
+		spacing = 4
+		
+		layoutpolicy_horizontal = preferred
+		layoutpolicy_vertical = preferred
+
+		tooltip = "[ToolProperty.GetTooltip]"
+		tooltip_widgetanchor = bottom|left
+
+		block "content"
+		{
+		}
+	}
+	
+	type tools_property_bool = tools_property {
+		blockoverride "content"
+		{
+			checkbutton = {
+				gfxtype = checkbuttongfx
+				shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+				texture = "gfx/editor_gui/editor_checkbox.dds"
+				framesize = { 16 16 }
+				checked = "[ToolPropertyBool.IsEnabled]"
+				onclick = "[ToolPropertyBool.SetEnabled(Not(ToolPropertyBool.IsEnabled))]"
+			}
+		}
+	}
+
+	type tools_property_string = tools_property {
+		blockoverride "content"
+		{
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyString.GetString]"
+				oneditingfinished = "[ToolPropertyString.SetString]"
+			}
+		}
+	}
+	
+	type tools_property_float = tools_property {
+		blockoverride "content"
+		{
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyFloat.GetFloat]"
+				oneditingfinished = "[ToolPropertyFloat.SetFloat]"
+			}
+		}
+	}
+	
+	type tools_property_int = tools_property {
+		blockoverride "content"
+		{
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyInt.GetInt]"
+				oneditingfinished = "[ToolPropertyInt.SetInt]"
+			}
+		}
+	}
+	
+	type tools_property_uint = tools_property {
+		blockoverride "content"
+		{
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyUint.GetUint]"
+				oneditingfinished = "[ToolPropertyUint.SetUint]"
+			}
+		}
+	}
+	
+	type tools_property_color = tools_property {
+		blockoverride "content"
+		{
+			colorpicker = {
+				color = "[ToolPropertyColor.GetColor]"
+				#oncoloredited = "[ToolPropertyColor.SetColor]"
+				oneditingfinished = "[ToolPropertyColor.SetColor]"
+			}
+		}
+	}
+	
+	type tools_property_curve = tools_property {
+		blockoverride "content"
+		{
+			editor_toolbar_button = {
+				text = "Edit curve"
+				size = { 64 20 }
+				onclick = "[ToolPropertyCurve.OpenCurveEditor]"
+				enabled = "[Not(ToolPropertyCurve.HasCurveEditor)]"
+			}
+		}
+	}
+	
+	type tools_property_ccolor = tools_property {
+		blockoverride "content"
+		{
+			colorpicker = {
+				color = "[ToolPropertyCColor.GetCColor]"
+				#oncoloredited = "[ToolPropertyCColor.SetColor]"
+				oneditingfinished = "[ToolPropertyCColor.SetCColor]"
+			}
+		}
+	}
+	
+	type tools_property_vec3f = tools_property {
+		blockoverride "content"
+		{
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyVec3f.GetX]"
+				oneditingfinished = "[ToolPropertyVec3f.SetX]"
+			}
+			
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyVec3f.GetY]"
+				oneditingfinished = "[ToolPropertyVec3f.SetY]"
+			}
+			
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyVec3f.GetZ]"
+				oneditingfinished = "[ToolPropertyVec3f.SetZ]"
+			}
+		}
+	}
+	
+	type tools_property_vec2f = tools_property {
+		blockoverride "content"
+		{
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyVec2f.GetX]"
+				oneditingfinished = "[ToolPropertyVec2f.SetX]"
+			}
+			
+			editor_textinput = {
+				size = { 48 16 }
+				fontsize = 10
+				text = "[ToolPropertyVec2f.GetY]"
+				oneditingfinished = "[ToolPropertyVec2f.SetY]"
+			}
+		}
+	}
+	
+	type editor_property_list = flowcontainer {
+		layoutpolicy_horizontal = preferred
+		layoutpolicy_vertical = preferred
+		
+		checkbutton = {
+			checked = "[ToolPropertyList.IsExpanded]"
+			onclick = "[ToolPropertyList.SetExpanded(Not(ToolPropertyList.IsExpanded))]"
+			texture = "gfx/editor_gui/editor_frame.dds"
+			layoutpolicy_horizontal = preferred
+			
+			spriteborder = { 5 5 }
+			spriteType = CorneredStretched
+			framesize = { 16 16 }
+			
+			hbox = {
+				margin_left = 5
+				margin_bottom = 2
+				margin_right = 5
+				
+				editor_textbox = {
+					text = "#BOLD;COLOR:{0.72,0.72,0.15} [ToolPropertyList.GetLabel] #!"
+					fontsize = 10
+					autoresize = yes
+				}
+				
+				widget = {
+					layoutpolicy_horizontal = preferred
+				}
+				
+				checkbutton = {
+					gfxtype = checkbuttongfx
+					shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+					texture = "gfx/editor_gui/editor_expand_checkbox.dds"
+					framesize = { 16 16 }
+					size = { 8 8 }
+					checked = "[ToolPropertyList.IsExpanded]"
+					onclick = "[ToolPropertyList.SetExpanded(Not(ToolPropertyList.IsExpanded))]"
+				}
+			}
+		}
+		
+		flowcontainer = {
+			name = "list"
+			margin_top = 2
+			spacing = 2
+			layoutpolicy_horizontal = preferred
+			layoutpolicy_vertical = preferred
+			visible = "[ToolPropertyList.IsExpanded]"
+		}
+	}
+	
+	type editor_property_categories = flowcontainer {
+		spacing = 4
+		
+		layoutpolicy_horizontal = preferred
+	}
+	
+	type editor_dockable_properties = vbox {
+		editor_property_categories = {}
+	}
+}

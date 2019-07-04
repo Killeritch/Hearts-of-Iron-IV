@@ -129,3 +129,4 @@
  FUEL_LOW_PRIORITY_DESC:0 "Niedrige Treibstoffpriorität"
  FUEL_MEDIUM_PRIORITY_DESC:0 "Mittlere Treibstoffpriorität"
  FUEL_HIGH_PRIORITY_DESC:0 "Hohe Treibstoffpriorität"
+ LOGISTICS_FUEL_PERCENTAGE:0 "§H$VALUE|0$%§! des Treibstoffbedarfs gedeckt."

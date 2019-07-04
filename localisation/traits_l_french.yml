@@ -418,7 +418,7 @@
  ABILITY_DESC:0 "$NAME|H$ : $DETAILS$"
  TRAIT_NOT_ASSIGNABLE:1 "Les traits gagnés ne peuvent être acquis que par l'expérience ou par des événements.\n"
  TRAIT_ASSIGNABLE_TO_UNIT_MARSHALS:0 "Les traits propres aux maréchaux ne peuvent être alloués qu'à eux.\n"
- ALREADY_HAS_MAX_ALLOWED_ASSIGNABLE_TRAITS:0 "Ce général a déjà autant de traits qu'il peut en avoir.\n"
+ ALREADY_HAS_MAX_ALLOWED_ASSIGNABLE_TRAITS:0 "Ce commandant a déjà autant de traits qu'il peut en avoir.\n"
  TRAIT_NOT_ALLOWED:0 "Ce trait n'est pas autorisé.\n"
  TRAIT_NO_PREREQUISITES:0 "Tous les prérequis ne sont pas vérifiés.\n"
  MUTUALLY_EXCLUSIVE_TRAIT_ALREADY_ASSIGNED:0 "Un trait incompatible a déjà été assigné à ce commandant.\n"

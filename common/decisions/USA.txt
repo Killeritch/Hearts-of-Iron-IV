@@ -856,6 +856,15 @@ foreign_support = {
 			}
 		}
 
+		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
+
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = USA_limited_intervention
+				has_completed_focus = USA_lend_lease_act
+			}
+		}
+
 		target_trigger = {
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
@@ -865,10 +874,6 @@ foreign_support = {
 
 		visible = {
 			has_government = democratic
-			OR = {
-				has_completed_focus = USA_limited_intervention
-				has_completed_focus = USA_lend_lease_act
-			}
 			FROM = {
 				has_completed_focus = CHI_mission_to_the_us
 				has_war_with = JAP
@@ -941,6 +946,8 @@ foreign_support = {
 				has_war_with = JAP
 			}
 		}
+
+		targets = { CHI PRC GXC YUN SHX XSM SIK D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 
 		target_trigger = {
 			FROM = {
@@ -1379,13 +1386,16 @@ foreign_politics = {
 				has_war_with = SOV #commie on commie violence
 			}
 			has_equipment = { infantry_equipment > 999 }
-			has_completed_focus = USA_anti_bolshevist_aid
 			FROM = {
 				has_war_with = SOV
 				not = {
 					has_war_with = ROOT
 				}
 			}
+		}
+
+		target_root_trigger = {
+			has_completed_focus = USA_anti_bolshevist_aid
 		}
 
 		target_trigger = {
@@ -1751,8 +1761,7 @@ USA_war_plans = {
 	USA_execute_war_plan_gray = {
 		icon = generic_operation
 		available = {
-			any_other_country = {
-				has_war_with = USA
+			any_enemy_country = {
 				capital_scope = {
 					OR = {
 						is_on_continent = south_america

@@ -53,6 +53,7 @@
  ORDER_CONNECT_CANT_CONNECT_HERE:0 "§RНаведите курсор на приказ, к которому можно присоединиться.§!"
  EDIT_MODE_CLICK_TO_EDIT_INVASION:0 "\n§GЩелкните§!, чтобы изменить это §Yвторжение с моря§!"
  EDIT_MODE_CLICK_TO_EDIT_PARADROP:0 "\n§GЩелкните§!, чтобы изменить этот §Yприказ о десантировании§!"
+ EDIT_MODE_CLICK_TO_REORDER:0 "\n§GЩелкните§!, чтобы поменять порядок §Hармий§! вдоль линии фронта."
  UNITS_ASSIGNED_TO_ORDER_HEADER:0 "§HДивизии, назначенные на этот приказ:§!\n"
  NO_UNITS_ASSIGNED_TO_ORDER:0 "§RБоевые единицы не назначены на этот приказ.§!"
  ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Выберите полную группу армий. §GCtrl + щелчок§!, чтобы назначить все части без приказов армии на этот приказ."

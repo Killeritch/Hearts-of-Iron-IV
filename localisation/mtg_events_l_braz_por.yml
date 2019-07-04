@@ -1497,6 +1497,6 @@
  mtg_netherlands.79.t:0 "[From.GetName] Rejeita Federação"
  mtg_netherlands.79.d:0 "Representantes do governo [From.GetAdjective] nos informaram que atualmente não veem a necessidade de estados unificados nos Países Baixos. Eles esperam ansiosos por dar continuidade em sua cooperação conosco, porém mantendo total soberania."
  mtg_news.64.t:0 "Países Baixos se Unem"
- mtg_news.64.desc:0 "Citando severas ameaças externas à sua segurança nacional, os governos dos Países Baixos anunciaram a unificação imediata de seus governos e forças armadas para fortalecer a posição de seus povos. Sob a liderança [From.GetAdjective], investimentos industriais e planejamento militar defensivo agora terão prioridade sobre outros assuntos internos, com o intuito de garantir que a prontidão militar seja suficiente para reagir a qualquer ação que possa ameaçar a soberania do novo estado."
+ mtg_news.64.desc:1 "Citando severas ameaças externas à sua segurança nacional, os governos dos Países Baixos anunciaram a unificação imediata de seus governos e forças armadas para fortalecer a posição de seus povos. Sob a liderança [From.GetOldAdjective], investimentos industriais e planejamento militar defensivo agora terão prioridade sobre outros assuntos internos, com o intuito de garantir que a prontidão militar seja suficiente para reagir a qualquer ação que possa ameaçar a soberania do novo estado."
  mtg_news.64.a:0 "Todos nossos povos estão unidos para defender nossa terra natal."
  mtg_news.64.b:0 "Unidos novamente? Decidam-se!"

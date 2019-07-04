@@ -1,0 +1,212 @@
+types ToolsTypes
+{
+	type tools_dialog_modal = widget {
+		size = { 100% 100% }
+		alwaystransparent = no
+
+		background = {
+			texture = "gfx/editor_gui/editor_white_pixel.png"
+			spriteType = Stretched
+			shaderfile = "gfx/FX/pdxgui_default.shader"
+			color = { 0 0 0 0.5 }
+		}
+	}
+
+	type tools_dialog = window {
+		parentanchor = vcenter|hcenter
+
+		using = dockable_background
+
+		resizable = yes
+		movable = yes
+		alwaystransparent = no
+		tabfocusroot = yes
+		focuspolicy = all
+
+		vbox = {
+			restrictparent_min = yes
+
+			layoutpolicy_horizontal = preferred
+			layoutpolicy_vertical = preferred
+
+			editor_toolbar_layout = {
+				spacing = 0
+				margin_left = 7
+				margin_right = 4
+				alwaystransparent = yes
+				layoutpolicy_horizontal = expanding
+
+				blockoverride "left"
+				{
+					layoutpolicy_horizontal = preferred
+
+					editor_textbox = {
+						name = "title"
+						text = "[ToolDialog.Title]"
+						elide = right
+						fontsize = 12
+						autoresize = yes
+						layoutpolicy_horizontal = preferred
+					}
+
+					widget = {
+						size = { 4 4 }
+						layoutpolicy_horizontal = fixed
+					}
+					
+					widget = {
+						alwaystransparent = yes
+						layoutpolicy_horizontal = expanding
+						size = { 0 5 }
+
+						background = {
+							texture = "gfx/editor_gui/editor_layout_window_title.dds"
+							spriteType = CorneredTiled
+							shaderfile = "gfx/FX/pdxgui_default.shader"
+						}
+					}
+
+					widget = {
+						size = { 4 4 }
+						layoutpolicy_horizontal = fixed
+					}
+					
+					widget = {
+						alwaystransparent = yes
+						layoutpolicy_horizontal = fixed
+						size = { 0 22 }
+					}
+				}
+				
+				blockoverride "right"
+				{
+					margin_left = 4
+
+					editor_button = {
+						name = "close"
+						size = { 16 16 }
+						texture = "gfx/editor_gui/editor_layout_window_close.dds"
+						onclick = [ToolDialog.Cancel]
+						intersectionmask = no
+						shortcut = close_window
+
+						layoutpolicy_horizontal = fixed
+						layoutpolicy_vertical = fixed
+					}
+				}
+			}
+
+			# Window panel
+			vbox = {
+				margin = { 4 4 }
+				margin_top = 0
+				margin_bottom = 5
+				spacing = 4
+
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = expanding
+
+				vbox = {
+					margin = { 8 8 }
+
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					background = {
+						texture = "gfx/editor_gui/editor_layout_window_content.dds"
+						spriteType = CorneredStretched
+						spriteborder = { 5 5 }
+						shaderfile = "gfx/FX/pdxgui_default.shader"
+					}
+
+					# Contents
+					vbox = {
+						name = "contents"
+
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = preferred
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+					}
+				}
+
+				# Buttons
+				hbox = {
+					spacing = 4
+					margin_bottom = 4
+					margin_top = 4
+
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = preferred
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+					}
+
+					datamodel = "[ToolDialog.Buttons]"
+
+					item = {
+						dockable_button = {
+							size = { 64 25 }
+							text = "[ToolDialogButton.Text]"
+							onclick = "[ToolDialogButton.OnClick]"
+							layoutpolicy_horizontal = preferred
+							focuspolicy = all
+						}
+					}
+				}
+			}
+		}
+	}
+
+	type tools_properties_dialog = vbox {
+		name = "properties"
+
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+
+		spacing = 4
+	}
+
+	type tools_message_dialog = hbox {
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+
+		spacing = 8
+
+		icon = {
+			size = { 48 48 }
+			layoutpolicy_horizontal = fixed
+			layoutpolicy_vertical = fixed
+			visible = "[ToolMessageDialog.IsWarning]"
+			texture = "gfx/tools/material/warning_icon.png"
+		}
+
+		icon = {
+			size = { 48 48 }
+			layoutpolicy_horizontal = fixed
+			layoutpolicy_vertical = fixed
+			visible = "[ToolMessageDialog.IsError]"
+			texture = "gfx/tools/material/error_icon.png"
+		}
+
+		icon = {
+			size = { 48 48 }
+			layoutpolicy_horizontal = fixed
+			layoutpolicy_vertical = fixed
+			visible = "[ToolMessageDialog.IsInfo]"
+			texture = "gfx/tools/material/info_icon.png"
+		}
+
+		editor_textbox = {
+			text = "[ToolMessageDialog.Message]"
+			maximumsize = { 320 240 }
+
+			autoresize = yes
+			multiline = yes
+		}
+	}
+}

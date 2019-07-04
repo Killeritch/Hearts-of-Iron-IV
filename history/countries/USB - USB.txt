@@ -128,30 +128,14 @@ set_convoys = 400
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 0
-		}
-
-		neutrality = {
-			popularity = 99
-		}
-
-		fascism = {
-			popularity = 0
-		}
-		
-		communism = {
-			popularity = 1
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	neutrality = 99
+	communism = 1
 }
 
 add_ideas = {
@@ -163,26 +147,7 @@ add_ideas = {
 }
 
 1939.1.1 = {
-
 	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-			}
-			neutrality = {
-				popularity = 99
-			}
-			fascism = {
-				popularity = 0
-			}
-			
-			communism = {
-				popularity = 1
-				#banned = no #default is no
-			}
-		}
-		
 		ruling_party = neutrality
 		last_election = "1936.11.3"
 		election_frequency = 48

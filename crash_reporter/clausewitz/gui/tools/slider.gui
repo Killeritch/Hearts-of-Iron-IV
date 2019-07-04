@@ -1,0 +1,35 @@
+types ToolsTypes
+{
+	# A horizontal slider that can be used to modify floats etc.
+	type editor_slider = scrollbar {
+		direction = horizontal
+
+		track = {
+			using = editor_scrollbar_track
+		}
+		
+		slider = {
+			using = editor_scrollbar_slider
+		}
+		
+		dec_button = {
+			button = {
+				using = editor_scrollbar_button
+				upframe = 9
+				downframe = 10
+				overframe = 11
+				disableframe = 12
+			}
+		}
+		
+		inc_button = {
+			button = {
+				using = editor_scrollbar_button
+				upframe = 13
+				downframe = 14
+				overframe = 15
+				disableframe = 16
+			}
+		}
+	}
+}

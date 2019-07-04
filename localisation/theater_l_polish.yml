@@ -75,3 +75,4 @@
  UNIT_DELETE_SINGLE_ORDER_HINT:0 "\n§GPPM§!, żeby usunąć tylko front grupy armii, nie usuwając frontów armii."
  ASSIGN_UNITS_TO_FALLBACK_AG_ORDER:0 "Wybierz całą grupę armii i wciśnij §GCtrl + LPM§!, żeby przydzielić do tego rozkazu wszystkie jednostki bez rozkazów armii."
  ORDER_PROV_TOOLTIP_DEFENSIVE_LINE_ARMY_GROUP:0 " - §GKliknij§!, by wytyczyć §Ylinię obronną§! wzdłuż całej granicy.\n - §GShift + LPM§!, by wytyczyć §Ylinię obronną§! wzdłuż całej granicy bez linii podarmii.\n - §GPPM§! i przeciągnij kursor, by wytyczyć §Ylinię obronną§! wzdłuż tej granicy.\n - §GShift + PPM§! i przeciągnij kursor, by wytyczyć §Ylinię obronną§! wzdłuż tej granicy bez linii podarmii. "
+ EDIT_MODE_CLICK_TO_REORDER:0 "\n§GKliknij§!, żeby zmienić układ §Harmii§! na linii frontu"

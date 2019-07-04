@@ -197,12 +197,7 @@ PRC_infiltrate_nationalist_areas = {
 
 		complete_effect = {
 			hidden_effect = {
-				random_country = {
-					limit = {						
-						tag = event_target:WTT_current_china_leader
-					}			
-					event_target:WTT_current_china_leader = { country_event = wtt_infiltration.10 }
-				}
+				event_target:WTT_current_china_leader = { country_event = wtt_infiltration.10 }
 			}
 		}
 	
@@ -2334,8 +2329,13 @@ political_actions = {
 			has_soviet_tribute = yes
 		}
 
-		target_trigger = {
+		target_root_trigger = {
 			has_country_flag = WTT_support_from_soviet
+		}
+
+		targets = { SOV }
+
+		target_trigger = {
 			FROM = { tag = SOV }
 		}
 

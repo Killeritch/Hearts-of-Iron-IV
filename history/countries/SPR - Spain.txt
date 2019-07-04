@@ -59,25 +59,15 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 47
-		}
-
-		fascism = {
-			popularity = 46
-		}
-		
-		communism = {
-			popularity = 7
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 47
+	fascism = 46
+	communism = 7
 }
 
 set_convoys = 150
@@ -164,25 +154,15 @@ set_stability = 0.5
 	}
 
 	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 22
-			}
-
-			fascism = {
-				popularity = 76
-			}
-			
-			communism = {
-				popularity = 2
-			}
-		}
-		
 		ruling_party = fascism
 		last_election = "1934.3.26"
 		election_frequency = 60
 		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 22
+		fascism = 76
+		communism = 2
 	}
 
 	set_global_flag = scw_over

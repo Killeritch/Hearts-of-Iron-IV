@@ -131,7 +131,7 @@
  EQUIPMENT_DESIGNER_HG_ATTACK_ICON_TOOLTIP:0 "Attaque artillerie lourde"
  EQUIPMENT_DESIGNER_ANTI_AIR_ATTACK_ICON_TOOLTIP:0 "Attaque anti-aérienne"
  EQUIPMENT_DESIGNER_ANTI_SUB_ATTACK_ICON_TOOLTIP:0 "Attaque anti-sous-marine"
- REQUIRED_MODULE_EMPTY:0 "§RIl manque au moins un composant à ce modèle :§!"
+ REQUIRED_MODULE_EMPTY:0 "§RIl manque au moins un composant à ce modèle :§!"
  EQUIPMENT_MODULE_LIMIT_NOT_EQUAL:0 "§RCe modèle n'a pas le nombre $TITLE|H$ nécessaires ($REQ_COUNT|0$).§!"
  EQUIPMENT_MODULE_LIMIT_MAX_EXCEEDED:0 "§RCe modèle dépasse le nombre maximal $TITLE|H$ ($MAX|0$).§!"
  EQUIPMENT_MODULE_LIMIT_MIN_EXCEEDED:0 "§RCe modèle n'a pas le nombre minimal $TITLE|H$ ($MIN|0$).§!"

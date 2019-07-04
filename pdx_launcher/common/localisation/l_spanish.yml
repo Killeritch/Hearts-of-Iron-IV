@@ -64,7 +64,7 @@
  PDXL_UNGRACEFUL_EXIT:0 "Salir sin gracia"
  PDXL_UNGRACEFUL_EXIT_DESC:1 "Parece que la aplicación se cerró sin gracia, el envío de un informe de bloqueo le ayudará a localizar el problema.\n\n§YEnviar informe de bloqueo en el fondo?§!"
  PDXL_UNGRACEFUL_EXIT_SKIP:0 "Omitir"
- PDXL_UNGRACEFUL_EXIT_REPORT:0 "Informe"
+ PDXL_UNGRACEFUL_EXIT_CLEAR:0 "Borrar"
  PDXL_CLEAR_USER_DIRECTORY:0 "Borrar directorio de usario. "
  PDXL_CLEAR_USER_DIRECTORY_DESC:0 "Si esta experimentando crashes, es posible que estén causados por algunos archivos corruptos específicos del perfil de usuario. Por favor, pruebe borrarlos e inténtelo de nuevo antes de contactar con soporte técnico."
  PDXL_CLEAR_USER_DIRECTORY_NOT_FILES:0 "§GNo hay archivos en su directorio de usario que potencialmente puedan causar problemas de estabilidad.§!"

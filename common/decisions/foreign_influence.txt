@@ -31,6 +31,8 @@ foreign_influence = {
 			}
 		}
 
+		target_array = subjects
+
 		target_trigger = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -92,6 +94,8 @@ foreign_influence = {
 				communism < 0.99
 			}
 		}
+
+		target_array = subjects
 
 		target_trigger = {
 			FROM = {
@@ -156,6 +160,8 @@ foreign_influence = {
 			}
 		}
 
+		target_array = subjects
+
 		target_trigger = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -201,6 +207,8 @@ foreign_influence = {
 				neutrality < 0.99
 			}
 		}
+
+		target_array = subjects
 
 		target_trigger = {
 			FROM = {
@@ -248,6 +256,8 @@ foreign_influence = {
 				NOT = { has_government = democratic }
 			}
 		}
+
+		target_array = subjects
 
 		target_trigger = {
 			FROM = {
@@ -317,6 +327,8 @@ foreign_influence = {
 			}
 		}
 
+		target_array = subjects
+
 		target_trigger = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -385,6 +397,8 @@ foreign_influence = {
 			}
 		}
 
+		target_array = subjects
+
 		target_trigger = {
 			FROM = {
 				is_puppet_of = ROOT
@@ -437,6 +451,8 @@ foreign_influence = {
 				NOT = { has_government = neutrality }
 			}
 		}
+
+		target_array = subjects
 
 		target_trigger = {
 			FROM = {

@@ -340,7 +340,7 @@
  AIR_MORE_GROUND_CREWS_NOT_ENOUGH:0 "§RNicht genügend Befehlsmacht.§!"
  AIR_COUNT_ORIGIN:0 "$COUNT|Y$ aus $COUNTRY|Y$"
  AIR_WING_NO_COVERAGE:0 "§RLuftgeschwader kann Armee nicht abdecken§!"
- AIRWING_RECENTLY_ASSIGNED_NEW_REGION:0 "Kürzlich in der Region eingetroffen: $PERC|1%+=R$ ($REGAIN|1%+=$/h)"
+ AIRWING_RECENTLY_ASSIGNED_NEW_REGION:0 "Kürzlich in der Region eingetroffen: $PERC|1%-=$ ($REGAIN|1%+=$/h)"
  AIRWING_MISSION_TYPE_TRAINING:1 "Pilotenübungen"
  AIRWING_MISSION_TYPE_TRAINING_DESC:1 "Sammeln Sie Erfahrung für dieses §HLuftgeschwader§! sowie §HLuftwaffenerfahrung§!.\nDurch Luftübungen wird §HTreibstoff§! verbraucht und das Risiko von §HLuftunfällen§!.\n§RWenn diese Option aktiviert wird, werden alle Missionen deaktiviert.§!"
  AIRWING_MISSION_TYPE_NAVAL_MINE_PLANTING:1 "Minenlegen"

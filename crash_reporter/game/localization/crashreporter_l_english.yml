@@ -1,0 +1,13 @@
+﻿l_english:
+ CRASH_REPORTER_TITLE:0 "Paradox Crash Reporter"
+ CRASH_REPORTER_MAIN_MESSAGE:0 "An error has occured and the application quit unexpectedly. A crash report has been generated which could help us to fix the issue in a future release."
+ CRASH_REPORTER_PLEASE_EXPLAIN_CRASH:0 "Please tell us more about what happened just before the crash..."
+ CRASH_REPORTER_NO_STANDALONE:0 "The Paradox Crash Reporter does not have the required arguments to upload the latest crash."
+ CRASH_REPORTER_CANNOT_FIND_CRASH:0 "The Paradox Crash Reporter cannot locate the crash files."
+ CRASH_REPORTER_INVALID_URL:0 "The Paradox Crash Reporter cannot determine where to upload the provided crash report."
+ CRASH_REPORTER_UPLOAD_FAILED_GENERIC:0 "The upload failed for an unknown reason. Please try again."
+ CRASH_REPORTER_UPLOAD_SUCCESSFUL:0 "Your crash report was sent successfully. Thank you for taking the time to help us fix this error."
+ UPLOAD_SUCCESSFUL:0 "Upload Successful"
+ CANCEL:0 "Cancel"
+ SEND:0 "Send"
+ AN_ERROR_OCCURED:0 "An Error Occured"

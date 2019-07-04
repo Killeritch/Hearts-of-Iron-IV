@@ -376,8 +376,8 @@ PixelShader =
 		#if 1
 			vArrowColor.rgb = RGBtoHSV(vArrowColor.rgb);
 			vArrowColor.r = mod( vArrowColor.r, 6.0 ); //H
-			vArrowColor.g *= 0.8; //S
-			vArrowColor.b *= 0.7; //V
+			vArrowColor.g *= 1.5; //S bump up the saturation and light
+			vArrowColor.b *= 1.0; //V
 			vArrowColor.rgb = HSVtoRGBPost(vArrowColor.rgb);
 
 			float4 vColor = saturate( vPattern * vArrowColor );
@@ -414,10 +414,10 @@ PixelShader =
 			float4 vMask = tex2D( TexMask, vUV );
 			vMask -= ( ( sin( vTime_IsSelected_FadeInOut.x * MAP_ARROW_SEL_BLINK_SPEED ) * MAP_ARROW_SEL_BLINK_RANGE + 1.0f - MAP_ARROW_SEL_BLINK_RANGE * 0.5f ) * 0.5f ) * vTime_IsSelected_FadeInOut.y;
 			vMask = saturate( vMask );
-			clip( vMask.a <= 0 ? -1 : 1 );
+			//clip( vMask.a <= 0 ? -1 : 1 );
 			vMask.rgb = vMask.rgb * ArrowMask.rgb * vMask.a;
 			float vMaskValue = saturate( vMask.r + vMask.g + vMask.b );
-			clip( vMaskValue <= 0 ? 0 : 1 );
+			clip( vMaskValue <= 0 ? -1 : 1 );
 
 			float4 vPattern = tex2D( TexPattern, vUV );
 
@@ -425,8 +425,8 @@ PixelShader =
 			#if 1
 				vArrowColor.rgb = RGBtoHSV(vArrowColor.rgb);
 				vArrowColor.r = mod( vArrowColor.r, 6.0 ); //H
-				vArrowColor.g *= 0.8; //S
-				vArrowColor.b *= 0.8; //V
+				vArrowColor.g *= 2.0; //S bump up the saturation and light
+				vArrowColor.b *= 1.5; //V
 				vArrowColor.rgb = HSVtoRGBPost(vArrowColor.rgb);
 
 				float4 vColor = saturate( vPattern * vArrowColor );

@@ -1,0 +1,7 @@
+hbox = {
+	name = "toolbar"
+
+	editor_button = {
+		size = { 64 64 }
+	}
+}

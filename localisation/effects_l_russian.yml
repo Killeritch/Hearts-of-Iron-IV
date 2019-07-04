@@ -146,6 +146,7 @@
  EFFECT_SET_POLITICS_ELECTIONS:0 "В стране будут проводиться всеобщие выборы."
  EFFECT_SET_POLITICS_NO_ELECTIONS:0 "В стране не будут проводиться всеобщие выборы."
  EFFECT_SET_POLITICS_ELECTION_FREQUENCY:0 "Выборы будут проводиться каждые $MONTHS|H$ г."
+ EFFECT_SET_POPULARITIES:0 "Популярность партий изменится:"
  EFFECT_ADD_EXTRA_STATE_SHARED_BUILDING_SLOTS:0 "Будет добавлено ячеек для строительства: $COUNT|G$."
  EFFECT_REMOVE_EXTRA_STATE_SHARED_BUILDING_SLOTS:0 "Будет убрано ячеек для строительства: $COUNT|R$."
  EFFECT_ADD_TO_WAR:0 "Присоединится к государству $COUNTRY1|Y$ в войне против государства $COUNTRY2|Y$.\n"

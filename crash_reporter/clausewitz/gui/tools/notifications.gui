@@ -1,0 +1,63 @@
+types ToolsTypes
+{
+	# A generic notifaction
+	type editor_notification = hbox {
+		icon = {
+			layoutpolicy_horizontal = fixed
+			size = { 32 32 }
+			block "icon" {}
+		}
+
+		editor_textbox = {
+			layoutpolicy_horizontal = fixed
+			size = { 0 32 }
+			align = left|top
+			margin = { 5 5 }
+			autoresize = yes
+			block "textcolor" {}
+			block "text" {}
+		}
+	}
+
+	# An error with a red error sign.
+	# Override the "text" block to set the text.
+	type editor_error_hbox = editor_notification {		
+		blockoverride "icon"
+		{
+			texture = "gfx/tools/material/error_icon.png"
+			using = GruvboxLightRed
+		}
+		blockoverride "textcolor"
+		{
+			using = GruvboxLightRedFont
+		}
+	}
+
+	# An warning with a yellow warning sign.
+	# Override the "text" block to set the text.
+	type editor_warn_hbox = editor_notification {		
+		blockoverride "icon"
+		{
+			texture = "gfx/tools/material/warning_icon.png"
+			using = GruvboxLightOrange
+		}
+		blockoverride "textcolor"
+		{
+			using = GruvboxLightOrangeFont
+		}
+	}
+
+	# An info box with a green info sign.
+	# Override the "text" block to set the text.
+	type editor_info_hbox = editor_notification {		
+		blockoverride "icon"
+		{
+			texture = "gfx/tools/material/info_icon.png"
+			using = GruvboxLightGreen
+		}
+		blockoverride "textcolor"
+		{
+			using = GruvboxLightGreenFont
+		}
+	}
+}

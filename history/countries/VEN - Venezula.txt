@@ -62,26 +62,15 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 10
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 5
-		}
-
-		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 15
-			#banned = no #default is no
-		}
-	}
-	
 	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 5
+	fascism = 80
+	communism = 15
 }
 
 create_country_leader = {
@@ -103,30 +92,5 @@ create_country_leader = {
 	ideology = marxism
 	traits = {
 		#
-	}
-}
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 5
-			}
-
-			fascism = {
-				popularity = 80
-			}
-			
-			communism = {
-				popularity = 15
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
 	}
 }

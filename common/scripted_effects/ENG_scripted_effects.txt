@@ -258,8 +258,8 @@ ENG_imperial_conference_clear_in_progress_flags = {
 ENG_request_trade_union_support_cost_level_up = {
 	if = {
 		limit = {
-			NOT = { check_variable = { var = ENG_trade_unions_support_shared value = 0 compare = greater_than } }
-			NOT = { check_variable = { var = ENG_trade_unions_support_shared value = 0 compare = less_than } }
+			NOT = { check_variable = { ENG_trade_unions_support_shared > 0 } }
+			NOT = { check_variable = { ENG_trade_unions_support_shared < 0 } }
 		}
 		set_variable = { var = ENG_trade_unions_support_shared value = 0 }
 	}
@@ -275,15 +275,15 @@ ENG_request_trade_union_support_cost_level_up = {
 ENG_request_trade_union_support_cost_level_down = {
 	if = {
 		limit = {
-			NOT = { check_variable = { var = ENG_trade_unions_support_shared value = 0 compare = greater_than } }
-			NOT = { check_variable = { var = ENG_trade_unions_support_shared value = 0 compare = less_than } }
+			NOT = { check_variable = { ENG_trade_unions_support_shared > 0 } }
+			NOT = { check_variable = { ENG_trade_unions_support_shared < 0 } }
 		}
 		set_variable = { var = ENG_trade_unions_support_shared value = 0 }
 	}
 	add_to_variable = { var = ENG_trade_unions_support_shared value = -10 }
 	if = {
 		limit = {
-			check_variable = { var = ENG_trade_unions_support_shared value = -40 compare = less_than }
+			check_variable = { ENG_trade_unions_support_shared < -40 }
 		}
 		set_variable = { var = ENG_trade_unions_support_shared value = -40 }
 	}

@@ -3,7 +3,7 @@
  cv_fighter:0 "Myśliwiec"
  jet_fighter:0 "Myśliwiec"
  cas:1 "Samolot bliskiego wsparcia"
- cv_cas:1 "Samolot bliskiego wsparcia"
+ cv_cas:2 "Samolot bliskiego wsparcia (lotniskowiec)"
  nav_bomber:0 "Bombowiec mor."
  cv_nav_bomber:1 "Bombowiec morski (lotniskowiec)"
  tac_bomber:0 "Bombowiec takt."

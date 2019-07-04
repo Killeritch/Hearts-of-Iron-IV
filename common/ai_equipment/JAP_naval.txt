@@ -1292,8 +1292,7 @@ JAP_naval_capital_battleship = {
 			modifier = {
 				factor = 20
 				has_war = yes
-				any_other_country = {
-					has_war_with = JAP
+				any_enemy_country = {
 					is_major = yes
 				}
 			}
@@ -1337,8 +1336,7 @@ JAP_naval_capital_battleship = {
 			modifier = {
 				factor = 20
 				has_war = yes
-				any_other_country = {
-					has_war_with = JAP
+				any_enemy_country = {
 					is_major = yes
 				}
 			}
@@ -1382,8 +1380,7 @@ JAP_naval_capital_battleship = {
 			modifier = {
 				factor = 200
 				has_war = yes
-				any_other_country = {
-					has_war_with = JAP
+				any_enemy_country = {
 					is_major = yes
 				}
 			}
@@ -1426,8 +1423,7 @@ JAP_naval_capital_battleship = {
 			modifier = {
 				factor = 20
 				has_war = yes
-				any_other_country = {
-					has_war_with = JAP
+				any_enemy_country = {
 					is_major = yes
 				}
 			}
@@ -1470,8 +1466,7 @@ JAP_naval_capital_battleship = {
 			modifier = {
 				factor = 20
 				has_war = yes
-				any_other_country = {
-					has_war_with = JAP
+				any_enemy_country = {
 					is_major = yes
 				}
 			}

@@ -9,7 +9,7 @@ ENG_organize_the_blackshirts = {
 	picture = GFX_decision_cat_picture_organize_the_blackshirts
 	
 	allowed = {
-		original_tag = ENG
+		tag = ENG
 	}
 
 	on_map_area = {
@@ -27,6 +27,7 @@ ENG_organize_the_blackshirts = {
 	}
 
 	visible = {
+		has_completed_focus = ENG_organize_the_blackshirts
 		OR = {
 			NOT = { has_government = fascism }
 			has_country_flag = won_british_civil_war

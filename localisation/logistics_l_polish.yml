@@ -129,3 +129,4 @@
  FUEL_LOW_PRIORITY_DESC:0 "Niski priorytet na paliwo"
  FUEL_MEDIUM_PRIORITY_DESC:0 "Średni priorytet na paliwo"
  FUEL_HIGH_PRIORITY_DESC:0 "Wysoki priorytet na paliwo"
+ LOGISTICS_FUEL_PERCENTAGE:0 "§H$VALUE|0$%§! zapotrzebowania na paliwo jest realizowane."

@@ -1,0 +1,43 @@
+types ToolsTypes
+{
+	type editor_foldout_icon = icon {
+		texture = "gfx/editor_gui/editor_expand_checkbox.dds"
+		size = { 10 10 }
+		shaderfile = "gfx/FX/pdxgui_default.shader"
+		framesize = { 16 16 }
+		frame = "[Select_int32(PdxGuiFoldOut.IsFolded, '(int32)1', '(int32)2')]"
+	}
+
+	# A small > that turns by 90° when clicked to unfold a foldout.
+	type editor_foldout_checkbutton = checkbutton {
+		size = { 14 14 }
+		onclick = "[PdxGuiFoldOut.Toggle]"
+		checked = "[PdxGuiFoldOut.IsUnfolded]"
+
+		editor_foldout_icon = {
+			parentanchor = center|vcenter
+		}
+	}
+
+	# A header for a fold-out that contains a fold-out checkbutton but also
+	# folds out when clicked.
+	type editor_foldout_header = checkbutton {	
+		shaderfile = "gfx/FX/pdxgui_pushbutton.shader"
+		texture = "gfx/tools/foldout_button.dds"
+		framesize = { 16 16 }
+		spriteType = CorneredStretched
+		spriteborder = { 4 4 }
+		gfxtype = checkbuttongfx
+
+		onclick = "[PdxGuiFoldOut.Toggle]"
+		checked = "[PdxGuiFoldOut.IsUnfolded]"
+
+		editor_foldout_icon = {
+			size = { 10 10 }
+			position = { 4 0 }
+			parentanchor = left|vcenter
+		}
+
+		block "foldout_header_content" {}
+	}
+}

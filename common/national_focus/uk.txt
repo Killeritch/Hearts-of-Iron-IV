@@ -2746,29 +2746,16 @@ focus_tree = {
 							add_ideas = ENG_guided_by_britain_raj_1
 							hidden_effect = {
 								set_politics = {
-									parties = {
-										democratic = { 
-											popularity = 65
-										}
-								
-										fascism = {
-											popularity = 10
-										}
-										
-										communism = {
-											popularity = 2
-											#banned = no #default is no
-										}
-										
-										neutrality = { 
-											popularity = 23
-										}
-									}
-									
 									ruling_party = democratic
 									last_election = "1936.1.1"
 									election_frequency = 48
 									elections_allowed = yes
+								}
+								set_popularities = {
+									democratic = 65
+									fascism = 10
+									communism =  2
+									neutrality = 23
 								}
 								every_other_country = {
 									limit = {
@@ -2786,28 +2773,16 @@ focus_tree = {
 							add_ideas = ENG_guided_by_britain_raj_1
 							hidden_effect = {
 								set_politics = {
-									parties = {
-										democratic = { 
-											popularity = 17
-										}
-								
-										fascism = {
-											popularity = 2
-										}
-										
-										communism = {
-											popularity = 1
-										}
-								
-										neutrality = {
-											popularity = 80
-										}
-									}
-									
 									ruling_party = neutrality
 									last_election = "1935.11.14"
 									election_frequency = 48
 									elections_allowed = no
+								}
+								set_popularities = {
+									democratic = 17
+									fascism = 2
+									communism = 1
+									neutrality = 80
 								}
 								every_other_country = {
 									limit = {
@@ -2928,12 +2903,14 @@ focus_tree = {
 		prerequisite = { focus = ENG_guide_the_colonies }
 		available = { 
 			is_subject = no
-			has_full_control_of_state = 659
-			has_full_control_of_state = 326
-			has_full_control_of_state = 332
-			has_full_control_of_state = 331
-			has_full_control_of_state = 119
-			has_full_control_of_state = 118
+			OR = {
+				has_full_control_of_state = 659
+				has_full_control_of_state = 326
+				has_full_control_of_state = 332
+				has_full_control_of_state = 331
+				has_full_control_of_state = 119
+				has_full_control_of_state = 118
+			}
 		}
 		bypass = {
 			NOT = {
@@ -2982,12 +2959,18 @@ focus_tree = {
 			if = {
 				limit = {
 					has_full_control_of_state = 332
-					has_full_control_of_state = 331
 				}
 				CAN = {
 					transfer_state = 332
-					transfer_state = 331
 					add_opinion_modifier = { target = ENG modifier = ENG_returned_our_territory }
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 331
+				}
+				CAN = {
+					transfer_state = 331
 				}
 			}
 			if = {
@@ -8548,8 +8531,8 @@ focus_tree = {
 					type = contain
 					id = GER
 					value = -200
-		}
-	}
+				}
+			}
 		}
 	}
 

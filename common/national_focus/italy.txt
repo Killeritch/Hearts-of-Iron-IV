@@ -2081,15 +2081,13 @@ focus_tree = {
 		prerequisite = { focus = ITA_support_nationalist_spain }
 		mutually_exclusive = { focus = ITA_demand_balearic_islands }
 		available = {
+			is_in_faction = yes
 			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				has_civil_war = no
 				NOT = { has_war_with = ROOT }
-				OR = {
-					is_in_faction = no
-					is_in_faction_with = ROOT
-				}
+				is_in_faction = no
 			}
 			FRA = {
 				OR = {
@@ -2121,7 +2119,7 @@ focus_tree = {
 				}
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				add_ideas = fascist_influence 
-				country_event = { id = generic.2 }           
+				country_event = { id = generic.5 }           
 			}
 		}
 	}
@@ -2139,6 +2137,7 @@ focus_tree = {
 		}
 
 		available = {
+			is_in_faction = yes
 			country_exists = POR
 			NOT = {
 				has_war_with = POR
@@ -2160,7 +2159,7 @@ focus_tree = {
 					limit = { ROOT = { has_government = communism } }
 					add_timed_idea = { idea = communist_influence days = 1095 }
 				}
-				country_event = { id = generic.2 }
+				country_event = { id = generic.5 }
 			}
 		}
 	}

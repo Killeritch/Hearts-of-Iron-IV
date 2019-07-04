@@ -43,9 +43,9 @@
  NEXT:0 "Next"
  PDXL_TT_ANY_THIRD_PARTY_DLC:0 "You have enabled DLC with third party content. These should be disabled when you stream or record the game for the public."
  PDXL_UNGRACEFUL_EXIT:0 "Ungraceful Exit"
- PDXL_UNGRACEFUL_EXIT_DESC:1 "It seems that the application closed ungracefully, sending us a crash report will help us track down your issue.\n\n§YSend crash report in the background?§!"
+ PDXL_UNGRACEFUL_EXIT_DESC:2 "It seems that the application closed ungracefully.\nClearing your user directory may resolve your issue.\n\n§YClear user directory in the background?§!"
  PDXL_UNGRACEFUL_EXIT_SKIP:0 "Skip"
- PDXL_UNGRACEFUL_EXIT_REPORT:0 "Report"
+ PDXL_UNGRACEFUL_EXIT_CLEAR:1 "Clear"
  # NEW LINES
  PDXL_CLEAR_USER_DIRECTORY:0 "Clear user directory"
  PDXL_CLEAR_USER_DIRECTORY_DESC:0 "If you are experiencing crashes there is a chance that it is caused by some user specific files are corrupt. Please try clearing these out and try again before contacting support."

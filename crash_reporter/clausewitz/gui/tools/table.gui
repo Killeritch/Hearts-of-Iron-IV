@@ -1,0 +1,25 @@
+types ToolsTypes
+{
+	type table_header = button {
+		texture = "gfx/tools/table_header.dds"
+		gfxtype = framedbuttongfx
+		spriteType = CorneredStretched
+		spriteborder = { 2 2 }
+		effectname = "NoHighlight"
+		framesize = { 16 16 }
+		upframe = 1
+		downframe = 2
+		overframe = 3
+		disableframe = 4
+		intersectionmask = yes
+
+		editor_textbox = {
+			size = { 100% 100% }
+			margin_left = 4
+			align = left|nobaseline
+			block "label"
+			{
+			}
+		}
+	}
+}

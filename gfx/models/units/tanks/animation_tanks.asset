@@ -339,8 +339,6 @@ animation = {
 }
 
 
-
-
 animation = {
 	name = "USA_tank_light_attack_animation"
 	file = "USA_tank_light_attack.anim"

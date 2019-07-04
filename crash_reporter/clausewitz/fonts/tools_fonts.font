@@ -1,0 +1,159 @@
+# Each font should specify what it is used for. 
+# Dont leave stray font in the game. If they are not used, remove them, or keep them but make comment. 
+# The name of the font, should not be the name of the source file, it should be named after its use. 
+
+fontfiles = {
+    name = "OpenSans-Regular"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Open_Sans/OpenSans-Regular.ttf" }
+    }
+}
+fontfiles = {
+    name = "OpenSans-Italic"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Open_Sans/OpenSans-Italic.ttf" }
+    }
+}
+fontfiles = {
+    name = "OpenSans-Bold"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Open_Sans/OpenSans-Bold.ttf" }
+    }
+}
+fontfiles = {
+    name = "OpenSans-BoldItalic"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Open_Sans/OpenSans-BoldItalic.ttf" }
+    }
+}
+fontfiles = {
+    name = "OpenSans-ExtraBold"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Open_Sans/OpenSans-ExtraBold.ttf" }
+    }
+}
+fontfiles = {
+    name = "OpenSans-ExtraBoldItalic"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf" }
+    }
+}
+
+
+fontfiles = {
+    name = "RobotoMono-Regular"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Roboto_Mono/RobotoMono-Regular.ttf" }
+    }
+}
+fontfiles = {
+    name = "RobotoMono-Bold"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Roboto_Mono/RobotoMono-Bold.ttf" }
+    }
+}
+fontfiles = {
+    name = "RobotoMono-Italic"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Roboto_Mono/RobotoMono-Italic.ttf" }
+    }
+}
+fontfiles = {
+    name = "RobotoMono-BoldItalic"
+	always_load = yes
+
+    group = {
+        languages = { "l_english" "l_braz_por" "l_french" "l_german" "l_polish" "l_russian" "l_spanish" }
+        files = { "fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf" }
+    }
+}
+
+
+font = {
+	name = "tools_font"
+	fontstyle = {
+		style = regular
+		fontfiles = "OpenSans-Regular"
+	}
+	fontstyle = {
+		style = bold
+		fontfiles = "OpenSans-Bold"
+	}
+	fontstyle = {
+		style = italic
+		fontfiles = "OpenSans-Italic"
+	}
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "OpenSans-BoldItalic"
+	}
+	fontstyle = {
+		style = extrabold
+		fontfiles = "OpenSans-ExtraBold"
+	}
+	fontstyle = {
+		style = extrabold|italic
+		fontfiles = "OpenSans-ExtraBoldItalic"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.05
+		}
+	}
+}
+
+font = {
+	name = "tools_font_mono"
+	fontstyle = {
+		style = regular
+		fontfiles = "RobotoMono-Regular"
+	}
+	fontstyle = {
+		style = bold
+		fontfiles = "RobotoMono-Bold"
+	}
+	fontstyle = {
+		style = italic
+		fontfiles = "RobotoMono-Italic"
+	}
+	fontstyle = {
+		style = bold|italic
+		fontfiles = "RobotoMono-BoldItalic"
+	}
+
+	underlineformats = {
+		default = {
+			thickness = 1
+			offset = 0.05
+		}
+	}
+}

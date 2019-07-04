@@ -1497,6 +1497,6 @@
  mtg_netherlands.79.t:0 "[From.GetNameDef] odmawia utworzenia federacji"
  mtg_netherlands.79.d:0 "Rząd [From.GetAdjective] poinformował nas, że nie widzi potrzeby utworzenia zjednoczonego państwa niderlandzkiego. Pragną dalej z nam współpracować, ale chcą zachować całkowitą niepodległość."
  mtg_news.64.t:0 "Zjednoczenie Niderlandów"
- mtg_news.64.desc:0 "Powołując się na zewnętrzne zagrożenie dla bezpieczeństwa narodowego, rządy Niderlandów ogłosiły natychmiastowe połączenie ich rządów i sił zbrojnych w celu umocnienia pozycji ich narodów. Na czele unii stoi rząd [From.GetAdjective], teraz wspólne inwestycje w przemysł i planowanie obrony militarnej staną się ważniejsze od spraw wewnętrznych. Uzyskana gotowość bojowa pozwoli zareagować na każde zagrożenie dla niepodległości nowo powstałego państwa."
+ mtg_news.64.desc:1 "Powołując się na zewnętrzne zagrożenie dla bezpieczeństwa narodowego, rządy Niderlandów ogłosiły natychmiastowe połączenie ich rządów i sił zbrojnych w celu umocnienia pozycji ich narodów. Na czele unii stoi rząd [From.GetOldAdjective], teraz wspólne inwestycje w przemysł i planowanie obrony militarnej staną się ważniejsze od spraw wewnętrznych. Uzyskana gotowość bojowa pozwoli zareagować na każde zagrożenie dla niepodległości nowo powstałego państwa."
  mtg_news.64.a:0 "Wszyscy obywatele zjednoczyli się, żeby bronić naszej ojczyzny."
  mtg_news.64.b:0 "Ponowne zjednoczenie? Zdecydujcie się wreszcie!"
